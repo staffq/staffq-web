@@ -55,16 +55,7 @@ const ParamanentDeployment = () => {
           </div>
         </div> */}
         {/* 
-        <div>
-          <div className="container text-center mt-5">
-            <h4 className="Our-Strategy">Our Strategy</h4>
-            <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscingelit, sed do
-              eiusmod tempor incididunt ut labore et <br></br>
-              dolore magna aliqua. Ut enim ad minim veniam, quis
-            </p>
-          </div>
-        </div> */}
+      
 {/* 
         <div className="container">
           <div className="row ">
@@ -486,24 +477,7 @@ const ParamanentDeployment = () => {
         </Image>
 
         {/* ............................................next......section,,,,,,,,,,,,,, */}
-        {/* <div>
-  <div className="container-fluid p-0 ">
-<div className="banner ">
-  <div className="row">
-    <div className="col-lg-6 col-sm-12 container">
-      <div className="balls">
-
-      </div>
-    </div>
-    <div className="col-lg-6 col-sm-12 ">
-      <img src="assets/images/Banner Image.svg" width='100%' className="banner-img"></img>
-
-    </div>
-  </div>
-</div>
-  </div> */}
-
-        {/* </div> */}
+   
 
         {/* .......................................................... */}
         <div>

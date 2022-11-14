@@ -1,6 +1,6 @@
 import React from "react";
-import { ContacttStyle, Form, Second } from "../../styles/contact-style.js";
-import { GrMail } from "react-icons/gr";
+import { ContacttStyle, Form, Second , SmallContact} from "../../styles/contact-style.js";
+
 import Input from "../../components/FormControls/Input/index.jsx";
 const contact = () => {
   return (
@@ -33,8 +33,9 @@ const contact = () => {
                   <p>FIll out this form and we’ll get back to you.</p>
                 </div>
                 <div className=" ">
-                  <div className="row">
-                    <div className="col-lg-6 col-md-12 col-sm-12">
+                  <div className="row mt-2">
+                    <div className="col-lg-1"></div>
+                    <div className="col-lg-5 col-md-12 col-sm-12">
                       <div></div>
                       <div class="form-group ">
                         <label for="exampleInputPassword1">Name*</label>
@@ -46,67 +47,70 @@ const contact = () => {
                       </div>
                       <div class="form-group ">
                         <label for="exampleInputPassword1">State*</label>
+                        <div>
+
+                       
                         <select className="input-option">
-                          <option value="">Country</option>
+                          <option value="">State</option>
                           <option value="">one</option>
                           <option value="">one</option>
-                        </select>
+                        </select> </div>
                       </div>
                     </div>
 
-                    <div className="col-lg-6 col-md-12 col-sm-12">
+                    <div className="col-lg-5 col-md-12 col-sm-12">
                       <div class="form-group ">
                         <label for="exampleInputPassword1">
                           Email Address*
                         </label>
 
-                        <Input placeholder="Eg: Johnkrisinski@email.com" />
+                        <Input placeholder="Eg: Johnkrisinski@email.com "  />
                       </div>
                       <div class="form-group ">
                         <label for="exampleInputPassword1">country*</label>
+                        <div>
 
                         <select className="input-option ">
                           <option value="country*">Country</option>
                           <option value="">one</option>
                           <option value="">one</option>
                         </select>
+                        </div>
                       </div>
                       <div class="form-group ">
                         <label for="exampleInputPassword1">City*</label>
 
-                        <Input placeholder="Select" />
+                        <Input   placeholder="Select"  />
                       </div>
                     </div>
+                    <div className="col-lg-1"></div>
                   </div>
                 </div>
 
                 {/* ...............................text--filed.................. */}
                 <div className="justify-content-center">
                   <div className="row ">
-                    <div className="col-lg-12 col-sm-12 col-sm-12">
+                    <div className="col-lg-10 col-sm-12 col-sm-12">
                       <div class="form-group ">
                         <label for="exampleInputPassword1">
                           Your Requirement*
                         </label>
-                        <input
-                          type="textarea"
-                          class="form-control text"
-                          placeholder="city"
-                        />
+                        <input type="textarea" class="form-control text" />
                       </div>
                     </div>
                   </div>
                   <div className="submit-btn">
-                    <button className="btn button-submit  ">submit</button>
+                    <button className="btn button-submit  ">Submit</button>
                   </div>
                 </div>
               </div>
             </div>
           </Form>
 
-          <div>
+          <div style={{ marginLeft: "8rem" }} className = "pc-contact">
             <div className="container">
               <div className="row  ">
+                {/* <div className="col-lg-1"></div> */}
                 <div className="col-lg-4 col-sm-12 col-md-12">
                   <div>
                     <div className="display">
@@ -126,7 +130,7 @@ const contact = () => {
                     <div className="col-lg-1 col-md-1 col-sm-1">
                       <img src="assets/images/Loaction.svg" />
                     </div>
-                    <div className="col-lg-11 col-md-11 col-sm-11">
+                    <div className="col-lg-11 col-md-11 col-sm-11  font">
                       Floor-3A,Sathyam Towers,6D <br></br> Bharathi
                       Street,Valipalayam,<br></br>
                       Tiruppur, 641 601
@@ -134,9 +138,9 @@ const contact = () => {
                   </div>
                   <div className="row mt-3">
                     <div className="col-lg-1 col-md-1 col-sm-1">
-                      <img src="assets/images/call-image.svg" />
+                      <img src="assets/images/phone-icon.svg" />
                     </div>
-                    <div className="col-lg-11 col-md-11 col-sm-11">
+                    <div className="col-lg-11 col-md-11 col-sm-11  font">
                       +91 9629938033<br></br>
                       +91 421 3552738
                     </div>
@@ -144,9 +148,9 @@ const contact = () => {
 
                   <div className="row mt-4">
                     <div className="col-lg-1 col-md-1 col-sm-1">
-                      <GrMail />
+                      <img src="assets/images/Email-icon.svg" />
                     </div>
-                    <div className="col-lg-11 col-md-11 col-sm-11">
+                    <div className="col-lg-11 col-md-11 col-sm-11  font">
                       info@staffq.org
                     </div>
                   </div>
@@ -170,16 +174,16 @@ const contact = () => {
                     <div className="col-lg-1 col-md-1 col-sm-1">
                       <img src="assets/images/Loaction.svg" />
                     </div>
-                    <div className="col-lg-11 col-md-11 col-sm-11">
+                    <div className="col-lg-11 col-md-11 col-sm-11  font">
                       111302, Granrock Crea,<br></br> Mississauaga Ontario{" "}
                       <br></br> L5V OEI
                     </div>
                   </div>
                   <div className="row mt-3">
                     <div className="col-lg-1 col-md-1 col-sm-1">
-                      <img src="assets/images/call-image.svg"></img>
+                      <img src="assets/images/phone-icon.svg"></img>
                     </div>
-                    <div className="col-lg-11 col-md-11 col-sm-11">
+                    <div className="col-lg-11 col-md-11 col-sm-11  font">
                       +91 9629938033<br></br>
                       +91 421 3552738
                     </div>
@@ -187,9 +191,9 @@ const contact = () => {
 
                   <div className="row mt-4">
                     <div className="col-lg-1 col-md-1 col-sm-1">
-                      <GrMail />
+                      <img src="assets/images/Email-icon.svg" />
                     </div>
-                    <div className="col-lg-11 col-md-11 col-sm-11">
+                    <div className="col-lg-11 col-md-11 col-sm-11  font">
                       info@staffq.org
                     </div>
                   </div>
@@ -213,16 +217,16 @@ const contact = () => {
                     <div className="col-lg-1 col-md-1 col-sm-1">
                       <img src="assets/images/Loaction.svg" />
                     </div>
-                    <div className="col-lg-11 col-md-11 col-sm-11">
+                    <div className="col-lg-11 col-md-11 col-sm-11 font">
                       127, OMDURMAN ROAD, <br></br>Southampton <br></br> S014
                       7DW
                     </div>
                   </div>
                   <div className="row mt-3">
                     <div className="col-lg-1 col-md-1 col-sm-1">
-                      <img src="assets/images/call-image.svg"></img>
+                      <img src="assets/images/phone-icon.svg"></img>
                     </div>
-                    <div className="col-lg-11 col-md-11 col-sm-11">
+                    <div className="col-lg-11 col-md-11 col-sm-11  font">
                       +91 9629938033<br></br>
                       +91 421 3552738
                     </div>
@@ -230,18 +234,25 @@ const contact = () => {
 
                   <div className="row mt-4">
                     <div className="col-lg-1 col-md-1 col-sm-1">
-                      <GrMail />
+                      <img src="assets/images/Email-icon.svg" />
                     </div>
-                    <div className="col-lg-11 col-md-11 col-sm-11">
+                    <div className="col-lg-11 col-md-11 col-sm-11  font">
                       info@staffq.org
                     </div>
                   </div>
                 </div>
+                {/* <div className="col-lg-1"></div> */}
               </div>
             </div>
           </div>
         </Second>
       </ContacttStyle>
+
+
+      {/* <SmallContact>
+      
+
+      </SmallContact> */}
     </div>
   );
 };

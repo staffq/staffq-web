@@ -75,24 +75,7 @@ height: 50vh; */
   .sectionTwo {
     margin-left: 2rem;
   }
-  .bt {
-    width: 158px;
-    height: 62px;
-    left: 765px;
-    top: 4102px;
 
-    background: #081429;
-    border-radius: 16px;
-    color: white;
-    font-family: "General Sans";
-    font-style: normal;
-    font-weight: 500;
-    font-size: 18px;
-    line-height: 30px;
-    /* identical to box height, or 167% */
-
-    color: #ffffff;
-  }
   h1 {
     font-family: "General Sans";
     font-style: normal;
@@ -206,24 +189,9 @@ height: 50vh; */
     text-align: center;
     color: #081429;
   }
-  .Our-Strategy {
-    font-weight: 600;
-    font-size: 36px;
-    line-height: 49px;
-    /* identical to box height */
 
-    text-align: center;
-
-    color: #081429;
-  }
   /* .......image...second---paGE................... */
-  .content-one {
-    width: 634px;
-    height: 500px;
-
-    border-radius: 20px;
-    background: #f6f6f5;
-  }
+  
   .content-onee {
     width: 634px;
     height: 500px;

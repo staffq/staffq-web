@@ -55,6 +55,11 @@ export const Div = styled.div`
   
   }
 }
+@media (min-width:990px) and (max-width:1080px){
+  .navbar-nav{
+    padding-right: 4rem;
+  }
+}
 
 `;
 export const Img = styled.div`

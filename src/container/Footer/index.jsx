@@ -110,17 +110,18 @@ const Footer = () => {
           <div className="container mt-3">
             <div className="footerlast">
               <div>
-                <p style={{ fontSize: "14px" }}>
+                <p style={{ fontSize: "14px" }} className = "last-line">
                   {" "}
-                  @StaffQ Consultancy Pvt. Ltd - All rights reserved
+                  @StaffQ Consultancy Pvt. Ltd - All rights reserved 
+                  
                 </p>
               </div>
               <div className="Foter">
-                <p className="terms " style={{ fontSize: "14px" }}>
+                <p className="terms last-line " style={{ fontSize: "14px" }}   >
                   Terms of service
                 </p>
 
-                <p style={{ fontSize: "14px" }}>Privacy policy</p>
+                <p style={{ fontSize: "14px" }}  className = "last-line">Privacy policy</p>
               </div>
             </div>
           </div>

@@ -25,8 +25,9 @@ const index = () => {
       <Service />
            <Profile/> 
       <About/>
-      <Find/>
+    
       <Slick />
+      <Find/>
   
       {/* <About />
       <Slick />

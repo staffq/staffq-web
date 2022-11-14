@@ -62,13 +62,14 @@ const Header = () => {
 
               <li className="nav-item active">
                 <Hover>
-                <Link href="/find-jobs">
+                <Link href="/findJobPage">
                 <p className="mb-0">Find jobs</p></Link>
                 </Hover>
               </li>
               <li className="nav-item active">
                 <Hover>
-                <p className="mb-0">About us</p>
+                  <Link href="aboutPage">
+                <p className="mb-0">About us</p></Link>
                 </Hover>
              
               </li>

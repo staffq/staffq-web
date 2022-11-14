@@ -43,7 +43,9 @@ font-style: normal;
 
 width: 108%;
 font-size: 16px;
+font-weight: 500;
 
+color: rgba(8, 20, 41, 0.4);
 }
 h2{
   font-size: 36px;

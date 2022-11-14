@@ -2,10 +2,14 @@ import styled from "styled-components";
 
 export const ContacttStyle = styled.div`
   padding-top: 1%;
+
 `;
 // .................form..................................
 
 export const Form = styled.div`
+padding-top: 2rem;
+padding-bottom: 2rem;
+background: #F6F6F5;
   .input-filed {
     margin: 0 auto;
     border-radius: 12px;
@@ -20,7 +24,7 @@ export const Form = styled.div`
     margin: 0 auto;
     border-radius: 12px;
   background: #ffffff;
-  width: 41vw;
+  width: 33vw;
   height: 56px;
   margin-bottom: 20px;
   box-shadow: 0px 4px 16px rgba(8, 20, 41, 0.08);
@@ -29,6 +33,7 @@ export const Form = styled.div`
   }
   label {
     margin-bottom: 12px;
+    font-weight: 600;
   }
   .text {
     width: 70vw;
@@ -145,4 +150,48 @@ export const Second = styled.div`
   }
   .style {
   }
+  .font{
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 31px;
+    color: rgba(5,12,24,0.7);
+  }
+  /* .pc-contact{
+    @media (min-width:250px) and (max-width:600px){
+  display: none;
+}
+  } */
 `;
+
+
+// export const SmallContact = styled.div`
+// margin-top: 1px;
+// display: none;
+// @media (min-width:250px) and (max-width:600px){
+//   display: block;
+
+//   .small-one{
+//     display: flex;
+//     justify-content: center;
+//     margin-left: 2rem;
+//   }
+//   .display-two{
+//     display: flex;
+//     flex-direction: column;
+//   }
+//   .d-flex{
+//     margin-left: 2rem;
+//     justify-content: center;
+//   }
+//   .floor{
+//     margin-top: 4rem;
+//     margin-left: 1rem;
+//     font-size: 19px;
+//     font-weight: 400;
+// }
+  
+// }
+
+
+
+// `

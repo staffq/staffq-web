@@ -27,7 +27,7 @@ const About = () => {
               
         
             </div>
-            <div className="col-lg-7 col-md-12 col-sm-12 fs-5">
+            <div className="col-lg-7 col-md-12 col-sm-12 fs-5 ">
                 <div>
                 <p className="AboutPtext">
                   StaffQ Consultancy Private Limited is a trusted HR Service

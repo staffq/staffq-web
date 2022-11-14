@@ -18,8 +18,22 @@ margin-top: 8%;
   padding-right: 0px;
 }
 
-h2 ,p{
+h2 {
   color: white;
+}
+p , span{
+  color: rgba(255, 255, 255, 0.8);
+  font-weight: 500;
+font-size: 17px;
+}
+.last-line{
+  font-size: 14px;
+line-height: 28px;
+/* identical to box height, or 200% */
+
+
+color: rgba(255, 255, 255, 0.6);
+
 }
 .footerlast{
   display: flex;

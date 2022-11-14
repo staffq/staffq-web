@@ -2,6 +2,7 @@ import styled from "styled-components";
 
 
 export const AboutBg = styled.div`
+
 @media (min-width:769px) and (max-width:1200px){
     display: none;
 }
@@ -9,10 +10,12 @@ background: #FEFBE9;
 width:100%;
 height: 39rem;
 margin-top: 10%;
+padding-top: 2rem;
 
 padding: 0px !important;
 .About-section{
     text-align: center;
+    padding-top: 29px;
     
 }
 .aboutbtn{
@@ -182,3 +185,4 @@ margin: 0 auto;
 }
 }
 `
+
