@@ -62,6 +62,10 @@ padding-top: 37px;
   .first-row{
     padding-left: 25px;
   }
+  .row-second-ball{
+    padding-left: 3rem;
+    margin-top: 5rem;
+  }
   .margin-section{
     margin-top: 4rem;
   }
@@ -116,12 +120,12 @@ color: #081429;
   }
   .join-team{
     text-align: center;
-    position: absolute;
-    /* margin-bottom: 6rem; */
-    top: 232rem;
+    position: relative;
+    /* top: 232rem; */
     z-index: 99;
-    bottom: 0px;
-  }
+    bottom: 377px;
+}
+  
   .background-wave-image{
     display: flex;
     justify-content: center;
@@ -133,45 +137,71 @@ color: #081429;
     width: 155px;
     margin-top: -44px;
   }
+  .maxium{
+max-height: 53vh;
+  }
 
   .small-logo-section{
   display: flex;
   flex-direction: row;
   justify-content: center;
+  
+}
+
+.small-join-section{
   display: none;
+
 }
 @media (min-width:500px) and (max-width:1070px){
-  .background-wave-image{
-    display: none;
-
+  .maxium{
+display: none;
   }
+.small-join-section{
+  display: block;
+
+}
   .small-logo-section{
   display: flex;
   flex-direction: row;
   justify-content: center;
-  display: block;
+  
   margin-top: 2rem;
 }
-.join-team{
-    text-align: center;
-  
-    margin-top: 30rem;
-  
-  }
+.join-teamm{
+  text-align: center;
+   margin-top: 2rem;
+}
+
 }
 @media (min-width:250px) and (max-width:500px){
-  .background-wave-image{
-    display: none;
 
+  .maxium{
+display: none;
   }
-  .small-logo-section{
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
+.small-join-section{
   display: block;
+
+}
+}
+@media (min-width:765px) and (max-width:1024px){
+
+  .join-teamm{
+  text-align: center;
+   margin-top: 30rem;
+}
+}
+@media (min-width:250px) and (max-width:500px){
+
+.join-teamm{
+text-align: center;
+ margin-top: 7rem;
+}
+.under-code{
+  display: none;
+}
+.small-logo-section{
   margin-top: 2rem;
 }
-
 }
 
 
@@ -221,16 +251,13 @@ export const Header = styled.div`
   position: relative;
 
   background: #efce1e;
-  .ball-image {
-    width: 100%;
-  }
-  h1 {
-    left: 170px;
-    top: 282px;
+  
 
+  span , h5 {
+   
     font-style: normal;
     font-weight: 600;
-    font-size: 60px;
+    font-size: 62px;
     line-height: 81px;
     /* identical to box height */
 
@@ -244,6 +271,7 @@ export const Header = styled.div`
     font-weight: 500;
     font-size: 18px;
     line-height: 34px;
+    margin-top: 23px;
     /* or 170% */
 
     color: rgba(8, 20, 41, 0.6);
@@ -251,51 +279,45 @@ export const Header = styled.div`
   .ball-one-page {
     position: absolute;
     top: 10rem;
-    margin-left: 20px;
+    margin-left: 5rem;
   }
   .banner-image {
-    width: 507px;
+  width: 100%;
     margin-top: 37px;
     position: relative;
+   
+  }
+  .ball-image{
+    margin-left: 5rem;
+    width: 88%;
+  }
+  .header{
+    overflow: hidden;
   }
 
-  .little {
-    position: absolute;
-    top: 4rem;
-    right: 11rem;
-  }
+  
   /* @media (min-width: 769px) and (max-width: 1300px) {
     display: none;
   } */
-  @media (min-width: 250px) and (max-width: 768px) {
+  @media (min-width: 250px) and (max-width: 1024px) {
     display: none;
     .header {
       text-align: center;
     }
-    .ball-image {
-      display: none;
-    }
-    .little {
-      display: none;
-    }
-    h1 {
-      font-size: 24px;
-      width: 291px;
-    }
-    p {
-      width: 358px;
-      font-size: 16;
-    }
-    .banner-image {
-      width: 100%;
-      margin-top: 32rem;
-    }
+    
+    
+    
+   
+  
     .ball-one-page {
       text-align: center;
-      top: 10rem;
+      
     }
   }
-  @media (min-width: 769px) and (max-width: 1300px) {
+  @media (min-width: 1025px) and (max-width: 1400px) {
+    .header{
+      height: 135vh;
+    }
     .little {
       display: none;
     }
@@ -303,9 +325,15 @@ export const Header = styled.div`
       display: none;
     }
     .banner-image {
-      width: 100%;
-      margin-top: 32rem;
-    }
+  width: 100%;
+    margin-top: 0px;
+    
+  }
+  .ball-one-page {
+  
+    top: 1rem;
+    margin-left: 20px;
+  }
   }
 `;
 export const AboutSection = styled.div`
@@ -313,7 +341,7 @@ export const AboutSection = styled.div`
 
 background: #FEFBE9;
 width:100%;
-height: 39rem;
+
 margin-top: 10%;
 padding-top: 2rem;
 
@@ -407,6 +435,15 @@ align-items: center;
 }
        
     }
+
+  @media (min-width:990px) and (max-width:1200px){
+    .AboutPtext{
+    font-size: 12px;
+    font-weight: 400;
+    
+}
+  }
+
     /* @media (min-width:300px) and (max-width:400px){
         height: 79rem;
    
@@ -429,7 +466,7 @@ align-items: center;
 
 export const SmallHeader = styled.div`
 display: none;
-@media (min-width: 250px) and (max-width: 768px) {
+@media (min-width: 250px) and (max-width: 1024px) {
   display: block;
   background: #EFCE1E;
   width: 100%;
