@@ -1,0 +1,21 @@
+{
+  "/_app": "pages/_app.js",
+  "/_error": "pages/_error.js",
+  "/Duplicatwedocument": "pages/Duplicatwedocument.js",
+  "/HomePage/About": "pages/HomePage/About.js",
+  "/HomePage/Find": "pages/HomePage/Find.js",
+  "/HomePage/Head": "pages/HomePage/Head.js",
+  "/HomePage/OurPartner": "pages/HomePage/OurPartner.js",
+  "/HomePage/Parmanent": "pages/HomePage/Parmanent.js",
+  "/HomePage/Profile": "pages/HomePage/Profile.js",
+  "/HomePage/Service": "pages/HomePage/Service.js",
+  "/HomePage/Slider": "pages/HomePage/Slider.js",
+  "/blogs": "pages/blogs.js",
+  "/contact": "pages/contact.js",
+  "/find-jobs": "pages/find-jobs.js",
+  "/findJobPage": "pages/findJobPage.js",
+  "/findTheBestJob": "pages/findTheBestJob.js",
+  "/": "pages/index.js",
+  "/permanent-deployment": "pages/permanent-deployment.js",
+  "/_document": "pages/_document.js"
+}
