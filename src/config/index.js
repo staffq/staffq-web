@@ -1,6 +1,7 @@
 /*
-  Configurations for different environment
+  Latest - Configurations for different environment
 */
+
 const config = {
     production: {
       webUrl: "",
