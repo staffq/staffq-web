@@ -259,6 +259,9 @@ const OurPartner = ()=>{
                 children: [
                     /*#__PURE__*/ jsx_runtime_.jsx("h5", {
                         className: "text-center",
+                        style: {
+                            color: "rgba(8, 20, 41, 0.7)"
+                        },
                         children: "Our partners"
                     }),
                     /*#__PURE__*/ (0,jsx_runtime_.jsxs)(Fle, {
@@ -268,7 +271,7 @@ const OurPartner = ()=>{
                                 children: /*#__PURE__*/ jsx_runtime_.jsx("img", {
                                     src: "assets/images/Pfizer.svg ",
                                     style: {
-                                        width: "87px"
+                                        width: "95px"
                                     },
                                     className: "icons-one"
                                 })
@@ -277,28 +280,40 @@ const OurPartner = ()=>{
                                 className: "me-3 PartnerImage",
                                 children: /*#__PURE__*/ jsx_runtime_.jsx("img", {
                                     src: "assets/images/cognizant.svg",
-                                    className: "icons-two"
+                                    className: "icons-two",
+                                    style: {
+                                        width: "182px"
+                                    }
                                 })
                             }),
                             /*#__PURE__*/ jsx_runtime_.jsx("div", {
                                 className: "me-3 PartnerImage",
                                 children: /*#__PURE__*/ jsx_runtime_.jsx("img", {
                                     src: "assets/images/Vedhainfo.svg",
-                                    className: "icons-three"
+                                    className: "icons-three",
+                                    style: {
+                                        width: "142px"
+                                    }
                                 })
                             }),
                             /*#__PURE__*/ jsx_runtime_.jsx("div", {
                                 className: "me-3 PartnerImage",
                                 children: /*#__PURE__*/ jsx_runtime_.jsx("img", {
                                     src: "assets/images/Group 440.png",
-                                    className: "icons-four"
+                                    className: "icons-four",
+                                    style: {
+                                        width: "126px"
+                                    }
                                 })
                             }),
                             /*#__PURE__*/ jsx_runtime_.jsx("div", {
                                 className: "me-3 Agilisum PartnerImage",
                                 children: /*#__PURE__*/ jsx_runtime_.jsx("img", {
                                     src: "assets/images/Agilisium.svg",
-                                    className: "icon-five"
+                                    className: "icon-five",
+                                    style: {
+                                        width: "123px"
+                                    }
                                 })
                             })
                         ]

@@ -112,7 +112,7 @@ const Footer = () => {
               <div>
                 <p style={{ fontSize: "14px" }} className = "last-line">
                   {" "}
-                  @StaffQ Consultancy Pvt. Ltd - All rights reserved 
+                  @StaffQ Consultancy Pvt. Ltd - All rights reserved 14-11-22 (5pm)
                   
                 </p>
               </div>
@@ -205,7 +205,7 @@ const Footer = () => {
         <div className="mt-5">
           <p className="text-center " style={{ marginTop: "34px" }}>
             {" "}
-            @ StaffQ. All rights reserved
+            @ StaffQ. All rights reserved 14-11-22 (5pm)
           </p>
           <div className="d-flex  justify-content-spacebetween">
             <p style={{ fontSize: "14px" }}>Privacy policy</p>

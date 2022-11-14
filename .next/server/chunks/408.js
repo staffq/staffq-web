@@ -24,6 +24,7 @@ var external_styled_components_default = /*#__PURE__*/__webpack_require__.n(exte
 ;// CONCATENATED MODULE: ./src/styles/about-style.js
 
 const AboutBg = (external_styled_components_default()).div`
+
 @media (min-width:769px) and (max-width:1200px){
     display: none;
 }
@@ -31,10 +32,12 @@ background: #FEFBE9;
 width:100%;
 height: 39rem;
 margin-top: 10%;
+padding-top: 2rem;
 
 padding: 0px !important;
 .About-section{
     text-align: center;
+    padding-top: 29px;
     
 }
 .aboutbtn{
@@ -249,7 +252,7 @@ const About = ()=>{
                                         })
                                     }),
                                     /*#__PURE__*/ jsx_runtime_.jsx("div", {
-                                        className: "col-lg-7 col-md-12 col-sm-12 fs-5",
+                                        className: "col-lg-7 col-md-12 col-sm-12 fs-5 ",
                                         children: /*#__PURE__*/ (0,jsx_runtime_.jsxs)("div", {
                                             children: [
                                                 /*#__PURE__*/ jsx_runtime_.jsx("p", {

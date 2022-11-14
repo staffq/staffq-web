@@ -250,12 +250,12 @@ color: #FFFFFF;}
         .Smallbox{
         margin-left: 13rem;}
     
-    .Smallsctext{
+    /* .Smallsctext{
         margin-left: 4rem;
     }
     .find-images{
 margin-left: 3rem;
-    }
+    } */
    
     .findsm-text{
         width: 100%;
@@ -264,7 +264,9 @@ margin-left: 3rem;
  @media (min-width: 925px) and (max-width: 1100px) {
     .top{
         margin-left: 7rem;
-    }}
+    }
+
+}
 
  @media (min-width: 1000px) and (max-width: 1024px) {
     /* .Smallbox{

@@ -5,8 +5,8 @@
   "devFiles": [],
   "ampDevFiles": [],
   "lowPriorityFiles": [
-    "static/OAOhpYnh_hCg7LZXo6KuF/_buildManifest.js",
-    "static/OAOhpYnh_hCg7LZXo6KuF/_ssgManifest.js"
+    "static/jN3aZfmaGCmXUN0Xq8Jfn/_buildManifest.js",
+    "static/jN3aZfmaGCmXUN0Xq8Jfn/_ssgManifest.js"
   ],
   "rootMainFiles": [],
   "pages": {
@@ -76,13 +76,19 @@
       "static/chunks/framework-4556c45dd113b893.js",
       "static/chunks/main-2043948c1246ba90.js",
       "static/css/1ddb8e3c24cd6155.css",
-      "static/chunks/pages/_app-204727a903094d56.js"
+      "static/chunks/pages/_app-cad460dd30a4d883.js"
     ],
     "/_error": [
       "static/chunks/webpack-22d36c86917dfe44.js",
       "static/chunks/framework-4556c45dd113b893.js",
       "static/chunks/main-2043948c1246ba90.js",
       "static/chunks/pages/_error-a4ba2246ff8fb532.js"
+    ],
+    "/aboutPage": [
+      "static/chunks/webpack-22d36c86917dfe44.js",
+      "static/chunks/framework-4556c45dd113b893.js",
+      "static/chunks/main-2043948c1246ba90.js",
+      "static/chunks/pages/aboutPage-ff3aa2ba9ee06189.js"
     ],
     "/blogs": [
       "static/chunks/webpack-22d36c86917dfe44.js",
@@ -95,7 +101,7 @@
       "static/chunks/framework-4556c45dd113b893.js",
       "static/chunks/main-2043948c1246ba90.js",
       "static/chunks/941-25cd5309b5ebeacb.js",
-      "static/chunks/pages/contact-2641dac95266fd5d.js"
+      "static/chunks/pages/contact-c24417165d0403ab.js"
     ],
     "/find-jobs": [
       "static/chunks/webpack-22d36c86917dfe44.js",
@@ -120,7 +126,7 @@
       "static/chunks/webpack-22d36c86917dfe44.js",
       "static/chunks/framework-4556c45dd113b893.js",
       "static/chunks/main-2043948c1246ba90.js",
-      "static/chunks/pages/permanent-deployment-6c2c258ace7bfa36.js"
+      "static/chunks/pages/permanent-deployment-e56df67c5351029f.js"
     ]
   },
   "ampFirstPages": []

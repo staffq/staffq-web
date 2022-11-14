@@ -30,7 +30,7 @@ const H1 = (external_styled_components_default()).h1`
 
   font-style: normal;
   font-size: 64px;
-  line-height: 72px;
+  line-height: 79px;
 
   color: #081429;
 
@@ -52,7 +52,8 @@ const Button = (external_styled_components_default()).button`
   font-size: 24px;
   height: 80px;
 
-
+font-weight: 400;
+margin-top: 23px;
 
   padding: 5px 30px;
 
@@ -88,6 +89,7 @@ const Button = (external_styled_components_default()).button`
 .hello{
     margin-left: 10px;
     display: none;
+    width: 73px;
   }
   
    .hover-arrow{
@@ -182,9 +184,10 @@ const P = (external_styled_components_default()).p`
   font-size: 20px;
   font-weight: bottom;
   font-weight: 400;
-  line-height: 32px;
+  line-height: 34px;
   letter-spacing: 0em;
-  text-align: left;
+  margin-top: 35px;
+  
   @media (min-width: 250px) and (max-width: 768px)  {
     font-size: 15px;
   line-height: 32px;
@@ -523,8 +526,8 @@ const index = ()=>{
             /*#__PURE__*/ jsx_runtime_.jsx(Service["default"], {}),
             /*#__PURE__*/ jsx_runtime_.jsx(Profile["default"], {}),
             /*#__PURE__*/ jsx_runtime_.jsx(About["default"], {}),
-            /*#__PURE__*/ jsx_runtime_.jsx(Find["default"], {}),
-            /*#__PURE__*/ jsx_runtime_.jsx(Slider["default"], {})
+            /*#__PURE__*/ jsx_runtime_.jsx(Slider["default"], {}),
+            /*#__PURE__*/ jsx_runtime_.jsx(Find["default"], {})
         ]
     });
 };

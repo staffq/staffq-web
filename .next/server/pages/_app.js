@@ -43,8 +43,22 @@ margin-top: 8%;
   padding-right: 0px;
 }
 
-h2 ,p{
+h2 {
   color: white;
+}
+p , span{
+  color: rgba(255, 255, 255, 0.8);
+  font-weight: 500;
+font-size: 17px;
+}
+.last-line{
+  font-size: 14px;
+line-height: 28px;
+/* identical to box height, or 200% */
+
+
+color: rgba(255, 255, 255, 0.6);
+
 }
 .footerlast{
   display: flex;
@@ -370,9 +384,10 @@ const Footer = ()=>{
                                             style: {
                                                 fontSize: "14px"
                                             },
+                                            className: "last-line",
                                             children: [
                                                 " ",
-                                                "@StaffQ Consultancy Pvt. Ltd - All rights reserved"
+                                                "@StaffQ Consultancy Pvt. Ltd - All rights reserved 14-11-22 (5pm)"
                                             ]
                                         })
                                     }),
@@ -380,7 +395,7 @@ const Footer = ()=>{
                                         className: "Foter",
                                         children: [
                                             /*#__PURE__*/ jsx_runtime_.jsx("p", {
-                                                className: "terms ",
+                                                className: "terms last-line ",
                                                 style: {
                                                     fontSize: "14px"
                                                 },
@@ -390,6 +405,7 @@ const Footer = ()=>{
                                                 style: {
                                                     fontSize: "14px"
                                                 },
+                                                className: "last-line",
                                                 children: "Privacy policy"
                                             })
                                         ]
@@ -581,7 +597,7 @@ const Footer = ()=>{
                                 },
                                 children: [
                                     " ",
-                                    "@ StaffQ. All rights reserved"
+                                    "@ StaffQ. All rights reserved 14-11-22 (5pm)"
                                 ]
                             }),
                             /*#__PURE__*/ (0,jsx_runtime_.jsxs)("div", {
@@ -665,6 +681,11 @@ const Div = (external_styled_components_default()).div`
   .navbar-brand{
     padding-left: 0px;
   
+  }
+}
+@media (min-width:990px) and (max-width:1080px){
+  .navbar-nav{
+    padding-right: 4rem;
   }
 }
 
@@ -923,7 +944,7 @@ const Header = ()=>{
                                         className: "nav-item active",
                                         children: /*#__PURE__*/ jsx_runtime_.jsx(Hover, {
                                             children: /*#__PURE__*/ jsx_runtime_.jsx((link_default()), {
-                                                href: "/find-jobs",
+                                                href: "/findJobPage",
                                                 children: /*#__PURE__*/ jsx_runtime_.jsx("p", {
                                                     className: "mb-0",
                                                     children: "Find jobs"
@@ -934,9 +955,12 @@ const Header = ()=>{
                                     /*#__PURE__*/ jsx_runtime_.jsx("li", {
                                         className: "nav-item active",
                                         children: /*#__PURE__*/ jsx_runtime_.jsx(Hover, {
-                                            children: /*#__PURE__*/ jsx_runtime_.jsx("p", {
-                                                className: "mb-0",
-                                                children: "About us"
+                                            children: /*#__PURE__*/ jsx_runtime_.jsx((link_default()), {
+                                                href: "aboutPage",
+                                                children: /*#__PURE__*/ jsx_runtime_.jsx("p", {
+                                                    className: "mb-0",
+                                                    children: "About us"
+                                                })
                                             })
                                         })
                                     }),

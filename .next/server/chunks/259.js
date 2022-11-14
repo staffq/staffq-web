@@ -220,8 +220,6 @@ const Smbox = (external_styled_components_default()).div`
 var external_react_slick_ = __webpack_require__(8096);
 var external_react_slick_default = /*#__PURE__*/__webpack_require__.n(external_react_slick_);
 ;// CONCATENATED MODULE: ./src/pages/HomePage/Slider/index.jsx
-Object(function webpackMissingModule() { var e = new Error("Cannot find module 'slick-carousel/slick/slick.css'"); e.code = 'MODULE_NOT_FOUND'; throw e; }());
-Object(function webpackMissingModule() { var e = new Error("Cannot find module 'slick-carousel/slick/slick-theme.css'"); e.code = 'MODULE_NOT_FOUND'; throw e; }());
 
 
 // import styles from './slider.module.css'
