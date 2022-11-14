@@ -3,7 +3,8 @@ import Image from "next/image";
 
 import styles from "../styles/Home.module.css";
 
-//home page
+//home page - ss
+
 export default function Home() {
   return (
     <div className={styles.container}>
