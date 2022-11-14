@@ -37,15 +37,15 @@ const contact = () => {
                     <div className="col-lg-1"></div>
                     <div className="col-lg-5 col-md-12 col-sm-12">
                       <div></div>
-                      <div class="form-group ">
+                      <div className="form-group ">
                         <label for="exampleInputPassword1">Name*</label>
                         <Input placeholder="Name" />
                       </div>
-                      <div class="form-group ">
+                      <div className="form-group ">
                         <label for="exampleInputPassword1">Phone*</label>
                         <Input placeholder="98765-43210" />
                       </div>
-                      <div class="form-group ">
+                      <div className="form-group ">
                         <label for="exampleInputPassword1">State*</label>
                         <div>
 
@@ -59,14 +59,14 @@ const contact = () => {
                     </div>
 
                     <div className="col-lg-5 col-md-12 col-sm-12">
-                      <div class="form-group ">
+                      <div className="form-group ">
                         <label for="exampleInputPassword1">
                           Email Address*
                         </label>
 
                         <Input placeholder="Eg: Johnkrisinski@email.com "  />
                       </div>
-                      <div class="form-group ">
+                      <div className="form-group ">
                         <label for="exampleInputPassword1">country*</label>
                         <div>
 
@@ -77,7 +77,7 @@ const contact = () => {
                         </select>
                         </div>
                       </div>
-                      <div class="form-group ">
+                      <div className="form-group ">
                         <label for="exampleInputPassword1">City*</label>
 
                         <Input   placeholder="Select"  />
@@ -91,11 +91,11 @@ const contact = () => {
                 <div className="justify-content-center">
                   <div className="row ">
                     <div className="col-lg-10 col-sm-12 col-sm-12">
-                      <div class="form-group ">
+                      <div className="form-group ">
                         <label for="exampleInputPassword1">
                           Your Requirement*
                         </label>
-                        <input type="textarea" class="form-control text" />
+                        <input type="textarea" className="form-control text" />
                       </div>
                     </div>
                   </div>

@@ -66,14 +66,14 @@ const Slick = () => {
           <Slider {...settings}>
             
             {/* ....................one......................... */}
-            <div class="   container one-jsx">
-              <div class="card h-100">
-                <div class="card-body text-info ">
+            <div className="   container one-jsx">
+              <div className="card h-100">
+                <div className="card-body text-info ">
                   <div className="Subheading">
                     <img src="assets/images/Subheading.svg"></img>
                   </div>
 
-                  <p class="card-text ">
+                  <p className="card-text ">
                     Lorem ipsum dolor sit amet, consectetur adipisci ngelit, sed
                     do eiusmod tempor incididunt ut lab ore et dolore magna
                     aliqua. Ut enim ad minim veniam, quis
@@ -94,14 +94,14 @@ const Slick = () => {
               </div>
             </div>
             {/* ................two.................... */}
-            <div class="col    container text-lnfo two-jsx">
-              <div class="card h-100">
-                <div class="card-body ">
+            <div className="col    container text-lnfo two-jsx">
+              <div className="card h-100">
+                <div className="card-body ">
                   <div className="Subheading">
                     <img src="assets/images/Subheading.svg"></img>
                   </div>
 
-                  <p class="card-text ">
+                  <p className="card-text ">
                     Lorem ipsum dolor sit amet, consectetur adipisci ngelit, sed
                     do eiusmod tempor incididunt ut lab ore et dolore magna
                     aliqua. Ut enim ad minim veniam, quis
@@ -123,13 +123,13 @@ const Slick = () => {
             </div>
             {/* ..................................three....................... */}
 
-            <div class="col    container text-info three-jsx">
-              <div class="card h-100">
-                <div class="card-body ">
+            <div className="col    container text-info three-jsx">
+              <div className="card h-100">
+                <div className="card-body ">
                   <div className="Subheading">
                     <img src="assets/images/Subheading.svg"></img>
                   </div>
-                  <p class="card-text ">
+                  <p className="card-text ">
                     Lorem ipsum dolor sit amet, consectetur adipisci ngelit, sed
                     do eiusmod tempor incididunt ut lab ore et dolore magna
                     aliqua. Ut enim ad minim veniam, quis
@@ -151,14 +151,14 @@ const Slick = () => {
             </div>
 
             {/* ................................?adddd...................... */}
-            <div class="col    container one-jsx">
-              <div class="card h-100">
-                <div class="card-body text-info ">
+            <div className="col    container one-jsx">
+              <div className="card h-100">
+                <div className="card-body text-info ">
                   <div className="Subheading">
                     <img src="assets/images/Subheading.svg"></img>
                   </div>
 
-                  <p class="card-text ">
+                  <p className="card-text ">
                     Lorem ipsum dolor sit amet, consectetur adipisci ngelit, sed
                     do eiusmod tempor incididunt ut lab ore et dolore magna
                     aliqua. Ut enim ad minim veniam, quis
@@ -179,14 +179,14 @@ const Slick = () => {
               </div>
             </div>
             {/* ................two..................... */}
-            <div class="col    container text-lnfo two-jsx">
-              <div class="card h-100">
-                <div class="card-body ">
+            <div className="col    container text-lnfo two-jsx">
+              <div className="card h-100">
+                <div className="card-body ">
                   <div className="Subheading">
                     <img src="assets/images/Subheading.svg"></img>
                   </div>
 
-                  <p class="card-text ">
+                  <p className="card-text ">
                     Lorem ipsum dolor sit amet, consectetur adipisci ngelit, sed
                     do eiusmod tempor incididunt ut lab ore et dolore magna
                     aliqua. Ut enim ad minim veniam, quis
@@ -208,13 +208,13 @@ const Slick = () => {
             </div>
             {/* ..................................three....................... */}
 
-            <div class="col    container text-info three-jsx">
-              <div class="card h-100">
-                <div class="card-body ">
+            <div className="col    container text-info three-jsx">
+              <div className="card h-100">
+                <div className="card-body ">
                   <div className="Subheading">
                     <img src="assets/images/Subheading.svg"></img>
                   </div>
-                  <p class="card-text ">
+                  <p className="card-text ">
                     Lorem ipsum dolor sit amet, consectetur adipisci ngelit, sed
                     do eiusmod tempor incididunt ut lab ore et dolore magna
                     aliqua. Ut enim ad minim veniam, quis
@@ -236,14 +236,14 @@ const Slick = () => {
             </div>
             {/* ........................add................. */}
 
-            <div class="col    container one-jsx">
-              <div class="card h-100">
-                <div class="card-body text-info ">
+            <div className="col    container one-jsx">
+              <div className="card h-100">
+                <div className="card-body text-info ">
                   <div className="Subheading">
                     <img src="assets/images/Subheading.svg"></img>
                   </div>
 
-                  <p class="card-text ">
+                  <p className="card-text ">
                     Lorem ipsum dolor sit amet, consectetur adipisci ngelit, sed
                     do eiusmod tempor incididunt ut lab ore et dolore magna
                     aliqua. Ut enim ad minim veniam, quis
@@ -264,14 +264,14 @@ const Slick = () => {
               </div>
             </div>
             {/* ................two..................... */}
-            <div class="col    container text-lnfo two-jsx">
-              <div class="card h-100">
-                <div class="card-body ">
+            <div className="col    container text-lnfo two-jsx">
+              <div className="card h-100">
+                <div className="card-body ">
                   <div className="Subheading">
                     <img src="assets/images/Subheading.svg"></img>
                   </div>
 
-                  <p class="card-text ">
+                  <p className="card-text ">
                     Lorem ipsum dolor sit amet, consectetur adipisci ngelit, sed
                     do eiusmod tempor incididunt ut lab ore et dolore magna
                     aliqua. Ut enim ad minim veniam, quis
@@ -293,13 +293,13 @@ const Slick = () => {
             </div>
             {/* ..................................three....................... */}
 
-            <div class="col    container text-info three-jsx">
-              <div class="card h-100">
-                <div class="card-body ">
+            <div className="col    container text-info three-jsx">
+              <div className="card h-100">
+                <div className="card-body ">
                   <div className="Subheading">
                     <img src="assets/images/Subheading.svg"></img>
                   </div>
-                  <p class="card-text ">
+                  <p className="card-text ">
                     Lorem ipsum dolor sit amet, consectetur adipisci ngelit, sed
                     do eiusmod tempor incididunt ut lab ore et dolore magna
                     aliqua. Ut enim ad minim veniam, quis

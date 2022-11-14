@@ -53,7 +53,7 @@ text-align: center;
     }
 }
 
-    .find-images-class {
+    .find-images-className {
     width: 708px;
     height: 414px;
   

@@ -62,20 +62,20 @@ const Header = () => {
 
               <li className="nav-item active">
                 <Hover>
-                <Link href="/findJobPage">
+                <Link href="/find-jobs">
                 <p className="mb-0">Find jobs</p></Link>
                 </Hover>
               </li>
               <li className="nav-item active">
                 <Hover>
-                  <Link href="/about">
+                  <Link href="/about-us">
                 <p className="mb-0">About us</p></Link>
                 </Hover>
              
               </li>
               <li className="nav-item active">
                 <Hover>
-                <Link href="contact">
+                <Link href="contact-us">
                     
                     <p className="mb-0">Contact us</p>
                   </Link>

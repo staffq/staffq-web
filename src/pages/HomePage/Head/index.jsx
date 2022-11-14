@@ -267,27 +267,27 @@ const Head = () => {
             <div>
               <div className="row">
                 <div className="col-lg-6 col-md-12 col-sm-12">
-                  <div class="form-group ">
+                  <div className="form-group ">
                     <label for="exampleInputPassword1">Name*</label>
                     <input
                       type="text"
-                      class="form-control input-filed"
+                      className="form-control input-filed"
                       placeholder="Eg: John Krisinski"
                     />
                   </div>
-                  <div class="form-group ">
+                  <div className="form-group ">
                     <label for="exampleInputPassword1">Phone*</label>
                     <input
                       type="text"
-                      class="form-control input-filed"
+                      className="form-control input-filed"
                       placeholder="98765-43210"
                     />
                   </div>
-                  <div class="form-group ">
+                  <div className="form-group ">
                     <label for="exampleInputPassword1">State*</label>
                     <input
                       type="text"
-                      class="form-control input-filed "
+                      className="form-control input-filed "
                       placeholder="Select"/>
                       
                     
@@ -298,27 +298,27 @@ const Head = () => {
                 </div>
 
                 <div className="col-lg-6 col-md-12 col-sm-12">
-                  <div class="form-group ">
+                  <div className="form-group ">
                     <label for="exampleInputPassword1">Email Address*</label>
                     <input
                       type="text"
-                      class="form-control input-filed"
+                      className="form-control input-filed"
                       placeholder="Eg: Johnkrisinski@email.com"
                     />
                   </div>
-                  <div class="form-group ">
+                  <div className="form-group ">
                     <label for="exampleInputPassword1">Country*</label>
                     <input
                       type="text"
-                      class="form-control input-filed"
+                      className="form-control input-filed"
                       placeholder="Select"
                     />
                   </div>
-                  <div class="form-group ">
+                  <div className="form-group ">
                     <label for="exampleInputPassword1">City*</label>
                     <input
                       type="text"
-                      class="form-control input-filed"
+                      className="form-control input-filed"
                       placeholder="city"
                     />
                   </div>
@@ -329,11 +329,11 @@ const Head = () => {
 
               <div className="row">
                 <div className="col-lg-12 col-sm-12 col-sm-12">
-                  <div class="form-group ">
+                  <div className="form-group ">
                     <label for="exampleInputPassword1">Your Requirement*</label>
                     <input
                       type="textarea"
-                      class="form-control text"
+                      className="form-control text"
                       placeholder="city"
                     />
                   </div>

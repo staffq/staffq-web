@@ -631,28 +631,28 @@ const ParamanentDeployment = () => {
               </div>
               <div className="form container">
                 <form>
-                  <div class="form-group mt-2">
+                  <div className="form-group mt-2">
                     <label for="exampleInputEmail1">Name</label>
                     <br></br>
                     <input
                       type="text"
-                      class="form-control"
+                      className="form-control"
                       id="exampleInputEmail1"
                       aria-describedby="emailHelp"
                     />
                   </div>
-                  <div class="form-group ">
+                  <div className="form-group ">
                     <label for="exampleInputEmail1">Phone Number</label>
                     <input
                       type="text"
-                      class="form-control"
+                      className="form-control"
                       id="exampleInputEmail1"
                       aria-describedby="emailHelp"
                     />
                   </div>
-                  <div class="form-group ">
+                  <div className="form-group ">
                     <label for="exampleInputPassword1">Email Address*</label>
-                    <input type="text" class="form-control" />
+                    <input type="text" className="form-control" />
                   </div>
                   <div className="d-flex justify-content-end">
                     <button className="submited">Submit</button>
