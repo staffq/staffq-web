@@ -1,5 +1,5 @@
 /*
-  Configurations for different runtime
+  Configurations for different environment
 */
 const config = {
     production: {
