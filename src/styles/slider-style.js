@@ -94,13 +94,15 @@ export const SlickBG = styled.div`
     padding: 51px;
   }
   @media (min-width: 250px) and (max-width: 768px) {
-    .one-jsx {
-      margin-left: 0px;
-    }
-    .two-jsx {
-      margin-left: 0px;
-    }
+   display: none;
+   .small-slider{
+  display: block;
+}
   }
+.small-slider{
+  display: none;
+}
+
 `;
 export const Box = styled.div`
   @media (min-width: 250px) and (max-width: 768px) {

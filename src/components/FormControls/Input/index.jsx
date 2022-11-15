@@ -17,6 +17,7 @@ const Input = ({
   width,
   height,
   padding,
+  icon,
   ...others
 }) => {
   return (
@@ -35,10 +36,10 @@ const Input = ({
         padding={padding}
         {...others}
       />
-
-      <Icon>
+{icon? <Icon>
         <FiSearch style={{ width: "18px", height: "18px" }} />
-      </Icon>
+      </Icon>:null}
+      
     </div>
   );
 };

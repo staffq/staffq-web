@@ -191,7 +191,7 @@ export const BannerPage = styled.div `
  @media (min-width: 250px) and (max-width: 768px)  {
   display: none;
  }
- @media (min-width: 1025px) and (max-width: 1400px) 
+ @media (min-width: 1025px) and (max-width: 1490px) 
 {
 display: none;
 }
@@ -232,7 +232,7 @@ color: #FFFFFF;
   }
   h1{
     font-style: normal;
-font-weight: 600;
+font-weight: 700;
 font-size: 34px;
 line-height: 46px;
 
@@ -294,7 +294,7 @@ margin-top: 7rem;
 }
 h1{
   font-style: normal;
-font-weight: 600;
+font-weight: 700;
 font-size: 44px;
 line-height: 66px;
 color: #050c18;
@@ -307,7 +307,7 @@ line-height: 22px;
 color: rgba(8, 20, 41, 0.6);
 margin-top: 30px;
 }
-@media (min-width: 1025px) and (max-width: 1400px) 
+@media (min-width: 1025px) and (max-width: 1490px) 
    {
 display: block;
 

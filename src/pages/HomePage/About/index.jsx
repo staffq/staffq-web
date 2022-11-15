@@ -18,7 +18,7 @@ const About = () => {
         </div>
         <div className="container">
           <div className="row mt-5">
-            <div className="col-lg-5 col-md-12 col-sm-12">
+            <div className="col-lg-5 col-md-12 col-sm-12 medium-one">
                 <div className="aboutImage">
                 <img src="assets/images/Rectangle.svg" width='100%'/>
                 </div>
@@ -27,7 +27,7 @@ const About = () => {
               
         
             </div>
-            <div className="col-lg-7 col-md-12 col-sm-12 fs-5 ">
+            <div className="col-lg-7 col-md-12 col-sm-12 fs-5  medium-two">
                 <div>
                 <p className="AboutPtext">
                   StaffQ Consultancy Private Limited is a trusted HR Service

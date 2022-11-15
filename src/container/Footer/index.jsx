@@ -112,7 +112,7 @@ const Footer = () => {
               <div>
                 <p style={{ fontSize: "14px" }} className = "last-line">
                   {" "}
-                  @StaffQ Consultancy Pvt. Ltd - All rights reserved 14-11-22 (5pm)
+                  @StaffQ Consultancy Pvt. Ltd - All rights reserved 15-11-22 (3pm)
                   
                 </p>
               </div>

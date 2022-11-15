@@ -2,6 +2,8 @@ import styled from "styled-components";
 
 
 export const AboutBg = styled.div`
+@media (min-width:250px) and (max-width:400px){
+}
 
 @media (min-width:769px) and (max-width:1200px){
     display: none;
@@ -27,8 +29,8 @@ font-size:18px;
 background: #081429;
 border-radius: 16px;
 }
-@media (min-width:375px) and (max-width:768px){
-    height: 75rem;
+@media (min-width:350px) and (max-width:768px){
+    height: 80rem;
     .aboutImage{
    
     }
@@ -36,6 +38,7 @@ border-radius: 16px;
         margin: 0 auto;
         display: flex;
         text-align: center;
+        margin-top: 2rem;
         /* margin-left: 98px; */
     }
     .about{
@@ -75,6 +78,25 @@ align-items: center;
     letter-spacing: 0em;
     text-align: left;
     
+}
+@media (min-width:1200px) and (max-width:1400px){
+     .AboutPtext{
+        font-size: 16px; 
+  
+        
+    line-height: 32px;
+    
+  
+     }
+    
+
+.medium-one{
+    width: 50%;
+}
+.medium-two{
+    width: 50%;
+
+}
 }
 .Aboutsecond{
     margin-top: 10%;
@@ -120,7 +142,7 @@ align-items: center;
        
     }
     @media (min-width:300px) and (max-width:400px){
-        height: 79rem;
+      
     /* .aboutbtn{
         margin-left: 80px;
     } */
@@ -131,7 +153,7 @@ align-items: center;
 }
     }
     @media (min-width:500px) and (max-width:600px){
-        height: 71rem;
+        
         /* .aboutbtn{
         margin-left: 140px;
     } */
@@ -145,7 +167,7 @@ display: none;
     display: inline-block;
     background: #FEFBE9;
 width:100%;
-height: 70rem;
+
 margin-top: 10%;
 
 padding: 0px !important;

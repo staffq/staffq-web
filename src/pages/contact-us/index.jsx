@@ -28,7 +28,7 @@ const contact = () => {
           <Form>
             <div>
               <div className="container">
-                <div className="text-center">
+                <div className="text-center mt-5">
                   <h4>Let’s Talk</h4>
                   <p>FIll out this form and we’ll get back to you.</p>
                 </div>
@@ -39,11 +39,12 @@ const contact = () => {
                       <div></div>
                       <div className="form-group ">
                         <label for="exampleInputPassword1">Name*</label>
-                        <Input placeholder="Name" />
+                        <Input placeholder="Name"  />
                       </div>
                       <div className="form-group ">
                         <label for="exampleInputPassword1">Phone*</label>
-                        <Input placeholder="98765-43210" />
+                        <Input placeholder="98765-43210"  />
+                        
                       </div>
                       <div className="form-group ">
                         <label for="exampleInputPassword1">State*</label>
@@ -52,8 +53,8 @@ const contact = () => {
                        
                         <select className="input-option">
                           <option value="">State</option>
-                          <option value="">one</option>
-                          <option value="">one</option>
+                          <option value="">TamilNadu</option>
+                          <option value="">Kerala</option>
                         </select> </div>
                       </div>
                     </div>
@@ -72,24 +73,26 @@ const contact = () => {
 
                         <select className="input-option ">
                           <option value="country*">Country</option>
-                          <option value="">one</option>
-                          <option value="">one</option>
+                          <option value="">India</option>
+                          <option value="">US</option>
                         </select>
                         </div>
                       </div>
                       <div className="form-group ">
                         <label for="exampleInputPassword1">City*</label>
 
-                        <Input   placeholder="Select"  />
+                        <Input   placeholder="City"  />
                       </div>
                     </div>
                     <div className="col-lg-1"></div>
                   </div>
                 </div>
+              
 
                 {/* ...............................text--filed.................. */}
-                <div className="justify-content-center">
+                  <div className="">
                   <div className="row ">
+                    <div className="col-lg-1"></div>
                     <div className="col-lg-10 col-sm-12 col-sm-12">
                       <div className="form-group ">
                         <label for="exampleInputPassword1">
@@ -98,11 +101,13 @@ const contact = () => {
                         <input type="textarea" className="form-control text" />
                       </div>
                     </div>
+                    <div className="col-lg-1"></div>
                   </div>
                   <div className="submit-btn">
                     <button className="btn button-submit  ">Submit</button>
                   </div>
                 </div>
+            
               </div>
             </div>
           </Form>
@@ -160,7 +165,7 @@ const contact = () => {
                     <div className="display">
                       <div>
                         <img
-                          src="assets/images/map.svg"
+                          src="assets/images/canada-img.svg"
                           className="map-image"
                         />
                       </div>
@@ -203,7 +208,7 @@ const contact = () => {
                     <div className="display">
                       <div>
                         <img
-                          src="assets/images/map.svg"
+                          src="assets/images/unitedd-img.svg"
                           className="map-image"
                         />
                       </div>

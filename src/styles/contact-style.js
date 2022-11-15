@@ -1,13 +1,13 @@
 import styled from "styled-components";
 
 export const ContacttStyle = styled.div`
-  padding-top: 1%;
+  padding-top: 5px;
 
 `;
 // .................form..................................
 
 export const Form = styled.div`
-padding-top: 2rem;
+padding-top: 1px;
 padding-bottom: 2rem;
 background: #F6F6F5;
   .input-filed {
@@ -24,12 +24,22 @@ background: #F6F6F5;
     margin: 0 auto;
     border-radius: 12px;
   background: #ffffff;
-  width: 33vw;
+  width: 34vw;
   height: 56px;
   margin-bottom: 20px;
   box-shadow: 0px 4px 16px rgba(8, 20, 41, 0.08);
   border: 1px solid rgba(8, 20, 41, 0.1);
 
+  }
+  @media(min-width:250px) and (max-width:768px){
+    .input-option{
+      width: 59vw;
+    }
+  }
+  @media(min-width:769px) and (max-width:990px){
+    .input-option{
+      width: 70vw;
+    }
   }
   label {
     margin-bottom: 12px;
@@ -155,6 +165,12 @@ export const Second = styled.div`
     font-weight: 400;
     line-height: 31px;
     color: rgba(5,12,24,0.7);
+  }
+  h5{
+font-size: 32px;
+  }
+  h6{
+font-size: 24px;
   }
   /* .pc-contact{
     @media (min-width:250px) and (max-width:600px){

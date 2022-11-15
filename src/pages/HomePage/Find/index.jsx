@@ -74,7 +74,7 @@ const Find = () => {
                     aliqua.{" "}
                   </p>
                 </div>
-                <button className="mt-3 upload  Smallbox">
+                <button className="mt-3 upload  Smallbox  ">
                     <img
                       src="assets/images/directbox-send.svg"
                       className="Directbox"

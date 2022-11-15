@@ -4,12 +4,38 @@ export const Findjobs = styled.div`
 background: #EFCE1E;
 border-radius: 30px;
 
-@media (min-width:250px) and (max-width:768px){
+@media (min-width:250px) and (max-width:990px){
     display: none;
 }
-@media (min-width:769px) and (max-width:1200px){
+/* @media (min-width:769px) and (max-width:1200px){
     display: none;
+} */
+@media (min-width:1200px) and (max-width:1400px){
+    .FindText{
+    margin: 1rem;
+    
 }
+.find-images-class{
+    margin-top: 1rem;
+
+}
+}
+@media (min-width:990px) and (max-width:1200px){
+    .FindText{
+    margin: 1rem;
+    
+}
+.find-images-class{
+width: 528px;
+
+}
+.find-p-tag{
+    font-weight: 500;
+    font-size: 14px;
+}
+}
+
+
 .FindText{
     margin-top: 5%;
     
@@ -167,7 +193,7 @@ color: #FFFFFF;
         margin-top: 50px;
     }
 }
-@media (min-width:769px) and (max-width:1200px){
+@media (min-width:769px) and (max-width:900px){
     display: block;
     background: #EFCE1E;
 
@@ -237,8 +263,7 @@ color: #FFFFFF;}
     .top{
         margin-left: 4rem;
     }
-        .Smallbox{
-        margin-left: 13rem;}
+      
     
     /* .Smallsctext{
         margin-left: 4rem;
