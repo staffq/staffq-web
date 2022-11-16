@@ -4,7 +4,6 @@ import {
   Header,
   SmallHeader,
   AboutSection,
-
 } from "../../styles/aboutPage-style";
 
 const AboutPage = () => {
@@ -22,52 +21,50 @@ const AboutPage = () => {
                       className="ball-image"
                       width="100%"
                     />
-                
+
                     <div className="ball-one-page">
-                     
-                    <img src="assets/images/single-ball.svg" />
-                        
-                       <h5> Join the team that’s </h5>
-                       <br></br>
-                        <span>
-                        making the world work 
-                        </span>
-                        
-                        
-                      <img src="assets/images/single-ball.svg" />
+                      <img
+                        src="assets/images/single-ball.svg"
+                        className="single"
+                      />
+
+                      <h5> Join the team that’s <br></br>
+
+                      making the world work <br></br>
+                      better for everyone </h5>
+
+                      <img
+                        src="assets/images/single-ball.svg"
+                        className="second-ball"
+                      />
                       <br></br>
-                        <span>better for everyone </span>
-                   
+                     
+
                       <p>
                         Lorem ipsum dolor sit amet, consectetur adipiscing elit,
                         sed do eiusmod tempor incididunt ut labore et dolore
                         magna aliqua.
                       </p>
-                      <div>
-                        
-                      <img src="assets/images/single-ball.svg" />
-
-                      </div>
+                      <img
+                        src="assets/images/single-ball.svg"
+                        className="third-ball"
+                      />
                     </div>
                   </div>
-                 
+
                   <div className="col-lg-6 col-sm-12 col-md-6">
                     <div>
                       <div className="image-section">
-                        
-                            <img
-                              src="assets/images/about-Banner-image.svg "
-                              width="100%"
-                              className="banner-image"
-                            ></img>
-                          
-                        
+                        <img
+                          src="assets/images/about-Banner-image.svg "
+                          width="100%"
+                          className="banner-image"
+                        ></img>
                       </div>
                     </div>
                   </div>
-                  </div>
                 </div>
-              
+              </div>
             </div>
           </div>
         </Header>
@@ -95,10 +92,6 @@ const AboutPage = () => {
           </div>
         </SmallHeader>
 
-
-
-
-
         <div className="container FIRST">
           <div className="row">
             <div className="col-lg-6 col-sm-12">
@@ -125,7 +118,7 @@ const AboutPage = () => {
                 <div className="second-page-h1">
                   <div className="d-flex">
                     <img src="assets/images/line.svg" />
-                    <h3 className="our-head">Our Vission</h3>
+                    <h3 className="our-head">Our Vision</h3>
                   </div>
                   <p className="mission-p-tag">
                     Our vision is to establish a long-term and strategic
@@ -143,7 +136,7 @@ const AboutPage = () => {
         <div>
           <div className="container text-center mt-5">
             <h4 className="Our-Strategy">Our Strategy</h4>
-            <p>
+            <p className="Lorem">
               Lorem ipsum dolor sit amet, consectetur adipiscingelit, sed do
               eiusmod tempor incididunt ut labore et <br></br>
               dolore magna aliqua. Ut enim ad minim veniam, quis
@@ -157,7 +150,10 @@ const AboutPage = () => {
               <div className="img-page-one">
                 <div className="section-one">
                   <div className=" first-row">
-                    <img src="assets/images/img-page-one.svg" />
+                    <img
+                      src="assets/images/img-page-one.svg"
+                      className="img-one-one"
+                    />
 
                     <h3 className="discover-h-three">1. Discover</h3>
                     <p className="discover-p-tag">
@@ -177,7 +173,10 @@ const AboutPage = () => {
               <div className="img-page-one mt-3">
                 <div className="section-one">
                   <div className="first-row">
-                    <img src="assets/images/Evaluate.svg" />
+                    <img
+                      src="assets/images/Evaluate.svg"
+                      className="img-one-one"
+                    />
                     <h3 className="discover-h-three">3. Evaluate</h3>
                     <p className="discover-p-tag">
                       Lorem ipsum dolor sit amet, consectetur adipiscingelit,
@@ -204,7 +203,10 @@ const AboutPage = () => {
             <div className="col-lg-6 col-sm-12 col-md-12 ">
               <div className="section-two  ">
                 <div className="container  ">
-                  <img src="assets/images/Ball-one.svg" className="row-second-ball"></img>
+                  <img
+                    src="assets/images/Ball-one.svg"
+                    className="row-second-ball"
+                  ></img>
                 </div>
                 <div className="content-one margin-section">
                   <div className="content-two">
@@ -331,7 +333,7 @@ const AboutPage = () => {
                 src="assets/images/undec-code-line.svg"
               />
             </div>
-            <p>
+            <p className="join-p-tag">
               Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
               <br></br>
               do eiusmod tempor incididunt ut labore et dolore magna aliqua.

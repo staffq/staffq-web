@@ -1,4 +1,5 @@
 import React from "react";
+import Link from "next/link";
 
 import { AboutBg , Medium } from "../../../styles/about-style";
 
@@ -9,7 +10,7 @@ const About = () => {
       <div className="container-fluid">
         <div className="About-section">
           <h2 className="">Why People Choose StaffQ?</h2>
-          <p>
+          <p className="about-p-tag">
             {" "}
             We have found that the best way to get them is with up front
             research – of your company, competitors,<br></br> target market and
@@ -46,8 +47,11 @@ const About = () => {
                   expertise in providing a gamut of services to business
                   organizations for their increasing demands.
                 </p>
-                
+                <Link href="/about-us">
                 <button className="aboutbtn"><span className="about">About Us</span></button>
+                    
+                  </Link>
+          
                 </div>
                 
       

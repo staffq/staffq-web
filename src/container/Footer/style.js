@@ -3,9 +3,12 @@ import styled from "styled-components";
 
 
 export const Foot = styled.div`
-cursor: pointer;
+
 background: #050C18;
 margin-top: 8%;
+.cursor-pointer{
+  cursor: pointer;
+}
 @media (min-width:1000px) and (max-width:1200px){
   .towers{
     margin-left: 33px;
@@ -50,6 +53,7 @@ flex-direction: row;
 }
 .logo-footer{
 width: 176px;
+cursor: pointer;
 }
 .infostaffq{
   padding-left: 20px;

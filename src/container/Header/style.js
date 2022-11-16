@@ -2,8 +2,7 @@
 import styled from "styled-components";
 
 export const Div = styled.div`
-  
-  p{
+  p {
     font-size: 16px;
     font-weight: bold;
   }
@@ -19,51 +18,45 @@ export const Div = styled.div`
     padding-right: 50px;
     margin-bottom: 20px;
     z-index: 100;
-    border-bottom: 1px solid rgba(8, 20, 41, 0.1)
+    border-bottom: 1px solid rgba(8, 20, 41, 0.1);
   }
-  .ul{
+  .ul {
     padding-right: 75px;
   }
   .nav-link {
     padding-top: 0px;
     padding-bottom: 0px;
-    /* font-weight: 300; */
-    
-   
-    /* color: #473b4a !important; */
   }
   .navbar-nav {
     display: flex;
     align-items: center;
     padding-left: 70px;
   }
-  .navbar-brand{
+  .navbar-brand {
     padding-left: 60px;
-  
   }
   .nav-item:nth-child(6) {
     padding-right: 20px;
     border-right: 1px solid #a49ea5;
   }
-  @media (min-width: 1000px) and (max-width:1030px) {
-  .navbar .collapse{
-    justify-content: space-around;
-    z-index: 999;
+  @media (min-width: 1000px) and (max-width: 1030px) {
+    .navbar .collapse {
+      justify-content: space-around;
+      z-index: 999;
+    }
+    .navbar-brand {
+      padding-left: 0px;
+    }
   }
-  .navbar-brand{
-    padding-left: 0px;
-  
+  @media (min-width: 990px) and (max-width: 1080px) {
+    .navbar-nav {
+      padding-right: 4rem;
+    }
   }
-}
-@media (min-width:990px) and (max-width:1080px){
-  .navbar-nav{
-    padding-right: 4rem;
-  }
-}
-
 `;
 export const Img = styled.div`
-padding-left:79px;`
+  padding-left: 79px;
+`;
 export const Button = styled.button`
   display: flex;
   flex-direction: row;
@@ -77,7 +70,6 @@ export const Button = styled.button`
   border: none;
   color: #ffffff;
   font-weight: 600;
-
 `;
 export const Hover = styled.a`
   position: relative;
@@ -87,25 +79,23 @@ export const Hover = styled.a`
   font-weight: 400;
   cursor: pointer;
   &:after {
-    content: '';
-  position: absolute;
-  width: 100%;
-  height: 2px;
-  bottom: 0;
-  left: 0;
-  background-color: black;
-  transform-origin: bottom right;
-  transition: transform 0.25s ease-out;
-  transform: scaleX(0);
-  
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: black;
+    transform-origin: bottom right;
+    transition: transform 0.25s ease-out;
+    transform: scaleX(0);
   }
-  &:hover:after{
+  &:hover:after {
     transform-origin: bottom left;
     transform: scaleX(1);
-   
   }
-  `
-  
+`;
+
 // export const Navbar = styled.nav`
 //   width: 100%;
 //   padding-right: 0.75rem;

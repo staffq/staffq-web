@@ -45,41 +45,39 @@ const Header = () => {
           </button>
           <div className="collapse navbar-collapse" id="navbarTogglerDemo01">
             <Link href="/">
-            <a className="navbar-brand" >
-              <img src="assets/images/shopqLogo.svg" />
-            </a>
+              <a className="navbar-brand">
+                <img src="assets/images/shopqLogo.svg" />
+              </a>
             </Link>
             <ul className="navbar-nav mr-auto mt-2  mt-lg-0">
               <li className="nav-item active">
                 <Hover>
                   <Link href="#">
-                    
                     <p className="mb-0">Service</p>
                   </Link>
-                  
                 </Hover>
               </li>
 
               <li className="nav-item active">
                 <Hover>
-                <Link href="/find-jobs">
-                <p className="mb-0">Find jobs</p></Link>
+                  <Link href="/find-jobs">
+                    <p className="mb-0">Find Jobs</p>
+                  </Link>
                 </Hover>
               </li>
               <li className="nav-item active">
                 <Hover>
                   <Link href="/about-us">
-                <p className="mb-0">About us</p></Link>
+                    <p className="mb-0">About Us</p>
+                  </Link>
                 </Hover>
-             
               </li>
               <li className="nav-item active">
                 <Hover>
-                <Link href="contact-us">
-                    
+                  <Link href="contact-us">
                     <p className="mb-0">Contact us</p>
                   </Link>
-                  </Hover>
+                </Hover>
               </li>
             </ul>
           </div>

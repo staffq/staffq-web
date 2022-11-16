@@ -30,6 +30,18 @@ export const Div = styled.div`
 
     color: #081429;
   }
+  .mission-p-tag{
+    font-size: 16px;
+    font-weight: 500;
+   color: #08142999;
+
+
+  }
+  .Lorem{
+    font-size: 16px;
+    font-weight: 500;
+   color: #08142999;
+  }
   .content-one {
     width: 595px;
     height: 500px;
@@ -123,7 +135,7 @@ color: #081429;
     position: relative;
     /* top: 232rem; */
     z-index: 99;
-    bottom: 377px;
+    bottom: 358px;
 }
   
   .background-wave-image{
@@ -151,6 +163,11 @@ max-height: 53vh;
 .small-join-section{
   display: none;
 
+  .join-p-tag{
+  font-size: 23px;
+    font-weight: 400;
+    line-height: 33px;
+}
 }
 @media (min-width:500px) and (max-width:1070px){
   .maxium{
@@ -160,6 +177,7 @@ display: none;
   display: block;
 
 }
+
   .small-logo-section{
   display: flex;
   flex-direction: row;
@@ -202,33 +220,140 @@ text-align: center;
 .small-logo-section{
   margin-top: 2rem;
 }
+
 }
 
 
 
 
 /* .....................................our vision and our mission..media query: ..................... */
-@media (min-width:990px) and (max-width:1440px){
+@media (min-width:990px) and (max-width:1350px){
   .second-content{
-    margin-left: 7rem;
+  
     margin-top: 1rem;
   }
   .mission-p-tag{
     font-size: 16px;
+    width: 145%;
 
   }
   .our-head{
     font-size: 25px;
   }
-}
-@media (min-width:250px) and (max-width:600px){
-  .second-content{
-    margin-left: 2rem;
-    margin-top: 1rem;
+
+
+  /* ...............................our state: .;.......................... */
+  .section-one{
+    width: 452px;
+    padding-top: 37px;
+    padding: 7px;
+    height: 635px;
+    border-radius: 20px;
+    margin-left: 3rem;
+    background: #f6f6f5;
   }
- 
+  .content-one {
+    width: 500px;
+    margin-left: 2rem;
+    padding: 16px;
+    border-radius: 20px;
+    background: #f6f6f5;
+    padding-top: 37px;
   
+  }
+  .img-one-one{
+    width: 92%;
+    padding-top: 2rem;
+  }
+
 }
+/* ....................small screen: .;.......................... */
+@media (min-width:500px) and (max-width:768px){
+
+  .section-one{
+    width: 486px;
+    padding-top: 37px;
+    padding: 7px;
+   
+    border-radius: 20px;
+    /* margin-left: 3rem; */
+    background: #f6f6f5;
+  }
+  .content-one {
+    width: 486px;
+    /* margin-left: 2rem; */
+    padding: 16px;
+    border-radius: 20px;
+    background: #f6f6f5;
+    padding-top: 37px;
+  
+  }
+  .img-one-one{
+    width: 92%;
+    padding-top: 2rem;
+  }
+}
+
+
+
+@media (min-width:250px) and (max-width:500px){
+  
+  .section-one{
+    width: 100%;
+    height: 173vh;
+    padding-top: 37px;
+    padding: 7px;
+   
+    border-radius: 20px;
+    /* margin-left: 3rem; */
+    background: #f6f6f5;
+  }
+  .content-one {
+    width: 100%;
+    height: 173vh;
+    /* max-height: 267vh; */
+    padding: 16px;
+    border-radius: 20px;
+    background: #f6f6f5;
+    padding-top: 37px;
+}
+  
+  
+  .img-page-two{
+    padding-left: 4px;
+  }
+  .img-one-one{
+    width: 92%;
+    padding-top: 2rem;
+  }
+}
+
+@media (min-width:1200px) and (max-width:1400px){
+  .section-one{
+    width: 516px;
+    padding-top: 37px;
+    padding: 7px;
+    height: 635px;
+    border-radius: 20px;
+    /* margin-left: 3rem; */
+    background: #f6f6f5;
+  }
+  .content-one {
+    width: 544px;
+    /* margin-left: 2rem; */
+    padding: 16px;
+    border-radius: 20px;
+    background: #f6f6f5;
+    padding-top: 37px;
+  
+  }
+  .img-one-one{
+    width: 92%;
+    padding-top: 2rem;
+  }
+}
+  
+  
 
 
 
@@ -250,15 +375,36 @@ export const Header = styled.div`
   top: 98px;
   position: relative;
 
-  background: #efce1e;
-  
 
-  span , h5 {
+ 
+  
+.header{
+  
+  background: #efce1e;
+  overflow: hidden;
+    max-height: 180vh;
+
+}
+.third-ball{
+  margin-left: 8rem;
+    position: absolute;
+    /* top: 43rem; */
+    bottom: 3rem;
+}
+.second-ball{
+  position: absolute;
+    bottom: 15rem;
+ 
+    margin-left: 36rem;
+    width: 7%;
+
+}
+   h5 {
    
     font-style: normal;
     font-weight: 600;
-    font-size: 62px;
-    line-height: 81px;
+    font-size: 60px;
+    line-height: 70px;
     /* identical to box height */
 
     color: #081429;
@@ -271,15 +417,15 @@ export const Header = styled.div`
     font-weight: 500;
     font-size: 18px;
     line-height: 34px;
-    margin-top: 23px;
+    margin-top: 3px;
     /* or 170% */
 
     color: rgba(8, 20, 41, 0.6);
   }
   .ball-one-page {
     position: absolute;
-    top: 10rem;
-    margin-left: 5rem;
+    top: 6rem;
+    margin-left: 7rem;
   }
   .banner-image {
   width: 100%;
@@ -288,17 +434,38 @@ export const Header = styled.div`
    
   }
   .ball-image{
-    margin-left: 5rem;
-    width: 88%;
+    margin-left: 9rem;
+    width: 50%;
   }
-  .header{
-    overflow: hidden;
-  }
+  
+  
 
   
   /* @media (min-width: 769px) and (max-width: 1300px) {
     display: none;
   } */
+
+  @media (min-width: 1025px) and (max-width: 1400px) {
+    .header{
+ 
+  background: #efce1e;
+
+}
+.single , .second-ball , .third-ball{
+  display: none;
+}
+span , h5 {
+   
+  
+   font-size: 47px;
+   line-height: 60px;
+   margin-left: 4rem;
+  
+ }
+ p{
+  margin-left: 4rem;
+ }
+  }
   @media (min-width: 250px) and (max-width: 1024px) {
     display: none;
     .header {
@@ -315,9 +482,10 @@ export const Header = styled.div`
     }
   }
   @media (min-width: 1025px) and (max-width: 1400px) {
-    .header{
-      height: 135vh;
-    }
+  .header{
+    max-height: 132vh;
+  }
+   
     .little {
       display: none;
     }
@@ -325,14 +493,13 @@ export const Header = styled.div`
       display: none;
     }
     .banner-image {
-  width: 100%;
-    margin-top: 0px;
-    
+      max-width: 560px;
+    margin-left: 6rem;
   }
   .ball-one-page {
   
-    top: 1rem;
-    margin-left: 20px;
+    top: 4rem;
+    margin-left: 53px;
   }
   }
 `;
@@ -420,7 +587,7 @@ align-items: center;
   
 }
 @media (min-width:769px) and (max-width:1000px){
-    height: 50rem;
+  
   
     .AboutPtext{
     font-size: 18px;

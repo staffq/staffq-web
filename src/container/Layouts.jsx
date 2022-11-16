@@ -12,9 +12,7 @@ import { store } from "../redux/store";
 export default function Layouts({ children }) {
   return (
     <Provider store={store}>
-      
       <Header />
-      
       {children}
       <Footer />
     </Provider>

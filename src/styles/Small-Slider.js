@@ -5,7 +5,7 @@ export const Small = styled.div`
 
   width: 100%;
   overflow: hidden;
-  height: 65rem;
+
   
   position: relative;
   margin-top: 2rem;
@@ -80,7 +80,8 @@ export const Small = styled.div`
   }
   .onee-small-jsx{
   width: 88%;
-  margin-top: 42px;
+  margin-top: 41px;
+
   }
   .two-jsx {
     margin-left: 5px;

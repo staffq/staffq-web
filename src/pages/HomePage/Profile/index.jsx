@@ -6,7 +6,7 @@ const Profile = () => {
     <>
       <ProfileJs>
         <div className="container">
-          <div className="text-center">
+          <div className="text-center mt-5">
             <h2>How It Works</h2>
             <p>
               We seek to help a job seeker find a job, and find a qualified
@@ -95,6 +95,23 @@ const Profile = () => {
                       </div>
                     </div>
                   </div>
+                  <div className="three" id="sm-back">
+                    <img
+                      src="assets/images/Language-img.svg"
+                      className="img-one"
+                    ></img>
+                    <div className="four">
+                      <h5 className="ProfileScreening">Language Proficiency</h5>
+
+                      <p>
+                        We review tons of applications against our minimum
+                        criteria,
+                        <br></br>
+                        their professional journey,and holistic background
+                        checks.
+                      </p>
+                    </div>
+                  </div>
 
                   <div className="dis-play border-one wave-three">
                     <div className="two twwo">
@@ -118,7 +135,26 @@ const Profile = () => {
                       ></img>
                     </div>
                   </div>
+                  <div className="two twwo " id="sm-back">
+                    <div className="one">
+                      <h5
+                        className="ProfileScreening"
+                        style={{ marginLeft: "9rem" }}
+                      >
+                        Aptitude Evaluation
+                      </h5>
 
+                      <p>
+                        We conduct a scientifically designed aptitude test{" "}
+                        <br></br>
+                        to check their reasoning and problem-solving ability.
+                      </p>
+                    </div>
+                    <img
+                      src="assets/images/apptitude-img.svg"
+                      className="img-one"
+                    ></img>
+                  </div>
                   <div className="wave-four">
                     <div className="three ">
                       <img
@@ -132,11 +168,27 @@ const Profile = () => {
 
                         <p>
                           We have curated one of most advanced technical
-                          assessments to vet talent's <br></br> capabilities, these are
-                          role-based extremely stringent tests which filters <br></br> top
-                          10% talents
+                          assessments to vet talent's <br></br> capabilities,
+                          these are role-based extremely stringent tests which
+                          filters <br></br> top 10% talents
                         </p>
                       </div>
+                    </div>
+                  </div>
+                  <div className="three  " id="sm-back">
+                    <img
+                      src="assets/images/Technical-img.svg"
+                      className="img-one img-four"
+                    ></img>
+                    <div className="four">
+                      <h5 className="ProfileScreening">Technical Assessment</h5>
+
+                      <p>
+                        We have curated one of most advanced technical
+                        assessments to vet talent's <br></br> capabilities,
+                        these are role-based extremely stringent tests which
+                        filters <br></br> top 10% talents
+                      </p>
                     </div>
                   </div>
 
@@ -169,6 +221,26 @@ const Profile = () => {
                         ></img>
                       </div>
                     </div>
+                    <div className="two twwo " id="sm-back">
+                      <div className="one">
+                        <h5
+                          className="ProfileScreening"
+                          style={{ marginLeft: "13rem" }}
+                        >
+                          Panel Interview
+                        </h5>
+
+                        <p>
+                          We conduct a scientifically designed aptitude test{" "}
+                          <br></br>
+                          to check their reasoning and problem-solving ability.
+                        </p>
+                      </div>
+                      <img
+                        src="assets/images/Panel-Interview.svg"
+                        className="img-one"
+                      ></img>
+                    </div>
                     {/* ...........................................six................................. */}
                     <div className="wave-six">
                       <div className="three ">
@@ -186,6 +258,20 @@ const Profile = () => {
                         </div>
                       </div>
                     </div>
+                    <div className="three  " id="sm-back">
+                      <img
+                        src="assets/images/get-img.svg"
+                        className="img-one"
+                      ></img>
+                      <div className="four">
+                        <h5 className="ProfileScreening">Get Selected</h5>
+
+                        <p>
+                          Get selected at top companies international<br></br>
+                          standards around the world.
+                        </p>
+                      </div>
+                    </div>
                   </div>
                 </div>
               </div>
@@ -201,14 +287,14 @@ const Profile = () => {
             <h2>Service we offer</h2>
             <p>
               We seek to help a job seeker find a job, and find a qualified
-              candidate <br></br> for an open position for a company
+              candidate for an open position for a company
             </p>
           </div>
           <div className="smProFileBg ">
             <div>
               <h2 className="mt-5">
-                We aim to match employee skills with necessary tasks<br></br> in
-                the most effective ways
+                We aim to match employee skills with necessary tasks in the most
+                effective ways
               </h2>
               <div className="">
                 <img
@@ -235,9 +321,8 @@ const Profile = () => {
             </div>
             <div className="">
               <h4>Language Proficiency</h4>
-              <p>
+              <p className="small-p-tag">
                 AI-powered communication assessment tests a candidate's reading,
-                <br></br>
                 writing, pronunciation, clarity, fluency and speed of speech.
               </p>
             </div>
@@ -248,9 +333,8 @@ const Profile = () => {
             </div>
             <div className="">
               <h4>Language Proficiency</h4>
-              <p>
+              <p className="small-p-tag">
                 AI-powered communication assessment tests a candidate's reading,
-                <br></br>
                 writing, pronunciation, clarity, fluency and speed of speech.
               </p>
             </div>
@@ -261,9 +345,8 @@ const Profile = () => {
             </div>
             <div className="">
               <h4>Language Proficiency</h4>
-              <p>
+              <p className="small-p-tag">
                 AI-powered communication assessment tests a candidate's reading,
-                <br></br>
                 writing, pronunciation, clarity, fluency and speed of speech.
               </p>
             </div>
@@ -274,9 +357,8 @@ const Profile = () => {
             </div>
             <div className="">
               <h4>Language Proficiency</h4>
-              <p>
+              <p className="small-p-tag">
                 AI-powered communication assessment tests a candidate's reading,
-                <br></br>
                 writing, pronunciation, clarity, fluency and speed of speech.
               </p>
             </div>
@@ -287,9 +369,8 @@ const Profile = () => {
             </div>
             <div className="">
               <h4>Language Proficiency</h4>
-              <p>
+              <p className="small-p-tag">
                 AI-powered communication assessment tests a candidate's reading,
-                <br></br>
                 writing, pronunciation, clarity, fluency and speed of speech.
               </p>
             </div>
@@ -300,9 +381,8 @@ const Profile = () => {
             </div>
             <div className="">
               <h4>Language Proficiency</h4>
-              <p>
+              <p className="small-p-tag">
                 AI-powered communication assessment tests a candidate's reading,
-                <br></br>
                 writing, pronunciation, clarity, fluency and speed of speech.
               </p>
             </div>
@@ -312,4 +392,4 @@ const Profile = () => {
     </>
   );
 };
-export default Profile
+export default Profile;

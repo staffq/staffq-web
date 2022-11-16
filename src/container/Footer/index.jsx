@@ -2,7 +2,7 @@ import React from "react";
 import { Foot, SmFoot } from "./style";
 import Link from "next/link";
 // import {IoCall } from "react-icons/Io";
-import { GrLocation, GrMail } from "react-icons/gr";
+import { GrMail } from "react-icons/gr";
 
 const Footer = () => {
   return (
@@ -26,12 +26,12 @@ const Footer = () => {
                     className="col-lg-3 col-md-6 col-sm-12  "
                     style={{ marginTop: "60px" }}
                   >
-                    <div>
+                    <div className="cursor-pointer">
                       <h5 className="text-white" style={{ fontSize: "24px" }}>
                         Our Services
                       </h5>
                       <div className="footer-one mt-">
-                        <Link href="permanent-deployment">
+                        <Link href="paramanent-deployment">
                           <p>Permanent Deployment</p>
                         </Link>
 
@@ -47,7 +47,7 @@ const Footer = () => {
                     className="col-lg-3 col-md-6 col-sm-12   foooter-other"
                     style={{ marginTop: "60px" }}
                   >
-                    <div>
+                    <div className="cursor-pointer">
                       <h5 className="text-white" style={{ fontSize: "24px" }}>
                         Others
                       </h5>
@@ -59,8 +59,9 @@ const Footer = () => {
                     </div>
                   </div>
                   <div
-                    className="col-lg-3 col-md-6 col-sm-12  "
+                    className="col-lg-3 col-md-6 col-sm-12   cursor-pointer "
                     style={{ marginTop: "60px" }}
+                  
                   >
                     <h5 className="text-white" style={{ fontSize: "24px" }}>
                       Contact Us
@@ -110,18 +111,20 @@ const Footer = () => {
           <div className="container mt-3">
             <div className="footerlast">
               <div>
-                <p style={{ fontSize: "14px" }} className = "last-line">
+                <p style={{ fontSize: "14px" }} className="last-line">
                   {" "}
-                  @StaffQ Consultancy Pvt. Ltd - All rights reserved 15-11-22 (3pm)
-                  
+                  @StaffQ Consultancy Pvt. Ltd - All rights reserved 16-11-22
+                  (5:37)
                 </p>
               </div>
               <div className="Foter">
-                <p className="terms last-line " style={{ fontSize: "14px" }}   >
+                <p className="terms last-line " style={{ fontSize: "14px" }}>
                   Terms of service
                 </p>
 
-                <p style={{ fontSize: "14px" }}  className = "last-line">Privacy policy</p>
+                <p style={{ fontSize: "14px" }} className="last-line">
+                  Privacy policy
+                </p>
               </div>
             </div>
           </div>
@@ -205,7 +208,7 @@ const Footer = () => {
         <div className="mt-5">
           <p className="text-center " style={{ marginTop: "34px" }}>
             {" "}
-            @ StaffQ. All rights reserved 14-11-22 (5pm)
+            @ StaffQ. All rights reserved 
           </p>
           <div className="d-flex  justify-content-spacebetween">
             <p style={{ fontSize: "14px" }}>Privacy policy</p>

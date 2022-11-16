@@ -4,9 +4,55 @@ export const ProfileJs = styled.div`
   @media (min-width: 250px) and (max-width: 768px) {
     display: none;
   }
-  @media (min-width: 769px) and (max-width: 1300px) {
+  @media (min-width: 769px) and (max-width: 1024px) {
     display: none;
   }
+  @media (min-width: 1025px) and (max-width: 1400px) {
+
+    .wave {
+    
+    display: none;
+  }
+  .waves-two {
+   display: none;
+  }
+  .wave-three {
+   display: none;
+   
+  }
+  .wave-four {
+display: none;
+  }
+  .wave-five {
+    display: none;
+
+ 
+  }
+  .wave-six {
+    display: none;
+ 
+  }
+   .ProfileScreenin {
+    margin-left: 0px;
+  }
+    #sm-back{
+  display: block;
+}
+
+  }
+
+
+
+
+
+
+
+
+
+  #sm-back{
+  display: none;
+}
+
   .wave {
     margin-top: -8%;
     width: 84%;
@@ -14,27 +60,27 @@ export const ProfileJs = styled.div`
   }
   .waves-two {
     position: absolute;
-    top: 109rem;
+    top: 111rem;
     padding-left: 60px;
   }
   .wave-three {
     position: absolute;
-    top: 120rem;
+    top: 122rem;
     padding-left: 57px;
   }
   .wave-four {
     position: absolute;
-    top: 128rem;
+    top: 130rem;
     padding-left: 57px;
   }
   .wave-five {
     position: absolute;
-    top: 139rem;
+    top: 141rem;
     padding-left: 57px;
   }
   .wave-six {
     position: absolute;
-    top: 145rem;
+    top: 149rem;
     padding-left: 57px;
   }
   .ProFileBg {
@@ -175,6 +221,15 @@ export const ProfileJs = styled.div`
 export const SmallProfile = styled.div`
   font-size: 20px;
   display: none;
+
+h4{
+  font-size: 30px;
+}
+.small-p-tag{
+    font-size: 21px;
+    font-weight: 400;
+    margin-top: 2rem;
+  }
   @media (min-width: 250px) and (max-width: 768px) {
     text-align: center;
     display: block;
@@ -184,38 +239,39 @@ export const SmallProfile = styled.div`
       margin-bottom: 10px;
       padding-left: 67px;
     }
+   
   }
   .smProFileBg {
     background-image: url("assets/images/ProfileBackground.svg");
     background-repeat: no-repeat;
-    /* background-position: center; */
+  
     background-size: contain;
-    /* position: sticky;
-
-    width: 456px;
-    height: 456px;
-   */
+    
+   
     padding: 3px;
-
-    border-radius: 0px;
+margin: 0 auto;
+    
   }
   @media (min-width: 1000px) and (max-width: 1030px) {
     .smProFileBg {
-      margin-left: 18rem;
-      width: 47%;
+  
+      width: 100%;
     }
+    .small-p-tag{
+    font-size: 21px;
+    font-weight: 400;
+  }
   }
   @media (min-width: 760px) and (max-width: 820px) {
     .smProFileBg {
-      margin-left: 12rem;
-      width: 60%;
+    
     }
   }
   H2 {
   }
   p {
   }
-  @media (min-width: 769px) and (max-width: 1300px) {
+  @media (min-width: 769px) and (max-width: 1024px) {
     text-align: center;
     display: block;
   }

@@ -11,8 +11,11 @@ export const SlickBG = styled.div`
 
   padding: 0px !important;
   .Slider-phara {
-    color: #ffffff99;
-    line-height: 30px;
+    color: rgba(255, 255, 255, 0.6);
+
+    font-weight: 500;
+font-size: 16px;
+line-height: 30px;
     margin-top: 19px;
   }
 
@@ -55,6 +58,7 @@ export const SlickBG = styled.div`
     margin-top: 19px;
     color: black;
     font-size: 16px;
+    font-weight: 500;
   }
   .card {
     background: #ffffff;
@@ -78,30 +82,38 @@ export const SlickBG = styled.div`
     color: rgb(255, 255, 255);
   }
   .one-jsx {
-    margin-left: 70px;
+    margin-left: 137px;
     padding: 41px;
+    width: 90%!important;
   }
   .two-jsx {
-    margin-left: 5px;
+    margin-left: 30px;
     padding: 41px;
+    width: 90%!important;
   }
   .three-jsx {
-    margin-left: -60px;
+    margin-left: -77px;
     padding: 41px;
+    
+    width: 90%!important;
   }
   .four-jsx {
     margin-left: 0px;
     padding: 51px;
   }
-  @media (min-width: 250px) and (max-width: 768px) {
-   display: none;
-   .small-slider{
-  display: block;
-}
+  .communication{
+    font-size: 14px;
+line-height: 19px;
+/* identical to box height */
+font-weight: 500;
+
+color: rgba(8, 20, 41, 0.6);
   }
-.small-slider{
-  display: none;
-}
+  @media (min-width: 250px) and (max-width: 768px) {
+  
+   
+  display: none;}
+
 
 `;
 export const Box = styled.div`
@@ -151,7 +163,8 @@ export const Box = styled.div`
     box-shadow: 0px 4px 20px rgb(8 20 41 / 12%);
     border-radius: 20px;
     text-align: center;
-
+    margin-left: 3rem;
+    margin-right: 3rem;
     background: #ffffff;
     box-shadow: 0px 4px 20px rgb(8 20 41 / 12%);
     border-radius: 20px;
@@ -194,3 +207,14 @@ export const Smbox = styled.div`
     }
   }
 `;
+ export const Div = styled.div`
+  display: none;
+ @media (min-width: 250px) and (max-width: 768px) {
+  
+   
+  display: block;}
+
+  
+
+ 
+ `

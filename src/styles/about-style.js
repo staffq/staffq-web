@@ -2,6 +2,9 @@ import styled from "styled-components";
 
 
 export const AboutBg = styled.div`
+.about-p-tag{
+font-weight: 400;
+}
 @media (min-width:250px) and (max-width:400px){
 }
 
@@ -25,9 +28,14 @@ padding: 0px !important;
 height: 62px;
 color: white;
 font-size:18px;
+font-weight: 600;
 
 background: #081429;
 border-radius: 16px;
+}
+.about{
+    font-weight: 600;
+
 }
 @media (min-width:350px) and (max-width:768px){
     height: 80rem;
@@ -45,6 +53,7 @@ border-radius: 16px;
     margin-top: 10px;
     margin-left: 40px;
     font-size: 19px;
+    font-weight: 600;
 }
   
    
@@ -77,7 +86,12 @@ align-items: center;
     line-height: 38px;
     letter-spacing: 0em;
     text-align: left;
+    font-weight: 600;
     
+}
+.medium-two{
+    display: flex;
+    align-items: center;
 }
 @media (min-width:1200px) and (max-width:1400px){
      .AboutPtext{

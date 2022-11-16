@@ -79,16 +79,31 @@ background: #F6F6F5;
     font-family: "General Sans";
     font-style: normal;
     font-weight: 500;
-    font-size: 16px;
+    font-size: 18px;
     line-height: 22px;
     margin-top: 10px;
     padding-left: 7rem;
 
     color: #ffffff;
   }
+  
 `;
 export const Second = styled.div`
-  margin-top: 20%;
+  margin-top: 7%;
+  .lets-connect{
+    font-weight: 600;
+font-size: 60px;
+line-height: 81px;
+
+color: #050C18;
+  }
+  .p-tag{
+    font-weight: 500;
+font-size: 20px;
+line-height: 32px;
+
+color: rgba(8, 20, 41, 0.6);
+  }
   .bottom {
     border-bottom: 2px solid black;
     position: relative;
@@ -113,7 +128,7 @@ export const Second = styled.div`
   }
   h4 {
     font-weight: 600;
-    font-size: 50px;
+    font-size: 39px;
     line-height: 81px;
     /* identical to box height */
 
@@ -145,6 +160,11 @@ export const Second = styled.div`
 
     color: #081429;
   }
+  .Our-Branches{
+    padding-top: 6rem;
+    text-align: center;
+    margin-right: 2rem;
+  }
   .display {
     display: flex;
     flex-direction: row;
@@ -171,6 +191,30 @@ font-size: 32px;
   }
   h6{
 font-size: 24px;
+  }
+  .d-fleex{
+    display: flex;
+    justify-content: center;
+  }
+  .d-fx{
+    display: flex;
+    justify-content: center;
+    margin-left: 5rem;
+  }
+  .d-one{
+    margin-left: 1rem;
+  }
+ 
+  .small-contact{
+    display: none;
+  }
+  @media(min-width:250px) and (max-width:580px){
+    .small-contact{
+      display: inline-block;
+    }
+    .pc-contact{
+      display: none;
+    }
   }
   /* .pc-contact{
     @media (min-width:250px) and (max-width:600px){

@@ -1,6 +1,5 @@
 import React from "react";
 
-
 import { Worked, Header, Image, SmallHeader } from "../../styles/workstyle";
 const ParamanentDeployment = () => {
   return (
@@ -317,7 +316,9 @@ const ParamanentDeployment = () => {
                       <div className="solution-header ">
                         <div className="d-flex ">
                           <img src="assets/images/line.svg" className="mt-4" />
-                          <h2 className="whats-happening  Solution">Solution</h2>
+                          <h2 className="whats-happening  Solution">
+                            Solution
+                          </h2>
                         </div>
                         <p className="solution-p-tag">
                           StaffQ Consultancy Pvt. ltd . is one such
@@ -477,7 +478,6 @@ const ParamanentDeployment = () => {
         </Image>
 
         {/* ............................................next......section,,,,,,,,,,,,,, */}
-   
 
         {/* .......................................................... */}
         <div>
@@ -515,8 +515,11 @@ const ParamanentDeployment = () => {
                           Excellent technical hiring skills and can easily
                           identify potential <br></br>candidates
                         </p>
-                        <p className="small-screen">   Excellent technical hiring skills and can easily
-                          identify potential candidates</p>
+                        <p className="small-screen">
+                          {" "}
+                          Excellent technical hiring skills and can easily
+                          identify potential candidates
+                        </p>
                       </div>
                     </div>
                     <div className="row">
@@ -528,16 +531,16 @@ const ParamanentDeployment = () => {
                       <div className="col-lg-11 col-md-11 col-sm-12">
                         <p className="second-p-tag notview">
                           We handle the entire employment process including{" "}
-                        
                           resume- screening, interview-conduction, background/
                           reference <br></br>
                           verification, etc.
                         </p>
-                        <p className="small-screen">      We handle the entire employment process including{" "}
-                        
-                        resume- screening, interview-conduction, background/
-                        reference 
-                        verification, etc</p>
+                        <p className="small-screen">
+                          {" "}
+                          We handle the entire employment process including{" "}
+                          resume- screening, interview-conduction, background/
+                          reference verification, etc
+                        </p>
                       </div>
                     </div>
                     <div className="row">
@@ -552,10 +555,12 @@ const ParamanentDeployment = () => {
                           companies, by <br></br> providing the selected
                           candidate’s entire documentation file
                         </p>
-                        <p className="small-screen">     We make the on-boarding procedure smooth for
-                          companies, by  providing the selected
-                          candidate’s entire documentation file</p>
-                        
+                        <p className="small-screen">
+                          {" "}
+                          We make the on-boarding procedure smooth for
+                          companies, by providing the selected candidate’s
+                          entire documentation file
+                        </p>
                       </div>
                     </div>
                     <div className="row">
@@ -569,11 +574,11 @@ const ParamanentDeployment = () => {
                           Follow-up of performance feedback of employees is
                           given due<br></br> importance
                         </p>
-                        <p className="small-screen">       Follow-up of performance feedback of employees is
-                          given due importance</p>
-                        
-                        
-                        
+                        <p className="small-screen">
+                          {" "}
+                          Follow-up of performance feedback of employees is
+                          given due importance
+                        </p>
                       </div>
                     </div>
                     <div className="row">
@@ -587,8 +592,11 @@ const ParamanentDeployment = () => {
                           Follow-up of performance feedback of employees is
                           given due <br></br>importance
                         </p>
-                        <p className="small-screen">       Follow-up of performance feedback of employees is
-                          given due  importance</p>
+                        <p className="small-screen">
+                          {" "}
+                          Follow-up of performance feedback of employees is
+                          given due importance
+                        </p>
                       </div>
                     </div>
                     <div className="row">
@@ -604,10 +612,13 @@ const ParamanentDeployment = () => {
                           within the company and this is beneficial<br></br> in
                           the long run{" "}
                         </p>
-                        <p className="small-screen">      As candidates are qualified and reliable, there is a
+                        <p className="small-screen">
+                          {" "}
+                          As candidates are qualified and reliable, there is a
                           higher probability of retention of such employees
-                          within the company and this is beneficial in
-                          the long run{" "}</p>
+                          within the company and this is beneficial in the long
+                          run{" "}
+                        </p>
                       </div>
                     </div>
                   </div>
@@ -668,4 +679,4 @@ const ParamanentDeployment = () => {
   );
 };
 
-export default ParamanentDeployment ;
+export default ParamanentDeployment;

@@ -67,11 +67,14 @@ text-align: center;
 }
 
 .arow{
-    width: 127px;
-    height: 132px;
-    padding: 10px;
-    margin-left: -43px;
-    margin-top: 192px;
+    width: 152px;
+    height: 134px;
+    padding: 1px;
+    margin-left: -53px;
+    margin-top: 177px;
+}
+p{
+    font-weight: 500;
 }
 @media(min-width:1000px) and (max-width:1400px){
     .arow{
