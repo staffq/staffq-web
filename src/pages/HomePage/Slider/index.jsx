@@ -1,6 +1,6 @@
 import React from "react";
 // import styles from './slider.module.css'
-import { SlickBG, Box, Smbox ,Div } from "../../../styles/slider-style";
+import { SlickBG, Box, Smbox, Div } from "../../../styles/slider-style";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import Slider from "react-slick";
@@ -59,8 +59,8 @@ const Slick = () => {
   };
 
   return (
-    <div >
-      <SlickBG className="container-fluid" >
+    <div>
+      <SlickBG className="container-fluid">
         <div className="text-center ">
           <div>
             <h2 className="text-light mt-5">What People say</h2>
@@ -73,9 +73,8 @@ const Slick = () => {
         </div>
         <div className={`SliderHead `}>
           <Slider {...settings}>
-            
             {/* ....................one......................... */}
-            <div className="    one-jsx" >
+            <div className="    one-jsx">
               <div className="card h-100">
                 <div className="card-body text-info ">
                   <div className="Subheading">
@@ -94,9 +93,7 @@ const Slick = () => {
                     </div>
                     <div className="two">
                       <h5 style={{ fontSize: "17px" }}>Sheldon Cooper</h5>
-                      <p className="communication">
-                        CEO, Communications Ltd
-                      </p>
+                      <p className="communication">CEO, Communications Ltd</p>
                     </div>
                   </div>
                 </div>
@@ -122,9 +119,7 @@ const Slick = () => {
                     </div>
                     <div className="two">
                       <h5 style={{ fontSize: "17px" }}>Sheldon Cooper</h5>
-                      <p className="communication">
-                        CEO, Communications Ltd
-                      </p>
+                      <p className="communication">CEO, Communications Ltd</p>
                     </div>
                   </div>
                 </div>
@@ -150,9 +145,7 @@ const Slick = () => {
                     </div>
                     <div className="two">
                       <h5 style={{ fontSize: "17px" }}>Sheldon Cooper</h5>
-                      <p className="communication">
-                        CEO, Communications Ltd
-                      </p>
+                      <p className="communication">CEO, Communications Ltd</p>
                     </div>
                   </div>
                 </div>
@@ -179,9 +172,7 @@ const Slick = () => {
                     </div>
                     <div className="two">
                       <h5 style={{ fontSize: "17px" }}>Sheldon Cooper</h5>
-                      <p className="communication">
-                        CEO, Communications Ltd
-                      </p>
+                      <p className="communication">CEO, Communications Ltd</p>
                     </div>
                   </div>
                 </div>
@@ -207,9 +198,7 @@ const Slick = () => {
                     </div>
                     <div className="two">
                       <h5 style={{ fontSize: "17px" }}>Sheldon Cooper</h5>
-                      <p className="communication">
-                        CEO, Communications Ltd
-                      </p>
+                      <p className="communication">CEO, Communications Ltd</p>
                     </div>
                   </div>
                 </div>
@@ -235,9 +224,7 @@ const Slick = () => {
                     </div>
                     <div className="two">
                       <h5 style={{ fontSize: "17px" }}>Sheldon Cooper</h5>
-                      <p className="communication">
-                        CEO, Communications Ltd
-                      </p>
+                      <p className="communication">CEO, Communications Ltd</p>
                     </div>
                   </div>
                 </div>
@@ -264,9 +251,7 @@ const Slick = () => {
                     </div>
                     <div className="two">
                       <h5 style={{ fontSize: "17px" }}>Sheldon Cooper</h5>
-                      <p className="communication">
-                        CEO, Communications Ltd
-                      </p>
+                      <p className="communication">CEO, Communications Ltd</p>
                     </div>
                   </div>
                 </div>
@@ -292,9 +277,7 @@ const Slick = () => {
                     </div>
                     <div className="two">
                       <h5 style={{ fontSize: "17px" }}>Sheldon Cooper</h5>
-                      <p className="communication">
-                        CEO, Communications Ltd
-                      </p>
+                      <p className="communication">CEO, Communications Ltd</p>
                     </div>
                   </div>
                 </div>
@@ -320,25 +303,21 @@ const Slick = () => {
                     </div>
                     <div className="two">
                       <h5 style={{ fontSize: "17px" }}>Sheldon Cooper</h5>
-                      <p className="communication">
-                        CEO, Communications Ltd
-                      </p>
+                      <p className="communication">CEO, Communications Ltd</p>
                     </div>
                   </div>
                 </div>
               </div>
             </div>
-           
           </Slider>
         </div>
       </SlickBG>
       <Div>
-      <div>
-      <SmallSlider  />
-</div>
+        <div>
+          <SmallSlider />
+        </div>
       </Div>
- 
-    
+
       <Box>
         <div className="container">
           <div className="box">
@@ -408,10 +387,14 @@ const Slick = () => {
             <h2 style={{ fontSize: "42px" }} className="text-center">
               1500+{" "}
             </h2>
-            <p style={{ fontSize: "22px" }} className="text-center">Recruits</p>
+            <p style={{ fontSize: "22px" }} className="text-center">
+              Recruits
+            </p>
           </div>
           <div className="className = 'text-center'">
-            <h2 style={{ fontSize: "42px" }} className="mt-4">30+ </h2>
+            <h2 style={{ fontSize: "42px" }} className="mt-4">
+              30+{" "}
+            </h2>
             <p style={{ fontSize: "22px" }}>
               Team<br></br>
               Members
@@ -421,10 +404,6 @@ const Slick = () => {
       </Smbox>
 
       {/* .......................................smalll screen........slider.................... */}
-
-     
-
-      
     </div>
   );
 };

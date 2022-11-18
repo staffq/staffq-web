@@ -119,8 +119,9 @@ export const Second = styled.div`
 
     top: 98px;
     overflow: hidden;
+    background-image: url("assets/images/Banner-background-yell.svg");
 
-    background: rgba(239, 206, 30, 0.9);
+    /* background: rgba(239, 206, 30, 0.9); */
   }
   h4 {
     font-weight: 600;

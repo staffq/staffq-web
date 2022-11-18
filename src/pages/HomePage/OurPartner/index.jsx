@@ -7,7 +7,9 @@ const OurPartner = () => {
     <div>
       <Margin></Margin>
       <Section>
-        <h5 className="text-center" style={{color:"rgba(8, 20, 41, 0.7)"}}>Our partners</h5>
+        <h5 className="text-center" style={{ color: "rgba(8, 20, 41, 0.7)" }}>
+          Our partners
+        </h5>
         <Fle>
           <div className="me-3 PartnerImages ">
             <img
@@ -17,16 +19,32 @@ const OurPartner = () => {
             />
           </div>
           <div className="me-3 PartnerImage">
-            <img src="assets/images/cognizant.svg" className="icons-two"  style={{ width: "182px" }} />
+            <img
+              src="assets/images/cognizant.svg"
+              className="icons-two"
+              style={{ width: "182px" }}
+            />
           </div>
           <div className="me-3 PartnerImage">
-            <img src="assets/images/Vedhainfo.svg" className="icons-three"  style={{ width: "142px" }} />
+            <img
+              src="assets/images/Vedhainfo.svg"
+              className="icons-three"
+              style={{ width: "142px" }}
+            />
           </div>
           <div className="me-3 PartnerImage">
-            <img src="assets/images/Group 440.png" className="icons-four"  style={{ width: "126px" }} />
+            <img
+              src="assets/images/Group 440.png"
+              className="icons-four"
+              style={{ width: "126px" }}
+            />
           </div>
           <div className="me-3 Agilisum PartnerImage">
-            <img src="assets/images/Agilisium.svg" className="icon-five"  style={{ width: "123px" }}/>
+            <img
+              src="assets/images/Agilisium.svg"
+              className="icon-five"
+              style={{ width: "123px" }}
+            />
           </div>
         </Fle>
 
