@@ -5,17 +5,28 @@ export const Small = styled.div`
 
   width: 100%;
   overflow: hidden;
-
+height: 71rem;
   
   position: relative;
   margin-top: 2rem;
 
   padding: 0px !important;
   .Slider-phara {
-    color: #ffffff99;
+    
+    color: rgba(255, 255, 255, 0.6);
+
+font-weight: 500;
+font-size: 16px;
     line-height: 30px;
     margin-top: 19px;
   }
+  .communication{
+    font-size: 14px;
+line-height: 19px;
+/* identical to box height */
+font-weight: 500;
+
+color: rgba(8, 20, 41, 0.6);}
 
   .SliderHead div ul .slick-active button {
     background: rgba(255, 255, 255, 0.4);
@@ -55,6 +66,7 @@ export const Small = styled.div`
   .card-text {
     margin-top: 19px;
     color: black;
+    font-weight: 500;
     font-size: 16px;
   }
   .card {
@@ -80,16 +92,20 @@ export const Small = styled.div`
   }
   .onee-small-jsx{
   width: 88%;
+  display: block !important;
   margin-top: 41px;
 
   }
   .two-jsx {
     margin-left: 5px;
+    width: 88%;
     padding: 41px;
+    display: block !important;
   }
   .threee-small-jsx {
-   
+    width: 88%;
     padding: 41px;
+    display: block !important;
   }
   .four-jsx {
     margin-left: 0px;
@@ -100,5 +116,16 @@ display: flex;
 justify-content: center;
 flex-direction: column;
   }
+@media (min-width:500px) and (max-width:768px){
+  .onee-small-jsx{
+  width: 73% !important;
 
+  }
+  .two-jsx {
+    width: 81% !important;
+  }
+  .threee-small-jsx {
+    width: 81% !important;
+  }
+}
 `;

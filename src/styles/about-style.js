@@ -37,8 +37,8 @@ border-radius: 16px;
     font-weight: 600;
 
 }
-@media (min-width:350px) and (max-width:768px){
-    height: 80rem;
+@media (min-width:300px) and (max-width:768px){
+ /* height: 250vh; */
     .aboutImage{
    
     }
@@ -79,6 +79,10 @@ align-items: center;
   
 
 }
+@media (min-width:300px) and (max-width:350px){
+ /* height: 300vh;} */}
+ @media (min-width:350px) and (max-width:430px){
+ /* height: 280vh;} */}
 .AboutPtext{
        /* font-size: 16px; */
   
@@ -86,6 +90,7 @@ align-items: center;
     line-height: 38px;
     letter-spacing: 0em;
     text-align: left;
+    color: rgba(8, 20, 41, 0.6);
     font-weight: 600;
     
 }
@@ -131,7 +136,7 @@ align-items: center;
   
 }
 @media (min-width:769px) and (max-width:1000px){
-    height: 50rem;
+ 
     /* .aboutbtn{
         margin-left: 290px;
         margin-top: 12px;
@@ -140,6 +145,7 @@ align-items: center;
     .AboutPtext{
     font-size: 18px;
     margin-top: 32px;
+    font-weight: 600;
     
 }
 .aboutbtn{
@@ -204,10 +210,12 @@ border-radius: 16px;
     margin-top: 32px;
     line-height: 30px;
 
-  
+  font-weight: 500;
 
-    text-align: left;
-    
+    display: flex;
+    /* justify-content: center;
+     */
+    align-items: center;
     
 }
 .aboutImage{

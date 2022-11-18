@@ -70,7 +70,7 @@ const Footer = () => {
                       <span>
                         <img src="assets/images/location-image.png"></img>
 
-                        <span className="pdding-left text-white">
+                        <span className="pdding-left ">
                           Floor-3A,Sathyam{" "}
                           <span className="towers">Towers,6D</span>
                         </span>
@@ -113,8 +113,8 @@ const Footer = () => {
               <div>
                 <p style={{ fontSize: "14px" }} className="last-line">
                   {" "}
-                  @StaffQ Consultancy Pvt. Ltd - All rights reserved 16-11-22
-                  (5:37)
+                  @StaffQ Consultancy Pvt. Ltd - All rights reserved 17-11-22
+                  (02:00)
                 </p>
               </div>
               <div className="Foter">
@@ -132,7 +132,7 @@ const Footer = () => {
       </Foot>
 
       <SmFoot>
-        <div className="container mt-5">
+        <div className="container mt-5 small-content">
           <div className="paddingtwoSide">
             <div>
               <div>
@@ -140,7 +140,7 @@ const Footer = () => {
                   Our Solutions
                 </h5>
                 <br></br>
-                <div style={{ fontSize: "18px" }}>
+                <div style={{ fontSize: "18px" }} className = "font">
                   <p>Permanent Deployment</p>
                   <p>Recruitment process outsourcing</p>
                   <p>Contract to Hire</p>
@@ -155,7 +155,7 @@ const Footer = () => {
             <div className="mt-5">
               <h5 style={{ paddingTop: "48px" }}>Careers</h5>
               <br></br>
-              <div className="" style={{ fontSize: "18px" }}>
+              <div className="font" style={{ fontSize: "18px" }}>
                 <p>Permanent recruitment</p>
                 <p>Recruitment process outsourcing</p>
                 <p>General staffing</p>
@@ -168,7 +168,7 @@ const Footer = () => {
                 Contact Us
               </h5>
               <br></br>
-              <div style={{ fontSize: "18px" }}>
+              <div style={{ fontSize: "18px" }} className = "font">
                 <span>
                   <img src="assets/images/location-image.png"></img>
 
@@ -206,13 +206,13 @@ const Footer = () => {
           <div className="under-text"></div>
         </div>
         <div className="mt-5">
-          <p className="text-center " style={{ marginTop: "34px" }}>
+          <p className="text-center last-line " style={{ marginTop: "34px" }}>
             {" "}
             @ StaffQ. All rights reserved 
           </p>
           <div className="d-flex  justify-content-spacebetween">
-            <p style={{ fontSize: "14px" }}>Privacy policy</p>
-            <p style={{ fontSize: "14px" }}>Terms of service</p>
+            <p style={{ fontSize: "14px" }}  className="last-line">Privacy policy</p>
+            <p style={{ fontSize: "14px" }}  className="last-line">Terms of service</p>
           </div>
         </div>
       </SmFoot>

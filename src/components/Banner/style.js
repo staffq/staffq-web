@@ -216,11 +216,20 @@ left: 113px;
 top: 370px;
 border-radius: 16px;
 color: #FFFFFF;
+margin-top: 1rem;
   }
   .smText{
   
     margin-top: 10%;
     text-align: center;
+  }
+  p{
+    font-weight: 500;
+font-size: 16px;
+line-height: 22px;
+
+color: rgba(8, 20, 41, 0.6);
+margin-top: 30px;
   }
   
  }

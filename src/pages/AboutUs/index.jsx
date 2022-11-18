@@ -4,7 +4,7 @@ import {
   Header,
   SmallHeader,
   AboutSection,
-} from "../../styles/aboutPage-style";
+} from "../../styles/aboutpage-style";
 
 const AboutPage = () => {
   return (
@@ -144,7 +144,7 @@ const AboutPage = () => {
           </div>
         </div>
 
-        <div className="container" style={{ marginTop: "7rem" }}>
+        <div className="container" style={{ marginTop: "3rem" }}>
           <div className="row ">
             <div className="col-lg-6 col-sm-12 col-md-12">
               <div className="img-page-one">

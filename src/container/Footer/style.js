@@ -114,18 +114,33 @@ display: none;
 .paddingtwoSide{
   padding-left: 25px;
 }
+.font{
+  color: rgba(255, 255, 255, 0.8);
+}
+.small-content{
+  display: flex;
+  justify-content: center;
+}
 .pdding-left{
   margin-left: 22px;
 }
 .pdding-lef{
   margin-left: 35px;}
+  .last-line{
+    font-size: 14px;
+line-height: 28px;
+/* identical to box height, or 200% */
+
+
+color: rgba(255, 255, 255, 0.6);
+  }
 
   
 h5{
     font-size: 30px;
   }
   .under-text{
-    border: 2px solid rgba(255, 255, 255, 0.1);
+    border: 1px solid rgba(255, 255, 255, 0.1);
  margin-top: 55px;
 
 

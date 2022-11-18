@@ -1,5 +1,5 @@
 import React from "react";
-import { ServiceBg, Medium } from "../../../styles/sservice-style";
+import { ServiceBg, Medium } from "../../../styles/service-style";
 
 import { BsArrowRight } from "react-icons/bs";
 import { Card } from "../../../components/Card/style";

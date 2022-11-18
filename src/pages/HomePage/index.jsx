@@ -10,7 +10,10 @@ const HomePage = () => {
     <div>
 <OurPartner />
       <Service />
+      <div className='container-fluid'>
+
       <Profile />
+      </div>
       <About />
       <Slick />
       <Find />

@@ -95,7 +95,14 @@ const About = () => {
                   expertise in providing a gamut of services to business
                   organizations for their increasing demands.
                 </p>
+                
+                <Link href="/about-us">
                 <button className="aboutbtn"><span className="about">About Us</span></button>
+                    
+                  </Link>
+          
+
+                
                 </div>
         </div>
       </div>

@@ -16,7 +16,9 @@ const contact = () => {
             <div className="container-fluid p-0">
               <div className="let-one">
                 <div className="container text-center pt-5 p-5">
-                  <h4 className="lets-connect">Let’s Connect For Your Growth</h4>
+                  <h4 className="lets-connect">
+                    Let’s Connect For Your Growth
+                  </h4>
                   <p className="pt-2 p-tag">
                     We appreciate your interest in our services. Please leave us
                     few details about your business requirements to help us
@@ -71,7 +73,7 @@ const contact = () => {
                         <Input placeholder="Eg: Johnkrisinski@email.com " />
                       </div>
                       <div className="form-group ">
-                        <label for="exampleInputPassword1">country*</label>
+                        <label for="exampleInputPassword1">Country*</label>
                         <div>
                           <select className="input-option ">
                             <option value="country*">Country</option>
@@ -112,7 +114,7 @@ const contact = () => {
             </div>
           </Form>
 
-          <div style={{ marginLeft: "8rem" }} className="pc-contact">
+          <div style={{}} className="pc-contact">
             <div className="container">
               <h2 className="Our-Branches">Our Branches</h2>
               <div className="row  ">
@@ -161,7 +163,7 @@ const contact = () => {
                     </div>
                   </div>
                 </div>
-                <div className="col-lg-4 col-sm-12 col-md-12">
+                <div className="col-lg-4 col-sm-12 col-md-12 res-one">
                   <div>
                     <div className="display">
                       <div>
@@ -204,7 +206,7 @@ const contact = () => {
                     </div>
                   </div>
                 </div>
-                <div className="col-lg-4 col-sm-12 col-md-12">
+                <div className="col-lg-4 col-sm-12 col-md-12 res-two">
                   <div>
                     <div className="display">
                       <div>
@@ -253,138 +255,140 @@ const contact = () => {
           </div>
 
           {/* Small contact section....... */}
-          <div className="small-contact">
-            <h2 className="Our-Branches">Our Branches</h2>
-            <section>
-              <div className="container">
-                <div>
-                  <div className="display">
-                    <div>
-                      <img
-                        src="assets/images/canada-img.svg"
-                        className="map-image"
-                      />
+          <div className="container small">
+            <div className="small-contact">
+              <h2 className="Our-Branches">Our Branches</h2>
+              <section>
+                <div className="container">
+                  <div>
+                    <div className="display">
+                      <div>
+                        <img
+                          src="assets/images/canada-img.svg"
+                          className="map-image"
+                        />
+                      </div>
+                      <div className="display-two">
+                        <h5>India</h5>
+                        <h6>Tiruppur</h6>
+                      </div>
                     </div>
-                    <div className="display-two">
-                      <h5>India</h5>
-                      <h6>Tiruppur</h6>
+                    <div className=" d-fx">
+                      <div className="">
+                        <img src="assets/images/Loaction.svg" />
+                      </div>
+                      <div className=" font d-one d-two ">
+                        Floor-3A,Sathyam Towers,6D <br></br> Bharathi
+                        Street,Valipalayam,<br></br>
+                        Tiruppur, 641 601
+                      </div>
                     </div>
-                  </div>
-                  <div className=" d-fx">
-                    <div className="">
-                      <img src="assets/images/Loaction.svg" />
+                    <div className=" d-fleex mt-3">
+                      <div className="">
+                        <img src="assets/images/phone-icon.svg"></img>
+                      </div>
+                      <div className=" font d-one  ">
+                        +91 9629938033<br></br>
+                        +91 421 3552738
+                      </div>
                     </div>
-                    <div className=" font d-one d-two ">
-                      Floor-3A,Sathyam Towers,6D <br></br> Bharathi
-                      Street,Valipalayam,<br></br>
-                      Tiruppur, 641 601
+                    <div className=" d-fleex mt-3">
+                      <div className="">
+                        <img src="assets/images/Email-icon.svg" />
+                      </div>
+                      <div className=" font d-one ">info@staffq.org</div>
                     </div>
-                  </div>
-                  <div className=" d-fleex mt-3">
-                    <div className="">
-                      <img src="assets/images/phone-icon.svg"></img>
-                    </div>
-                    <div className=" font d-one  ">
-                      +91 9629938033<br></br>
-                      +91 421 3552738
-                    </div>
-                  </div>
-                  <div className=" d-fleex mt-3">
-                    <div className="">
-                      <img src="assets/images/Email-icon.svg" />
-                    </div>
-                    <div className=" font d-one ">info@staffq.org</div>
-                  </div>
 
-                  <div></div>
+                    <div></div>
+                  </div>
                 </div>
-              </div>
-              <div className="container">
-                <div>
-                  <div className="display">
-                    <div>
-                      <img
-                        src="assets/images/canada-img.svg"
-                        className="map-image"
-                      />
+                <div className="container">
+                  <div>
+                    <div className="display">
+                      <div>
+                        <img
+                          src="assets/images/canada-img.svg"
+                          className="map-image"
+                        />
+                      </div>
+                      <div className="display-two">
+                        <h5>Canada</h5>
+                        <h6>Ontario</h6>
+                      </div>
                     </div>
-                    <div className="display-two">
-                      <h5>Canada</h5>
-                      <h6>Ontario</h6>
+                    <div className=" d-fx ">
+                      <div className="">
+                        <img src="assets/images/Loaction.svg" />
+                      </div>
+                      <div className=" font d-one  ">
+                        111302, Granrock Crea,<br></br> Mississauaga Ontario{" "}
+                        <br></br> L5V OEI
+                      </div>
                     </div>
-                  </div>
-                  <div className=" d-fx ">
-                    <div className="">
-                      <img src="assets/images/Loaction.svg" />
+                    <div className=" d-fleex mt-3">
+                      <div className="">
+                        <img src="assets/images/phone-icon.svg"></img>
+                      </div>
+                      <div className=" font d-one  ">
+                        +91 9629938033<br></br>
+                        +91 421 3552738
+                      </div>
                     </div>
-                    <div className=" font d-one  ">
-                      111302, Granrock Crea,<br></br> Mississauaga Ontario{" "}
-                      <br></br> L5V OEI
+                    <div className=" d-fleex mt-3">
+                      <div className="">
+                        <img src="assets/images/Email-icon.svg" />
+                      </div>
+                      <div className=" font d-one ">info@staffq.org</div>
                     </div>
-                  </div>
-                  <div className=" d-fleex mt-3">
-                    <div className="">
-                      <img src="assets/images/phone-icon.svg"></img>
-                    </div>
-                    <div className=" font d-one  ">
-                      +91 9629938033<br></br>
-                      +91 421 3552738
-                    </div>
-                  </div>
-                  <div className=" d-fleex mt-3">
-                    <div className="">
-                      <img src="assets/images/Email-icon.svg" />
-                    </div>
-                    <div className=" font d-one ">info@staffq.org</div>
-                  </div>
 
-                  <div></div>
+                    <div></div>
+                  </div>
                 </div>
-              </div>
 
-              <div className="container">
-                <div>
-                  <div className="display">
-                    <div>
-                      <img
-                        src="assets/images/canada-img.svg"
-                        className="map-image"
-                      />
+                <div className="container">
+                  <div>
+                    <div className="display">
+                      <div>
+                        <img
+                          src="assets/images/canada-img.svg"
+                          className="map-image"
+                        />
+                      </div>
+                      <div className="display-two">
+                        <h5>United Kingdom</h5>
+                        <h6>Southampton</h6>
+                      </div>
                     </div>
-                    <div className="display-two">
-                      <h5>United Kingdom</h5>
-                      <h6>Southampton</h6>
+                    <div className=" d-fx  ">
+                      <div className="">
+                        <img src="assets/images/Loaction.svg" />
+                      </div>
+                      <div className=" font d-one ">
+                        127, OMDURMAN ROAD, <br></br>Southampton S014 7DW
+                      </div>
+                      <br></br>
                     </div>
-                  </div>
-                  <div className=" d-fx  ">
-                    <div className="">
-                      <img src="assets/images/Loaction.svg" />
+                    <div className=" d-fleex mt-3">
+                      <div className="">
+                        <img src="assets/images/phone-icon.svg"></img>
+                      </div>
+                      <div className=" font d-one  ">
+                        +91 9629938033<br></br>
+                        +91 421 3552738
+                      </div>
                     </div>
-                    <div className=" font d-one ">
-                      127, OMDURMAN ROAD, <br></br>Southampton S014 7DW
+                    <div className=" d-fleex mt-3">
+                      <div className="">
+                        <img src="assets/images/Email-icon.svg" />
+                      </div>
+                      <div className=" font d-one ">info@staffq.org</div>
                     </div>
-                    <br></br>
-                  </div>
-                  <div className=" d-fleex mt-3">
-                    <div className="">
-                      <img src="assets/images/phone-icon.svg"></img>
-                    </div>
-                    <div className=" font d-one  ">
-                      +91 9629938033<br></br>
-                      +91 421 3552738
-                    </div>
-                  </div>
-                  <div className=" d-fleex mt-3">
-                    <div className="">
-                      <img src="assets/images/Email-icon.svg" />
-                    </div>
-                    <div className=" font d-one ">info@staffq.org</div>
-                  </div>
 
-                  <div></div>
+                    <div></div>
+                  </div>
                 </div>
-              </div>
-            </section>
+              </section>
+            </div>
           </div>
         </Second>
       </ContacttStyle>

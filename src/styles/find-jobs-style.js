@@ -26,7 +26,7 @@ border-radius: 30px;
     
 }
 .find-images-class{
-width: 528px;
+width: 565px;
 
 }
 .find-p-tag{
@@ -76,10 +76,14 @@ text-align: center;
 p{
     font-weight: 500;
 }
-@media(min-width:1000px) and (max-width:1400px){
+
+@media(min-width:1000px) and (max-width:1200px){
     .arow{
         display: none;
     }
+}
+@media(min-width:1000px) and (max-width:1400px){
+    
 }
 
     .find-images-className {
@@ -137,7 +141,7 @@ width: 100%;
 display: none;
 margin-top: 2%;
 
-@media (min-width:250px) and (max-width:768px){
+@media (min-width:250px) and (max-width:990px){
     display: block;
     background: #EFCE1E;
     h2{

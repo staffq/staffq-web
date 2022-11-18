@@ -2,42 +2,40 @@ import styled from "styled-components";
 
 export const ContacttStyle = styled.div`
   padding-top: 5px;
-
 `;
 // .................form..................................
 
 export const Form = styled.div`
-padding-top: 1px;
-padding-bottom: 2rem;
-background: #F6F6F5;
+  padding-top: 1px;
+  padding-bottom: 2rem;
+  background: #f6f6f5;
   .input-filed {
     margin: 0 auto;
     border-radius: 12px;
-  background: #ffffff;
-  width: 546px;
-  height: 56px;
-  margin-bottom: 20px;
-  box-shadow: 0px 4px 16px rgba(8, 20, 41, 0.08);
-  border: 1px solid rgba(8, 20, 41, 0.1);
+    background: #ffffff;
+    width: 546px;
+    height: 56px;
+    margin-bottom: 20px;
+    box-shadow: 0px 4px 16px rgba(8, 20, 41, 0.08);
+    border: 1px solid rgba(8, 20, 41, 0.1);
   }
-  .input-option{
+  .input-option {
     margin: 0 auto;
     border-radius: 12px;
-  background: #ffffff;
-  width: 34vw;
-  height: 56px;
-  margin-bottom: 20px;
-  box-shadow: 0px 4px 16px rgba(8, 20, 41, 0.08);
-  border: 1px solid rgba(8, 20, 41, 0.1);
-
+    background: #ffffff;
+    width: 34vw;
+    height: 56px;
+    margin-bottom: 20px;
+    box-shadow: 0px 4px 16px rgba(8, 20, 41, 0.08);
+    border: 1px solid rgba(8, 20, 41, 0.1);
   }
-  @media(min-width:250px) and (max-width:768px){
-    .input-option{
+  @media (min-width: 250px) and (max-width: 768px) {
+    .input-option {
       width: 59vw;
     }
   }
-  @media(min-width:769px) and (max-width:990px){
-    .input-option{
+  @media (min-width: 769px) and (max-width: 990px) {
+    .input-option {
       width: 70vw;
     }
   }
@@ -76,7 +74,6 @@ background: #F6F6F5;
     width: 55px;
     height: 22px;
 
-    font-family: "General Sans";
     font-style: normal;
     font-weight: 500;
     font-size: 18px;
@@ -86,23 +83,22 @@ background: #F6F6F5;
 
     color: #ffffff;
   }
-  
 `;
 export const Second = styled.div`
-  margin-top: 7%;
-  .lets-connect{
+  margin-top: 76px;
+  .lets-connect {
     font-weight: 600;
-font-size: 60px;
-line-height: 81px;
+    font-size: 60px;
+    line-height: 81px;
 
-color: #050C18;
+    color: #050c18;
   }
-  .p-tag{
+  .p-tag {
     font-weight: 500;
-font-size: 20px;
-line-height: 32px;
+    font-size: 20px;
+    line-height: 32px;
 
-color: rgba(8, 20, 41, 0.6);
+    color: rgba(8, 20, 41, 0.6);
   }
   .bottom {
     border-bottom: 2px solid black;
@@ -160,7 +156,7 @@ color: rgba(8, 20, 41, 0.6);
 
     color: #081429;
   }
-  .Our-Branches{
+  .Our-Branches {
     padding-top: 6rem;
     text-align: center;
     margin-right: 2rem;
@@ -173,47 +169,56 @@ color: rgba(8, 20, 41, 0.6);
     display: flex;
     flex-direction: column;
     margin-top: 51px;
+    margin-left: -10px;
   }
   .map-image {
     width: 125px;
     margin-top: 25px;
+    margin-left: -2rem;
   }
   .style {
   }
-  .font{
+  .font {
     font-size: 18px;
     font-weight: 400;
     line-height: 31px;
-    color: rgba(5,12,24,0.7);
+    color: rgba(5, 12, 24, 0.7);
   }
-  h5{
-font-size: 32px;
+  h5 {
+    font-size: 32px;
   }
-  h6{
-font-size: 24px;
+  h6 {
+    font-size: 24px;
   }
-  .d-fleex{
+  .d-fleex {
     display: flex;
     justify-content: center;
   }
-  .d-fx{
+  .d-fx {
     display: flex;
     justify-content: center;
     margin-left: 5rem;
   }
-  .d-one{
+  .d-one {
     margin-left: 1rem;
   }
- 
-  .small-contact{
+
+  .small-contact {
     display: none;
   }
-  @media(min-width:250px) and (max-width:580px){
-    .small-contact{
+
+  @media (min-width: 250px) and (max-width: 580px) {
+    .small-contact {
       display: inline-block;
     }
-    .pc-contact{
+    .pc-contact {
       display: none;
+    }
+  }
+  @media (min-width: 1400px) and (max-width: 1800px) {
+    .pc-contact {
+      margin-left: 180px;
+      margin-right: 192px;
     }
   }
   /* .pc-contact{
@@ -222,36 +227,3 @@ font-size: 24px;
 }
   } */
 `;
-
-
-// export const SmallContact = styled.div`
-// margin-top: 1px;
-// display: none;
-// @media (min-width:250px) and (max-width:600px){
-//   display: block;
-
-//   .small-one{
-//     display: flex;
-//     justify-content: center;
-//     margin-left: 2rem;
-//   }
-//   .display-two{
-//     display: flex;
-//     flex-direction: column;
-//   }
-//   .d-flex{
-//     margin-left: 2rem;
-//     justify-content: center;
-//   }
-//   .floor{
-//     margin-top: 4rem;
-//     margin-left: 1rem;
-//     font-size: 19px;
-//     font-weight: 400;
-// }
-  
-// }
-
-
-
-// `
