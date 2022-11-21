@@ -74,9 +74,10 @@ const SmallSlider = () => {
                     </div>
 
                     <p className="card-text ">
-                      Lorem ipsum dolor sit amet, consectetur adipisci ngelit,
-                      sed do eiusmod tempor incididunt ut lab ore et dolore
-                      magna aliqua. Ut enim ad minim veniam, quis
+                      I've Never received so many Candidate from one Vendor that
+                      has made it through the interview stage in such a short
+                      time Aspire I'm Always looking for the best talent to work
+                      for our organization
                     </p>
 
                     <div className="one">
@@ -85,7 +86,7 @@ const SmallSlider = () => {
                       </div>
                       <div className="two">
                         <h5 style={{ fontSize: "17px" }}>Sheldon Cooper</h5>
-                        <p className="communication">CEO, Communications Ltd</p>
+                        <p className="communication">CTS</p>
                       </div>
                     </div>
                   </div>

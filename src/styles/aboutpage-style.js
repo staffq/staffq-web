@@ -123,7 +123,7 @@ export const Div = styled.div`
     text-align: center;
     position: relative;
     /* top: 232rem; */
-    z-index: 99;
+    /* z-index: 99; */
     bottom: 358px;
   }
 
@@ -131,7 +131,7 @@ export const Div = styled.div`
     display: flex;
     justify-content: center;
     margin-top: 10rem;
-    position: relative;
+    /* position: relative; */
   }
   .code-line {
     margin-left: 19rem;
@@ -157,6 +157,10 @@ export const Div = styled.div`
       line-height: 33px;
     }
   }
+  /* .wavee{
+    background-image: url("assets/images/Images-with-connector.svg" );
+    width: 100%;
+  } */
   @media (min-width: 500px) and (max-width: 1070px) {
     .maxium {
       display: none;
@@ -209,6 +213,8 @@ export const Div = styled.div`
     .second-content {
       margin-top: 1rem;
     }
+    
+    
     .mission-p-tag {
       font-size: 16px;
       width: 145%;
@@ -240,6 +246,12 @@ export const Div = styled.div`
       padding-top: 2rem;
     }
   }
+  @media (min-width: 250px) and (max-width: 1024px) {
+    .second-content {
+     display: flex;
+     justify-content: center;
+     margin-top: 0rem;
+    }}
   /* ....................small screen: .;.......................... */
   @media (min-width: 500px) and (max-width: 768px) {
     .section-one {
@@ -392,11 +404,11 @@ export const Header = styled.div`
     .header {
       background: #efce1e;
     }
-    .single,
+    /* .single,
     .second-ball,
     .third-ball {
       display: none;
-    }
+    } */
     span,
     h5 {
       font-size: 47px;
@@ -422,12 +434,12 @@ export const Header = styled.div`
       max-height: 132vh;
     }
 
-    .little {
+    /* .little {
       display: none;
-    }
-    .ball-image {
+    } */
+    /* .ball-image {
       display: none;
-    }
+    } */
     .banner-image {
       max-width: 560px;
       margin-left: 6rem;
@@ -560,7 +572,18 @@ export const SmallHeader = styled.div`
       font-weight: 400;
       margin-top: 2rem;
     }
+    .small-waves{
+     background-image: url("assets/images/Ball-and-wa.svg");
+     background-position: center;
+     background-repeat: no-repeat;
+     width: 100%;
+     background-size: contain;
+    }
+    .samll-wave-contnet{
+  
+    }
   }
+
 
   .Small-header {
   }

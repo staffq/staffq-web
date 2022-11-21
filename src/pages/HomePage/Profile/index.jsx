@@ -75,6 +75,7 @@ const Profile = () => {
                     </div>
                   </div>
                   <img src="assets/images/ring.svg " className="wave" />
+                  <div className="second-hover ">
                   <div className="waves-two">
                     <div className="three ">
                       <img
@@ -95,6 +96,7 @@ const Profile = () => {
                         </p>
                       </div>
                     </div>
+                  </div>
                   </div>
 
                   <div className="dis-play border-one wave-three">
@@ -118,6 +120,7 @@ const Profile = () => {
                       ></img>
                     </div>
                   </div>
+                  <div className="second-hover ">
 
                   <div className="wave-four">
                     <div className="three ">
@@ -126,9 +129,9 @@ const Profile = () => {
                         className="img-one img-four"
                       ></img>
                       <div className="four">
-                        <h5 className="ProfileScreening">
+                        <span className="ProfileScreening">
                           Technical Assessment
-                        </h5>
+                        </span>
 
                         <p>
                           We have curated one of most advanced technical
@@ -138,6 +141,7 @@ const Profile = () => {
                         </p>
                       </div>
                     </div>
+                  </div>
                   </div>
 
                   <div className="view">
@@ -170,6 +174,7 @@ const Profile = () => {
                     </div>
 
                     {/* ...........................................six................................. */}
+                    <div className="second-hover ">
                     <div className="wave-six">
                       <div className="three ">
                         <img
@@ -177,7 +182,7 @@ const Profile = () => {
                           className="img-one"
                         ></img>
                         <div className="four">
-                          <h5 className="ProfileScreening">Get Selected</h5>
+                          <span className="ProfileScreening">Get Selected</span>
 
                           <p>
                             Get selected at top companies international<br></br>
@@ -185,6 +190,7 @@ const Profile = () => {
                           </p>
                         </div>
                       </div>
+                    </div>
                     </div>
                   </div>
                 </div>

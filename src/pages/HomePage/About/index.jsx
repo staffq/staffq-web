@@ -21,7 +21,7 @@ const About = () => {
           <div className="row mt-5">
             <div className="col-lg-5 col-md-12 col-sm-12 medium-one">
                 <div className="aboutImage">
-                <img src="assets/images/Rectangle.svg" width='100%'/>
+                <img src="assets/images/service.png" width='100%'/>
                 </div>
             
              

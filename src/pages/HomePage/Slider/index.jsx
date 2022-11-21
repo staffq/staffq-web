@@ -82,9 +82,9 @@ const Slick = () => {
                   </div>
 
                   <p className="card-text ">
-                    Lorem ipsum dolor sit amet, consectetur adipisci ngelit, sed
-                    do eiusmod tempor incididunt ut lab ore et dolore magna
-                    aliqua. Ut enim ad minim veniam, quis
+                    I've never received so many candidates from one vendor that
+                    has made it through the interview stage in such a short time
+                    Aspire <br></br>I'm always looking for the best talent to work for our oraganization
                   </p>
 
                   <div className="one">
@@ -93,7 +93,7 @@ const Slick = () => {
                     </div>
                     <div className="two">
                       <h5 style={{ fontSize: "17px" }}>Sheldon Cooper</h5>
-                      <p className="communication">CEO, Communications Ltd</p>
+                      <p className="communication">CTS</p>
                     </div>
                   </div>
                 </div>

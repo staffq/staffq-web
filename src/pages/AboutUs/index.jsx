@@ -4,7 +4,7 @@ import {
   Header,
   SmallHeader,
   AboutSection,
-} from "../../styles/about-page-style";
+} from "../../styles/aboutpage-style";
 
 const AboutPage = () => {
   return (
@@ -28,17 +28,18 @@ const AboutPage = () => {
                         className="single"
                       />
 
-                      <h5> Join the team that’s <br></br>
-
-                      making the world work <br></br>
-                      better for everyone </h5>
+                      <h5>
+                        {" "}
+                        Join the team that’s <br></br>
+                        making the world work <br></br>
+                        better for everyone{" "}
+                      </h5>
 
                       <img
                         src="assets/images/single-ball.svg"
                         className="second-ball"
                       />
                       <br></br>
-                     
 
                       <p>
                         Lorem ipsum dolor sit amet, consectetur adipiscing elit,
@@ -71,16 +72,20 @@ const AboutPage = () => {
 
         <SmallHeader className="container-fluid p-0">
           <div lassName="Small-header ">
-            <div className="text-center">
-              <h1>
-                Join the team that’s <br></br>
-                making the world work <br></br>
-                better for everyone <br></br>
-              </h1>
-              <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                eiusmod tempor incididunt ut labore et dolore magna aliqua.
-              </p>
+            <div className="small-waves container">
+              {/* <img src="assets/images/Ball-and-wa.svg"/> */}
+
+              <div className="text-center samll-wave-contnet">
+                <h1>
+                  Join the team that’s <br></br>
+                  making the world work <br></br>
+                  better for everyone <br></br>
+                </h1>
+                <p>
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                  do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                </p>
+              </div>
             </div>
             <div>
               <img
@@ -96,7 +101,7 @@ const AboutPage = () => {
           <div className="row">
             <div className="col-lg-6 col-sm-12">
               <div className="img-one">
-                <img src="assets/images/image-content-one.svg" width="100%" />
+                <img src="assets/images/Mission-and-vision-image.png" width="100%" />
               </div>
             </div>
             <div className="col-lg-6 col-sm-12">
@@ -298,9 +303,10 @@ const AboutPage = () => {
             </div>
           </div>
         </AboutSection>
+     
         <div className="maxium">
           <div className="background-wave-image">
-            <img src="assets/images/Images-with-connector.svg" />
+            <img src="assets/images/Images-with-connector.png" />
           </div>
           <div className="container  join-team">
             <div className="">
@@ -321,8 +327,11 @@ const AboutPage = () => {
             </div>
           </div>
         </div>
+     
         {/* 
         .........................smallll.......scree........... */}
+      
+      
 
         <div className="container small-join-section">
           <div className="join-teamm">

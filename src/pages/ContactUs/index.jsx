@@ -32,7 +32,7 @@ const contact = () => {
           </div>
 
           {/* ........................form section.............................. */}
-          <Form>
+          {/* <Form>
             <div>
               <div className="container">
                 <div className="text-center mt-5">
@@ -92,7 +92,7 @@ const contact = () => {
                   </div>
                 </div>
 
-                {/* ...............................text--filed.................. */}
+                ...............................text--filed..................
                 <div className="">
                   <div className="row ">
                     <div className="col-lg-1"></div>
@@ -112,13 +112,13 @@ const contact = () => {
                 </div>
               </div>
             </div>
-          </Form>
+          </Form> */}
 
           <div style={{}} className="pc-contact">
             <div className="container">
               <h2 className="Our-Branches">Our Branches</h2>
               <div className="row  ">
-                {/* <div className="col-lg-1"></div> */}
+               
                 <div className="col-lg-4 col-sm-12 col-md-12">
                   <div>
                     <div className="display">
@@ -273,6 +273,7 @@ const contact = () => {
                         <h6>Tiruppur</h6>
                       </div>
                     </div>
+                    <div className="one-two">
                     <div className=" d-fx">
                       <div className="">
                         <img src="assets/images/Loaction.svg" />
@@ -298,7 +299,7 @@ const contact = () => {
                       </div>
                       <div className=" font d-one ">info@staffq.org</div>
                     </div>
-
+                    </div>
                     <div></div>
                   </div>
                 </div>

@@ -18,7 +18,7 @@ export const ProfileJs = styled.div`
   }
   .waves-two {
     position: absolute;
-    top: 112rem;
+    top: 113rem;
     padding-left: 60px;
   }
   .wave-three {
@@ -28,17 +28,17 @@ export const ProfileJs = styled.div`
   }
   .wave-four {
     position: absolute;
-    top: 130rem;
+    top: 131rem;
     padding-left: 57px;
   }
   .wave-five {
     position: absolute;
-    top: 141rem;
+    top: 142rem;
     padding-right: 45px;
   }
   .wave-six {
     position: absolute;
-    top: 149rem;
+    top: 150rem;
     padding-left: 57px;
   }
   .how-it-work-p-tag {
@@ -58,6 +58,7 @@ export const ProfileJs = styled.div`
     position: sticky;
 
     width: 456px;
+    z-index: -99;
     height: 456px;
     left: 37px;
     margin-top: 2rem;
@@ -128,11 +129,65 @@ export const ProfileJs = styled.div`
   .dis-play:hover h5 {
     border-bottom: 5px solid yellow;
     transition: margin-right 2s ease-in-out;
+    width: 0%;
+  animation-name: example;
+  animation-duration: 4s;
+  /* border:3px solid black; */
+  /* border-bottom:1px soild yellow; */
+  /* position:absolute; */
   }
-  .profile-screen :hover span {
+  
+
+.second-hover:hover span {
+  border-bottom: 5px solid yellow;
+    /* transition: margin-right 2s ease-in-out; */
+    width: 0%;
+  animation-name: one;
+  animation-duration: 4s;
+  /* border:3px solid black; */
+  border-bottom:1px soild yellow;
+  /* position:absolute; */
+  } 
+  @keyframes example  {
+0%{
+width:100%;
+}
+100%{
+width:0%;
+}
+}
+@keyframes one  {
+0%{
+width:100%;
+}
+100%{
+width:0%;
+}
+}
+  /* .profile-screen :hover span {
     border-bottom: 5px solid yellow;
     transition: margin-right 2s ease-in-out;
   }
+
+  /* span {
+  width: 0%;
+  animation-name: example;
+  animation-duration: 4s;
+  border:3px solid black;
+  border-bottom:3px soild black;
+  position:absolute;
+ 
+}
+
+@keyframes example  {
+0%{
+width:100%;
+}
+100%{
+width:0%;
+}
+}
+   */
   .bop {
     border-bottom: 5px solid red;
   }
@@ -156,7 +211,7 @@ export const ProfileJs = styled.div`
     display: flex;
   }
   .one {
-    display: flex;
+    /* display: flex; */
     flex-direction: column;
   }
   .img-one {
@@ -181,10 +236,10 @@ export const ProfileJs = styled.div`
     margin-top: 4rem;
     margin-left: -8rem;
   }
-  .four {
+  /* .four {
     display: flex;
     flex-direction: column;
-  }
+  } */
   @media (min-width: 150px) and (max-width: 768px) {
     display: none;
   }
@@ -206,6 +261,7 @@ export const ProfileJs = styled.div`
       position: sticky;
       margin: 0 auto;
       width: 456px;
+      z-index: -99;
       height: 456px;
       left: 37px;
       margin-top: 2rem;
@@ -420,7 +476,7 @@ po
       background-repeat: no-repeat;
       background-position: center;
       background-size: cover;
-
+z-index: -99;
       margin: 0 auto;
       width: 344px;
       height: 344px;
