@@ -50,21 +50,21 @@ const Header = () => {
               </a>
             </Link>
             <ul className="navbar-nav mr-auto mt-2  mt-lg-0">
-              <li className="nav-item active">
+              {/* <li className="nav-item active">
                 <Hover>
                   <Link href="#">
                     <p className="mb-0">Service</p>
                   </Link>
                 </Hover>
-              </li>
+              </li> */}
 
-              <li className="nav-item active">
+              {/* <li className="nav-item active">
                 <Hover>
                   <Link href="/find-jobs">
                     <p className="mb-0">Find Jobs</p>
                   </Link>
                 </Hover>
-              </li>
+              </li> */}
               <li className="nav-item active">
                 <Hover>
                   <Link href="/about-us">

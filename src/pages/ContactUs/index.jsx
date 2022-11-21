@@ -107,7 +107,7 @@ const contact = () => {
                     <div className="col-lg-1"></div>
                   </div>
                   <div className="submit-btn mt-5">
-                    <button className="btn button-submit  ">Submit</button>
+                    <button className="btn button-submit submit-btn ">Submit</button>
                   </div>
                 </div>
               </div>

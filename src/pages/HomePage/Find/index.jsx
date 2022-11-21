@@ -1,5 +1,6 @@
 import React from "react";
 // import { Button } from "../../../components/Banner/style";
+import Link from "next/link";
 import { Findjobs, SmallFind } from "../../../styles/find-jobs-style";
 const Find = () => {
   return (
@@ -42,7 +43,7 @@ const Find = () => {
                     do e<br></br> iusmod tempor incididunt ut labore et dolore
                     magna aliqua.
                   </p>
-
+                  <Link href="/upload-cv">
                   <button className="mt-3 upload">
                     <img
                       src="assets/images/directbox-send.svg"
@@ -50,6 +51,8 @@ const Find = () => {
                     ></img>
                     <span className="upload-button"> Upload</span>
                   </button>
+                </Link>
+                  
                 </div>
               </div>
             </div>

@@ -7,6 +7,91 @@ export const Worked = styled.div`
 width: 100%;
 margin-top: 10%;
 height: 50vh; */
+
+ .medium-small-view{
+    display: none;
+  }
+
+
+
+
+  .P-tag {
+    left: 0px;
+    padding-top: 28px;
+
+    font-style: normal;
+    font-weight: 500;
+    font-size: 21px;
+    line-height: 27px;
+
+    color: rgba(8, 20, 41, 0.6);
+  }
+ 
+ color: #081429;
+  
+  
+  .small-center {
+    margin-top: 2rem;
+  }
+  h4 {
+    font-size: 30px;
+  }
+  .small-p-tag {
+    font-size: 21px;
+    font-weight: 500;
+    color: rgba(8, 20, 41, 0.4);
+    margin-top: 2rem;
+  }
+ 
+
+ 
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  @media (min-width: 250px) and (max-width: 1024px) {
+    .medium-small-view{
+    display: block;
+  }
+  }
   .img-one {
     border-radius: 30px;
 
@@ -253,7 +338,7 @@ height: 50vh; */
     left: 230px;
     top: 1717px;
 
-    font-family: "General Sans";
+  
     font-style: normal;
     font-weight: 500;
     font-size: 16px;
@@ -264,7 +349,7 @@ height: 50vh; */
   }
   input {
     height: 56px;
-    width: 38vw;
+    width: 34vw;
 
     border-radius: 12px;
     margin-bottom: 20px;
@@ -358,10 +443,11 @@ height: 50vh; */
     }
   }
   .still-not-sure {
-    font-family: "General Sans";
+   
     font-style: normal;
     font-weight: 600;
-    font-size: 44px;
+    padding-top: 21px;
+    font-size: 50px;
     line-height: 81px;
     /* identical to box height */
 
@@ -432,7 +518,7 @@ export const Header = styled.div`
     top: 4rem;
     right: 11rem;
   }
-  @media (min-width: 769px) and (max-width: 1300px) {
+  @media (min-width: 769px) and (max-width: 1024px) {
     display: none;
   }
   @media (min-width: 250px) and (max-width: 768px) {
@@ -472,13 +558,45 @@ export const Header = styled.div`
     }
     .banner-image {
       width: 100%;
-      margin-top: 32rem;
+     
+    }
+    .ball-one-page {
+      text-align: center;
+      top: 10rem;
     }
   }
+  @media (min-width: 990px) and (max-width: 1200px) {
+    .ball-one-page {
+      text-align: center;
+      top: 5rem;
+      margin: 0;
+    }
+    h1 {
+    left: 170px;
+    top: 282px;
+
+    font-style: normal;
+    font-weight: 600;
+    font-size: 54px;
+    line-height: 81px;
+    /* identical to box height */
+
+    color: #081429;
+  }
+  .banner-image {
+      width: 100%;
+     margin-left: 2rem
+     ;
+    }
+   }
 `;
+
 
 export const Image = styled.div`
   /* margin-top: 8%; */
+  @media (min-width: 250px) and (max-width: 1024px) {
+    display: none;
+  }
   .one {
     position: absolute;
   }
@@ -554,7 +672,7 @@ export const SmallHeader = styled.div`
   @media (min-width: 250px) and (max-width: 768px) {
     display: block;
   }
-  @media (min-width: 769px) and (max-width: 1300px) {
+  @media (min-width: 769px) and (max-width: 1024px) {
     display: block;
     .ball-sm-page {
       text-align: center;

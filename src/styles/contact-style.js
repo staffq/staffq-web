@@ -79,7 +79,7 @@ export const Form = styled.div`
     font-size: 18px;
     line-height: 22px;
     margin-top: 10px;
-    padding-left: 7rem;
+    /* padding-left: 7rem; */
 
     color: #ffffff;
   }
