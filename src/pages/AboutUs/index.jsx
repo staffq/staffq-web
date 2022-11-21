@@ -4,7 +4,7 @@ import {
   Header,
   SmallHeader,
   AboutSection,
-} from "../../styles/aboutpage-style";
+} from "../../styles/about-page-style";
 
 const AboutPage = () => {
   return (
