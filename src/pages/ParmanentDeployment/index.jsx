@@ -168,7 +168,7 @@ const ParamanentDeployment = () => (
                   <img
                     src="assets/images/Ball and waves.svg"
                     className="ball-image"
-                    width="100%" />
+                    width="100%" alt="img"/>
                   <div className="ball-one-page">
                     <h1>Permanent Recruitment</h1>
                     <p>
@@ -191,12 +191,12 @@ const ParamanentDeployment = () => (
                             src="assets/images/Banner-Image.svg"
                             width="100%"
                             className="banner-image"
-                          ></img>
+                            alt="img"/>
                         </div>
                       </div>
                     </div>
                     <div className="little">
-                      <img src="assets/images/little-ball.svg"></img>
+                      <img src="assets/images/little-ball.svg" alt="img"/>
                     </div>
                   </div>
                 </div>
@@ -225,7 +225,7 @@ const ParamanentDeployment = () => (
                 <img
                   src="assets/images/Banner-Image.svg"
                   className="banner-image"
-                ></img>
+                  alt="img"/>
               </div>
             </div>
           </SmallHeader>
@@ -253,7 +253,7 @@ const ParamanentDeployment = () => (
                 <div className="col-lg-12 col-sm-12 col-md-12">
                   <div>
                     <div className="d-flex">
-                      <img src="assets/images/line.svg" className="mt-4" />
+                      <img src="assets/images/line.svg" className="mt-4" alt="img"/>
                       <h4 className="whats-happening ">What’s happening?</h4>
                     </div>
                     <p className="solution-p-tag">
@@ -274,7 +274,7 @@ const ParamanentDeployment = () => (
                   <div className="col-lg-12 col-sm-12 col-md-12">
                     <div>
                       <div className="d-flex">
-                        <img src="assets/images/line.svg" className="mt-4" />
+                        <img src="assets/images/line.svg" className="mt-4" alt="img"/>
                         <h4 className="whats-happening ">Situation</h4>
                       </div>
                       <p className="solution-p-tag">
@@ -313,7 +313,7 @@ const ParamanentDeployment = () => (
                   <div className="col-lg-12 col-sm-12 col-md-12">
                     <div className="solution-header ">
                       <div className="d-flex ">
-                        <img src="assets/images/line.svg" className="mt-4" />
+                        <img src="assets/images/line.svg" className="mt-4" alt="img"/>
                         <h2 className="whats-happening  Solution">
                           Solution
                         </h2>
@@ -347,7 +347,7 @@ const ParamanentDeployment = () => (
                     src="assets/images/hand-img.svg"
                     className="hand-img "
                     width="100%"
-                  ></img>
+                    alt="img"/>
                 </div>
               </div>
             </div>
@@ -381,8 +381,8 @@ const ParamanentDeployment = () => (
         <div className="container small-center">
           <div className="">
             <div>
-              <img src="assets/images/Icon.png"></img>
-            </div>
+              <img src="assets/images/Icon.png"alt="img"/>
+           </div>
             <div className="">
               <h4> Profile Screening & Shortlisting </h4>
               <p className="small-p-tag">
@@ -396,7 +396,7 @@ const ParamanentDeployment = () => (
               <img
                 src="assets/images/Language-img.svg"
                 className="img-one"
-              ></img>
+                alt="img"/>
             </div>
             <div className="">
               <h4>Language Proficiency</h4>
@@ -411,7 +411,7 @@ const ParamanentDeployment = () => (
               <img
                 src="assets/images/apptitude-img.svg"
                 className="img-one"
-              ></img>
+                alt="img"/>
             </div>
             <div className="">
               <h4> Aptitude Evaluation</h4>
@@ -426,7 +426,7 @@ const ParamanentDeployment = () => (
               <img
                 src="assets/images/Technical-img.svg"
                 className="img-one img-four"
-              ></img>
+                alt="img"/ >
             </div>
             <div className="">
               <h4>Technical Assessment</h4>
@@ -442,7 +442,7 @@ const ParamanentDeployment = () => (
               <img
                 src="assets/images/Panel-Interview.svg"
                 className="img-one"
-              ></img>
+                alt="img"/>
             </div>
             <div className="">
               <h4>Panel Interview</h4>
@@ -455,7 +455,7 @@ const ParamanentDeployment = () => (
           </div>
           <div className="">
             <div>
-              <img src="assets/images/get-img.svg" className="img-one"></img>
+              <img src="assets/images/get-img.svg" className="img-one"alt="img"/>
             </div>
             <div className="">
               <h4>Get Selected</h4>
@@ -478,7 +478,7 @@ const ParamanentDeployment = () => (
             <div>
               <img
                 src="assets/images/images-under-pic.svg"
-                className="under-pic one" />
+                className="under-pic one" alt="img"/>
             </div>
           </div>
           <div className="two">
@@ -488,7 +488,7 @@ const ParamanentDeployment = () => (
                   <div>
                     <img
                       src="assets/images/under-imgaess.svg"
-                      className="round-img" />
+                      className="round-img" alt="img"/>
                   </div>
                 </div>
                 <div className="col-lg-1"></div>
@@ -496,7 +496,7 @@ const ParamanentDeployment = () => (
                   <div>
                     <img
                       src="assets/images/under-imgaess.svg"
-                      className="round-img" />
+                      className="round-img" alt="img"/>
                   </div>
                 </div>
                 <div className="col-lg-1"></div>
@@ -504,7 +504,7 @@ const ParamanentDeployment = () => (
                   <div>
                     <img
                       src="assets/images/under-imgaess.svg"
-                      className="round-img" />
+                      className="round-img" alt="img"/>
                   </div>
                 </div>
                 <div className="col-lg-1"></div>
@@ -526,7 +526,7 @@ const ParamanentDeployment = () => (
                     <div className="uder-cover-img">
                       <img
                         src="assets/images/under-imgaess.svg "
-                        className="round-img" />
+                        className="round-img" alt="img"/>
                       <h5> Requirment Planning</h5>
                     </div>
                   </div>
@@ -543,7 +543,7 @@ const ParamanentDeployment = () => (
                     <div className="uder-cover-img">
                       <img
                         src="assets/images/under-imgaess.svg "
-                        className="round-img" />
+                        className="round-img" alt="img"/>
                       <h5> Choice Of Actions</h5>
                     </div>
                   </div>
@@ -560,7 +560,7 @@ const ParamanentDeployment = () => (
                     <div className="uder-cover-img">
                       <img
                         src="assets/images/under-imgaess.svg "
-                        className="round-img" />
+                        className="round-img" alt="img"/>
                       <h5>Closure</h5>
                     </div>
                   </div>

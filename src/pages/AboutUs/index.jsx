@@ -1,11 +1,22 @@
 import React from "react";
+import Head from "next/head";
 import {
   Div,
   Header,
   SmallHeader,
   AboutSection,
 } from "../../styles/aboutpage-style";
-
+<Head>
+  <title>About Us </title>
+  <meta
+    property="og:title"
+    content="About StaffQ Team of HR professionals and SMEs offering complete HR 
+    Solutions to impact the rapidly 
+    growing Recruitment Industry in India Redefining the Recruitment
+     experience of Fortune 500s and Large Enterprises to Startups "
+    key="title"
+  />
+</Head>;
 const AboutPage = () => {
   return (
     <div>
@@ -16,40 +27,17 @@ const AboutPage = () => {
               <div className="">
                 <div className="row">
                   <div className="col-lg-6 col-sm-12 col-md-6 container">
-                    <img
-                      src="assets/images/five-waves.svg"
-                      className="ball-image"
-                      width="100%"
-                    />
+                    <div className="ballwave">
+                      <img src="assets/images/Ball-and-waves.png" />
+                    </div>
 
                     <div className="ball-one-page">
-                      <img
-                        src="assets/images/single-ball.svg"
-                        className="single"
-                      />
-
                       <h5>
                         {" "}
                         Join the team that’s <br></br>
                         making the world work <br></br>
                         better for everyone{" "}
                       </h5>
-
-                      <img
-                        src="assets/images/single-ball.svg"
-                        className="second-ball"
-                      />
-                      <br></br>
-
-                      <p>
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit,
-                        sed do eiusmod tempor incididunt ut labore et dolore
-                        magna aliqua.
-                      </p>
-                      <img
-                        src="assets/images/single-ball.svg"
-                        className="third-ball"
-                      />
                     </div>
                   </div>
 
@@ -60,7 +48,8 @@ const AboutPage = () => {
                           src="assets/images/about-Banner-image.svg "
                           width="100%"
                           className="banner-image"
-                        ></img>
+                          alt="img"
+                        />
                       </div>
                     </div>
                   </div>
@@ -81,10 +70,6 @@ const AboutPage = () => {
                   making the world work <br></br>
                   better for everyone <br></br>
                 </h1>
-                <p>
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-                  do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                </p>
               </div>
             </div>
             <div>
@@ -92,7 +77,8 @@ const AboutPage = () => {
                 src="assets/images/About-us-man.svg"
                 width="100%"
                 className="banner-image"
-              ></img>
+                alt="img"
+              />
             </div>
           </div>
         </SmallHeader>
@@ -101,14 +87,18 @@ const AboutPage = () => {
           <div className="row">
             <div className="col-lg-6 col-sm-12">
               <div className="img-one">
-                <img src="assets/images/Mission-and-vision-image.png" width="100%" />
+                <img
+                  src="assets/images/Mission-and-vision-image.png"
+                  width="100%"
+                  alt="img"
+                />
               </div>
             </div>
             <div className="col-lg-6 col-sm-12">
               <div className="second-content">
                 <div className="second-page-h1">
                   <div className="d-flex">
-                    <img src="assets/images/line.svg" />
+                    <img src="assets/images/line.svg" alt="img" />
                     <h3 className="our-head">Our Mission</h3>
                   </div>
 
@@ -122,7 +112,7 @@ const AboutPage = () => {
               <div className="second-content">
                 <div className="second-page-h1">
                   <div className="d-flex">
-                    <img src="assets/images/line.svg" />
+                    <img src="assets/images/line.svg" alt="img" />
                     <h3 className="our-head">Our Vision</h3>
                   </div>
                   <p className="mission-p-tag">
@@ -141,11 +131,6 @@ const AboutPage = () => {
         <div>
           <div className="container text-center mt-5">
             <h4 className="Our-Strategy">Our Strategy</h4>
-            <p className="Lorem">
-              Lorem ipsum dolor sit amet, consectetur adipiscingelit, sed do
-              eiusmod tempor incididunt ut labore et <br></br>
-              dolore magna aliqua. Ut enim ad minim veniam, quis
-            </p>
           </div>
         </div>
 
@@ -158,19 +143,14 @@ const AboutPage = () => {
                     <img
                       src="assets/images/img-page-one.svg"
                       className="img-one-one"
+                      alt="img"
                     />
 
                     <h3 className="discover-h-three">1. Discover</h3>
                     <p className="discover-p-tag">
-                      Lorem ipsum dolor sit amet, consectetur adipiscingelit,
-                      sed do eiusmod <br></br>tempor incididunt ut labore et
-                      dolore magna aliqua. Ut enim ad minim veniam,<br></br>{" "}
-                      quisLorem ipsum dolor sit amet, consectetur
-                      adipiscingelit,sed do eiusmod <br></br>tempor incididunt
-                      ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-                      <br></br> quis Loremipsum dolor sit amet, consectetur
-                      adipiscingelit, sed do eiusmod <br></br>tempor incididunt
-                      ut labore et dolore magna aliqua.
+                      We discover the profiles that are a culture and the skill
+                      fit for your company <br></br> which make the process
+                      easier on proceeding with the profiles
                     </p>
                   </div>
                 </div>
@@ -181,25 +161,21 @@ const AboutPage = () => {
                     <img
                       src="assets/images/Evaluate.svg"
                       className="img-one-one"
+                      alt="img"
                     />
                     <h3 className="discover-h-three">3. Evaluate</h3>
                     <p className="discover-p-tag">
-                      Lorem ipsum dolor sit amet, consectetur adipiscingelit,
-                      sed do eiusmod <br></br>tempor incididunt ut labore et
-                      dolore magna aliqua. Ut enim ad minim veniam,<br></br>{" "}
-                      quisLorem ipsum dolor sit amet, consectetur
-                      adipiscingelit,sed do eiusmod <br></br>tempor incididunt
-                      ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-                      <br></br> quis Loremipsum dolor sit amet, consectetur
-                      adipiscingelit, sed do eiusmod <br></br>tempor incididunt
-                      ut labore et dolore magna aliqua.
+                      Since we also have a software expertise we can screen and
+                      evaluate the <br></br>technical skills form our end that
+                      suites for you and we pass though the evaluation process
+                      for you end.
                     </p>
                   </div>
                 </div>
               </div>
 
               <div className="section-two mt-5 evalute-image">
-                <img src="assets/images/second-elipse.svg"></img>
+                <img src="assets/images/second-elipse.svg" alt="img" />
               </div>
             </div>
 
@@ -211,24 +187,23 @@ const AboutPage = () => {
                   <img
                     src="assets/images/Ball-one.svg"
                     className="row-second-ball"
-                  ></img>
+                    alt="img"
+                  />
                 </div>
                 <div className="content-one margin-section">
                   <div className="content-two">
                     <div className="img-page-two">
                       <div className="">
-                        <img src="assets/images/analyse.svg" width="93%" />
+                        <img
+                          src="assets/images/analyse.svg"
+                          width="93%"
+                          alt="img"
+                        />
                         <h3 className="discover-h-three">2. Analyse</h3>
                         <p className="discover-p-tag">
-                          Lorem ipsum dolor sit amet, consectetur
-                          adipiscingelit, sed do eiusmod tempor incididunt ut
-                          labore et dolore magna aliqua. Ut enim ad minim
-                          veniam, quisLorem ipsum dolor sit amet, consectetur
-                          adipiscingelit,sed do eiusmod tempor incididunt ut
-                          labore et dolore magna aliqua. Ut enim ad minim
-                          veniam, quis Loremipsum dolor sit amet, consectetur
-                          adipiscingelit, sed do eiusmod tempor incididunt ut
-                          labore et dolore magna aliqua.
+                          We are analyze the profile about the history, skillset
+                          and the background<br></br> of the candidate which
+                          helps us in identifying that fits to your requirement.
                         </p>
                       </div>
                     </div>
@@ -238,18 +213,16 @@ const AboutPage = () => {
                   <div className="content-one  ">
                     <div className="content-two ">
                       <div className="img-page-two  ">
-                        <img src="assets/images/Onboard.svg" width="93%" />
+                        <img
+                          src="assets/images/Onboard.svg"
+                          width="93%"
+                          alt="img"
+                        />
                         <h3 className="discover-h-three">4. Onboard</h3>
                         <p className="discover-p-tag">
-                          Lorem ipsum dolor sit amet, consectetur
-                          adipiscingelit, sed do eiusmod tempor incididunt ut
-                          labore et dolore magna aliqua. Ut enim ad minim
-                          veniam, quisLorem ipsum dolor sit amet, consectetur
-                          adipiscingelit,sed do eiusmod tempor incididunt ut
-                          labore et dolore magna aliqua. Ut enim ad minim
-                          veniam, quis Loremipsum dolor sit amet, consectetur
-                          adipiscingelit, sed do eiusmod tempor incididunt ut
-                          labore et dolore magna aliqua.
+                          We will not only follow-up we take ownership on
+                          onboarding the candidates <br></br> for you that helps
+                          both us on an easy going business
                         </p>
                       </div>
                     </div>
@@ -274,7 +247,11 @@ const AboutPage = () => {
               <div className="row mt-5">
                 <div className="col-lg-5 col-md-12 col-sm-12">
                   <div className="aboutImage">
-                    <img src="assets/images/Rectangle.svg" width="100%" />
+                    <img
+                      src="assets/images/service.png"
+                      width="100%"
+                      alt="img"
+                    />
                   </div>
                 </div>
                 <div className="col-lg-7 col-md-12 col-sm-12 fs-5 about-p-center">
@@ -303,7 +280,7 @@ const AboutPage = () => {
             </div>
           </div>
         </AboutSection>
-     
+
         <div className="maxium">
           <div className="background-wave-image">
             <img src="assets/images/Images-with-connector.png" />
@@ -315,23 +292,17 @@ const AboutPage = () => {
                 <img
                   className="code-line"
                   src="assets/images/undec-code-line.svg"
+                  alt="img"
                 />
               </div>
 
-              <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-                <br></br>
-                do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-              </p>
               <button className="bt">Join Us</button>
             </div>
           </div>
         </div>
-     
+
         {/* 
         .........................smallll.......scree........... */}
-      
-      
 
         <div className="container small-join-section">
           <div className="join-teamm">
@@ -340,6 +311,7 @@ const AboutPage = () => {
               <img
                 className="code-line"
                 src="assets/images/undec-code-line.svg"
+                alt="img"
               />
             </div>
             <p className="join-p-tag">

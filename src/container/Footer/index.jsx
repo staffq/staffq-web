@@ -19,7 +19,7 @@ const Footer = () => {
                   >
                     <div className="logo-footer">
                       {" "}
-                      <img src="assets/images/Logo.png" />
+                      <img src="assets/images/Logo.png" alt="img" />
                     </div>
                   </div>
                   <div
@@ -68,7 +68,7 @@ const Footer = () => {
                     </h5>
                     <div className="mt-4 footer-contactus">
                       <span>
-                        <img src="assets/images/location-image.png"></img>
+                        <img src="assets/images/location-image.png" alt="img"/>
 
                         <span className="pdding-left ">
                           Floor-3A,Sathyam{" "}
@@ -83,7 +83,7 @@ const Footer = () => {
                       {/* <IoCall/> */}
 
                       <div className="">
-                        <img src="assets/images/call-image.svg"></img>
+                        <img src="assets/images/call-image.svg" alt="img"/>
                         <span style={{ paddingLeft: "10px" }}>
                           {" "}
                           +91 9629938033
@@ -170,7 +170,7 @@ const Footer = () => {
               <br></br>
               <div style={{ fontSize: "18px" }} className = "font">
                 <span>
-                  <img src="assets/images/location-image.png"></img>
+                  <img src="assets/images/location-image.png" alt="img"/>
 
                   <span className="pdding-left text-white">
                     Floor-3A,Sathyam Towers,6D
@@ -182,7 +182,7 @@ const Footer = () => {
                 </p>
 
                 <div className="">
-                  <img src="assets/images/call-image.svg"></img>
+                  <img src="assets/images/call-image.svg"alt="img"/>
                   <span style={{ paddingLeft: "9px" }}> +91 9629938033</span>
                   <p style={{ paddingLeft: "33px" }}> +91 421 3552738</p>
                 </div>

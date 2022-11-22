@@ -7,6 +7,8 @@ const About = () => {
   return (
     <>
     <AboutBg>
+ 
+
       <div className="container-fluid">
         <div className="About-section">
           <h2 className="">Why People Choose StaffQ?</h2>
@@ -21,7 +23,7 @@ const About = () => {
           <div className="row mt-5">
             <div className="col-lg-5 col-md-12 col-sm-12 medium-one">
                 <div className="aboutImage">
-                <img src="assets/images/service.png" width='100%'/>
+                <img src="assets/images/service.png" width='100%'alt="img"/>
                 </div>
             
              
@@ -58,9 +60,14 @@ const About = () => {
               
             </div>
           </div>
+       
         </div>
       </div>
     </AboutBg>
+
+
+
+
 
     <Medium>
       <div className="container-fluid">
@@ -75,7 +82,7 @@ const About = () => {
         </div>
         <div className="container">
         <div className="aboutImage">
-                <img src="assets/images/Rectangle.svg" width='100%'/>
+                <img src="assets/images/Rectangle.svg" width='100%'alt="img"/>
                 </div>
                 <div>
                 <p className="AboutPtext">

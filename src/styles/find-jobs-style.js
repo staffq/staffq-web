@@ -60,11 +60,11 @@ export const Findjobs = styled.div`
   }
 
   .arow {
-    width: 152px;
-    height: 134px;
-    padding: 1px;
-    margin-left: -53px;
-    margin-top: 177px;
+    width: 92px;
+    height: 117px;
+    padding: 4px;
+    margin-left: -46px;
+    margin-top: 141px;
   }
   p {
     font-weight: 500;

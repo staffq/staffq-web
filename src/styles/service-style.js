@@ -3,9 +3,31 @@ import styled from "styled-components";
 export const ServiceBg = styled.div`
 
 /*  */
-  @media (min-width: 900px) and (max-width: 1300px) {
+  @media (min-width: 900px) and (max-width: 1024px) {
     display: none;
   }
+  @media (min-width: 1024px) and (max-width: 1200px) {
+    .small-center {
+    padding-right: 8rem;
+  }
+  
+  .serviceImage{
+    width: 521px !important;
+    height: 323px;
+    margin-top: 0rem;
+  }
+
+  }
+  @media (min-width: 1024px) and (max-width: 1100px) {
+    /* .sm-card{
+      margin-right: 20px;
+    } */
+    .smcard-ONE{
+      margin-right: 64px;
+    }
+  }
+  
+  
   background: #efce1e;
   width: 100%;
   margin-bottom: 20px;
@@ -98,13 +120,13 @@ export const ServiceBg = styled.div`
 
   @media (min-width: 1301px) and (max-width: 1400px) {
   
-  .service-p-tag {
+  /* .service-p-tag {
     font-size: 16px;
     line-height: 27px;
     font-weight: 600;
     color: #08142999;
   }
-  
+   */
 }
   
   .learnmore:hover .VectorImage {
@@ -181,7 +203,7 @@ export const Medium = styled.div`
     }
   }
 
-  @media (min-width: 900px) and (max-width: 1300px) {
+  @media (min-width: 900px) and (max-width: 1024px) {
     display: block;
     background: #efce1e;
     width: 100%;

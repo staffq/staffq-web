@@ -15,7 +15,7 @@ const permanent = () => {
                     <img
                       src="assets/images/Ball and waves.svg"
                       className="ball-image"
-                    ></img>
+                      alt="img"/>
                     <div className="ball-one-page">
                       <h2>Permanent Recruitment</h2>
                       <p>
@@ -38,7 +38,7 @@ const permanent = () => {
                               src="assets/images/Banner-Image.svg"
                               width="100%"
                               className="banner-image"
-                            ></img>
+                              alt="img"/>
                           </div>
                         </div>
                       </div>

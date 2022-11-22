@@ -1,6 +1,6 @@
 /** **************************** Import Packages ****************************** */
-import Document, { Html, Head, Main, NextScript } from "next/document";
-
+import Document, { Html, Main, NextScript } from "next/document";
+import Head from 'next/head'
 /** **************************** Import Lib ****************************** */
 // import { GA_TRACKING_ID } from "../lib/gtag";
 
@@ -13,6 +13,8 @@ class MyDocument extends Document {
   render() {
     return (
       <Html>
+
+
         <Head>
           <link rel="icon" href="/favicon.ico" />
 

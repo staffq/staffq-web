@@ -40,7 +40,7 @@ export const Div = styled.div`
   }
   .content-one {
     width: 630px;
-    height: 500px;
+    /* height: 500px; */
 
     border-radius: 20px;
     background: #f6f6f5;
@@ -54,7 +54,7 @@ export const Div = styled.div`
   }
   .section-one {
     width: 630px;
-    height: 500px;
+    /* height: 500px; */
     padding-left: 12px;
 
     padding-top: 37px;
@@ -228,7 +228,7 @@ export const Div = styled.div`
       width: 452px;
       padding-top: 37px;
       padding: 7px;
-      height: 635px;
+      /* height: 635px; */
       border-radius: 20px;
       margin-left: 3rem;
       background: #f6f6f5;
@@ -280,7 +280,7 @@ export const Div = styled.div`
   @media (min-width: 250px) and (max-width: 500px) {
     .section-one {
       width: 100%;
-      height: 173vh;
+      /* height: 173vh; */
       padding-top: 37px;
       padding: 7px;
 
@@ -290,7 +290,7 @@ export const Div = styled.div`
     }
     .content-one {
       width: 100%;
-      height: 173vh;
+      /* height: 173vh; */
       /* max-height: 267vh; */
       padding: 16px;
       border-radius: 20px;
@@ -316,7 +316,7 @@ export const Div = styled.div`
       width: 516px;
       padding-top: 37px;
       padding: 7px;
-      height: 635px;
+      /* height: 635px; */
       border-radius: 20px;
       /* margin-left: 3rem; */
       background: #f6f6f5;
@@ -339,7 +339,11 @@ export const Div = styled.div`
 export const Header = styled.div`
   left: 0px;
   top: 81px;
-  position: relative;
+  /* position: relative; */
+  .ballwave{
+position: absolute;
+margin-left: 7rem;
+  }
 
   .header {
     background: #efce1e;
@@ -381,15 +385,19 @@ export const Header = styled.div`
 
     color: rgba(8, 20, 41, 0.6);
   }
+  .content{
+    /* margin-top: 13rem; */
+  }
   .ball-one-page {
-    position: absolute;
+    /* position: absolute; */
+    position: relative;
     top: 6rem;
     margin-left: 7rem;
   }
   .banner-image {
     width: 100%;
     margin-top: 37px;
-    position: relative;
+    /* position: relative; */
   }
   .ball-image {
     margin-left: 9rem;
@@ -411,9 +419,9 @@ export const Header = styled.div`
     } */
     span,
     h5 {
-      font-size: 47px;
+      font-size: 43px;
       line-height: 60px;
-      margin-left: 4rem;
+      /* margin-left: 4rem; */
     }
     p {
       margin-left: 4rem;
@@ -440,12 +448,13 @@ export const Header = styled.div`
     /* .ball-image {
       display: none;
     } */
-    .banner-image {
+    /* .banner-image {
       max-width: 560px;
       margin-left: 6rem;
-    }
+    } */
     .ball-one-page {
-      top: 4rem;
+      /* top: 4rem; */
+      top: 0;
       margin-left: 53px;
     }
   }

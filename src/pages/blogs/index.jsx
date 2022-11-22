@@ -52,13 +52,13 @@ const Blogs = () => {
                         src="assets/images/Card-second.svg"
                         width="100%"
                         className="card-img"
-                      />
+                        alt="img"/>
                     </div>
                     <div className="container">
                       <div>
                         <button className="btn btn-warning">Tech</button>
                         <button className="btn ">5 minutes need</button>
-                        <img src="assets/images/note.svg"></img>
+                        <img src="assets/images/note.svg"alt="img"/>
                         <span className="">20 sep 2022</span>
                       </div>
                       <h5>
@@ -67,7 +67,7 @@ const Blogs = () => {
                       </h5>
                       <button className="btn">
                         Read more{" "}
-                        <img src="assets/images/arrow-right (1).svg"></img>
+                        <img src="assets/images/arrow-right (1).svg"alt="img"/>
                       </button>
                     </div>
                   </div>

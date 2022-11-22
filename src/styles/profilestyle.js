@@ -58,7 +58,7 @@ export const ProfileJs = styled.div`
     position: sticky;
 
     width: 456px;
-    z-index: -99;
+    z-index: -999;
     height: 456px;
     left: 37px;
     margin-top: 2rem;
@@ -126,73 +126,110 @@ export const ProfileJs = styled.div`
   .dis-play {
     padding-left: 24px;
   }
-  .dis-play:hover h5 {
-    border-bottom: 5px solid yellow;
-    transition: margin-right 2s ease-in-out;
-    width: 0%;
-  animation-name: example;
-  animation-duration: 4s;
-  /* border:3px solid black; */
-  /* border-bottom:1px soild yellow; */
-  /* position:absolute; */
-  }
-  
 
-.second-hover:hover span {
-  border-bottom: 5px solid yellow;
-    /* transition: margin-right 2s ease-in-out; */
-    width: 0%;
-  animation-name: one;
-  animation-duration: 4s;
-  /* border:3px solid black; */
-  border-bottom:1px soild yellow;
-  /* position:absolute; */
-  } 
-  @keyframes example  {
-0%{
-width:100%;
-}
-100%{
-width:0%;
-}
-}
-@keyframes one  {
-0%{
-width:100%;
-}
-100%{
-width:0%;
-}
-}
-  /* .profile-screen :hover span {
-    border-bottom: 5px solid yellow;
-    transition: margin-right 2s ease-in-out;
+  a {
+    background-size: 200% 100%;
+    background-position: -100%;
+    display: inline-block;
+    padding: 5px 0;
+    font-size: 21px;
+    color: black;
+    font-weight: 500;
+    text-decoration: none;
+    position: relative;
+cursor: pointer;
+    transition: all 0.3s ease-in-out;
   }
 
-  /* span {
-  width: 0%;
-  animation-name: example;
-  animation-duration: 4s;
-  border:3px solid black;
-  border-bottom:3px soild black;
-  position:absolute;
- 
-}
+  a:before {
+    content: "";
+    background: yellow;
+    display: block;
+    position: absolute;
+    bottom: -3px;
+    left: 0;
+    width: 0;
+    height: 3px;
+    transition: all 0.3s ease-in-out;
+  }
 
-@keyframes example  {
-0%{
-width:100%;
-}
-100%{
-width:0%;
-}
-}
-   */
-  .bop {
+  a:hover {
+    background-position: 0;
+  }
+
+  a:hover::before {
+    width: 100%;
+  }
+
+  sub {
+    background-size: 200% 100%;
+    background-position: -100%;
+    display: inline-block;
+    padding: 5px 0;
+    font-size: 21px;
+    color: black;
+    font-weight: 500;
+    text-decoration: none;
+    position: relative;
+
+    transition: all 0.3s ease-in-out;
+  }
+
+  sub:before {
+    content: "";
+    background: yellow;
+    display: block;
+    position: absolute;
+    bottom: -3px;
+    right: 0;
+    width: 0;
+    height: 3px;
+    transition: all 0.3s ease-in-out;
+  }
+
+  sub:hover {
+    background-position: 0;
+  }
+
+  sub:hover::before {
+    width: 60%;
+  }
+  label {
+    background-size: 200% 100%;
+    background-position: -100%;
+    display: inline-block;
+    padding: 5px 0;
+    font-size: 21px;
+    color: black;
+    font-weight: 500;
+    text-decoration: none;
+    position: relative;
+
+    transition: all 0.3s ease-in-out;
+  }
+
+  label:before {
+    content: "";
+    background: yellow;
+    display: block;
+    position: absolute;
+    bottom: -3px;
+    right: 0;
+    width: 0;
+    height: 3px;
+    transition: all 0.3s ease-in-out;
+  }
+
+  label:hover {
+    background-position: 0;
+  }
+
+  label:hover::before {
+    width: 45%;
+  }
+
+  */ .bop {
     border-bottom: 5px solid red;
-  }
-
-  .dis-play:hover h5 {
   }
 
   .ProfileScreenin {
@@ -261,7 +298,7 @@ width:0%;
       position: sticky;
       margin: 0 auto;
       width: 456px;
-      z-index: -99;
+      z-index: -999;
       height: 456px;
       left: 37px;
       margin-top: 2rem;
@@ -350,6 +387,7 @@ export const SmallProfile = styled.div`
     position: sticky;
     margin: 0 auto;
     width: 456px;
+    z-index: -999;
     height: 456px;
     left: 37px;
     margin-top: 2rem;
@@ -476,7 +514,7 @@ po
       background-repeat: no-repeat;
       background-position: center;
       background-size: cover;
-z-index: -99;
+      z-index: -99;
       margin: 0 auto;
       width: 344px;
       height: 344px;

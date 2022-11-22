@@ -4,7 +4,9 @@ import Find from "./Find";
 import OurPartner from "./OurPartner";
 import Service from "./Service";
 import Slick from ".//Slider";
+import Head from "next/head";
 import Profile from "./Profile";
+
 const HomePage = () => {
   return (
     <div>

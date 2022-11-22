@@ -30,7 +30,7 @@ const Service = () => {
                       src="assets/images/Woman-picture.png"
                       width="100%"
                       className="service-img-one"
-                    ></img>
+                      alt="img"/>
                   </div>
                 </div>
               </div>
@@ -55,14 +55,14 @@ const Service = () => {
                           Learn more{" "}
                           <BsArrowRight className="fs-3  LeftArrow " />
                           <div className="VectorImage">
-                            <img src="assets/images/VectorImage.svg"></img>
+                            <img src="assets/images/VectorImage.svg"  alt="img"/>
                           </div>
                         </span>
                       </Card>
                     </div>
                   </div>
                   <div className="sm-card">
-                    <div className="smcard">
+                    <div className="smcard-ONE">
                       <Card
                         width="282px"
                         style={{ paddingBottom: "8px" }}
@@ -79,7 +79,7 @@ const Service = () => {
                           Learn more{" "}
                           <BsArrowRight className="fs-3  LeftArrow " />
                           <div className="VectorImage">
-                            <img src="assets/images/VectorImage.svg"></img>
+                            <img src="assets/images/VectorImage.svg" alt="img"/>
                           </div>
                         </span>
                       </Card>
@@ -104,7 +104,7 @@ const Service = () => {
                       <span className="learnmore">
                         Learn more <BsArrowRight className="fs-3  LeftArrow " />
                         <div className="VectorImage">
-                          <img src="assets/images/VectorImage.svg"></img>
+                          <img src="assets/images/VectorImage.svg" alt="img"/>
                         </div>
                       </span>
                     </Card>
@@ -130,20 +130,21 @@ const Service = () => {
                           Learn more{" "}
                           <BsArrowRight className="fs-3 LeftArrow " />
                           <div className="VectorImage">
-                            <img src="assets/images/VectorImage.svg"></img>
+                            <img src="assets/images/VectorImage.svg" alt="img"/>
                           </div>
                         </span>
                       </Card>
                     </div>
                   </div>
                   <div className="sm-card">
-                    <div className="smcard">
+                    <div className="smcard-ONE">
                       <Card
+                        className="sri"
                         width="282px"
                         style={{ paddingBottom: "8px" }}
                         backgroundColor="#FFFFFF"
                         border-radius="10px"
-                        className="sriram"
+                      
                       >
                         <h5>Offshore Recruitment</h5>
                         <p className="mb-0">
@@ -154,7 +155,7 @@ const Service = () => {
                           Learn more{" "}
                           <BsArrowRight className="fs-3  LeftArrow " />
                           <div className="VectorImage">
-                            <img src="assets/images/VectorImage.svg"></img>
+                            <img src="assets/images/VectorImage.svg" alt="img"/>
                           </div>
                         </span>
                       </Card>
@@ -164,6 +165,7 @@ const Service = () => {
               </div>
             </div>
           </div>
+       
         </section>
       </ServiceBg>
 
@@ -181,7 +183,11 @@ const Service = () => {
               </p>
             </div>
             <div className="serviceImage">
-              <img src="assets/images/Woman picture.png"></img>
+            <img
+                      src="assets/images/Woman-picture.png"
+                      width="100%"
+                      className="service-img-one"
+                      alt="img"/>
             </div>
             <div>
               <div className="one">
@@ -201,7 +207,7 @@ const Service = () => {
                   <span className="learnmore">
                     Learn more <BsArrowRight className="fs-3  LeftArrow " />
                     <div className="VectorImage">
-                      <img src="assets/images/VectorImage.svg"></img>
+                      <img src="assets/images/VectorImage.svg"  alt="img"/>
                     </div>
                   </span>
                 </Card>
@@ -221,7 +227,7 @@ const Service = () => {
                   <span className="learnmore">
                     Learn more <BsArrowRight className="fs-3  LeftArrow " />
                     <div className="VectorImage">
-                      <img src="assets/images/VectorImage.svg"></img>
+                      <img src="assets/images/VectorImage.svg"  alt="img"/>
                     </div>
                   </span>
                 </Card>
@@ -243,7 +249,7 @@ const Service = () => {
                   <span className="learnmore">
                     Learn more <BsArrowRight className="fs-3  LeftArrow " />
                     <div className="VectorImage">
-                      <img src="assets/images/VectorImage.svg"></img>
+                      <img src="assets/images/VectorImage.svg" alt="img"/>
                     </div>
                   </span>
                 </Card>
@@ -265,7 +271,7 @@ const Service = () => {
                   <span className="learnmore">
                     Learn more <BsArrowRight className="fs-3  LeftArrow " />
                     <div className="VectorImage">
-                      <img src="assets/images/VectorImage.svg"></img>
+                      <img src="assets/images/VectorImage.svg"  alt="img"/>
                     </div>
                   </span>
                 </Card>
@@ -285,7 +291,7 @@ const Service = () => {
                   <span className="learnmore">
                     Learn more <BsArrowRight className="fs-3  LeftArrow " />
                     <div className="VectorImage">
-                      <img src="assets/images/VectorImage.svg"></img>
+                      <img src="assets/images/VectorImage.svg"  alt="img"/>
                     </div>
                   </span>
                 </Card>

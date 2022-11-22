@@ -4,6 +4,8 @@ export const AboutBg = styled.div`
   .about-p-tag {
     font-weight: 400;
   }
+
+ 
   @media (min-width: 250px) and (max-width: 400px) {
   }
 

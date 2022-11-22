@@ -15,8 +15,8 @@ const Find = () => {
                   <img
                     src="assets/images/Man with rings.svg"
                     width="100%"
-                    className="find-images-class"
-                  ></img>
+                    className="find-images-class" alt="img"/>
+                  
                 </div>
               </div>
 
@@ -27,7 +27,7 @@ const Find = () => {
                     <img
                       src="assets/images/profilearoow.svg"
                       className="arow"
-                    ></img>
+                      alt="img"/>
                   </span>
                 </div>
               </div>
@@ -39,16 +39,14 @@ const Find = () => {
                   </h4>
 
                   <p className="text-light find-p-tage mt-3">
-                    Lorem ipsum dolor sit amet, con sectetur adipiscingelit, sed
-                    do e<br></br> iusmod tempor incididunt ut labore et dolore
-                    magna aliqua.
+                  
                   </p>
                   <Link href="/upload-cv">
                   <button className="mt-3 upload">
                     <img
                       src="assets/images/directbox-send.svg"
                       className="Directbox"
-                    ></img>
+                      alt="img"/>
                     <span className="upload-button"> Upload</span>
                   </button>
                 </Link>
@@ -72,16 +70,14 @@ const Find = () => {
                     Enough Talk, Let’s<br></br>Find Your Dream
                   </h2>
                   <p className="text-light findsm-text">
-                    Lorem ipsum dolor sit amet, con sectetur adipiscingelit, sed
-                    do e iusmod tempor incididunt ut labore et dolore magna
-                    aliqua.{" "}
+                 
                   </p>
                 </div>
                 <button className="mt-3 upload  Smallbox  ">
                     <img
                       src="assets/images/directbox-send.svg"
                       className="Directbox"
-                    ></img>
+                      alt="img"/>
                     <span className="upload-button"> Upload</span>
                   </button>
               </div>
@@ -90,7 +86,7 @@ const Find = () => {
                   <img
                     src="assets/images/Man with rings.svg"
                     width="100%"
-                  ></img>
+                    alt="img"/>
                 </div>
               </div>
             </div>

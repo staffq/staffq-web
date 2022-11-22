@@ -102,12 +102,10 @@ line-height: 30px;
     padding: 51px;
   }
   .communication{
-    font-size: 14px;
-line-height: 19px;
-/* identical to box height */
-font-weight: 500;
-
-color: rgba(8, 20, 41, 0.6);
+    font-size: 17px;
+    line-height: 19px;
+    font-weight: 700;
+    margin-top: 12px;
   }
   @media (min-width: 250px) and (max-width: 768px) {
   

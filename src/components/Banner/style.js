@@ -298,7 +298,7 @@ display: none;
 
 }
 .smText{
-padding-left: 32px;
+padding-left: 132px;
 margin-top: 7rem;
 }
 h1{

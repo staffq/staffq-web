@@ -55,9 +55,7 @@ const SmallSlider = () => {
             <div>
               <h2 className="text-light mt-5">What People say</h2>
               <p className="Slider-phara">
-                Lorem ipsum dolor sit amet, consectetur adipiscingelit, sed do
-                eiusmod tempor incididunt ut labore et <br></br>dolore magna
-                aliqua. Ut enim ad minim veniam, quis
+         
               </p>
             </div>
           </div>
@@ -76,8 +74,7 @@ const SmallSlider = () => {
                     <p className="card-text ">
                       I've Never received so many Candidate from one Vendor that
                       has made it through the interview stage in such a short
-                      time Aspire I'm Always looking for the best talent to work
-                      for our organization
+                      time Aspire. 
                     </p>
 
                     <div className="one">
@@ -85,8 +82,8 @@ const SmallSlider = () => {
                         <img src="assets/images/Ellipse.svg"></img>
                       </div>
                       <div className="two">
-                        <h5 style={{ fontSize: "17px" }}>Sheldon Cooper</h5>
-                        <p className="communication">CTS</p>
+                        {/* <h5 style={{ fontSize: "17px" }}>Sheldon Cooper</h5> */}
+                        <p className="communication">Aspire</p>
                       </div>
                     </div>
                   </div>
@@ -98,9 +95,8 @@ const SmallSlider = () => {
                     </div>
 
                     <p className="card-text ">
-                      Lorem ipsum dolor sit amet, consectetur adipisci ngelit,
-                      sed do eiusmod tempor incididunt ut lab ore et dolore
-                      magna aliqua. Ut enim ad minim veniam, quis
+                    I'm Always looking for the best talent to work
+                      for our organization
                     </p>
 
                     <div className="one">
@@ -108,8 +104,8 @@ const SmallSlider = () => {
                         <img src="assets/images/Ellipse.svg"></img>
                       </div>
                       <div className="two">
-                        <h5 style={{ fontSize: "17px" }}>Sheldon Cooper</h5>
-                        <p className="communication">CEO, Communications Ltd</p>
+                        {/* <h5 style={{ fontSize: "17px" }}>Sheldon Cooper</h5> */}
+                        <p className="communication">CTS</p>
                       </div>
                     </div>
                   </div>

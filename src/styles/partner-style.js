@@ -9,7 +9,7 @@ export const Flex = styled.div`
   justify-content: center;
   align-items: center;
 
-  padding-left: 32px;
+  padding-left: 143px;
   margin-top: 25px;
 
   @media (min-width: 1001px) and (max-width: 1024px) {
