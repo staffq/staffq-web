@@ -80,8 +80,8 @@ export const AboutBg = styled.div`
   .AboutPtext {
     /* font-size: 16px; */
 
-    font-size: 17px;
-    line-height: 38px;
+    font-size: 15px;
+    line-height: 35px;
     letter-spacing: 0em;
     text-align: left;
     color: rgba(8, 20, 41, 0.6);

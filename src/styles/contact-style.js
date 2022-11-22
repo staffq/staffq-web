@@ -3,9 +3,6 @@ import styled from "styled-components";
 export const ContacttStyle = styled.div`
   padding-top: 5px;
 
-.two{
-  background-image: url()
-}
 `;
 // .................form..................................
 

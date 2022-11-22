@@ -41,23 +41,7 @@ const contact = () => {
               </div>
             </div>
 
-            <div className="row container">
-              <div className="col-lg-5">
-                <p>
-                  Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ut
-                  assumenda voluptatibus officia commodi voluptate repellat
-                  possimus laborum, qui quae quaerat ea minus rerum similique
-                  facilis nobis. Ullam commodi iste ducimus?
-                </p>
-              </div>
-              <div className="col-lg-7">
-                <div className="two">
-                <h1>hello</h1>
-
-                </div>
-               
-              </div>
-            </div>
+            
           </div>
 
           {/* ........................form section.............................. */}

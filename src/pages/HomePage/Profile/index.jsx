@@ -52,14 +52,15 @@ const Profile = () => {
                 {/* ....................second row......................... */}
 
                 <div className="col-lg-6  col-sm-12 second-colum">
+                  
                   <div className="dis-play border-one profile-screen">
                     <div className="two">
                       <div className="one">
-                        <a href="">
-                          <span className="ProfileScreening">
+                        <sub href="">
+                          <span className="ProfileScreening" >
                             Profile Screening & Shortlisting{" "}
                           </span>
-                        </a>
+                        </sub>
 
                         <p>
                           We review tons of applications against our minimum
@@ -110,24 +111,31 @@ const Profile = () => {
                     </div>
                   </div>
 
-                  <div className="dis-play border-one wave-three">
+                  <div className="display border-one wave-three">
                     <div className="two twwo">
+                      {/* <div className="apptitude"> */}
                       <div className="one">
+                        
                         <sub>
                           {" "}
                           <span
                             className="ProfileScreening"
-                            style={{ marginLeft: "9rem" }}
+                            style={{ }}
+                            
                           >
                             Aptitude Evaluation
                           </span>
                         </sub>
-
                         <p>
-                          We conduct a scientifically designed aptitude test to
+                          We conduct a scientifically designed aptitude test <br></br>
+                          to
                           check their reasoning and problem-solving ability.
-                        </p>
-                      </div>
+                            </p>
+                        </div>
+                    
+
+                    
+                      {/* </div> */}
                       <img
                         src="assets/images/apptitude-img.svg"
                         className="img-one"
@@ -168,13 +176,13 @@ const Profile = () => {
                     {/* .................................................four................. */}
 
                     {/* .................five...................... */}
-                    <div className="dis-play wave-five">
+                    <div className="display wave-five">
                       <div className="two twwo">
                         <div className="one">
                           <label>
                             <span
                               className="ProfileScreening"
-                              style={{ marginLeft: "13rem" }}
+                              style={{  }}
                             >
                               Panel Interview
                             </span>

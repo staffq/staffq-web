@@ -11,6 +11,8 @@ export const ProfileJs = styled.div`
 
 } */
 
+
+
   .wave {
     margin-top: -8%;
     width: 84%;
@@ -28,7 +30,7 @@ export const ProfileJs = styled.div`
   }
   .wave-four {
     position: absolute;
-    top: 131rem;
+    top: 130rem;
     padding-left: 57px;
   }
   .wave-five {
@@ -50,6 +52,88 @@ export const ProfileJs = styled.div`
 
     color: rgba(8, 20, 41, 0.6);
   }
+
+
+  @media (min-width: 1300px) and (max-width: 1400px) {
+    .waves-two {
+    position: absolute;
+    top: 106rem;
+    padding-left: 60px;
+  }
+  .wave-three {
+    position: absolute;
+    top: 115rem;
+    padding-right: 47px;
+  }
+  .wave-four {
+    position: absolute;
+    top: 123rem;
+    padding-left: 57px;
+  }
+  .wave-five {
+    position: absolute;
+    top: 132rem;
+    padding-right: 45px;
+  }
+  .wave-six {
+    position: absolute;
+    top: 140rem;
+    padding-left: 57px;
+  }
+
+
+
+  }
+  @media (min-width: 1400px) and (max-width: 1450px) {
+    .waves-two {
+    position: absolute;
+    top: 111rem;
+    padding-left: 60px;
+  }
+  .wave-three {
+    position: absolute;
+    top: 121rem;
+    padding-right: 47px;
+  }
+  .wave-four {
+    position: absolute;
+    top: 129rem;
+    padding-left: 57px;
+  }
+  .wave-five {
+    position: absolute;
+    top: 139rem;
+    padding-right: 45px;
+  }
+  .wave-six {
+    position: absolute;
+    top: 147rem;
+    padding-left: 57px;
+  }
+
+
+
+  }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
   .ProFileBg {
     background-image: url("assets/images/ProfileBackground.svg");
     background-repeat: no-repeat;
@@ -192,7 +276,7 @@ cursor: pointer;
   }
 
   sub:hover::before {
-    width: 60%;
+    width: 100%;
   }
   label {
     background-size: 200% 100%;
@@ -225,7 +309,7 @@ cursor: pointer;
   }
 
   label:hover::before {
-    width: 45%;
+    width: 100%;
   }
 
   */ .bop {
@@ -263,7 +347,7 @@ cursor: pointer;
   .dis-play:hover .under-img {
   }
   .twwo {
-    margin-left: 8rem;
+    /* margin-left: 8rem; */
   }
   .profile-screen {
     padding-left: 87px;
@@ -272,6 +356,10 @@ cursor: pointer;
     display: flex;
     margin-top: 4rem;
     margin-left: -8rem;
+  }
+  .display{
+    margin-left: 140px;
+    text-align: end;
   }
   /* .four {
     display: flex;
@@ -306,7 +394,7 @@ cursor: pointer;
       border-radius: 0px;
     }
   }
-  @media (min-width: 768px) and (max-width: 1500px) {
+  @media (min-width: 768px) and (max-width: 1300px) {
     .mediun-none {
       display: block;
     }
@@ -345,7 +433,7 @@ cursor: pointer;
     }
   }
 
-  @media (min-width: 1025px) and (max-width: 1400px) {
+  @media (min-width: 1025px) and (max-width: 1300px) {
     .medium-responsive {
       display: block;
     }
@@ -366,7 +454,7 @@ cursor: pointer;
     }
   }
 
-  @media (min-width: 1401px) and (max-width: 1900px) {
+  @media (min-width: 1300px) and (max-width: 1900px) {
     .medium-responsive {
       display: none;
     }
