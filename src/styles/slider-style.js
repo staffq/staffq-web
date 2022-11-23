@@ -59,6 +59,12 @@ line-height: 30px;
     color: black;
     font-size: 16px;
     font-weight: 500;
+    -webkit-box-orient: vertical;
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: normal;
   }
   .card {
     background: #ffffff;

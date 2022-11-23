@@ -9,10 +9,16 @@ export const Div = styled.div`
     margin-bottom: 19px;
     margin-top: 20px;
   }
-  .second-content {
+  /* .second-content {
     margin-left: 3rem;
     margin-top: 4rem;
-  }
+  } */
+.vision-row{
+  display: grid;
+  align-content: center;
+  padding-left: 30px;
+}
+
   p {
     font-size: 21px;
     font-weight: 300;
@@ -51,6 +57,9 @@ export const Div = styled.div`
   .evalute-image {
     display: flex;
     justify-content: center;
+  }
+  @media (min-width: 100px) and (max-width: 1024px) {
+    
   }
   .section-one {
     width: 630px;
@@ -124,7 +133,7 @@ export const Div = styled.div`
     position: relative;
     /* top: 232rem; */
     /* z-index: 99; */
-    bottom: 358px;
+    bottom: 322px;
   }
 
   .background-wave-image {
@@ -210,9 +219,7 @@ export const Div = styled.div`
 
   /* .....................................our vision and our mission..media query: ..................... */
   @media (min-width: 990px) and (max-width: 1350px) {
-    .second-content {
-      margin-top: 1rem;
-    }
+  
     
     
     .mission-p-tag {
@@ -342,7 +349,7 @@ export const Header = styled.div`
   /* position: relative; */
   .ballwave{
 position: absolute;
-margin-left: 7rem;
+margin-left: 11rem;
   }
 
   .header {
@@ -363,7 +370,7 @@ margin-left: 7rem;
     margin-left: 36rem;
     width: 7%;
   }
-  h5 {
+  span{
     font-style: normal;
     font-weight: 600;
     font-size: 60px;
@@ -391,7 +398,7 @@ margin-left: 7rem;
   .ball-one-page {
     /* position: absolute; */
     position: relative;
-    top: 6rem;
+    top: 10rem;
     margin-left: 7rem;
   }
   .banner-image {
@@ -417,8 +424,8 @@ margin-left: 7rem;
     .third-ball {
       display: none;
     } */
-    span,
-    h5 {
+    span
+  {
       font-size: 43px;
       line-height: 60px;
       /* margin-left: 4rem; */
@@ -471,9 +478,14 @@ export const AboutSection = styled.div`
     text-align: center;
     padding-top: 29px;
   }
+  .about-p{
+    font-weight: 600;
+    color: rgba(8, 20, 41, 0.6);
+    font-size: 16px;
+  }
 
   @media (min-width: 375px) and (max-width: 768px) {
-    height: 75rem;
+    /* height: 75rem; */
     .aboutImage {
     }
 

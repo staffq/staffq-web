@@ -28,16 +28,35 @@ const AboutPage = () => {
                 <div className="row">
                   <div className="col-lg-6 col-sm-12 col-md-6 container">
                     <div className="ballwave">
-                      <img src="assets/images/Ball-and-waves.png" />
+                      <img src="assets/images/waves-single.png" />
                     </div>
 
                     <div className="ball-one-page">
-                      <h5>
-                        {" "}
-                        Join the team that’s <br></br>
-                        making the world work <br></br>
-                        better for everyone{" "}
-                      </h5>
+                      <img
+                        src="assets/images/single-ball.svg"
+                        alt="img"
+                        width="50px"
+                      />
+                      <div>
+                      <span>Join the team that’s </span>
+                   
+                   <span> making the world work</span> 
+                   
+                 
+                   <span>better for everyone</span>{" "}<br></br>
+                   <img
+                     src="assets/images/single-ball.svg"
+                     alt="img"
+                     width="50px"
+                     className=""
+                   />
+                      </div>
+                   
+                      {/* <img
+                        src="assets/images/single-ball.svg"
+                        alt="img"
+                        width="50px"
+                      /> */}
                     </div>
                   </div>
 
@@ -94,7 +113,7 @@ const AboutPage = () => {
                 />
               </div>
             </div>
-            <div className="col-lg-6 col-sm-12">
+            <div className="col-lg-6 col-sm-12 vision-row">
               <div className="second-content">
                 <div className="second-page-h1">
                   <div className="d-flex">
@@ -150,7 +169,8 @@ const AboutPage = () => {
                     <p className="discover-p-tag">
                       We discover the profiles that are a culture and the skill
                       fit for your company <br></br> which make the process
-                      easier on proceeding with the profiles
+                      easier on proceeding with the profiles <br></br>
+                      <br></br>
                     </p>
                   </div>
                 </div>
@@ -168,7 +188,8 @@ const AboutPage = () => {
                       Since we also have a software expertise we can screen and
                       evaluate the <br></br>technical skills form our end that
                       suites for you and we pass though the evaluation process
-                      for you end.
+                      for you end.<br></br>
+                      <br></br>
                     </p>
                   </div>
                 </div>
@@ -204,6 +225,8 @@ const AboutPage = () => {
                           We are analyze the profile about the history, skillset
                           and the background<br></br> of the candidate which
                           helps us in identifying that fits to your requirement.
+                          <br></br>
+                          <br></br>
                         </p>
                       </div>
                     </div>
@@ -222,7 +245,8 @@ const AboutPage = () => {
                         <p className="discover-p-tag">
                           We will not only follow-up we take ownership on
                           onboarding the candidates <br></br> for you that helps
-                          both us on an easy going business
+                          both us on an easy going business.<br></br>
+                          <br></br>
                         </p>
                       </div>
                     </div>
@@ -236,7 +260,7 @@ const AboutPage = () => {
           <div className="container-fluid">
             <div className="About-section">
               <h2 className="">Why People Choose StaffQ?</h2>
-              <p>
+              <p className="about-p">
                 {" "}
                 We have found that the best way to get them is with up front
                 research – of your company, competitors,<br></br> target market

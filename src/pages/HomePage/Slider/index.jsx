@@ -319,13 +319,13 @@ const Slick = () => {
         <div className="container">
           <div className="box">
             <div className="row">
-              <div className="col-lg-3  col-sm-6" style={{ marginTop: "34px" }}>
+              <div className="col-lg-3  col-sm-6" style={{ marginTop: "23px" }}>
                 <div className="">
                   <h2 style={{ fontSize: "42px" }}>2+ </h2>
                   <p style={{ fontSize: "22px" }}>Years of experience</p>
                 </div>
               </div>
-              <div className="col-lg-3 col-sm-6" style={{ marginTop: "34px" }}>
+              <div className="col-lg-3 col-sm-6" style={{ marginTop: "23px" }}>
                 <div className="border-img">
                   <img
                     src="assets/images/border-img.svg"
@@ -337,7 +337,7 @@ const Slick = () => {
                   </div>
                 </div>
               </div>
-              <div className="col-lg-3 col-sm-6" style={{ marginTop: "34px" }}>
+              <div className="col-lg-3 col-sm-6" style={{ marginTop: "23px" }}>
                 <div className="border-img">
                   <img
                     src="assets/images/border-img.svg"
@@ -349,7 +349,7 @@ const Slick = () => {
                   </div>
                 </div>
               </div>
-              <div className="col-lg-3 col-sm-6" style={{ marginTop: "34px" }}>
+              <div className="col-lg-3 col-sm-6" style={{ marginTop: "23px" }}>
                 <div className="border-img">
                   <img
                     src="assets/images/border-img.svg"

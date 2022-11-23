@@ -7,7 +7,7 @@ export const Foot = styled.div`
 background: #050C18;
 margin-top: 8%;
 .cursor-pointer{
-  cursor: pointer;
+ 
 }
 @media (min-width:1000px) and (max-width:1200px){
   .towers{
@@ -28,6 +28,7 @@ p , span{
   color: rgba(255, 255, 255, 0.8);
   font-weight: 500;
 font-size: 17px;
+cursor: pointer;
 }
 .last-line{
   font-size: 14px;
@@ -65,7 +66,7 @@ cursor: pointer;
   padding-left: 35px;
 }
 .footer-one{
-  font-size: 18px;
+  font-size: 0px;
 line-height: 22px;
 
 
@@ -73,8 +74,8 @@ line-height: 22px;
 color: rgba(255, 255, 255, 0.8);
 }
 .footer-two{
-  font-size: 18px;
-line-height: 22px;
+  font-size: 2px;
+line-height: 30px;
 
 
 

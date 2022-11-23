@@ -21,42 +21,31 @@ export const H1 = styled.h1`
 `;
 
 export const Button = styled.button`
-  left: 0%;
-  right: 0%;
-  top: 0%;
-  bottom: 0%;
-  font-size: 24px;
-  height: 80px;
-
-  font-weight: 400;
-  margin-top: 23px;
-
-  padding: 0px 19px;
-
-  color: white;
-  border-radius: 16px;
-  /*
-  
-}
-  } */
-
-  /* StaffQ_black */
-
-  background: #050c18;
-  border-radius: 16px;
-  /* transition-duration: 5s;
-  transition-delay: 2s; */
-  &:hover {
-    .hello {
-      display: inline-flex;
-      justify-content: space-between;
-      align-content: space-around;
-
-      margin-left: 24px;
-
-      color: white;
-    }
+ background-color:black;
+padding:.5em 1em;
+color:white;
+position:relative;
+overflow:hidden;
+ &:hover{
+  width: 130px;
+  transition-delay: .5s;
+  transition:width .5s ease-in-out;
+ }
+  &:after{
+    content:'►';
+  font-size:10px;
+  color:white;
+  position:absolute;
+  top: 1.5em;
+    /* width: 239px; */
+    left: 11em;
+  opacity:0;
+  transition:all .5s ease-in-out;
   }
+  &:hover:after {
+    right:1em;
+opacity:1;
+}
   .hello {
     margin-left: 10px;
     display: none;
@@ -105,6 +94,71 @@ export const BannerText = styled.div`
   top: 147px;
   z-index: 99;
   padding-left: 130px;
+
+  button {
+  font-family: 'Raleway', sans-serif;
+  font-size: 15px;
+  line-height: 22.6px;
+  background-color: transparent;
+  padding: 16px 32px 16px 40px;
+  cursor: pointer;
+}
+
+.btn-black {
+  border: 4px solid #000000;
+  color: #000000;
+}
+
+.btn-grey {
+  border: 4px solid #45423C;
+  color: #45423C;
+}
+
+.arrow {
+  height: 2px;
+  width: 0px;
+  position: relative;
+  display: inline-block;
+  cursor: pointer;
+  margin-right: 15px;
+  margin-bottom: 4px;
+  transition: all .4s ease;
+}
+
+button:hover .arrow {
+  width: 35px;
+  margin-right: 5px;
+}
+
+.arrow-black {
+  background: black;
+}
+
+.arrow-grey {
+  background: #45423C;
+}
+
+.arrow:before,
+.arrow:after {
+  content: "";
+  background: black;
+  position: absolute;
+  height: 2px;
+  width: 10px;
+  border-radius: 30%;
+}
+
+.arrow:before {
+  right: -2px;
+  bottom: -3px;
+  transform: rotate(-45deg);
+}
+
+.arrow:after {
+  right: -2px;
+  top: -3px;
+  transform: rotate(45deg);
+}
 
   @media (min-width: 250px) and (max-width: 768px) {
     width: 100%;

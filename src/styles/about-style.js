@@ -14,7 +14,7 @@ export const AboutBg = styled.div`
   }
   background: #fefbe9;
   width: 100%;
-  height: 39rem;
+  /* height: 39rem; */
   margin-top: 10%;
   padding-top: 2rem;
 

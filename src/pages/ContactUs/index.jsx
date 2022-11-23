@@ -172,7 +172,7 @@ const contact = () => {
                       <img src="assets/images/Email-icon.svg" alt="img" />
                     </div>
                     <div className="col-lg-11 col-md-11 col-sm-11  font">
-                      info@staffq.org
+                      info@staffq.in
                     </div>
                   </div>
                 </div>
@@ -216,7 +216,7 @@ const contact = () => {
                       <img src="assets/images/Email-icon.svg" alt="img" />
                     </div>
                     <div className="col-lg-11 col-md-11 col-sm-11  font">
-                      info@staffq.org
+                      info@staffq.in
                     </div>
                   </div>
                 </div>
@@ -260,7 +260,7 @@ const contact = () => {
                       <img src="assets/images/Email-icon.svg" alt="img" />
                     </div>
                     <div className="col-lg-11 col-md-11 col-sm-11  font">
-                      info@staffq.org
+                      info@staffq.in
                     </div>
                   </div>
                 </div>
@@ -313,7 +313,7 @@ const contact = () => {
                         <div className="">
                           <img src="assets/images/Email-icon.svg" alt="img" />
                         </div>
-                        <div className=" font d-one ">info@staffq.org</div>
+                        <div className=" font d-one ">info@staffq.in</div>
                       </div>
                     </div>
                     <div></div>
@@ -356,7 +356,7 @@ const contact = () => {
                       <div className="">
                         <img src="assets/images/Email-icon.svg" alt="img" />
                       </div>
-                      <div className=" font d-one ">info@staffq.org</div>
+                      <div className=" font d-one ">info@staffq.in</div>
                     </div>
 
                     <div></div>
@@ -400,7 +400,7 @@ const contact = () => {
                       <div className="">
                         <img src="assets/images/Email-icon.svg" alt="img" />
                       </div>
-                      <div className=" font d-one ">info@staffq.org</div>
+                      <div className=" font d-one ">info@staffq.in</div>
                     </div>
 
                     <div></div>
