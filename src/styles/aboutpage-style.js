@@ -2,7 +2,7 @@ import styled from "styled-components";
 
 export const Div = styled.div`
   .FIRST {
-    margin-top: 10%;
+    margin-top: 2%;
   }
   .our-head {
     margin-left: 15px;
@@ -45,12 +45,12 @@ export const Div = styled.div`
     color: #08142999;
   }
   .content-one {
-    width: 630px;
+    /* width: 630px; */
     /* height: 500px; */
 
     border-radius: 20px;
     background: #f6f6f5;
-    padding-left: 12px;
+    /* padding-left: 12px; */
 
     padding-top: 37px;
   }
@@ -59,7 +59,7 @@ export const Div = styled.div`
     justify-content: center;
   }
   @media (min-width: 100px) and (max-width: 1024px) {
-    
+
   }
   .section-one {
     width: 630px;
@@ -201,13 +201,16 @@ export const Div = styled.div`
   @media (min-width: 765px) and (max-width: 1024px) {
     .join-teamm {
       text-align: center;
-      margin-top: 30rem;
+      margin-top: 5rem;
     }
   }
   @media (min-width: 250px) and (max-width: 500px) {
     .join-teamm {
       text-align: center;
-      margin-top: 7rem;
+      margin-top: 1rem;
+    }
+    .join-our{
+      font-size: 34px;
     }
     .under-code {
       display: none;
@@ -232,17 +235,17 @@ export const Div = styled.div`
 
     /* ...............................our state: .;.......................... */
     .section-one {
-      width: 452px;
+      width: 100%;
       padding-top: 37px;
       padding: 7px;
       /* height: 635px; */
       border-radius: 20px;
-      margin-left: 3rem;
+      /* margin-left: 3rem; */
       background: #f6f6f5;
     }
     .content-one {
-      width: 500px;
-      margin-left: 2rem;
+      width: 100%;
+      /* margin-left: 2rem; */
       padding: 16px;
       border-radius: 20px;
       background: #f6f6f5;
@@ -262,7 +265,7 @@ export const Div = styled.div`
   /* ....................small screen: .;.......................... */
   @media (min-width: 500px) and (max-width: 768px) {
     .section-one {
-      width: 486px;
+      width: 100%;
       padding-top: 37px;
       padding: 7px;
 
@@ -271,7 +274,7 @@ export const Div = styled.div`
       background: #f6f6f5;
     }
     .content-one {
-      width: 486px;
+      width: 100%;
       /* margin-left: 2rem; */
       padding: 16px;
       border-radius: 20px;
@@ -283,7 +286,11 @@ export const Div = styled.div`
       padding-top: 2rem;
     }
   }
-
+  @media (min-width: 150px) and (max-width: 1024px) {
+.evalute-image , .row-second-ball{
+  display: none;
+}
+  }
   @media (min-width: 250px) and (max-width: 500px) {
     .section-one {
       width: 100%;
@@ -320,7 +327,7 @@ export const Div = styled.div`
 
   @media (min-width: 1200px) and (max-width: 1400px) {
     .section-one {
-      width: 516px;
+      width: 100%;
       padding-top: 37px;
       padding: 7px;
       /* height: 635px; */
@@ -329,7 +336,7 @@ export const Div = styled.div`
       background: #f6f6f5;
     }
     .content-one {
-      width: 544px;
+      width: 100%;
       /* margin-left: 2rem; */
       padding: 16px;
       border-radius: 20px;
@@ -348,10 +355,15 @@ export const Header = styled.div`
   top: 81px;
   /* position: relative; */
   .ballwave{
-position: absolute;
-margin-left: 11rem;
-  }
+/* background-image: url('assets/images/Ball-waves-about.svg'); */
 
+
+  }
+.one{
+  background-image: url('assets/images/Ball-waves-about.svg'); 
+  background-repeat: no-repeat;
+  background-position: center;
+}
   .header {
     background: #efce1e;
     overflow: hidden;
@@ -370,10 +382,10 @@ margin-left: 11rem;
     margin-left: 36rem;
     width: 7%;
   }
-  span{
+  h1{
     font-style: normal;
     font-weight: 600;
-    font-size: 60px;
+    font-size: 56px;
     line-height: 70px;
     /* identical to box height */
 
@@ -397,9 +409,11 @@ margin-left: 11rem;
   }
   .ball-one-page {
     /* position: absolute; */
-    position: relative;
-    top: 10rem;
-    margin-left: 7rem;
+    /* position: absolute; */
+    padding-top: 9rem;
+    /* margin-left: 7rem; */
+
+
   }
   .banner-image {
     width: 100%;
@@ -410,66 +424,104 @@ margin-left: 11rem;
     margin-left: 9rem;
     width: 50%;
   }
+.single-line-img{
+  padding-left: 14rem;
+    margin-top: 14rem;
+}
 
-  /* @media (min-width: 769px) and (max-width: 1300px) {
-    display: none;
+  /* @media (min-width: 1203px) and (max-width: 1400px) {
+    .ballwave{
+position: relative;
+padding-left: 10rem;
+width: 49%;
+
+margin-left: -3rem;
+
+    }
+    .single-line-img {
+    padding-left: 9rem;
+    margin-top: 1rem;
+
+}
+    h1{
+      font-size: 46px;
+      margin-top: 4rem;
+    }
+    .ball-one-page {
+   
+    position:relative;
+    top: 3rem;
+    z-index: 999;
+    margin-left: 7rem;
+  }
+  }
+  @media (min-width: 1024px) and (max-width: 1203x) {
+    h1{
+      font-size: 38px;
+      margin-top: 4rem;
+    }
+    .ball-one-page {
+    position: relative;
+    top: 1rem;
+    z-index: 999;
+    margin-left: 7rem;
+  }
+  .ballwave{
+position: absolute;
+padding-left: 7rem;
+width: 49%;
+margin-left: rem;
+
+    }
+    .single-line-img {
+    padding-left: 9rem;
+    margin-top: 1rem;
+    width: 17vw;
+}
+
   } */
-
-  @media (min-width: 1025px) and (max-width: 1400px) {
+  /* @media (min-width: 1025px) and (max-width: 1400px) {
     .header {
       background: #efce1e;
     }
-    /* .single,
-    .second-ball,
-    .third-ball {
-      display: none;
-    } */
+
+    } 
     span
   {
       font-size: 43px;
       line-height: 60px;
-      /* margin-left: 4rem; */
+
     }
     p {
       margin-left: 4rem;
-    }
-  }
+    } */
+  
   @media (min-width: 250px) and (max-width: 1024px) {
     display: none;
     .header {
       text-align: center;
     }
 
-    .ball-one-page {
+    /* .ball-one-page {
       text-align: center;
-    }
+    } */
   }
   @media (min-width: 1025px) and (max-width: 1400px) {
-    .header {
+    /* .header {
       max-height: 132vh;
     }
 
-    /* .little {
-      display: none;
-    } */
-    /* .ball-image {
-      display: none;
-    } */
-    /* .banner-image {
-      max-width: 560px;
-      margin-left: 6rem;
-    } */
+
     .ball-one-page {
-      /* top: 4rem; */
-      top: 0;
-      margin-left: 53px;
-    }
+
+    
+    } */
   }
 `;
 export const AboutSection = styled.div`
   background: #fefbe9;
   width: 100%;
-  height: 90vh;
+
   margin-top: 10%;
   padding-top: 2rem;
 
@@ -539,6 +591,19 @@ export const AboutSection = styled.div`
       }
     }
   }
+  @media (min-width: 1024px) and (max-width: 1400px) {
+    .AboutPtext {
+    /* font-size: 16px; */
+
+    font-size: 17px;
+    line-height: 30px;
+    letter-spacing: 0em;
+    color: rgba(8, 20, 41, 0.6);
+    text-align: left;
+    font-weight: 500;
+  }
+  }
+
   @media (min-width: 769px) and (max-width: 1000px) {
     .AboutPtext {
       font-size: 18px;
@@ -554,8 +619,10 @@ export const AboutSection = styled.div`
 
   @media (min-width: 990px) and (max-width: 1200px) {
     .AboutPtext {
-      font-size: 12px;
+      font-size: 13px;
       font-weight: 400;
+      line-height: 30px;
+      color: rgba(8, 20, 41, 0.6);
     }
   }
 
@@ -585,8 +652,8 @@ export const SmallHeader = styled.div`
     padding-top: 2rem;
 
     h1 {
-      font-size: 40px;
-      padding-top: 3rem;
+      font-size: 32px;
+      padding-top: 7rem;
     }
     p {
       font-size: 26px;

@@ -26,37 +26,27 @@ const AboutPage = () => {
             <div className=" ">
               <div className="">
                 <div className="row">
-                  <div className="col-lg-6 col-sm-12 col-md-6 container">
-                    <div className="ballwave">
-                      <img src="assets/images/waves-single.png" />
-                    </div>
+                  <div className="col-lg-6 col-sm-12 col-md-6 one container">
+                    <div className="left-side">
+                    
+                        <div className="row">
+                          <div className="col-lg-2"></div>
+                          <div className="col-lg-10">
+                            <div className="">
+                          <div className="ball-one-page">
+                              <h1>
+                                Join the team that’s 
+                                making the world work 
+                                better for everyone
+                              </h1>
+                            </div>
+                            </div>
+                          </div>
+                        </div>
+                       
+                      
 
-                    <div className="ball-one-page">
-                      <img
-                        src="assets/images/single-ball.svg"
-                        alt="img"
-                        width="50px"
-                      />
-                      <div>
-                      <span>Join the team that’s </span>
                    
-                   <span> making the world work</span> 
-                   
-                 
-                   <span>better for everyone</span>{" "}<br></br>
-                   <img
-                     src="assets/images/single-ball.svg"
-                     alt="img"
-                     width="50px"
-                     className=""
-                   />
-                      </div>
-                   
-                      {/* <img
-                        src="assets/images/single-ball.svg"
-                        alt="img"
-                        width="50px"
-                      /> */}
                     </div>
                   </div>
 
@@ -166,9 +156,9 @@ const AboutPage = () => {
                     />
 
                     <h3 className="discover-h-three">1. Discover</h3>
-                    <p className="discover-p-tag">
+                    <p className="discover-p-tag container">
                       We discover the profiles that are a culture and the skill
-                      fit for your company <br></br> which make the process
+                      fit for your company  which make the process
                       easier on proceeding with the profiles <br></br>
                       <br></br>
                     </p>
@@ -177,16 +167,16 @@ const AboutPage = () => {
               </div>
               <div className="img-page-one mt-3">
                 <div className="section-one">
-                  <div className="first-row">
+                  <div className="first-row container">
                     <img
                       src="assets/images/Evaluate.svg"
                       className="img-one-one"
                       alt="img"
                     />
                     <h3 className="discover-h-three">3. Evaluate</h3>
-                    <p className="discover-p-tag">
+                    <p className="discover-p-tag container">
                       Since we also have a software expertise we can screen and
-                      evaluate the <br></br>technical skills form our end that
+                      evaluate the technical skills form our end that
                       suites for you and we pass though the evaluation process
                       for you end.<br></br>
                       <br></br>
@@ -213,7 +203,7 @@ const AboutPage = () => {
                 </div>
                 <div className="content-one margin-section">
                   <div className="content-two">
-                    <div className="img-page-two">
+                    <div className="img-page-two container">
                       <div className="">
                         <img
                           src="assets/images/analyse.svg"
@@ -221,9 +211,9 @@ const AboutPage = () => {
                           alt="img"
                         />
                         <h3 className="discover-h-three">2. Analyse</h3>
-                        <p className="discover-p-tag">
+                        <p className="discover-p-tag container">
                           We are analyze the profile about the history, skillset
-                          and the background<br></br> of the candidate which
+                          and the background of the candidate which
                           helps us in identifying that fits to your requirement.
                           <br></br>
                           <br></br>
@@ -235,16 +225,16 @@ const AboutPage = () => {
                 <div className=" margin-section-second">
                   <div className="content-one  ">
                     <div className="content-two ">
-                      <div className="img-page-two  ">
+                      <div className="img-page-two container  ">
                         <img
                           src="assets/images/Onboard.svg"
                           width="93%"
                           alt="img"
                         />
                         <h3 className="discover-h-three">4. Onboard</h3>
-                        <p className="discover-p-tag">
+                        <p className="discover-p-tag container">
                           We will not only follow-up we take ownership on
-                          onboarding the candidates <br></br> for you that helps
+                          onboarding the candidates for you that helps
                           both us on an easy going business.<br></br>
                           <br></br>
                         </p>
@@ -338,11 +328,11 @@ const AboutPage = () => {
                 alt="img"
               />
             </div>
-            <p className="join-p-tag">
+            {/* <p className="join-p-tag">
               Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
               <br></br>
               do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-            </p>
+            </p> */}
             <button className="bt">Join Us</button>
           </div>
 

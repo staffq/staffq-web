@@ -43,12 +43,10 @@ const Index = () => {
                   ></img>
                 </Button> */}
                 <button class="btn-black">
-  <span class="arrow arrow-black"></span>
-  Find your jobs      <img
-                    src="assets/images/Find-your.svg"
-                    className=""
-                  ></img>
-</button>
+                  Find your jobs{" "}
+                  <span class="arrow arrow-black"></span>
+                  {/* <img src="assets/images/Find-your.svg" className=""></img> */}
+                </button>
               </BannerText>
             </div>
             <div className=" col-lg-6 col-md-12 col-sm-12 p-0 pe-0 container-fluid">

@@ -276,17 +276,20 @@ const contact = () => {
               <section>
                 <div className="container">
                   <div>
-                    <div className="display">
-                      <div>
-                        <img
-                          src="assets/images/images/map.svg"
-                          className="map-image"
-                          alt="img"
-                        />
-                      </div>
-                      <div className="display-two">
+                    <div className="">
+                      <div className="text-center">
+                        
+                              <img
+                              src="assets/images/map.svg"
+                              className="map-image"
+                              alt="img"
+                            />
+                      
+                   
+                      <div className="">
                         <h5>India</h5>
-                        <h6>Tiruppur</h6>
+                        <h5>Tiruppur</h5>
+                      </div>
                       </div>
                     </div>
                     <div className="one-two">
@@ -321,7 +324,7 @@ const contact = () => {
                 </div>
                 <div className="container">
                   <div>
-                    <div className="display">
+                    <div className="text-center">
                       <div>
                         <img
                           src="assets/images/Canada-img.svg"
@@ -329,9 +332,9 @@ const contact = () => {
                           alt="img"
                         />
                       </div>
-                      <div className="display-two">
+                      <div className="">
                         <h5>Canada</h5>
-                        <h6>Ontario</h6>
+                        <h5>Ontario</h5>
                       </div>
                     </div>
                     <div className=" d-fx ">
@@ -365,7 +368,7 @@ const contact = () => {
 
                 <div className="container">
                   <div>
-                    <div className="display">
+                    <div className="text-center">
                       <div>
                         <img
                           src="assets/images/unitedd-img.svg"
@@ -373,12 +376,12 @@ const contact = () => {
                           alt="img"
                         />
                       </div>
-                      <div className="display-two">
+                      <div className="">
                         <h5>United Kingdom</h5>
                         <h6>Southampton</h6>
                       </div>
                     </div>
-                    <div className=" d-fx  ">
+                    <div className=" d-fx mt-2 ">
                       <div className="">
                         <img src="assets/images/Loaction.svg" alt="img" />
                       </div>

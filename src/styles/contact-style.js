@@ -199,7 +199,7 @@ export const Second = styled.div`
   .d-fx {
     display: flex;
     justify-content: center;
-    margin-left: 5rem;
+    /* margin-left: 5rem; */
   }
   .d-one {
     margin-left: 1rem;
