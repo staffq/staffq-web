@@ -109,8 +109,9 @@ const SmallSlider = () => {
                       </div>
                     </div>
                   </div>
-                </div>
-                <div className="card h-100 mt-3">
+                </div><br></br>
+            <br></br>
+                {/* <div className="card h-100 mt-3">
                   <div className="card-body text-info ">
                     <div className="Subheading">
                       <img src="assets/images/Subheading.svg"></img>
@@ -132,10 +133,10 @@ const SmallSlider = () => {
                       </div>
                     </div>
                   </div>
-                </div>
+                </div> */}
               </div>
               {/* ................two.................... */}
-              <div className="col    container text-lnfo two-jsx">
+              {/* <div className="col    container text-lnfo two-jsx">
                 <div className="card h-100">
                   <div className="card-body ">
                     <div className="Subheading">
@@ -205,10 +206,10 @@ const SmallSlider = () => {
                     </div>
                   </div>
                 </div>
-              </div>
+              </div> */}
               {/* ..................................three....................... */}
 
-              <div className="col    container text-info threee-small-jsx">
+              {/* <div className="col    container text-info threee-small-jsx">
                 <div className="card h-100">
                   <div className="card-body ">
                     <div className="Subheading">
@@ -275,7 +276,7 @@ const SmallSlider = () => {
                     </div>
                   </div>
                 </div>
-              </div>
+              </div> */}
 
               {/* ................two..................... */}
 

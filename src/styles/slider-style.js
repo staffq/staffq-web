@@ -5,7 +5,7 @@ export const SlickBG = styled.div`
 
   width: 100%;
   overflow: hidden;
-  height: 628px;
+  /* height: 628px; */
   position: relative;
   margin-top: 2rem;
 
@@ -88,12 +88,12 @@ line-height: 30px;
     color: rgb(255, 255, 255);
   }
   .one-jsx {
-    margin-left: 137px;
+    /* margin-left: 137px; */
     padding: 41px;
     width: 90%!important;
   }
   .two-jsx {
-    margin-left: 30px;
+    /* margin-left: 30px; */
     padding: 41px;
     width: 90%!important;
   }
@@ -136,16 +136,28 @@ line-height: 30px;
   }
   
    }
-   @media (min-width: 990px) and (max-width: 1300px) {
+   @media (min-width: 990px) and (max-width: 1100px) {
     .one-jsx {
     margin-left: 0 ;
     padding: 41px;
-    width: 100%!important;
+    width: 98%!important;
   }
   .two-jsx {
     margin-left: 0;
     padding: 41px;
-    width: 100%!important;
+    width: 98%!important;
+  }
+   }
+   @media (min-width: 1100px) and (max-width: 1400px) {
+    .one-jsx {
+    margin-left: 134px ;
+    padding: 41px;
+    width: 79%!important;
+  }
+  .two-jsx {
+    margin-left: 0;
+    padding: 41px;
+    width: 79%!important;
   }
   .three-jsx {
     margin-left: 0;
@@ -154,6 +166,29 @@ line-height: 30px;
    
   }
   
+   }
+   @media (min-width: 1400px) and (max-width: 1600px) {
+    .one-jsx {
+    margin-left:16rem ;
+    padding: 41px;
+    width: 66%!important;
+  }
+  .two-jsx {
+    margin-left: 0;
+    padding: 41px;
+    width: 66%!important;
+  }
+  .three-jsx {
+    margin-left: 0;
+    width: 66%!important;
+    padding: 41px;
+   
+  }
+  
+   }
+
+   @media (min-width: 990px) and (max-width: 19000px) {
+    height: 30rem;
    }
 
 `;

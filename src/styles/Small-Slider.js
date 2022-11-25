@@ -5,7 +5,7 @@ export const Small = styled.div`
 
   width: 100%;
   overflow: hidden;
-height: 71rem;
+/* height: 71rem; */
   
   position: relative;
   margin-top: 2rem;

@@ -4,19 +4,52 @@ export const Findjobs = styled.div`
   background: #efce1e;
   border-radius: 30px;
 
-  @media (min-width: 250px) and (max-width: 990px) {
+
+.img-section{
+  width: 100;
+
+}
+
+
+  @media (min-width: 250px) and (max-width: 1000px) {
     display: none;
   }
   /* @media (min-width:769px) and (max-width:1200px){
     display: none;
 } */
-  @media (min-width: 1200px) and (max-width: 1400px) {
+  /* @media (min-width: 990px) and (max-width: 1400px) {
     .FindText {
-      margin: 1rem;
+    margin-top: 47rem;
     }
-    .find-images-class {
-      margin-top: 1rem;
+    .img-section {
+     width: 57%;
     }
+ .enough-talk {
+    
+    font-size: 30px;
+  
+  }
+  } */
+  @media (min-width: 900px) and (max-width: 1200px) {
+    .enough-talk {
+    
+      font-size: 30px !important;
+  
+  }
+  }
+
+  @media (min-width: 900px) and (max-width: 1400px) {
+    .FindText {
+      margin-top: 6rem !important;
+    }
+    .img-section {
+     width: 57%;
+    }
+ .enough-talk {
+    
+    font-size: 30px;
+  
+  }
   }
   @media (min-width: 990px) and (max-width: 1200px) {
     .FindText {
@@ -32,7 +65,7 @@ export const Findjobs = styled.div`
   }
 
   .FindText {
-    margin-top: 5%;
+    margin-top: 27%;
   }
   .h2 {
     color: white;
@@ -60,21 +93,26 @@ export const Findjobs = styled.div`
   }
 
   .arow {
-    width: 92px;
-    height: 117px;
+    width: 149px;
+    height: 131px;
     padding: 4px;
-    margin-left: -46px;
-    margin-top: 141px;
+    margin-left: -74px;
+    margin-top: 170px;
   }
   p {
     font-weight: 500;
   }
+  @media (min-width: 1024px) and (max-width: 1200px) {
+    .FindText {
+    margin-top: 7%;
+  }
 
-  @media (min-width: 1000px) and (max-width: 1200px) {
+  }
+  /* @media (min-width: 1000px) and (max-width: 1050px) {
     .arow {
       display: none;
     }
-  }
+  } */
   @media (min-width: 1000px) and (max-width: 1400px) {
   }
 
@@ -130,7 +168,7 @@ export const SmallFind = styled.div`
   display: none;
   margin-top: 2%;
 
-  @media (min-width: 250px) and (max-width: 990px) {
+  @media (min-width: 250px) and (max-width: 1000px) {
     display: block;
     background: #efce1e;
     h2 {

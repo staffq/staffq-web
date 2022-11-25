@@ -1,5 +1,6 @@
 import styled from "styled-components";
 export const Head = styled.div`
+padding-top: 5rem;
   /* position: relative; */
   .ballwave{
 /* background-image: url('assets/images/Ball-waves-about.svg'); */
@@ -175,16 +176,27 @@ margin-left: rem;
 `;
 export const SmallHeader = styled.div`
   display: none;
+  @media (min-width: 250px) and (max-width: 760px) {
+    h1{
+    font-size: 26px;
+    padding-top: 9rem;
+  }
+  }
+ 
   @media (min-width: 250px) and (max-width: 1024px) {
     display: block;
     background: #efce1e;
     width: 100%;
     height: auto;
     padding-top: 2rem;
+    .background-image{
+  
+  }
 
-    h1 {
-      font-size: 32px;
-      padding-top: 7rem;
+  
+    .background{
+      position: absolute;
+      
     }
     p {
       font-size: 26px;
@@ -202,7 +214,15 @@ export const SmallHeader = styled.div`
   
     }
   }
-
+  @media (min-width: 760px) and (max-width: 1024px) {
+    .background{
+     margin-left: 5rem;
+  }
+  h1{
+    font-size: 66px;
+    padding-top: 9rem;
+  }
+}
 
   .Small-header {
   }

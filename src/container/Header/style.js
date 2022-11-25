@@ -107,6 +107,12 @@ export const  Small = styled.div`
   .sm-header{
     display: none;
   }
+  .navbar-nav{
+    background-color: aquamarine;
+    padding-left: 2rem;
+    font-size: 17px;
+    font-weight: 600;
+  }
   @media(min-width:250px) and (max-width:990px){
     .sm-header{
       display: block;

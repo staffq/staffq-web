@@ -14,7 +14,7 @@ import "../../public/assets/css/main.css";
 import "bootstrap/dist/css/bootstrap.css";
 function MyApp({ Component, pageProps }) {
   return (
-    <Layouts className="container">
+    <Layouts className="container ">
       <Component {...pageProps} />
     </Layouts>
   );

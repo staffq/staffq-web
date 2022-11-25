@@ -10,8 +10,8 @@ const Slick = () => {
     dots: true,
     infinite: true,
     speed: 3500,
-    slidesToShow: 3,
-    slidesToScroll: 3,
+    slidesToShow: 2,
+    slidesToScroll: 2,
     initialSlide: 0,
     // autoplay: true,
     responsive: [
@@ -124,7 +124,7 @@ const Slick = () => {
             </div>
             {/* ..................................three....................... */}
 
-            <div className="col    container text-info three-jsx">
+            {/* <div className="col    container text-info three-jsx">
               <div className="card h-100">
                 <div className="card-body ">
                   <div className="Subheading">
@@ -147,10 +147,10 @@ const Slick = () => {
                   </div>
                 </div>
               </div>
-            </div>
+            </div> */}
 
             {/* ................................?adddd...................... */}
-            <div className="col    container one-jsx">
+            {/* <div className="col    container one-jsx">
               <div className="card h-100">
                 <div className="card-body text-info ">
                   <div className="Subheading">
@@ -174,9 +174,9 @@ const Slick = () => {
                   </div>
                 </div>
               </div>
-            </div>
+            </div> */}
             {/* ................two..................... */}
-            <div className="col    container text-lnfo two-jsx">
+            {/* <div className="col    container text-lnfo two-jsx">
               <div className="card h-100">
                 <div className="card-body ">
                   <div className="Subheading">
@@ -200,10 +200,10 @@ const Slick = () => {
                   </div>
                 </div>
               </div>
-            </div>
+            </div> */}
             {/* ..................................three....................... */}
 
-            <div className="col    container text-info three-jsx">
+            {/* <div className="col    container text-info three-jsx">
               <div className="card h-100">
                 <div className="card-body ">
                   <div className="Subheading">
@@ -226,10 +226,10 @@ const Slick = () => {
                   </div>
                 </div>
               </div>
-            </div>
+            </div> */}
             {/* ........................add................. */}
 
-            <div className="col    container one-jsx">
+            {/* <div className="col    container one-jsx">
               <div className="card h-100">
                 <div className="card-body text-info ">
                   <div className="Subheading">
@@ -253,9 +253,9 @@ const Slick = () => {
                   </div>
                 </div>
               </div>
-            </div>
+            </div> */}
             {/* ................two..................... */}
-            <div className="col    container text-lnfo two-jsx">
+            {/* <div className="col    container text-lnfo two-jsx">
               <div className="card h-100">
                 <div className="card-body ">
                   <div className="Subheading">
@@ -279,10 +279,10 @@ const Slick = () => {
                   </div>
                 </div>
               </div>
-            </div>
+            </div> */}
             {/* ..................................three....................... */}
 
-            <div className="col    container text-info three-jsx">
+            {/* <div className="col    container text-info three-jsx">
               <div className="card h-100">
                 <div className="card-body ">
                   <div className="Subheading">
@@ -305,7 +305,7 @@ const Slick = () => {
                   </div>
                 </div>
               </div>
-            </div>
+            </div> */}
           </Slider>
         </div>
       </SlickBG>

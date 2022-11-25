@@ -1,13 +1,11 @@
 /* ************************** Import Packages *************************** **/
 import React, { useState, useEffect } from "react";
 
-
 /* ***************************** Import Next  Packages ******************************** **/
 import Link from "next/link";
 
-
 /* ************************** Import Styles *************************** **/
-import { Navbar, Ul, Li, Button, Div, NavContent, Hover , Small} from "./style";
+import { Navbar, Ul, Li, Button, Div, NavContent, Hover, Small } from "./style";
 
 /* ************************** Import Icons *************************** **/
 import { CgMenu } from "react-icons/cg";
@@ -26,6 +24,15 @@ const Header = () => {
       window.removeEventListener("scroll", scrollEvent);
     };
   }, []);
+
+  const [toggle, setToggle] = useState(false);
+
+  // const Btn = () =>{
+  // setClick(!click);
+
+  //   console.log('hello')
+
+  // }
   //  Header Nav-bar Section
   return (
     <>
@@ -48,7 +55,7 @@ const Header = () => {
           <div className="collapse navbar-collapse" id="navbarTogglerDemo01">
             <Link href="/">
               <a className="navbar-brand">
-                <img src="assets/images/staffq.svg" alt="img"/>
+                <img src="assets/images/staffq.svg" alt="img" />
               </a>
             </Link>
             <ul className="navbar-nav mr-auto mt-2  mt-lg-0">
@@ -84,38 +91,64 @@ const Header = () => {
             </ul>
           </div>
         </nav>
-   
-      
       </Div>
       <Small>
-      <div className="sm-header container-fluid p-0 position-fixed ">
-        
-        <nav className="navbar navbar-expand-lg navbar-light"
-        style={{ backgroundColor: navcolor }}>
-        <Link href="/">
+        <div className="sm-header container-fluid p-0 position-fixed ">
+          <nav
+            className="navbar navbar-expand-lg navbar-light"
+            style={{ backgroundColor: navcolor }}
+          >
+            <Link href="/">
               <a className="navbar-brand">
-                <img src="assets/images/staffq.svg" alt="img"/>
+                <img src="assets/images/staffq.svg" alt="img" />
               </a>
             </Link>
-  <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
-    <span className="navbar-toggler-icon"></span>
-  </button>
+            <button
+              className="navbar-toggler"
+              type="button"
+              data-toggle="collapse"
+              data-target="#navbarTogglerDemo02"
+              aria-controls="navbarTogglerDemo02"
+              aria-expanded="false"
+              aria-label="Toggle navigation"
+              onClick={() => setToggle(!toggle)}
+            >
+              <span className="navbar-toggler-icon"></span>
+            </button>
+            <div className="collapse navbar-collapse" id="navbarTogglerDemo02">
+              {" "}
+            </div>
+        
+          </nav>
+          {toggle && (
+              <div>
+                <ul className="navbar-nav mr-auto  mt-lg-0">
+                  <li className="nav-item active">
+                  <Link href="/">
+                      <a className="nav-link" href="#">
+                        Home<span className="sr-only"></span>
+                      </a>
+                    </Link>{" "}
+                    <Link href="/about-us">
+                      <a className="nav-link" href="#">
+                        About US<span className="sr-only"></span>
+                      </a>
+                    </Link>{" "}
+                  </li>
 
-  <div className="collapse navbar-collapse" id="navbarTogglerDemo02">
-    <ul className="navbar-nav mr-auto mt-2 mt-lg-0">
-      <li className="nav-item active">
-        <a className="nav-link" href="#">Home <span className="sr-only">(current)</span></a>
-      </li>
-      <li className="nav-item">
-        <a className="nav-link" href="#">Link</a>
-      </li>
-      <li className="nav-item">
-        <a className="nav-link disabled" href="#">Disabled</a>
-      </li>
-    </ul>
-   
-  </div>
-</nav>
+                  <li className="nav-item">
+                    <Link href="contact-us">
+                      <a className="nav-link" href="#">
+                        Contact US
+                      </a>
+                    </Link>
+                  </li>
+                  {/* <li className="nav-item">
+          <a className="nav-link disabled" href="#">Disabled</a>
+        </li> */}
+                </ul>
+              </div>
+            )}
         </div>
       </Small>
     </>

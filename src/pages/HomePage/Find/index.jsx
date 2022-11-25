@@ -10,12 +10,13 @@ const Find = () => {
         <Findjobs>
           <div style={{ marginTop: "1%" }}>
             <div className="row">
-              <div className="col-lg-5 p-0">
+              {/* <div className="col-lg-1"></div> */}
+              <div className="col-lg-5 col-md-12 img-section ">
                 <div className="image-left">
                   <img
                     src="assets/images/Man with rings.svg"
                     width="100%"
-                    className="find-images-class" alt="img"/>
+                    className="" alt="img"/>
                   
                 </div>
               </div>
@@ -32,10 +33,10 @@ const Find = () => {
                 </div>
               </div>
 
-              <div className="col-lg-6 col-md-5 col-sm-12 mt-5">
+              <div className="col-lg-3 col-md-12 col-sm-12">
                 <div className="FindText">
                   <h4 className="text-light enough-talk">
-                    Enough Talk, Let’s Find <br></br>Your Dream
+                    Enough Talk, <br></br>Let’s Find, <br></br>Your Dream
                   </h4>
 
                   <p className="text-light find-p-tage mt-3">
@@ -53,6 +54,7 @@ const Find = () => {
                   
                 </div>
               </div>
+              {/* <div className="col-lg-1"></div> */}
             </div>
           </div>
         </Findjobs>

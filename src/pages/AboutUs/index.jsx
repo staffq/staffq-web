@@ -21,7 +21,7 @@ import AboutHeader from "../../components/AboutBanner";
 </Head>
 const AboutPage = () => {
   return (
-    <div>
+    <div >
       <Div>
         <AboutHeader/>
       

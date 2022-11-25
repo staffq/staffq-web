@@ -227,7 +227,7 @@ export const Div = styled.div`
     
     .mission-p-tag {
       font-size: 16px;
-      width: 145%;
+      /* width: 145%; */
     }
     .our-head {
       font-size: 25px;
@@ -420,6 +420,7 @@ export const AboutSection = styled.div`
 
       .AboutPtext {
         font-size: 18px;
+        text-align: center;
         margin-top: 32px;
       }
     }

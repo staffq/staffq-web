@@ -104,8 +104,9 @@ export const BannerText = styled.div`
   cursor: pointer;
   font-size: 16px;
 line-height: 32px;
+background-color: white;
 
-color: #FFFFFF;
+color:white;
 }
 
 .btn-black {
@@ -116,6 +117,7 @@ border-radius: 16px;
 .btn-grey {
   border: 4px solid #45423C;
   color: #45423C;
+  background-color: white;
 }
 
 .arrow {
@@ -124,6 +126,8 @@ border-radius: 16px;
   position: relative;
   display: inline-block;
   cursor: pointer;
+  background-color: white;
+  color: white;
   margin-right: 15px;
   margin-bottom: 4px;
   transition: all .4s ease;
@@ -135,17 +139,17 @@ button:hover .arrow {
 }
 
 .arrow-black {
-  background: black;
+  /* background: black; */
 }
 
 .arrow-grey {
-  background: #45423C;
+  background: white;
 }
 
 .arrow:before,
 .arrow:after {
   content: "";
-  background: black;
+  background: white;
   position: absolute;
   height: 2px;
   width: 10px;
