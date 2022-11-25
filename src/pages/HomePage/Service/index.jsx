@@ -20,7 +20,7 @@ const Service = () => {
                       to companies in various Domain.
                     </p>
                     <p className="sm-scrren-p-tag mb-0">
-                      Lorem ipsum dolor sit amet, consectetu r adipiscing elit,
+                      Lorem ipsum dolor sit amet, consectetur adipiscing elit,
                       sed do eiusmod tempor incididunt ut labore et dolore magna
                       aliqua.
                     </p>

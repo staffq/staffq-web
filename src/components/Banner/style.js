@@ -102,11 +102,15 @@ export const BannerText = styled.div`
   background-color: transparent;
   padding: 16px 32px 16px 40px;
   cursor: pointer;
+  font-size: 16px;
+line-height: 32px;
+
+color: #FFFFFF;
 }
 
 .btn-black {
-  border: 4px solid #000000;
-  color: #000000;
+  background: #050C18;
+border-radius: 16px;
 }
 
 .btn-grey {
@@ -316,6 +320,15 @@ export const Medium = styled.div`
 
     color: rgba(8, 20, 41, 0.6);
     margin-top: 30px;
+  }
+  @media (min-width: 1025px) and (max-width: 1150px) {
+ p{
+  font-size: 15px;
+ }
+ .smText {
+    padding-left: 112px;
+    margin-top: 5rem;
+  }
   }
   @media (min-width: 1025px) and (max-width: 1490px) {
     display: block;

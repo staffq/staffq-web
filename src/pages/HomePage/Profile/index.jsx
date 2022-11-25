@@ -20,7 +20,7 @@ const Profile = () => {
           <div className="wrapper layout-row">
             <div className="sticky-one">
               <div className="row">
-                <div className="col-lg-6 col-md-12  ">
+                <div className="col-lg-5 col-md-12  ">
                   <div className="ProFileBg  posstion">
                     <div className="profileText ">
                       <div className="row ">
@@ -51,7 +51,7 @@ const Profile = () => {
                 </div>
                 {/* ....................second row......................... */}
 
-                <div className="col-lg-6  col-sm-12 second-colum">
+                <div className="col-lg-7  col-sm-12 second-colum">
                   
                   <div className="dis-play border-one profile-screen">
                     <div className="two">
@@ -65,7 +65,7 @@ const Profile = () => {
                         <p>
                           We review tons of applications against our minimum
                           criteria,
-                          <br></br>
+                        
                           their professional journey,and holistic background
                           checks.
                         </p>
@@ -102,7 +102,7 @@ const Profile = () => {
                           <p>
                             We review tons of applications against our minimum
                             criteria,
-                            <br></br>
+                         
                             their professional journey,and holistic background
                             checks.
                           </p>
@@ -127,7 +127,7 @@ const Profile = () => {
                           </span>
                         </sub>
                         <p>
-                          We conduct a scientifically designed aptitude test <br></br>
+                          We conduct a scientifically designed aptitude test 
                           to
                           check their reasoning and problem-solving ability.
                             </p>
@@ -161,9 +161,9 @@ const Profile = () => {
 
                           <p>
                             We have curated one of most advanced technical
-                            assessments to vet talent's <br></br> capabilities,
+                            assessments to vet talent's  capabilities,
                             these are role-based extremely stringent tests which
-                            filters <br></br> top 10% talents
+                            filters  top 10% talents
                           </p>
                         </div>
                       </div>
@@ -221,7 +221,7 @@ const Profile = () => {
 
                             <p>
                               Get selected at top companies international
-                              <br></br>
+                           
                               standards around the world.
                             </p>
                           </div>

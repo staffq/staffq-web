@@ -1,4 +1,4 @@
-import styled from "styled-components";
+  import styled from "styled-components";
 
 export const ContacttStyle = styled.div`
   padding-top: 5px;
@@ -217,7 +217,7 @@ export const Second = styled.div`
       display: none;
     }
   }
-  @media (min-width: 1400px) and (max-width: 1800px) {
+  @media (min-width: 1250px) and (max-width: 1800px) {
     .pc-contact {
       margin-left: 180px;
       margin-right: 192px;

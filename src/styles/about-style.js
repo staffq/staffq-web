@@ -95,7 +95,7 @@ export const AboutBg = styled.div`
     .AboutPtext {
       font-size: 16px;
 
-      line-height: 32px;
+      line-height: 28px;
     }
 
     .medium-one {
@@ -149,10 +149,13 @@ export const AboutBg = styled.div`
       margin-top: 32px;
     }
   }
-  @media (min-width: 500px) and (max-width: 600px) {
+  @media (min-width: 300px) and (max-width: 768px) {
     /* .aboutbtn{
         margin-left: 140px;
     } */
+    .AboutPtext {
+     text-align: center;
+    }
   }
 `;
 export const Medium = styled.div`

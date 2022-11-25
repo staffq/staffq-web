@@ -120,8 +120,8 @@ const Footer = () => {
               <div>
                 <p style={{ fontSize: "14px" }} className="last-line">
                   {" "}
-                  @StaffQ Consultancy Pvt. Ltd - All rights reserved 23-11-22
-                  (02:00)
+                  @StaffQ Consultancy Pvt. Ltd - Powered by Applogiq
+               
                 </p>
               </div>
               <div className="Foter">

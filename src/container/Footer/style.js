@@ -68,7 +68,7 @@ cursor: pointer;
 .footer-one{
   font-size: 0px;
 line-height: 22px;
-
+margin-top: 1rem;
 
 
 color: rgba(255, 255, 255, 0.8);
@@ -76,7 +76,7 @@ color: rgba(255, 255, 255, 0.8);
 .footer-two{
   font-size: 2px;
 line-height: 30px;
-
+margin-top: 1rem;
 
 
 color: rgba(255, 255, 255, 0.8);

@@ -81,7 +81,10 @@ export const ServiceBg = styled.div`
     }
     .sm-scrren-p-tag {
       display: block;
-      width: 100%;
+      width: 87%;
+      color: rgba(8, 20, 41, 0.6);
+    font-weight: 600;
+
     }
     .service-p-tag {
       display: none;

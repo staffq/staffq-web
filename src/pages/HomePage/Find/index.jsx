@@ -41,7 +41,7 @@ const Find = () => {
                   <p className="text-light find-p-tage mt-3">
                   
                   </p>
-                  <Link href="/upload-cv">
+                  {/* <Link href="/upload-cv"> */}
                   <button className="mt-3 upload">
                     <img
                       src="assets/images/directbox-send.svg"
@@ -49,7 +49,7 @@ const Find = () => {
                       alt="img"/>
                     <span className="upload-button"> Upload</span>
                   </button>
-                </Link>
+                {/* </Link> */}
                   
                 </div>
               </div>
