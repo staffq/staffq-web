@@ -40,7 +40,7 @@ export const Findjobs = styled.div`
 
   @media (min-width: 900px) and (max-width: 1400px) {
     .FindText {
-      margin-top: 6rem !important;
+      margin-top: 9rem !important;
     }
     .img-section {
      width: 57%;

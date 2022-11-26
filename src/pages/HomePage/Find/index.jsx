@@ -33,10 +33,10 @@ const Find = () => {
                 </div>
               </div>
 
-              <div className="col-lg-3 col-md-12 col-sm-12">
+              <div className="col-lg-4 col-md-12 col-sm-12">
                 <div className="FindText">
                   <h4 className="text-light enough-talk">
-                    Enough Talk, <br></br>Let’s Find, <br></br>Your Dream
+                    Enough Talk, Let’s Find, <br></br>Your Dream
                   </h4>
 
                   <p className="text-light find-p-tage mt-3">

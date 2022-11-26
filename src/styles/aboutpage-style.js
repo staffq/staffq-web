@@ -213,7 +213,12 @@ export const Div = styled.div`
       font-size: 34px;
     }
     .under-code {
-      display: none;
+      /* display: none; */
+    }
+    .code-line{
+      margin-left: 9rem;
+    width: 87px;
+    margin-top: -94px;
     }
     .small-logo-section {
       margin-top: 2rem;

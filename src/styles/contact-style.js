@@ -204,11 +204,24 @@ export const Second = styled.div`
   .d-one {
     margin-left: 1rem;
   }
+  .small{
+    display: grid;
+  }
+  @media (min-width: 1000px) and (max-width: 1300px) {
+    h5{
+      font-size: 25px;
+    }
+  }
+  @media (min-width: 1300px) and (max-width: 1500px) {
+    h5{
+      font-size: 25px;
+    }
+  }
 
   .small-contact {
     display: none;
   }
-
+ 
   @media (min-width: 250px) and (max-width: 580px) {
     .small-contact {
       display: inline-block;

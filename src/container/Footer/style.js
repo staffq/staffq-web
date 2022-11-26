@@ -135,7 +135,11 @@ line-height: 28px;
 
 color: rgba(255, 255, 255, 0.6);
   }
-
+span{
+  font-size: 18px;
+  
+  color: rgba(255, 255, 255, 0.8);
+}
   
 h5{
     font-size: 30px;
