@@ -3,7 +3,7 @@ import styled from "styled-components";
 export const ServiceBg = styled.div`
 
 /*  */
-  @media (min-width: 900px) and (max-width: 1024px) {
+  @media (min-width: 900px) and (max-width: 1106px) {
     display: none;
   }
   @media (min-width: 1024px) and (max-width: 1200px) {
@@ -206,7 +206,7 @@ export const Medium = styled.div`
     }
   }
 
-  @media (min-width: 900px) and (max-width: 1024px) {
+  @media (min-width: 900px) and (max-width: 1106px) {
     display: block;
     background: #efce1e;
     width: 100%;
@@ -258,7 +258,7 @@ export const Medium = styled.div`
     p {
       font-style: normal;
       font-weight: 500;
-      width: 108%;
+      /* width: 108%; */
       font-size: 16px;
 
       color: rgba(8, 20, 41, 0.4);

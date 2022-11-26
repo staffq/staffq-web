@@ -128,6 +128,7 @@ border-radius: 16px;
   cursor: pointer;
   background-color: white;
   color: white;
+  margin-left: 1rem;
   margin-right: 15px;
   margin-bottom: 4px;
   transition: all .4s ease;
@@ -306,6 +307,82 @@ export const Medium = styled.div`
     background: #050c18;
     border-radius: 16px;
   }
+
+
+  button {
+  /* font-family: 'Raleway', sans-serif; */
+  font-size: 15px;
+  line-height: 22.6px;
+  background-color: transparent;
+  padding: 16px 32px 16px 40px;
+  cursor: pointer;
+  font-size: 16px;
+line-height: 32px;
+background-color: white;
+
+color:white;
+}
+
+.btn-black {
+  background: #050C18;
+border-radius: 16px;
+}
+
+.btn-grey {
+  border: 4px solid #45423C;
+  color: #45423C;
+  background-color: white;
+}
+
+.arrow {
+  height: 2px;
+  width: 0px;
+  position: relative;
+  display: inline-block;
+  cursor: pointer;
+  background-color: white;
+  color: white;
+  margin-left: 1rem;
+  margin-right: 15px;
+  margin-bottom: 4px;
+  transition: all .4s ease;
+}
+
+button:hover .arrow {
+  width: 35px;
+  margin-right: 5px;
+}
+
+.arrow-black {
+  /* background: black; */
+}
+
+.arrow-grey {
+  background: white;
+}
+
+.arrow:before,
+.arrow:after {
+  content: "";
+  background: white;
+  position: absolute;
+  height: 2px;
+  width: 10px;
+  border-radius: 30%;
+}
+
+.arrow:before {
+  right: -2px;
+  bottom: -3px;
+  transform: rotate(-45deg);
+}
+
+.arrow:after {
+  right: -2px;
+  top: -3px;
+  transform: rotate(45deg);
+}
+
   .smText {
     padding-left: 132px;
     margin-top: 7rem;
@@ -336,5 +413,8 @@ export const Medium = styled.div`
   }
   @media (min-width: 1025px) and (max-width: 1490px) {
     display: block;
+    .smimages{
+      margin-top: -25px;
+    }
   }
 `;

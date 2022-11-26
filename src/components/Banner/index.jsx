@@ -73,7 +73,11 @@ const Index = () => {
                   <br></br> suppliers to all the recruitment companies various
                   Domain.
                 </p>
-                <button className="btn btn-medium">Find Your Job</button>
+                <button class="btn-black">
+                  Find your jobs{" "}
+                  <span class="arrow arrow-black"></span>
+                  {/* <img src="assets/images/Find-your.svg" className=""></img> */}
+                </button>
               </div>
             </div>
             <div className=" col-lg-6 col-md-12 col-sm-12 p-0 mt-4">

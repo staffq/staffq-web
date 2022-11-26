@@ -207,6 +207,15 @@ export const Second = styled.div`
   .small{
     display: grid;
   }
+
+  @media (min-width: 250px) and (max-width: 580px) {
+    .map-image {
+    width: 125px;
+    margin-top: 25px;
+    margin-left: 0;
+  }
+  }
+
   @media (min-width: 1000px) and (max-width: 1300px) {
     h5{
       font-size: 25px;
@@ -233,7 +242,7 @@ export const Second = styled.div`
   @media (min-width: 1250px) and (max-width: 1800px) {
     .pc-contact {
       margin-left: 180px;
-      margin-right: 192px;
+      margin-right: 152px;
     }
   }
   /* .pc-contact{

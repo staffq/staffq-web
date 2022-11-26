@@ -176,10 +176,9 @@ const Service = () => {
               <h2 className="pt-3">Services we offer</h2>
 
               <p className="sm-scrren-p-tag mb-0 pt-1">
-                Lorem ipsum dolor sit amet, consectetu r adipiscing elit,
-                <br></br>
-                sed do eiusmod tempor incididunt ut labore et dolore magna
-                aliqua.
+              StaffQ Consultancy is known for its IT and Non-IT recruits{" "}
+                      <br></br>
+                      to companies in various Domain.
               </p>
             </div>
             <div className="serviceImage">

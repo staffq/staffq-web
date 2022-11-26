@@ -503,8 +503,8 @@ const Profile = () => {
               <h4>Panel Interview</h4>
               <p className="small-p-tag">
                 Our Talent Acquisition experts conduct the final video interview
-                understandingthe candidate's preferences and expectations to do
-                the right matchmaking.h.
+                understanding the candidate's preferences and expectations to do
+                the right matchmaking.
               </p>
             </div>
           </div>

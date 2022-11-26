@@ -292,7 +292,7 @@ const contact = () => {
                       </div>
                       </div>
                     </div>
-                    <div className="one-two">
+                    <div className="one-two mt-2">
                       <div className=" d-fx">
                         <div className="">
                           <img src="assets/images/Loaction.svg" alt="img" />

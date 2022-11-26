@@ -38,9 +38,9 @@ export const Findjobs = styled.div`
   }
   }
 
-  @media (min-width: 900px) and (max-width: 1400px) {
+  @media (min-width: 900px) and (max-width: 1200px) {
     .FindText {
-      margin-top: 9rem !important;
+      margin-top: 1rem !important;
     }
     .img-section {
      width: 57%;
@@ -51,9 +51,21 @@ export const Findjobs = styled.div`
   
   }
   }
+  @media (min-width: 1200px) and (max-width: 1400px) {
+    .FindText {
+      margin-top: 2rem !important;
+    }
+    .arow {
+    width: 143px !important;
+    height: 107px !important;
+    padding: 4px;
+    margin-left: -74px;
+    margin-top: 127px !important;
+  
+  }}
   @media (min-width: 990px) and (max-width: 1200px) {
     .FindText {
-      margin: 1rem;
+      margin-top: 5rem !important;
     }
     .find-images-class {
       width: 565px;
@@ -105,7 +117,15 @@ export const Findjobs = styled.div`
   @media (min-width: 1024px) and (max-width: 1200px) {
     .FindText {
     margin-top: 7%;
+
   }
+  .arow {
+    width: 137px;
+    height: 110px;
+    padding: 4px;
+    margin-left: -74px;
+    margin-top: 134px;
+}
 
   }
   /* @media (min-width: 1000px) and (max-width: 1050px) {
