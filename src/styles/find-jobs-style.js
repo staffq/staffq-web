@@ -53,7 +53,7 @@ export const Findjobs = styled.div`
   }
   @media (min-width: 1200px) and (max-width: 1400px) {
     .FindText {
-      margin-top: 2rem !important;
+      margin-top: 5rem !important;
     }
     .arow {
     width: 143px !important;

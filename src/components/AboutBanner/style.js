@@ -11,6 +11,7 @@ padding-top: 5rem;
   background-image: url('assets/images/Ball-waves-about.svg'); 
   background-repeat: no-repeat;
   background-position: center;
+  background-size: contain;
 }
   .header {
     background: #efce1e;

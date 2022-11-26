@@ -245,7 +245,7 @@ const contact = () => {
                       7DW
                     </div>
                   </div>
-                  <div className="row mt-3">
+                  {/* <div className="row mt-3">
                     <div className="col-lg-1 col-md-1 col-sm-1">
                       <img src="assets/images/phone-icon.svg" alt="img" />
                     </div>
@@ -253,7 +253,7 @@ const contact = () => {
                       +91 9629938033<br></br>
                       +91 421 3552738
                     </div>
-                  </div>
+                  </div> */}
 
                   <div className="row mt-4">
                     <div className="col-lg-1 col-md-1 col-sm-1">
@@ -390,7 +390,7 @@ const contact = () => {
                       </div>
                       <br></br>
                     </div>
-                    <div className=" d-fleex mt-3">
+                    {/* <div className=" d-fleex mt-3">
                       <div className="">
                         <img src="assets/images/phone-icon.svg" alt="img" />
                       </div>
@@ -398,7 +398,7 @@ const contact = () => {
                         +91 9629938033<br></br>
                         +91 421 3552738
                       </div>
-                    </div>
+                    </div> */}
                     <div className=" d-fleex mt-3">
                       <div className="">
                         <img src="assets/images/Email-icon.svg" alt="img" />

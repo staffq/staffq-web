@@ -33,7 +33,7 @@ const Find = () => {
                 </div>
               </div>
 
-              <div className="col-lg-5 col-md-12 col-sm-12">
+              <div className="col-lg-4 col-md-12 col-sm-12">
                 <div className="FindText">
                   <h4 className="text-light enough-talk">
                     Enough Talk, Let’s Find, <br></br>Your Dream

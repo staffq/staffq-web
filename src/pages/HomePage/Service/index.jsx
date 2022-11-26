@@ -20,10 +20,9 @@ const Service = () => {
                       to companies in various Domain.
                     </p>
                     <p className="sm-scrren-p-tag mb-0">
-                      Lorem ipsum dolor sit amet, consectetur adipiscing elit,
-                      sed do eiusmod tempor incididunt ut labore et dolore magna
-                      aliqua.
-                    </p>
+                    StaffQ Consultancy is known for its IT and Non-IT recruits{" "}
+                      <br></br>
+                      to companies in various Domain.</p>
                   </div>
                   <div className="serviceImage">
                     <img
@@ -177,7 +176,7 @@ const Service = () => {
 
               <p className="sm-scrren-p-tag mb-0 pt-1">
               StaffQ Consultancy is known for its IT and Non-IT recruits{" "}
-                      <br></br>
+                     
                       to companies in various Domain.
               </p>
             </div>
@@ -200,8 +199,8 @@ const Service = () => {
                   <h5>Permanent Deployment</h5>
                   <p className="mb-0">
                     {" "}
-                    Lorem ipsum dolor sit amet, conse ctetur adipiscing elit,
-                    sed do eius
+                    Permanent staffing is attaining <br></br> great 
+                          importance in the human ....
                   </p>
                   <span className="learnmore">
                     Learn more <BsArrowRight className="fs-3  LeftArrow " />
@@ -220,8 +219,7 @@ const Service = () => {
                   <h5>Contract to Hire</h5>
                   <p className="mb-0">
                     {" "}
-                    Lorem ipsum dolor sit amet, conse ctetur adipiscing elit,
-                    sed do eius
+                    StaffQ Consultancy Services<br></br> involves contract-to-hire staffing ...
                   </p>
                   <span className="learnmore">
                     Learn more <BsArrowRight className="fs-3  LeftArrow " />
@@ -242,8 +240,7 @@ const Service = () => {
                   <h5>Payroll Services</h5>
                   <p className="mb-0">
                     {" "}
-                    Lorem ipsum dolor sit amet, conse ctetur adipiscing elit,
-                    sed do eius
+                    Payroll outsourcing is the act of <br></br>  delegating payroll administration ...
                   </p>
                   <span className="learnmore">
                     Learn more <BsArrowRight className="fs-3  LeftArrow " />
@@ -264,8 +261,8 @@ const Service = () => {
                   <h5>Passthrough services</h5>
                   <p className="mb-0">
                     {" "}
-                    Lorem ipsum dolor sit amet, conse ctetur adipiscing elit,
-                    sed do eius
+                    
+                    We take care of the Entire or part <br></br> of recruitment activities...
                   </p>
                   <span className="learnmore">
                     Learn more <BsArrowRight className="fs-3  LeftArrow " />
@@ -284,8 +281,7 @@ const Service = () => {
                   <h5>Offshore Recruitment</h5>
                   <p className="mb-0">
                     {" "}
-                    Lorem ipsum dolor sit amet, conse ctetur adipiscing elit,
-                    sed do eius
+                    Onsite recruitment is a process<br></br>of meeting your Specific  bulk ...
                   </p>
                   <span className="learnmore">
                     Learn more <BsArrowRight className="fs-3  LeftArrow " />

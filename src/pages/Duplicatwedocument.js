@@ -1,8 +1,8 @@
 /** **************************** Import Packages ****************************** */
 import Document, { Html, Main, NextScript } from "next/document";
-import Head from 'next/head'
+import Head from "next/head";
 /** **************************** Import Lib ****************************** */
-// import { GA_TRACKING_ID } from "../lib/gtag";
+import { GA_TRACKING_ID } from "../lib/gtag";
 
 class MyDocument extends Document {
   static async getInitialProps(ctx) {
@@ -13,8 +13,6 @@ class MyDocument extends Document {
   render() {
     return (
       <Html>
-
-
         <Head>
           <link rel="icon" href="/favicon.ico" />
 
@@ -54,7 +52,6 @@ class MyDocument extends Document {
             type="text/css"
             href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick-theme.min.css"
           />
-        
 
           {/* <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css"></link>
           <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script> 
@@ -66,6 +63,35 @@ class MyDocument extends Document {
 
           {/* ------------------ Google Fonts ------------------------- */}
           <link href="assets/css/google.fonts.css" rel="stylesheet" />
+
+          {/* <script
+            async
+            src="https://www.googletagmanager.com/gtag/js?id=G-424E29F1HR"
+          ></script> */}
+          <script
+            async
+            src={`https://www.googletagmanager.com/gtag/js?id=G-424E29F1HR=${GA_TRACKING_ID}`}
+          />
+
+          <script
+            dangerouslySetInnerHTML={{
+              __html: `
+
+window.dataLayer = window.dataLayer || [];
+
+function gtag(){dataLayer.push(arguments);}
+
+gtag('js', new Date());
+
+gtag('config', '${GA_TRACKING_ID}', {
+
+  page_path: window.location.pathname,
+
+});
+
+`,
+            }}
+          />
         </Head>
         <body>
           <Main />

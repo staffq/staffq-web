@@ -78,7 +78,7 @@ const AboutPage = () => {
           </div>
         </div>
 
-        <div className="container" style={{ marginTop: "3rem" }}>
+        <div className="container dont-show" style={{ marginTop: "3rem" }}>
           <div className="row ">
             <div className="col-lg-6 col-sm-12 col-md-12">
               <div className="img-page-one">
@@ -181,6 +181,94 @@ const AboutPage = () => {
             </div>
           </div>
         </div>
+        {/* .....................small section..........
+
+        
+         */}
+         <div className="container sm-cell">
+         <div className="img-page-one">
+                <div className="section-one">
+                  <div className=" first-row">
+                    <img
+                      src="assets/images/img-page-one.svg"
+                      className="img-one-one"
+                      alt="img"
+                    />
+
+                    <h3 className="discover-h-three">1. Discover</h3>
+                    <p className="discover-p-tag container">
+                      We discover the profiles that are a culture and the skill
+                      fit for your company  which make the process
+                      easier on proceeding with the profiles <br></br>
+                      <br></br>
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div className="content-one margin-section">
+                  <div className="content-two">
+                    <div className="img-page-two container">
+                      <div className="">
+                        <img
+                          src="assets/images/analyse.svg"
+                          width="93%"
+                          alt="img"
+                        />
+                        <h3 className="discover-h-three">2. Analyse</h3>
+                        <p className="discover-p-tag container">
+                          We are analyze the profile about the history, skillset
+                          and the background of the candidate which
+                          helps us in identifying that fits to your requirement.
+                          <br></br>
+                          <br></br>
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div className="img-page-one mt-3">
+                <div className="section-one">
+                  <div className="first-row container">
+                    <img
+                      src="assets/images/Evaluate.svg"
+                      className="img-one-one"
+                      alt="img"
+                    />
+                    <h3 className="discover-h-three">3. Evaluate</h3>
+                    <p className="discover-p-tag container">
+                      Since we also have a software expertise we can screen and
+                      evaluate the technical skills form our end that
+                      suites for you and we pass though the evaluation process
+                      for you end.<br></br>
+                      <br></br>
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div className=" margin-section-second">
+                  <div className="content-one  ">
+                    <div className="content-two ">
+                      <div className="img-page-two container  ">
+                        <img
+                          src="assets/images/Onboard.svg"
+                          width="93%"
+                          alt="img"
+                        />
+                        <h3 className="discover-h-three">4. Onboard</h3>
+                        <p className="discover-p-tag container">
+                          We will not only follow-up we take ownership on
+                          onboarding the candidates for you that helps
+                          both us on an easy going business.<br></br>
+                          <br></br>
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+         </div>
+         {/* ..... */}
+
         <AboutSection>
           <div className="container-fluid">
             <div className="About-section">
@@ -202,6 +290,7 @@ const AboutPage = () => {
                       alt="img"
                     />
                   </div>
+                  <br></br> <br></br>
                 </div>
                 <div className="col-lg-7 col-md-12 col-sm-12 fs-5 about-p-center">
                   <div>

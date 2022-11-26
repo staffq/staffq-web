@@ -24,6 +24,7 @@ const About = () => {
             <div className="col-lg-5 col-md-12 col-sm-12 medium-one">
                 <div className="aboutImage">
                 <img src="assets/images/service.png" width='100%'alt="img"/>
+                <br></br> <br></br>
                 </div>
             
              
@@ -51,8 +52,10 @@ const About = () => {
                 </p>
                 <Link href="/about-us">
                 <button className="aboutbtn"><span className="about">About Us</span></button>
+               
                     
                   </Link>
+                  <br></br> <br></br>
           
                 </div>
                 
@@ -107,6 +110,7 @@ const About = () => {
                 <button className="aboutbtn"><span className="about">About Us</span></button>
                     
                   </Link>
+                  <br></br> <br></br>
           
 
                 

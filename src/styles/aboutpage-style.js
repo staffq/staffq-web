@@ -62,7 +62,7 @@ export const Div = styled.div`
 
   }
   .section-one {
-    width: 630px;
+    width: 100%;
     /* height: 500px; */
     padding-left: 12px;
 
@@ -224,7 +224,19 @@ export const Div = styled.div`
       margin-top: 2rem;
     }
   }
+.sm-cell{
+  display: none;
+}
 
+
+@media (min-width: 100px) and (max-width: 990px) {
+  .sm-cell{
+  display: block;
+}
+.dont-show{
+  display: none;
+}
+}
   /* .....................................our vision and our mission..media query: ..................... */
   @media (min-width: 990px) and (max-width: 1350px) {
   

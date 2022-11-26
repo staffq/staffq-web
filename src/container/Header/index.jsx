@@ -131,7 +131,7 @@ const Header = () => {
                     </Link>{" "}
                     <Link href="/about-us">
                       <a className="nav-link" href="#">
-                        About US<span className="sr-only"></span>
+                        About Us<span className="sr-only"></span>
                       </a>
                     </Link>{" "}
                   </li>
@@ -139,7 +139,7 @@ const Header = () => {
                   <li className="nav-item">
                     <Link href="contact-us">
                       <a className="nav-link" href="#">
-                        Contact US
+                        Contact Us
                       </a>
                     </Link>
                   </li>
