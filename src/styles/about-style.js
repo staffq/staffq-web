@@ -153,9 +153,9 @@ export const AboutBg = styled.div`
     /* .aboutbtn{
         margin-left: 140px;
     } */
-    .AboutPtext {
+    /* .AboutPtext {
      text-align: center;
-    }
+    } */
   }
 `;
 export const Medium = styled.div`
@@ -171,6 +171,10 @@ export const Medium = styled.div`
     .About-section {
       text-align: center;
       padding-top: 40px;
+    }
+    .h_two{
+      font-size: 33px;
+      font-weight: 600;
     }
     .aboutbtn {
       width: 158px;

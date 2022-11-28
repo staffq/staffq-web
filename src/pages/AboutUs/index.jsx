@@ -1,31 +1,133 @@
 import React from "react";
 import Head from "next/head";
-import {
-  Div,
-  
-
-  AboutSection,
-} from "../../styles/aboutpage-style";
+import { Div, AboutSection } from "../../styles/aboutpage-style";
 
 import AboutHeader from "../../components/AboutBanner";
-<Head>
-  <title>About Us </title>
-  <meta
-    property="og:title"
-    content="About StaffQ Team of HR professionals and SMEs offering complete HR 
-    Solutions to impact the rapidly 
-    growing Recruitment Industry in India Redefining the Recruitment
-     experience of Fortune 500s and Large Enterprises to Startups "
-    key="title"
-  />
-</Head>
+
 const AboutPage = () => {
   return (
-    <div >
-      <Div>
-        <AboutHeader/>
-      
+    
+    <div>
 
+<Head>
+        <title>
+        About Us 
+        </title>
+        <meta property="og:image" content="https://www.applogiq.org/assets/images/metaimg.png" />
+        <meta name="linkedin:image" content="https://www.applogiq.org/assets/images/metaimg.png" />
+        <meta name="twitter:image" content="https://www.applogiq.org/assets/images/metaimg.png" />
+        <meta name="instagram:image" content="https://www.applogiq.org/assets/images/metaimg.png" />
+        <meta
+          name="title"
+          content=" About StaffQ Team of HR professionals and SMEs offering complete HR Solutions to impact the rapidly growing Recruitment Industry in India Redefining the
+           Recruitment experience of Fortune 500s and Large Enterprises to Startups"
+        />
+        <meta
+          name="description"
+          content="About StaffQ Team of HR professionals and SMEs offering complete HR Solutions to impact the rapidly
+           growing Recruitment Industry in India Redefining the Recruitment experience of Fortune 500s and Large Enterprises to Startups."
+        />
+        <meta
+          name="keywords"
+          content="About Us "
+        />
+
+        <link rel="canonical" href="https://www.staffq.in/about-us/" />
+
+        <link
+          rel="alternate"
+          href="https://www.staffq.in/"
+          hreflang="en-in"
+        />
+
+        <meta property="og:locale" content="en_US" />
+        <meta property="og:type" content="website" />
+        <meta
+          property="og:title"
+          content="About StaffQ Team of HR professionals and SMEs offering complete HR Solutions to impact the rapidly growing Recruitment 
+          Industry in India Redefining the Recruitment experience of Fortune 500s and Large Enterprises to Startups "
+        />
+        <meta
+          property="og:description"
+          content="About StaffQ Team of HR professionals and SMEs offering complete HR Solutions to impact the rapidly growing
+           Recruitment Industry in India Redefining the Recruitment experience of Fortune 500s and Large Enterprises to Startups ."
+        />
+        <meta
+          property="og:image"
+          content="https://www.applogiq.org/assets/images/index-og.webp"
+        />
+        <meta property="og:url" content="https://www.staffq.in" />
+        <meta property="og:site_name" content="AppLogiQ" />
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta charSet="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+        {/* <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: `{
+              "@context": "https://schema.org",
+              "@type": "LocalBusiness",
+              "name": "AppLogiQ",
+              "image": "https://www.applogiq.org/assets/images/logo.gif",
+              "@id": "",
+              "url": "https://applogiq.org/",
+              "telephone": "9629938033",
+              "priceRange": "$$$$$",
+              "address": {
+                "@type": "PostalAddress",
+                "streetAddress": "Floor-3,Sathyam Towers,6D Bharathi Street,Valipalayam.",
+                "addressLocality": "Tiruppur",
+                "postalCode": "641 601",
+                "addressCountry": "IN"
+              },
+              "geo": {
+                "@type": "GeoCoordinates",
+                "latitude": 11.10601020,
+                "longitude": 77.34961810
+              },
+              "openingHoursSpecification": {
+                "@type": "OpeningHoursSpecification",
+                "dayOfWeek": [
+                  "Monday",
+                  "Tuesday",
+                  "Wednesday",
+                  "Thursday",
+                  "Friday"
+                ],
+                "opens": "09:00",
+                "closes": "19:00"
+              },
+              "sameAs": [
+                "https://www.linkedin.com/company/applogiq/",
+                "https://www.facebook.com/Applogiq",
+                "https://www.instagram.com/applogiq/"
+              ] 
+            }`
+          }}
+        />
+
+        <script type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: `{
+              "@context": "https://schema.org",
+              "@type": "Organization",
+              "name": "Applogiq",
+              "alternateName": "software company",
+              "url": "https://www.applogiq.org/",
+              "logo": "https://www.applogiq.org/assets/images/logo.gif",
+              "sameAs": [
+                "https://www.facebook.com/Applogiq",
+                "https://www.linkedin.com/company/applogiq/"
+              ]
+            }`
+          }}
+        /> */}
+
+
+      </Head>
+      <Div>
+        <AboutHeader />
 
         <div className="container FIRST">
           <div className="row">
@@ -43,12 +145,12 @@ const AboutPage = () => {
                 <div className="second-page-h1">
                   <div className="d-flex">
                     <img src="assets/images/line.svg" alt="img" />
-                    <h3 className="our-head">Our Mission</h3>
+                    <p className="our-head h-three">Our Mission</p>
                   </div>
 
                   <p className="mission-p-tag">
                     To be the leading partner that clients and candidates{" "}
-                    <br></br> always choose to connect with.
+                    always choose to connect with.
                   </p>
                 </div>
               </div>
@@ -57,13 +159,13 @@ const AboutPage = () => {
                 <div className="second-page-h1">
                   <div className="d-flex">
                     <img src="assets/images/line.svg" alt="img" />
-                    <h3 className="our-head">Our Vision</h3>
+                    <p className="our-head  h-three">Our Vision</p>
                   </div>
                   <p className="mission-p-tag">
                     Our vision is to establish a long-term and strategic
-                    <br></br>
-                    recruitment partnership with our clients and assist<br></br>{" "}
-                    them in transforming today’s difficulties into <br></br>
+                  
+                    recruitment partnership with our clients and assist
+                    them in transforming today’s difficulties into 
                     tomorrow’s triumphs.
                   </p>
                 </div>
@@ -74,7 +176,7 @@ const AboutPage = () => {
 
         <div>
           <div className="container text-center mt-5">
-            <h4 className="Our-Strategy">Our Strategy</h4>
+            <p className="Our-Strategy">Our Strategy</p>
           </div>
         </div>
 
@@ -85,16 +187,16 @@ const AboutPage = () => {
                 <div className="section-one">
                   <div className=" first-row">
                     <img
-                      src="assets/images/img-page-one.svg"
+                      src="assets/images/discover.png"
                       className="img-one-one"
                       alt="img"
                     />
 
-                    <h3 className="discover-h-three">1. Discover</h3>
+                    <p className="discover-h-three">1. Discover</p>
                     <p className="discover-p-tag container">
                       We discover the profiles that are a culture and the skill
-                      fit for your company  which make the process
-                      easier on proceeding with the profiles <br></br>
+                      fit for your company which make the process easier on
+                      proceeding with the profiles <br></br>
                       <br></br>
                     </p>
                   </div>
@@ -104,16 +206,16 @@ const AboutPage = () => {
                 <div className="section-one">
                   <div className="first-row container">
                     <img
-                      src="assets/images/Evaluate.svg"
-                      className="img-one-one"
+                      src="assets/images/evalute.png"
+                      className="evalute.png"
                       alt="img"
                     />
-                    <h3 className="discover-h-three">3. Evaluate</h3>
+                    <p className="discover-h-three">3. Evaluate</p>
                     <p className="discover-p-tag container">
                       Since we also have a software expertise we can screen and
-                      evaluate the technical skills form our end that
-                      suites for you and we pass though the evaluation process
-                      for you end.<br></br>
+                      evaluate the technical skills form our end that suites for
+                      you and we pass though the evaluation process for you end.
+                      <br></br>
                       <br></br>
                     </p>
                   </div>
@@ -121,7 +223,7 @@ const AboutPage = () => {
               </div>
 
               <div className="section-two mt-5 evalute-image">
-                <img src="assets/images/second-elipse.svg" alt="img" />
+                <img src="assets/images/second-color.png" alt="img" />
               </div>
             </div>
 
@@ -131,7 +233,7 @@ const AboutPage = () => {
               <div className="section-two  ">
                 <div className="container  ">
                   <img
-                    src="assets/images/Ball-one.svg"
+                    src="assets/images/color-ball.png"
                     className="row-second-ball"
                     alt="img"
                   />
@@ -141,15 +243,15 @@ const AboutPage = () => {
                     <div className="img-page-two container">
                       <div className="">
                         <img
-                          src="assets/images/analyse.svg"
+                          src="assets/images/analyze.png"
                           width="93%"
                           alt="img"
                         />
-                        <h3 className="discover-h-three">2. Analyse</h3>
+                        <p className="discover-h-three">2. Analyse</p>
                         <p className="discover-p-tag container">
                           We are analyze the profile about the history, skillset
-                          and the background of the candidate which
-                          helps us in identifying that fits to your requirement.
+                          and the background of the candidate which helps us in
+                          identifying that fits to your requirement.
                           <br></br>
                           <br></br>
                         </p>
@@ -162,15 +264,15 @@ const AboutPage = () => {
                     <div className="content-two ">
                       <div className="img-page-two container  ">
                         <img
-                          src="assets/images/Onboard.svg"
+                          src="assets/images/onboard.png"
                           width="93%"
                           alt="img"
                         />
-                        <h3 className="discover-h-three">4. Onboard</h3>
+                        <p className="discover-h-three">4. Onboard</p>
                         <p className="discover-p-tag container">
                           We will not only follow-up we take ownership on
-                          onboarding the candidates for you that helps
-                          both us on an easy going business.<br></br>
+                          onboarding the candidates for you that helps both us
+                          on an easy going business.<br></br>
                           <br></br>
                         </p>
                       </div>
@@ -185,89 +287,80 @@ const AboutPage = () => {
 
         
          */}
-         <div className="container sm-cell">
-         <div className="img-page-one">
-                <div className="section-one">
-                  <div className=" first-row">
-                    <img
-                      src="assets/images/img-page-one.svg"
-                      className="img-one-one"
-                      alt="img"
-                    />
+        <div className="container sm-cell">
+          <div className="img-page-one">
+            <div className="section-one">
+              <div className=" first-row">
+                <img
+                  src="assets/images/discover.png"
+                  className="img-one-one"
+                  alt="img"
+                />
 
-                    <h3 className="discover-h-three">1. Discover</h3>
-                    <p className="discover-p-tag container">
-                      We discover the profiles that are a culture and the skill
-                      fit for your company  which make the process
-                      easier on proceeding with the profiles <br></br>
-                      <br></br>
-                    </p>
-                  </div>
+                <p className="discover-h-three">1. Discover</p>
+                <p className="discover-p-tag container">
+                  We discover the profiles that are a culture and the skill fit
+                  for your company which make the process easier on proceeding
+                  with the profiles <br></br>
+                  <br></br>
+                </p>
+              </div>
+            </div>
+          </div>
+          <div className="content-one margin-section">
+            <div className="content-two">
+              <div className="img-page-two container">
+                <div className="">
+                  <img src="assets/images/analyze.png" width="93%" alt="img" />
+                  <p className="discover-h-three">2. Analyse</p>
+                  <p className="discover-p-tag container">
+                    We are analyze the profile about the history, skillset and
+                    the background of the candidate which helps us in
+                    identifying that fits to your requirement.
+                    <br></br>
+                    <br></br>
+                  </p>
                 </div>
               </div>
-              <div className="content-one margin-section">
-                  <div className="content-two">
-                    <div className="img-page-two container">
-                      <div className="">
-                        <img
-                          src="assets/images/analyse.svg"
-                          width="93%"
-                          alt="img"
-                        />
-                        <h3 className="discover-h-three">2. Analyse</h3>
-                        <p className="discover-p-tag container">
-                          We are analyze the profile about the history, skillset
-                          and the background of the candidate which
-                          helps us in identifying that fits to your requirement.
-                          <br></br>
-                          <br></br>
-                        </p>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div className="img-page-one mt-3">
-                <div className="section-one">
-                  <div className="first-row container">
-                    <img
-                      src="assets/images/Evaluate.svg"
-                      className="img-one-one"
-                      alt="img"
-                    />
-                    <h3 className="discover-h-three">3. Evaluate</h3>
-                    <p className="discover-p-tag container">
-                      Since we also have a software expertise we can screen and
-                      evaluate the technical skills form our end that
-                      suites for you and we pass though the evaluation process
-                      for you end.<br></br>
-                      <br></br>
-                    </p>
-                  </div>
+            </div>
+          </div>
+          <div className="img-page-one mt-3">
+            <div className="section-one">
+              <div className="first-row container">
+                <img
+                  src="assets/images/evalute.png"
+                  className="img-one-one"
+                  alt="img"
+                />
+                <p className="discover-h-three">3. Evaluate</p>
+                <p className="discover-p-tag container">
+                  Since we also have a software expertise we can screen and
+                  evaluate the technical skills form our end that suites for you
+                  and we pass though the evaluation process for you end.
+                  <br></br>
+                  <br></br>
+                </p>
+              </div>
+            </div>
+          </div>
+          <div className=" margin-section-second">
+            <div className="content-one  ">
+              <div className="content-two ">
+                <div className="img-page-two container  ">
+                  <img src="assets/images/onboard.png" width="93%" alt="img" />
+                  <p className="discover-h-three">4. Onboard</p>
+                  <p className="discover-p-tag container">
+                    We will not only follow-up we take ownership on onboarding
+                    the candidates for you that helps both us on an easy going
+                    business.<br></br>
+                    <br></br>
+                  </p>
                 </div>
               </div>
-              <div className=" margin-section-second">
-                  <div className="content-one  ">
-                    <div className="content-two ">
-                      <div className="img-page-two container  ">
-                        <img
-                          src="assets/images/Onboard.svg"
-                          width="93%"
-                          alt="img"
-                        />
-                        <h3 className="discover-h-three">4. Onboard</h3>
-                        <p className="discover-p-tag container">
-                          We will not only follow-up we take ownership on
-                          onboarding the candidates for you that helps
-                          both us on an easy going business.<br></br>
-                          <br></br>
-                        </p>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-
-         </div>
-         {/* ..... */}
+            </div>
+          </div>
+        </div>
+        {/* ..... */}
 
         <AboutSection>
           <div className="container-fluid">
@@ -321,11 +414,11 @@ const AboutPage = () => {
 
         <div className="maxium">
           <div className="background-wave-image">
-            <img src="assets/images/Images-with-connector.png" />
+            <img src="assets/images/Images--with-connector.png" />
           </div>
           <div className="container  join-team">
             <div className="">
-              <h1 className="join-our">Join Our Team</h1>
+              <p className="join-our">Join Our Team</p>
               <div className="under-code">
                 <img
                   className="code-line"
@@ -344,7 +437,7 @@ const AboutPage = () => {
 
         <div className="container small-join-section">
           <div className="join-teamm">
-            <h1 className="join-our">Join Our Team</h1>
+            <p className="join-our">Join Our Team</p>
             <div className="under-code">
               <img
                 className="code-line"
@@ -362,11 +455,11 @@ const AboutPage = () => {
 
           <div className="small-logo-section">
             <div>
-              <img src="assets/images/first-logo.svg" alt="logo" />
-              <img src="assets/images/second-logo.svg" alt="logo" />
-              <img src="assets/images/third-logo.svg" alt="logo" />
-              <img src="assets/images/fourth-logo.svg" alt="logo" />
-              <img src="assets/images/fifth-logo.svg" alt="logo" />
+              <img src="assets/images/frisrt-logo.png" alt="logo" />
+              <img src="assets/images/second-logo.png" alt="logo" />
+              <img src="assets/images/third-logo.png" alt="logo" />
+              <img src="assets/images/fourth-logo.png" alt="logo" />
+              <img src="assets/images/fifth-logo.png" alt="logo" />
             </div>
           </div>
         </div>

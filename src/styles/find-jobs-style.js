@@ -33,7 +33,7 @@ export const Findjobs = styled.div`
   @media (min-width: 900px) and (max-width: 1200px) {
     .enough-talk {
     
-      font-size: 30px !important;
+      font-size: 27px !important;
   
   }
   }

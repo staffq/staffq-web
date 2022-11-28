@@ -44,8 +44,7 @@ const Index = () => {
                   ></img>
                 </Button> */}
                 <button class="btn-black">
-                  Find your jobs{" "}
-                  <span class="arrow arrow-black"></span>
+                  Find your jobs <span class="arrow arrow-black"></span>
                   {/* <img src="assets/images/Find-your.svg" className=""></img> */}
                 </button>
               </BannerText>
@@ -54,7 +53,7 @@ const Index = () => {
               <div>
                 <Background>
                   <Image
-                    src="assets/images/Main banner image grp.png"
+                    src="assets/images/Main-banner-image-grp.webp"
                     width="100%"
                   ></Image>
                 </Background>
@@ -67,15 +66,14 @@ const Index = () => {
           <div className="row">
             <div className=" col-lg-6 col-md-12 col-sm-12 p-0">
               <div className="smText">
-                <h1>We simplify the way to find and manage workforce.</h1>
+                <p className=" h_one">  We simplify the way to find and manage workforce.</p>
                 <p className="">
                   StaffQ Consultancy is known for its IT and Non-IT recruiter’s{" "}
                   <br></br> suppliers to all the recruitment companies various
                   Domain.
                 </p>
                 <button class="btn-black">
-                  Find your jobs{" "}
-                  <span class="arrow arrow-black"></span>
+                  Find your jobs <span class="arrow arrow-black"></span>
                   {/* <img src="assets/images/Find-your.svg" className=""></img> */}
                 </button>
               </div>
@@ -83,7 +81,7 @@ const Index = () => {
             <div className=" col-lg-6 col-md-12 col-sm-12 p-0 mt-4">
               <div className="smimages">
                 <img
-                  src="assets/images/Main banner image grp.png"
+                  src="assets/images/Main-banner-image-grp.webp"
                   width="100%"
                 ></img>
               </div>
@@ -95,9 +93,9 @@ const Index = () => {
           <div className="row">
             <div className="col-md-12 col-sm-12 p-0">
               <div className="smText">
-                <h1>
+                <p className=" h_one">
                   We simplify the way <br></br>to find and manage workforce.
-                </h1>
+                </p>
                 <p className="">
                   StaffQ Consultancy is known for its IT and <br></br>Non-IT
                   recruiter’s suppliers to all the <br></br>recruitment
@@ -109,7 +107,7 @@ const Index = () => {
             <div className="col-md-12 col-sm-12 p-0 mt-4">
               <div className="smimages">
                 <img
-                  src="assets/images/Main banner image grp.png"
+                  src="assets/images/Main-banner-image-grp.webp"
                   width="100%"
                 ></img>
               </div>

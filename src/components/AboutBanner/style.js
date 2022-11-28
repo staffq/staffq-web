@@ -77,12 +77,17 @@ padding-top: 5rem;
   padding-left: 14rem;
     margin-top: 14rem;
 }
-@media (min-width: 1024px) and (max-width: 1450px) {
+@media (min-width: 1000px) and (max-width: 1200px) {
     h1{
         font-size: 40px;
     }
 }
-
+@media (min-width: 1200px) and (max-width: 1400px) {
+    h1{
+        font-size: 42px;
+        padding-top: 20px;
+    }
+}
 
 
 
@@ -177,10 +182,17 @@ margin-left: rem;
 `;
 export const SmallHeader = styled.div`
   display: none;
-  @media (min-width: 250px) and (max-width: 760px) {
-    h1{
+  .h-one{
     font-size: 26px;
+    line-height: 30px;
     padding-top: 9rem;
+  }
+  @media (min-width: 250px) and (max-width: 760px) {
+    .h-one{
+      font-size: 30px;
+    line-height: 37px;
+    padding-top: 9rem;
+    font-weight: 500;
   }
   }
  
@@ -215,14 +227,32 @@ export const SmallHeader = styled.div`
   
     }
   }
-  @media (min-width: 760px) and (max-width: 1024px) {
+  @media (min-width: 760px) and (max-width: 1000px) {
     .background{
      margin-left: 5rem;
   }
-  h1{
-    font-size: 66px;
-    padding-top: 9rem;
+
+  .h-one{
+    font-size: 35px;
+    line-height: 35px;
+    font-weight: 5000;
+    padding-top: 10rem;
   }
+} @media (min-width: 1000px) and (max-width: 1030px) {
+    .background{
+     margin-left: 14rem;
+  }
+  .h-one{
+    font-size: 45px;
+    line-height: 52px;
+    font-weight: 500;
+    padding-top: 10rem;
+  }
+
+}
+@media (min-width: 1300px) and (max-width: 1400px) {
+
+
 }
 
   .Small-header {

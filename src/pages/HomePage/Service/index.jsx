@@ -26,7 +26,7 @@ const Service = () => {
                   </div>
                   <div className="serviceImage">
                     <img
-                      src="assets/images/Woman-picture.png"
+                      src="assets/images/Woman-picture.webp"
                       width="100%"
                       className="service-img-one"
                       alt="img"/>
@@ -44,7 +44,7 @@ const Service = () => {
                         className="sriram"
                         style={{ paddingBottom: "8px" }}
                       >
-                        <h5>Permanent Deployment</h5>
+                        <p className="h-five">Permanent Deployment</p>
                         <p className="mb-0">
                           {" "}
                           Permanent staffing is attaining <br></br> great 
@@ -69,7 +69,7 @@ const Service = () => {
                         border-radius="10px"
                         className="sriram"
                       >
-                        <h5>Contract to Hire</h5>
+                        <p className="h-five">Contract to Hire</p>
                         <p className="mb-0">
                           {" "}
                           StaffQ Consultancy Services<br></br> involves contract-to-hire staffing ...
@@ -95,7 +95,7 @@ const Service = () => {
                       border-radius="10px"
                       className="sriram"
                     >
-                      <h5>Payroll Services</h5>
+                      <p className="h-five">Payroll Services</p>
                       <p className="mb-0">
                         {" "}
                         Payroll outsourcing is the act of <br></br>  delegating payroll administration ...
@@ -119,7 +119,7 @@ const Service = () => {
                         border-radius="10px"
                         className="sriram"
                       >
-                        <h5>Passthrough services </h5>
+                        <p className="h-five">Passthrough services </p>
                         <p className="mb-0">
                           {" "}
                        
@@ -145,7 +145,7 @@ const Service = () => {
                         border-radius="10px"
                       
                       >
-                        <h5>Offshore Recruitment</h5>
+                        <p className="h-five">Offshore Recruitment</p>
                         <p className="mb-0">
                           {" "}
                           Onsite recruitment is a process<br></br>of meeting your Specific  bulk ...
@@ -172,7 +172,7 @@ const Service = () => {
         <div className="container">
           <div className="mt-5">
             <div className="small-center">
-              <h2 className="pt-3">Services we offer</h2>
+              <p className="pt-3 service-we">Services we offer</p>
 
               <p className="sm-scrren-p-tag mb-0 pt-1">
               StaffQ Consultancy is known for its IT and Non-IT recruits{" "}
@@ -182,7 +182,7 @@ const Service = () => {
             </div>
             <div className="serviceImage">
             <img
-                      src="assets/images/Woman-picture.png"
+                      src="assets/images/Woman-picture.webp"
                       width="100%"
                       className="service-img-one"
                       alt="img"/>
@@ -196,7 +196,7 @@ const Service = () => {
                   border-radius="10px"
                   className="sriram"
                 >
-                  <h5>Permanent Deployment</h5>
+                  <p className="h-five">Permanent Deployment</p>
                   <p className="mb-0">
                     {" "}
                     Permanent staffing is attaining <br></br> great 
@@ -216,7 +216,7 @@ const Service = () => {
                   border-radius="10px"
                   className="sriram"
                 >
-                  <h5>Contract to Hire</h5>
+                  <p className="h-five">Contract to Hire</p>
                   <p className="mb-0">
                     {" "}
                     StaffQ Consultancy Services<br></br> involves contract-to-hire staffing ...
@@ -237,7 +237,7 @@ const Service = () => {
                   border-radius="10px"
                   className="sriram"
                 >
-                  <h5>Payroll Services</h5>
+                  <p className="h-five">Payroll Services</p>
                   <p className="mb-0">
                     {" "}
                     Payroll outsourcing is the act of <br></br>  delegating payroll administration ...
@@ -258,7 +258,7 @@ const Service = () => {
                   border-radius="10px"
                   className="sriram"
                 >
-                  <h5>Passthrough services</h5>
+                  <p className="h-five">Passthrough services</p>
                   <p className="mb-0">
                     {" "}
                     
@@ -278,7 +278,7 @@ const Service = () => {
                   border-radius="10px"
                   className="sriram"
                 >
-                  <h5>Offshore Recruitment</h5>
+                  <p className="h-five">Offshore Recruitment</p>
                   <p className="mb-0">
                     {" "}
                     Onsite recruitment is a process<br></br>of meeting your Specific  bulk ...

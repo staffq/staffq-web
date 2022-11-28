@@ -21,12 +21,12 @@ font-size: 16px;
     margin-top: 19px;
   }
   .communication{
-    font-size: 14px;
+    font-size: 19px;
 line-height: 19px;
 /* identical to box height */
 font-weight: 500;
 
-color: rgba(8, 20, 41, 0.6);}
+/* color: rgba(8, 20, 41, 0.6);} */}
 
   .SliderHead div ul .slick-active button {
     background: rgba(255, 255, 255, 0.4);
@@ -52,6 +52,15 @@ color: rgba(8, 20, 41, 0.6);}
     animation-delay: 2s;
     animation-duration: 3500ms;
   }
+  .what-people{
+  font-weight: 600;
+font-size: 36px;
+line-height: 49px;
+/* identical to box height */
+
+
+color: #FFFFFF;
+}
   @keyframes run {
     0% {
       width: 0px;
@@ -77,10 +86,12 @@ color: rgba(8, 20, 41, 0.6);}
     display: flex;
     flex-direction: row;
     color: #050c18;
+   
   }
   .two {
     display: flex;
     padding-left: 12px;
+    justify-content: center;
     flex-direction: column;
   }
   .slick-dots li button:before {

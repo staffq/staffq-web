@@ -13,12 +13,20 @@ export const Div = styled.div`
     margin-left: 3rem;
     margin-top: 4rem;
   } */
-.vision-row{
-  display: grid;
-  align-content: center;
-  padding-left: 30px;
-}
+  .vision-row {
+    display: grid;
+    align-content: center;
+    padding-left: 30px;
+  }
+.h-three{
+  font-weight: 600;
+font-size: 36px;
+line-height: 49px;
+/* identical to box height */
 
+
+color: #081429;
+}
   p {
     font-size: 21px;
     font-weight: 300;
@@ -59,7 +67,6 @@ export const Div = styled.div`
     justify-content: center;
   }
   @media (min-width: 100px) and (max-width: 1024px) {
-
   }
   .section-one {
     width: 100%;
@@ -209,39 +216,38 @@ export const Div = styled.div`
       text-align: center;
       margin-top: 1rem;
     }
-    .join-our{
+    .join-our {
       font-size: 34px;
     }
     .under-code {
       /* display: none; */
     }
-    .code-line{
+    .code-line {
       margin-left: 9rem;
-    width: 87px;
-    margin-top: -94px;
+      width: 87px;
+      margin-top: -94px;
     }
     .small-logo-section {
       margin-top: 2rem;
     }
   }
-.sm-cell{
-  display: none;
-}
+  .sm-cell {
+    display: none;
+  }
 
-
-@media (min-width: 100px) and (max-width: 990px) {
-  .sm-cell{
-  display: block;
-}
-.dont-show{
-  display: none;
-}
-}
+  @media (min-width: 100px) and (max-width: 990px) {
+    .sm-cell {
+      display: block;
+    }
+    font-weight: 600;
+font-size: 36px;
+line-height: 49px;
+    .dont-show {
+      display: none;
+    }
+  }
   /* .....................................our vision and our mission..media query: ..................... */
   @media (min-width: 990px) and (max-width: 1350px) {
-  
-    
-    
     .mission-p-tag {
       font-size: 16px;
       /* width: 145%; */
@@ -275,10 +281,11 @@ export const Div = styled.div`
   }
   @media (min-width: 250px) and (max-width: 1024px) {
     .second-content {
-     display: flex;
-     justify-content: center;
-     margin-top: 0rem;
-    }}
+      display: flex;
+      justify-content: center;
+      margin-top: 0rem;
+    }
+  }
   /* ....................small screen: .;.......................... */
   @media (min-width: 500px) and (max-width: 768px) {
     .section-one {
@@ -304,9 +311,10 @@ export const Div = styled.div`
     }
   }
   @media (min-width: 150px) and (max-width: 1024px) {
-.evalute-image , .row-second-ball{
-  display: none;
-}
+    .evalute-image,
+    .row-second-ball {
+      display: none;
+    }
   }
   @media (min-width: 250px) and (max-width: 500px) {
     .section-one {
@@ -367,7 +375,6 @@ export const Div = styled.div`
   }
 `;
 
-
 export const AboutSection = styled.div`
   background: #fefbe9;
   width: 100%;
@@ -380,7 +387,7 @@ export const AboutSection = styled.div`
     text-align: center;
     padding-top: 29px;
   }
-  .about-p{
+  .about-p {
     font-weight: 600;
     color: rgba(8, 20, 41, 0.6);
     font-size: 16px;
@@ -444,15 +451,15 @@ export const AboutSection = styled.div`
   }
   @media (min-width: 1024px) and (max-width: 1400px) {
     .AboutPtext {
-    /* font-size: 16px; */
+      /* font-size: 16px; */
 
-    font-size: 17px;
-    line-height: 30px;
-    letter-spacing: 0em;
-    color: rgba(8, 20, 41, 0.6);
-    text-align: left;
-    font-weight: 500;
-  }
+      font-size: 17px;
+      line-height: 30px;
+      letter-spacing: 0em;
+      color: rgba(8, 20, 41, 0.6);
+      text-align: left;
+      font-weight: 500;
+    }
   }
 
   @media (min-width: 769px) and (max-width: 1000px) {
@@ -492,5 +499,3 @@ export const AboutSection = styled.div`
     
     } */
 `;
-
-

@@ -141,8 +141,14 @@ span{
   color: rgba(255, 255, 255, 0.8);
 }
   
-h5{
-    font-size: 30px;
+.head{
+  font-weight: 600;
+font-size: 24px;
+line-height: 29px;
+/* identical to box height */
+
+
+color: #FFFFFF;
   }
   .under-text{
     border: 1px solid rgba(255, 255, 255, 0.1);

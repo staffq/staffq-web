@@ -1,6 +1,6 @@
 import React from "react";
 import { Foot, SmFoot } from "./style";
-import Link from "next/link";
+// import Link from "next/link";
 // import {IoCall } from "react-icons/Io";
 import { GrMail } from "react-icons/gr";
 
@@ -27,22 +27,21 @@ const Footer = () => {
                     style={{ marginTop: "60px" }}
                   >
                     <div className="cursor-pointer">
-                      <h5 className="text-white" style={{ fontSize: "24px" }}>
+                      <p className="text-white head" style={{ fontSize: "24px" }}>
                         Our Services
-                      </h5>
+                      </p>
                       <div className="footer-one ">
                         {/* <Link href="paramanent-deployment"> */}
                         <span className="">Permanent Deployment</span>
-                        {/* </Link> */}<br></br>
-                        
-                        <span  >Contract to Hire</span>
+                        {/* </Link> */}
+                        <br></br>
+                        <span>Contract to Hire</span>
                         <br></br>
                         <span> Payroll Services</span>
                         <br></br>
-                        <span> Passthrough services</span>  <br></br>
+                        <span> Passthrough services</span> <br></br>
                         <span>Offshore Recruitment Services</span>
                         <br></br>
-
                         <span>Onshore Recruitment Services</span>
                       </div>
                     </div>
@@ -52,17 +51,15 @@ const Footer = () => {
                     style={{ marginTop: "60px" }}
                   >
                     <div className="cursor-pointer">
-                      <h5 className="text-white" style={{ fontSize: "24px" }}>
+                      <p  className="text-white head" style={{ fontSize: "24px" }}>
                         Others
-                      </h5>
+                      </p>
                       <div className="footer-two ">
                         <span> About Us</span>
                         <br></br>
-                   <span>  Blogs</span>
-                   <br></br>
-                   <span> 
-                        FAQs</span>
-                    
+                        <span> Blogs</span>
+                        <br></br>
+                        <span>FAQs</span>
                       </div>
                     </div>
                   </div>
@@ -70,9 +67,9 @@ const Footer = () => {
                     className="col-lg-3 col-md-6 col-sm-12   cursor-pointer "
                     style={{ marginTop: "60px" }}
                   >
-                    <h5 className="text-white" style={{ fontSize: "24px" }}>
+                    <p  className="text-white head" style={{ fontSize: "24px" }}>
                       Contact Us
-                    </h5>
+                    </p>
                     <div className="mt-4 footer-contactus">
                       <span>
                         <img src="assets/images/location-image.png" alt="img" />
@@ -121,7 +118,6 @@ const Footer = () => {
                 <p style={{ fontSize: "14px" }} className="last-line">
                   {" "}
                   @2022 StaffQ Consultancy Pvt. Ltd -| Powered by Applogiq
-               
                 </p>
               </div>
               <div className="Foter">
@@ -143,9 +139,9 @@ const Footer = () => {
           <div className="paddingtwoSide">
             <div>
               <div>
-                <h5 className="mt-5 " style={{ paddingTop: "88px" }}>
+                <p  className="mt-5 head" style={{ paddingTop: "2px" }}>
                   Our Solutions
-                </h5>
+                </p>
                 <br></br>
                 <div style={{ fontSize: "18px" }} className="font">
                   <p>Permanent Deployment</p>
@@ -160,7 +156,7 @@ const Footer = () => {
             </div>
 
             <div className="mt-5">
-              <h5 style={{ paddingTop: "48px" }}>Careers</h5>
+              <p  style={{ paddingTop: "48px" }} className = "head">Careers</p>
               <br></br>
               <div className="font" style={{ fontSize: "18px" }}>
                 <p>Permanent recruitment</p>
@@ -171,9 +167,9 @@ const Footer = () => {
               </div>
             </div>
             <div className="mt-5">
-              <h5 className="mt-3" style={{ paddingTop: "40px" }}>
+              <p className="mt-3 head" style={{ paddingTop: "7px" }}>
                 Contact Us
-              </h5>
+              </p>
               <br></br>
               <div style={{ fontSize: "18px" }} className="font">
                 <span>
@@ -213,7 +209,7 @@ const Footer = () => {
           <div className="under-text"></div>
         </div>
         <div className="mt-5">
-          <p className="text-center last-line " style={{ marginTop: "34px" }}>
+          <p className="text-center last-line " style={{ marginTop: "2px" }}>
             {" "}
             @2022 StaffQ Consultancy Pvt. Ltd - | Powered by Applogiq
           </p>

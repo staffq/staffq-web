@@ -30,7 +30,7 @@ const AboutHeader = () => {
                   <div>
                     <div className="image-section">
                       <img
-                        src="assets/images/about-Banner-image.svg "
+                        src="assets/images/Banners-image.png"
                         width="100%"
                         className="banner-image"
                         alt="img"
@@ -53,16 +53,16 @@ const AboutHeader = () => {
             </div>
 
             <div className="text-center samll-wave-contnet">
-              <h1>
+              <p className="h-one">
                 Join the team that’s <br></br>
                 making the world work <br></br>
                 better for everyone <br></br>
-              </h1>
+              </p>
             </div>
           </div>
           <div>
             <img
-              src="assets/images/about-Banner-image.svg "
+              src="assets/images/Banners-image.png "
               width="100%"
               className="banner-image"
               alt="img"

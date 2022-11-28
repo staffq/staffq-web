@@ -18,7 +18,15 @@ font-size: 16px;
 line-height: 30px;
     margin-top: 19px;
   }
+.what-people{
+  font-weight: 600;
+font-size: 36px;
+line-height: 49px;
+/* identical to box height */
 
+
+color: #FFFFFF;
+}
   .SliderHead div ul .slick-active button {
     background: rgba(255, 255, 255, 0.4);
     width: 35px;
@@ -199,6 +207,10 @@ export const Box = styled.div`
   @media (min-width: 769px) and (max-width: 1000px) {
     display: none;
   }
+  .numbers{
+    color: #081429;
+    font-weight: 600;
+  }
   position: relative;
   /* top: 480%; */
   z-index: 99;
@@ -288,6 +300,10 @@ export const Smbox = styled.div`
       justify-content: space-evenly;
       align-items: center;
     }
+    .numbers{
+    color: #081429;
+    font-weight: 600;
+  }
   }
 `;
  export const Div = styled.div`

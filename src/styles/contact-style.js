@@ -120,7 +120,7 @@ export const Second = styled.div`
 
     top: 98px;
     overflow: hidden;
-    background-image: url("assets/images/Banner-background-yell.svg");
+    background-image: url("assets/images/Bannerbackground.png");
 
     /* background: rgba(239, 206, 30, 0.9); */
   }
@@ -192,13 +192,19 @@ export const Second = styled.div`
   h6 {
     font-size: 24px;
   }
+  .h-one{
+    font-size: 25px;
+
+  }
   .d-fleex {
     display: flex;
     justify-content: center;
+    margin-right: 4rem;
   }
   .d-fx {
     display: flex;
     justify-content: center;
+ 
     /* margin-left: 5rem; */
   }
   .d-one {
@@ -234,6 +240,9 @@ export const Second = styled.div`
   @media (min-width: 250px) and (max-width: 580px) {
     .small-contact {
       display: inline-block;
+    }
+    .Our-Branches{
+      font-size: 29px;
     }
     .pc-contact {
       display: none;

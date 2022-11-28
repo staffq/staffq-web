@@ -246,6 +246,12 @@ export const Smbanner = styled.div`
       color: rgba(8, 20, 41, 0.6);
       margin-top: 30px;
     }
+    .h_one{
+      font-weight: 600;
+    font-size: 43px;
+    line-height: 56px;
+    color: #081429;
+    }
   }
   @media (min-width: 250px) and (max-width: 768px) {
     display: block;
@@ -253,7 +259,7 @@ export const Smbanner = styled.div`
       width: 100%;
       margin-top: 12px;
     }
-    h1 {
+  .h_one {
       font-style: normal;
       font-weight: 700;
       font-size: 34px;
@@ -387,7 +393,7 @@ button:hover .arrow {
     padding-left: 132px;
     margin-top: 7rem;
   }
-  h1 {
+  .h_one {
     font-style: normal;
     font-weight: 700;
     font-size: 44px;

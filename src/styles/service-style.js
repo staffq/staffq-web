@@ -69,6 +69,11 @@ export const ServiceBg = styled.div`
 
     color: rgba(8, 20, 41, 0.4);
   }
+  .h-five{
+    font-size: 22px;
+    color: #081429;
+    font-weight: 600;
+  }
   h2 {
     font-size: 36px;
   }
@@ -182,6 +187,9 @@ export const cardhead = styled.div`
 
 export const Medium = styled.div`
   display: none;
+  .service-we{
+    font-size: 30px;
+  }
   @media (min-width: 1000px) and (max-width: 120px) {
     .serviceImage {
       margin-left: 15rem;
@@ -234,8 +242,21 @@ export const Medium = styled.div`
     h5 {
       font-weight: 600;
     }
-    h2 {
+    .service-we{
       font-weight: 600;
+font-size: 36px;
+line-height: 49px;
+/* identical to box height */
+
+
+color: #081429;
+
+    }
+    .h-five {
+      font-size: 22px;
+    color: #081429;
+    font-weight: 600;
+    
     }
     .learnmore:hover .VectorImage {
       display: block;

@@ -6,30 +6,139 @@ import {
   Second,
   SmallContact,
 } from "../../styles/contact-style.js";
-<Head>
-  <title>Contact Us  </title>
-  <meta
-    property="og:title"
-    content="We partner with employers across the globe to provide talent solutions
-     while creating significant opportunities for job seekers. We are dedicated
-      to matching the right person with the right job. "
-    key="title"
-  />
-  </Head>
 
-import Input from "../../components/FormControls/Input/index.jsx";
+
+// import Input from "../../components/FormControls/Input/index.jsx";
 const contact = () => {
   return (
     <div>
+      <Head>
+        <title>
+        Contact Us 
+        </title>
+        <meta property="og:image" content="https://www.applogiq.org/assets/images/metaimg.png" />
+        <meta name="linkedin:image" content="https://www.applogiq.org/assets/images/metaimg.png" />
+        <meta name="twitter:image" content="https://www.applogiq.org/assets/images/metaimg.png" />
+        <meta name="instagram:image" content="https://www.applogiq.org/assets/images/metaimg.png" />
+        <meta
+          name="title"
+          content="We partner with employers across the globe to provide talent solutions while creating
+           significant opportunities for job seekers. We are dedicated to matching the right person with the right job."
+        />
+        <meta
+          name="description"
+          content="We partner with employers across the globe to provide talent solutions while creating significant opportunities for job seekers.
+           We are dedicated to matching the right person with the right job.."
+        />
+        <meta
+          name="keywords"
+          content="Contact Us  "
+        />
+
+        <link rel="canonical" href="https://www.staffq.in/contact-us/" />
+
+        <link
+          rel="alternate"
+          href="https://www.staffq.in/"
+          hreflang="en-in"
+        />
+
+        <meta property="og:locale" content="en_US" />
+        <meta property="og:type" content="website" />
+        <meta
+          property="og:title"
+          content="We partner with employers across the globe to provide talent solutions while creating significant opportunities 
+          for job seekers.
+           We are dedicated to matching the right person with the right job."
+        />
+        <meta
+          property="og:description"
+          content="We partner with employers across the globe to provide talent solutions while creating significant 
+          opportunities for job seekers. We are dedicated to matching the right person with the right job. ."
+        />
+        <meta
+          property="og:image"
+          content="https://www.applogiq.org/assets/images/index-og.webp"
+        />
+        <meta property="og:url" content="https://www.staffq.in" />
+        <meta property="og:site_name" content="AppLogiQ" />
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta charSet="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+        {/* <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: `{
+              "@context": "https://schema.org",
+              "@type": "LocalBusiness",
+              "name": "AppLogiQ",
+              "image": "https://www.applogiq.org/assets/images/logo.gif",
+              "@id": "",
+              "url": "https://applogiq.org/",
+              "telephone": "9629938033",
+              "priceRange": "$$$$$",
+              "address": {
+                "@type": "PostalAddress",
+                "streetAddress": "Floor-3,Sathyam Towers,6D Bharathi Street,Valipalayam.",
+                "addressLocality": "Tiruppur",
+                "postalCode": "641 601",
+                "addressCountry": "IN"
+              },
+              "geo": {
+                "@type": "GeoCoordinates",
+                "latitude": 11.10601020,
+                "longitude": 77.34961810
+              },
+              "openingHoursSpecification": {
+                "@type": "OpeningHoursSpecification",
+                "dayOfWeek": [
+                  "Monday",
+                  "Tuesday",
+                  "Wednesday",
+                  "Thursday",
+                  "Friday"
+                ],
+                "opens": "09:00",
+                "closes": "19:00"
+              },
+              "sameAs": [
+                "https://www.linkedin.com/company/applogiq/",
+                "https://www.facebook.com/Applogiq",
+                "https://www.instagram.com/applogiq/"
+              ] 
+            }`
+          }}
+        />
+
+        <script type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: `{
+              "@context": "https://schema.org",
+              "@type": "Organization",
+              "name": "Applogiq",
+              "alternateName": "software company",
+              "url": "https://www.applogiq.org/",
+              "logo": "https://www.applogiq.org/assets/images/logo.gif",
+              "sameAs": [
+                "https://www.facebook.com/Applogiq",
+                "https://www.linkedin.com/company/applogiq/"
+              ]
+            }`
+          }}
+        /> */}
+
+
+      </Head>
       <ContacttStyle>
         <Second>
           <div>
             <div className="container-fluid p-0">
               <div className="let-one">
                 <div className="container text-center pt-5 p-5">
-                  <h4 className="lets-connect">
+                  <h1 className="lets-connect">
                     Let’s Connect For Your Growth
-                  </h4>
+                  </h1>
                   <p className="pt-2 p-tag">
                     We appreciate your interest in our services. Please leave us
                     few details about your business requirements to help us
@@ -136,14 +245,14 @@ const contact = () => {
                     <div className="display">
                       <div>
                         <img
-                          src="assets/images/map.svg"
+                          src="assets/images/india.png"
                           className="map-image"
                           alt="img"
                         />
                       </div>
                       <div className="display-two">
-                        <h5>India</h5>
-                        <h6>Tiruppur</h6>
+                        <p className="h-one">India</p>
+                        <p className="h-one">Tiruppur</p>
                       </div>
                     </div>
                   </div>
@@ -181,14 +290,14 @@ const contact = () => {
                     <div className="display">
                       <div>
                         <img
-                          src="assets/images/Canada-img.svg"
+                          src="assets/images/canada.png"
                           className="map-image"
                           alt="img"
                         />
                       </div>
                       <div className="display-two">
-                        <h5>Canada</h5>
-                        <h6>Ontario</h6>
+                        <p className="h-one">Canada</p>
+                        <p className="h-one">Ontario</p>
                       </div>
                     </div>
                   </div>
@@ -225,14 +334,14 @@ const contact = () => {
                     <div className="display">
                       <div>
                         <img
-                          src="assets/images/unitedd-img.svg"
+                          src="assets/images/united.png"
                           className="map-image"
                           alt="img"
                         />
                       </div>
                       <div className="display-two">
-                        <h5>United Kingdom</h5>
-                        <h6>Southampton</h6>
+                        <p className="h-one">United Kingdom</p>
+                        <p className="h-one">Southampton</p>
                       </div>
                     </div>
                   </div>
@@ -272,7 +381,7 @@ const contact = () => {
           {/* Small contact section....... */}
           <div className="container small">
             <div className="small-contact">
-              <h2 className="Our-Branches">Our Branches</h2>
+              <p className="Our-Branches">Our Branches</p>
               <section>
                 <div className="container">
                   <div>
@@ -280,15 +389,15 @@ const contact = () => {
                       <div className="text-center">
                         
                               <img
-                              src="assets/images/map.svg"
+                              src="assets/images/india.png"
                               className="map-image"
                               alt="img"
                             />
                       
                    
                       <div className="">
-                        <h5>India</h5>
-                        <h5>Tiruppur</h5>
+                        <p className="h-one">India</p>
+                        <p className="h-one">Tiruppur</p>
                       </div>
                       </div>
                     </div>
@@ -327,14 +436,14 @@ const contact = () => {
                     <div className="text-center">
                       <div>
                         <img
-                          src="assets/images/Canada-img.svg"
+                          src="assets/images/canada.png"
                           className="map-image"
                           alt="img"
                         />
                       </div>
                       <div className="">
-                        <h5>Canada</h5>
-                        <h5>Ontario</h5>
+                        <p className="h-one">Canada</p>
+                        <p className="h-one">Ontario</p>
                       </div>
                     </div>
                     <div className=" d-fx ">
@@ -371,14 +480,14 @@ const contact = () => {
                     <div className="text-center">
                       <div>
                         <img
-                          src="assets/images/unitedd-img.svg"
+                          src="assets/images/united.png"
                           className="map-image"
                           alt="img"
                         />
                       </div>
                       <div className="">
-                        <h5>United Kingdom</h5>
-                        <h6>Southampton</h6>
+                        <p className="h-one">United Kingdom</p>
+                        <p className="h-one">Southampton</p>
                       </div>
                     </div>
                     <div className=" d-fx mt-2 ">

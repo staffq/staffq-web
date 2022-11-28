@@ -63,7 +63,7 @@ const Slick = () => {
       <SlickBG className="container-fluid">
         <div className="text-center ">
           <div>
-            <h2 className="text-light mt-5">What People say</h2>
+            <p className="text-light mt-5 what-people">What People say</p>
             {/* <p className="Slider-phara">
            Success stories from our partners
             </p> */}
@@ -76,22 +76,23 @@ const Slick = () => {
               <div className="card h-100">
                 <div className="card-body text-info ">
                   <div className="Subheading">
-                    <img src="assets/images/Subheading.svg"  alt="img"/>
+                    <img src="assets/images/Subheading.svg" alt="img" />
                   </div>
 
                   <p className="card-text ">
                     I've never received so many candidates from one vendor that
-                    has made it through the interview stage in such a short time.
+                    has made it through the interview stage in such a short
+                    time.
                     <br></br>
                   </p>
 
                   <div className="one">
                     <div>
-                      <img src="assets/images/Ellipse.svg"  alt="img"/>
+                      <img src="assets/images/Ellipse.svg" alt="img" />
                     </div>
                     <div className="two">
-                      <h5 style={{ fontSize: "17px" }}></h5>
-                      <p className="communication">  Aspire</p>
+                      <p style={{ fontSize: "17px" }}></p>
+                      <p className="communication"> Aspire</p>
                     </div>
                   </div>
                 </div>
@@ -106,8 +107,9 @@ const Slick = () => {
                   </div>
 
                   <p className="card-text ">
-                  I'm always looking for the best talent to work for our organization.<br></br>
-                  <br></br>
+                    I'm always looking for the best talent to work for our
+                    organization.<br></br>
+                    <br></br>
                   </p>
 
                   <div className="one">
@@ -115,7 +117,7 @@ const Slick = () => {
                       <img src="assets/images/Slicktwoimage.svg"></img>
                     </div>
                     <div className="two">
-                      <h5 style={{ fontSize: "17px" }}></h5>
+                      <p style={{ fontSize: "17px" }}></p>
                       <p className="communication">CTS</p>
                     </div>
                   </div>
@@ -321,7 +323,9 @@ const Slick = () => {
             <div className="row">
               <div className="col-lg-3  col-sm-6" style={{ marginTop: "23px" }}>
                 <div className="">
-                  <h2 style={{ fontSize: "42px" }}>2+ </h2>
+                  <p style={{ fontSize: "42px" }} className="numbers">
+                    2+{" "}
+                  </p>
                   <p style={{ fontSize: "22px" }}>Years of experience</p>
                 </div>
               </div>
@@ -332,7 +336,9 @@ const Slick = () => {
                     style={{ marginTop: "-20px" }}
                   ></img>
                   <div className="img-content">
-                    <h2 style={{ fontSize: "42px" }}>20+ </h2>
+                    <p style={{ fontSize: "42px" }} className="numbers">
+                      20+{" "}
+                    </p>
                     <p style={{ fontSize: "22px" }}>Companies </p>
                   </div>
                 </div>
@@ -344,7 +350,9 @@ const Slick = () => {
                     style={{ marginTop: "-20px" }}
                   ></img>
                   <div className="img-content">
-                    <h2 style={{ fontSize: "42px" }}>1500+ </h2>
+                    <p style={{ fontSize: "42px" }} className="numbers">
+                      1500+{" "}
+                    </p>
                     <p style={{ fontSize: "22px" }}>Recruits </p>
                   </div>
                 </div>
@@ -356,7 +364,9 @@ const Slick = () => {
                     style={{ marginTop: "-20px" }}
                   ></img>
                   <div className="img-content">
-                    <h2 style={{ fontSize: "42px" }}>30+ </h2>
+                    <p style={{ fontSize: "42px" }} className="numbers">
+                      30+{" "}
+                    </p>
                     <p style={{ fontSize: "22px" }}>Team Members </p>
                   </div>
                 </div>
@@ -369,29 +379,31 @@ const Slick = () => {
       <Smbox className="container">
         <div className="sm-boxscreen">
           <div className="">
-            <h2 style={{ fontSize: "42px" }} className="text-center">
+            <p style={{ fontSize: "42px" }} className="text-center numbers">
               2+{" "}
-            </h2>
+            </p>
             <p style={{ fontSize: "22px" }}>Years of experience</p>
           </div>
           <div className="className = 'text-center'">
-            <h2 style={{ fontSize: "42px" }}>20+ </h2>
+            <p style={{ fontSize: "42px" }} className="numbers">
+              20+{" "}
+            </p>
             <p style={{ fontSize: "22px" }}>Companies</p>
           </div>
         </div>
         <div className="sm-boxscreen-one">
           <div className="">
-            <h2 style={{ fontSize: "42px" }} className="text-center">
+            <p style={{ fontSize: "42px" }} className="text-center numbers">
               1500+{" "}
-            </h2>
+            </p>
             <p style={{ fontSize: "22px" }} className="text-center">
               Recruits
             </p>
           </div>
           <div className="className = 'text-center'">
-            <h2 style={{ fontSize: "42px" }} className="mt-4">
+            <p style={{ fontSize: "42px" }} className="mt-4 numbers">
               30+{" "}
-            </h2>
+            </p>
             <p style={{ fontSize: "22px" }}>
               Team<br></br>
               Members

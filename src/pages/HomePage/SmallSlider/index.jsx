@@ -53,10 +53,8 @@ const SmallSlider = () => {
         <div className="container">
           <div className="text-center ">
             <div>
-              <h2 className="text-light mt-5">What People say</h2>
-              <p className="Slider-phara">
-         
-              </p>
+              <p className="text-light mt-5 what-people">What People say</p>
+              <p className="Slider-phara"></p>
             </div>
           </div>
         </div>
@@ -74,7 +72,7 @@ const SmallSlider = () => {
                     <p className="card-text ">
                       I've Never received so many Candidate from one Vendor that
                       has made it through the interview stage in such a short
-                      time Aspire. 
+                      time Aspire.
                     </p>
 
                     <div className="one">
@@ -89,19 +87,19 @@ const SmallSlider = () => {
                   </div>
                 </div>
                 <div className="card h-100 mt-3">
-                  <div className="card-body text-info ">
+                  <div className="card-body ">
                     <div className="Subheading">
                       <img src="assets/images/Subheading.svg"></img>
                     </div>
 
                     <p className="card-text ">
-                    I'm Always looking for the best talent to work
-                      for our organization
+                      I'm always looking for the best talent to work for our
+                      organization.<br></br>
                     </p>
 
                     <div className="one">
-                      <div>
-                        <img src="assets/images/Ellipse.svg"></img>
+                      <div c>
+                        <img src="assets/images/Slicktwoimage.svg"></img>
                       </div>
                       <div className="two">
                         {/* <h5 style={{ fontSize: "17px" }}>Sheldon Cooper</h5> */}
@@ -109,8 +107,10 @@ const SmallSlider = () => {
                       </div>
                     </div>
                   </div>
-                </div><br></br>
-            <br></br>
+                </div>
+
+                <br></br>
+                <br></br>
                 {/* <div className="card h-100 mt-3">
                   <div className="card-body text-info ">
                     <div className="Subheading">

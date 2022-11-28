@@ -26,10 +26,10 @@ const Profile = () => {
                       <div className="row ">
                         <div className="col-lg-2"></div>
                         <div className="col-lg-10">
-                          <h2 className="we-aim ">
+                          <p className="we-aim ">
                             We aim to match employee skills with necessary tasks
                             in the most effective ways
-                          </h2>
+                          </p>
                           <div className="VectorImage">
                             <img src="assets/images/Effective.svg" alt="img" />
                           </div>
@@ -62,17 +62,15 @@ const Profile = () => {
                         </sub>
                         <br></br>
                         <div className="clor">
-                        <span>
-                          We review tons of applications against our minimum
-                          criteria,{" "}
-                        </span>
-                        <span>
-                          their professional journey,and holistic background
-                          checks.
-                        </span>
+                          <span>
+                            We review tons of applications against our minimum
+                            criteria,{" "}
+                          </span>
+                          <span>
+                            their professional journey,and holistic background
+                            checks.
+                          </span>
                         </div>
-
-                     
                       </div>
                       <img
                         src="assets/images/Profile-Screening.svg"
@@ -101,18 +99,17 @@ const Profile = () => {
                               Language Proficiency
                             </span>
                           </a>
-                          <h5></h5>
+                          {/* <h5></h5> */}
                           <div className="clor">
-
-                          <span>
-                            AI-powered communication assessment tests a
-                            candidate's reading,{" "}
-                          </span>
-                          <br></br>
-                          <span>
-                            writing, pronunciation, clarity, fluency and speed
-                            of speech.
-                          </span>
+                            <span>
+                              AI-powered communication assessment tests a
+                              candidate's reading,{" "}
+                            </span>
+                            <br></br>
+                            <span>
+                              writing, pronunciation, clarity, fluency and speed
+                              of speech.
+                            </span>
                           </div>
                         </div>
                       </div>
@@ -131,15 +128,16 @@ const Profile = () => {
                         </sub>
                         <br></br>
                         <div className="clor">
-                        <span>
-                          We conduct a scientifically designed aptitude test to
-                       
-                        </span>
-                        <span>   check their reasoning and problem-solving ability.</span>
+                          <span>
+                            We conduct a scientifically designed aptitude test
+                            to
+                          </span>
+                          <span>
+                            {" "}
+                            check their reasoning and problem-solving ability.
+                          </span>
                         </div>
-                       
                       </div>
-                      
 
                       {/* </div> */}
                       <img
@@ -166,16 +164,16 @@ const Profile = () => {
                           </a>
                           <br></br>
                           <div className="clor">
-                          <span>
-                            We have curated one of most advanced technical
-                            assessments to vet talent's
-                          </span>{" "}
-                          <br></br>
-                          <span>
-                            {" "}
-                            capabilities, these are role-based extremely
-                            stringent tests which filters top 10% talents
-                          </span>
+                            <span>
+                              We have curated one of most advanced technical
+                              assessments to vet talent's
+                            </span>{" "}
+                            <br></br>
+                            <span>
+                              {" "}
+                              capabilities, these are role-based extremely
+                              stringent tests which filters top 10% talents
+                            </span>
                           </div>
                         </div>
                       </div>
@@ -198,16 +196,15 @@ const Profile = () => {
                           </label>
                           <br></br>
                           <div className="clor">
-                          <span>
-                            Our Talent Acquisition experts conduct the final
-                            video interview understanding{" "}
-                          </span>
-                          
-                        
-                          <span>
-                            the candidate's preferences and expectations to do
-                            the right matchmaking.
-                          </span>
+                            <span>
+                              Our Talent Acquisition experts conduct the final
+                              video interview understanding{" "}
+                            </span>
+
+                            <span>
+                              the candidate's preferences and expectations to do
+                              the right matchmaking.
+                            </span>
                           </div>
                         </div>
                         <img
@@ -255,12 +252,9 @@ const Profile = () => {
                         {/* <a></a> */}
                         <a>
                           {" "}
-                          <span >
-                          Profile Screening & Shortlisting
-                          </span>
+                          <span>Profile Screening & Shortlisting</span>
                         </a>
 
-                       
                         <p className="small-p-tag">
                           We review tons of applications against our minimum
                           criteria, their professional journey,and holistic
@@ -276,13 +270,11 @@ const Profile = () => {
                         ></img>
                       </div>
                       <div className="">
-                      <a>
+                        <a>
                           {" "}
-                          <span >
-                          Language Proficiency
-                          </span>
+                          <span>Language Proficiency</span>
                         </a>
-                      
+
                         <p className="small-p-tag">
                           AI-powered communication assessment tests a
                           candidate's reading, writing, pronunciation, clarity,
@@ -298,14 +290,11 @@ const Profile = () => {
                         ></img>
                       </div>
                       <div className="">
-                      <a>
+                        <a>
                           {" "}
-                          <span >
-                       Aptitude Evaluation
-                          </span>
+                          <span>Aptitude Evaluation</span>
                         </a>
-                        
-                   
+
                         <p className="small-p-tag">
                           We conduct a scientifically designed aptitude test to
                           check their reasoning and problem-solving ability.
@@ -320,14 +309,11 @@ const Profile = () => {
                         ></img>
                       </div>
                       <div className="">
-                      <a>
+                        <a>
                           {" "}
-                          <span >
-                          Technical Assessment
-                          </span>
+                          <span>Technical Assessment</span>
                         </a>
 
-                    
                         <p className="small-p-tag">
                           We have curated one of most advanced technical
                           assessments to vet talent'scapabilities, these are
@@ -344,13 +330,11 @@ const Profile = () => {
                         ></img>
                       </div>
                       <div className="">
-                      <a>
+                        <a>
                           {" "}
-                          <span >
-                    Panel Interview
-                          </span>
+                          <span>Panel Interview</span>
                         </a>
-                   
+
                         <p className="small-p-tag">
                           Our Talent Acquisition experts conduct the final video
                           interview understandingthe candidate's preferences and
@@ -366,13 +350,11 @@ const Profile = () => {
                         ></img>
                       </div>
                       <div className="">
-                      <a>
+                        <a>
                           {" "}
-                          <span >
-                       Get Selected
-                          </span>
+                          <span>Get Selected</span>
                         </a>
-                     
+
                         <p className="small-p-tag">
                           Get selected at top companies international standards
                           around the world.
@@ -394,7 +376,7 @@ const Profile = () => {
       <SmallProfile>
         <div className="container">
           <div className="text-center mt-5 sm-how-to">
-            <h2 className="how-it-work">How It Works</h2>
+            <p className="h-four">How It Works</p>
             <p className="how-to-work-p-tag">
               We seek to help a job seeker find a job, and find a qualified
               candidate <br></br> for an open position for a company
@@ -405,11 +387,11 @@ const Profile = () => {
               <div className="row ">
                 <div className="col-lg-3"></div>
                 <div className="col-lg-9">
-                  <h2 className="we-aim ">
+                  <p className="we-aim ">
                     We aim to match employee <br></br>skills with necessary
                     tasks <br></br>
                     in the most effective ways
-                  </h2>
+                  </p>
                   <div className="VectorImage">
                     <img src="assets/images/Effective.svg" alt="img" />
                   </div>
@@ -435,7 +417,7 @@ const Profile = () => {
               <img src="assets/images/Icon.png" alt="img" />
             </div>
             <div className="">
-              <h4> Profile Screening & Shortlisting </h4>
+              <p className="h-four"> Profile Screening & Shortlisting </p>
               <p className="small-p-tag">
                 We review tons of applications against our minimum criteria,
                 their professional journey,and holistic background checks.
@@ -451,7 +433,7 @@ const Profile = () => {
               />
             </div>
             <div className="">
-              <h4>Language Proficiency</h4>
+              <p className="h-four">Language Proficiency</p>
               <p className="small-p-tag">
                 AI-powered communication assessment tests a candidate's reading,
                 writing, pronunciation, clarity, fluency and speed of speech.
@@ -467,7 +449,7 @@ const Profile = () => {
               />
             </div>
             <div className="">
-              <h4> Aptitude Evaluation</h4>
+              <p className="h-four"> Aptitude Evaluation</p>
               <p className="small-p-tag">
                 We conduct a scientifically designed aptitude test to check
                 their reasoning and problem-solving ability.
@@ -483,7 +465,7 @@ const Profile = () => {
               />
             </div>
             <div className="">
-              <h4>Technical Assessment</h4>
+              <p className="h-four">Technical Assessment</p>
               <p className="small-p-tag">
                 We have curated one of most advanced technical assessments to
                 vet talent'scapabilities, these are role-based extremely
@@ -500,7 +482,7 @@ const Profile = () => {
               />
             </div>
             <div className="">
-              <h4>Panel Interview</h4>
+              <p className="h-four">Panel Interview</p>
               <p className="small-p-tag">
                 Our Talent Acquisition experts conduct the final video interview
                 understanding the candidate's preferences and expectations to do
@@ -517,7 +499,7 @@ const Profile = () => {
               />
             </div>
             <div className="">
-              <h4>Get Selected</h4>
+              <p className="h-four">Get Selected</p>
               <p className="small-p-tag">
                 Get selected at top companies international standards around the
                 world.

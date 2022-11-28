@@ -36,7 +36,7 @@ const inputMask = (type, e, editValue) => {
       const { value } = e.target;
       let temp = value;
       const x = temp.replace(/\W/g, "").match(/(\w{0,3})(\w{0,2})(\w{0,4})/);
-      console.log("SSN Regex test --->", x);
+
       return (temp = !x[2] ? x[1] : `${x[1]}-${x[2]}${x[3] ? `-${x[3]}` : ""}`);
     }
     if (editValue) {

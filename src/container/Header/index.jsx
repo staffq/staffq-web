@@ -14,7 +14,7 @@ import { FiDownload } from "react-icons/fi";
 const Header = () => {
   const [show, setShow] = useState("About");
   const [navcolor, setNavColor] = useState("transparent");
-  console.log(navcolor, "colorchange");
+
   const scrollEvent = () => {
     window.scrollY > 40 ? setNavColor("white") : setNavColor("transparent");
   };

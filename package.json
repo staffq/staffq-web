@@ -27,7 +27,7 @@
     "yup": "^0.32.11"
   },
   "devDependencies": {
-    "@types/gtag.js": "0.0.12",
+    "@types/gtag.js": "^0.0.12",
     "eslint": "8.26.0",
     "eslint-config-next": "12.2.0"
   }

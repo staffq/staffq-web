@@ -155,17 +155,34 @@ export const Section = styled.div`
       width: 159px;
     }
   }
+  p{
+    font-weight: 600;
+font-size: 20px;
+line-height: 27px;
+/* identical to box height */
+
+
+color: rgba(8, 20, 41, 0.7);
+  }
+
 `;
 export const SmallSection = styled.div`
   display: none;
   @media (min-width: 250px) and (max-width: 768px) {
     display: block;
-  }
+    font-size: 26px;
+line-height: 27px;
+/* identical to box height */
+
+
+color: rgba(8, 20, 41, 0.7);
+    }
+  
 
   .small-one-first {
     display: flex;
     flex-direction: row;
-    justify-content: space-evenly;
+    justify-content: space-around;
   }
   .small-one-two {
     display: flex;
@@ -173,6 +190,14 @@ export const SmallSection = styled.div`
   }
   @media (min-width: 769px) and (max-width: 1000px) {
     display: block;
+    .our-partner{
+      font-size: 26px;
+line-height: 27px;
+/* identical to box height */
+
+
+color: rgba(8, 20, 41, 0.7);
+    }
     .small-one-first {
       display: flex;
       flex-direction: row;

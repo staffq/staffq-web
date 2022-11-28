@@ -51,7 +51,7 @@ export const ProfileJs = styled.div`
     color: rgba(8, 20, 41, 0.6);
   }
 
-  @media (min-width: 1300px) and (max-width: 1350px) {
+  @media (min-width: 1300px) and (max-width: 1330px) {
     .waves-two {
       position: absolute;
       top: 106rem;
@@ -59,7 +59,7 @@ export const ProfileJs = styled.div`
     }
     .wave-three {
       position: absolute;
-      top: 115rem;
+      top: 116rem;
       padding-right: 47px;
     }
     .wave-four {
@@ -69,7 +69,7 @@ export const ProfileJs = styled.div`
     }
     .wave-five {
       position: absolute;
-      top: 134rem;
+      top: 135rem;
       padding-right: 45px;
     }
     .wave-six {
@@ -79,7 +79,7 @@ export const ProfileJs = styled.div`
     }
   }
 
-  @media (min-width: 1350px) and (max-width: 1400px) {
+  @media (min-width: 1330px) and (max-width: 1360px) {
     .waves-two {
       position: absolute;
       top: 106rem;
@@ -92,25 +92,52 @@ export const ProfileJs = styled.div`
     }
     .wave-four {
       position: absolute;
-      top: 124rem;
+      top: 127rem;
       padding-left: 57px;
     }
     .wave-five {
       position: absolute;
-      top: 136rem;
+      top: 137rem;
       padding-right: 45px;
     }
     .wave-six {
       position: absolute;
-      top: 144rem;
+      top: 147rem;
       padding-left: 57px;
     }
   }
 
+  @media (min-width: 1360px) and (max-width: 1400px) {
+    .waves-two {
+      position: absolute;
+      top: 107rem;
+      padding-left: 60px;
+    }
+    .wave-three {
+      position: absolute;
+      top: 118rem;
+      padding-right: 47px;
+    }
+    .wave-four {
+      position: absolute;
+      top: 127rem;
+      padding-left: 57px;
+    }
+    .wave-five {
+      position: absolute;
+      top: 138rem;
+      padding-right: 45px;
+    }
+    .wave-six {
+      position: absolute;
+      top: 147rem;
+      padding-left: 57px;
+    }
+  }
   @media (min-width: 1400px) and (max-width: 1450px) {
     .waves-two {
       position: absolute;
-      top: 111rem;
+      top: 110rem;
       padding-left: 60px;
     }
     .wave-three {
@@ -125,12 +152,12 @@ export const ProfileJs = styled.div`
     }
     .wave-five {
       position: absolute;
-      top: 142rem;
+      top: 141rem;
       padding-right: 45px;
     }
     .wave-six {
       position: absolute;
-      top: 152rem;
+      top: 151rem;
       padding-left: 57px;
     }
   }
@@ -168,7 +195,7 @@ export const ProfileJs = styled.div`
   }
 
   .ProFileBg {
-    background-image: url("assets/images/ProfileBackground.svg");
+    background-image: url("assets/images/profile.png");
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -428,7 +455,7 @@ export const ProfileJs = styled.div`
     }
 
     .ProFileBg {
-      background-image: url("assets/images/ProfileBackground.svg");
+      background-image: url("assets/images/profile.png");
       background-repeat: no-repeat;
       background-position: center;
       background-size: cover;
@@ -628,6 +655,12 @@ export const SmallProfile = styled.div`
   h4 {
     font-size: 30px;
   }
+  .h-four {
+    font-size: 33px;
+    color: #081429;
+    font-weight: 600;
+  }
+
   .small-p-tag {
     font-size: 19px;
     font-weight: 500;
@@ -689,7 +722,7 @@ export const SmallProfile = styled.div`
   }
   @media (min-width: 250px) and (max-width: 500px) {
     .ProFileBg {
-      background-image: url("assets/images/ProfileBackground.svg");
+      background-image: url("assets/images/profile.png");
       background-repeat: no-repeat;
       background-position: center;
       background-size: cover;
