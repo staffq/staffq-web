@@ -17,14 +17,15 @@ export const InputStyled = styled.input`
   color: black;
 
   @media(min-width:250px) and (max-width:768px){
-    width: 59vw;
+    width: 100%;
     justify-content: center;
     display: flex;
+  
 
   }
   @media(min-width:769px) and (max-width:990px){
     
-      width: 70vw;
+      width: 100%;
     
   }
 `;

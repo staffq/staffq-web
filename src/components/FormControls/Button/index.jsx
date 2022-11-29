@@ -2,9 +2,9 @@
 import React, { useState, useEffect } from "react";
 
 /* ************************** Import Style *************************** **/
-import ButtonStyled from "./style";
+import {ButtonStyled} from "./style";
 
-const Button = ({ text, type, className, onClick }) => {
+const Button = ({ text, type, className, onClick , width , border }) => {
   const [customClass, setCustomClass] = useState("");
 
   useEffect(() => {
@@ -26,6 +26,7 @@ const Button = ({ text, type, className, onClick }) => {
       type={type === "primary" ? "submit" : null}
       className={`custom-button rounded ${customClass} ${className}`}
       onClick={onClick}
+      width = {width} border = {border}
     >
       {text}
     </ButtonStyled>

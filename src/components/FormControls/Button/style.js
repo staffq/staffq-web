@@ -26,4 +26,10 @@ export const ButtonStyled = styled.button`
     background-color: white;
     color: #d5ba8f;
   }
+  .width{
+    width: 174px;
+  }
+  .border{
+    border-radius: 16px;
+  }
 `;

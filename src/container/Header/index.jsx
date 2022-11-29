@@ -26,9 +26,11 @@ const Header = () => {
   }, []);
   const [toggle, setToggle] = useState(false);
  
+ 
   useEffect (() =>{
-
-  },[setToggle])
+  
+ setToggle(toggle)
+  },[])
 
   // const Btn = () =>{
   // setClick(!click);
@@ -123,35 +125,33 @@ const Header = () => {
             </div>
         
           </nav>
-          {toggle && (
+          {toggle ? (
               <div>
                 <ul className="navbar-nav mr-auto  mt-lg-0">
                   <li className="nav-item active">
                   <Link href="/">
-                      <a className="nav-link" href="#">
+                      <a className="nav-link" href="#"   onClick={() => setToggle(false)}>
                         Home<span className="sr-only"></span>
                       </a>
                     </Link>{" "}
                     <Link href="/about-us">
-                      <a className="nav-link" href="#">
+                      <a className="nav-link" href="#"   onClick={() => setToggle(false)}>
                         About Us<span className="sr-only"></span>
                       </a>
                     </Link>{" "}
                   </li>
 
                   <li className="nav-item">
-                    <Link href="contact-us">
-                      <a className="nav-link" href="#">
+                    <Link href="contact-us"   >
+                      <a className="nav-link" href="#" onClick={() => setToggle(false)}>
                         Contact Us
                       </a>
                     </Link>
                   </li>
-                  {/* <li className="nav-item">
-          <a className="nav-link disabled" href="#">Disabled</a>
-        </li> */}
+         
                 </ul>
               </div>
-            )}
+            ):null }
         </div>
       </Small>
     </>

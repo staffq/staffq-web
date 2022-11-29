@@ -84,7 +84,7 @@ export const Findjobs = styled.div`
   }
 
   .FindText {
-    margin-top: 27%;
+    margin-top: 31%;
   }
   .h2 {
     color: white;
