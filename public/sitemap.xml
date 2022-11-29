@@ -4,19 +4,91 @@
 	<url>
 		<loc>https://www.staffq.in/</loc>
 		<changefreq>monthly</changefreq>
-		<lastmod>2022-11-27</lastmod>
+		<lastmod>2022-03-25</lastmod>
 		<priority>1.00</priority>
 	</url>
 	<url>
 		<loc>https://www.staffq.in/about-us</loc>
 		<changefreq>monthly</changefreq>
-		<lastmod>2022-11-27</lastmod>
+		<lastmod>2022-03-25</lastmod>
 		<priority>0.80</priority>
 	</url>
 	<url>
 		<loc>https://www.staffq.in/contact-us</loc>
 		<changefreq>monthly</changefreq>
-		<lastmod>2022-11-27</lastmod>
+		<lastmod>2022-03-25</lastmod>
 		<priority>0.80</priority>
 	</url>
-	
+	<!-- <url>
+		<loc>https://www.applogiq.org/mobile-application</loc>
+		<changefreq>monthly</changefreq>
+		<lastmod>2022-03-25</lastmod>
+		<priority>0.80</priority>
+	</url>
+	<url>
+		<loc>https://www.applogiq.org/web-application</loc>
+		<changefreq>monthly</changefreq>
+		<lastmod>2022-03-25</lastmod>
+		<priority>0.80</priority>
+	</url>
+	<url>
+		<loc>https://www.applogiq.org/blockchain-solution</loc>
+		<changefreq>monthly</changefreq>
+		<lastmod>2022-03-25</lastmod>
+		<priority>0.80</priority>
+	</url>
+	<url>
+		<loc>https://www.applogiq.org/dedicated-hiring</loc>
+		<changefreq>monthly</changefreq>
+		<lastmod>2022-03-25</lastmod>
+		<priority>0.80</priority>
+	</url>
+	<url>
+		<loc>https://www.applogiq.org/web-design</loc>
+		<changefreq>monthly</changefreq>
+		<lastmod>2022-03-25</lastmod>
+		<priority>0.80</priority>
+	</url>
+	<url>
+		<loc>https://www.applogiq.org/digital-marketing</loc>
+		<changefreq>monthly</changefreq>
+		<lastmod>2022-03-25</lastmod>
+		<priority>0.80</priority>
+	</url>
+	<url>
+		<loc>https://www.applogiq.org/staffing</loc>
+		<changefreq>monthly</changefreq>
+		<lastmod>2022-03-25</lastmod>
+		<priority>0.80</priority>
+	</url>
+	<url>
+		<loc>https://www.applogiq.org/internet-of-things</loc>
+		<changefreq>monthly</changefreq>
+		<lastmod>2022-03-25</lastmod>
+		<priority>0.80</priority>
+	</url>
+	<url>
+		<loc>https://www.applogiq.org/artificial-intelligence</loc>
+		<changefreq>monthly</changefreq>
+		<lastmod>2022-03-25</lastmod>
+		<priority>0.80</priority>
+	</url>
+    <url>
+		<loc>https://www.applogiq.org/openings</loc>
+		<changefreq>monthly</changefreq>
+		<lastmod>2022-03-25</lastmod>
+		<priority>0.80</priority>
+	</url>
+    <url>
+		<loc>https://www.applogiq.org/life-at-applogiq</loc>
+		<changefreq>monthly</changefreq>
+		<lastmod>2022-03-25</lastmod>
+		<priority>0.80</priority>
+	</url>
+	<url>
+		<loc>https://www.applogiq.org/contact-us</loc>
+		<changefreq>monthly</changefreq>
+		<lastmod>2022-03-25</lastmod>
+		<priority>0.80</priority>
+	</url> -->
+</urlset>
