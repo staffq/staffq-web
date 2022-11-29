@@ -54,6 +54,10 @@ export const Div = styled.div`
     .navbar-brand {
       padding-left: 0px;
     }
+     .navbar{
+      top: 0;
+      position: fixed;
+     }
   }
   @media (min-width: 990px) and (max-width: 1080px) {
     .navbar-nav {
@@ -108,10 +112,11 @@ export const  Small = styled.div`
     display: none;
   }
   .navbar-nav{
-    background-color: aquamarine;
+    background-color: white;
     padding-left: 2rem;
-    font-size: 17px;
-    font-weight: 600;
+    font-size: 21px;
+    font-weight: 700;
+    margin-top: 5rem;
   }
   @media(min-width:250px) and (max-width:990px){
     .sm-header{
@@ -121,6 +126,8 @@ export const  Small = styled.div`
     .navbar {
       border-bottom: 2px solid rgba(8, 20, 41, 0.1);
       width: 100%;
+      position: fixed;
+      top: 0 !important;
       display: flex;
       justify-content: space-around;
     }

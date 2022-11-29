@@ -117,7 +117,7 @@ const Footer = () => {
               <div>
                 <p style={{ fontSize: "14px" }} className="last-line">
                   {" "}
-                  @2022 StaffQ Consultancy Pvt. Ltd -| Powered by Applogiq
+                  @2022 StaffQ Consultancy Pvt. Ltd | Powered by Applogiq
                 </p>
               </div>
               <div className="Foter">
@@ -211,7 +211,7 @@ const Footer = () => {
         <div className="mt-5">
           <p className="text-center last-line " style={{ marginTop: "2px" }}>
             {" "}
-            @2022 StaffQ Consultancy Pvt. Ltd - | Powered by Applogiq
+            @2022 StaffQ Consultancy Pvt. Ltd | Powered by Applogiq
           </p>
           <div className="d-flex  justify-content-spacebetween">
             <p style={{ fontSize: "14px" }} className="last-line">

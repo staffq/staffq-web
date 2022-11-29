@@ -77,14 +77,14 @@ padding-top: 5rem;
   padding-left: 14rem;
     margin-top: 14rem;
 }
-@media (min-width: 1000px) and (max-width: 1200px) {
+@media (min-width: 1000px) and (max-width: 1250px) {
     h1{
-        font-size: 40px;
+        font-size: 37px;
     }
 }
-@media (min-width: 1200px) and (max-width: 1400px) {
+@media (min-width: 1250px) and (max-width: 1400px) {
     h1{
-        font-size: 42px;
+        font-size: 45px;
         padding-top: 20px;
     }
 }
@@ -201,7 +201,7 @@ export const SmallHeader = styled.div`
     background: #efce1e;
     width: 100%;
     height: auto;
-    padding-top: 2rem;
+    padding-top: 5rem;
     .background-image{
   
   }

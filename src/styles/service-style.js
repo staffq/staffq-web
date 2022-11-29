@@ -1,33 +1,30 @@
 // /* ************************** Import Packages *************************** **/
 import styled from "styled-components";
 export const ServiceBg = styled.div`
-
-/*  */
+  /*  */
   @media (min-width: 900px) and (max-width: 1106px) {
     display: none;
   }
   @media (min-width: 1024px) and (max-width: 1200px) {
     .small-center {
-    padding-right: 8rem;
-  }
-  
-  .serviceImage{
-    width: 521px !important;
-    height: 323px;
-    margin-top: 0rem;
-  }
+      padding-right: 8rem;
+    }
 
+    .serviceImage {
+      width: 521px !important;
+      height: 323px;
+      margin-top: 0rem;
+    }
   }
   @media (min-width: 1024px) and (max-width: 1100px) {
     /* .sm-card{
       margin-right: 20px;
     } */
-    .smcard-ONE{
+    .smcard-ONE {
       margin-right: 64px;
     }
   }
-  
-  
+
   background: #efce1e;
   width: 100%;
   margin-bottom: 20px;
@@ -69,7 +66,7 @@ export const ServiceBg = styled.div`
 
     color: rgba(8, 20, 41, 0.4);
   }
-  .h-five{
+  .h-five {
     font-size: 22px;
     color: #081429;
     font-weight: 600;
@@ -88,12 +85,10 @@ export const ServiceBg = styled.div`
       display: block;
       width: 87%;
       color: rgba(8, 20, 41, 0.6);
-    font-weight: 600;
-
+      font-weight: 600;
     }
     .service-p-tag {
       display: none;
-    
     }
 
     .sm-card {
@@ -127,16 +122,15 @@ export const ServiceBg = styled.div`
   }
 
   @media (min-width: 1301px) and (max-width: 1400px) {
-  
-  /* .service-p-tag {
+    /* .service-p-tag {
     font-size: 16px;
     line-height: 27px;
     font-weight: 600;
     color: #08142999;
   }
    */
-}
-  
+  }
+
   .learnmore:hover .VectorImage {
     display: block;
     margin-top: -19px;
@@ -187,7 +181,7 @@ export const cardhead = styled.div`
 
 export const Medium = styled.div`
   display: none;
-  .service-we{
+  .service-we {
     font-size: 30px;
   }
   @media (min-width: 1000px) and (max-width: 120px) {
@@ -242,25 +236,24 @@ export const Medium = styled.div`
     h5 {
       font-weight: 600;
     }
-    .service-we{
+    .service-we {
       font-weight: 600;
-font-size: 36px;
-line-height: 49px;
-/* identical to box height */
+      font-size: 36px;
+      line-height: 49px;
+      /* identical to box height */
 
-
-color: #081429;
-
+      color: #081429;
     }
     .h-five {
       font-size: 22px;
-    color: #081429;
-    font-weight: 600;
-    
+      color: #081429;
+      font-weight: 600;
     }
     .learnmore:hover .VectorImage {
       display: block;
       margin-top: -19px;
+
+      cursor: pointer;
     }
     .learnmore:hover {
       font-weight: bold;

@@ -1,6 +1,7 @@
 /**************Import styled components******************************** */
 import React from "react";
 import { Div } from "../styles/error";
+import Link from "next/link";
 
 const _error = () => {
   return (
@@ -11,7 +12,11 @@ const _error = () => {
             <div className="first-one">
               <h1>ERROR 404 </h1>
               <p>PAGE NOT FOUND</p>
+              <Link href="/">
               <button className="btn btn-dark">Back to home</button>
+             
+            </Link>
+             
             </div>
           </div>
           <div className="col-lg-6 col-md-6 col-sm-12 two">

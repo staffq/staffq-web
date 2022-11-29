@@ -193,7 +193,13 @@ export const Second = styled.div`
     font-size: 24px;
   }
   .h-one{
-    font-size: 25px;
+
+    font-size: 32px;
+line-height: 43px;
+
+/* StaffQ_black */
+font-weight: 500;
+color: #050C18 !important;
 
   }
   .d-fleex {
@@ -223,12 +229,12 @@ export const Second = styled.div`
   }
 
   @media (min-width: 1000px) and (max-width: 1300px) {
-    h5{
+    .h-one{
       font-size: 25px;
     }
   }
   @media (min-width: 1300px) and (max-width: 1500px) {
-    h5{
+    .h-one{
       font-size: 25px;
     }
   }

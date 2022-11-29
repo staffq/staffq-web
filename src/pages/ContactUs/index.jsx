@@ -251,8 +251,9 @@ const contact = () => {
                         />
                       </div>
                       <div className="display-two">
-                        <p className="h-one">India</p>
-                        <p className="h-one">Tiruppur</p>
+                        <span className="h-one">India</span>
+                  
+                        <span className="h-one">Tiruppur</span>
                       </div>
                     </div>
                   </div>
@@ -296,8 +297,8 @@ const contact = () => {
                         />
                       </div>
                       <div className="display-two">
-                        <p className="h-one">Canada</p>
-                        <p className="h-one">Ontario</p>
+                        <span className="h-one">Canada</span>
+                        <span className="h-one">Ontario</span>
                       </div>
                     </div>
                   </div>
@@ -340,8 +341,8 @@ const contact = () => {
                         />
                       </div>
                       <div className="display-two">
-                        <p className="h-one">United Kingdom</p>
-                        <p className="h-one">Southampton</p>
+                        <span className="h-one">United Kingdom</span>
+                        <span className="h-one">Southampton</span>
                       </div>
                     </div>
                   </div>

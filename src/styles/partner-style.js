@@ -177,7 +177,9 @@ line-height: 27px;
 
 color: rgba(8, 20, 41, 0.7);
     }
-  
+  .kovai{
+    width: 108px;
+  }
 
   .small-one-first {
     display: flex;

@@ -37,7 +37,14 @@ export const Findjobs = styled.div`
   
   }
   }
-
+  @media (min-width: 1000px) and (max-width: 1023px) {
+    .arow {
+    width: 149px !important;
+    height: 131px;
+    padding: 4px;
+    margin-left: -74px;
+    margin-top: 130px !important;
+  }}
   @media (min-width: 900px) and (max-width: 1200px) {
     .FindText {
       margin-top: 1rem !important;

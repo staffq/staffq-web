@@ -24,8 +24,11 @@ const Header = () => {
       window.removeEventListener("scroll", scrollEvent);
     };
   }, []);
-
   const [toggle, setToggle] = useState(false);
+ 
+  useEffect (() =>{
+
+  },[setToggle])
 
   // const Btn = () =>{
   // setClick(!click);

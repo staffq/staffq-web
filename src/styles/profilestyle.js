@@ -10,7 +10,9 @@ export const ProfileJs = styled.div`
     background: url("assets/images/ring.svg");
 
   } */
-
+.tw{
+  margin-right: 2rem;
+}
   .wave {
     margin-top: -8%;
     width: 84%;

@@ -60,7 +60,7 @@ color: #081429;
     background: #f6f6f5;
     /* padding-left: 12px; */
 
-    padding-top: 37px;
+    padding: 25px;
   }
   .evalute-image {
     display: flex;
@@ -71,19 +71,19 @@ color: #081429;
   .section-one {
     width: 100%;
     /* height: 500px; */
-    padding-left: 12px;
+    padding: 32px;
 
     padding-top: 37px;
 
     border-radius: 20px;
     background: #f6f6f5;
   }
-  .img-page-two {
+  /* .img-page-two {
     padding-left: 34px;
-  }
-  .first-row {
+  } */
+  /* .first-row {
     padding-left: 25px;
-  }
+  } */
   .row-second-ball {
     padding-left: 3rem;
     margin-top: 5rem;
@@ -98,6 +98,9 @@ color: #081429;
     font-size: 16px;
     font-weight: 400;
     line-height: 36px;
+  }
+  .img-one-one{
+    width: 100%;
   }
   .discover-h-three {
     font-weight: 600;
@@ -245,6 +248,9 @@ line-height: 49px;
     .dont-show {
       display: none;
     }
+    .img-one-one{
+      width: 100%;
+    }
   }
   /* .....................................our vision and our mission..media query: ..................... */
   @media (min-width: 990px) and (max-width: 1350px) {
@@ -275,18 +281,18 @@ line-height: 49px;
       padding-top: 37px;
     }
     .img-one-one {
-      width: 92%;
+      width: 100%;
       padding-top: 2rem;
     }
   }
   @media (min-width: 250px) and (max-width: 1024px) {
-    .second-content {
+    /* .second-content {
       display: flex;
       justify-content: center;
       margin-top: 0rem;
-    }
+    } */
   }
-  /* ....................small screen: .;.......................... */
+  /* ....................small screen: .;............  .............. */
   @media (min-width: 500px) and (max-width: 768px) {
     .section-one {
       width: 100%;
@@ -306,7 +312,7 @@ line-height: 49px;
       padding-top: 37px;
     }
     .img-one-one {
-      width: 92%;
+      width: 100%;
       padding-top: 2rem;
     }
   }
@@ -341,7 +347,7 @@ line-height: 49px;
       padding-left: 4px;
     }
     .img-one-one {
-      width: 92%;
+      width: 100%;
       padding-top: 2rem;
     }
     .second-content {
@@ -354,7 +360,7 @@ line-height: 49px;
     .section-one {
       width: 100%;
       padding-top: 37px;
-      padding: 7px;
+      padding: 16px;
       /* height: 635px; */
       border-radius: 20px;
       /* margin-left: 3rem; */
@@ -366,10 +372,10 @@ line-height: 49px;
       padding: 16px;
       border-radius: 20px;
       background: #f6f6f5;
-      padding-top: 37px;
+      /* padding-top: 37px; */
     }
     .img-one-one {
-      width: 92%;
+      width: 100%;
       padding-top: 2rem;
     }
   }

@@ -74,7 +74,7 @@ const Profile = () => {
                       </div>
                       <img
                         src="assets/images/Profile-Screening.svg"
-                        className="img-one"
+                        className="img-one tw"
                         alt="img"
                       />
                     </div>
@@ -171,8 +171,8 @@ const Profile = () => {
                             <br></br>
                             <span>
                               {" "}
-                              capabilities, these are role-based extremely
-                              stringent tests which filters top 10% talents
+                              capabilities, these are role-based tests which
+                              filters top 10% talents
                             </span>
                           </div>
                         </div>
@@ -316,9 +316,8 @@ const Profile = () => {
 
                         <p className="small-p-tag">
                           We have curated one of most advanced technical
-                          assessments to vet talent'scapabilities, these are
-                          role-based extremely stringent tests which filters top
-                          10% talents
+                          assessments to vet talent's capabilities, these are role-based tests which
+                              filters top 10% talents
                         </p>
                       </div>
                     </div>

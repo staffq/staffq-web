@@ -106,6 +106,7 @@ const OurPartner = () => {
             <img
               src="assets/images/kovai.png"
               alt="img"
+              className="kovai"
               style={{ width: "88px" }}
             />
           </div>

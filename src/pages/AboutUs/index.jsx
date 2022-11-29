@@ -190,6 +190,7 @@ const AboutPage = () => {
                       src="assets/images/discover.png"
                       className="img-one-one"
                       alt="img"
+                      width='100%'
                     />
 
                     <p className="discover-h-three">1. Discover</p>
@@ -207,7 +208,7 @@ const AboutPage = () => {
                   <div className="first-row container">
                     <img
                       src="assets/images/evalute.png"
-                      className="evalute.png"
+                       className="img-one-one"
                       alt="img"
                     />
                     <p className="discover-h-three">3. Evaluate</p>
@@ -244,7 +245,8 @@ const AboutPage = () => {
                       <div className="">
                         <img
                           src="assets/images/analyze.png"
-                          width="93%"
+                          width="100%"
+                          className="img-one-one container"
                           alt="img"
                         />
                         <p className="discover-h-three">2. Analyse</p>
@@ -265,7 +267,8 @@ const AboutPage = () => {
                       <div className="img-page-two container  ">
                         <img
                           src="assets/images/onboard.png"
-                          width="93%"
+                          width="100%"
+                          className="img-one-one"
                           alt="img"
                         />
                         <p className="discover-h-three">4. Onboard</p>
@@ -288,7 +291,7 @@ const AboutPage = () => {
         
          */}
         <div className="container sm-cell">
-          <div className="img-page-one">
+          <div className="img-page-one  ">
             <div className="section-one">
               <div className=" first-row">
                 <img
@@ -311,7 +314,7 @@ const AboutPage = () => {
             <div className="content-two">
               <div className="img-page-two container">
                 <div className="">
-                  <img src="assets/images/analyze.png" width="93%" alt="img" />
+                  <img src="assets/images/analyze.png" width="100%" alt="img" />
                   <p className="discover-h-three">2. Analyse</p>
                   <p className="discover-p-tag container">
                     We are analyze the profile about the history, skillset and
@@ -347,7 +350,7 @@ const AboutPage = () => {
             <div className="content-one  ">
               <div className="content-two ">
                 <div className="img-page-two container  ">
-                  <img src="assets/images/onboard.png" width="93%" alt="img" />
+                  <img src="assets/images/onboard.png" width="100%" alt="img" />
                   <p className="discover-h-three">4. Onboard</p>
                   <p className="discover-p-tag container">
                     We will not only follow-up we take ownership on onboarding
