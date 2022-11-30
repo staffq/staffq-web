@@ -1,19 +1,16 @@
 import styled from "styled-components";
 export const Worked = styled.div`
   .FIRST {
-    margin-top: 30%;
+    margin-top: 20%;
   }
   /* background-color: #EFCE1E;
 width: 100%;
 margin-top: 10%;
 height: 50vh; */
 
- .medium-small-view{
+  .medium-small-view {
     display: none;
   }
-
-
-
 
   .P-tag {
     left: 0px;
@@ -26,12 +23,16 @@ height: 50vh; */
 
     color: rgba(8, 20, 41, 0.6);
   }
- 
- color: #081429;
-  
-  
+
+  color: #081429;
+
   .small-center {
     margin-top: 2rem;
+  }
+  .about{
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
   h4 {
     font-size: 30px;
@@ -42,55 +43,13 @@ height: 50vh; */
     color: rgba(8, 20, 41, 0.4);
     margin-top: 2rem;
   }
- 
-
- 
- 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
   @media (min-width: 250px) and (max-width: 1024px) {
-    .medium-small-view{
-    display: block;
-  }
+    .medium-small-view {
+      display: block;
+      text-align: center;
+      z-index: -99;
+    }
   }
   .img-one {
     border-radius: 30px;
@@ -190,9 +149,8 @@ height: 50vh; */
     margin-top: 19px;
     font-size: 33px;
   }
-  .solution-header {
-    padding-top: 5rem;
-  }
+
+  
   .solution-p-tag {
     margin-top: 34px;
 
@@ -204,6 +162,17 @@ height: 50vh; */
   }
   .small-screen {
     display: none;
+  }
+  .About{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  @media (min-width: 1200px) and (max-width: 1400px) {
+    .solution-p-tag{
+      margin-top: 0;
+      line-height: 31px ;
+    }
   }
   /* .................................media p tag  */
   @media (min-width: 250px) and (max-width: 530px) {
@@ -239,9 +208,9 @@ height: 50vh; */
       display: flex;
       justify-content: center;
     }
-    .solution-p-tag {
+    /* .solution-p-tag {
       text-align: center;
-    }
+    } */
   }
 
   @media (min-width: 991px) and (max-width: 1200px) {
@@ -276,7 +245,7 @@ height: 50vh; */
   }
 
   /* .......image...second---paGE................... */
-  
+
   .content-onee {
     width: 634px;
     height: 500px;
@@ -338,7 +307,6 @@ height: 50vh; */
     left: 230px;
     top: 1717px;
 
-  
     font-style: normal;
     font-weight: 500;
     font-size: 16px;
@@ -361,7 +329,6 @@ height: 50vh; */
     border-radius: 12px;
   }
   label {
-    
     font-style: normal;
     font-weight: 500;
     font-size: 16px;
@@ -398,7 +365,7 @@ height: 50vh; */
   }
   .form-section {
     background: #f6f6f5;
-    height: 562px;
+    /* height: 562px; */
 
     border-radius: 0px;
   }
@@ -437,13 +404,25 @@ height: 50vh; */
     font-weight: 500;
     font-size: 15px;
   }
+  .hiring-tag{
+    padding-top: 7rem;
+  }
   @media (min-width: 250px) and (max-width: 768px) {
     .null {
       display: none;
     }
   }
+  @media (min-width: 250px) and (max-width: 990px) {
+    .benefit-image{
+      padding: 0;
+      margin-top: 3rem;
+    }
+    .hiring-tag{
+      padding-top: 30px;
+    }
+  }
+ 
   .still-not-sure {
-   
     font-style: normal;
     font-weight: 600;
     padding-top: 21px;
@@ -553,12 +532,11 @@ export const Header = styled.div`
     .little {
       display: none;
     }
-    .ball-image {
+    /* .ball-image {
       display: none;
-    }
+    } */
     .banner-image {
       width: 100%;
-     
     }
     .ball-one-page {
       text-align: center;
@@ -572,25 +550,23 @@ export const Header = styled.div`
       margin: 0;
     }
     h1 {
-    left: 170px;
-    top: 282px;
+      left: 170px;
+      top: 282px;
 
-    font-style: normal;
-    font-weight: 600;
-    font-size: 54px;
-    line-height: 81px;
-    /* identical to box height */
+      font-style: normal;
+      font-weight: 600;
+      font-size: 54px;
+      line-height: 81px;
+      /* identical to box height */
 
-    color: #081429;
-  }
-  .banner-image {
-      width: 100%;
-     margin-left: 2rem
-     ;
+      color: #081429;
     }
-   }
+    .banner-image {
+      width: 100%;
+      margin-left: 2rem;
+    }
+  }
 `;
-
 
 export const Image = styled.div`
   /* margin-top: 8%; */
@@ -658,6 +634,49 @@ export const Image = styled.div`
     width: 167px;
     height: 163px;
   }
+  @media (min-width: 1024px) and (max-width: 1050px) {
+   .under-pic{
+  margin-left: 149px;
+   }
+  }
+  @media (min-width: 1050px) and (max-width: 1100px) {
+   .under-pic{
+  margin-left: 108px;
+   }
+  
+  }
+  @media (min-width: 1156px) and (max-width: 1170px) {
+   .under-pic{
+  margin-left: 60px;
+   }}
+   @media (min-width: 1170px) and (max-width: 1200px) {
+   .under-pic{
+  margin-left: 45px;
+   }}
+   @media (min-width: 1200px) and (max-width: 1250px) {
+   .under-pic{
+  margin-left: 158px;
+   }}
+   @media (min-width: 1250px) and (max-width: 1290px) {
+   .under-pic{
+  margin-left: 117px;
+   }}
+   @media (min-width: 1290px) and (max-width:1320px) {
+   .under-pic{
+  margin-left: 98px;
+   }}
+   @media (min-width: 1320px) and (max-width: 1360px) {
+   .under-pic{
+  margin-left: 98px;
+   }}
+   @media (min-width: 1400px) and (max-width: 1475px) {
+   .under-pic{
+  margin-left: 164px;
+   }}
+   @media (min-width: 1475px) and (max-width: 1500px) {
+   .under-pic{
+  margin-left: 130px;
+   }}
 `;
 
 export const SmallHeader = styled.div`
@@ -665,7 +684,12 @@ export const SmallHeader = styled.div`
   /* margin-top: 12rem; */
   text-align: center;
   display: none;
-
+.small-img{
+  background-image: url("assets/images/banner-param.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  width: 100%;
+  background-position: center;}
   .banner-image {
     width: 100%;
   }

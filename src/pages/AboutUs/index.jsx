@@ -385,8 +385,9 @@ const AboutPage = () => {
                       width="100%"
                       alt="img"
                     />
+                     <br></br> 
                   </div>
-                  <br></br> <br></br>
+                 
                 </div>
                 <div className="col-lg-7 col-md-12 col-sm-12 fs-5 about-p-center">
                   <div>

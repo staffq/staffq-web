@@ -4,159 +4,6 @@ import { Worked, Header, Image, SmallHeader } from "../../styles/workstyle";
 const ParamanentDeployment = () => (
   <>
     <Worked>
-      {/* <div className="container p-0">
-          <div className="row">
-            <div className="col-lg-6 col-md-12 col-sm-12"></div>
-            <div className="col-lg-6 col-md-12 col-sm-12"></div>
-          </div>
-        </div> */}
-      {/*
-        <div className="container FIRST">
-          <div className="row">
-            <div className="col-lg-6 col-sm-12">
-              <div className="img-one">
-                <img src="assets/images/image-content-one.svg" width="100%" />
-              </div>
-            </div>
-            <div className="col-lg-6 col-sm-12">
-              <div className="second-content">
-                <div>
-                  <img src="assets/images/line.svg" className="mt-4"></img>{" "}
-                </div>
-
-                <div className="second-page-h1">
-                  <h3>Our Mission</h3>
-                  <p>
-                    To be the leading partner that clients and candidates{" "}
-                    <br></br> always choose to connect with.
-                  </p>
-                </div>
-              </div>
-              <br></br>
-              <div className="second-content">
-                <div>
-                  <img src="assets/images/line.svg" className="mt-4"></img>{" "}
-                </div>
-
-                <div className="second-page-h1">
-                  <h3>Our Vision</h3>
-                  <p>
-                    Our vision is to establish a long-term and strategic
-                    <br></br>
-                    recruitment partnership with our clients and assist<br></br>{" "}
-                    them in transforming today’s difficulties into <br></br>
-                    tomorrow’s triumphs.
-                  </p>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div> */}
-      {/*
-      
-{/*
-        <div className="container">
-          <div className="row ">
-            <div className="col-lg-6 col-sm-12 col-md-12">
-              <div className="img-page-one">
-                <div className="section-one">
-                  <img src="assets/images/img-page-one.svg" />
-                  <h3>1. Discover</h3>
-                  <p>
-                    Lorem ipsum dolor sit amet, consectetur adipiscingelit, sed
-                    do eiusmod <br></br>tempor incididunt ut labore et dolore
-                    magna aliqua. Ut enim ad minim veniam,<br></br> quisLorem
-                    ipsum dolor sit amet, consectetur adipiscingelit,sed do
-                    eiusmod <br></br>tempor incididunt ut labore et dolore magna
-                    aliqua. Ut enim ad minim veniam,<br></br> quis Loremipsum
-                    dolor sit amet, consectetur adipiscingelit, sed do eiusmod{" "}
-                    <br></br>tempor incididunt ut labore et dolore magna aliqua.
-                  </p>
-                </div>
-              </div>
-              <div className="img-page-one mt-3">
-                <div className="section-one">
-                  <img src="assets/images/Evaluate.svg" />
-                  <h3>3. Evaluate</h3>
-                  <p>
-                    Lorem ipsum dolor sit amet, consectetur adipiscingelit, sed
-                    do eiusmod <br></br>tempor incididunt ut labore et dolore
-                    magna aliqua. Ut enim ad minim veniam,<br></br> quisLorem
-                    ipsum dolor sit amet, consectetur adipiscingelit,sed do
-                    eiusmod <br></br>tempor incididunt ut labore et dolore magna
-                    aliqua. Ut enim ad minim veniam,<br></br> quis Loremipsum
-                    dolor sit amet, consectetur adipiscingelit, sed do eiusmod{" "}
-                    <br></br>tempor incididunt ut labore et dolore magna aliqua.
-                  </p>
-                </div>
-              </div>
-
-              <div className="section-two">
-                <img src="assets/images/orange.svg"></img>
-              </div>
-            </div>
-
-            .................................................second row..................
-
-            <div className="col-lg-6 col-sm-12 col-md-12 ">
-              <div className="section-two ">
-                <img src="assets/images/img-one-two.svg"></img>
-              </div>
-              <div className="content-one">
-                <div className="content-two">
-                  <div className="img-page-two">
-                    <div className="">
-                      <img src="assets/images/analyse.svg" width="100%" />
-                      <h3>2. Analyse</h3>
-                      <p style={{ fontSize: "16px" }}>
-                        Lorem ipsum dolor sit amet, consectetur adipiscingelit,
-                        sed do eiusmod tempor incididunt ut labore et dolore
-                        magna aliqua. Ut enim ad minim veniam, quisLorem ipsum
-                        dolor sit amet, consectetur adipiscingelit,sed do
-                        eiusmod tempor incididunt ut labore et dolore magna
-                        aliqua. Ut enim ad minim veniam, quis Loremipsum dolor
-                        sit amet, consectetur adipiscingelit, sed do eiusmod
-                        tempor incididunt ut labore et dolore magna aliqua.
-                      </p>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div className="content-one">
-                <div className="content-two mt-3">
-                  <div className="img-page-two ">
-                    <div className=" ">
-                      <img src="assets/images/Onboard.svg" width="100%" />
-                      <h3>4. Onboard</h3>
-                      <p style={{ fontSize: "16px" }}>
-                        Lorem ipsum dolor sit amet, consectetur adipiscingelit,
-                        sed do eiusmod tempor incididunt ut labore et dolore
-                        magna aliqua. Ut enim ad minim veniam, quisLorem ipsum
-                        dolor sit amet, consectetur adipiscingelit,sed do
-                        eiusmod tempor incididunt ut labore et dolore magna
-                        aliqua. Ut enim ad minim veniam, quis Loremipsum dolor
-                        sit amet, consectetur adipiscingelit, sed do eiusmod
-                        tempor incididunt ut labore et dolore magna aliqua.
-                      </p>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div className="copntainer">
-          <div className="text-center">
-            <h1>Join Our Team</h1>
-            <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-              <br></br>
-              do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-            </p>
-            <button className="bt">Join Us</button>
-          </div>
-        </div> */}
 
       {/* ........................................header............section................. */}
       <Header>
@@ -166,7 +13,7 @@ const ParamanentDeployment = () => (
               <div className="row">
                 <div className="col-lg-6 col-sm-12 col-md-6">
                   <img
-                    src="assets/images/Ball and waves.svg"
+                    src="assets/images/banner-param.png"
                     className="ball-image"
                     width="100%" alt="img"/>
                   <div className="ball-one-page">
@@ -210,6 +57,7 @@ const ParamanentDeployment = () => (
         <div className="container-fluid p-0">
           <SmallHeader>
             <div className="container">
+              <div className="small-img">
               <div className="ball-sm-page">
                 <h2>Permanent Recruitment</h2>
                 <p>
@@ -220,6 +68,7 @@ const ParamanentDeployment = () => (
                   expert full-time talent across all levels in IT and{" "}
                   <br></br>Non-IT skills.
                 </p>
+              </div>
               </div>
               <div>
                 <img
@@ -234,7 +83,7 @@ const ParamanentDeployment = () => (
 
       {/* ................................next section................................ */}
 
-      <div className="mt-5" style={{ paddingTop: "5rem" }}>
+      <div className="hiring-tag" style={{  }}>
         <section className="container">
           <div className="row">
             <div className="col-lg-6 col-md-12 col-sm-12">
@@ -243,7 +92,7 @@ const ParamanentDeployment = () => (
                 company's success over time.
               </h2>
               <img
-                src="assets/images/Mission and vision image (1).svg"
+                src="assets/images/Mission-vision-image.png"
                 width="100%"
                 className="second-code"
               ></img>
@@ -307,9 +156,9 @@ const ParamanentDeployment = () => (
             </p>
           </div>
           <div className="container">
-            <div className="row">
+            <div className="row About">
               <div className="col-lg-6 col-md-12 col-sm-12">
-                <div className="row">
+                <div className="row ">
                   <div className="col-lg-12 col-sm-12 col-md-12">
                     <div className="solution-header ">
                       <div className="d-flex ">
@@ -344,7 +193,7 @@ const ParamanentDeployment = () => (
               <div className="col-lg-6 col-md-12 col-sm-12">
                 <div>
                   <img
-                    src="assets/images/hand-img.svg"
+                    src="assets/images/Image.png"
                     className="hand-img "
                     width="100%"
                     alt="img"/>
@@ -426,7 +275,7 @@ const ParamanentDeployment = () => (
               <img
                 src="assets/images/Technical-img.svg"
                 className="img-one img-four"
-                alt="img"/ >
+                alt="img"/>
             </div>
             <div className="">
               <h4>Technical Assessment</h4>
@@ -557,7 +406,7 @@ const ParamanentDeployment = () => (
                     <div className="horizontal">
                       <hr></hr>
                     </div>
-                    <div className="uder-cover-img">
+                    <div className="uder-cover-img last-pic">
                       <img
                         src="assets/images/under-imgaess.svg "
                         className="round-img" alt="img"/>
@@ -596,9 +445,9 @@ const ParamanentDeployment = () => (
         <section>
           <div className="container-fluid ps-0">
             <div className="row ">
-              <div className="col-lg-6 col-sm-12 col-md-12">
+              <div className="col-lg-6 col-sm-12 col-md-12 benefit-image">
                 <img
-                  src="assets/images/Mission.svg"
+                  src="assets/images/Mission-.png"
                   className="mission"
                 ></img>
               </div>
@@ -617,11 +466,11 @@ const ParamanentDeployment = () => (
 
                   <div className="row">
                     <div className="col-lg-1 col-sm-1 col-md-1">
-                      <div className="null">
+                      <div className="">
                         <img src="assets/images/right-icons.svg"></img>
                       </div>
                     </div>
-                    <div className="col-lg-11 col-md-11 col-sm-12">
+                    <div className="col-lg-11 col-md-11 col-sm-11">
                       <p className="second-p-tag notview">
                         Excellent technical hiring skills and can easily
                         identify potential <br></br>candidates
@@ -635,11 +484,11 @@ const ParamanentDeployment = () => (
                   </div>
                   <div className="row">
                     <div className="col-lg-1 col-sm-1 col-md-1">
-                      <div className="null">
+                      <div className="">
                         <img src="assets/images/right-icons.svg"></img>
                       </div>
                     </div>
-                    <div className="col-lg-11 col-md-11 col-sm-12">
+                    <div className="col-lg-11 col-md-11 col-sm-11">
                       <p className="second-p-tag notview">
                         We handle the entire employment process including{" "}
                         resume- screening, interview-conduction, background/
@@ -656,11 +505,11 @@ const ParamanentDeployment = () => (
                   </div>
                   <div className="row">
                     <div className="col-lg-1 col-sm-1 col-md-1">
-                      <div className="null">
+                      <div className="">
                         <img src="assets/images/right-icons.svg"></img>
                       </div>
                     </div>
-                    <div className="col-lg-11 col-md-11 col-sm-12">
+                    <div className="col-lg-11 col-md-11 col-sm-11">
                       <p className="second-p-tag notview">
                         We make the on-boarding procedure smooth for
                         companies, by <br></br> providing the selected
@@ -676,11 +525,11 @@ const ParamanentDeployment = () => (
                   </div>
                   <div className="row">
                     <div className="col-lg-1 col-sm-1 col-md-1">
-                      <div className="null">
+                      <div className="">
                         <img src="assets/images/right-icons.svg"></img>
                       </div>
                     </div>
-                    <div className="col-lg-11 col-md-11 col-sm-12">
+                    <div className="col-lg-11 col-md-11 col-sm-11">
                       <p className="second-p-tag notview">
                         Follow-up of performance feedback of employees is
                         given due<br></br> importance
@@ -694,11 +543,11 @@ const ParamanentDeployment = () => (
                   </div>
                   <div className="row">
                     <div className="col-lg-1 col-sm-1 col-md-1">
-                      <div className="null">
+                      <div className="">
                         <img src="assets/images/right-icons.svg"></img>
                       </div>
                     </div>
-                    <div className="col-lg-11 col-md-11 col-sm-12">
+                    <div className="col-lg-11 col-md-11 col-sm-11">
                       <p className="second-p-tag notview">
                         Follow-up of performance feedback of employees is
                         given due <br></br>importance
@@ -712,11 +561,12 @@ const ParamanentDeployment = () => (
                   </div>
                   <div className="row">
                     <div className="col-lg-1 col-sm-1 col-md-1">
-                      <div className="null">
+                      
+                      <div className="">
                         <img src="assets/images/right-icons.svg"></img>
                       </div>
                     </div>
-                    <div className="col-lg-11 col-md-11 col-sm-12">
+                    <div className="col-lg-11 col-md-11 col-sm-11">
                       <p className="second-p-tag notview">
                         As candidates are qualified and reliable, there is a
                         higher probability of retention of such employees
@@ -777,6 +627,8 @@ const ParamanentDeployment = () => (
                 <div className="d-flex justify-content-end">
                   <button className="submited">Submit</button>
                 </div>
+                <br></br>
+                  <br></br>
               </form>
             </div>
           </section>

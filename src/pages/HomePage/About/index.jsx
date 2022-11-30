@@ -22,7 +22,7 @@ const About = () => {
               <div className="col-lg-5 col-md-12 col-sm-12 medium-one">
                 <div className="aboutImage">
                   <img src="assets/images/about-img.webp" width="100%" alt="img" />
-                  <br></br> <br></br>
+                  <br></br> 
                 </div>
               </div>
               <div className="col-lg-7 col-md-12 col-sm-12 fs-5  medium-two">

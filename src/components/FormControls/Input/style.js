@@ -5,7 +5,7 @@ export const InputStyled = styled.input`
   padding: ${(props) => (props.padding ? props.padding : "0.5rem")};
   position: relative;
   margin: ${(props) => props.margin};
-  width: ${(props) => (props.width ? props.width : "34vw")};
+  width: ${(props) => (props.width ? props.width : "100%")};
   height: ${(props) => (props.height ? props.height : "56px")};
   border: 0.5px solid rgba(0, 0, 0, 0.5);
   border-radius: 12px;

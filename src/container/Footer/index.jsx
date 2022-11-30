@@ -1,6 +1,6 @@
 import React from "react";
 import { Foot, SmFoot } from "./style";
-// import Link from "next/link";
+import Link from "next/link";
 // import {IoCall } from "react-icons/Io";
 import { GrMail } from "react-icons/gr";
 
@@ -31,9 +31,9 @@ const Footer = () => {
                         Our Services
                       </p>
                       <div className="footer-one ">
-                        {/* <Link href="paramanent-deployment"> */}
+                        <Link href="paramanent-deployment">
                         <span className="">Permanent Deployment</span>
-                        {/* </Link> */}
+                        </Link>
                         <br></br>
                         <span>Contract to Hire</span>
                         <br></br>

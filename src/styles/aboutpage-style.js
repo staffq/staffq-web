@@ -18,15 +18,14 @@ export const Div = styled.div`
     align-content: center;
     padding-left: 30px;
   }
-.h-three{
-  font-weight: 600;
-font-size: 36px;
-line-height: 49px;
-/* identical to box height */
+  .h-three {
+    font-weight: 600;
+    font-size: 36px;
+    line-height: 49px;
+    /* identical to box height */
 
-
-color: #081429;
-}
+    color: #081429;
+  }
   p {
     font-size: 21px;
     font-weight: 300;
@@ -78,6 +77,7 @@ color: #081429;
     border-radius: 20px;
     background: #f6f6f5;
   }
+
   /* .img-page-two {
     padding-left: 34px;
   } */
@@ -99,7 +99,7 @@ color: #081429;
     font-weight: 400;
     line-height: 36px;
   }
-  .img-one-one{
+  .img-one-one {
     width: 100%;
   }
   .discover-h-three {
@@ -228,10 +228,11 @@ color: #081429;
     .code-line {
       margin-left: 9rem;
       width: 87px;
-      margin-top: -94px;
+      margin-top: -135px;
     }
     .small-logo-section {
-      margin-top: 2rem;
+      margin-top: 1rem;
+      margin-left: 2rem;
     }
   }
   .sm-cell {
@@ -243,12 +244,12 @@ color: #081429;
       display: block;
     }
     font-weight: 600;
-font-size: 36px;
-line-height: 49px;
+    font-size: 36px;
+    line-height: 49px;
     .dont-show {
       display: none;
     }
-    .img-one-one{
+    .img-one-one {
       width: 100%;
     }
   }
