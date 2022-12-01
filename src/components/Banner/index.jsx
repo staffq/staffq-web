@@ -1,4 +1,5 @@
 import React from "react";
+
 import { useState } from "react";
 
 import {
@@ -17,6 +18,7 @@ import {
 // import "./HoverableComponent.css";
 // import Input from "../FormControls/Input";
 import { BsArrowRight } from "react-icons/bs";
+import Link from "next/link";
 const Index = () => {
   return (
     <div>
@@ -43,10 +45,12 @@ const Index = () => {
                     className="hello"
                   ></img>
                 </Button> */}
+                    <Link href="find-the-best-job">
                 <button class="btn-black">
                   Find your jobs <span class="arrow arrow-black"></span>
                   {/* <img src="assets/images/Find-your.svg" className=""></img> */}
                 </button>
+                </Link>
               </BannerText>
             </div>
             <div className=" col-lg-6 col-md-12 col-sm-12 p-0 pe-0 container-fluid">
@@ -72,10 +76,12 @@ const Index = () => {
                   <br></br> suppliers to all the recruitment companies various
                   Domain.
                 </p>
+                <Link href="find-the-best-job">
                 <button class="btn-black">
                   Find your jobs <span class="arrow arrow-black"></span>
                   {/* <img src="assets/images/Find-your.svg" className=""></img> */}
                 </button>
+                </Link>
               </div>
             </div>
             <div className=" col-lg-6 col-md-12 col-sm-12 p-0 mt-4">

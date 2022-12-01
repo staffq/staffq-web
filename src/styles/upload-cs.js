@@ -183,7 +183,7 @@ export const Div = styled.div`
     bottom: -10px;
     }
   }
-  @media (min-width: 200px) and (max-width: 769px) {
+  /* @media (min-width: 200px) and (max-width: 769px) {
     .sm-upload {
    
       display: flex;
@@ -196,6 +196,6 @@ export const Div = styled.div`
       margin: 0 auto;
       font-size: 21px;
     }
-  }
+  } */
   
 `;
