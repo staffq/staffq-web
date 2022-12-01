@@ -1,13 +1,13 @@
 import React from "react";
-import { Div } from "../../../styles/upload-cs";
-import Input from "../../../components/FormControls/Input";
+import { Div } from "../../styles/upload-cs";
+import Input from "../../components/FormControls/Input"
 // import Button from "../../../components/FormControls/Button";
 
 import { useFormik } from "formik";
-import * as yup from "yup";
-import Popup from "../../../components/FormControls/Popup";
+import * as Yup from "yup";
+import Popup from "../../components/FormControls/Popup";
 // import Button from "../../../components/FormControls/Button";
-const UploadCV = () => {
+const Cvapply = () => {
   const [popup, setPopup] = React.useState(null);
   const formik = useFormik({
     initialValues: {
@@ -21,24 +21,23 @@ const UploadCV = () => {
       files:"",
      
     },
-    validationSchema: yup.object({
-      firstName: yup.string()
-        // .max(15, "Must be 15 characters or less")
+    validationSchema: Yup.object({
+      firstName: Yup.string()
+        .max(15, "Must be 15 characters or less")
         .required("Required"),
-      lastName: yup.string()
-        // .max(20, "Must be 20 characters or less")
+      lastName: Yup.string()
+        .max(20, "Must be 20 characters or less")
         .required("Required"),
-      email: yup.string().email("Invalid email address").required("Required"),
-      number: yup.string().max(10, "").required("Required"),
-      experience: yup.string().required("Required"),
-      linkedin: yup.string().required("Required"),
-      files: yup.mixed().required("Required"),
+      email: Yup.string().email("Invalid email address").required("Required"),
+      number: Yup.string().max(10, "").required("Required"),
+      experience: Yup.string().required("Required"),
+      linkedin: Yup.string().required("Required"),
+      files: Yup.mixed().required("Required"),
     }),
     onSubmit: (values) => {
-
-      console.log(values, "helo");
       setPopup(true);
-      // formik.handleReset();
+      console.log(values, "helo");
+      formik.handleReset();
     },
   });
   return (
@@ -67,8 +66,21 @@ const UploadCV = () => {
                     className="nav-item one"
                     alt="img"
                   />
-                  <li className="nav-item two">Upload CV</li>
+                  <li className="nav-item two">Find jobs</li>
+                  <img
+                    src="assets/images/left-icons.png"
+                    className="nav-item one"
+                    alt="img"
+                  />
+                    <li className="nav-item two">jobs Description </li>
+                    <img
+                    src="assets/images/left-icons.png"
+                    className="nav-item one"
+                    alt="img"
+                  />
+                    <li className="nav-item two">Apply now </li>
                 </ul>
+                
               </div>
             </div>
           </div>
@@ -92,9 +104,6 @@ const UploadCV = () => {
                 value={formik.values.firstName}
                 required
               />
-              {formik.touched.firstName && formik.errors.firstName ?(
-                <p>{formik.errors.firstName}</p>
-              ):null}
               {/* <label className=" not-show">Last Name*</label>
               <Input
                 width="100%"
@@ -214,7 +223,7 @@ const UploadCV = () => {
                   <button
                     className="btn btnn"
                     type="submit"
-                    onSubmit={formik.handleSubmit}
+                    onSubmit={(e)=>{formik.handleSubmit(e)}}
                    
                   >
                     submit
@@ -237,4 +246,4 @@ const UploadCV = () => {
   );
 };
 
-export default UploadCV;
+export default Cvapply;

@@ -1,6 +1,6 @@
 import React from "react";
 import { Div } from "./style";
-const Popup = () => {
+const Popup = ({onHide}) => {
   return (
     <>
       <Div>
@@ -11,15 +11,16 @@ const Popup = () => {
               width="100%"
               className="tick-img"
             />
-            <div className="">
+            <div className="container">
               <div className="card-head">
-                <h3>Your resume has been submitted successfully.</h3>
+                <h3>Your resume has been submitted <br></br>successfully.</h3>
               </div>
               <div>
                 <p className="card-text">
                   You are being redirected to home page
                 </p>
               </div>
+              <button onClick={onHide}>close</button>
             </div>
           </div>
         </div>
