@@ -1,147 +1,169 @@
 import React from "react";
-
-import { useFormik } from "formik";
-import * as Yup from "yup";
-import { Find } from "../../styles/findthejob-style";
+import Input from "../../components/FormControls/Input";
+// import { Icon } from "../../components/FormControls/Input/style";
+// import { useFormik } from "formik";
+// import * as Yup from "yup";
+import { Find, SmallFind } from "../../styles/findthejob-style";
 
 const FindJob = () => {
   const cardData = [
     {
       header: "UX Designer",
+      text: "To work closely with the design and backend team to build and develop web applications for our forward-thinking products",
     },
     {
       header: "Front End Developer",
+      text: "To work closely with the design and backend team to build and develop web applications for our forward-thinking products",
     },
     {
       header: "Visual Designer",
+      text: "To work closely with the design and backend team to build and develop web applications for our forward-thinking products",
     },
     {
       header: "Motion Designer",
+      text: "To work closely with the design and backend team to build and develop web applications for our forward-thinking products",
     },
     {
       header: "UX Designer",
+      text: "To work closely with the design and backend team to build and develop web applications for our forward-thinking products",
     },
     {
       header: "Front End Developer",
+      text: "To work closely with the design and backend team to build and develop web applications for our forward-thinking products",
     },
     {
       header: "Visual Designer",
+      text: "To work closely with the design and backend team to build and develop web applications for our forward-thinking products",
     },
     {
       header: "Motion Designer",
+      text: "To work closely with the design and backend team to build and develop web applications for our forward-thinking products",
     },
     {
       header: "UX Designer",
+      text: "To work closely with the design and backend team to build and develop web applications for our forward-thinking products",
     },
     {
       header: "Front End Developer",
+      text: "To work closely with the design and backend team to build and develop web applications for our forward-thinking products",
     },
     {
       header: "Visual Designer",
+      text: "To work closely with the design and backend team to build and develop web applications for our forward-thinking products",
     },
     {
       header: "Motion Designer",
+      text: "To work closely with the design and backend team to build and develop web applications for our forward-thinking products",
     },
     {
       header: "UX Designer",
+      text: "To work closely with the design and backend team to build and develop web applications for our forward-thinking products",
     },
     {
       header: "Front End Developer",
+      text: "To work closely with the design and backend team to build and develop web applications for our forward-thinking products",
     },
     {
       header: "Visual Designer",
+      text: "To work closely with the design and backend team to build and develop web applications for our forward-thinking products",
     },
     {
       header: "Motion Designer",
+      text: "To work closely with the design and backend team to build and develop web applications for our forward-thinking products",
     },
   ];
-  const formik = useFormik({
-    initialValues: {
-      firstName: "",
-      lastName: "",
-      email: "",
-    },
-    validationSchema: Yup.object({
-      firstName: Yup.string()
-        .max(15, "Must be 15 characters or less")
-        .required("Required"),
-      lastName: Yup.string()
-        .max(20, "Must be 20 characters or less")
-        .required("Required"),
-      email: Yup.string().email("Invalid email address").required("Required"),
-    }),
-    onSubmit: (values) => {
-      alert(JSON.stringify(values, null, 2));
-    },
-  });
+  // const formik = useFormik({
+  //   initialValues: {
+  //     firstName: "",
+  //     lastName: "",
+  //     email: "",
+  //   },
+  //   validationSchema: Yup.object({
+  //     firstName: Yup.string()
+  //       .max(15, "Must be 15 characters or less")
+  //       .required("Required"),
+  //     lastName: Yup.string()
+  //       .max(20, "Must be 20 characters or less")
+  //       .required("Required"),
+  //     email: Yup.string().email("Invalid email address").required("Required"),
+  //   }),
+  //   onSubmit: (values) => {
+  //     alert(JSON.stringify(values, null, 2));
+  //   },
+  // });
   return (
     <Find>
-      <div className="container-fluid p-0">
-        <div className="Findbg">
-          <div className="HEADER">
-            <h1>
-              Find The Best Job <br></br> For You
-            </h1>
-          </div>
+      <div className="container-fluid p-0 background">
+        <div className="bg-img">
+          <img src="assets/images/Banner-find-box.jpg" width="100%" />
+        </div>
+        <div className="find-text">
+          <h1>
+            Find The Best Job <br></br>
+            For You
+          </h1>
         </div>
       </div>
       <div className="container">
         {/* ..........................small..content......... */}
-        <div>
+        <div className="mt-3">
           <ul className="nav">
             <li className="nav-item">Home</li>
             <li className="nav-item">
               {" "}
               <img src="assets/images/icons-right.svg"></img>
             </li>
-            <li className="nav-item">Upload Cv</li>
-            <li className="nav-item">Job Description</li>
+            {/* <li className="nav-item">Upload Cv</li> */}
+            <li className="nav-item">Find jobs</li>
           </ul>
         </div>
         {/* ................... */}
-        <h5>Upload Cv</h5>
-        <p className="p-tag">Enter the details below</p>
-        <h5>Front End Developer</h5>
-        <h6>Description</h6>
-        <p>
-          You should be a master in combining the art of design with the art of
-          programming. Responsibilities will include translation of the UI/UX
-          design wireframes to actual code that will produce visual elements of
-          the application. You will be working with the product team designing
-          and developing of the product.
-        </p>
-        <h5>Technical Skills</h5>
-        <li>Advanced knowledge of JavaScript Proficient in JavaScript</li>
-        <li>
-          Proficient in JavaScript frameworks/libraries like React js is
-          mandator
-        </li>
-        <li>
-          {" "}
-          Proficient understanding of web markup, including HTML5, CSS3 with
-          strong interest in UX
-        </li>
-        <li>
-          Basic understanding of server-side CSS pre-processing platforms, such
-          as LESS and SASS
-        </li>
-        <li>
-          Basic understanding of server-side CSS pre-processing platforms, such
-          as LESS and SASS
-        </li>
-        <div className="soft-skils">
-          <h6 className="">Soft Skills</h6>
-          <li>Accuracy and attention to detail</li>
-          <li>Good coding skills and curiosity to explore new technologies</li>
-          <li>They should be methodical in their approach to design</li>
+
+        {/* ..............................sm.............Form.......................... */}
+        <form>
+          <div className="row mt-4">
+            {/* <div className="col-lg-"></div> */}
+            <div className="col-lg-5">
+              <Input icon placeholder="Job Title or Keyword" className="ps-5" />
+            </div>
+            <div className="col-lg-5">
+              <div className="form-group ">
+                <div>
+                  <select
+                    className="input-option ps-4 "
+                    placeholder="Location "
+                  >
+                    <option value="">Industry</option>
+                    <option value="">TamilNadu</option>
+                    <option value="">Kerala</option>
+                  </select>{" "}
+                </div>
+              </div>
+            </div>
+            <div className="col-lg-2">
+              <button className="btn btnnn">submit</button>
+            </div>
+          </div>
+        </form>
+
+        <div className="showing-results">
+          <div>
+            <p>
+              Showing results of <span>1523</span>{" "}
+            </p>
+          </div>
+          <div>
+            <div>
+              <select className="location ps-4" placeholder="Location">
+                <option value="">Location</option>
+                <option value="">TamilNadu</option>
+                <option value="">Kerala</option>
+              </select>{" "}
+            </div>
+          </div>
         </div>
-{/* ..............................sm.............Form.......................... */}
-<div >
-  <div></div>
-</div>
 
-
-        <div className="row container mt-3">
+        <div className="row  mt-3">
           {cardData?.map((cardHead, index) => {
             return (
               <div className="col-lg-3 col-md-6 col-sm-12 mb-3" key={index}>
@@ -166,11 +188,7 @@ const FindJob = () => {
                       />
                       <p className="btnn">20 sept 2022</p>
                     </div>
-                    <p className="cart-text">
-                      To work closely with the design and backend team to build
-                      and develop web applications for our forward-thinking
-                      products.
-                    </p>
+                    <p className="cart-text">{cardHead?.text}</p>
                     <button className=" btnone">Explore Job</button>
                   </div>
                 </div>
@@ -179,7 +197,7 @@ const FindJob = () => {
           })}
         </div>
         <div>
-          <div className="text-center">
+          <div className="text-center next-button">
             <button className="btn perivious">
               {" "}
               <img src="assets/images/arrow-left.svg"></img> Previous{" "}
@@ -191,7 +209,90 @@ const FindJob = () => {
           </div>
         </div>
       </div>
-      <form onSubmit={formik.handleSubmit}>
+
+      <div className="container-fluid bg-one">
+        <div className="row">
+          {/* <div className="col-lg-"></div> */}
+          <div className="col-lg-5">
+            <div className="image-left">
+              <img
+                src="assets/images/Manrings.png"
+                width="100%"
+                className=""
+                alt="img"
+              />
+            </div>
+          </div>
+
+          <div className="col-lg-1 third-col">
+            <div>
+              <span>
+                {" "}
+                <img
+                  src="assets/images/profilearoow.svg"
+                  className="arow"
+                  alt="img"
+                />
+              </span>
+            </div>
+          </div>
+          <div className="col-lg-5 second-col">
+            <div>
+              <p className="find-crt">
+                Couldn’t Find The Correct <br></br> Job?
+              </p>
+              <p className="upload-p-tag">
+                Upload your resume here. We I’ll take a look and find you the
+                right Job.
+              </p>
+              <button className=" upload">
+                <img
+                  src="assets/images/directbox-send.svg"
+                  className="Directbox"
+                  alt="img"
+                />
+                <span className="upload-button"> Upload</span>
+              </button>
+            </div>
+          </div>
+          <div className="col-lg-1"></div>
+        </div>
+      </div>
+      <SmallFind>
+        <div className="container-fluid p-0 pe-0 ">
+          <div className="top">
+            <div className="row container">
+              <div className="col-lg-12 col-md-12 col-sm-12 mt-5 ">
+                <div className="Smallsctext">
+                  <h2 className="">
+                    Upload your resume here. We I’ll take a look and find you
+                    the right Job.
+                  </h2>
+                  <p className="text-light findsm-text"></p>
+                </div>
+                <button className="mt-3 upload  Smallbox  ">
+                  <img
+                    src="assets/images/directbox-send.svg"
+                    className="Directbox"
+                    alt="img"
+                  />
+                  <span className="upload-button"> Upload</span>
+                </button>
+              </div>
+              <div className="col-lg-12 col-md-12 col-sm-12">
+                <div className="find-images">
+                  <img
+                    src="assets/images/Manrings.png"
+                    width="100%"
+                    alt="img"
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </SmallFind>
+      {/* <form onSubmit={formik.handleSubmit}>
         <label htmlFor="firstName">First Name</label>
         <input
           id="firstName"
@@ -219,7 +320,7 @@ const FindJob = () => {
         ) : null}
 
         <button type="submit">Submit</button>
-      </form>
+      </form> */}
     </Find>
   );
 };

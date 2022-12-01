@@ -5,8 +5,10 @@ import Input from "../../../components/FormControls/Input";
 
 import { useFormik } from "formik";
 import * as Yup from "yup";
+import Popup from "../../../components/FormControls/Popup";
 // import Button from "../../../components/FormControls/Button";
 const UploadCV = () => {
+  const [popup, setPopup] = React.useState(false);
   const formik = useFormik({
     initialValues: {
       firstName: "",
@@ -27,14 +29,9 @@ const UploadCV = () => {
         .required("Required"),
       email: Yup.string().email("Invalid email address").required("Required"),
       number: Yup.string().max(10, "").required("Required"),
-      experience:
-        Yup.string()
-        .required("Required"),
-      linkedin:
-        Yup.string()
-        .required("Required"),
-      file: Yup.string()
-      .required("Required"),
+      experience: Yup.string().required("Required"),
+      linkedin: Yup.string().required("Required"),
+      file: Yup.string().required("Required"),
     }),
     onSubmit: (values) => {
       console.log(values, "helo");
@@ -225,6 +222,7 @@ const UploadCV = () => {
           </div>
         </div>
       </form>
+      <Popup show={popup} onHide={() => setPopup(false)} />
     </Div>
   );
 };

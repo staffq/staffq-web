@@ -105,5 +105,29 @@ color: rgba(8, 20, 41, 0.8);
 h6{
   
     padding-top: 2rem;
+    font-size: 20px;
 }
+.technical{
+  line-height: 24px;
+}
+.btnn {
+    width: 174px;
+    height: 62px;
+    font-weight: 500;
+    font-size: 22px;
+    line-height: 30px;
+    /* identical to box height */
+margin-top: 3rem;
+    color: #081429;
+    background: #efce1e;
+    box-shadow: 0px 4px 20px rgba(8, 20, 41, 0.08);
+    border-radius: 16px;
+  }
+
+  @media(min-width:100px) and (max-width:800px){
+    .small-btn{
+      display: flex;
+      justify-content: center;
+    }
+  }
 `

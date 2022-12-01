@@ -16,17 +16,13 @@ export const InputStyled = styled.input`
 
   color: black;
 
-  @media(min-width:250px) and (max-width:768px){
+  @media (min-width: 250px) and (max-width: 768px) {
     width: 100%;
     justify-content: center;
     display: flex;
-  
-
   }
-  @media(min-width:769px) and (max-width:990px){
-    
-      width: 100%;
-    
+  @media (min-width: 769px) and (max-width: 990px) {
+    width: 100%;
   }
 `;
 
@@ -34,8 +30,8 @@ export const Icon = styled.div`
   color: black;
   width: 40px;
   height: 40px;
-  top: 133px;
+  top: 26.5rem;
   position: absolute;
-  opacity: 0.5;
+  /* opacity: 0.5; */
+  left: 8rem;
 `;
-
