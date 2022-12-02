@@ -239,7 +239,7 @@ const contact = () => {
           <div style={{}} className="pc-contact">
             <div className="container">
               <h2 className="Our-Branches">Our Branches</h2>
-              <div className="row  ">
+              <div className="row  roww">
                 <div className="col-lg-4 col-sm-12 col-md-6">
                   <div>
                     <div className="display">

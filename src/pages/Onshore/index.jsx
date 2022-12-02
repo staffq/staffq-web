@@ -1,10 +1,8 @@
 import React from "react";
-
 import { Worked, Header, Image, SmallHeader } from "../../styles/workstyle";
-const ParamanentDeployment = () => (
-  <>
+const OnshoreRequriement = () => {
+  return (
     <Worked>
-      {/* ........................................header............section................. */}
       <Header>
         <div lassName="header">
           <div className="container-fluid">
@@ -18,14 +16,12 @@ const ParamanentDeployment = () => (
                     alt="img"
                   />
                   <div className="ball-one-page">
-                    <h1>Permanent Recruitment</h1>
+                    <h1>Onshore Recruitment</h1>
                     <p>
-                      The chances of getting a better candidate are higher with
-                      permanent staffing services. Our expertise lies in being
-                      creative, designing <br></br>effective strategies, and
-                      delivering solutions that work. We help organizations hire
-                      expert full-time talent across all levels in IT and{" "}
-                      <br></br>Non-IT skills.
+                      StaffQ is a contract staffing agency that helps
+                      enterprises and businesses by providing temporary staffing
+                      solutions. We help businesses to build a competent and
+                      effective workforce so they can focus on their core goals.
                     </p>
                   </div>
                 </div>
@@ -36,7 +32,7 @@ const ParamanentDeployment = () => (
                         <div className="col-lg-2"></div>
                         <div className="col-lg-10">
                           <img
-                            src="assets/images/Banner-para-Image.png"
+                            src="assets/images/Onshore-Recruitment-banner.png"
                             width="100%"
                             className="banner-image"
                             alt="img"
@@ -44,7 +40,6 @@ const ParamanentDeployment = () => (
                         </div>
                       </div>
                     </div>
-                    
                   </div>
                 </div>
               </div>
@@ -58,45 +53,45 @@ const ParamanentDeployment = () => (
           <SmallHeader>
             <div className="container">
               <div className="small-img">
-                <img src="assets/images/banner-param.png" alt="img" width="100%"/>
+                <img
+                  src="assets/images/banner-param.png"
+                  alt="img"
+                  width="100%"
+                />
               </div>
-                <div className="ball-sm-page">
-                  <h2>Permanent Recruitment</h2>
-                  <p>
-                    The chances of getting a better candidate are higher with
-                    permanent staffing services. Our expertise lies in being
-                    creative, designing effective strategies, and
-                    delivering solutions that work. We help organizations hire
-                    expert full-time talent across all levels in IT and{" "}
-                    Non-IT skills.
-                  </p>
-                </div>
-             
+              <div className="ball-sm-page">
+                <h2>Onshore Recruitment</h2>
+                <p>
+                  StaffQ is a contract staffing agency that helps enterprises
+                  and businesses by providing temporary staffing solutions. We
+                  help businesses to build a competent and effective workforce
+                  so they can focus on their core goals.
+                </p>
+              </div>
+
               <div>
                 <img
-                  src="assets/images/Banner-para-Image.png"
+                  src="assets/images/Onshore-Recruitment-banner.png"
                   className="banner-image"
                   alt="img"
-                  width= "100%"
+                  width="100%"
                 />
               </div>
             </div>
           </SmallHeader>
         </div>
       </div>
-
-      {/* ................................next section................................ */}
-
+      {/* ...........................next.................. */}
       <div className="hiring-tag" style={{}}>
         <section className="container">
           <div className="row">
             <div className="col-lg-6 col-md-12 col-sm-12">
               <h2 className=" Hiring-qualified">
-                Hiring qualified people that will positively impact a company's
-                success over time.
+                We help companies to source, screen and communicate with
+                candidates
               </h2>
               <img
-                src="assets/images/Mission-vision-image.png"
+                src="assets/images/Onshore-staffing.png"
                 width="100%"
                 className="second-code"
               ></img>
@@ -114,18 +109,15 @@ const ParamanentDeployment = () => (
                         className="mt-4"
                         alt="img"
                       />
-                      <h4 className="whats-happening ">What’s happening?</h4>
+                      <h4 className="whats-happening ">Onshore staffing</h4>
                     </div>
                     <p className="solution-p-tag">
-                      It is a matter of great concern today that many
-                      establishments are finding it increasingly difficult to
-                      find the right candidate for a specific project or task.
-                      As a result, their HR departments are compelled to manage
-                      with the candidates that are somewhat suitable and
-                      available. But in the long run, this kind of adjustment
-                      plays havoc with the team performance and projects suffer
-                      as a consequence. Deadlines are not met and the work done
-                      may be shoddy and incomplete.
+                      Every organization's lifeblood is its employees. Every
+                      business is built on the strength of its employees,
+                      whether they are startups or large corporations. Today's
+                      workforce isn't limited to those working in-house.
+                      Outsourcing employees is becoming more familiar with the
+                      expansion of all business sectors.
                     </p>
                   </div>
                 </div>
@@ -139,13 +131,17 @@ const ParamanentDeployment = () => (
                           className="mt-4"
                           alt="img"
                         />
-                        <h4 className="whats-happening ">Situation</h4>
+                        <h4 className="whats-happening ">
+                          Calculation and Processing
+                        </h4>
                       </div>
                       <p className="solution-p-tag">
-                        By the time they fire such employees after realizing
-                        that it was an unwise decision to recruit them, it is
-                        too late. They have to stare at heavy losses and further
-                        orders are affected. What to do in this situation?
+                        Looking for a way to supplement your full-time IT staff?
+                        StaffQ offers onsite outsourcing, which means we'll send
+                        our qualified professionals to work at your business
+                        location within the country for a specified period. We
+                        can either provide staff from our own company or recruit
+                        talents that match your requirements.
                       </p>
                     </div>
                   </div>
@@ -155,9 +151,7 @@ const ParamanentDeployment = () => (
           </div>
         </section>
       </div>
-
-      {/* ............................................next------section............................. */}
-
+      {/* ..................next-----section.... */}
       <div>
         <section className="Hiring-Process container-fluid">
           <div className="container pt-4 text-center">
@@ -184,22 +178,15 @@ const ParamanentDeployment = () => (
                         <h2 className="whats-happening  Solution">Solution</h2>
                       </div>
                       <p className="solution-p-tag">
-                        StaffQ Consultancy Pvt. ltd . is one such
-                        fastest-growing provider of Permanent Staffing Services.
-                        It caters to reputed IT and non-IT companies,
-                        establishments and firms all over India. StaffQ assists
-                        you in selecting the most suitable candidates in any
-                        field on a permanent basis. With a dedicated belief of
-                        total commitment to the companies for whom StaffQ
-                        provides permanent staffing services, it delivers value
-                        for money by careful screening of individual profiles.
-                        Our database for permanent staffing services includes
-                        serious candidates that possess the requisite experience
-                        and exposure to do complete justice to the nature of
-                        duties assigned. Hence if you need permanent staff for
-                        your company, rest assured, Team Plus will fulfill your
-                        HR needs and you can enjoy a relaxed and stress-free
-                        staffing procedure.
+                      StaffQ offers dependable contract staffing solutions that provide you the chance to 
+enhance the strength of your staff without recruiting them permanently, helps overloaded
+workers during crucial times, and keeps work continuing. We have one of the excellent Job
+placement agencies in India, providing permanent service, price-effective, and orderly
+Human Resource administration services to companies that may not have the essential
+support or inclination to accomplish these labour-intensive duties. When you are recruiting
+us as your contract staffing agent, we would work just like your organization’s own human
+resource office. Depending on the requirements of your latest business cycle, our contract
+staffing services will allow your company to staff up or down.
                       </p>
                     </div>
                   </div>
@@ -208,11 +195,12 @@ const ParamanentDeployment = () => (
               <div className="col-lg-6 col-md-12 col-sm-12">
                 <div>
                   <img
-                    src="assets/images/Image.png"
+                    src="assets/images/onshore-about.png"
                     className="hand-img "
                     width="100%"
                     alt="img"
-                  /><br></br>
+                  />
+                  <br></br>
                   <br></br>
                 </div>
               </div>
@@ -220,8 +208,7 @@ const ParamanentDeployment = () => (
           </div>
         </section>
       </div>
-
-      {/* ................................................next.....................content........... */}
+      {/* ....... */}
       <div className="container">
         <div className="text-center mt-5">
           <h2>Hiring Process</h2>
@@ -232,10 +219,8 @@ const ParamanentDeployment = () => (
           </p>
         </div>
       </div>
-
-      {/* .......................................new section............... */}
-
-      <div>
+            {/* ....medium....... */}
+            <div>
         <div className="medium-small-view">
           <div className="container"></div>
 
@@ -338,9 +323,7 @@ const ParamanentDeployment = () => (
           </div>
         </div>
       </div>
-
-      {/* ..............................................images.................and row.............. */}
-
+      {/* .....next....... */}
       <Image>
         <div className="container">
           <div className="">
@@ -453,27 +436,20 @@ const ParamanentDeployment = () => (
           </div>
         </div>
       </Image>
-
-      <div>
-        <div className="small-image-section"></div>
-      </div>
-
-      {/* ............................................next......section,,,,,,,,,,,,,, */}
-
-      {/* .......................................................... */}
+      {/* ........................next.................... */}
       <div>
         <section>
           <div className="container-fluid ps-0">
             <div className="row ">
               <div className="col-lg-6 col-sm-12 col-md-12 benefit-image">
-                <img src="assets/images/Mission-.png" className="mission"></img>
+                <img src="assets/images/onshore-head.png" className="mission"></img>
               </div>
               <div
                 className="col-lg-6 col-sm-12 col-md-12 big-screen "
-                style={{ paddingTop: "1rem" }}
+                style={{ paddingTop: "5rem" }}
               >
                 <div className="container">
-                  <h4 className="Benefits ">Benefits of Permanent Hiring</h4>
+                  <h4 className="Benefits ">Benefits of Onshore recruitment</h4>
                   <div className="null">
                     <img
                       src="assets/images/uper-unterline.svg"
@@ -490,13 +466,61 @@ const ParamanentDeployment = () => (
                     </div>
                     <div className="col-lg-11 col-md-11 col-sm-11">
                       <p className="second-p-tag notview">
-                        Excellent technical hiring skills and can easily
-                        identify potential <br></br>candidates
+                      Contract staffing services are cost-effective
                       </p>
+                     
+                    </div>
+                  </div>
+                  <div className="row">
+                    <div className="col-lg-1 col-sm-1 col-md-1">
+                      <div className="">
+                        <img src="assets/images/right-icons.svg"></img>
+                      </div>
+                    </div>
+                    <div className="col-lg-11 col-md-11 col-sm-11">
+                      <p className="second-p-tag notview">
+                      Contract staffing services limit the Business Liability and Risk
+                      </p>
+                     
+                    </div>
+                  </div>
+                  <div className="row">
+                    <div className="col-lg-1 col-sm-1 col-md-1">
+                      <div className="">
+                        <img src="assets/images/right-icons.svg"></img>
+                      </div>
+                    </div>
+                    <div className="col-lg-11 col-md-11 col-sm-11">
+                      <p className="second-p-tag notview">
+                      Contract staffing services limit the Business Liability and Risk
+                      </p>
+                    
+                    </div>
+                  </div>
+                  <div className="row">
+                    <div className="col-lg-1 col-sm-1 col-md-1">
+                      <div className="">
+                        <img src="assets/images/right-icons.svg"></img>
+                      </div>
+                    </div>
+                    <div className="col-lg-11 col-md-11 col-sm-11">
+                      <p className="second-p-tag notview">
+                      Access to a larger talent pool
+                      </p>
+                    
+                    </div>
+                  </div>
+                  <div className="row">
+                    <div className="col-lg-1 col-sm-1 col-md-1">
+                      <div className="">
+                        <img src="assets/images/right-icons.svg"></img>
+                      </div>
+                    </div>
+                    <div className="col-lg-11 col-md-11 col-sm-11">
+                      <p  className="second-p-tag notview">Access to specialized skills</p>
                       <p className="small-screen">
                         {" "}
-                        Excellent technical hiring skills and can easily
-                        identify potential candidates
+                  
                       </p>
                     </div>
                   </div>
@@ -508,16 +532,22 @@ const ParamanentDeployment = () => (
                     </div>
                     <div className="col-lg-11 col-md-11 col-sm-11">
                       <p className="second-p-tag notview">
-                        We handle the entire employment process including{" "}
-                        resume- screening, interview-conduction, background/
-                        reference <br></br>
-                        verification, etc.
+                      Take some responsibility off the HR department
                       </p>
+                     
+                    </div>
+                  </div>
+                  <div className="row">
+                    <div className="col-lg-1 col-sm-1 col-md-1">
+                      <div className="">
+                        <img src="assets/images/right-icons.svg"></img>
+                      </div>
+                    </div>
+                    <div className="col-lg-11 col-md-11 col-sm-11">
+                      <p  className="second-p-tag notview">  Escaping the ACA requirementss</p>
                       <p className="small-screen">
                         {" "}
-                        We handle the entire employment process including{" "}
-                        resume- screening, interview-conduction, background/
-                        reference verification, etc
+                  
                       </p>
                     </div>
                   </div>
@@ -528,73 +558,10 @@ const ParamanentDeployment = () => (
                       </div>
                     </div>
                     <div className="col-lg-11 col-md-11 col-sm-11">
-                      <p className="second-p-tag notview">
-                        We make the on-boarding procedure smooth for companies,
-                        by <br></br> providing the selected candidate’s entire
-                        documentation file
-                      </p>
+                      <p  className="second-p-tag notview">  Prevent laying off employees</p>
                       <p className="small-screen">
                         {" "}
-                        We make the on-boarding procedure smooth for companies,
-                        by providing the selected candidate’s entire
-                        documentation file
-                      </p>
-                    </div>
-                  </div>
-                  <div className="row">
-                    <div className="col-lg-1 col-sm-1 col-md-1">
-                      <div className="">
-                        <img src="assets/images/right-icons.svg"></img>
-                      </div>
-                    </div>
-                    <div className="col-lg-11 col-md-11 col-sm-11">
-                      <p className="second-p-tag notview">
-                        Follow-up of performance feedback of employees is given
-                        due<br></br> importance
-                      </p>
-                      <p className="small-screen">
-                        {" "}
-                        Follow-up of performance feedback of employees is given
-                        due importance
-                      </p>
-                    </div>
-                  </div>
-                  <div className="row">
-                    <div className="col-lg-1 col-sm-1 col-md-1">
-                      <div className="">
-                        <img src="assets/images/right-icons.svg"></img>
-                      </div>
-                    </div>
-                    <div className="col-lg-11 col-md-11 col-sm-11">
-                      <p className="second-p-tag notview">
-                        Follow-up of performance feedback of employees is given
-                        due <br></br>importance
-                      </p>
-                      <p className="small-screen">
-                        {" "}
-                        Follow-up of performance feedback of employees is given
-                        due importance
-                      </p>
-                    </div>
-                  </div>
-                  <div className="row">
-                    <div className="col-lg-1 col-sm-1 col-md-1">
-                      <div className="">
-                        <img src="assets/images/right-icons.svg"></img>
-                      </div>
-                    </div>
-                    <div className="col-lg-11 col-md-11 col-sm-11">
-                      <p className="second-p-tag notview">
-                        As candidates are qualified and reliable, there is a
-                        higher probability of retention of such employees within
-                        the company and this is beneficial<br></br> in the long
-                        run{" "}
-                      </p>
-                      <p className="small-screen">
-                        {" "}
-                        As candidates are qualified and reliable, there is a
-                        higher probability of retention of such employees within
-                        the company and this is beneficial in the long run{" "}
+                  
                       </p>
                     </div>
                   </div>
@@ -602,7 +569,7 @@ const ParamanentDeployment = () => (
               </div>
               <div className="col-lg-6 col-md-6 col-sm-12 not-show ">
         <div className="container">
-        <p className="Benefits ms-5 ">Benefits of Permanent Hiring</p>
+        <p className="Benefits ms-5 ">Benefits of Contract Staffing</p>
                   <div className="null">
                     <img
                       src="assets/images/uper-unterline.svg"
@@ -614,8 +581,7 @@ const ParamanentDeployment = () => (
             <img src="assets/images/right-icons.svg"></img>
           </span>
           <span>
-            Excellent technical hiring skills and can easily identify potential
-            candidates
+          Contract staffing services are cost-effective
           </span>
           <p></p>
           <br></br>
@@ -623,41 +589,49 @@ const ParamanentDeployment = () => (
             <img src="assets/images/right-icons.svg"></img>
           </span>
           <span>
-            We handle the entire employment process including resume- screening,
-            interview-conduction, background/ reference verification, etc.
+          Contract staffing services limit the Business Liability and Risk
           </span>
           <br></br> <br></br>
           <span>
             <img src="assets/images/right-icons.svg"></img>
           </span>
           <span>
-            We make the on-boarding procedure smooth for companies, by providing
-            the selected candidate’s entire documentation file
+          Access to a larger talent pool
           </span>
           <br></br> <br></br>
           <span>
             <img src="assets/images/right-icons.svg"></img>
           </span>
           <span>
-            Follow-up of performance feedback of employees is given due
-            importance
+          Access to specialized skills
           </span>
           <br></br> <br></br>
           <span>
             <img src="assets/images/right-icons.svg"></img>
           </span>
           <span>
-            Follow-up of performance feedback of employees is given due
-            importance
+          Access to a larger talent pool
           </span>
           <br></br> <br></br>
           <span>
             <img src="assets/images/right-icons.svg"></img>
           </span>
           <span>
-            As candidates are qualified and reliable, there is a higher
-            probability of retention of such employees within the company and
-            this is beneficial in the long run
+          Fulfill short term business needs
+          </span>
+          <br></br>
+          <span>
+            <img src="assets/images/right-icons.svg"></img>
+          </span>
+          <span>
+          Take some responsibility off the HR department
+          </span>
+          <br></br>
+          <span>
+            <img src="assets/images/right-icons.svg"></img>
+          </span>
+          <span>
+          Prevent laying off employees
           </span>
           <br></br>
         </div>
@@ -666,9 +640,7 @@ const ParamanentDeployment = () => (
           </div>
         </section>
       </div>
-     
-
-      {/* .........................form...................section.............................. */}
+      {/* .......form........ */}
       <div className="form-section">
         <div className="container mt-5">
           <section>
@@ -716,8 +688,7 @@ const ParamanentDeployment = () => (
         </div>
       </div>
     </Worked>
-    <div></div>
-  </>
-);
+  );
+};
 
-export default ParamanentDeployment;
+export default OnshoreRequriement;

@@ -55,24 +55,28 @@ const UploadCV = () => {
         </div>
       </div>
       <form onSubmit={formik.handleSubmit}>
+   
         <div className="container top">
-          <div className="row mt-4">
-            <div className="col-lg-1"></div>
-            <div className="col-lg-5">
-              <div className="ul-method container">
-                <ul className="nav">
-                  <li className="nav-item">Home</li>
-                  <img
-                    src="assets/images/left-icons.png"
-                    className="nav-item one"
-                    alt="img"
-                  />
-                  <li className="nav-item two">Upload CV</li>
-                </ul>
-              </div>
-            </div>
+        
+    
+        <div className="row">
+          <div className="col-lg-1"></div>
+          <div className="col-lg-2">
+          <div className="mt-3">
+          <ul className="nav">
+            <li className="nav-item">Home</li>
+            <li className="nav-item">
+              {" "}
+              <img src="assets/images/icons-right.svg"></img>
+            </li>
+            {/* <li className="nav-item">Upload Cv</li> */}
+            <li className="nav-item">Find jobs</li>
+          </ul>
+        </div>
           </div>
-
+         </div>
+            
+          
           <div className="row mt-5">
             <div className="col-lg-1"></div>
             <div className="col-lg-5 sm-upload">

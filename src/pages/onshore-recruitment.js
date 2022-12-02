@@ -1,11 +1,11 @@
 import React from 'react'
-import Cvapply from './HomePage/CvApply'
+import OnshoreRequriement from './Onshore'
 
 const index = () => {
   return (
     <div>
 
-        <Cvapply/>
+        <OnshoreRequriement/>
     </div>
   )
 }

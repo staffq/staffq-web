@@ -9,14 +9,16 @@ export const Div = styled.div`
     position: absolute;
     top: 1%;
     /* right: 50%; */
-    left: 33%;
-    padding-top: 0rem;
+    left: 36%;
+    width: 400px;
+    padding-top: 7rem;
   }
   .card {
     width: 100%;
 
     padding-top: 2rem;
     top: 104px;
+    padding-bottom: 32px;
 
     /* StaffQ_white */
 
@@ -25,7 +27,7 @@ export const Div = styled.div`
   }
   .card-text {
     font-weight: 500;
-    font-size: 16px;
+    font-size: 14px;
     line-height: 22px;
     /* identical to box height */
 
@@ -35,7 +37,7 @@ export const Div = styled.div`
   }
   .card-head {
     font-weight: 500;
-    font-size: 18px;
+  
     line-height: 32px;
     text-align: center;
     padding-top: 2rem;
@@ -47,14 +49,14 @@ export const Div = styled.div`
     width: 80px;
     left: 824px;
     top: 314px;
-    padding-top: 2rem;
+    /* padding-top: 2rem; */
     border-radius: 0px;
     text-align: center;
     margin: 0 auto;
   }
   h3{
-    font-size:18px{
+    font-size:17px;
 
     }
-  }
+  
 `;

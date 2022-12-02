@@ -1,11 +1,11 @@
 import React from "react";
-import { Div } from "../../styles/upload-cs";
-import Input from "../../components/FormControls/Input"
+import { Div } from "../../../styles/upload-cs";
+import Input from "../../../components/FormControls/Input"
 // import Button from "../../../components/FormControls/Button";
 
 import { useFormik } from "formik";
 import * as Yup from "yup";
-import Popup from "../../components/FormControls/Popup";
+import Popup from "../../../components/FormControls/Popup";
 // import Button from "../../../components/FormControls/Button";
 const Cvapply = () => {
   const [popup, setPopup] = React.useState(null);

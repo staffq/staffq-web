@@ -1,6 +1,6 @@
 import React from "react";
 import { Div } from "./style";
-const Popup = ({onHide}) => {
+const Popup = ({ onHide }) => {
   return (
     <>
       <Div>
@@ -13,14 +13,16 @@ const Popup = ({onHide}) => {
             />
             <div className="container">
               <div className="card-head">
-                <h3>Your resume has been submitted <br></br>successfully.</h3>
+                <h3>
+                  Your resume has been submitted <br></br>successfully.
+                </h3>
               </div>
               <div>
                 <p className="card-text">
                   You are being redirected to home page
                 </p>
               </div>
-              <button onClick={onHide}>close</button>
+              {/* <button onClick={onHide}>+</button>  */}
             </div>
           </div>
         </div>

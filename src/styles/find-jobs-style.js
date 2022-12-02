@@ -9,6 +9,9 @@ export const Findjobs = styled.div`
   width: 100;
 
 }
+.row{
+  margin-bottom: 4rem;
+}
 
 
   @media (min-width: 250px) and (max-width: 1000px) {
@@ -194,7 +197,7 @@ export const SmallFind = styled.div`
   width: 100%;
   display: none;
   margin-top: 2%;
-
+margin-bottom: 3rem;
   @media (min-width: 250px) and (max-width: 1000px) {
     display: block;
     background: #efce1e;

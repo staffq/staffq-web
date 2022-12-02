@@ -131,7 +131,7 @@ const AboutPage = () => {
 
         <div className="container FIRST">
           <div className="row">
-            <div className="col-lg-6 col-sm-12">
+            <div className="col-lg-6 col-sm-12 mt-5">
               <div className="img-one">
                 <img
                   src="assets/images/Mission-and-vision-image.png"
@@ -292,11 +292,11 @@ const AboutPage = () => {
          */}
         <div className="container sm-cell">
           <div className="img-page-one  ">
-            <div className="section-one">
-              <div className=" first-row">
+            <div className="section-one container">
+              <div className=" first-row container">
                 <img
                   src="assets/images/discover.png"
-                  className="img-one-one"
+                  className="img-one-one container"
                   alt="img"
                 />
 
@@ -328,11 +328,11 @@ const AboutPage = () => {
             </div>
           </div>
           <div className="img-page-one mt-3">
-            <div className="section-one">
+            <div className="section-one container">
               <div className="first-row container">
                 <img
                   src="assets/images/evalute.png"
-                  className="img-one-one"
+                  className="img-one-one container"
                   alt="img"
                 />
                 <p className="discover-h-three">3. Evaluate</p>

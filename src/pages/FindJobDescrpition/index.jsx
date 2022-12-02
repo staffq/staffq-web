@@ -15,30 +15,31 @@ const Finddescription = () => {
             </h1>
           </div>
         </div>
-        <div className="row mt-4 container">
+        <div className="row w-100">
           <div className="col-lg-1"></div>
-          <div className="col-lg-5">
-            <div className="ul-method container">
-              <ul className="nav">
-                <li className="nav-item">Home</li>
-                <img
-                  src="assets/images/left-icons.png"
-                  className="nav-item one"
-                  alt="img"
-                />
-                <li className="nav-item two">Find Jobs</li>
-                <img
-                  src="assets/images/left-icons.png"
-                  className="nav-item one"
-                  alt="img"
-                />
-                <li className="nav-item one">Job Description</li>
-              </ul>
-            </div>
-          </div>
+          <div className="col-lg-3">
+          <div className="mt-3">
+          <ul className="nav">
+            <li className="nav-item">Home</li>
+            <li className="nav-item">
+              {" "}
+              <img src="assets/images/icons-right.svg"></img>
+            </li>
+       
+            <li className="nav-item">Find jobs</li>
+            <li className="nav-item">
+              {" "}
+              <img src="assets/images/icons-right.svg"></img>
+            </li>
+       
+            <li className="nav-item">Job Description</li>
+            
+          </ul>
         </div>
+          </div>
+         </div>
 
-        <div className="row mt-5 container">
+        <div className="row mt-5  find-bottom container">
           <div className="col-lg-1"></div>
           <div className="col-lg-11 sm-upload">
             <p className="frontent">Front End Developer</p>

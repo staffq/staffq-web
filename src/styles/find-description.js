@@ -73,12 +73,17 @@ padding-top: 5rem;
     bottom: -10px;
     }
   }
-  .ul-method {
-    display: inline-block;
-    display: flex;
-    padding-top: 1rem;
-    padding: 0px;
+  .find-bottom {
+    margin-bottom: 4rem;
   }
+.nav-item{
+ margin-right: 12px;
+}
+.nav{
+  font-weight: 500;
+  cursor: pointer;
+  font-size: 14px;
+}
   .one {
     padding-left: 17px;
   }

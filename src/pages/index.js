@@ -12,7 +12,7 @@ const index = () => {
     <div className="container-fluid pe-0 p-0">
           <Head>
         <title>
-        StaffQ Consultants
+        StaffQ - Consulting | HR services | Process Transformation
         </title>
         <meta property="og:image" content="https://www.staffq.in/assets/images/Frame.png"/>
         <meta name="linkedin:image" content="https://www.staffq.in/assets/images/Frame.png"/>
@@ -29,7 +29,7 @@ const index = () => {
         />
         <meta
           name="keywords"
-          content="StaffQ Consultants"
+          content="  StaffQ - Consulting | HR services | Process Transformation"
         />
 
         <link rel="canonical" href="https://www.staffq.in/" />

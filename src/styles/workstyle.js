@@ -1,8 +1,6 @@
 import styled from "styled-components";
 export const Worked = styled.div`
-  .FIRST {
-    margin-top: 20%;
-  }
+
   /* background-color: #EFCE1E;
 width: 100%;
 margin-top: 10%;
@@ -220,6 +218,24 @@ height: 50vh; */
       line-height: 26px;
     }
   }
+  @media (min-width: 600px) and (max-width: 1024px) {
+    .solution-p-tag {
+  /* text-align:center */
+    }
+  }
+  @media (min-width: 990px) and (max-width: 1023px) {
+  .big-screen{
+    width: 100%;
+    padding: 0;
+    justify-content: center;
+    display: grid;
+  }
+  .benefit-image{
+    width: 100%;
+
+  }
+  }
+
 
   @media (min-width: 991px) and (max-width: 1400px) {
     .Hiring-qualified {
@@ -233,7 +249,11 @@ height: 50vh; */
   .Benefits {
     font-size: 35px;
     font-weight: 600;
+  
+    color: #081429;
   }
+  
+  /* @media (min-width: 101px) and (max-width: 1400px) {} */
   .uper-under-line {
     width: 241px;
     height: 12px;
@@ -242,6 +262,36 @@ height: 50vh; */
     top: 2872px;
     text-align: center;
     color: #081429;
+  } 
+  .uper-under-one{
+    width: 86px;
+    height: 12px;
+    margin-top: -32px;
+    margin-left: 11rem;
+    /* top: 2872px; */
+    text-align: center;
+    color: #081429;
+  }
+  .not-show{
+    display: none;
+  }
+    @media (min-width: 10px) and (max-width: 576px) {
+.not-show{
+  display: inline-block;
+}
+span{
+  font-size: 18px;
+  font-weight: 500;
+  padding: 12px;
+  line-height: 40px;
+}
+ /* .not-show{
+    display: none;
+  } */
+.big-screen{
+  display: none;
+}
+
   }
 
   /* .......image...second---paGE................... */
@@ -340,7 +390,7 @@ height: 50vh; */
   .form {
     display: flex;
     justify-content: space-evenly;
-    margin-bottom: 12px;
+   
   }
   .submited {
     padding: 12px 29px;
@@ -403,15 +453,82 @@ height: 50vh; */
   .second-p-tag {
     font-weight: 500;
     font-size: 15px;
+    line-height: 30px;
+  }
+  
+  @media (min-width: 1200px) and (max-width: 1350px) {
+    .second-p-tag {
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 26px;
+  }
+  
+  
+  }
+    
+  @media (min-width: 990px) and (max-width: 1200px) {
+    .second-p-tag {
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 18px;
+  }
+  
+  
   }
   .hiring-tag{
     padding-top: 7rem;
   }
-  @media (min-width: 250px) and (max-width: 768px) {
-    .null {
-      display: none;
-    }
+  @media (min-width: 446px) and (max-width: 485px) {
+  .Benefits{
+    font-size: 31px;
+    margin-top: 2rem;
   }
+  }
+
+  @media (min-width: 400px) and (max-width: 473px) {
+  .Benefits{
+    font-size: 24px;
+    margin-top: 2rem;
+  }
+  }
+  @media (min-width: 400px) and (max-width: 446px) {
+  .Benefits{
+    font-size: 24px;
+    margin-top: 2rem;
+    text-align: center;
+  }
+  }
+  @media (min-width: 350px) and (max-width: 400px) {
+  .Benefits{
+    margin-top: 2rem;
+    font-size: 21px;
+  
+  }
+  .uper-under-line {
+    width: 226px;
+    height: 12px;
+    margin-top: -32px;
+    margin-left: 5rem;
+    top: 2872px;
+    text-align: center;
+    color: #081429;
+  }}
+  @media (min-width: 300px) and (max-width: 350px) {
+  .Benefits{
+    font-size: 20px;
+  
+  }
+  .uper-under-line {
+    width: 226px;
+    height: 12px;
+    margin-top: -32px;
+    margin-left: 2rem;
+    top: 2872px;
+    text-align: center;
+    color: #081429;
+  }
+
+}
   @media (min-width: 250px) and (max-width: 990px) {
     .benefit-image{
       padding: 0;
@@ -450,7 +567,7 @@ height: 50vh; */
 // ...................worked...................
 export const Header = styled.div`
   left: 0px;
-  top: 98px;
+  top: 80px;
   position: relative;
 
   background: #efce1e;
@@ -497,7 +614,7 @@ export const Header = styled.div`
     top: 4rem;
     right: 11rem;
   }
-  @media (min-width: 769px) and (max-width: 1024px) {
+  @media (min-width: 769px) and (max-width: 1023px) {
     display: none;
   }
   @media (min-width: 250px) and (max-width: 768px) {
@@ -684,22 +801,30 @@ export const SmallHeader = styled.div`
   /* margin-top: 12rem; */
   text-align: center;
   display: none;
-.small-img{
+  margin-top: 5rem;
+/* .small-img{
   background-image: url("assets/images/banner-param.png");
   background-size: contain;
   background-repeat: no-repeat;
   width: 100%;
-  background-position: center;}
+  background-position: center;} */
   .banner-image {
     width: 100%;
   }
+  .small-img{
+    position: absolute;
+    
+  }
+  .ball-sm-page {
+      position: relative;
+      top: 4rem;
+      padding-top: 3rem;
+    }
   @media (min-width: 250px) and (max-width: 768px) {
     display: block;
   }
-  @media (min-width: 769px) and (max-width: 1024px) {
+  @media (min-width: 769px) and (max-width: 1023px) {
     display: block;
-    .ball-sm-page {
-      text-align: center;
-    }
+   
   }
 `;

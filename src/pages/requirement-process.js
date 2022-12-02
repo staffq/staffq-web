@@ -1,11 +1,11 @@
 import React from 'react'
-import Cvapply from './HomePage/CvApply'
+import RequirementProcess from './RequirementProcess'
 
 const index = () => {
   return (
     <div>
 
-        <Cvapply/>
+        <RequirementProcess/>
     </div>
   )
 }

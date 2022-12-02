@@ -157,9 +157,9 @@ export const Div = styled.div`
     width: 155px;
     margin-top: -44px;
   }
-  .maxium {
+  /* .maxium {
     max-height: 53vh;
-  }
+  } */
 
   .small-logo-section {
     display: flex;
@@ -226,9 +226,10 @@ export const Div = styled.div`
       /* display: none; */
     }
     .code-line {
-      margin-left: 9rem;
-      width: 87px;
-      margin-top: -135px;
+      margin-left: 1rem;
+    width: 87px;
+    margin-top: -40px;
+    position: absolute;
     }
     .small-logo-section {
       margin-top: 1rem;

@@ -8,7 +8,7 @@ const Footer = () => {
   return (
     <>
       <Foot>
-        <div className="mt-5">
+        <div className="">
           <div className="container-fluid p-0 ">
             <section>
               <div className="container ">
@@ -35,14 +35,24 @@ const Footer = () => {
                         <span className="">Permanent Deployment</span>
                         </Link>
                         <br></br>
+                        <Link href="contract-recruitment">
                         <span>Contract to Hire</span>
+                        </Link>
                         <br></br>
+                        <Link href="payroll-services">
                         <span> Payroll Services</span>
+                        </Link>
                         <br></br>
-                        <span> Passthrough services</span> <br></br>
+                        <Link href="requirement-process">
+                        <span> Passthrough services</span> 
+                        </Link><br></br>
+                        <Link href="offshore-recruitment">
                         <span>Offshore Recruitment Services</span>
+                        </Link>
                         <br></br>
+                        <Link href="onshore-recruitment">
                         <span>Onshore Recruitment Services</span>
+                        </Link>
                       </div>
                     </div>
                   </div>
@@ -135,7 +145,7 @@ const Footer = () => {
       </Foot>
 
       <SmFoot>
-        <div className="container mt-5 small-content">
+        <div className="container  small-content">
           <div className="paddingtwoSide">
             <div>
               <div>

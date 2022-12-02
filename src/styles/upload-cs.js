@@ -12,6 +12,7 @@ export const Div = styled.div`
     z-index: -99;
 
   } */
+  margin-bottom: 6rem;
 
   .background {
     position: relative;
@@ -69,8 +70,15 @@ export const Div = styled.div`
     padding-top: 1rem;
     padding: 0px;
   }
+  .nav{
+    font-size: 14px;
+    font-weight: 500;
+    cursor: pointer;
+    }
+  
   .nav-item {
     /* padding-left: 20px; */
+    margin-left: 12px;
   }
   .one {
     padding-left: 17px;

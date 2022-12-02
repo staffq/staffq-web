@@ -202,6 +202,7 @@ export const SmallHeader = styled.div`
     width: 100%;
     height: auto;
     padding-top: 5rem;
+    margin-top: 5rem;
     .background-image{
   
   }

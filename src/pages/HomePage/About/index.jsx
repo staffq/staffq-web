@@ -21,7 +21,7 @@ const About = () => {
             <div className="row mt-5">
               <div className="col-lg-5 col-md-12 col-sm-12 medium-one">
                 <div className="aboutImage">
-                  <img src="assets/images/about-img.webp" width="100%" alt="img" />
+                  <img src="assets/images/about-img.webp" width="100%" alt="img" /><br></br>
                   <br></br> 
                 </div>
               </div>

@@ -163,6 +163,9 @@ export const Second = styled.div`
     text-align: center;
     margin-right: 2rem;
   }
+  .roww{
+    margin-bottom: 4rem;
+  }
   .display {
     display: flex;
     flex-direction: row;
@@ -222,10 +225,13 @@ color: #050C18 !important;
 
   @media (min-width: 250px) and (max-width: 580px) {
     .map-image {
-    width: 125px;
+    width: 251px;
     margin-top: 25px;
     margin-left: 0;
   }
+  .h-one{
+      font-size: 41px;
+    }
   }
 
   @media (min-width: 1000px) and (max-width: 1300px) {

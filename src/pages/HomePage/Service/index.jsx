@@ -3,6 +3,7 @@ import { ServiceBg, Medium } from "../../../styles/service-style";
 
 import { BsArrowRight } from "react-icons/bs";
 import { Card } from "../../../components/Card/style";
+import Link from "next/link";
 const Service = () => {
   return (
     <>
@@ -50,13 +51,16 @@ const Service = () => {
                           Permanent staffing is attaining <br></br> great 
                           importance in the human ....
                         </p>
+                        <Link href="paramanent-deployment">
                         <span className="learnmore">
-                          Learn more{" "}
+                     
+                          Learn more{" "} 
                           <BsArrowRight className="fs-3  LeftArrow " />
                           <div className="VectorImage">
                             <img src="assets/images/VectorImage.svg"  alt="img"/>
                           </div>
                         </span>
+                        </Link>
                       </Card>
                     </div>
                   </div>
@@ -73,14 +77,15 @@ const Service = () => {
                         <p className="mb-0">
                           {" "}
                           StaffQ Consultancy Services<br></br> involves contract-to-hire staffing ...
-                        </p>
+                        </p> 
+                        <Link href="contract-recruitment">
                         <span className="learnmore">
                           Learn more{" "}
                           <BsArrowRight className="fs-3  LeftArrow " />
                           <div className="VectorImage">
                             <img src="assets/images/VectorImage.svg" alt="img"/>
                           </div>
-                        </span>
+                        </span></Link>
                       </Card>
                     </div>
                   </div>
@@ -150,6 +155,7 @@ const Service = () => {
                           {" "}
                           Onsite recruitment is a process<br></br>of meeting your Specific  bulk ...
                         </p>
+                        <Link href="offshore-recruitment">
                         <span className="learnmore">
                           Learn more{" "}
                           <BsArrowRight className="fs-3  LeftArrow " />
@@ -157,6 +163,7 @@ const Service = () => {
                             <img src="assets/images/VectorImage.svg" alt="img"/>
                           </div>
                         </span>
+                        </Link>
                       </Card>
                     </div>
                   </div>
