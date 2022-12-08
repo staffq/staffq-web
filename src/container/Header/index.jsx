@@ -73,13 +73,13 @@ const Header = () => {
             </Link>
             <div className="d-grid">
               <ul className="navbar-nav mr-auto mt-2  mt-lg-0">
-                {/* <li className="nav-item active ">
-                  <Hover className="">
+                <li className="nav-item active  ">
+                  <Hover className=" onee">
                     <Link href="">
                       <p className="mb-0 act ">Service</p>
                     </Link>
                   </Hover>
-                </li> */}
+                </li>
 
                 {/* <li className="nav-item ">
                   <Hover>
@@ -88,7 +88,7 @@ const Header = () => {
                     </Link>
                   </Hover>
                 </li> */}
-                <li className="nav-item ">
+                <li className="nav-item">
                   <Hover>
                     <Link href="/about-us">
                       <p className="mb-0">About Us</p>

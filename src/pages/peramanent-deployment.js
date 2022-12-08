@@ -1,10 +1,11 @@
 import React from "react";
-import ParmanentDeployment from "./ParmanentDeployment";
+import PeramanentDeployment from "./PermanentDeployment";
+
 
 const index = () => {
   return (
     <div>
-      <ParmanentDeployment />
+    <PeramanentDeployment/>
     </div>
   );
 };

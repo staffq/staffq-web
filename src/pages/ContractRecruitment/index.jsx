@@ -1,7 +1,7 @@
 import React from "react";
 // import { Div , Header, SmallHeader } from '../../styles/ContractRecruitment'
 
-import { Worked, Header, Image, SmallHeader } from "../../styles/workstyle";
+import { Worked, Header, Image, SmallHeader } from "../../styles/contract";
 const ContractRecruitment = () => {
   return (
     <Worked>
@@ -364,7 +364,7 @@ const ContractRecruitment = () => {
                 <div className="col-lg-3 col-sm-12 ">
                   <div>
                     <img
-                      src="assets/images/under-imgaess.svg"
+                      src="assets/images/contract.img.png"
                       className="round-img"
                       alt="img"
                     />
@@ -374,7 +374,7 @@ const ContractRecruitment = () => {
                 <div className="col-lg-3 col-sm-12 ">
                   <div>
                     <img
-                      src="assets/images/under-imgaess.svg"
+                      src="assets/images/inteview.img.png"
                       className="round-img"
                       alt="img"
                     />
@@ -388,7 +388,7 @@ const ContractRecruitment = () => {
                 <div className="row">
                   <div className="col-lg-2">
                     <h6>
-                      Requirment <br></br>
+                      Requirement <br></br>
                       Gathering
                     </h6>
                   </div>
@@ -398,20 +398,17 @@ const ContractRecruitment = () => {
                     </div>
                     <div className="uder-cover-img">
                       <img
-                        src="assets/images/under-imgaess.svg "
+                        src="assets/images/rqt.img.png "
                         className="round-img"
                         alt="img"
                       />
-                      <h5>
-                        Requirment <br></br>
-                        Discussion
-                      </h5>
+                      <h5> Requirement Discussion</h5>
                     </div>
                   </div>
                   <div className="col-lg-2">
                     <h6>
-                      Internal <br></br>
-                      Interview
+                      Internal Interview <br></br>
+                      
                     </h6>
                   </div>
                   <div className="col-lg-2 second-imgaes-content">
@@ -420,19 +417,16 @@ const ContractRecruitment = () => {
                     </div>
                     <div className="uder-cover-img">
                       <img
-                        src="assets/images/under-imgaess.svg "
+                        src="assets/images/contact-img.png "
                         className="round-img"
                         alt="img"
                       />
-                      <h5>
-                        Client <br></br>
-                        Interview
-                      </h5>
+                      <h5>Client Interview</h5>
                     </div>
                   </div>
                   <div className="col-lg-2">
                     <h6>
-                      Contract <br></br>
+                      Contracrt<br></br>
                       Signing
                     </h6>
                   </div>
@@ -442,7 +436,7 @@ const ContractRecruitment = () => {
                     </div>
                     <div className="uder-cover-img last-pic">
                       <img
-                        src="assets/images/under-imgaess.svg "
+                        src="assets/images/get-img.svg "
                         className="round-img"
                         alt="img"
                       />
@@ -468,7 +462,7 @@ const ContractRecruitment = () => {
               </div>
               <div
                 className="col-lg-6 col-sm-12 col-md-12 big-screen "
-                style={{ paddingTop: "5rem" }}
+                style={{ }}
               >
                 <div className="container">
                   <h4 className="Benefits ">Benefits of Contract Staffing</h4>
@@ -601,7 +595,7 @@ const ContractRecruitment = () => {
                     <img src="assets/images/right-icons.svg"></img>
                   </span>
                   <span>Contract staffing services are cost-effective</span>
-                  <p></p>
+                  
                   <br></br>
                   <span>
                     <img src="assets/images/right-icons.svg"></img>
@@ -610,22 +604,22 @@ const ContractRecruitment = () => {
                     Contract staffing services limit the Business Liability and
                     Risk
                   </span>
-                  <br></br> <br></br>
+                  <br></br> 
                   <span>
                     <img src="assets/images/right-icons.svg"></img>
                   </span>
                   <span>Access to a larger talent pool</span>
-                  <br></br> <br></br>
+                  <br></br> 
                   <span>
                     <img src="assets/images/right-icons.svg"></img>
                   </span>
                   <span>Access to specialized skills</span>
-                  <br></br> <br></br>
+                  <br></br> 
                   <span>
                     <img src="assets/images/right-icons.svg"></img>
                   </span>
                   <span>Access to a larger talent pool</span>
-                  <br></br> <br></br>
+                  <br></br> 
                   <span>
                     <img src="assets/images/right-icons.svg"></img>
                   </span>

@@ -138,9 +138,7 @@ export const ServiceBg = styled.div`
   .learnmore:hover {
     font-weight: bold;
   }
-  .lear {
-    font-weight: bold;
-  }
+
   .VectorImage-one {
     margin-top: -19px;
   }
@@ -174,9 +172,10 @@ export const ServiceBg = styled.div`
   }
 `;
 export const cardhead = styled.div`
+
   background: red;
   width: 250px;
-  height: auto;
+  height: 153px;
 `;
 
 export const Medium = styled.div`

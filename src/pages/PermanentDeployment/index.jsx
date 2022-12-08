@@ -1,7 +1,7 @@
 import React from "react";
 
 import { Worked, Header, Image, SmallHeader } from "../../styles/workstyle";
-const ParamanentDeployment = () => (
+const PeramanentDeployment = () => (
   <>
     <Worked>
       {/* ........................................header............section................. */}
@@ -371,7 +371,7 @@ const ParamanentDeployment = () => (
                 <div className="col-lg-3 col-sm-12 ">
                   <div>
                     <img
-                      src="assets/images/under-imgaess.svg"
+                      src="assets/images/contract.img.png"
                       className="round-img"
                       alt="img"
                     />
@@ -381,7 +381,7 @@ const ParamanentDeployment = () => (
                 <div className="col-lg-3 col-sm-12 ">
                   <div>
                     <img
-                      src="assets/images/under-imgaess.svg"
+                      src="assets/images/inteview.img.png"
                       className="round-img"
                       alt="img"
                     />
@@ -395,7 +395,7 @@ const ParamanentDeployment = () => (
                 <div className="row">
                   <div className="col-lg-2">
                     <h6>
-                      Requirment <br></br>
+                      Requirement <br></br>
                       Gathering
                     </h6>
                   </div>
@@ -405,11 +405,11 @@ const ParamanentDeployment = () => (
                     </div>
                     <div className="uder-cover-img">
                       <img
-                        src="assets/images/under-imgaess.svg "
+                        src="assets/images/rqt.img.png "
                         className="round-img"
                         alt="img"
                       />
-                      <h5> Requirment Discussion</h5>
+                      <h5> Requirement Discussion</h5>
                     </div>
                   </div>
                   <div className="col-lg-2">
@@ -424,7 +424,7 @@ const ParamanentDeployment = () => (
                     </div>
                     <div className="uder-cover-img">
                       <img
-                        src="assets/images/under-imgaess.svg "
+                        src="assets/images/contact-img.png "
                         className="round-img"
                         alt="img"
                       />
@@ -443,7 +443,7 @@ const ParamanentDeployment = () => (
                     </div>
                     <div className="uder-cover-img last-pic">
                       <img
-                        src="assets/images/under-imgaess.svg "
+                        src="assets/images/get-img.svg "
                         className="round-img"
                         alt="img"
                       />
@@ -728,4 +728,4 @@ const ParamanentDeployment = () => (
   </>
 );
 
-export default ParamanentDeployment;
+export default PeramanentDeployment;

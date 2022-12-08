@@ -1,5 +1,5 @@
 import React from "react";
-import { Worked, Header, Image, SmallHeader } from "../../styles/workstyle";
+import { Worked, Header, Image, SmallHeader } from "../../styles/rpo";
 const RequirementProcess = () => {
   return (
     <div>
@@ -17,9 +17,10 @@ const RequirementProcess = () => {
                       alt="img"
                     />
                     <div className="ball-one-page">
-                      <span className="header-h-one">Recruitment Process</span><br></br>
+                      <span className="header-h-one">Recruitment Process</span>
+                      <br></br>
                       <span className="header-h-one">Outsourcing</span>
-                   
+
                       <p>
                         Our recruitment process outsourcing (RPO) is all about
                         finding the right people to realize your organization's
@@ -158,12 +159,12 @@ const RequirementProcess = () => {
         <div>
           <section className="Hiring-Process container-fluid">
             <div className="container pt-4 text-center">
-              <h2 style={{ fontWeight: "600" }}>
-                So what should have been the correct move in the first place?
-              </h2>
+              <h2 style={{ fontWeight: "600" }}>Why Companies Need RPO?</h2>
               <p style={{ fontSize: "15px" }}>
-                These companies should have approached good agencies that
-                provide permanent staffing solutions.
+                Now the companies’ growth engaged with the IT or Non-IT
+                products/services have been <br></br>
+                very fast and for that RPO is a very beneficial service in
+                several ways.
               </p>
             </div>
             <div className="container">
@@ -182,22 +183,29 @@ const RequirementProcess = () => {
                             Solution
                           </h2>
                         </div>
-                        <p className="solution-p-tag">
+
+                        <li className="solution-p-tag">
                           It fragmented the work and task to be distributed
                           among different expertise helping the employer company
-                          to concentrate on its core capabilities. In StaffQ RPO
-                          services offer an expertise, service by choosing the
-                          right personnel at the right place. Our RPO team helps
-                          the employer for not only sourcing the talented
-                          employees, but also they put the right person in the
-                          right place. An organization that launches a new
-                          product or acquires a new division, it requires to add
-                          hundreds of employees on an impossible schedule. Lift
-                          up and deploying an in-house HR team may be impossible
-                          in the time available. StaffQ provides RPO as a
+                          to concentrate on its core capabilities
+                        </li>
+                        <li className="solution-p-tag">
+                          in StaffQ RPO services offer an expertise, service by
+                          choosing the right personnel at the right place. Our
+                          RPO team helps the employer for not only sourcing the
+                          talented employees, but also they put the right person
+                          in the right place.
+                        </li>
+                        <li className="solution-p-tag">
+                          {" "}
+                          An organization that launches a new product or
+                          acquires a new division, it requires to add hundreds
+                          of employees on an impossible schedule. Lift up and
+                          deploying an in-house HR team may be impossible in the
+                          time available. StaffQ provides RPO as a
                           cost-effective solution - which then comes down
                           smoothly when the project is complete
-                        </p>
+                        </li>
                       </div>
                     </div>
                   </div>
@@ -361,7 +369,7 @@ const RequirementProcess = () => {
                   <div className="col-lg-3 col-sm-12 ">
                     <div>
                       <img
-                        src="assets/images/under-imgaess.svg"
+                        src="assets/images/contract.img.png"
                         className="round-img"
                         alt="img"
                       />
@@ -371,7 +379,7 @@ const RequirementProcess = () => {
                   <div className="col-lg-3 col-sm-12 ">
                     <div>
                       <img
-                        src="assets/images/under-imgaess.svg"
+                        src="assets/images/inteview.img.png"
                         className="round-img"
                         alt="img"
                       />
@@ -385,7 +393,7 @@ const RequirementProcess = () => {
                   <div className="row">
                     <div className="col-lg-2">
                       <h6>
-                        Requirment <br></br>
+                        Requirement <br></br>
                         Gathering
                       </h6>
                     </div>
@@ -395,17 +403,17 @@ const RequirementProcess = () => {
                       </div>
                       <div className="uder-cover-img">
                         <img
-                          src="assets/images/under-imgaess.svg "
+                          src="assets/images/rqt.img.png "
                           className="round-img"
                           alt="img"
                         />
-                        <h5> Requirment Planning</h5>
+                        <h5> Requirement Discussion</h5>
                       </div>
                     </div>
                     <div className="col-lg-2">
                       <h6>
-                        Contract <br></br>
-                        Signing
+                        Plan <br></br>
+                        Derivation
                       </h6>
                     </div>
                     <div className="col-lg-2 second-imgaes-content">
@@ -414,17 +422,17 @@ const RequirementProcess = () => {
                       </div>
                       <div className="uder-cover-img">
                         <img
-                          src="assets/images/under-imgaess.svg "
+                          src="assets/images/contact-img.png "
                           className="round-img"
                           alt="img"
                         />
-                        <h5> Choice Of Actions</h5>
+                        <h5>Choice Of Actions</h5>
                       </div>
                     </div>
                     <div className="col-lg-2">
                       <h6>
-                        Panel<br></br>
-                        Interview
+                        Finalization <br></br>
+                        Of Contract
                       </h6>
                     </div>
                     <div className="col-lg-2 second-imgaes-content">
@@ -433,11 +441,11 @@ const RequirementProcess = () => {
                       </div>
                       <div className="uder-cover-img last-pic">
                         <img
-                          src="assets/images/under-imgaess.svg "
+                          src="assets/images/get-img.svg "
                           className="round-img"
                           alt="img"
                         />
-                        <h5>Closure</h5>
+                        <h5>Implimentation</h5>
                       </div>
                     </div>
                   </div>
@@ -459,7 +467,7 @@ const RequirementProcess = () => {
                 </div>
                 <div
                   className="col-lg-4 col-sm-12 col-md-12 big-screen "
-                  style={{ paddingTop: "5rem" }}
+                  style={{ paddingTop: "3rem" }}
                 >
                   <div className="container">
                     <h4 className="Benefits ">Benefits of RPO</h4>
@@ -598,11 +606,15 @@ const RequirementProcess = () => {
                   details.<br></br>
                   Connect with us.
                 </p>
+                <p className="Our-team-one">
+                  Our team of experts will connect with you with more elaberate
+                  details. Connect with us.
+                </p>
               </div>
               <div className="form container">
                 <form>
                   <div className="form-group mt-2">
-                    <label for="exampleInputEmail1">Name</label>
+                    <label for="exampleInputEmail1">Name*</label>
                     <br></br>
                     <input
                       type="text"
@@ -612,7 +624,7 @@ const RequirementProcess = () => {
                     />
                   </div>
                   <div className="form-group ">
-                    <label for="exampleInputEmail1">Phone Number</label>
+                    <label for="exampleInputEmail1">Phone Number*</label>
                     <input
                       type="text"
                       className="form-control"

@@ -21,16 +21,18 @@ const Service = () => {
                       to companies in various Domain.
                     </p>
                     <p className="sm-scrren-p-tag mb-0">
-                    StaffQ Consultancy is known for its IT and Non-IT recruits{" "}
+                      StaffQ Consultancy is known for its IT and Non-IT recruits{" "}
                       <br></br>
-                      to companies in various Domain.</p>
+                      to companies in various Domain.
+                    </p>
                   </div>
                   <div className="serviceImage">
                     <img
                       src="assets/images/Woman-picture.webp"
                       width="100%"
                       className="service-img-one"
-                      alt="img"/>
+                      alt="img"
+                    />
                   </div>
                 </div>
               </div>
@@ -45,22 +47,29 @@ const Service = () => {
                         className="sriram"
                         style={{ paddingBottom: "8px" }}
                       >
-                        <p className="h-five">Permanent Deployment</p>
-                        <p className="mb-0">
-                          {" "}
-                          Permanent staffing is attaining <br></br> great 
-                          importance in the human ....
-                        </p>
-                        <Link href="paramanent-deployment">
-                        <span className="learnmore">
-                     
-                          Learn more{" "} 
-                          <BsArrowRight className="fs-3  LeftArrow " />
-                          <div className="VectorImage">
-                            <img src="assets/images/VectorImage.svg"  alt="img"/>
+                        <div>
+                          <p className="h-five">Permanent Deployment</p>
+                          <p className="mb-0">
+                            {" "}
+                            Permanent staffing is attaining <br></br> great
+                            importance in the human ....
+                          </p>
+
+                          <div>
+                            <Link href="paramanent-deployment">
+                              <span className="learnmore">
+                                Learn more{" "}
+                                <BsArrowRight className="fs-3  LeftArrow " />
+                                <div className="VectorImage">
+                                  <img
+                                    src="assets/images/VectorImage.svg"
+                                    alt="img"
+                                  />
+                                </div>
+                              </span>
+                            </Link>
                           </div>
-                        </span>
-                        </Link>
+                        </div>
                       </Card>
                     </div>
                   </div>
@@ -76,16 +85,21 @@ const Service = () => {
                         <p className="h-five">Contract to Hire</p>
                         <p className="mb-0">
                           {" "}
-                          StaffQ Consultancy Services<br></br> involves contract-to-hire staffing ...
-                        </p> 
+                          StaffQ Consultancy Services<br></br> involves
+                          contract-to-hire staffing ...
+                        </p>
                         <Link href="contract-recruitment">
-                        <span className="learnmore">
-                          Learn more{" "}
-                          <BsArrowRight className="fs-3  LeftArrow " />
-                          <div className="VectorImage">
-                            <img src="assets/images/VectorImage.svg" alt="img"/>
-                          </div>
-                        </span></Link>
+                          <span className="learnmore">
+                            Learn more{" "}
+                            <BsArrowRight className="fs-3  LeftArrow " />
+                            <div className="VectorImage">
+                              <img
+                                src="assets/images/VectorImage.svg"
+                                alt="img"
+                              />
+                            </div>
+                          </span>
+                        </Link>
                       </Card>
                     </div>
                   </div>
@@ -103,12 +117,13 @@ const Service = () => {
                       <p className="h-five">Payroll Services</p>
                       <p className="mb-0">
                         {" "}
-                        Payroll outsourcing is the act of <br></br>  delegating payroll administration ...
+                        Payroll outsourcing is the act of <br></br> delegating
+                        payroll administration ...
                       </p>
                       <span className="learnmore">
                         Learn more <BsArrowRight className="fs-3  LeftArrow " />
                         <div className="VectorImage">
-                          <img src="assets/images/VectorImage.svg" alt="img"/>
+                          <img src="assets/images/VectorImage.svg" alt="img" />
                         </div>
                       </span>
                     </Card>
@@ -127,14 +142,17 @@ const Service = () => {
                         <p className="h-five">Passthrough services </p>
                         <p className="mb-0">
                           {" "}
-                       
-                          We take care of the Entire or part <br></br> of recruitment activities...
+                          We take care of the Entire or part <br></br> of
+                          recruitment activities...
                         </p>
                         <span className="learnmore">
                           Learn more{" "}
                           <BsArrowRight className="fs-3 LeftArrow " />
                           <div className="VectorImage">
-                            <img src="assets/images/VectorImage.svg" alt="img"/>
+                            <img
+                              src="assets/images/VectorImage.svg"
+                              alt="img"
+                            />
                           </div>
                         </span>
                       </Card>
@@ -148,21 +166,24 @@ const Service = () => {
                         style={{ paddingBottom: "8px" }}
                         backgroundColor="#FFFFFF"
                         border-radius="10px"
-                      
                       >
                         <p className="h-five">Offshore Recruitment</p>
                         <p className="mb-0">
                           {" "}
-                          Onsite recruitment is a process<br></br>of meeting your Specific  bulk ...
+                          Onsite recruitment is a process<br></br>of meeting
+                          your Specific bulk ...
                         </p>
                         <Link href="offshore-recruitment">
-                        <span className="learnmore">
-                          Learn more{" "}
-                          <BsArrowRight className="fs-3  LeftArrow " />
-                          <div className="VectorImage">
-                            <img src="assets/images/VectorImage.svg" alt="img"/>
-                          </div>
-                        </span>
+                          <span className="learnmore">
+                            Learn more{" "}
+                            <BsArrowRight className="fs-3  LeftArrow " />
+                            <div className="VectorImage">
+                              <img
+                                src="assets/images/VectorImage.svg"
+                                alt="img"
+                              />
+                            </div>
+                          </span>
                         </Link>
                       </Card>
                     </div>
@@ -171,7 +192,6 @@ const Service = () => {
               </div>
             </div>
           </div>
-       
         </section>
       </ServiceBg>
 
@@ -182,17 +202,17 @@ const Service = () => {
               <p className="pt-3 service-we">Services we offer</p>
 
               <p className="sm-scrren-p-tag mb-0 pt-1">
-              StaffQ Consultancy is known for its IT and Non-IT recruits{" "}
-                     
-                      to companies in various Domain.
+                StaffQ Consultancy is known for its IT and Non-IT recruits to
+                companies in various Domain.
               </p>
             </div>
             <div className="serviceImage">
-            <img
-                      src="assets/images/Woman-picture.webp"
-                      width="100%"
-                      className="service-img-one"
-                      alt="img"/>
+              <img
+                src="assets/images/Woman-picture.webp"
+                width="100%"
+                className="service-img-one"
+                alt="img"
+              />
             </div>
             <div>
               <div className="one">
@@ -206,13 +226,13 @@ const Service = () => {
                   <p className="h-five">Permanent Deployment</p>
                   <p className="mb-0">
                     {" "}
-                    Permanent staffing is attaining <br></br> great 
-                          importance in the human ....
+                    Permanent staffing is attaining <br></br> great importance
+                    in the human ....
                   </p>
                   <span className="learnmore">
                     Learn more <BsArrowRight className="fs-3  LeftArrow " />
                     <div className="VectorImage">
-                      <img src="assets/images/VectorImage.svg"  alt="img"/>
+                      <img src="assets/images/VectorImage.svg" alt="img" />
                     </div>
                   </span>
                 </Card>
@@ -226,12 +246,13 @@ const Service = () => {
                   <p className="h-five">Contract to Hire</p>
                   <p className="mb-0">
                     {" "}
-                    StaffQ Consultancy Services<br></br> involves contract-to-hire staffing ...
+                    StaffQ Consultancy Services<br></br> involves
+                    contract-to-hire staffing ...
                   </p>
                   <span className="learnmore">
                     Learn more <BsArrowRight className="fs-3  LeftArrow " />
                     <div className="VectorImage">
-                      <img src="assets/images/VectorImage.svg"  alt="img"/>
+                      <img src="assets/images/VectorImage.svg" alt="img" />
                     </div>
                   </span>
                 </Card>
@@ -247,12 +268,13 @@ const Service = () => {
                   <p className="h-five">Payroll Services</p>
                   <p className="mb-0">
                     {" "}
-                    Payroll outsourcing is the act of <br></br>  delegating payroll administration ...
+                    Payroll outsourcing is the act of <br></br> delegating
+                    payroll administration ...
                   </p>
                   <span className="learnmore">
                     Learn more <BsArrowRight className="fs-3  LeftArrow " />
                     <div className="VectorImage">
-                      <img src="assets/images/VectorImage.svg" alt="img"/>
+                      <img src="assets/images/VectorImage.svg" alt="img" />
                     </div>
                   </span>
                 </Card>
@@ -268,13 +290,13 @@ const Service = () => {
                   <p className="h-five">Passthrough services</p>
                   <p className="mb-0">
                     {" "}
-                    
-                    We take care of the Entire or part <br></br> of recruitment activities...
+                    We take care of the Entire or part <br></br> of recruitment
+                    activities...
                   </p>
                   <span className="learnmore">
                     Learn more <BsArrowRight className="fs-3  LeftArrow " />
                     <div className="VectorImage">
-                      <img src="assets/images/VectorImage.svg"  alt="img"/>
+                      <img src="assets/images/VectorImage.svg" alt="img" />
                     </div>
                   </span>
                 </Card>
@@ -288,12 +310,13 @@ const Service = () => {
                   <p className="h-five">Offshore Recruitment</p>
                   <p className="mb-0">
                     {" "}
-                    Onsite recruitment is a process<br></br>of meeting your Specific  bulk ...
+                    Onsite recruitment is a process<br></br>of meeting your
+                    Specific bulk ...
                   </p>
                   <span className="learnmore">
                     Learn more <BsArrowRight className="fs-3  LeftArrow " />
                     <div className="VectorImage">
-                      <img src="assets/images/VectorImage.svg"  alt="img"/>
+                      <img src="assets/images/VectorImage.svg" alt="img" />
                     </div>
                   </span>
                 </Card>

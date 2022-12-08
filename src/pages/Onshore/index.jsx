@@ -1,5 +1,5 @@
 import React from "react";
-import { Worked, Header, Image, SmallHeader } from "../../styles/workstyle";
+import { Worked, Header, Image, SmallHeader } from "../../styles/contract";
 const OnshoreRequriement = () => {
   return (
     <Worked>
@@ -18,10 +18,11 @@ const OnshoreRequriement = () => {
                   <div className="ball-one-page">
                     <h1>Onshore Recruitment</h1>
                     <p>
-                      StaffQ is a contract staffing agency that helps
-                      enterprises and businesses by providing temporary staffing
-                      solutions. We help businesses to build a competent and
-                      effective workforce so they can focus on their core goals.
+                      We provide staff augmentation and fully outsourced IT
+                      managed services teams to help take your business to the
+                      next level. With our deep domain expertise, we are able to
+                      provide tailored solutions that will fit your specific
+                      needs and requirements.
                     </p>
                   </div>
                 </div>
@@ -62,10 +63,11 @@ const OnshoreRequriement = () => {
               <div className="ball-sm-page">
                 <h2>Onshore Recruitment</h2>
                 <p>
-                  StaffQ is a contract staffing agency that helps enterprises
-                  and businesses by providing temporary staffing solutions. We
-                  help businesses to build a competent and effective workforce
-                  so they can focus on their core goals.
+                  We provide staff augmentation and fully outsourced IT managed
+                  services teams to help take your business to the next level.
+                  With our deep domain expertise, we are able to provide
+                  tailored solutions that will fit your specific needs and
+                  requirements.
                 </p>
               </div>
 
@@ -178,15 +180,21 @@ const OnshoreRequriement = () => {
                         <h2 className="whats-happening  Solution">Solution</h2>
                       </div>
                       <p className="solution-p-tag">
-                      StaffQ offers dependable contract staffing solutions that provide you the chance to 
-enhance the strength of your staff without recruiting them permanently, helps overloaded
-workers during crucial times, and keeps work continuing. We have one of the excellent Job
-placement agencies in India, providing permanent service, price-effective, and orderly
-Human Resource administration services to companies that may not have the essential
-support or inclination to accomplish these labour-intensive duties. When you are recruiting
-us as your contract staffing agent, we would work just like your organization’s own human
-resource office. Depending on the requirements of your latest business cycle, our contract
-staffing services will allow your company to staff up or down.
+                        StaffQ offers dependable contract staffing solutions
+                        that provide you the chance to enhance the strength of
+                        your staff without recruiting them permanently, helps
+                        overloaded workers during crucial times, and keeps work
+                        continuing. We have one of the excellent Job placement
+                        agencies in India, providing permanent service,
+                        price-effective, and orderly Human Resource
+                        administration services to companies that may not have
+                        the essential support or inclination to accomplish these
+                        labour-intensive duties. When you are recruiting us as
+                        your contract staffing agent, we would work just like
+                        your organization’s own human resource office. Depending
+                        on the requirements of your latest business cycle, our
+                        contract staffing services will allow your company to
+                        staff up or down.
                       </p>
                     </div>
                   </div>
@@ -219,8 +227,8 @@ staffing services will allow your company to staff up or down.
           </p>
         </div>
       </div>
-            {/* ....medium....... */}
-            <div>
+      {/* ....medium....... */}
+      <div>
         <div className="medium-small-view">
           <div className="container"></div>
 
@@ -351,7 +359,7 @@ staffing services will allow your company to staff up or down.
                 <div className="col-lg-3 col-sm-12 ">
                   <div>
                     <img
-                      src="assets/images/under-imgaess.svg"
+                      src="assets/images/contract.img.png"
                       className="round-img"
                       alt="img"
                     />
@@ -361,7 +369,7 @@ staffing services will allow your company to staff up or down.
                 <div className="col-lg-3 col-sm-12 ">
                   <div>
                     <img
-                      src="assets/images/under-imgaess.svg"
+                      src="assets/images/inteview.img.png"
                       className="round-img"
                       alt="img"
                     />
@@ -375,7 +383,7 @@ staffing services will allow your company to staff up or down.
                 <div className="row">
                   <div className="col-lg-2">
                     <h6>
-                      Requirment <br></br>
+                      Requirement <br></br>
                       Gathering
                     </h6>
                   </div>
@@ -385,17 +393,17 @@ staffing services will allow your company to staff up or down.
                     </div>
                     <div className="uder-cover-img">
                       <img
-                        src="assets/images/under-imgaess.svg "
+                        src="assets/images/rqt.img.png "
                         className="round-img"
                         alt="img"
                       />
-                      <h5> Requirment Planning</h5>
+                      <h5> Requirement Discussion</h5>
                     </div>
                   </div>
                   <div className="col-lg-2">
                     <h6>
-                      Contract <br></br>
-                      Signing
+                     Internal <br></br>
+                      Interview
                     </h6>
                   </div>
                   <div className="col-lg-2 second-imgaes-content">
@@ -404,17 +412,17 @@ staffing services will allow your company to staff up or down.
                     </div>
                     <div className="uder-cover-img">
                       <img
-                        src="assets/images/under-imgaess.svg "
+                        src="assets/images/contact-img.png "
                         className="round-img"
                         alt="img"
                       />
-                      <h5> Choice Of Actions</h5>
+                      <h5>Client Interview</h5>
                     </div>
                   </div>
                   <div className="col-lg-2">
                     <h6>
-                      Panel<br></br>
-                      Interview
+                      Resource<br></br>
+                   Deployment
                     </h6>
                   </div>
                   <div className="col-lg-2 second-imgaes-content">
@@ -423,7 +431,7 @@ staffing services will allow your company to staff up or down.
                     </div>
                     <div className="uder-cover-img last-pic">
                       <img
-                        src="assets/images/under-imgaess.svg "
+                        src="assets/images/get-img.svg "
                         className="round-img"
                         alt="img"
                       />
@@ -442,7 +450,10 @@ staffing services will allow your company to staff up or down.
           <div className="container-fluid ps-0">
             <div className="row ">
               <div className="col-lg-6 col-sm-12 col-md-12 benefit-image">
-                <img src="assets/images/onshore-head.png" className="mission"></img>
+                <img
+                  src="assets/images/onshore-head.png"
+                  className="mission"
+                ></img>
               </div>
               <div
                 className="col-lg-6 col-sm-12 col-md-12 big-screen "
@@ -466,9 +477,8 @@ staffing services will allow your company to staff up or down.
                     </div>
                     <div className="col-lg-11 col-md-11 col-sm-11">
                       <p className="second-p-tag notview">
-                      Contract staffing services are cost-effective
+                        Contract staffing services are cost-effective
                       </p>
-                     
                     </div>
                   </div>
                   <div className="row">
@@ -479,9 +489,9 @@ staffing services will allow your company to staff up or down.
                     </div>
                     <div className="col-lg-11 col-md-11 col-sm-11">
                       <p className="second-p-tag notview">
-                      Contract staffing services limit the Business Liability and Risk
+                        Contract staffing services limit the Business Liability
+                        and Risk
                       </p>
-                     
                     </div>
                   </div>
                   <div className="row">
@@ -492,9 +502,9 @@ staffing services will allow your company to staff up or down.
                     </div>
                     <div className="col-lg-11 col-md-11 col-sm-11">
                       <p className="second-p-tag notview">
-                      Contract staffing services limit the Business Liability and Risk
+                        Contract staffing services limit the Business Liability
+                        and Risk
                       </p>
-                    
                     </div>
                   </div>
                   <div className="row">
@@ -505,9 +515,8 @@ staffing services will allow your company to staff up or down.
                     </div>
                     <div className="col-lg-11 col-md-11 col-sm-11">
                       <p className="second-p-tag notview">
-                      Access to a larger talent pool
+                        Access to a larger talent pool
                       </p>
-                    
                     </div>
                   </div>
                   <div className="row">
@@ -517,11 +526,36 @@ staffing services will allow your company to staff up or down.
                       </div>
                     </div>
                     <div className="col-lg-11 col-md-11 col-sm-11">
-                      <p  className="second-p-tag notview">Access to specialized skills</p>
-                      <p className="small-screen">
+                      <p className="second-p-tag notview">
+                        Access to specialized skills
+                      </p>
+                      <p className="small-screen"> </p>
+                    </div>
+                  </div>
+                  <div className="row">
+                    <div className="col-lg-1 col-sm-1 col-md-1">
+                      <div className="">
+                        <img src="assets/images/right-icons.svg"></img>
+                      </div>
+                    </div>
+                    <div className="col-lg-11 col-md-11 col-sm-11">
+                      <p className="second-p-tag notview">
+                        Take some responsibility off the HR department
+                      </p>
+                    </div>
+                  </div>
+                  <div className="row">
+                    <div className="col-lg-1 col-sm-1 col-md-1">
+                      <div className="">
+                        <img src="assets/images/right-icons.svg"></img>
+                      </div>
+                    </div>
+                    <div className="col-lg-11 col-md-11 col-sm-11">
+                      <p className="second-p-tag notview">
                         {" "}
-                  
+                        Escaping the ACA requirementss
                       </p>
+                      <p className="small-screen"> </p>
                     </div>
                   </div>
                   <div className="row">
@@ -532,44 +566,19 @@ staffing services will allow your company to staff up or down.
                     </div>
                     <div className="col-lg-11 col-md-11 col-sm-11">
                       <p className="second-p-tag notview">
-                      Take some responsibility off the HR department
-                      </p>
-                     
-                    </div>
-                  </div>
-                  <div className="row">
-                    <div className="col-lg-1 col-sm-1 col-md-1">
-                      <div className="">
-                        <img src="assets/images/right-icons.svg"></img>
-                      </div>
-                    </div>
-                    <div className="col-lg-11 col-md-11 col-sm-11">
-                      <p  className="second-p-tag notview">  Escaping the ACA requirementss</p>
-                      <p className="small-screen">
                         {" "}
-                  
+                        Prevent laying off employees
                       </p>
-                    </div>
-                  </div>
-                  <div className="row">
-                    <div className="col-lg-1 col-sm-1 col-md-1">
-                      <div className="">
-                        <img src="assets/images/right-icons.svg"></img>
-                      </div>
-                    </div>
-                    <div className="col-lg-11 col-md-11 col-sm-11">
-                      <p  className="second-p-tag notview">  Prevent laying off employees</p>
-                      <p className="small-screen">
-                        {" "}
-                  
-                      </p>
+                      <p className="small-screen"> </p>
                     </div>
                   </div>
                 </div>
               </div>
               <div className="col-lg-6 col-md-6 col-sm-12 not-show ">
-        <div className="container">
-        <p className="Benefits ms-5 ">Benefits of Contract Staffing</p>
+                <div className="container">
+                  <p className="Benefits ms-5 ">
+                    Benefits of Onshore Staffing
+                  </p>
                   <div className="null">
                     <img
                       src="assets/images/uper-unterline.svg"
@@ -577,65 +586,52 @@ staffing services will allow your company to staff up or down.
                       className="uper-under-line"
                     />
                   </div>
-          <span>
-            <img src="assets/images/right-icons.svg"></img>
-          </span>
-          <span>
-          Contract staffing services are cost-effective
-          </span>
-          <p></p>
-          <br></br>
-          <span>
-            <img src="assets/images/right-icons.svg"></img>
-          </span>
-          <span>
-          Contract staffing services limit the Business Liability and Risk
-          </span>
-          <br></br> <br></br>
-          <span>
-            <img src="assets/images/right-icons.svg"></img>
-          </span>
-          <span>
-          Access to a larger talent pool
-          </span>
-          <br></br> <br></br>
-          <span>
-            <img src="assets/images/right-icons.svg"></img>
-          </span>
-          <span>
-          Access to specialized skills
-          </span>
-          <br></br> <br></br>
-          <span>
-            <img src="assets/images/right-icons.svg"></img>
-          </span>
-          <span>
-          Access to a larger talent pool
-          </span>
-          <br></br> <br></br>
-          <span>
-            <img src="assets/images/right-icons.svg"></img>
-          </span>
-          <span>
-          Fulfill short term business needs
-          </span>
-          <br></br>
-          <span>
-            <img src="assets/images/right-icons.svg"></img>
-          </span>
-          <span>
-          Take some responsibility off the HR department
-          </span>
-          <br></br>
-          <span>
-            <img src="assets/images/right-icons.svg"></img>
-          </span>
-          <span>
-          Prevent laying off employees
-          </span>
-          <br></br>
-        </div>
-      </div>
+                  <span>
+                    <img src="assets/images/right-icons.svg"></img>
+                  </span>
+                  <span>Contract staffing services are cost-effective</span>
+                  <p></p>
+                  <br></br>
+                  <span>
+                    <img src="assets/images/right-icons.svg"></img>
+                  </span>
+                  <span>
+                    Contract staffing services limit the Business Liability and
+                    Risk
+                  </span>
+                  <br></br> <br></br>
+                  <span>
+                    <img src="assets/images/right-icons.svg"></img>
+                  </span>
+                  <span>Access to a larger talent pool</span>
+                  <br></br> <br></br>
+                  <span>
+                    <img src="assets/images/right-icons.svg"></img>
+                  </span>
+                  <span>Access to specialized skills</span>
+                  <br></br> <br></br>
+                  <span>
+                    <img src="assets/images/right-icons.svg"></img>
+                  </span>
+                  <span>Access to a larger talent pool</span>
+                  <br></br> <br></br>
+                  <span>
+                    <img src="assets/images/right-icons.svg"></img>
+                  </span>
+                  <span>Fulfill short term business needs</span>
+                  <br></br>
+                  <span>
+                    <img src="assets/images/right-icons.svg"></img>
+                  </span>
+                  <span>Take some responsibility off the HR department</span>
+                  <br></br>
+                  <span>
+                    <img src="assets/images/right-icons.svg"></img>
+                  </span>
+                  <span>Prevent laying off employees</span>
+                  <br></br>
+                </div>
+              </div>
             </div>
           </div>
         </section>
@@ -651,11 +647,15 @@ staffing services will allow your company to staff up or down.
                 details.<br></br>
                 Connect with us.
               </p>
+              <p className="Our-team-one">
+                Our team of experts will connect with you with more elaberate
+                details. Connect with us.
+              </p>
             </div>
             <div className="form container">
               <form>
                 <div className="form-group mt-2">
-                  <label for="exampleInputEmail1">Name</label>
+                  <label for="exampleInputEmail1">Name*</label>
                   <br></br>
                   <input
                     type="text"
@@ -665,7 +665,7 @@ staffing services will allow your company to staff up or down.
                   />
                 </div>
                 <div className="form-group ">
-                  <label for="exampleInputEmail1">Phone Number</label>
+                  <label for="exampleInputEmail1">Phone Number*</label>
                   <input
                     type="text"
                     className="form-control"

@@ -7,19 +7,28 @@ import {
   SmallContact,
 } from "../../styles/contact-style.js";
 
-
 // import Input from "../../components/FormControls/Input/index.jsx";
 const contact = () => {
   return (
     <div>
       <Head>
-        <title>
-        Contact Us 
-        </title>
-        <meta property="og:image" content="https://www.applogiq.org/assets/images/metaimg.png" />
-        <meta name="linkedin:image" content="https://www.applogiq.org/assets/images/metaimg.png" />
-        <meta name="twitter:image" content="https://www.applogiq.org/assets/images/metaimg.png" />
-        <meta name="instagram:image" content="https://www.applogiq.org/assets/images/metaimg.png" />
+        <title>Contact Us</title>
+        <meta
+          property="og:image"
+          content="https://www.applogiq.org/assets/images/metaimg.png"
+        />
+        <meta
+          name="linkedin:image"
+          content="https://www.applogiq.org/assets/images/metaimg.png"
+        />
+        <meta
+          name="twitter:image"
+          content="https://www.applogiq.org/assets/images/metaimg.png"
+        />
+        <meta
+          name="instagram:image"
+          content="https://www.applogiq.org/assets/images/metaimg.png"
+        />
         <meta
           name="title"
           content="We partner with employers across the globe to provide talent solutions while creating
@@ -30,18 +39,11 @@ const contact = () => {
           content="We partner with employers across the globe to provide talent solutions while creating significant opportunities for job seekers.
            We are dedicated to matching the right person with the right job.."
         />
-        <meta
-          name="keywords"
-          content="Contact Us  "
-        />
+        <meta name="keywords" content="Contact Us  " />
 
         <link rel="canonical" href="https://www.staffq.in/contact-us/" />
 
-        <link
-          rel="alternate"
-          href="https://www.staffq.in/"
-          hreflang="en-in"
-        />
+        <link rel="alternate" href="https://www.staffq.in/" hreflang="en-in" />
 
         <meta property="og:locale" content="en_US" />
         <meta property="og:type" content="website" />
@@ -127,8 +129,6 @@ const contact = () => {
             }`
           }}
         /> */}
-
-
       </Head>
       <ContacttStyle>
         <Second>
@@ -149,8 +149,6 @@ const contact = () => {
                 </div>
               </div>
             </div>
-
-            
           </div>
 
           {/* ........................form section.............................. */}
@@ -240,8 +238,8 @@ const contact = () => {
             <div className="container">
               <h2 className="Our-Branches">Our Branches</h2>
               <div className="row  roww">
-                <div className="col-lg-4 col-sm-12 col-md-6">
-                  <div>
+                <div className="col-lg-4 col-sm-12 col-md-6 ">
+                  <div className="">
                     <div className="display">
                       <div>
                         <img
@@ -252,7 +250,7 @@ const contact = () => {
                       </div>
                       <div className="display-two">
                         <span className="h-one">India</span>
-                  
+
                         <span className="h-one">Tiruppur</span>
                       </div>
                     </div>
@@ -286,7 +284,7 @@ const contact = () => {
                     </div>
                   </div>
                 </div>
-                <div className="col-lg-4 col-sm-12 col-md-6 res-one">
+                <div className="col-lg-4 col-sm-12 col-md-6 res-one ">
                   <div>
                     <div className="display">
                       <div>
@@ -374,8 +372,10 @@ const contact = () => {
                     </div>
                   </div>
                 </div>
-                <div className="col-lg-1"></div>
+                
               </div>
+
+            
             </div>
           </div>
 
@@ -388,18 +388,16 @@ const contact = () => {
                   <div>
                     <div className="">
                       <div className="text-center">
-                        
-                              <img
-                              src="assets/images/india.png"
-                              className="map-image"
-                              alt="img"
-                            />
-                      
-                   
-                      <div className="">
-                        <p className="h-one">India</p>
-                        <p className="h-one">Tiruppur</p>
-                      </div>
+                        <img
+                          src="assets/images/india.png"
+                          className="map-image"
+                          alt="img"
+                        />
+
+                        <div className="">
+                          <p className="h-one">India</p>
+                          <p className="h-one">Tiruppur</p>
+                        </div>
                       </div>
                     </div>
                     <div className="one-two mt-2">

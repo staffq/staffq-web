@@ -31,7 +31,7 @@ const Footer = () => {
                         Our Services
                       </p>
                       <div className="footer-one ">
-                        <Link href="paramanent-deployment">
+                        <Link href="peramanent-deployment">
                         <span className="">Permanent Deployment</span>
                         </Link>
                         <br></br>

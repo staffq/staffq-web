@@ -1,5 +1,5 @@
 import React from "react";
-import { Worked, Header, Image, SmallHeader } from "../../styles/workstyle";
+import { Worked, Header, Image, SmallHeader } from "../../styles/contract";
 const OffshoreRecruitment = () => {
   return (
     <Worked>
@@ -226,7 +226,6 @@ const OffshoreRecruitment = () => {
                     alt="img"
                   />
                   <br></br>
-                 
                 </div>
               </div>
             </div>
@@ -376,7 +375,7 @@ const OffshoreRecruitment = () => {
                 <div className="col-lg-3 col-sm-12 ">
                   <div>
                     <img
-                      src="assets/images/under-imgaess.svg"
+                      src="assets/images/contract.img.png"
                       className="round-img"
                       alt="img"
                     />
@@ -386,7 +385,7 @@ const OffshoreRecruitment = () => {
                 <div className="col-lg-3 col-sm-12 ">
                   <div>
                     <img
-                      src="assets/images/under-imgaess.svg"
+                      src="assets/images/inteview.img.png"
                       className="round-img"
                       alt="img"
                     />
@@ -400,7 +399,7 @@ const OffshoreRecruitment = () => {
                 <div className="row">
                   <div className="col-lg-2">
                     <h6>
-                      Requirment <br></br>
+                      Requirement <br></br>
                       Gathering
                     </h6>
                   </div>
@@ -410,18 +409,17 @@ const OffshoreRecruitment = () => {
                     </div>
                     <div className="uder-cover-img">
                       <img
-                        src="assets/images/under-imgaess.svg "
+                        src="assets/images/rqt.img.png "
                         className="round-img"
                         alt="img"
                       />
-                      <h5> Requirment
-Discussion</h5>
+                      <h5> Requirement Discussion</h5>
                     </div>
                   </div>
                   <div className="col-lg-2">
                     <h6>
-                      Contract <br></br>
-                      Signing
+                      Internal<br></br>
+                     Interview
                     </h6>
                   </div>
                   <div className="col-lg-2 second-imgaes-content">
@@ -430,17 +428,17 @@ Discussion</h5>
                     </div>
                     <div className="uder-cover-img">
                       <img
-                        src="assets/images/under-imgaess.svg "
+                        src="assets/images/contact-img.png "
                         className="round-img"
                         alt="img"
                       />
-                      <h5> Choice Of Actions</h5>
+                      <h5>Client Interview</h5>
                     </div>
                   </div>
                   <div className="col-lg-2">
                     <h6>
-                      Panel<br></br>
-                      Interview
+                      Visa<br></br>
+                      Finalization
                     </h6>
                   </div>
                   <div className="col-lg-2 second-imgaes-content">
@@ -449,7 +447,7 @@ Discussion</h5>
                     </div>
                     <div className="uder-cover-img last-pic">
                       <img
-                        src="assets/images/under-imgaess.svg "
+                        src="assets/images/get-img.svg "
                         className="round-img"
                         alt="img"
                       />
@@ -602,28 +600,28 @@ Discussion</h5>
                     <img src="assets/images/right-icons.svg"></img>
                   </span>
                   <span>Business growth</span>
-                  <p></p>
+                  
                   <br></br>
                   <span>
                     <img src="assets/images/right-icons.svg"></img>
                   </span>
                   <span>Reduced costs</span>
-                  <br></br> <br></br>
+                  <br></br> 
                   <span>
                     <img src="assets/images/right-icons.svg"></img>
                   </span>
                   <span>Access to skilled resources</span>
-                  <br></br> <br></br>
+                  <br></br> 
                   <span>
                     <img src="assets/images/right-icons.svg"></img>
                   </span>
                   <span>Time zone advantage</span>
-                  <br></br> <br></br>
+                  <br></br> 
                   <span>
                     <img src="assets/images/right-icons.svg"></img>
                   </span>
                   <span>Control from miles away</span>
-                  <br></br> <br></br>
+                  <br></br> 
                   <span>
                     <img src="assets/images/right-icons.svg"></img>
                   </span>
@@ -656,11 +654,16 @@ Discussion</h5>
                 details.<br></br>
                 Connect with us.
               </p>
+              <p className="Our-team-one">
+                Our team of experts will connect with you with more elaberate
+                details.
+                Connect with us.
+              </p>
             </div>
             <div className="form container">
               <form>
                 <div className="form-group mt-2">
-                  <label for="exampleInputEmail1">Name</label>
+                  <label for="exampleInputEmail1">Name*</label>
                   <br></br>
                   <input
                     type="text"
@@ -670,7 +673,7 @@ Discussion</h5>
                   />
                 </div>
                 <div className="form-group ">
-                  <label for="exampleInputEmail1">Phone Number</label>
+                  <label for="exampleInputEmail1">Phone Number*</label>
                   <input
                     type="text"
                     className="form-control"

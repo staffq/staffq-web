@@ -1,10 +1,7 @@
 import styled from "styled-components";
 export const Worked = styled.div`
 
-  /* background-color: #EFCE1E;
-width: 100%;
-margin-top: 10%;
-height: 50vh; */
+
 
   .medium-small-view {
     display: none;
@@ -75,49 +72,7 @@ height: 50vh; */
 
     color: rgba(8, 20, 41, 0.6);
   }
-  .second-content {
-    display: flex;
-    flex-direction: row;
-    justify-content: revert;
-    /* margin-top: 50px; */
-    /* margin-left: 2rem; */
-  }
-  .second-two {
-    display: flex;
-    /* margin-left: 2rem; */
-    flex-direction: row;
-    justify-content: revert;
-  }
-  .second-page {
-    display: flex;
-    flex-direction: column;
-  }
-  .img-page-one {
-    height: 451px;
-    background: #f6f6f5;
-    border-radius: 20px;
-  }
-  .sectionTwo {
-    background: #f6f6f5;
-    border-radius: 20px;
-  }
 
-  .img-page-two {
-    margin-left: 54px;
-    margin-top: 20px;
-  }
-  .section-one {
-    margin-left: 40px;
-    width: 100%;
-    padding-top: 37px;
-  }
-  .section-two {
-    margin-left: 10rem;
-    margin-top: 3rem;
-  }
-  .sectionTwo {
-    margin-left: 2rem;
-  }
 
   h1 {
    
@@ -165,6 +120,7 @@ color: #081429;
     font-style: normal;
     font-weight: 500;
     font-size: 16px;
+    color: rgba(8, 20, 41, 0.6);
     line-height: 40px;
     /* or 188% */
   }
@@ -252,7 +208,7 @@ color: #081429;
       font-size: 31px;
       font-weight: 600;
       width: 460px;
-      /* text-align: center; */
+    
     }
   }
 
@@ -290,7 +246,7 @@ color: #081429;
   display: inline-block;
 }
 span{
-  font-size: 18px;
+  font-size: 16px;
   font-weight: 500;
   padding: 12px;
   line-height: 40px;
@@ -306,17 +262,7 @@ span{
 
   /* .......image...second---paGE................... */
 
-  .content-onee {
-    width: 634px;
-    height: 500px;
-
-    border-radius: 20px;
-    background: #f6f6f5;
-  }
-  .content-two {
-    margin-right: 2rem;
-    padding-top: 15px;
-  }
+ 
   /* ......................................next ::selection.................. */
 
   .second-code {
@@ -464,26 +410,28 @@ span{
     font-weight: 500;
     font-size: 15px;
     line-height: 30px;
-   
+   padding: 4px;
     color: #081429;
   }
   
-  @media (min-width: 1200px) and (max-width: 1350px) {
+  @media (min-width: 1100px) and (max-width: 1400px) {
     .second-p-tag {
     font-weight: 500;
     font-size: 15px;
     color: #081429;
+    width: 444px;
     line-height: 26px;
   }
   
   
   }
     
-  @media (min-width: 990px) and (max-width: 1200px) {
+  @media (min-width: 990px) and (max-width: 1100px) {
     .second-p-tag {
     font-weight: 500;
     font-size: 15px;
     color: #081429;
+    width: 444px;
     line-height: 18px;
   }
   
@@ -492,56 +440,70 @@ span{
   .hiring-tag{
     padding-top: 7rem;
   }
-  @media (min-width: 446px) and (max-width: 485px) {
+  /* @media (min-width: 446px) and (max-width: 485px) {
   .Benefits{
     font-size: 31px;
     margin-top: 2rem;
   }
-  }
+  } */
 
-  @media (min-width: 400px) and (max-width: 473px) {
+  @media (min-width: 400px) and (max-width: 583px) {
   .Benefits{
     font-size: 24px;
     margin-top: 2rem;
   }
+  .uper-under-line {
+    width: 107px;
+    height: 12px;
+    margin-top: -32px;
+    margin-left: 10rem;
+    top: 2872px;
+    text-align: center;
+    color: #081429;
+}
   }
-  @media (min-width: 400px) and (max-width: 446px) {
+  /* @media (min-width: 400px) and (max-width: 446px) {
   .Benefits{
     font-size: 24px;
     margin-top: 2rem;
     text-align: center;
   }
-  }
-  @media (min-width: 350px) and (max-width: 400px) {
+  } */
+  @media (min-width: 300px) and (max-width: 400px) {
   .Benefits{
     margin-top: 2rem;
     font-size: 21px;
-  
+  font-weight: 600;
   }
   .uper-under-line {
-    width: 226px;
-    height: 12px;
-    margin-top: -32px;
-    margin-left: 5rem;
+    width: 208px;
+    height: 7px;
+    margin-top: -47px;
+    margin-left: 6rem;
     top: 2872px;
     text-align: center;
     color: #081429;
   }}
-  @media (min-width: 300px) and (max-width: 350px) {
+  @media (min-width: 300px) and (max-width: 600px) {
   .Benefits{
-    font-size: 20px;
+    font-size: 37px;
   
   }
-  .uper-under-line {
-    width: 226px;
+  .uper-under-one {
+    width: 82px;
     height: 12px;
-    margin-top: -32px;
-    margin-left: 2rem;
-    top: 2872px;
+    margin-top: -35px;
+    margin-left: 15rem;
     text-align: center;
     color: #081429;
+
   }
 
+}
+@media (min-width: 1000px) and (max-width: 1350px) {
+    .big-screen{
+        padding-top: 10px !important;
+    }
 }
   @media (min-width: 250px) and (max-width: 990px) {
     .benefit-image{
@@ -566,7 +528,7 @@ span{
     color: #081429;
   }
   .big-screen{
-    padding-top: 5rem;
+    padding-top: 3rem;
   }
   .not-view{
     padding: 5px;
@@ -739,10 +701,20 @@ export const Header = styled.div`
       margin-left: 2rem;
     }
   }
-  @media (min-width: 1200px) and (max-width: 1360px) {
+  @media (min-width: 1200px) and (max-width: 1400px) {
  .ball-one-page{
   position: absolute;
   top: 6rem;
+ }
+ p{
+    height: 220px;
+    width: 451px;
+    font-style: normal;
+    font-weight: 500;
+  
+    font-size: 16px;
+    line-height: 32px;
+    color: rgba(8,20,41,0.6);
  }
   }
   @media (min-width: 1350px) and (max-width: 1400px) {

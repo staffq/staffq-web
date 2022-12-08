@@ -14,8 +14,8 @@ export const Div = styled.div`
     padding-right: 30px;
   }
   .navbar {
-    padding-left: 50px;
-    padding-right: 50px;
+    padding-left: 52px;
+    padding-right: 96px;
     margin-bottom: 20px;
     z-index: 100;
     border-bottom: 1px solid rgba(8, 20, 41, 0.1);
@@ -34,7 +34,7 @@ export const Div = styled.div`
   .popup {
     display: none;
   }
-  .act:hover + .popup {
+  .onee:hover .popup {
     display: block;
    
   }
@@ -137,6 +137,7 @@ export const Small = styled.div`
   @media (min-width: 250px) and (max-width: 990px) {
     .sm-header {
       display: block;
+      z-index: 1;
     }
     .navbar {
       border-bottom: 2px solid rgba(8, 20, 41, 0.1);

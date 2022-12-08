@@ -45,7 +45,7 @@ const Index = () => {
                     className="hello"
                   ></img>
                 </Button> */}
-                    <Link href="find-the-best-job">
+                    <Link href="find-jobs">
                 <button class="btn-black">
                   Find your jobs <span class="arrow arrow-black"></span>
                   {/* <img src="assets/images/Find-your.svg" className=""></img> */}
@@ -76,7 +76,7 @@ const Index = () => {
                   <br></br> suppliers to all the recruitment companies various
                   Domain.
                 </p>
-                <Link href="find-the-best-job">
+                <Link href="find-jobs">
                 <button class="btn-black">
                   Find your jobs <span class="arrow arrow-black"></span>
                   {/* <img src="assets/images/Find-your.svg" className=""></img> */}

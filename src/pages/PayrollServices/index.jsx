@@ -1,5 +1,5 @@
 import React from "react";
-import { Worked, Header, Image, SmallHeader } from "../../styles/workstyle";
+import { Worked, Header, Image, SmallHeader } from "../../styles/payrol";
 const PayrollServices = () => {
   return (
     <Worked>
@@ -16,9 +16,12 @@ const PayrollServices = () => {
                     alt="img"
                   />
                   <div className="ball-one-page">
-                    <span className="header-h-one">Hiring every type of</span><br></br>
-                    <span  className="header-h-one">employee the company needs</span>
-                    <p>
+                    <span className="header-h-one">Hiring every type of</span>
+                    <br></br>
+                    <span className="header-h-one">
+                      employee the company needs
+                    </span>
+                    <p className="pt-4 payrol-p-tag">
                       StaffQ consultancy allows companies to streamline their
                       employees Payroll, StaffQ is the best payroll Service for
                       small business in India.
@@ -351,7 +354,7 @@ const PayrollServices = () => {
                 <div className="col-lg-3 col-sm-12 ">
                   <div>
                     <img
-                      src="assets/images/under-imgaess.svg"
+                      src="assets/images/contract.img.png"
                       className="round-img"
                       alt="img"
                     />
@@ -361,7 +364,7 @@ const PayrollServices = () => {
                 <div className="col-lg-3 col-sm-12 ">
                   <div>
                     <img
-                      src="assets/images/under-imgaess.svg"
+                      src="assets/images/inteview.img.png"
                       className="round-img"
                       alt="img"
                     />
@@ -375,7 +378,7 @@ const PayrollServices = () => {
                 <div className="row">
                   <div className="col-lg-2">
                     <h6>
-                      Requirment <br></br>
+                      Requirement <br></br>
                       Gathering
                     </h6>
                   </div>
@@ -385,17 +388,17 @@ const PayrollServices = () => {
                     </div>
                     <div className="uder-cover-img">
                       <img
-                        src="assets/images/under-imgaess.svg "
+                        src="assets/images/rqt.img.png "
                         className="round-img"
                         alt="img"
                       />
-                      <h5> Requirment Planning</h5>
+                      <h5> Requirement Discussion</h5>
                     </div>
                   </div>
                   <div className="col-lg-2">
                     <h6>
-                      Contract <br></br>
-                      Signing
+                      Payroll <br></br>
+                      Execution
                     </h6>
                   </div>
                   <div className="col-lg-2 second-imgaes-content">
@@ -404,17 +407,17 @@ const PayrollServices = () => {
                     </div>
                     <div className="uder-cover-img">
                       <img
-                        src="assets/images/under-imgaess.svg "
+                        src="assets/images/contact-img.png "
                         className="round-img"
                         alt="img"
                       />
-                      <h5> Choice Of Actions</h5>
+                      <h5>Complaints <br></br> Execution</h5>
                     </div>
                   </div>
                   <div className="col-lg-2">
                     <h6>
-                      Panel<br></br>
-                      Interview
+                      Contract<br></br> Finalization
+                     
                     </h6>
                   </div>
                   <div className="col-lg-2 second-imgaes-content">
@@ -423,7 +426,7 @@ const PayrollServices = () => {
                     </div>
                     <div className="uder-cover-img last-pic">
                       <img
-                        src="assets/images/under-imgaess.svg "
+                        src="assets/images/get-img.svg "
                         className="round-img"
                         alt="img"
                       />
@@ -443,11 +446,14 @@ const PayrollServices = () => {
           <div className="container-fluid ps-0">
             <div className="row ">
               <div className="col-lg-6 col-sm-12 col-md-12 benefit-image">
-                <img src="assets/images/payrol-footer.png" className="mission"></img>
+                <img
+                  src="assets/images/payrol-footer.png"
+                  className="mission"
+                ></img>
               </div>
               <div
                 className="col-lg-6 col-sm-12 col-md-12 big-screen "
-                style={{ paddingTop: "5rem" }}
+                style={{ paddingTop: "3rem" }}
               >
                 <div className="container">
                   <h4 className="Benefits ">Benefits of Payroll Services</h4>
@@ -467,9 +473,8 @@ const PayrollServices = () => {
                     </div>
                     <div className="col-lg-11 col-md-11 col-sm-11">
                       <p className="second-p-tag notview">
-                      Contract staffing services are cost-effective
+                        Contract staffing services are cost-effective
                       </p>
-                     
                     </div>
                   </div>
                   <div className="row">
@@ -480,9 +485,9 @@ const PayrollServices = () => {
                     </div>
                     <div className="col-lg-11 col-md-11 col-sm-11">
                       <p className="second-p-tag notview">
-                      Contract staffing services limit the Business Liability and Risk
+                        Contract staffing services limit the Business Liability
+                        and Risk
                       </p>
-                     
                     </div>
                   </div>
                   <div className="row">
@@ -493,9 +498,9 @@ const PayrollServices = () => {
                     </div>
                     <div className="col-lg-11 col-md-11 col-sm-11">
                       <p className="second-p-tag notview">
-                      Contract staffing services limit the Business Liability and Risk
+                        Contract staffing services limit the Business Liability
+                        and Risk
                       </p>
-                    
                     </div>
                   </div>
                   <div className="row">
@@ -506,9 +511,8 @@ const PayrollServices = () => {
                     </div>
                     <div className="col-lg-11 col-md-11 col-sm-11">
                       <p className="second-p-tag notview">
-                      Access to a larger talent pool
+                        Access to a larger talent pool
                       </p>
-                    
                     </div>
                   </div>
                   <div className="row">
@@ -518,11 +522,36 @@ const PayrollServices = () => {
                       </div>
                     </div>
                     <div className="col-lg-11 col-md-11 col-sm-11">
-                      <p  className="second-p-tag notview">Access to specialized skills</p>
-                      <p className="small-screen">
+                      <p className="second-p-tag notview">
+                        Access to specialized skills
+                      </p>
+                      <p className="small-screen"> </p>
+                    </div>
+                  </div>
+                  <div className="row">
+                    <div className="col-lg-1 col-sm-1 col-md-1">
+                      <div className="">
+                        <img src="assets/images/right-icons.svg"></img>
+                      </div>
+                    </div>
+                    <div className="col-lg-11 col-md-11 col-sm-11">
+                      <p className="second-p-tag notview">
+                        Take some responsibility off the HR department
+                      </p>
+                    </div>
+                  </div>
+                  <div className="row">
+                    <div className="col-lg-1 col-sm-1 col-md-1">
+                      <div className="">
+                        <img src="assets/images/right-icons.svg"></img>
+                      </div>
+                    </div>
+                    <div className="col-lg-11 col-md-11 col-sm-11">
+                      <p className="second-p-tag notview">
                         {" "}
-                  
+                        Escaping the ACA requirementss
                       </p>
+                      <p className="small-screen"> </p>
                     </div>
                   </div>
                   <div className="row">
@@ -533,44 +562,17 @@ const PayrollServices = () => {
                     </div>
                     <div className="col-lg-11 col-md-11 col-sm-11">
                       <p className="second-p-tag notview">
-                      Take some responsibility off the HR department
-                      </p>
-                     
-                    </div>
-                  </div>
-                  <div className="row">
-                    <div className="col-lg-1 col-sm-1 col-md-1">
-                      <div className="">
-                        <img src="assets/images/right-icons.svg"></img>
-                      </div>
-                    </div>
-                    <div className="col-lg-11 col-md-11 col-sm-11">
-                      <p  className="second-p-tag notview">  Escaping the ACA requirementss</p>
-                      <p className="small-screen">
                         {" "}
-                  
+                        Prevent laying off employees
                       </p>
-                    </div>
-                  </div>
-                  <div className="row">
-                    <div className="col-lg-1 col-sm-1 col-md-1">
-                      <div className="">
-                        <img src="assets/images/right-icons.svg"></img>
-                      </div>
-                    </div>
-                    <div className="col-lg-11 col-md-11 col-sm-11">
-                      <p  className="second-p-tag notview">  Prevent laying off employees</p>
-                      <p className="small-screen">
-                        {" "}
-                  
-                      </p>
+                      <p className="small-screen"> </p>
                     </div>
                   </div>
                 </div>
               </div>
               <div className="col-lg-6 col-md-6 col-sm-12 not-show ">
-        <div className="container">
-        <p className="Benefits ms-5 ">Benefits of Payroll Services</p>
+                <div className="container">
+                  <p className="Benefits ms-5 ">Benefits of Payroll Services</p>
                   <div className="null">
                     <img
                       src="assets/images/uper-unterline.svg"
@@ -578,65 +580,52 @@ const PayrollServices = () => {
                       className="uper-under-line"
                     />
                   </div>
-          <span>
-            <img src="assets/images/right-icons.svg"></img>
-          </span>
-          <span>
-          Contract staffing services are cost-effective
-          </span>
-          <p></p>
-          <br></br>
-          <span>
-            <img src="assets/images/right-icons.svg"></img>
-          </span>
-          <span>
-          Contract staffing services limit the Business Liability and Risk
-          </span>
-          <br></br> <br></br>
-          <span>
-            <img src="assets/images/right-icons.svg"></img>
-          </span>
-          <span>
-          Access to a larger talent pool
-          </span>
-          <br></br> <br></br>
-          <span>
-            <img src="assets/images/right-icons.svg"></img>
-          </span>
-          <span>
-          Access to specialized skills
-          </span>
-          <br></br> <br></br>
-          <span>
-            <img src="assets/images/right-icons.svg"></img>
-          </span>
-          <span>
-          Access to a larger talent pool
-          </span>
-          <br></br> <br></br>
-          <span>
-            <img src="assets/images/right-icons.svg"></img>
-          </span>
-          <span>
-          Fulfill short term business needs
-          </span>
-          <br></br>
-          <span>
-            <img src="assets/images/right-icons.svg"></img>
-          </span>
-          <span>
-          Take some responsibility off the HR department
-          </span>
-          <br></br>
-          <span>
-            <img src="assets/images/right-icons.svg"></img>
-          </span>
-          <span>
-          Prevent laying off employees
-          </span>
-          <br></br>
-        </div>
-      </div>
+                  <span>
+                    <img src="assets/images/right-icons.svg"></img>
+                  </span>
+                  <span>Contract staffing services are cost-effective</span>
+                  <p></p>
+                  <br></br>
+                  <span>
+                    <img src="assets/images/right-icons.svg"></img>
+                  </span>
+                  <span>
+                    Contract staffing services limit the Business Liability and
+                    Risk
+                  </span>
+                  <br></br> <br></br>
+                  <span>
+                    <img src="assets/images/right-icons.svg"></img>
+                  </span>
+                  <span>Access to a larger talent pool</span>
+                  <br></br> <br></br>
+                  <span>
+                    <img src="assets/images/right-icons.svg"></img>
+                  </span>
+                  <span>Access to specialized skills</span>
+                  <br></br> <br></br>
+                  <span>
+                    <img src="assets/images/right-icons.svg"></img>
+                  </span>
+                  <span>Access to a larger talent pool</span>
+                  <br></br> <br></br>
+                  <span>
+                    <img src="assets/images/right-icons.svg"></img>
+                  </span>
+                  <span>Fulfill short term business needs</span>
+                  <br></br>
+                  <span>
+                    <img src="assets/images/right-icons.svg"></img>
+                  </span>
+                  <span>Take some responsibility off the HR department</span>
+                  <br></br>
+                  <span>
+                    <img src="assets/images/right-icons.svg"></img>
+                  </span>
+                  <span>Prevent laying off employees</span>
+                  <br></br>
+                </div>
+              </div>
             </div>
           </div>
         </section>
@@ -652,11 +641,16 @@ const PayrollServices = () => {
                 details.<br></br>
                 Connect with us.
               </p>
+              <p className="Our-team-one">
+                Our team of experts will connect with you with more elaberate
+                details.
+                Connect with us.
+              </p>
             </div>
             <div className="form container">
               <form>
                 <div className="form-group mt-2">
-                  <label for="exampleInputEmail1">Name</label>
+                  <label for="exampleInputEmail1">Name*</label>
                   <br></br>
                   <input
                     type="text"
@@ -666,7 +660,7 @@ const PayrollServices = () => {
                   />
                 </div>
                 <div className="form-group ">
-                  <label for="exampleInputEmail1">Phone Number</label>
+                  <label for="exampleInputEmail1">Phone Number*</label>
                   <input
                     type="text"
                     className="form-control"

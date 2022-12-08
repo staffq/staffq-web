@@ -3,7 +3,7 @@ import styled from "styled-components";
 
 export const Card = styled.div`
   width: ${(props) => (props.width ? props.width : "auto")};
-  height: ${(props) => (props.height ? props.height : "auto")};
+  height: ${(props) => (props.height ? props.height : "150px")};
   background-color: ${(props) =>
     props.backgroundColor ? props.backgroundColor : "white"};
   padding: ${(props) =>
