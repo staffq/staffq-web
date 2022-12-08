@@ -385,6 +385,7 @@ const AboutPage = () => {
                       width="100%"
                       alt="img"
                     />
+                    <br></br>
                      <br></br> 
                   </div>
                  

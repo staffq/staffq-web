@@ -86,7 +86,7 @@ const ContractRecruitment = () => {
 
       {/* .................................next ......section................. */}
 
-      <div className="" style={{ marginTop: "9rem" }}>
+      <div>
         <div className="hiring-tag" style={{}}>
           <section className="container">
             <div className="row">
@@ -117,15 +117,13 @@ const ContractRecruitment = () => {
                         <h4 className="whats-happening ">What’s happening?</h4>
                       </div>
                       <p className="solution-p-tag">
-                        It is a matter of great concern today that many
-                        establishments are finding it increasingly difficult to
-                        find the right candidate for a specific project or task.
-                        As a result, their HR departments are compelled to
-                        manage with the candidates that are somewhat suitable
-                        and available. But in the long run, this kind of
-                        adjustment plays havoc with the team performance and
-                        projects suffer as a consequence. Deadlines are not met
-                        and the work done may be shoddy and incomplete.
+                        Across the nation, big and small companies are stumbling
+                        to handle increased government directives and
+                        unpredictable market requirements. You may not want to
+                        recruit permanent workers on a full-time basis, whenever
+                        things are unpredictable. You desire the adaptability of
+                        agile, on-demand employees who are qualified to manage
+                        your business processes just the way you want.
                       </p>
                     </div>
                   </div>
@@ -142,11 +140,11 @@ const ContractRecruitment = () => {
                           <h4 className="whats-happening ">Situation</h4>
                         </div>
                         <p className="solution-p-tag">
-                          By the time they fire such employees after realizing
-                          that it was an unwise decision to recruit them, it is
-                          too late. They have to stare at heavy losses and
-                          further orders are affected. What to do in this
-                          situation?
+                          We have a verified, time-tested hiring procedure that
+                          permits us to hire just the right applicants for your
+                          organization. We have efficient networks everywhere in
+                          the nation which gives us access to a large number of
+                          applicants.
                         </p>
                       </div>
                     </div>
@@ -404,13 +402,16 @@ const ContractRecruitment = () => {
                         className="round-img"
                         alt="img"
                       />
-                      <h5> Requirment Planning</h5>
+                      <h5>
+                        Requirment <br></br>
+                        Discussion
+                      </h5>
                     </div>
                   </div>
                   <div className="col-lg-2">
                     <h6>
-                      Contract <br></br>
-                      Signing
+                      Internal <br></br>
+                      Interview
                     </h6>
                   </div>
                   <div className="col-lg-2 second-imgaes-content">
@@ -423,13 +424,16 @@ const ContractRecruitment = () => {
                         className="round-img"
                         alt="img"
                       />
-                      <h5> Choice Of Actions</h5>
+                      <h5>
+                        Client <br></br>
+                        Interview
+                      </h5>
                     </div>
                   </div>
                   <div className="col-lg-2">
                     <h6>
-                      Panel<br></br>
-                      Interview
+                      Contract <br></br>
+                      Signing
                     </h6>
                   </div>
                   <div className="col-lg-2 second-imgaes-content">
@@ -457,7 +461,10 @@ const ContractRecruitment = () => {
           <div className="container-fluid ps-0">
             <div className="row ">
               <div className="col-lg-6 col-sm-12 col-md-12 benefit-image">
-                <img src="assets/images/second-paranm.img.png" className="mission"></img>
+                <img
+                  src="assets/images/second-paranm.img.png"
+                  className="mission"
+                ></img>
               </div>
               <div
                 className="col-lg-6 col-sm-12 col-md-12 big-screen "
@@ -481,9 +488,8 @@ const ContractRecruitment = () => {
                     </div>
                     <div className="col-lg-11 col-md-11 col-sm-11">
                       <p className="second-p-tag notview">
-                     Contract staffing services are cost-effective
+                        Contract staffing services are cost-effective
                       </p>
-                     
                     </div>
                   </div>
                   <div className="row">
@@ -494,9 +500,9 @@ const ContractRecruitment = () => {
                     </div>
                     <div className="col-lg-11 col-md-11 col-sm-11">
                       <p className="second-p-tag notview">
-                      Contract staffing services limit the Business Liability and Risk
+                        Contract staffing services limit the Business Liability
+                        and Risk
                       </p>
-                     
                     </div>
                   </div>
                   <div className="row">
@@ -507,9 +513,8 @@ const ContractRecruitment = () => {
                     </div>
                     <div className="col-lg-11 col-md-11 col-sm-11">
                       <p className="second-p-tag notview">
-                      Access to specialized skills
+                        Access to specialized skills
                       </p>
-                    
                     </div>
                   </div>
                   <div className="row">
@@ -520,9 +525,8 @@ const ContractRecruitment = () => {
                     </div>
                     <div className="col-lg-11 col-md-11 col-sm-11">
                       <p className="second-p-tag notview">
-                      Access to a larger talent pool
+                        Access to a larger talent pool
                       </p>
-                    
                     </div>
                   </div>
                   <div className="row">
@@ -532,10 +536,22 @@ const ContractRecruitment = () => {
                       </div>
                     </div>
                     <div className="col-lg-11 col-md-11 col-sm-11">
-                      <p  className="second-p-tag notview">   Fulfill short term business needs</p>
-                      <p className="small-screen">
+                      <p className="second-p-tag notview">
                         {" "}
-                  
+                        Fulfill short term business needs
+                      </p>
+                      <p className="small-screen"> </p>
+                    </div>
+                  </div>
+                  <div className="row">
+                    <div className="col-lg-1 col-sm-1 col-md-1">
+                      <div className="">
+                        <img src="assets/images/right-icons.svg"></img>
+                      </div>
+                    </div>
+                    <div className="col-lg-11 col-md-11 col-sm-11">
+                      <p className="second-p-tag notview">
+                        Take some responsibility off the HR department
                       </p>
                     </div>
                   </div>
@@ -547,9 +563,10 @@ const ContractRecruitment = () => {
                     </div>
                     <div className="col-lg-11 col-md-11 col-sm-11">
                       <p className="second-p-tag notview">
-                      Take some responsibility off the HR department
+                        {" "}
+                        Escaping the ACA requirementss
                       </p>
-                     
+                      <p className="small-screen"> </p>
                     </div>
                   </div>
                   <div className="row">
@@ -559,32 +576,20 @@ const ContractRecruitment = () => {
                       </div>
                     </div>
                     <div className="col-lg-11 col-md-11 col-sm-11">
-                      <p  className="second-p-tag notview">  Escaping the ACA requirementss</p>
-                      <p className="small-screen">
+                      <p className="second-p-tag notview">
                         {" "}
-                  
+                        Prevent laying off employees
                       </p>
-                    </div>
-                  </div>
-                  <div className="row">
-                    <div className="col-lg-1 col-sm-1 col-md-1">
-                      <div className="">
-                        <img src="assets/images/right-icons.svg"></img>
-                      </div>
-                    </div>
-                    <div className="col-lg-11 col-md-11 col-sm-11">
-                      <p  className="second-p-tag notview">  Prevent laying off employees</p>
-                      <p className="small-screen">
-                        {" "}
-                  
-                      </p>
+                      <p className="small-screen"> </p>
                     </div>
                   </div>
                 </div>
               </div>
               <div className="col-lg-6 col-md-6 col-sm-12 not-show ">
-        <div className="container">
-        <p className="Benefits ms-5 ">Benefits of Contract Staffing</p>
+                <div className="container">
+                  <p className="Benefits ms-5 ">
+                    Benefits of Contract Staffing
+                  </p>
                   <div className="null">
                     <img
                       src="assets/images/uper-unterline.svg"
@@ -592,65 +597,52 @@ const ContractRecruitment = () => {
                       className="uper-under-line"
                     />
                   </div>
-          <span>
-            <img src="assets/images/right-icons.svg"></img>
-          </span>
-          <span>
-          Contract staffing services are cost-effective
-          </span>
-          <p></p>
-          <br></br>
-          <span>
-            <img src="assets/images/right-icons.svg"></img>
-          </span>
-          <span>
-          Contract staffing services limit the Business Liability and Risk
-          </span>
-          <br></br> <br></br>
-          <span>
-            <img src="assets/images/right-icons.svg"></img>
-          </span>
-          <span>
-          Access to a larger talent pool
-          </span>
-          <br></br> <br></br>
-          <span>
-            <img src="assets/images/right-icons.svg"></img>
-          </span>
-          <span>
-          Access to specialized skills
-          </span>
-          <br></br> <br></br>
-          <span>
-            <img src="assets/images/right-icons.svg"></img>
-          </span>
-          <span>
-          Access to a larger talent pool
-          </span>
-          <br></br> <br></br>
-          <span>
-            <img src="assets/images/right-icons.svg"></img>
-          </span>
-          <span>
-          Fulfill short term business needs
-          </span>
-          <br></br>
-          <span>
-            <img src="assets/images/right-icons.svg"></img>
-          </span>
-          <span>
-          Take some responsibility off the HR department
-          </span>
-          <br></br>
-          <span>
-            <img src="assets/images/right-icons.svg"></img>
-          </span>
-          <span>
-          Prevent laying off employees
-          </span>
-          <br></br>
-        </div>
-      </div>
+                  <span>
+                    <img src="assets/images/right-icons.svg"></img>
+                  </span>
+                  <span>Contract staffing services are cost-effective</span>
+                  <p></p>
+                  <br></br>
+                  <span>
+                    <img src="assets/images/right-icons.svg"></img>
+                  </span>
+                  <span>
+                    Contract staffing services limit the Business Liability and
+                    Risk
+                  </span>
+                  <br></br> <br></br>
+                  <span>
+                    <img src="assets/images/right-icons.svg"></img>
+                  </span>
+                  <span>Access to a larger talent pool</span>
+                  <br></br> <br></br>
+                  <span>
+                    <img src="assets/images/right-icons.svg"></img>
+                  </span>
+                  <span>Access to specialized skills</span>
+                  <br></br> <br></br>
+                  <span>
+                    <img src="assets/images/right-icons.svg"></img>
+                  </span>
+                  <span>Access to a larger talent pool</span>
+                  <br></br> <br></br>
+                  <span>
+                    <img src="assets/images/right-icons.svg"></img>
+                  </span>
+                  <span>Fulfill short term business needs</span>
+                  <br></br>
+                  <span>
+                    <img src="assets/images/right-icons.svg"></img>
+                  </span>
+                  <span>Take some responsibility off the HR department</span>
+                  <br></br>
+                  <span>
+                    <img src="assets/images/right-icons.svg"></img>
+                  </span>
+                  <span>Prevent laying off employees</span>
+                  <br></br>
+                </div>
+              </div>
             </div>
           </div>
         </section>
@@ -666,11 +658,16 @@ const ContractRecruitment = () => {
                 details.<br></br>
                 Connect with us.
               </p>
+              <p className="Our-team-one">
+                Our team of experts will connect with you with more elaberate
+                details.
+                Connect with us.
+              </p>
             </div>
             <div className="form container">
               <form>
                 <div className="form-group mt-2">
-                  <label for="exampleInputEmail1">Name</label>
+                  <label for="exampleInputEmail1">Name*</label>
                   <br></br>
                   <input
                     type="text"
@@ -680,7 +677,7 @@ const ContractRecruitment = () => {
                   />
                 </div>
                 <div className="form-group ">
-                  <label for="exampleInputEmail1">Phone Number</label>
+                  <label for="exampleInputEmail1">Phone Number*</label>
                   <input
                     type="text"
                     className="form-control"

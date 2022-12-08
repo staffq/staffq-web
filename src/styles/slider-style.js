@@ -4,10 +4,10 @@ export const SlickBG = styled.div`
   background: #050c18;
 
   width: 100%;
-  overflow: hidden;
+  /* overflow: hidden; */
   /* height: 628px; */
   position: relative;
-  margin-top: 2rem;
+
 
   padding: 0px !important;
   .Slider-phara {

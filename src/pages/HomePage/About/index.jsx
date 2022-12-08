@@ -10,7 +10,7 @@ const About = () => {
         <div className="container-fluid">
           <div className="About-section">
             <h2 className="">Why People Choose StaffQ?</h2>
-            <p className="about-p-tag">
+            <p className="about-p-tag pt-2">
               {" "}
               We have found that the best way to get them is with up front
               research – of your company, competitors,<br></br> target market
@@ -44,12 +44,13 @@ const About = () => {
                     expertise in providing a gamut of services to business
                     organizations for their increasing demands.
                   </p>
+                  
                   <Link href="/about-us">
                     <button className="aboutbtn">
                       <span className="about">About Us</span>
                     </button>
                   </Link>
-                  <br></br> <br></br>
+               
                 </div>
               </div>
             </div>

@@ -171,25 +171,27 @@ const OffshoreRecruitment = () => {
               <div className="col-lg-6 col-md-12 col-sm-12">
                 <div className="row ">
                   <div className="col-lg-12 col-sm-12 col-md-12">
-                  <div>
+                    <div>
                       <div className="d-flex">
                         <img
                           src="assets/images/line.svg"
                           className="mt-4"
                           alt="img"
                         />
-                        <h4 className="whats-happening ">
-                        Why Us?
-                        </h4>
+                        <h4 className="whats-happening ">Why Us?</h4>
                       </div>
                       <p className="solution-p-tag">
-                        Lower your cost per engineering hire by at least 50%,
-                        with the equivalent quality of engineers that you would
-                        find locally. Unlike freelancers or outsourcing
-                        companies, your engineers work out of an LSS office,
-                        have time and attendance monitored by LSS and are
-                        governed by strict confidentiality and IP protection
-                        agreements.
+                        We assist companies in locating exactly the type of
+                        talent they're looking for. We not only provide the best
+                        talents to corporate companies but also keep
+                        time-efficiency and cost-efficiency our top priority.
+                        StaffQ extends solutions to cope with the procedure of
+                        searching for offsite IT staff for the varying needs of
+                        corporate companies. Our Offsite Staffing Services deals
+                        with such situations in the most controlled manner, by
+                        sorting out a good and experienced team of candidates.
+                        This further helps companies in their crucial projects
+                        by balancing time, efficiency, and quality.
                       </p>
                     </div>
                     <div>
@@ -199,21 +201,19 @@ const OffshoreRecruitment = () => {
                           className="mt-4"
                           alt="img"
                         />
-                        <h4 className="whats-happening ">
-                        We are the best
-                        </h4>
+                        <h4 className="whats-happening ">We are the best</h4>
                       </div>
                       <p className="solution-p-tag">
-                        Lower your cost per engineering hire by at least 50%,
-                        with the equivalent quality of engineers that you would
-                        find locally. Unlike freelancers or outsourcing
-                        companies, your engineers work out of an LSS office,
-                        have time and attendance monitored by LSS and are
-                        governed by strict confidentiality and IP protection
-                        agreements.
+                        The benefits of employing StaffQ to provide Your
+                        Offshore Staffing Solutions are many. The companies can
+                        keep their staff in a profit-making way since the cost
+                        of off-shore employees is low and thus the businesses
+                        can make more money. Businesses are able to increase or
+                        decrease the size of their offshore team with no issues
+                        as long as these projects are within the timeframes
+                        specified by the company.
                       </p>
                     </div>
-                   
                   </div>
                 </div>
               </div>
@@ -224,8 +224,9 @@ const OffshoreRecruitment = () => {
                     className="hand-img "
                     width="100%"
                     alt="img"
-                  /><br></br>
+                  />
                   <br></br>
+                 
                 </div>
               </div>
             </div>
@@ -233,7 +234,6 @@ const OffshoreRecruitment = () => {
         </section>
       </div>
       {/* ................next................... */}
-      
       <div className="container">
         <div className="text-center mt-5">
           <h2>Hiring Process</h2>
@@ -414,7 +414,8 @@ const OffshoreRecruitment = () => {
                         className="round-img"
                         alt="img"
                       />
-                      <h5> Requirment Planning</h5>
+                      <h5> Requirment
+Discussion</h5>
                     </div>
                   </div>
                   <div className="col-lg-2">
@@ -467,7 +468,10 @@ const OffshoreRecruitment = () => {
           <div className="container-fluid ps-0">
             <div className="row ">
               <div className="col-lg-6 col-sm-12 col-md-12 benefit-image">
-                <img src="assets/images/offshoe-benifits.img.png" className="mission"></img>
+                <img
+                  src="assets/images/offshoe-benifits.img.png"
+                  className="mission"
+                ></img>
               </div>
               <div
                 className="col-lg-6 col-sm-12 col-md-12 big-screen "
@@ -490,10 +494,17 @@ const OffshoreRecruitment = () => {
                       </div>
                     </div>
                     <div className="col-lg-11 col-md-11 col-sm-11">
-                      <p className="second-p-tag notview">
-                      Business growth
-                      </p>
-                     
+                      <p className="second-p-tag notview">Business growth</p>
+                    </div>
+                  </div>
+                  <div className="row">
+                    <div className="col-lg-1 col-sm-1 col-md-1">
+                      <div className="">
+                        <img src="assets/images/right-icons.svg"></img>
+                      </div>
+                    </div>
+                    <div className="col-lg-11 col-md-11 col-sm-11">
+                      <p className="second-p-tag notview">Reduced costs</p>
                     </div>
                   </div>
                   <div className="row">
@@ -504,9 +515,8 @@ const OffshoreRecruitment = () => {
                     </div>
                     <div className="col-lg-11 col-md-11 col-sm-11">
                       <p className="second-p-tag notview">
-                      Reduced costs
+                        Access to skilled resources
                       </p>
-                     
                     </div>
                   </div>
                   <div className="row">
@@ -517,9 +527,8 @@ const OffshoreRecruitment = () => {
                     </div>
                     <div className="col-lg-11 col-md-11 col-sm-11">
                       <p className="second-p-tag notview">
-                      Access to skilled resources
+                        Time zone advantage
                       </p>
-                    
                     </div>
                   </div>
                   <div className="row">
@@ -530,9 +539,9 @@ const OffshoreRecruitment = () => {
                     </div>
                     <div className="col-lg-11 col-md-11 col-sm-11">
                       <p className="second-p-tag notview">
-                      Time zone advantage
+                        Control from miles away
                       </p>
-                    
+                      <p className="small-screen"> </p>
                     </div>
                   </div>
                   <div className="row">
@@ -542,11 +551,23 @@ const OffshoreRecruitment = () => {
                       </div>
                     </div>
                     <div className="col-lg-11 col-md-11 col-sm-11">
-                      <p  className="second-p-tag notview">Control from miles away</p>
-                      <p className="small-screen">
+                      <p className="second-p-tag notview">
+                        Greater marketing opportunity
+                      </p>
+                    </div>
+                  </div>
+                  <div className="row">
+                    <div className="col-lg-1 col-sm-1 col-md-1">
+                      <div className="">
+                        <img src="assets/images/right-icons.svg"></img>
+                      </div>
+                    </div>
+                    <div className="col-lg-11 col-md-11 col-sm-11">
+                      <p className="second-p-tag notview">
                         {" "}
-                  
+                        Availability in different locations
                       </p>
+                      <p className="small-screen"> </p>
                     </div>
                   </div>
                   <div className="row">
@@ -557,44 +578,19 @@ const OffshoreRecruitment = () => {
                     </div>
                     <div className="col-lg-11 col-md-11 col-sm-11">
                       <p className="second-p-tag notview">
-                      Greater marketing opportunity
-                      </p>
-                     
-                    </div>
-                  </div>
-                  <div className="row">
-                    <div className="col-lg-1 col-sm-1 col-md-1">
-                      <div className="">
-                        <img src="assets/images/right-icons.svg"></img>
-                      </div>
-                    </div>
-                    <div className="col-lg-11 col-md-11 col-sm-11">
-                      <p  className="second-p-tag notview">  Availability in different locations</p>
-                      <p className="small-screen">
                         {" "}
-                  
+                        Opportunity to focus on complex tasks
                       </p>
-                    </div>
-                  </div>
-                  <div className="row">
-                    <div className="col-lg-1 col-sm-1 col-md-1">
-                      <div className="">
-                        <img src="assets/images/right-icons.svg"></img>
-                      </div>
-                    </div>
-                    <div className="col-lg-11 col-md-11 col-sm-11">
-                      <p  className="second-p-tag notview"> Opportunity to focus on complex tasks</p>
-                      <p className="small-screen">
-                        {" "}
-                  
-                      </p>
+                      <p className="small-screen"> </p>
                     </div>
                   </div>
                 </div>
               </div>
               <div className="col-lg-6 col-md-6 col-sm-12 not-show ">
-        <div className="container">
-        <p className="Benefits ms-5 ">Benefits of Contract Staffing</p>
+                <div className="container">
+                  <p className="Benefits ms-5 ">
+                    Benefits of Contract Staffing
+                  </p>
                   <div className="null">
                     <img
                       src="assets/images/uper-unterline.svg"
@@ -602,65 +598,49 @@ const OffshoreRecruitment = () => {
                       className="uper-under-line"
                     />
                   </div>
-          <span>
-            <img src="assets/images/right-icons.svg"></img>
-          </span>
-          <span>
-          Business growth
-          </span>
-          <p></p>
-          <br></br>
-          <span>
-            <img src="assets/images/right-icons.svg"></img>
-          </span>
-          <span>
-          Reduced costs
-          </span>
-          <br></br> <br></br>
-          <span>
-            <img src="assets/images/right-icons.svg"></img>
-          </span>
-          <span>
-          Access to skilled resources
-          </span>
-          <br></br> <br></br>
-          <span>
-            <img src="assets/images/right-icons.svg"></img>
-          </span>
-          <span>
-          Time zone advantage
-          </span>
-          <br></br> <br></br>
-          <span>
-            <img src="assets/images/right-icons.svg"></img>
-          </span>
-          <span>
-          Control from miles away
-          </span>
-          <br></br> <br></br>
-          <span>
-            <img src="assets/images/right-icons.svg"></img>
-          </span>
-          <span>
-          Greater marketing opportunity
-          </span>
-          <br></br>
-          <span>
-            <img src="assets/images/right-icons.svg"></img>
-          </span>
-          <span>
-          Availability in different locations
-          </span>
-          <br></br>
-          <span>
-            <img src="assets/images/right-icons.svg"></img>
-          </span>
-          <span>
-          Opportunity to focus on complex tasks
-          </span>
-          <br></br>
-        </div>
-      </div>
+                  <span>
+                    <img src="assets/images/right-icons.svg"></img>
+                  </span>
+                  <span>Business growth</span>
+                  <p></p>
+                  <br></br>
+                  <span>
+                    <img src="assets/images/right-icons.svg"></img>
+                  </span>
+                  <span>Reduced costs</span>
+                  <br></br> <br></br>
+                  <span>
+                    <img src="assets/images/right-icons.svg"></img>
+                  </span>
+                  <span>Access to skilled resources</span>
+                  <br></br> <br></br>
+                  <span>
+                    <img src="assets/images/right-icons.svg"></img>
+                  </span>
+                  <span>Time zone advantage</span>
+                  <br></br> <br></br>
+                  <span>
+                    <img src="assets/images/right-icons.svg"></img>
+                  </span>
+                  <span>Control from miles away</span>
+                  <br></br> <br></br>
+                  <span>
+                    <img src="assets/images/right-icons.svg"></img>
+                  </span>
+                  <span>Greater marketing opportunity</span>
+                  <br></br>
+                  <span>
+                    <img src="assets/images/right-icons.svg"></img>
+                  </span>
+                  <span>Availability in different locations</span>
+                  <br></br>
+                  <span>
+                    <img src="assets/images/right-icons.svg"></img>
+                  </span>
+                  <span>Opportunity to focus on complex tasks</span>
+                  <br></br>
+                </div>
+              </div>
             </div>
           </div>
         </section>

@@ -16,8 +16,8 @@ const PayrollServices = () => {
                     alt="img"
                   />
                   <div className="ball-one-page">
-                    <h1>Hiring every type of</h1>
-                    <h1>employee the company needs</h1>
+                    <span className="header-h-one">Hiring every type of</span><br></br>
+                    <span  className="header-h-one">employee the company needs</span>
                     <p>
                       StaffQ consultancy allows companies to streamline their
                       employees Payroll, StaffQ is the best payroll Service for
@@ -29,8 +29,8 @@ const PayrollServices = () => {
                   <div>
                     <div className="image-section">
                       <div className="row">
-                        <div className="col-lg-2"></div>
-                        <div className="col-lg-10">
+                        <div className="col-lg-3"></div>
+                        <div className="col-lg-9">
                           <img
                             src="assets/images/payrol-img.png"
                             width="100%"
@@ -162,7 +162,7 @@ const PayrollServices = () => {
             </p>
           </div>
           <div className="container">
-            <div className="row About">
+            <div className="row ">
               <div className="col-lg-6 col-md-12 col-sm-12">
                 <div className="row ">
                   <div className="col-lg-12 col-sm-12 col-md-12">
@@ -173,7 +173,7 @@ const PayrollServices = () => {
                           className="mt-4"
                           alt="img"
                         />
-                        <h2 className="whats-happening  Solution">
+                        <h2 className="whats-happening TDS">
                           TDS, PF, ESIC, PT and LWF{" "}
                         </h2>
                       </div>

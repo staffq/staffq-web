@@ -221,6 +221,7 @@ color: #050C18 !important;
   }
   .small{
     display: grid;
+    margin-bottom: 3rem;
   }
 
   @media (min-width: 250px) and (max-width: 580px) {

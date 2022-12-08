@@ -8,7 +8,7 @@ export const Small = styled.div`
 /* height: 71rem; */
   
   position: relative;
-  margin-top: 2rem;
+
 
   padding: 0px !important;
   .Slider-phara {

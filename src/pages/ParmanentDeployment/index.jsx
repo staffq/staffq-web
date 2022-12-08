@@ -33,8 +33,8 @@ const ParamanentDeployment = () => (
                   <div>
                     <div className="image-section">
                       <div className="row">
-                        <div className="col-lg-2"></div>
-                        <div className="col-lg-10">
+                        <div className="col-lg-3"></div>
+                        <div className="col-lg-9">
                           <img
                             src="assets/images/Banner-para-Image.png"
                             width="100%"
@@ -44,7 +44,6 @@ const ParamanentDeployment = () => (
                         </div>
                       </div>
                     </div>
-                    
                   </div>
                 </div>
               </div>
@@ -58,26 +57,29 @@ const ParamanentDeployment = () => (
           <SmallHeader>
             <div className="container">
               <div className="small-img">
-                <img src="assets/images/banner-param.png" alt="img" width="100%"/>
+                <img
+                  src="assets/images/banner-param.png"
+                  alt="img"
+                  width="100%"
+                />
               </div>
-                <div className="ball-sm-page">
-                  <h2>Permanent Recruitment</h2>
-                  <p>
-                    The chances of getting a better candidate are higher with
-                    permanent staffing services. Our expertise lies in being
-                    creative, designing effective strategies, and
-                    delivering solutions that work. We help organizations hire
-                    expert full-time talent across all levels in IT and{" "}
-                    Non-IT skills.
-                  </p>
-                </div>
-             
+              <div className="ball-sm-page">
+                <h2>Permanent Recruitment</h2>
+                <p>
+                  The chances of getting a better candidate are higher with
+                  permanent staffing services. Our expertise lies in being
+                  creative, designing effective strategies, and delivering
+                  solutions that work. We help organizations hire expert
+                  full-time talent across all levels in IT and Non-IT skills.
+                </p>
+              </div>
+
               <div>
                 <img
                   src="assets/images/Banner-para-Image.png"
                   className="banner-image"
                   alt="img"
-                  width= "100%"
+                  width="100%"
                 />
               </div>
             </div>
@@ -212,7 +214,8 @@ const ParamanentDeployment = () => (
                     className="hand-img "
                     width="100%"
                     alt="img"
-                  /><br></br>
+                  />
+                  <br></br>
                   <br></br>
                 </div>
               </div>
@@ -406,7 +409,7 @@ const ParamanentDeployment = () => (
                         className="round-img"
                         alt="img"
                       />
-                      <h5> Requirment Planning</h5>
+                      <h5> Requirment Discussion</h5>
                     </div>
                   </div>
                   <div className="col-lg-2">
@@ -425,7 +428,7 @@ const ParamanentDeployment = () => (
                         className="round-img"
                         alt="img"
                       />
-                      <h5> Choice Of Actions</h5>
+                      <h5> Candidate Identification</h5>
                     </div>
                   </div>
                   <div className="col-lg-2">
@@ -601,8 +604,8 @@ const ParamanentDeployment = () => (
                 </div>
               </div>
               <div className="col-lg-6 col-md-6 col-sm-12 not-show ">
-        <div className="container">
-        <p className="Benefits ms-5 ">Benefits of Permanent Hiring</p>
+                <div className="container">
+                  <p className="Benefits ms-5 ">Benefits of Permanent Hiring</p>
                   <div className="null">
                     <img
                       src="assets/images/uper-unterline.svg"
@@ -610,63 +613,63 @@ const ParamanentDeployment = () => (
                       className="uper-under-line"
                     />
                   </div>
-          <span>
-            <img src="assets/images/right-icons.svg"></img>
-          </span>
-          <span>
-            Excellent technical hiring skills and can easily identify potential
-            candidates
-          </span>
-          <p></p>
-          <br></br>
-          <span>
-            <img src="assets/images/right-icons.svg"></img>
-          </span>
-          <span>
-            We handle the entire employment process including resume- screening,
-            interview-conduction, background/ reference verification, etc.
-          </span>
-          <br></br> <br></br>
-          <span>
-            <img src="assets/images/right-icons.svg"></img>
-          </span>
-          <span>
-            We make the on-boarding procedure smooth for companies, by providing
-            the selected candidate’s entire documentation file
-          </span>
-          <br></br> <br></br>
-          <span>
-            <img src="assets/images/right-icons.svg"></img>
-          </span>
-          <span>
-            Follow-up of performance feedback of employees is given due
-            importance
-          </span>
-          <br></br> <br></br>
-          <span>
-            <img src="assets/images/right-icons.svg"></img>
-          </span>
-          <span>
-            Follow-up of performance feedback of employees is given due
-            importance
-          </span>
-          <br></br> <br></br>
-          <span>
-            <img src="assets/images/right-icons.svg"></img>
-          </span>
-          <span>
-            As candidates are qualified and reliable, there is a higher
-            probability of retention of such employees within the company and
-            this is beneficial in the long run
-          </span>
-          <br></br>
-        </div>
-      </div>
+                  <span>
+                    <img src="assets/images/right-icons.svg"></img>
+                  </span>
+                  <span>
+                    Excellent technical hiring skills and can easily identify
+                    potential candidates
+                  </span>
+                  <p></p>
+                  <br></br>
+                  <span>
+                    <img src="assets/images/right-icons.svg"></img>
+                  </span>
+                  <span>
+                    We handle the entire employment process including resume-
+                    screening, interview-conduction, background/ reference
+                    verification, etc.
+                  </span>
+                  <br></br> <br></br>
+                  <span>
+                    <img src="assets/images/right-icons.svg"></img>
+                  </span>
+                  <span>
+                    We make the on-boarding procedure smooth for companies, by
+                    providing the selected candidate’s entire documentation file
+                  </span>
+                  <br></br> <br></br>
+                  <span>
+                    <img src="assets/images/right-icons.svg"></img>
+                  </span>
+                  <span>
+                    Follow-up of performance feedback of employees is given due
+                    importance
+                  </span>
+                  <br></br> <br></br>
+                  <span>
+                    <img src="assets/images/right-icons.svg"></img>
+                  </span>
+                  <span>
+                    Follow-up of performance feedback of employees is given due
+                    importance
+                  </span>
+                  <br></br> <br></br>
+                  <span>
+                    <img src="assets/images/right-icons.svg"></img>
+                  </span>
+                  <span>
+                    As candidates are qualified and reliable, there is a higher
+                    probability of retention of such employees within the
+                    company and this is beneficial in the long run
+                  </span>
+                  <br></br>
+                </div>
+              </div>
             </div>
           </div>
         </section>
       </div>
-     
 
       {/* .........................form...................section.............................. */}
       <div className="form-section">
@@ -679,11 +682,16 @@ const ParamanentDeployment = () => (
                 details.<br></br>
                 Connect with us.
               </p>
+              <p className="Our-team-one">
+                Our team of experts will connect with you with more elaberate
+                details.
+                Connect with us.
+              </p>
             </div>
             <div className="form container">
               <form>
                 <div className="form-group mt-2">
-                  <label for="exampleInputEmail1">Name</label>
+                  <label for="exampleInputEmail1">Name*</label>
                   <br></br>
                   <input
                     type="text"
@@ -693,7 +701,7 @@ const ParamanentDeployment = () => (
                   />
                 </div>
                 <div className="form-group ">
-                  <label for="exampleInputEmail1">Phone Number</label>
+                  <label for="exampleInputEmail1">Phone Number*</label>
                   <input
                     type="text"
                     className="form-control"

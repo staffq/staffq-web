@@ -4,8 +4,7 @@ import styled from "styled-components";
 export const Foot = styled.div`
   background: #050c18;
 
-  .cursor-pointer {
-  }
+ 
   @media (min-width: 1000px) and (max-width: 1200px) {
     .towers {
       margin-left: 33px;
@@ -21,11 +20,20 @@ export const Foot = styled.div`
   h2 {
     color: white;
   }
-  p,
+  
   span {
     color: rgba(255, 255, 255, 0.8);
+    font-weight: 400;
+    font-size: 15px;
+   
+   
+  }
+  .p-tag{
     font-weight: 500;
-    font-size: 17px;
+    font-size: 24px;
+    color: #FFFFFF;
+  }
+  span{
     cursor: pointer;
   }
   .last-line {
@@ -52,18 +60,21 @@ export const Foot = styled.div`
   }
   .infostaffq {
     padding-left: 20px;
+    font-size: 15px;
+  
   }
   .pdding-left {
     padding-left: 22px;
   }
   .infostaff {
     padding-left: 35px;
+    font-size: 15px;
   }
   .footer-one {
     font-size: 0px;
     line-height: 22px;
     margin-top: 1rem;
-
+  
     color: rgba(255, 255, 255, 0.8);
   }
   .footer-two {
@@ -71,17 +82,20 @@ export const Foot = styled.div`
     line-height: 30px;
     margin-top: 1rem;
 
+
     color: rgba(255, 255, 255, 0.8);
   }
   .footer-contactus {
     font-size: 18px;
     line-height: 22px;
 
+
     color: rgba(255, 255, 255, 0.8);
   }
 
   .foooter-other {
     padding-left: 68px;
+   
   }
 
   @media (min-width: 250px) and (max-width: 768px) {

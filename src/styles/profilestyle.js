@@ -401,6 +401,7 @@ export const ProfileJs = styled.div`
   }
   .img-one {
     margin-top: -44px;
+    z-index: 1;
   }
   .under-img {
     width: 100px;

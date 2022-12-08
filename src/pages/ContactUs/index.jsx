@@ -291,7 +291,7 @@ const contact = () => {
                     <div className="display">
                       <div>
                         <img
-                          src="assets/images/canada.png"
+                          src="assets/images/can.png"
                           className="map-image"
                           alt="img"
                         />
@@ -335,7 +335,7 @@ const contact = () => {
                     <div className="display">
                       <div>
                         <img
-                          src="assets/images/united.png"
+                          src="assets/images/united-the.png"
                           className="map-image"
                           alt="img"
                         />

@@ -63,7 +63,7 @@ const Slick = () => {
       <SlickBG className="container-fluid">
         <div className="text-center ">
           <div>
-            <p className="text-light mt-5 what-people">What People say</p>
+            <p className="text-light pt-5 what-people">What People say</p>
             {/* <p className="Slider-phara">
            Success stories from our partners
             </p> */}

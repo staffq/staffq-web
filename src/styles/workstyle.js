@@ -32,6 +32,7 @@ height: 50vh; */
     justify-content: center;
     align-items: center;
   }
+
   h4 {
     font-size: 30px;
   }
@@ -119,10 +120,10 @@ height: 50vh; */
   }
 
   h1 {
-    font-family: "General Sans";
+   
     font-style: normal;
     font-weight: 600;
-    font-size: 70px;
+    font-size: 61px;
     line-height: 94px;
     /* identical to box height */
 
@@ -147,6 +148,15 @@ height: 50vh; */
     margin-top: 19px;
     font-size: 33px;
   }
+  .TDS{
+  font-weight: 600;
+font-size: 36px;
+line-height: 49px;
+/* identical to box height */
+
+
+color: #081429;
+}
 
   
   .solution-p-tag {
@@ -551,6 +561,17 @@ span{
 
     color: #081429;
   }
+  @media(min-width:100px) and (max-width:768px){
+    .still-not-sure {
+    font-style: normal;
+    font-weight: 600;
+    padding-top: 21px;
+    font-size: 31px;
+    line-height: 56px;
+    text-align: center;
+    color: #081429;
+}
+  }
   .Our-team {
     font-style: normal;
     font-weight: 500;
@@ -561,6 +582,25 @@ span{
     text-align: center;
 
     color: #081429;
+  }
+  .Our-team-one{
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 30px;
+    /* or 150% */
+
+    text-align: center;
+display: none;
+    color: #081429;
+  }
+  @media (min-width: 50px) and (max-width: 600px) {
+     .Our-team{
+      display: none;
+     }
+     .Our-team-one{
+      display: block;
+     }
   }
 `;
 
@@ -574,7 +614,10 @@ export const Header = styled.div`
   .ball-image {
     width: 100%;
   }
-  h1 {
+  h1{
+    font-size: 61px;
+  }
+  .header-h-one {
     left: 170px;
     top: 282px;
 
@@ -683,6 +726,12 @@ export const Header = styled.div`
       margin-left: 2rem;
     }
   }
+  @media (min-width: 1200px) and (max-width: 1360px) {
+ .ball-one-page{
+  position: absolute;
+  top: 6rem;
+ }
+  }
 `;
 
 export const Image = styled.div`
@@ -713,7 +762,7 @@ export const Image = styled.div`
     margin-left: 2rem;
 
     font-style: normal;
-    font-weight: 600;
+    font-weight: 700;
     font-size: 20px;
     line-height: 27px;
     text-align: center;
@@ -726,7 +775,7 @@ export const Image = styled.div`
     height: 54px;
     line-height: 27px;
 
-    font-weight: 600;
+    font-weight: 700;
     font-size: 20px;
     margin-left: 2rem;
   }
@@ -827,4 +876,19 @@ export const SmallHeader = styled.div`
     display: block;
    
   }
+  @media (min-width: 768px) and (max-width: 1000px) {
+ 
+    .ball-sm-page {
+    position: relative;
+    top: 7rem;
+    padding-top: 3rem;}
+    .banner-image {
+    width: 100%;
+    padding-top: 8rem;
+  }
+  h2{
+      font-size: 54px;
+    }
+  }
+  
 `;

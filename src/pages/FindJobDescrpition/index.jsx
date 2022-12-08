@@ -15,10 +15,11 @@ const Finddescription = () => {
             </h1>
           </div>
         </div>
+        <div className="container-fluid bg-one">
         <div className="row w-100">
           <div className="col-lg-1"></div>
-          <div className="col-lg-3">
-          <div className="mt-3">
+          <div className="col-lg-5">
+          <div className="mt-4">
           <ul className="nav">
             <li className="nav-item">Home</li>
             <li className="nav-item">
@@ -39,7 +40,7 @@ const Finddescription = () => {
           </div>
          </div>
 
-        <div className="row mt-5  find-bottom container">
+        <div className="row mt-4  find-bottom container">
           <div className="col-lg-1"></div>
           <div className="col-lg-11 sm-upload">
             <p className="frontent">Front End Developer</p>
@@ -53,24 +54,24 @@ const Finddescription = () => {
             </p>
             <h5>Technical Skills</h5>
             <div className="technical">
-              <li className="mt-2">
+              <li className="pt-2 dots">
                 Advanced knowledge of JavaScript Proficient in JavaScript
               </li>
-
-              <li className="mt-2">
+        
+              <li className="pt-3 dots">
                 Proficient in JavaScript frameworks/libraries like React js is
                 mandator
               </li>
-              <li className="mt-2">
+              <li className="mt-2 dots">
                 {" "}
                 Proficient understanding of web markup, including HTML5, CSS3
                 with strong interest in UX
               </li>
-              <li className="mt-3">
+              <li className="mt-3 dots">
                 Basic understanding of server-side CSS pre-processing platforms,
                 such as LESS and SASS
               </li>
-              <li className="mt-3">
+              <li className="mt-3 dots">
                 Basic understanding of server-side CSS pre-processing platforms,
                 such as LESS and SASS
               </li>
@@ -78,11 +79,11 @@ const Finddescription = () => {
 
             <div>
               <h6>Soft Skills</h6>
-              <li className="mt-3">Accuracy and attention to detail</li>
-              <li className="mt-3">
+              <li className="mt-3 dots">Accuracy and attention to detail</li>
+              <li className="mt-3 dots">
                 Good coding skills and curiosity to explore new technologies
               </li>
-              <li className="mt-3">
+              <li className="mt-3 dots">
                 They should be methodical in their approach to design
               </li>
               <div className="small-btn">
@@ -90,6 +91,7 @@ const Finddescription = () => {
               </div>
             </div>
           </div>
+        </div>
         </div>
       </Div>
     </>

@@ -7,6 +7,7 @@ export const H1 = styled.h1`
   font-style: normal;
   font-size: 64px;
   line-height: 79px;
+  padding-top: 1rem;
 
   color: #081429;
 
@@ -112,6 +113,7 @@ color:white;
 .btn-black {
   background: #050C18;
 border-radius: 16px;
+margin-top: 2rem;
 }
 
 .btn-grey {

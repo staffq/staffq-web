@@ -100,7 +100,7 @@ line-height: 38px;
 color: #081429;
 
   }
-p,li{
+p, .dots{
     font-weight: 500;
 font-size: 16px;
 line-height: 24px;
@@ -119,7 +119,7 @@ h6{
     width: 174px;
     height: 62px;
     font-weight: 500;
-    font-size: 22px;
+    font-size: 20px;
     line-height: 30px;
     /* identical to box height */
 margin-top: 3rem;
@@ -127,6 +127,11 @@ margin-top: 3rem;
     background: #efce1e;
     box-shadow: 0px 4px 20px rgba(8, 20, 41, 0.08);
     border-radius: 16px;
+  }
+  .bg-one{
+    background: #FAFDFF;
+    padding-bottom: 3rem;
+
   }
 
   @media(min-width:100px) and (max-width:800px){

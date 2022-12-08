@@ -5,7 +5,17 @@ import React, { useState, useEffect } from "react";
 import Link from "next/link";
 
 /* ************************** Import Styles *************************** **/
-import { Navbar, Ul, Li, Button, Div, NavContent, Hover, Small } from "./style";
+import {
+  Navbar,
+  Ul,
+  Li,
+  Button,
+  Div,
+  NavContent,
+  Hover,
+  Small,
+  Card,
+} from "./style";
 
 /* ************************** Import Icons *************************** **/
 import { CgMenu } from "react-icons/cg";
@@ -25,12 +35,10 @@ const Header = () => {
     };
   }, []);
   const [toggle, setToggle] = useState(false);
- 
- 
-  useEffect (() =>{
-  
- setToggle(toggle)
-  },[])
+
+  useEffect(() => {
+    setToggle(toggle);
+  }, []);
 
   // const Btn = () =>{
   // setClick(!click);
@@ -63,40 +71,56 @@ const Header = () => {
                 <img src="assets/images/staffq.svg" alt="img" />
               </a>
             </Link>
-            <ul className="navbar-nav mr-auto mt-2  mt-lg-0">
-              {/* <li className="nav-item active">
-                <Hover>
-                  <Link href="#">
-                    <p className="mb-0">Service</p>
-                  </Link>
-                </Hover>
-              </li> */}
+            <div className="d-grid">
+              <ul className="navbar-nav mr-auto mt-2  mt-lg-0">
+                {/* <li className="nav-item active ">
+                  <Hover className="">
+                    <Link href="">
+                      <p className="mb-0 act ">Service</p>
+                    </Link>
+                  </Hover>
+                </li> */}
 
-              {/* <li className="nav-item active">
-                <Hover>
-                  <Link href="/find-jobs">
-                    <p className="mb-0">Find Jobs</p>
-                  </Link>
-                </Hover>
-              </li> */}
-              <li className="nav-item active">
-                <Hover>
-                  <Link href="/about-us">
-                    <p className="mb-0">About Us</p>
-                  </Link>
-                </Hover>
-              </li>
-              <li className="nav-item active">
-                <Hover>
-                  <Link href="contact-us">
-                    <p className="mb-0">Contact Us</p>
-                  </Link>
-                </Hover>
-              </li>
-            </ul>
+                {/* <li className="nav-item ">
+                  <Hover>
+                    <Link href="/find-jobs">
+                      <p className="mb-0">Find Jobs</p>
+                    </Link>
+                  </Hover>
+                </li> */}
+                <li className="nav-item ">
+                  <Hover>
+                    <Link href="/about-us">
+                      <p className="mb-0">About Us</p>
+                    </Link>
+                  </Hover>
+                </li>
+                <li className="nav-item ">
+                  <Hover>
+                    <Link href="contact-us">
+                      <p className="mb-0">Contact Us</p>
+                    </Link>
+                  </Hover>
+                </li>
+              </ul>
+              <div className="cardd">
+                <div className="container popup">
+                  <div className="card container">
+                    <div className="card-text">
+                      <p>Permanent Recruitment</p>
+                      <p>Contract Recruitmentt </p>
+                      <p>Offshore Recruitment </p>
+                      <p>Onshore Recruitment </p>
+                      <p>Recruitment Process Outsourcing </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
         </nav>
       </Div>
+
       <Small>
         <div className="sm-header container-fluid p-0 position-fixed ">
           <nav
@@ -123,35 +147,56 @@ const Header = () => {
             <div className="collapse navbar-collapse" id="navbarTogglerDemo02">
               {" "}
             </div>
-        
           </nav>
           {toggle ? (
-              <div>
-                <ul className="navbar-nav mr-auto  mt-lg-0">
-                  <li className="nav-item active">
+            <div>
+              <ul className="navbar-nav mr-auto  mt-lg-0">
+                <li className="nav-item active">
                   <Link href="/">
-                      <a className="nav-link" href="#"   onClick={() => setToggle(false)}>
-                        Home<span className="sr-only"></span>
-                      </a>
-                    </Link>{" "}
-                    <Link href="/about-us">
-                      <a className="nav-link" href="#"   onClick={() => setToggle(false)}>
-                        About Us<span className="sr-only"></span>
-                      </a>
-                    </Link>{" "}
-                  </li>
+                    <a
+                      className="nav-link"
+                      href="#"
+                      onClick={() => setToggle(false)}
+                    >
+                      Home<span className="sr-only"></span>
+                    </a>
+                  </Link>{" "}
+                  <Link href="/about-us">
+                    <a
+                      className="nav-link"
+                      href="#"
+                      onClick={() => setToggle(false)}
+                    >
+                      About Us<span className="sr-only"></span>
+                    </a>
+                  </Link>{" "}
+                </li>
+                <li className="nav-item">
+                  <Link href="find-the-best-jobs">
+                    <a
+                      className="nav-link"
+                      href="#"
+                      onClick={() => setToggle(false)}
+                    >
+                      Find Jobs
+                    </a>
+                  </Link>
+                </li>
 
-                  <li className="nav-item">
-                    <Link href="contact-us"   >
-                      <a className="nav-link" href="#" onClick={() => setToggle(false)}>
-                        Contact Us
-                      </a>
-                    </Link>
-                  </li>
-         
-                </ul>
-              </div>
-            ):null }
+                <li className="nav-item">
+                  <Link href="contact-us">
+                    <a
+                      className="nav-link"
+                      href="#"
+                      onClick={() => setToggle(false)}
+                    >
+                      Contact Us
+                    </a>
+                  </Link>
+                </li>
+              </ul>
+            </div>
+          ) : null}
         </div>
       </Small>
     </>

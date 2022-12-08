@@ -26,8 +26,8 @@ const Footer = () => {
                     className="col-lg-3 col-md-6 col-sm-12  "
                     style={{ marginTop: "60px" }}
                   >
-                    <div className="cursor-pointer">
-                      <p className="text-white head" style={{ fontSize: "24px" }}>
+                    <div className="">
+                      <p className="text-white head p-tag" style={{ fontSize: "24px" }}>
                         Our Services
                       </p>
                       <div className="footer-one ">
@@ -60,8 +60,8 @@ const Footer = () => {
                     className="col-lg-3 col-md-6 col-sm-12   foooter-other"
                     style={{ marginTop: "60px" }}
                   >
-                    <div className="cursor-pointer">
-                      <p  className="text-white head" style={{ fontSize: "24px" }}>
+                    <div className="">
+                      <p  className="text-white head p-tag" style={{ fontSize: "24px" }}>
                         Others
                       </p>
                       <div className="footer-two ">
@@ -74,10 +74,10 @@ const Footer = () => {
                     </div>
                   </div>
                   <div
-                    className="col-lg-3 col-md-6 col-sm-12   cursor-pointer "
+                    className="col-lg-3 col-md-6 col-sm-12   "
                     style={{ marginTop: "60px" }}
                   >
-                    <p  className="text-white head" style={{ fontSize: "24px" }}>
+                    <p  className="text-white head p-tag" style={{ fontSize: "24px" }}>
                       Contact Us
                     </p>
                     <div className="mt-4 footer-contactus">
@@ -91,7 +91,7 @@ const Footer = () => {
                       </span>
                       <p className="infostaff">
                         {" "}
-                        Bharathi Street,Valipalayam, Tiruppur, 641 601
+                        Bharathi Street,Valipalayam, <br></br>Tiruppur, 641 601
                       </p>
 
                       {/* <IoCall/> */}

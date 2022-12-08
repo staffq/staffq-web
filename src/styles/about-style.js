@@ -29,6 +29,7 @@ export const AboutBg = styled.div`
     color: white;
     font-size: 18px;
     font-weight: 600;
+    margin-top: 10px;
 
     background: #081429;
     border-radius: 16px;
@@ -65,7 +66,7 @@ export const AboutBg = styled.div`
     }
     .AboutPtext {
       font-size: 58px;
-      margin-top: 32px;
+      /* margin-top: 32px; */
       text-align: center;
       align-items: center;
       justify-content: center;
@@ -80,17 +81,19 @@ export const AboutBg = styled.div`
   .AboutPtext {
     /* font-size: 16px; */
 
-    font-size: 15px;
+    font-size: 16px;
     line-height: 35px;
     letter-spacing: 0em;
     text-align: left;
-    color: rgba(8, 20, 41, 0.6);
+    color: #08142999;
+
     font-weight: 600;
+    padding-top: 1rem;
   }
-  .medium-two {
+  /* .medium-two {
     display: flex;
     align-items: center;
-  }
+  } */
   @media (min-width: 1200px) and (max-width: 1400px) {
     .AboutPtext {
       font-size: 16px;
@@ -156,6 +159,9 @@ export const AboutBg = styled.div`
     /* .AboutPtext {
      text-align: center;
     } */
+    .medium-two{
+      padding-bottom: 2rem;
+    }
   }
 `;
 export const Medium = styled.div`

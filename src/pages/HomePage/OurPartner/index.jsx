@@ -78,8 +78,59 @@ const OurPartner = () => {
               className="me-5 PartnerImages-icons-second-four"
               style={{ width: "120px" }}
             />
+          
           </div>
         </Flex>
+
+        {/* <div className="container">
+        <img
+              src="assets/images/Pfizer.png
+              "
+              style={{ width: "95px" }}
+              className="icons-one"
+              alt="img"
+            />
+               <img
+              src="assets/images/cognizant.png"
+              className="icons-two"
+              style={{ width: "182px" }}
+              alt="img"
+            />
+      <img
+              src="assets/images/Vedhainfo.png"
+              className="icons-three"
+              style={{ width: "142px" }}
+              alt="img"
+            />
+                <img
+              src="assets/images/Group-440.png"
+              className="icons-four"
+              style={{ width: "126px" }}
+              alt="img"/>
+                   <img
+              src="assets/images/Protiviti.png"
+              className="me-5 PartnerImages-icons-second-one "
+              style={{ width: "128px" }}
+              alt="img"/>
+                 <img
+              src="assets/images/kovai.png"
+              className="me-5 PartnerImages-icons-second-two"
+              style={{ width: "88px" }}
+              alt="img"
+            />
+             <img
+              src="assets/images/Agilisium.png"
+              className="me-5 PartnerImages-icons-second-three "
+              style={{ width: "115px" }}
+              alt="img"
+            />
+              <img
+              src="assets/images/Aspire-systems.png"
+              alt="img"
+              className="me-5 PartnerImages-icons-second-four"
+              style={{ width: "120px" }}
+            />
+        </div> */}
       </Section>
       <SmallSection>
         <div className="container">

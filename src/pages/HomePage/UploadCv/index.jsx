@@ -54,6 +54,7 @@ const UploadCV = () => {
           </h1>
         </div>
       </div>
+      <div className="container-fluid bg-one">
       <form onSubmit={formik.handleSubmit}>
    
         <div className="container top">
@@ -70,12 +71,12 @@ const UploadCV = () => {
               <img src="assets/images/icons-right.svg"></img>
             </li>
             {/* <li className="nav-item">Upload Cv</li> */}
-            <li className="nav-item">Find jobs</li>
+            <li className="nav-item">Upload CV</li>
           </ul>
         </div>
           </div>
          </div>
-            
+          
           
           <div className="row mt-5">
             <div className="col-lg-1"></div>
@@ -221,7 +222,7 @@ const UploadCV = () => {
                     onSubmit={formik.handleSubmit}
                    
                   >
-                    submit
+                    Submit
                   </button>
                 </div>
                 <div className="col-lg-6"></div>
@@ -232,11 +233,13 @@ const UploadCV = () => {
           </div>
         </div>
       </form>
+      </div>
       {
         popup?
 
         <Popup  onHide={() => setPopup(false)} />:""
       }
+      
     </Div>
   );
 };

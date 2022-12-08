@@ -4,7 +4,7 @@ import styled from "styled-components";
 export const Div = styled.div`
   p {
     font-size: 16px;
-    font-weight: bold;
+    font-weight: 600;
   }
   .navbar .collapse {
     justify-content: space-between;
@@ -20,11 +20,28 @@ export const Div = styled.div`
     z-index: 100;
     border-bottom: 1px solid rgba(8, 20, 41, 0.1);
   }
+
+  .cardd {
+    padding-top: 4rem;
+    z-index: 999;
+    position: absolute;
+  }
+
+  .card {
+    padding-top: 3rem;
+    width: 300px;
+  }
+  .popup {
+    display: none;
+  }
+  .act:hover + .popup {
+    display: block;
+   
+  }
   @media (min-width: 250px) and (max-width: 990px) {
-    .navbar{
+    .navbar {
       margin-top: 2rem;
       display: none;
-
     }
   }
   .ul {
@@ -54,17 +71,16 @@ export const Div = styled.div`
     .navbar-brand {
       padding-left: 0px;
     }
-     .navbar{
+    .navbar {
       top: 0;
       position: fixed;
-     }
+    }
   }
   @media (min-width: 990px) and (max-width: 1080px) {
     .navbar-nav {
       padding-right: 4rem;
     }
   }
-
 `;
 export const Img = styled.div`
   padding-left: 79px;
@@ -106,22 +122,21 @@ export const Hover = styled.a`
     transform-origin: bottom left;
     transform: scaleX(1);
   }
-`
-export const  Small = styled.div`
-  .sm-header{
+`;
+export const Small = styled.div`
+  .sm-header {
     display: none;
   }
-  .navbar-nav{
+  .navbar-nav {
     background-color: white;
     padding-left: 2rem;
     font-size: 21px;
     font-weight: 700;
     margin-top: 5rem;
   }
-  @media(min-width:250px) and (max-width:990px){
-    .sm-header{
+  @media (min-width: 250px) and (max-width: 990px) {
+    .sm-header {
       display: block;
-      
     }
     .navbar {
       border-bottom: 2px solid rgba(8, 20, 41, 0.1);
@@ -133,6 +148,3 @@ export const  Small = styled.div`
     }
   }
 `;
-
-
-

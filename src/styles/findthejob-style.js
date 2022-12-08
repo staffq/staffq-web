@@ -102,14 +102,20 @@ export const Find = styled.div`
     width: 100%;
     height: 56px;
     font-size: 18px;
-    font-weight: 500;
+    /* font-weight: 500; */
     margin-bottom: 20px;
     box-shadow: 0px 4px 16px rgba(8, 20, 41, 0.08);
     border: 1px solid rgba(8, 20, 41, 0.1);
   }
   .showing-results {
     display: flex;
+    padding-top: 2rem;
     justify-content: space-between;
+  }
+  .bg-colour{
+    background: #FAFDFF;
+    padding-bottom: 3rem;
+
   }
   input {
     font-weight: 500;
@@ -146,7 +152,7 @@ export const Find = styled.div`
     height: 48px;
     font-size: 18px;
     width: 293px;
-    font-weight: 500;
+    /* font-weight: 500; */
     left: 0px;
     top: 0px;
     border-radius: 10px;
@@ -249,7 +255,7 @@ export const Find = styled.div`
 
     font-size: 16px;
     line-height: 22px;
-    font-family: "General Sans";
+ 
     font-style: normal;
 
     margin-bottom: 10px;
@@ -268,6 +274,9 @@ font-size: 14px;
 line-height: 19px; */
     /* identical to box height */
   }
+  .btnone:hover{
+    background: #efce1e;
+  }
   .btnn {
     padding-left: 5px;
     margin-top: 12px;
@@ -277,6 +286,11 @@ line-height: 19px; */
     /* identical to box height */
 
     color: #081429;
+  }
+  @media (min-width: 990px) and (max-width: 1200px) {
+.btnn{
+  font-size: 13px;
+}
   }
   .perivious {
     background: #ffffff;
@@ -299,7 +313,7 @@ line-height: 19px; */
   .bg-one {
     background: #efce1e;
     width: 100%;
-    margin-top: 3rem;
+  
   }
   .upload {
     width: 138px;
@@ -338,7 +352,7 @@ line-height: 19px; */
     margin-top: 87px;
   }
 
-  @media (min-width: 10px) and (max-width: 990px) {
+  @media (min-width: 10px) and (max-width: 1000px) {
     .bg-one {
       display: none;
     }
@@ -432,7 +446,7 @@ export const SmallFind = styled.div`
       margin-top: 50px;
     }
   }
-  @media (min-width: 769px) and (max-width: 900px) {
+  @media (min-width: 769px) and (max-width: 1000px) {
     display: block;
     background: #efce1e;
 

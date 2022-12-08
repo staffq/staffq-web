@@ -12,11 +12,16 @@ export const Div = styled.div`
     z-index: -99;
 
   } */
-  margin-bottom: 6rem;
+  
+  /* margin-bottom: 6rem; */
 
   .background {
     position: relative;
     z-index: -99;
+  }
+  .bg-one{
+    background: #FAFDFF;
+
   }
   h1 {
     text-align: center;
@@ -36,6 +41,11 @@ export const Div = styled.div`
     display: flex;
     justify-content: center;
   }
+.bg-one{
+  background: #FAFDFF;
+
+  padding-bottom: 7rem;
+}
   .enter {
     font-weight: 500;
     font-size: 17px;
@@ -64,28 +74,8 @@ export const Div = styled.div`
 
     color: #081429;
   }
-  .ul-method {
-    display: inline-block;
-    display: flex;
-    padding-top: 1rem;
-    padding: 0px;
-  }
-  .nav{
-    font-size: 14px;
-    font-weight: 500;
-    cursor: pointer;
-    }
-  
-  .nav-item {
-    /* padding-left: 20px; */
-    margin-left: 12px;
-  }
-  .one {
-    padding-left: 17px;
-  }
-  .two {
-    padding-left: 12px;
-  }
+
+
   .attachement {
     font-size: 20px;
     line-height: 27px;
@@ -101,6 +91,14 @@ export const Div = styled.div`
 
     color: rgba(8, 20, 41, 0.8);
   }
+  .nav-item{
+ margin-right: 12px;
+}
+.nav{
+  font-weight: 500;
+  cursor: pointer;
+  font-size: 14px;
+}
   input {
     border: 0.5px solid rgba(0, 0, 0, 0.5);
     border-radius: 12px;
@@ -122,7 +120,7 @@ export const Div = styled.div`
     width: 174px;
     height: 62px;
     font-weight: 500;
-    font-size: 22px;
+    font-size: 20px;
     line-height: 30px;
     /* identical to box height */
 

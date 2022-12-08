@@ -17,8 +17,9 @@ const RequirementProcess = () => {
                       alt="img"
                     />
                     <div className="ball-one-page">
-                      <h1>Recruitment Process</h1>
-                      <h1>Outsourcing</h1>
+                      <span className="header-h-one">Recruitment Process</span><br></br>
+                      <span className="header-h-one">Outsourcing</span>
+                   
                       <p>
                         Our recruitment process outsourcing (RPO) is all about
                         finding the right people to realize your organization's
