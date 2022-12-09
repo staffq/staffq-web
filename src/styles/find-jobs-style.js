@@ -66,11 +66,12 @@ export const Findjobs = styled.div`
       margin-top: 5rem !important;
     }
     .arow {
-    width: 143px !important;
-    height: 107px !important;
+      width: 121px !important;
+    height: 94px !important;
     padding: 4px;
     margin-left: -74px;
-    margin-top: 127px !important;
+    margin-top: 157px !important;
+
   
   }}
   @media (min-width: 990px) and (max-width: 1200px) {

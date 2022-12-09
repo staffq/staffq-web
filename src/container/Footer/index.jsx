@@ -65,7 +65,8 @@ const Footer = () => {
                         Others
                       </p>
                       <div className="footer-two ">
-                        <span> About Us</span>
+                        <Link href="about-us">
+                        <span> About Us</span></Link>
                         <br></br>
                         <span> Blogs</span>
                         <br></br>
@@ -154,13 +155,28 @@ const Footer = () => {
                 </p>
                 <br></br>
                 <div style={{ fontSize: "18px" }} className="font">
-                  <p>Permanent Deployment</p>
-                  <p>Recruitment process outsourcing</p>
-                  <p>Contract to Hire</p>
-                  <p>Payroll Services</p>
-                  <p>Passthrough services</p>
-                  <p>Offshore Recruitment Services</p>
-                  <p>Onshore Recruitment Services</p>
+                <Link href="peramanent-deployment">
+                        <p className="">Permanent Deployment</p>
+                        </Link>
+                     
+                        <Link href="contract-recruitment">
+                        <p>Contract to Hire</p>
+                        </Link>
+                     
+                        <Link href="payroll-services">
+                        <p> Payroll Services</p>
+                        </Link>
+                  
+                        <Link href="requirement-process">
+                        <p> Passthrough services</p> 
+                        </Link>
+                        <Link href="offshore-recruitment">
+                        <p>Offshore Recruitment Services</p>
+                        </Link>
+                        
+                        <Link href="onshore-recruitment">
+                        <p>Onshore Recruitment Services</p>
+                        </Link>
                 </div>
               </div>
             </div>

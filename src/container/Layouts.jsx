@@ -9,10 +9,14 @@ import Header from "./Header";
 /** **************************** Import store ****************************** */
 import { store } from "../redux/store";
 
-export default function Layouts({ children }) {
+export default function Layouts({ children, isShown, handleShow, handleHide }) {
   return (
     <Provider store={store}>
-      <Header />
+      <Header
+        isShown={isShown}
+        handleShow={handleShow}
+        handleHide={handleHide}
+      />
       {children}
       <Footer />
     </Provider>

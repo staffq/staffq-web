@@ -140,7 +140,7 @@ const AboutPage = () => {
                 />
               </div>
             </div>
-            <div className="col-lg-6 col-sm-12 vision-row">
+            <div className="col-lg-5 col-sm-12 vision-row">
               <div className="second-content">
                 <div className="second-page-h1">
                   <div className="d-flex">
@@ -187,8 +187,8 @@ const AboutPage = () => {
                 <div className="section-one">
                   <div className=" first-row">
                     <img
-                      src="assets/images/discover.png"
-                      className="img-one-one"
+                      src="assets/images/discover.png "
+                      className="img-one-one container"
                       alt="img"
                       width='100%'
                     />
@@ -208,7 +208,7 @@ const AboutPage = () => {
                   <div className="first-row container">
                     <img
                       src="assets/images/evalute.png"
-                       className="img-one-one"
+                       className="img-one-one "
                       alt="img"
                     />
                     <p className="discover-h-three">3. Evaluate</p>

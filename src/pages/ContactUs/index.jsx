@@ -1,5 +1,11 @@
 import React from "react";
 import Head from "next/head.js";
+
+import { useFormik } from "formik";
+import * as Yup from "Yup";
+
+import styled from "styled-components";
+
 import {
   ContacttStyle,
   Form,
@@ -7,8 +13,51 @@ import {
   SmallContact,
 } from "../../styles/contact-style.js";
 
-// import Input from "../../components/FormControls/Input/index.jsx";
+import Input from "../../components/FormControls/Input/index.jsx";
+
+export const ErrorText = styled.div`
+  color: red;
+
+  font-size: 10px;
+
+  padding-bottom: 5px;
+
+  font-weight: 600;
+`;
 const contact = () => {
+  const formik = useFormik({
+    initialValues: {
+      firstName: "",
+      lastName: "",
+      email: "",
+      experience: "",
+      linkedin: "",
+      number: "",
+      location: "",
+      files: "",
+      ln: "",
+      fn: "",
+    },
+    validationSchema: Yup.object({
+      firstName: Yup.string()
+        // .max(15, "Must be 15 characters or less")
+        .required("Required *"),
+      lastName: Yup.string().required("Required *"),
+      email: Yup.string().email("Invalid email address").required("Required*"),
+      number: Yup.string().max(10, "").required("Required*"),
+      experience: Yup.string().required("Required*"),
+      linkedin: Yup.string().required("Required*"),
+      files: Yup.mixed().required("Required*"),
+      ln: Yup.mixed().required("Required*"),
+      fn: Yup.mixed().required("Required*"),
+      location: Yup.mixed().required("Required*"),
+    }),
+    onSubmit: (values) => {
+      console.log(values, "heloooooooo");
+      setPopup(true);
+      // formik.handleReset();
+    },
+  });
   return (
     <div>
       <Head>
@@ -150,6 +199,148 @@ const contact = () => {
               </div>
             </div>
           </div>
+          <Form>
+            <div className="container">
+              <div className="row mt-5">
+                <div className="col-lg-1"></div>
+                <div className="col-lg-5 col-sm-12">
+                  <div>
+                    <label> Name*</label>
+                    <Input
+                      width="100%"
+                      placeholder="Eg: John Krisinski"
+                      name="firstName"
+                      onChange={formik.handleChange}
+                      onBlur={formik.handleBlur}
+                      value={formik.values.firstName}
+                    />
+                    {formik.touched.firstName && formik.errors.firstName ? (
+                      <ErrorText>{formik.errors.firstName}</ErrorText>
+                    ) : (
+                      <ErrorText>&nbsp;</ErrorText>
+                    )}{" "}
+                  </div>
+
+                  <div className=" ">
+                    <label className>Phone Number*</label>
+                    <Input
+                      width="100%"
+                      placeholder="98765-43210"
+                      name="ln"
+                      onChange={formik.handleChange}
+                      onBlur={formik.handleBlur}
+                      value={formik.values.ln}
+                      required
+                    />
+
+                    {formik.touched.ln && formik.errors.ln ? (
+                      <ErrorText>{formik.errors.ln}</ErrorText>
+                    ) : (
+                      <ErrorText>&nbsp;</ErrorText>
+                    )}
+                  </div>
+                  <div className="form-group ">
+                    <label for="exampleInputPassword1">State*</label>
+                    <div>
+                      <select
+                        className="input-option"
+                        name="fn"
+                        onChange={formik.handleChange}
+                        onBlur={formik.handleBlur}
+                        value={formik.values.number}
+                      >
+                        <option value="">State</option>
+                        <option value="">TamilNadu</option>
+                        <option value="">Kerala</option>  
+                      
+                      </select>{" "}
+                      {formik.touched.fn && formik.errors.fn ? (
+                        <ErrorText>{formik.errors.fn}</ErrorText>
+                      ) : (
+                        <ErrorText>&nbsp;</ErrorText>
+                      )}
+                    </div>
+                  </div>
+                </div>
+                <div className="col-lg-5 col-sm-12">
+                  <div className="hiden">
+                    <label>Email address* </label>
+                    <Input
+                      width="100%"
+                      name="email"
+                      placeholder="Eg: Johnkrisinski@email.com"
+                      onChange={formik.handleChange}
+                      onBlur={formik.handleBlur}
+                      value={formik.values.email}
+                    />
+                    {formik.touched.email && formik.errors.email ? (
+                      <ErrorText>{formik.errors.email}</ErrorText>
+                    ) : (
+                      <ErrorText>&nbsp;</ErrorText>
+                    )}
+                  </div>
+                  <div>
+                    <div className="form-group ">
+                      <label for="exampleInputPassword1">Country*</label>
+                      <div>
+                        <select
+                          className="input-option"
+                          name="files"
+                          onChange={formik.handleChange}
+                          onBlur={formik.handleBlur}
+                          value={formik.values.number}
+                        >
+                          <option value="">Country</option>
+                          <option value="">TamilNadu</option>
+                          <option value="">Kerala</option>
+                        </select>{" "}
+                        {formik.touched.files && formik.errors.files ? (
+                          <ErrorText>{formik.errors.files}</ErrorText>
+                        ) : (
+                          <ErrorText>&nbsp;</ErrorText>
+                        )}
+                      </div>
+                    </div>
+                  </div>
+
+                  <div>
+                    <label>City*</label>
+                    <Input
+                      width="100%"
+                      name="experience"
+                      placeholder="City"
+                      onChange={formik.handleChange}
+                      onBlur={formik.handleBlur}
+                      value={formik.values.experience}
+                    />{" "}
+                    {formik.touched.experience && formik.errors.experience ? (
+                      <ErrorText>{formik.errors.experience}</ErrorText>
+                    ) : (
+                      <ErrorText>&nbsp;</ErrorText>
+                    )}
+                  </div>
+                </div>
+                <div className="col-lg-1"></div>
+              </div>
+              <div className="row ">
+                <div className="col-lg-1"></div>
+                <div className="col-lg-10 col-sm-12 col-sm-12">
+                  <div className="form-group ">
+                    <label for="exampleInputPassword1">Your Requirement*</label>
+                    <input type="textarea" className="form-control text" />
+                  </div>
+                </div>
+                <div className="col-lg-1"></div>
+              </div>
+            </div>
+            <div className=" mt-5">
+              <button className="btn submit-btn " onClick={formik.handleSubmit}>
+                Submit
+              </button>
+            </div>
+
+       
+          </Form>
 
           {/* ........................form section.............................. */}
           {/* <Form>
@@ -238,7 +429,7 @@ const contact = () => {
             <div className="container">
               <h2 className="Our-Branches">Our Branches</h2>
               <div className="row  roww">
-                <div className="col-lg-4 col-sm-12 col-md-6 ">
+                <div className="col-lg-4 col-sm-12 col-md-6 contact-one">
                   <div className="">
                     <div className="display">
                       <div>
@@ -251,7 +442,7 @@ const contact = () => {
                       <div className="display-two">
                         <span className="h-one">India</span>
 
-                        <span className="h-one">Tiruppur</span>
+                        <span className="h-two">Tiruppur</span>
                       </div>
                     </div>
                   </div>
@@ -284,7 +475,7 @@ const contact = () => {
                     </div>
                   </div>
                 </div>
-                <div className="col-lg-4 col-sm-12 col-md-6 res-one ">
+                <div className="col-lg-4 col-sm-12 col-md-6 res-one contact-two">
                   <div>
                     <div className="display">
                       <div>
@@ -296,7 +487,7 @@ const contact = () => {
                       </div>
                       <div className="display-two">
                         <span className="h-one">Canada</span>
-                        <span className="h-one">Ontario</span>
+                        <span className="h-two">Ontario</span>
                       </div>
                     </div>
                   </div>
@@ -328,7 +519,7 @@ const contact = () => {
                     </div>
                   </div>
                 </div>
-                <div className="col-lg-4 col-sm-12 col-md-6 res-two">
+                <div className="col-lg-4 col-sm-12 col-md-6 res-two contact-three">
                   <div>
                     <div className="display">
                       <div>
@@ -340,7 +531,7 @@ const contact = () => {
                       </div>
                       <div className="display-two">
                         <span className="h-one">United Kingdom</span>
-                        <span className="h-one">Southampton</span>
+                        <span className="h-two">Southampton</span>
                       </div>
                     </div>
                   </div>
@@ -372,10 +563,7 @@ const contact = () => {
                     </div>
                   </div>
                 </div>
-                
               </div>
-
-            
             </div>
           </div>
 
@@ -396,7 +584,7 @@ const contact = () => {
 
                         <div className="">
                           <p className="h-one">India</p>
-                          <p className="h-one">Tiruppur</p>
+                          <p className="h-two">Tiruppur</p>
                         </div>
                       </div>
                     </div>
@@ -442,7 +630,7 @@ const contact = () => {
                       </div>
                       <div className="">
                         <p className="h-one">Canada</p>
-                        <p className="h-one">Ontario</p>
+                        <p className="h-two">Ontario</p>
                       </div>
                     </div>
                     <div className=" d-fx ">
@@ -486,7 +674,7 @@ const contact = () => {
                       </div>
                       <div className="">
                         <p className="h-one">United Kingdom</p>
-                        <p className="h-one">Southampton</p>
+                        <p className="h-two">Southampton</p>
                       </div>
                     </div>
                     <div className=" d-fx mt-2 ">

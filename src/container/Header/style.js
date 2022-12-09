@@ -22,22 +22,24 @@ export const Div = styled.div`
   }
 
   .cardd {
-    padding-top: 4rem;
+  top: 81px;
     z-index: 999;
     position: absolute;
   }
 
   .card {
-    padding-top: 3rem;
+    padding-top: 2rem;
     width: 300px;
+    padding: 19px;
+    border-radius: 17px;
+  }
+  .card-text{
+    cursor: pointer;
   }
   .popup {
-    display: none;
-  }
-  .onee:hover .popup {
-    display: block;
    
   }
+ 
   @media (min-width: 250px) and (max-width: 990px) {
     .navbar {
       margin-top: 2rem;

@@ -56,7 +56,7 @@ const Service = () => {
                           </p>
 
                           <div>
-                            <Link href="paramanent-deployment">
+                            <Link href="peramanent-deployment">
                               <span className="learnmore">
                                 Learn more{" "}
                                 <BsArrowRight className="fs-3  LeftArrow " />
@@ -120,12 +120,13 @@ const Service = () => {
                         Payroll outsourcing is the act of <br></br> delegating
                         payroll administration ...
                       </p>
+                      <Link href="payroll-services">
                       <span className="learnmore">
                         Learn more <BsArrowRight className="fs-3  LeftArrow " />
                         <div className="VectorImage">
                           <img src="assets/images/VectorImage.svg" alt="img" />
                         </div>
-                      </span>
+                      </span></Link>
                     </Card>
                   </div>
                 </div>
@@ -145,7 +146,9 @@ const Service = () => {
                           We take care of the Entire or part <br></br> of
                           recruitment activities...
                         </p>
+                        <Link href = "requirement-process">
                         <span className="learnmore">
+                          
                           Learn more{" "}
                           <BsArrowRight className="fs-3 LeftArrow " />
                           <div className="VectorImage">
@@ -154,7 +157,7 @@ const Service = () => {
                               alt="img"
                             />
                           </div>
-                        </span>
+                        </span></Link>
                       </Card>
                     </div>
                   </div>

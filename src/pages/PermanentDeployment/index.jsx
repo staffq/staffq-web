@@ -684,8 +684,7 @@ const PeramanentDeployment = () => (
               </p>
               <p className="Our-team-one">
                 Our team of experts will connect with you with more elaberate
-                details.
-                Connect with us.
+                details. Connect with us.
               </p>
             </div>
             <div className="form container">

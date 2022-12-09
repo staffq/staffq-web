@@ -101,25 +101,24 @@ export const Find = styled.div`
     background: #ffffff;
     width: 100%;
     height: 56px;
-    font-size: 18px;
-    /* font-weight: 500; */
+    font-size: 16px;
+    font-weight: 400;
     margin-bottom: 20px;
     box-shadow: 0px 4px 16px rgba(8, 20, 41, 0.08);
     border: 1px solid rgba(8, 20, 41, 0.1);
   }
   .showing-results {
     display: flex;
-    padding-top: 2rem;
+    padding-top: 1rem;
     justify-content: space-between;
   }
-  .bg-colour{
-    background: #FAFDFF;
+  .bg-colour {
+    background: #fafdff;
     padding-bottom: 3rem;
-
   }
   input {
-    font-weight: 500;
-    font-size: 18px;
+    font-weight: 400;
+    font-size: 16px;
     line-height: 27px;
     /* identical to box height */
 
@@ -150,9 +149,9 @@ export const Find = styled.div`
     box-shadow: 0px 4px 20px rgba(8, 20, 41, 0.04);
     border-radius: 10px;
     height: 48px;
-    font-size: 18px;
+    font-size: 16px;
     width: 293px;
-    /* font-weight: 500; */
+    font-weight: 400;
     left: 0px;
     top: 0px;
     border-radius: 10px;
@@ -255,7 +254,7 @@ export const Find = styled.div`
 
     font-size: 16px;
     line-height: 22px;
- 
+
     font-style: normal;
 
     margin-bottom: 10px;
@@ -274,7 +273,7 @@ font-size: 14px;
 line-height: 19px; */
     /* identical to box height */
   }
-  .btnone:hover{
+  .btnone:hover {
     background: #efce1e;
   }
   .btnn {
@@ -288,9 +287,9 @@ line-height: 19px; */
     color: #081429;
   }
   @media (min-width: 990px) and (max-width: 1200px) {
-.btnn{
-  font-size: 13px;
-}
+    .btnn {
+      font-size: 13px;
+    }
   }
   .perivious {
     background: #ffffff;
@@ -313,7 +312,6 @@ line-height: 19px; */
   .bg-one {
     background: #efce1e;
     width: 100%;
-  
   }
   .upload {
     width: 138px;

@@ -280,7 +280,7 @@ export const Div = styled.div`
       padding: 16px;
       border-radius: 20px;
       background: #f6f6f5;
-      padding-top: 37px;
+      /* padding-top: 37px; */
     }
     .img-one-one {
       width: 100%;

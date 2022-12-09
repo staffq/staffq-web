@@ -8,13 +8,13 @@ export const ContacttStyle = styled.div`
 
 export const Form = styled.div`
   padding-top: 1px;
-  padding-bottom: 2rem;
+  padding-bottom: 3rem;
   background: #f6f6f5;
   .input-filed {
     margin: 0 auto;
     border-radius: 12px;
     background: #ffffff;
-    width: 546px;
+    width: 100%;
     height: 56px;
     margin-bottom: 20px;
     box-shadow: 0px 4px 16px rgba(8, 20, 41, 0.08);
@@ -24,7 +24,7 @@ export const Form = styled.div`
     margin: 0 auto;
     border-radius: 12px;
     background: #ffffff;
-    width: 34vw;
+    width: 100%;
     height: 56px;
     margin-bottom: 20px;
     box-shadow: 0px 4px 16px rgba(8, 20, 41, 0.08);
@@ -32,12 +32,12 @@ export const Form = styled.div`
   }
   @media (min-width: 250px) and (max-width: 768px) {
     .input-option {
-      width: 59vw;
+      width: 100%;
     }
   }
   @media (min-width: 769px) and (max-width: 990px) {
     .input-option {
-      width: 70vw;
+      width: 100%;
     }
   }
   label {
@@ -45,7 +45,7 @@ export const Form = styled.div`
     font-weight: 600;
   }
   .text {
-    width: 70vw;
+    width: 100%;
     height: 154px;
     left: 300px;
     top: 928px;
@@ -64,6 +64,9 @@ export const Form = styled.div`
 
     width: 300px;
     height: 56px;
+justify-content: center;
+color: #FFFFFF;
+padding-top: 13px;
 
     border-radius: 12px;
     text-align: center;
@@ -71,8 +74,8 @@ export const Form = styled.div`
     margin-top: 22px;
     display: flex;
   }
-  .button-submit {
-    width: 55px;
+  /* .button-submit {
+    width: 87px;
     height: 22px;
 
     font-style: normal;
@@ -80,10 +83,10 @@ export const Form = styled.div`
     font-size: 18px;
     line-height: 22px;
     margin-top: 10px;
-    /* padding-left: 7rem; */
+   
 
     color: #ffffff;
-  }
+  } */
 `;
 export const Second = styled.div`
   margin-top: 76px;
@@ -205,6 +208,15 @@ font-weight: 500;
 color: #050C18 !important;
 
   }
+  .h-two{
+    font-size: 24px;
+line-height: 43px;
+
+/* StaffQ_black */
+font-weight: 400;
+color: #050C18 !important;
+
+  }
   .d-fleex {
     display: flex;
     justify-content: center;
@@ -230,11 +242,19 @@ color: #050C18 !important;
     }
   }
 
-  @media (min-width: 1024px) and (max-width: 1200px) {
-   #one{
+  @media (min-width: 990px) and (max-width: 1227px) {
+   .contact-one{
     width: 50%;
+    padding-left: 7rem;
    }
-  
+   .contact-two{
+    width: 50%;
+    padding-left: 6rem;
+   }
+  .contact-three{
+    width: 50%;
+    padding-left: 6rem;
+  }
   }
   @media (min-width: 250px) and (max-width: 580px) {
     .map-image {
@@ -244,6 +264,10 @@ color: #050C18 !important;
   }
   .h-one{
       font-size: 41px;
+    }
+    .h-two{
+      font-size: 30px;
+      font-weight: 400;
     }
   }
 
@@ -269,7 +293,7 @@ color: #050C18 !important;
       display: inline-block;
     }
     .Our-Branches{
-      font-size: 29px;
+      font-size: 46px;
     }
     .pc-contact {
       display: none;

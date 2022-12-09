@@ -36,8 +36,8 @@ const Input = ({
         padding={padding}
         {...others}
       />
-{icon? <Icon>
-        <FiSearch style={{ width: "18px", height: "18px" }} />
+{icon? <Icon >
+        <FiSearch className="one" />
       </Icon>:null}
       
     </div>

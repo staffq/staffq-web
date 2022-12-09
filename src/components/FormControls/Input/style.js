@@ -31,7 +31,18 @@ export const Icon = styled.div`
   width: 40px;
   height: 40px;
   top: 26.5rem;
-  position: absolute;
+  /* position: absolute; */
   /* opacity: 0.5; */
   left: 8rem;
+  .one{  width: 46px;
+  height: 21px;
+  z-index: 18;
+  margin-top: -123px;
+  z-index: 152;
+  position: relative;
+  padding-left: 1px;
+}
+
 `;
+
+

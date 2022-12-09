@@ -77,19 +77,75 @@ padding-top: 5rem;
   padding-left: 14rem;
     margin-top: 14rem;
 }
-@media (min-width: 1000px) and (max-width: 1250px) {
+@media (min-width: 1000px) and (max-width: 1080px) {
     h1{
-        font-size: 37px;
+        font-size: 35px;
     }
+    .ball-one-page {
+    /* position: absolute; */
+    /* position: absolute; */
+    padding-top: 9rem;
+    /* margin-left: 7rem; */
+
+
+  }
 }
-@media (min-width: 1250px) and (max-width: 1400px) {
+@media (min-width: 1080px) and (max-width: 1150px) {
+    h1{
+        font-size: 35px;
+    }
+    .ball-one-page {
+    /* position: absolute; */
+    /* position: absolute; */
+    padding-top: 5rem;
+    /* margin-left: 7rem; */
+
+
+  }
+}
+@media (min-width: 1150px) and (max-width: 1400px) {
     h1{
         font-size: 45px;
         padding-top: 20px;
+        font-weight: 600;
     }
+    .ball-one-page {
+    /* position: absolute; */
+    /* position: absolute; */
+    padding-top: 5rem;
+    /* margin-left: 7rem; */
+
+
+  }
 }
+@media (min-width: 1400px) and (max-width: 1500px) {
+    h1{
+        font-size: 48px;
+        padding-top: 20px;
+    }
+    .ball-one-page {
+    /* position: absolute; */
+    /* position: absolute; */
+    padding-top: 6rem;
+    /* margin-left: 7rem; */
 
 
+  }
+}
+@media (min-width: 1500px) and (max-width: 1550px) {
+    h1{
+        font-size: 50px;
+        padding-top: 20px;
+    }
+    .ball-one-page {
+    /* position: absolute; */
+    /* position: absolute; */
+    padding-top: 6rem;
+    /* margin-left: 7rem; */
+
+
+  }
+}
 
   /* @media (min-width: 1203px) and (max-width: 1450px) {
     .ballwave{
