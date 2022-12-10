@@ -85,7 +85,7 @@ const Service = () => {
                         <p className="h-five">Contract to Hire</p>
                         <p className="mb-0">
                           {" "}
-                          StaffQ Consultancy Services<br></br> involves
+                          StaffQ Consultancy  Services<br></br> involves
                           contract-to-hire staffing ...
                         </p>
                         <Link href="contract-recruitment">
@@ -250,7 +250,7 @@ const Service = () => {
                   <p className="mb-0">
                     {" "}
                     StaffQ Consultancy Services<br></br> involves
-                    contract-to-hire staffing ...
+                    contract-to-hire staffing...
                   </p>
                   <span className="learnmore">
                     Learn more <BsArrowRight className="fs-3  LeftArrow " />
@@ -271,8 +271,8 @@ const Service = () => {
                   <p className="h-five">Payroll Services</p>
                   <p className="mb-0">
                     {" "}
-                    Payroll outsourcing is the act of <br></br> delegating
-                    payroll administration ...
+                    Payroll outsourcing is the act of delegating  payroll administration..
+                   
                   </p>
                   <span className="learnmore">
                     Learn more <BsArrowRight className="fs-3  LeftArrow " />

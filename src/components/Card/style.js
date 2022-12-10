@@ -11,4 +11,9 @@ export const Card = styled.div`
   margin: ${(props) => (props.margin ? props.margin : "1rem 1rem 1rem 1rem")};
   border-radius: ${(props) =>
     props.borderRadius ? props.borderRadius : "8px"};
+
+
+    /* @media (min-width:1200px) and (max-width:1400px){
+      margin-top: 8px !important;
+    } */
 `;

@@ -170,6 +170,11 @@ export const ServiceBg = styled.div`
       width: 100%;
     }
   }
+  @media (min-width: 1200px) and (max-width: 1400px) {
+    .service-img-one{
+height: 429px;
+    }
+  }
 `;
 export const cardhead = styled.div`
 
