@@ -4,7 +4,7 @@ import Input from "../../../components/FormControls/Input";
 // import Button from "../../../components/FormControls/Button";
 import Head from "next/head";
 import { useFormik } from "formik";
-import * as Yup from "Yup";
+import * as Yup from "yup";
 import Popup from "../../../components/FormControls/Popup";
 import styled from "styled-components";
 // import Button from "../../../components/FormControls/Button";

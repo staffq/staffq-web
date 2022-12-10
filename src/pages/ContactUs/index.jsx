@@ -2,7 +2,7 @@ import React from "react";
 import Head from "next/head.js";
 
 import { useFormik } from "formik";
-import * as Yup from "Yup";
+import * as Yup from "yup";
 
 import styled from "styled-components";
 
