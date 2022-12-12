@@ -14,7 +14,7 @@ export const Header = styled.div`
     margin-top: 40px;
   }
   h2 {
-    font-family: General Sans;
+
     font-size: 60px;
     font-weight: 600;
     line-height: 81px;

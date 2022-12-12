@@ -1,10 +1,131 @@
 import React from "react";
 // import { Div , Header, SmallHeader } from '../../styles/ContractRecruitment'
-
+import Head from "next/head";
 import { Worked, Header, Image, SmallHeader } from "../../styles/contract";
 const ContractRecruitment = () => {
   return (
     <Worked>
+        <Head>
+      <title>Contract Recruitment  </title>
+      <meta
+        property="og:image"
+        content="https://www.applogiq.org/assets/images/metaimg.png"
+      />
+      <meta
+        name="linkedin:image"
+        content="https://www.applogiq.org/assets/images/metaimg.png"
+      />
+      <meta
+        name="twitter:image"
+        content="https://www.applogiq.org/assets/images/metaimg.png"
+      />
+      <meta
+        name="instagram:image"
+        content="https://www.applogiq.org/assets/images/metaimg.png"
+      />
+      <meta
+        name="title"
+        content="SatffQ is leading contract staffing & payroll outsourcing
+         services in India offers contract jobs for the right candidate. Enquire for temporary staffing services now!"
+      />
+      <meta
+        name="description"
+        content="SatffQ is leading contract staffing & payroll outsourcing 
+        services in India offers contract jobs for the right candidate. Enquire for temporary staffing services now!"
+      />
+      <meta name="keywords" content="Contract Recruitment   " />
+
+      <link
+        rel="canonical"
+        href="https://www.staffq.in/contract-recruitment"
+      />
+
+      <link rel="alternate" href="https://www.staffq.in/" hreflang="en-in" />
+
+      <meta property="og:locale" content="en_US" />
+      <meta property="og:type" content="website" />
+      <meta
+        property="og:title"
+        content="SatffQ is leading contract staffing & payroll outsourcing 
+        services in India offers contract jobs for the right candidate. Enquire for temporary staffing services now!"
+      />
+      <meta
+        property="og:description"
+        content="StaffQ is a leading permanent staffing service and solution 
+          provider in India, we place the required candidates to the industries filtering their skills."
+      />
+      <meta
+        property="og:image"
+        content="https://www.applogiq.org/assets/images/index-og.webp"
+      />
+      <meta property="og:url" content="https://www.staffq.in" />
+      <meta property="og:site_name" content="AppLogiQ" />
+      <meta name="twitter:card" content="summary_large_image" />
+      <meta charSet="UTF-8" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+      {/* <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: `{
+              "@context": "https://schema.org",
+              "@type": "LocalBusiness",
+              "name": "AppLogiQ",
+              "image": "https://www.applogiq.org/assets/images/logo.gif",
+              "@id": "",
+              "url": "https://applogiq.org/",
+              "telephone": "9629938033",
+              "priceRange": "$$$$$",
+              "address": {
+                "@type": "PostalAddress",
+                "streetAddress": "Floor-3,Sathyam Towers,6D Bharathi Street,Valipalayam.",
+                "addressLocality": "Tiruppur",
+                "postalCode": "641 601",
+                "addressCountry": "IN"
+              },
+              "geo": {
+                "@type": "GeoCoordinates",
+                "latitude": 11.10601020,
+                "longitude": 77.34961810
+              },
+              "openingHoursSpecification": {
+                "@type": "OpeningHoursSpecification",
+                "dayOfWeek": [
+                  "Monday",
+                  "Tuesday",
+                  "Wednesday",
+                  "Thursday",
+                  "Friday"
+                ],
+                "opens": "09:00",
+                "closes": "19:00"
+              },
+              "sameAs": [
+                "https://www.linkedin.com/company/applogiq/",
+                "https://www.facebook.com/Applogiq",
+                "https://www.instagram.com/applogiq/"
+              ] 
+            }`
+          }}
+        />
+
+        <script type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: `{
+              "@context": "https://schema.org",
+              "@type": "Organization",
+              "name": "Applogiq",
+              "alternateName": "software company",
+              "url": "https://www.applogiq.org/",
+              "logo": "https://www.applogiq.org/assets/images/logo.gif",
+              "sameAs": [
+                "https://www.facebook.com/Applogiq",
+                "https://www.linkedin.com/company/applogiq/"
+              ]
+            }`
+          }}
+        /> */}
+    </Head>
       <Header>
         <div lassName="header">
           <div className="container-fluid">
@@ -62,7 +183,7 @@ const ContractRecruitment = () => {
                 />
               </div>
               <div className="ball-sm-page">
-                <h2>Contract Recruitment</h2>
+                <p className="h2">Contract Recruitment</p>
                 <p>
                   StaffQ is a contract staffing agency that helps enterprises
                   and businesses by providing temporary staffing solutions. We
@@ -160,9 +281,9 @@ const ContractRecruitment = () => {
       <div>
         <section className="Hiring-Process container-fluid">
           <div className="container pt-4 text-center">
-            <h2 style={{ fontWeight: "600" }}>
+            <p style={{ fontWeight: "600" }} className="so-what">
               So what should have been the correct move in the first place?
-            </h2>
+            </p>
             <p style={{ fontSize: "15px" }}>
               These companies should have approached good agencies that provide
               permanent staffing solutions.
@@ -224,7 +345,7 @@ const ContractRecruitment = () => {
 
       <div className="container">
         <div className="text-center mt-5">
-          <h2>Hiring Process</h2>
+          <p className="hiring-process">Hiring Process</p>
           <p>
             StaffQ focuses on hiring highly qualified and talented candidates{" "}
             <br></br>
@@ -233,109 +354,71 @@ const ContractRecruitment = () => {
         </div>
       </div>
       {/* ....medium....... */}
+      
       <div>
-        <div className="medium-small-view">
-          <div className="container"></div>
+          <div className="medium-small-view">
+            <div className="container">
+              <div className="row">
 
-          <div className="container small-center">
-            <div className="">
-              <div>
-                <img src="assets/images/Icon.png" alt="img" />
-              </div>
-              <div className="">
-                <h4> Profile Screening & Shortlisting </h4>
-                <p className="small-p-tag">
-                  We review tons of applications against our minimum criteria,
-                  their professional journey,and holistic background checks.
-                </p>
-              </div>
-            </div>
-            <div className="">
-              <div>
+              <div className="col-md-4 col-sm-12">
                 <img
-                  src="assets/images/Language-img.svg"
-                  className="img-one"
+                  src="assets/images/under-imgaess.svg"
+                  className="round-img"
                   alt="img"
-                />
+                  />
+                <p className="img-p-tag">Requirement Gathering</p>
               </div>
-              <div className="">
-                <h4>Language Proficiency</h4>
-                <p className="small-p-tag">
-                  AI-powered communication assessment tests a candidate's
-                  reading, writing, pronunciation, clarity, fluency and speed of
-                  speech.
-                </p>
-              </div>
-            </div>
-            <div className="">
-              <div>
+              <div className="col-md-4 col-sm-12">
                 <img
-                  src="assets/images/apptitude-img.svg"
-                  className="img-one"
+                  src="assets/images/inteview.img.png"
+                  className="round-img"
                   alt="img"
-                />
+                  />
+                  <p className="img-p-tag">Requirement
+  Discussion</p>
               </div>
-              <div className="">
-                <h4> Aptitude Evaluation</h4>
-                <p className="small-p-tag">
-                  We conduct a scientifically designed aptitude test to check
-                  their reasoning and problem-solving ability.
-                </p>
+              <div className="col-md-4 col-sm-12">
+              <img
+                        src="assets/images/contract.img.png"
+                        className="round-img"
+                        alt="img"
+                      />
+                      <p className="img-p-tag">Contract 
+  Signing</p>
+
               </div>
-            </div>
-            <div className="">
-              <div>
-                <img
-                  src="assets/images/Technical-img.svg"
-                  className="img-one img-four"
-                  alt="img"
-                />
-              </div>
-              <div className="">
-                <h4>Technical Assessment</h4>
-                <p className="small-p-tag">
-                  We have curated one of most advanced technical assessments to
-                  vet talent'scapabilities, these are role-based extremely
-                  stringent tests which filters top 10% talents
-                </p>
-              </div>
-            </div>
-            <div className="">
-              <div>
-                <img
-                  src="assets/images/Panel-Interview.svg"
-                  className="img-one"
-                  alt="img"
-                />
-              </div>
-              <div className="">
-                <h4>Panel Interview</h4>
-                <p className="small-p-tag">
-                  Our Talent Acquisition experts conduct the final video
-                  interview understandingthe candidate's preferences and
-                  expectations to do the right matchmaking.h.
-                </p>
-              </div>
-            </div>
-            <div className="">
-              <div>
-                <img
-                  src="assets/images/get-img.svg"
-                  className="img-one"
-                  alt="img"
-                />
-              </div>
-              <div className="">
-                <h4>Get Selected</h4>
-                <p className="small-p-tag">
-                  Get selected at top companies international standards around
-                  the world.
-                </p>
-              </div>
+                  </div>
+
+                  <div className="row">
+                    <div className="col-md-4 col-sm-12">
+                    <img
+                          src="assets/images/rqt.img.png "
+                          className="round-img"
+                          alt="img"
+                        />
+                      <p className="img-p-tag">Panel
+  Interview</p>
+                    </div>
+                    <div className="col-md-4 col-sm-12">
+                    <img
+                          src="assets/images/contact-img.png "
+                          className="round-img"
+                          alt="img"
+                        />
+                        <p className="img-p-tag"> Candidate Identification</p>
+                    </div>
+                    <div className="col-md-4 col-sm-12">
+                    <img
+                          src="assets/images/get-img.svg "
+                          className="round-img"
+                          alt="img"
+                        />
+                        <p className="img-p-tag">Closure</p>
+                    </div>
+                  </div>
             </div>
           </div>
         </div>
-      </div>
       {/* .....next....... */}
       <Image>
         <div className="container">
@@ -387,10 +470,10 @@ const ContractRecruitment = () => {
               <div className="second-imgaes-content">
                 <div className="row">
                   <div className="col-lg-2">
-                    <h6>
+                    <p>
                       Requirement <br></br>
                       Gathering
-                    </h6>
+                    </p>
                   </div>
                   <div className="col-lg-2 second-imgaes-content">
                     <div className="horizontal">
@@ -402,14 +485,14 @@ const ContractRecruitment = () => {
                         className="round-img"
                         alt="img"
                       />
-                      <h5> Requirement Discussion</h5>
+                      <p  className="second-p"> Requirement Discussion</p>
                     </div>
                   </div>
                   <div className="col-lg-2">
-                    <h6>
+                    <p>
                       Internal Interview <br></br>
                       
-                    </h6>
+                    </p>
                   </div>
                   <div className="col-lg-2 second-imgaes-content">
                     <div className="horizontal">
@@ -421,14 +504,14 @@ const ContractRecruitment = () => {
                         className="round-img"
                         alt="img"
                       />
-                      <h5>Client Interview</h5>
+                      <p  className="second-p">Client Interview</p>
                     </div>
                   </div>
                   <div className="col-lg-2">
-                    <h6>
+                    <p>
                       Contracrt<br></br>
                       Signing
-                    </h6>
+                    </p>
                   </div>
                   <div className="col-lg-2 second-imgaes-content">
                     <div className="horizontal">
@@ -440,7 +523,7 @@ const ContractRecruitment = () => {
                         className="round-img"
                         alt="img"
                       />
-                      <h5>Closure</h5>
+                      <p  className="second-p">Closure</p>
                     </div>
                   </div>
                 </div>
@@ -465,7 +548,7 @@ const ContractRecruitment = () => {
                 style={{ }}
               >
                 <div className="container">
-                  <h4 className="Benefits ">Benefits of Contract Staffing</h4>
+                  <p className="Benefits ">Benefits of Contract Staffing</p>
                   <div className="null">
                     <img
                       src="assets/images/uper-unterline.svg"
@@ -646,7 +729,7 @@ const ContractRecruitment = () => {
         <div className="container mt-5">
           <section>
             <div className="text-center">
-              <h2 className="still-not-sure">Still not Sure? Let’s Talk</h2>
+              <p className="still-not-sure">Still not Sure? Let’s Talk</p>
               <p className=" Our-team">
                 Our team of experts will connect with you with more elaberate
                 details.<br></br>

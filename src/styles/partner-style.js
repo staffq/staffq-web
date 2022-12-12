@@ -172,6 +172,8 @@ export const SmallSection = styled.div`
     display: block;
     font-size: 26px;
 line-height: 27px;
+padding-bottom: 3rem;
+    padding-top: 3rem;
 /* identical to box height */
 
 

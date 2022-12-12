@@ -9,6 +9,31 @@ height: 50vh; */
   .medium-small-view {
     display: none;
   }
+.img-p-tag{
+  font-weight: 600;
+  font-size: 22px;
+  color: #081429;
+}
+.hiring-process{
+    font-weight: 600;
+font-size: 36px;
+line-height: 49px;
+/* identical to box height */
+
+text-align: center;
+
+color: #081429;
+  }
+  .so-what{
+    font-weight: 600;
+font-size: 36px;
+line-height: 49px;
+/* identical to box height */
+
+text-align: center;
+
+color: #081429;
+  }
 
   .P-tag {
     left: 0px;
@@ -48,6 +73,7 @@ height: 50vh; */
       display: block;
       text-align: center;
       z-index: -99;
+      padding-bottom: 4rem;
     }
   }
   .img-one {
@@ -773,7 +799,7 @@ export const Image = styled.div`
   }
   .three {
   }
-  h6 {
+  p {
     width: 113px;
     height: 54px;
 
@@ -788,19 +814,21 @@ export const Image = styled.div`
 
     color: #081429;
   }
-  h5 {
+  .second-p {
     color: #081429;
     width: 113px;
     height: 54px;
     line-height: 27px;
-
+    margin: 0 !important;
+    
+    margin-left: 26px !important;
     font-weight: 700;
     font-size: 20px;
     margin-left: 2rem;
   }
   .second-imgaes-content {
     bottom: 68px;
-    height: 220px;
+    height: 263px;
     position: relative;
   }
   .horizontal {
@@ -880,6 +908,13 @@ export const SmallHeader = styled.div`
   .banner-image {
     width: 100%;
   }
+  .h2{
+    font-size: 38px;
+    padding-bottom: 1rem;
+    font-weight: 600;
+    color: #081429;
+
+  }
   .small-img{
     position: absolute;
     
@@ -896,6 +931,16 @@ export const SmallHeader = styled.div`
     padding-top: 7rem;
   }
   }
+  @media (min-width: 250px) and (max-width: 461px) {
+    .h2{
+    font-size: 29px;
+    padding-bottom: 1rem;
+    font-weight: 600;
+    color: #081429;
+
+  }
+
+  }
   @media (min-width: 769px) and (max-width: 1023px) {
     display: block;
    
@@ -910,8 +955,11 @@ export const SmallHeader = styled.div`
     width: 100%;
     padding-top: 8rem;
   }
-  h2{
+  .h2{
       font-size: 54px;
+   
+    font-weight: 600;
+    padding-bottom: 2rem
     }
   }
   @media (min-width: 375px) and (max-width: 500px) {

@@ -170,14 +170,23 @@ export const ServiceBg = styled.div`
       width: 100%;
     }
   }
-  @media (min-width: 1200px) and (max-width: 1400px) {
-    .service-img-one{
-height: 429px;
+  @media (min-width: 1100px) and (max-width: 1400px) {
+    .service-img-one {
+      height: 429px;
+    }
+  }
+  @media (min-width: 200px) and (max-width: 400px) {
+    .card-width {
+      width: 320px;
+    }
+  }
+  @media (min-width: 400px) and (max-width: 768px) {
+    .card-width {
+      width: 351px;
     }
   }
 `;
 export const cardhead = styled.div`
-
   background: red;
   width: 250px;
   height: 153px;

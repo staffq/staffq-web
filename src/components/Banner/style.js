@@ -244,12 +244,14 @@ export const Smbanner = styled.div`
       font-weight: 500;
       font-size: 16px;
       line-height: 22px;
+     
 
       color: rgba(8, 20, 41, 0.6);
       margin-top: 30px;
     }
     .h_one{
       font-weight: 600;
+    
     font-size: 43px;
     line-height: 56px;
     color: #081429;
@@ -266,12 +268,13 @@ export const Smbanner = styled.div`
       font-weight: 700;
       font-size: 34px;
       line-height: 46px;
-
+      text-align: left; 
       color: #081429;
     }
     p {
       font-weight: 500;
       font-size: 16px;
+      text-align: left;  
       line-height: 22px;
 
       color: rgba(8, 20, 41, 0.6);

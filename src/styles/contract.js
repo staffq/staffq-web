@@ -1,10 +1,12 @@
 import styled from "styled-components";
 export const Worked = styled.div`
-
-
-
   .medium-small-view {
     display: none;
+  }
+  .img-p-tag {
+    font-weight: 600;
+    font-size: 22px;
+    color: #081429;
   }
 
   .P-tag {
@@ -18,13 +20,33 @@ export const Worked = styled.div`
 
     color: rgba(8, 20, 41, 0.6);
   }
+  .hiring-process{
+    font-weight: 600;
+font-size: 36px;
+line-height: 49px;
+/* identical to box height */
+
+text-align: center;
+
+color: #081429;
+  }
+  .so-what{
+    font-weight: 600;
+font-size: 36px;
+line-height: 49px;
+/* identical to box height */
+
+text-align: center;
+
+color: #081429;
+  }
 
   color: #081429;
 
   .small-center {
     margin-top: 2rem;
   }
-  .about{
+  .about {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -45,6 +67,9 @@ export const Worked = styled.div`
       display: block;
       text-align: center;
       z-index: -99;
+      color: #081429;
+
+      padding-bottom: 3rem;
     }
   }
   .img-one {
@@ -73,9 +98,7 @@ export const Worked = styled.div`
     color: rgba(8, 20, 41, 0.6);
   }
 
-
   h1 {
-   
     font-style: normal;
     font-weight: 600;
     font-size: 61px;
@@ -103,17 +126,15 @@ export const Worked = styled.div`
     margin-top: 19px;
     font-size: 33px;
   }
-  .TDS{
-  font-weight: 600;
-font-size: 36px;
-line-height: 49px;
-/* identical to box height */
+  .TDS {
+    font-weight: 600;
+    font-size: 36px;
+    line-height: 49px;
+    /* identical to box height */
 
+    color: #081429;
+  }
 
-color: #081429;
-}
-
-  
   .solution-p-tag {
     margin-top: 20px;
 
@@ -126,15 +147,15 @@ color: #081429;
   .small-screen {
     display: none;
   }
-  .About{
+  .About {
     display: flex;
     justify-content: center;
     align-items: center;
   }
   @media (min-width: 1200px) and (max-width: 1400px) {
-    .solution-p-tag{
+    .solution-p-tag {
       margin-top: 0;
-      line-height: 31px ;
+      line-height: 31px;
     }
   }
   /* .................................media p tag  */
@@ -185,39 +206,36 @@ color: #081429;
   }
   @media (min-width: 600px) and (max-width: 1024px) {
     .solution-p-tag {
-  /* text-align:center */
+      /* text-align:center */
     }
   }
   @media (min-width: 990px) and (max-width: 1023px) {
-  .big-screen{
-    width: 100%;
-    padding: 0;
-    justify-content: center;
-    display: grid;
+    .big-screen {
+      width: 100%;
+      padding: 0;
+      justify-content: center;
+      display: grid;
+    }
+    .benefit-image {
+      width: 100%;
+    }
   }
-  .benefit-image{
-    width: 100%;
-
-  }
-  }
-
 
   @media (min-width: 991px) and (max-width: 1400px) {
     .Hiring-qualified {
       font-size: 31px;
       font-weight: 600;
       width: 460px;
-      
     }
   }
 
   .Benefits {
     font-size: 33px;
     font-weight: 600;
-  
+
     color: #081429;
   }
-  
+
   /* @media (min-width: 101px) and (max-width: 1400px) {} */
   .uper-under-line {
     width: 241px;
@@ -227,8 +245,8 @@ color: #081429;
     top: 2872px;
     text-align: center;
     color: #081429;
-  } 
-  .uper-under-one{
+  }
+  .uper-under-one {
     width: 86px;
     height: 12px;
     margin-top: -32px;
@@ -237,31 +255,29 @@ color: #081429;
     text-align: center;
     color: #081429;
   }
-  .not-show{
+  .not-show {
     display: none;
   }
-    @media (min-width: 10px) and (max-width: 576px) {
-.not-show{
-  display: inline-block;
-}
-span{
-  font-size: 16px;
-  font-weight: 500;
-  padding: 12px;
-  line-height: 40px;
-}
- /* .not-show{
+  @media (min-width: 10px) and (max-width: 576px) {
+    .not-show {
+      display: inline-block;
+    }
+    span {
+      font-size: 16px;
+      font-weight: 500;
+      padding: 12px;
+      line-height: 40px;
+    }
+    /* .not-show{
     display: none;
   } */
-.big-screen{
-  display: none;
-}
-
+    .big-screen {
+      display: none;
+    }
   }
 
   /* .......image...second---paGE................... */
 
- 
   /* ......................................next ::selection.................. */
 
   .second-code {
@@ -345,7 +361,6 @@ span{
   .form {
     display: flex;
     justify-content: space-evenly;
-   
   }
   .submited {
     padding: 12px 29px;
@@ -409,32 +424,28 @@ span{
     font-weight: 500;
     font-size: 15px;
     line-height: 30px;
-   padding: 4px;
+    padding: 4px;
     color: #081429;
   }
-  
+
   @media (min-width: 1200px) and (max-width: 1350px) {
     .second-p-tag {
-    font-weight: 500;
-    font-size: 15px;
-    color: #081429;
-    line-height: 26px;
+      font-weight: 500;
+      font-size: 15px;
+      color: #081429;
+      line-height: 26px;
+    }
   }
-  
-  
-  }
-    
+
   @media (min-width: 990px) and (max-width: 1200px) {
     .second-p-tag {
-    font-weight: 500;
-    font-size: 15px;
-    color: #081429;
-    line-height: 18px;
+      font-weight: 500;
+      font-size: 15px;
+      color: #081429;
+      line-height: 18px;
+    }
   }
-  
-  
-  }
-  .hiring-tag{
+  .hiring-tag {
     padding-top: 7rem;
   }
   /* @media (min-width: 446px) and (max-width: 485px) {
@@ -445,19 +456,19 @@ span{
   } */
 
   @media (min-width: 400px) and (max-width: 583px) {
-  .Benefits{
-    font-size: 24px;
-    margin-top: 2rem;
-  }
-  .uper-under-line {
-    width: 107px;
-    height: 12px;
-    margin-top: -32px;
-    margin-left: 10rem;
-    top: 2872px;
-    text-align: center;
-    color: #081429;
-}
+    .Benefits {
+      font-size: 24px;
+      margin-top: 2rem;
+    }
+    .uper-under-line {
+      width: 107px;
+      height: 12px;
+      margin-top: -32px;
+      margin-left: 10rem;
+      top: 2872px;
+      text-align: center;
+      color: #081429;
+    }
   }
   /* @media (min-width: 400px) and (max-width: 446px) {
   .Benefits{
@@ -467,51 +478,50 @@ span{
   }
   } */
   @media (min-width: 300px) and (max-width: 400px) {
-  .Benefits{
-    margin-top: 2rem;
-    font-size: 21px;
-  font-weight: 600;
-  }
-  .uper-under-line {
-    width: 208px;
-    height: 7px;
-    margin-top: -47px;
-    margin-left: 6rem;
-    top: 2872px;
-    text-align: center;
-    color: #081429;
-  }}
-  @media (min-width: 300px) and (max-width: 350px) {
-  .Benefits{
-    font-size: 19px;
-  
-  }
-  .uper-under-line {
-    width: 189px;
-    height: 7px;
-    margin-top: -32px;
-    margin-left: 5rem;
-    top: 2872px;
-    text-align: center;
-    color: #081429;
-  }
-
-}
-@media (min-width: 1000px) and (max-width: 1350px) {
-    .big-screen{
-        padding-top: 10px !important;
+    .Benefits {
+      margin-top: 2rem;
+      font-size: 21px;
+      font-weight: 600;
     }
-}
+    .uper-under-line {
+      width: 208px;
+      height: 7px;
+      margin-top: -47px;
+      margin-left: 6rem;
+      top: 2872px;
+      text-align: center;
+      color: #081429;
+    }
+  }
+  @media (min-width: 300px) and (max-width: 350px) {
+    .Benefits {
+      font-size: 19px;
+    }
+    .uper-under-line {
+      width: 189px;
+      height: 7px;
+      margin-top: -32px;
+      margin-left: 5rem;
+      top: 2872px;
+      text-align: center;
+      color: #081429;
+    }
+  }
+  @media (min-width: 1000px) and (max-width: 1350px) {
+    .big-screen {
+      padding-top: 10px !important;
+    }
+  }
   @media (min-width: 250px) and (max-width: 990px) {
-    .benefit-image{
+    .benefit-image {
       padding: 0;
       margin-top: 3rem;
     }
-    .hiring-tag{
+    .hiring-tag {
       padding-top: 30px;
     }
   }
- 
+
   .still-not-sure {
     font-style: normal;
     font-weight: 600;
@@ -524,22 +534,22 @@ span{
 
     color: #081429;
   }
-  .big-screen{
+  .big-screen {
     padding-top: 3rem;
   }
-  .not-view{
+  .not-view {
     padding: 5px;
   }
-  @media(min-width:100px) and (max-width:768px){
+  @media (min-width: 100px) and (max-width: 768px) {
     .still-not-sure {
-    font-style: normal;
-    font-weight: 600;
-    padding-top: 21px;
-    font-size: 31px;
-    line-height: 56px;
-    text-align: center;
-    color: #081429;
-}
+      font-style: normal;
+      font-weight: 600;
+      padding-top: 21px;
+      font-size: 31px;
+      line-height: 56px;
+      text-align: center;
+      color: #081429;
+    }
   }
   .Our-team {
     font-style: normal;
@@ -552,7 +562,7 @@ span{
 
     color: #081429;
   }
-  .Our-team-one{
+  .Our-team-one {
     font-style: normal;
     font-weight: 500;
     font-size: 16px;
@@ -560,16 +570,16 @@ span{
     /* or 150% */
 
     text-align: center;
-display: none;
+    display: none;
     color: #081429;
   }
   @media (min-width: 50px) and (max-width: 600px) {
-     .Our-team{
+    .Our-team {
       display: none;
-     }
-     .Our-team-one{
+    }
+    .Our-team-one {
       display: block;
-     }
+    }
   }
 `;
 
@@ -583,7 +593,7 @@ export const Header = styled.div`
   .ball-image {
     width: 100%;
   }
-  h1{
+  h1 {
     font-size: 61px;
   }
   .header-h-one {
@@ -610,7 +620,7 @@ export const Header = styled.div`
 
     color: rgba(8, 20, 41, 0.6);
   }
-  .payrol-p-tag{
+  .payrol-p-tag {
     font-size: 19px;
   }
   .ball-one-page {
@@ -699,16 +709,16 @@ export const Header = styled.div`
     }
   }
   @media (min-width: 1200px) and (max-width: 1360px) {
- .ball-one-page{
-  position: absolute;
-  top: 6rem;
- }
+    .ball-one-page {
+      position: absolute;
+      top: 6rem;
+    }
   }
   @media (min-width: 1350px) and (max-width: 1400px) {
- .ball-one-page{
-  position: absolute;
-  top: 6rem;
- }
+    .ball-one-page {
+      position: absolute;
+      top: 6rem;
+    }
   }
 `;
 
@@ -732,7 +742,7 @@ export const Image = styled.div`
   }
   .three {
   }
-  h6 {
+  p {
     width: 113px;
     height: 54px;
 
@@ -747,19 +757,21 @@ export const Image = styled.div`
 
     color: #081429;
   }
-  h5 {
+  .second-p {
     color: #081429;
     width: 113px;
     height: 54px;
     line-height: 27px;
-
+    margin: 0 !important;
+    
+    margin-left: 26px !important;
     font-weight: 700;
     font-size: 20px;
     margin-left: 2rem;
   }
   .second-imgaes-content {
     bottom: 68px;
-    height: 220px;
+    height: 263px;
     position: relative;
   }
   .horizontal {
@@ -780,48 +792,55 @@ export const Image = styled.div`
     height: 163px;
   }
   @media (min-width: 1024px) and (max-width: 1050px) {
-   .under-pic{
-  margin-left: 149px;
-   }
+    .under-pic {
+      margin-left: 149px;
+    }
   }
   @media (min-width: 1050px) and (max-width: 1100px) {
-   .under-pic{
-  margin-left: 108px;
-   }
-  
+    .under-pic {
+      margin-left: 108px;
+    }
   }
   @media (min-width: 1156px) and (max-width: 1170px) {
-   .under-pic{
-  margin-left: 60px;
-   }}
-   @media (min-width: 1170px) and (max-width: 1200px) {
-   .under-pic{
-  margin-left: 45px;
-   }}
-   @media (min-width: 1200px) and (max-width: 1250px) {
-   .under-pic{
-  margin-left: 158px;
-   }}
-   @media (min-width: 1250px) and (max-width: 1290px) {
-   .under-pic{
-  margin-left: 117px;
-   }}
-   @media (min-width: 1290px) and (max-width:1320px) {
-   .under-pic{
-  margin-left: 98px;
-   }}
-   @media (min-width: 1320px) and (max-width: 1360px) {
-   .under-pic{
-  margin-left: 98px;
-   }}
-   @media (min-width: 1400px) and (max-width: 1475px) {
-   .under-pic{
-  margin-left: 164px;
-   }}
-   @media (min-width: 1475px) and (max-width: 1500px) {
-   .under-pic{
-  margin-left: 130px;
-   }}
+    .under-pic {
+      margin-left: 60px;
+    }
+  }
+  @media (min-width: 1170px) and (max-width: 1200px) {
+    .under-pic {
+      margin-left: 45px;
+    }
+  }
+  @media (min-width: 1200px) and (max-width: 1250px) {
+    .under-pic {
+      margin-left: 158px;
+    }
+  }
+  @media (min-width: 1250px) and (max-width: 1290px) {
+    .under-pic {
+      margin-left: 117px;
+    }
+  }
+  @media (min-width: 1290px) and (max-width: 1320px) {
+    .under-pic {
+      margin-left: 98px;
+    }
+  }
+  @media (min-width: 1320px) and (max-width: 1360px) {
+    .under-pic {
+      margin-left: 98px;
+    }
+  }
+  @media (min-width: 1400px) and (max-width: 1475px) {
+    .under-pic {
+      margin-left: 164px;
+    }
+  }
+  @media (min-width: 1475px) and (max-width: 1500px) {
+    .under-pic {
+      margin-left: 130px;
+    }
+  }
 `;
 
 export const SmallHeader = styled.div`
@@ -830,7 +849,7 @@ export const SmallHeader = styled.div`
   text-align: center;
   display: none;
   margin-top: 5rem;
-/* .small-img{
+  /* .small-img{
   background-image: url("assets/images/banner-param.png");
   background-size: contain;
   background-repeat: no-repeat;
@@ -839,56 +858,61 @@ export const SmallHeader = styled.div`
   .banner-image {
     width: 100%;
   }
-  .small-img{
+  .small-img {
     position: absolute;
-    
+  }
+  .h2 {
+    font-size: 38px;
+    padding-bottom: 1rem;
+    font-weight: 600;
   }
   .ball-sm-page {
-      position: relative;
-      top: 4rem;
-      padding-top: 3rem;
-    }
+    position: relative;
+    top: 4rem;
+    padding-top: 3rem;
+  }
   @media (min-width: 250px) and (max-width: 768px) {
     display: block;
     .banner-image {
-    width: 100%;
-    padding-top: 7rem;
-  }
+      width: 100%;
+      padding-top: 7rem;
+    }
   }
   @media (min-width: 769px) and (max-width: 1023px) {
     display: block;
-   
   }
   @media (min-width: 768px) and (max-width: 1000px) {
- 
     .ball-sm-page {
-    position: relative;
-    top: 10rem;
-    padding-top: 3rem;}
+      position: relative;
+      top: 10rem;
+      padding-top: 3rem;
+    }
     .banner-image {
-    width: 100%;
-    padding-top: 8rem;
-  }
-  h2{
+      width: 100%;
+      padding-top: 8rem;
+    }
+    .h2 {
       font-size: 54px;
+
+      font-weight: 600;
+      padding-bottom: 2rem;
     }
   }
   @media (min-width: 375px) and (max-width: 500px) {
-   p{
-    font-style: normal;
-    font-weight: 500;
-    font-size: 17px;
-    padding-right: 2rem;
-    line-height: 30px;
-    color: rgba(8,20,41,0.6);
-   }
-   
+    p {
+      font-style: normal;
+      font-weight: 500;
+      font-size: 17px;
+      padding-right: 2rem;
+      line-height: 30px;
+      color: rgba(8, 20, 41, 0.6);
+    }
   }
   @media (min-width: 500px) and (max-width: 768px) {
     .ball-sm-page {
-    position: relative;
-    top: 7rem;
-    padding-top: 3rem;}
+      position: relative;
+      top: 7rem;
+      padding-top: 3rem;
+    }
   }
-  
 `;

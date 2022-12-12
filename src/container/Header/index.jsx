@@ -22,7 +22,7 @@ import { CgMenu } from "react-icons/cg";
 import { FiDownload } from "react-icons/fi";
 
 const Header = (props) => {
-  const { isShown, handleShow,handleHide } = props;
+  const { isShown, handleShow, handleHide } = props;
   const [show, setShow] = useState("About");
   const [navcolor, setNavColor] = useState("transparent");
 
@@ -115,28 +115,45 @@ const Header = (props) => {
                   <div className="container popup">
                     <div className="card container">
                       <div className="card-text">
-                      <Link href="peramanent-deployment">
-                        <p className="">Permanent Deployment</p>
-                        </Link>
-                     
-                        <Link href="contract-recruitment">
-                        <p>Contract to Hire</p>
-                        </Link>
-                     
-                        <Link href="payroll-services">
-                        <p> Payroll Services</p>
-                        </Link>
-                  
-                        <Link href="requirement-process">
-                        <p> Passthrough services</p> 
-                        </Link>
-                        <Link href="offshore-recruitment">
-                        <p>Offshore Recruitment Services</p>
-                        </Link>
-                        
-                        <Link href="onshore-recruitment">
-                        <p>Onshore Recruitment Services</p>
-                        </Link>
+                        <div>
+                          <Link href="peramanent-recruitment">
+                            <span className="cursor pt-2">
+                              Permanent Recruitment
+                            </span>
+                          </Link>
+                        </div>
+                        <div style={{ paddingTop: "10px" }}>
+                          <Link href="contract-recruitment">
+                            <span className="cursor ">Contract to Hire</span>
+                          </Link>
+                        </div>
+                        <div style={{ paddingTop: "10px" }}>
+                          <Link href="payroll-services">
+                            <span className="cursor "> Payroll Services</span>
+                          </Link>
+                        </div>
+                        <div style={{ paddingTop: "10px" }}>
+                          <Link href="requirement-process">
+                            <span className="cursor ">
+                              {" "}
+                              Recruitment Process Outsourcing
+                            </span>
+                          </Link>
+                        </div>
+                        <div style={{ paddingTop: "10px" }}>
+                          <Link href="offshore-recruitment">
+                            <span className="cursor">
+                              Offshore Recruitment Services
+                            </span>
+                          </Link>
+                        </div>
+                        <div style={{ paddingTop: "10px" }}>
+                          <Link href="onshore-recruitment">
+                            <span className="cursor">
+                              Onshore Recruitment Services
+                            </span>
+                          </Link>
+                        </div>
                       </div>
                     </div>
                   </div>

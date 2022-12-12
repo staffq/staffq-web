@@ -766,5 +766,14 @@ export const SmallProfile = styled.div`
 
       margin-left: 144px;
     }
+  } 
+   @media (min-width: 250px) and (max-width: 500px) {
+    .h-four {
+    font-size: 24px;
+    color: #081429;
+    font-weight: 600;
   }
+  }
+
+
 `;

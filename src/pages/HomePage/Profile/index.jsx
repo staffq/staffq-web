@@ -10,7 +10,7 @@ const Profile = () => {
             <h2>How It Works</h2>
             <p className="how-it-work-p-tag">
               We seek to help a job seeker find a job, and find a qualified
-              candidate <br></br> for an open position for a company
+              candidate <br></br> for an open position for a company.
             </p>
           </div>
         </div>
@@ -172,7 +172,7 @@ const Profile = () => {
                             <span>
                               {" "}
                               capabilities, these are role-based tests which
-                              filters top 10% talents
+                              filters top 10% talents.
                             </span>
                           </div>
                         </div>

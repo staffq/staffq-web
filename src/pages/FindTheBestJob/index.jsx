@@ -123,7 +123,7 @@ const FindJob = () => {
         />
         <meta name="keywords" content="Find Jobs" />
 
-        <link rel="canonical" href="https://www.staffq.in/find-jobs/" />
+        <link rel="canonical" href="https://www.staffq.in/find-jobs" />
 
         <link rel="alternate" href="https://www.staffq.in/" hreflang="en-in" />
 
@@ -371,14 +371,16 @@ const FindJob = () => {
                 Upload your resume here. We I’ll take a look and find you the
                 right Job.
               </p>
+              <Link href="upload-cv">
               <button className=" upload">
                 <img
                   src="assets/images/directbox-send.svg"
                   className="Directbox"
                   alt="img"
-                />
+                  />
                 <span className="upload-button"> Upload</span>
               </button>
+                  </Link>
             </div>
           </div>
           <div className="col-lg-1"></div>

@@ -14,7 +14,7 @@ const About = () => {
               {" "}
               We have found that the best way to get them is with up front
               research – of your company, competitors,<br></br> target market
-              and customer psychographics
+              and customer psychographics.
             </p>
           </div>
           <div className="container">

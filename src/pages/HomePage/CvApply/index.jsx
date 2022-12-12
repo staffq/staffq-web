@@ -8,7 +8,6 @@ import * as Yup from "yup";
 import Popup from "../../../components/FormControls/Popup";
 import styled from "styled-components";
 
-
 export const ErrorText = styled.div`
   color: red;
 
@@ -190,13 +189,17 @@ const Cvapply = () => {
               <div className="col-lg-5">
                 <div className="mt-3">
                   <ul className="nav">
-                    <li className="nav-item">Home</li>
+                    <Link href="/">
+                      <li className="nav-item">Home</li>
+                    </Link>
                     <li className="nav-item">
                       {" "}
                       <img src="assets/images/icons-right.svg"></img>
                     </li>
                     {/* <li className="nav-item">Upload Cv</li> */}
-                    <li className="nav-item">Find Jobs</li>
+                    <Link href="find-jobs">
+                      <li className="nav-item">Find Jobs</li>
+                    </Link>
                     <li className="nav-item">Jobs Description</li>
                     <li className="nav-item">
                       {" "}

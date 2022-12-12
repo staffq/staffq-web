@@ -78,7 +78,6 @@ const OurPartner = () => {
               className="me-5 PartnerImages-icons-second-four"
               style={{ width: "120px" }}
             />
-          
           </div>
         </Flex>
 

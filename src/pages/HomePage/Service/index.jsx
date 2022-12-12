@@ -44,7 +44,7 @@ const Service = () => {
                         width="282px"
                         // backgroundColor="#FFFFFF"
                         border-radius="10px"
-                        className="sriram"
+                        className="card-width"
                         style={{ paddingBottom: "8px" }}
                       >
                         <div>
@@ -56,7 +56,7 @@ const Service = () => {
                           </p>
 
                           <div>
-                            <Link href="peramanent-deployment">
+                            <Link href="peramanent-recruitment">
                               <span className="learnmore">
                                 Learn more{" "}
                                 <BsArrowRight className="fs-3  LeftArrow " />
@@ -80,7 +80,7 @@ const Service = () => {
                         style={{ paddingBottom: "8px" }}
                         backgroundColor="#FFFFFF"
                         border-radius="10px"
-                        className="sriram"
+                        className="card-width"
                       >
                         <p className="h-five">Contract to Hire</p>
                         <p className="mb-0">
@@ -112,7 +112,7 @@ const Service = () => {
                       style={{ paddingBottom: "8px" }}
                       backgroundColor="#FFFFFF"
                       border-radius="10px"
-                      className="sriram"
+                      className="card-width"
                     >
                       <p className="h-five">Payroll Services</p>
                       <p className="mb-0">
@@ -138,9 +138,9 @@ const Service = () => {
                         style={{ paddingBottom: "8px" }}
                         // backgroundColor="#FFFFFF"
                         border-radius="10px"
-                        className="sriram"
+                        className="card-width"
                       >
-                        <p className="h-five">Passthrough services </p>
+                        <p className="h-five">RPO </p>
                         <p className="mb-0">
                           {" "}
                           We take care of the Entire or part <br></br> of
@@ -164,7 +164,7 @@ const Service = () => {
                   <div className="sm-card">
                     <div className="smcard-ONE">
                       <Card
-                        className="sri"
+                        className="card-width"
                         width="282px"
                         style={{ paddingBottom: "8px" }}
                         backgroundColor="#FFFFFF"
@@ -224,7 +224,7 @@ const Service = () => {
                   style={{ paddingBottom: "8px" }}
                   backgroundColor="#FFFFFF"
                   border-radius="10px"
-                  className="sriram"
+                  className="card-width"
                 >
                   <p className="h-five">Permanent Deployment</p>
                   <p className="mb-0">
@@ -232,19 +232,21 @@ const Service = () => {
                     Permanent staffing is attaining <br></br> great importance
                     in the human ....
                   </p>
+                  <Link href="peramanent-recruitment">
                   <span className="learnmore">
                     Learn more <BsArrowRight className="fs-3  LeftArrow " />
                     <div className="VectorImage">
                       <img src="assets/images/VectorImage.svg" alt="img" />
                     </div>
                   </span>
+                  </Link>
                 </Card>
                 <Card
                   width="282px"
                   style={{ paddingBottom: "8px" }}
                   backgroundColor="#FFFFFF"
                   border-radius="10px"
-                  className="sriram"
+                  className="card-width"
                 >
                   <p className="h-five">Contract to Hire</p>
                   <p className="mb-0">
@@ -252,12 +254,14 @@ const Service = () => {
                     StaffQ Consultancy Services<br></br> involves
                     contract-to-hire staffing...
                   </p>
+                  <Link href="contract-recruitment">
                   <span className="learnmore">
                     Learn more <BsArrowRight className="fs-3  LeftArrow " />
                     <div className="VectorImage">
                       <img src="assets/images/VectorImage.svg" alt="img" />
                     </div>
                   </span>
+                  </Link>
                 </Card>
               </div>
               <div className="two">
@@ -266,7 +270,7 @@ const Service = () => {
                   style={{ paddingBottom: "8px" }}
                   backgroundColor="#FFFFFF"
                   border-radius="10px"
-                  className="sriram"
+                  className="card-width"
                 >
                   <p className="h-five">Payroll Services</p>
                   <p className="mb-0">
@@ -274,12 +278,14 @@ const Service = () => {
                     Payroll outsourcing is the act of delegating  payroll administration..
                    
                   </p>
+                  <Link href="payroll-services">
                   <span className="learnmore">
                     Learn more <BsArrowRight className="fs-3  LeftArrow " />
                     <div className="VectorImage">
                       <img src="assets/images/VectorImage.svg" alt="img" />
                     </div>
                   </span>
+                  </Link>
                 </Card>
               </div>
               <div className="one">
@@ -288,40 +294,46 @@ const Service = () => {
                   style={{ paddingBottom: "8px" }}
                   backgroundColor="#FFFFFF"
                   border-radius="10px"
-                  className="sriram"
+                  className="card-width"
                 >
-                  <p className="h-five">Passthrough services</p>
+                  
+                  <p className="h-five">RPO</p>
                   <p className="mb-0">
                     {" "}
                     We take care of the Entire or part <br></br> of recruitment
                     activities...
                   </p>
+                  <Link href = "requirement-process">
                   <span className="learnmore">
                     Learn more <BsArrowRight className="fs-3  LeftArrow " />
                     <div className="VectorImage">
                       <img src="assets/images/VectorImage.svg" alt="img" />
                     </div>
                   </span>
+                  </Link>
                 </Card>
                 <Card
                   width="282px"
                   style={{ paddingBottom: "8px" }}
                   backgroundColor="#FFFFFF"
                   border-radius="10px"
-                  className="sriram"
+                  className="card-width"
                 >
+                 
                   <p className="h-five">Offshore Recruitment</p>
                   <p className="mb-0">
                     {" "}
                     Onsite recruitment is a process<br></br>of meeting your
                     Specific bulk ...
                   </p>
+                  <Link href="offshore-recruitment">
                   <span className="learnmore">
                     Learn more <BsArrowRight className="fs-3  LeftArrow " />
                     <div className="VectorImage">
                       <img src="assets/images/VectorImage.svg" alt="img" />
                     </div>
                   </span>
+                  </Link>
                 </Card>
               </div>
             </div>

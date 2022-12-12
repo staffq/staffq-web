@@ -74,6 +74,20 @@ export const Findjobs = styled.div`
 
   
   }}
+
+  @media (min-width: 1400px) and (max-width: 1500px) {
+    .FindText {
+      margin-top: 8rem !important;
+    }
+    .arow {
+      width: 121px !important;
+    height: 94px !important;
+    padding: 4px;
+    margin-left: -74px;
+    margin-top: 195px !important;
+
+  
+  }}
   @media (min-width: 990px) and (max-width: 1200px) {
     .FindText {
       margin-top: 5rem !important;
@@ -116,11 +130,11 @@ export const Findjobs = styled.div`
   }
 
   .arow {
-    width: 149px;
-    height: 131px;
+    width: 118px;
+    height: 148px;
     padding: 4px;
-    margin-left: -74px;
-    margin-top: 170px;
+    margin-left: -83px;
+    margin-top: 175px;
   }
   p {
     font-weight: 500;

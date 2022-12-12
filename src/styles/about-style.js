@@ -5,7 +5,6 @@ export const AboutBg = styled.div`
     font-weight: 400;
   }
 
- 
   @media (min-width: 250px) and (max-width: 400px) {
   }
 
@@ -70,6 +69,11 @@ export const AboutBg = styled.div`
       text-align: center;
       align-items: center;
       justify-content: center;
+    }
+    .about-p-tag{
+      font-weight:300;
+      color: rgba(8, 20, 41, 1);
+
     }
   }
   @media (min-width: 300px) and (max-width: 350px) {
@@ -148,9 +152,6 @@ export const AboutBg = styled.div`
     /* .aboutbtn{
         margin-left: 80px;
     } */
-    .AboutPtext {
-      margin-top: 32px;
-    }
   }
   @media (min-width: 300px) and (max-width: 768px) {
     /* .aboutbtn{
@@ -159,7 +160,7 @@ export const AboutBg = styled.div`
     /* .AboutPtext {
      text-align: center;
     } */
-    .medium-two{
+    .medium-two {
       padding-bottom: 2rem;
     }
   }
@@ -178,7 +179,7 @@ export const Medium = styled.div`
       text-align: center;
       padding-top: 40px;
     }
-    .h_two{
+    .h_two {
       font-size: 33px;
       font-weight: 600;
     }

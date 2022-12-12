@@ -19,7 +19,9 @@ const Footer = () => {
                   >
                     <div className="logo-footer">
                       {" "}
-                      <img src="assets/images/Logo.png" alt="img" />
+                      <Link href="/">
+                        <img src="assets/images/Logo.png" alt="img" />
+                      </Link>
                     </div>
                   </div>
                   <div
@@ -27,31 +29,35 @@ const Footer = () => {
                     style={{ marginTop: "60px" }}
                   >
                     <div className="">
-                      <p className="text-white head p-tag" style={{ fontSize: "24px" }}>
+                      <p
+                        className="text-white head p-tag"
+                        style={{ fontSize: "24px" }}
+                      >
                         Our Services
                       </p>
                       <div className="footer-one ">
-                        <Link href="peramanent-deployment">
-                        <span className="">Permanent Deployment</span>
+                        <Link href="peramanent-recruitment">
+                          <span className="">Permanent Deployment</span>
                         </Link>
                         <br></br>
                         <Link href="contract-recruitment">
-                        <span>Contract to Hire</span>
+                          <span>Contract to Hire</span>
                         </Link>
                         <br></br>
                         <Link href="payroll-services">
-                        <span> Payroll Services</span>
+                          <span> Payroll Services</span>
                         </Link>
                         <br></br>
                         <Link href="requirement-process">
-                        <span> Passthrough services</span> 
-                        </Link><br></br>
+                          <span>Recruitment Process Outsourcing</span>
+                        </Link>
+                        <br></br>
                         <Link href="offshore-recruitment">
-                        <span>Offshore Recruitment Services</span>
+                          <span>Offshore Recruitment Services</span>
                         </Link>
                         <br></br>
                         <Link href="onshore-recruitment">
-                        <span>Onshore Recruitment Services</span>
+                          <span>Onshore Recruitment Services</span>
                         </Link>
                       </div>
                     </div>
@@ -61,12 +67,16 @@ const Footer = () => {
                     style={{ marginTop: "60px" }}
                   >
                     <div className="">
-                      <p  className="text-white head p-tag" style={{ fontSize: "24px" }}>
+                      <p
+                        className="text-white head p-tag"
+                        style={{ fontSize: "24px" }}
+                      >
                         Others
                       </p>
                       <div className="footer-two ">
                         <Link href="about-us">
-                        <span> About Us</span></Link>
+                          <span> About Us</span>
+                        </Link>
                         <br></br>
                         <span> Blogs</span>
                         <br></br>
@@ -78,7 +88,10 @@ const Footer = () => {
                     className="col-lg-3 col-md-6 col-sm-12   "
                     style={{ marginTop: "60px" }}
                   >
-                    <p  className="text-white head p-tag" style={{ fontSize: "24px" }}>
+                    <p
+                      className="text-white head p-tag"
+                      style={{ fontSize: "24px" }}
+                    >
                       Contact Us
                     </p>
                     <div className="mt-4 footer-contactus">
@@ -150,39 +163,41 @@ const Footer = () => {
           <div className="paddingtwoSide">
             <div>
               <div>
-                <p  className="mt-5 head" style={{ paddingTop: "2px" }}>
+                <p className="mt-5 head" style={{ paddingTop: "2px" }}>
                   Our Solutions
                 </p>
                 <br></br>
                 <div style={{ fontSize: "18px" }} className="font">
-                <Link href="peramanent-deployment">
-                        <p className="">Permanent Deployment</p>
-                        </Link>
-                     
-                        <Link href="contract-recruitment">
-                        <p>Contract to Hire</p>
-                        </Link>
-                     
-                        <Link href="payroll-services">
-                        <p> Payroll Services</p>
-                        </Link>
-                  
-                        <Link href="requirement-process">
-                        <p> Passthrough services</p> 
-                        </Link>
-                        <Link href="offshore-recruitment">
-                        <p>Offshore Recruitment Services</p>
-                        </Link>
-                        
-                        <Link href="onshore-recruitment">
-                        <p>Onshore Recruitment Services</p>
-                        </Link>
+                  <Link href="peramanent-recruitment">
+                    <p className="">Permanent Deployment</p>
+                  </Link>
+
+                  <Link href="contract-recruitment">
+                    <p>Contract to Hire</p>
+                  </Link>
+
+                  <Link href="payroll-services">
+                    <p> Payroll Services</p>
+                  </Link>
+
+                  <Link href="requirement-process">
+                    <p>Recruitment Process Outsourcing</p>
+                  </Link>
+                  <Link href="offshore-recruitment">
+                    <p>Offshore Recruitment Services</p>
+                  </Link>
+
+                  <Link href="onshore-recruitment">
+                    <p>Onshore Recruitment Services</p>
+                  </Link>
                 </div>
               </div>
             </div>
 
             <div className="mt-5">
-              <p  style={{ paddingTop: "48px" }} className = "head">Careers</p>
+              <p style={{ paddingTop: "48px" }} className="head">
+                Careers
+              </p>
               <br></br>
               <div className="font" style={{ fontSize: "18px" }}>
                 <p>Permanent recruitment</p>

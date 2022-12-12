@@ -351,7 +351,7 @@ const Slick = () => {
                   ></img>
                   <div className="img-content">
                     <p style={{ fontSize: "42px" }} className="numbers">
-                      1500+{" "}
+                      60+{" "}
                     </p>
                     <p style={{ fontSize: "22px" }}>Recruits </p>
                   </div>
@@ -365,7 +365,7 @@ const Slick = () => {
                   ></img>
                   <div className="img-content">
                     <p style={{ fontSize: "42px" }} className="numbers">
-                      30+{" "}
+                      15+{" "}
                     </p>
                     <p style={{ fontSize: "22px" }}>Team Members </p>
                   </div>
@@ -394,7 +394,7 @@ const Slick = () => {
         <div className="sm-boxscreen-one">
           <div className="">
             <p style={{ fontSize: "42px" }} className="text-center numbers">
-              1500+{" "}
+              60+{" "}
             </p>
             <p style={{ fontSize: "22px" }} className="text-center">
               Recruits
@@ -402,7 +402,7 @@ const Slick = () => {
           </div>
           <div className="className = 'text-center'">
             <p style={{ fontSize: "42px" }} className="mt-4 numbers">
-              30+{" "}
+              15+{" "}
             </p>
             <p style={{ fontSize: "22px" }}>
               Team<br></br>

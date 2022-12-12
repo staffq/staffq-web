@@ -1,4 +1,5 @@
 import React from "react";
+import Link from "next/link";
 import { Div } from "../../../styles/upload-cs";
 import Input from "../../../components/FormControls/Input";
 // import Button from "../../../components/FormControls/Button";
@@ -194,7 +195,8 @@ const UploadCV = () => {
               <div className="col-lg-5">
                 <div className="mt-3">
                   <ul className="nav">
-                    <li className="nav-item">Home</li>
+                    <Link href="/">
+                    <li className="nav-item">Home</li></Link>
                     <li className="nav-item">
                       {" "}
                       <img src="assets/images/icons-right.svg"></img>

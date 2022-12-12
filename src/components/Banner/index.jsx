@@ -98,10 +98,10 @@ const Index = () => {
           </div>
         </Medium>
 
-        <Smbanner>
+        <Smbanner className="">
           <div className="row">
             <div className="col-md-12 col-sm-12 p-0">
-              <div className="smText">
+              <div className="smText container">
                 <p className=" h_one">
                   We simplify the way <br></br>to find and manage workforce.
                 </p>

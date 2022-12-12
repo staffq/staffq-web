@@ -28,13 +28,20 @@ export const Div = styled.div`
   }
 
   .card {
-    padding-top: 2rem;
+    /* padding-top: 2rem; */
     width: 300px;
     padding: 19px;
+    
     border-radius: 17px;
   }
-  .card-text{
+  .cursor{
     cursor: pointer;
+  color: #08142999;
+  font-size: 16px;
+  font-weight: 500;
+ 
+  
+
   }
   .popup {
    

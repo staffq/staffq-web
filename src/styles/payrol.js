@@ -9,7 +9,31 @@ height: 50vh; */
   .medium-small-view {
     display: none;
   }
+.img-p-tag{
+  font-weight: 600;
+  font-size: 22px;
+  color: #081429;
+}
+.hiring-process{
+    font-weight: 600;
+font-size: 36px;
+line-height: 49px;
+/* identical to box height */
 
+text-align: center;
+
+color: #081429;
+  }
+  .so-what{
+    font-weight: 600;
+font-size: 36px;
+line-height: 49px;
+/* identical to box height */
+
+text-align: center;
+
+color: #081429;
+  }
   .P-tag {
     left: 0px;
     padding-top: 28px;
@@ -790,7 +814,7 @@ export const Image = styled.div`
   }
   .three {
   }
-  h6 {
+  p {
     width: 113px;
     height: 54px;
 
@@ -805,19 +829,21 @@ export const Image = styled.div`
 
     color: #081429;
   }
-  h5 {
+  .second-p {
     color: #081429;
     width: 113px;
     height: 54px;
     line-height: 27px;
-
+    margin: 0 !important;
+    
+    margin-left: 26px !important;
     font-weight: 700;
     font-size: 20px;
     margin-left: 2rem;
   }
   .second-imgaes-content {
     bottom: 68px;
-    height: 220px;
+    height: 263px;
     position: relative;
   }
   .horizontal {

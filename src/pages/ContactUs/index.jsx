@@ -2,7 +2,7 @@ import React from "react";
 import Head from "next/head.js";
 
 import { useFormik } from "formik";
-import * as Yup from "yup";
+import * as Yup from "Yup";
 
 import styled from "styled-components";
 
@@ -90,7 +90,7 @@ const contact = () => {
         />
         <meta name="keywords" content="Contact Us  " />
 
-        <link rel="canonical" href="https://www.staffq.in/contact-us/" />
+        <link rel="canonical" href="https://www.staffq.in/contact-us" />
 
         <link rel="alternate" href="https://www.staffq.in/" hreflang="en-in" />
 
@@ -247,11 +247,12 @@ const contact = () => {
                         name="fn"
                         onChange={formik.handleChange}
                         onBlur={formik.handleBlur}
-                        value={formik.values.number}
+                        value={formik.values.fn}
                       >
-                        <option value="">State</option>
-                        <option value="">TamilNadu</option>
-                        <option value="">Kerala</option>  
+                        <option value="">Select</option>
+                        <option value="Tamil Nadu">TamilNadu</option>
+                        <option value="Kerala">Kerala</option>  
+                        <option value="Gujarat">Gujarat</option>  
                       
                       </select>{" "}
                       {formik.touched.fn && formik.errors.fn ? (
@@ -288,11 +289,12 @@ const contact = () => {
                           name="files"
                           onChange={formik.handleChange}
                           onBlur={formik.handleBlur}
-                          value={formik.values.number}
+                          value={formik.values.files}
                         >
-                          <option value="">Country</option>
-                          <option value="">TamilNadu</option>
-                          <option value="">Kerala</option>
+                          <option value="">Select</option>
+                          <option value="india">India</option>
+                          <option value="Canada">Canada</option>
+                          <option value="UK">Uk</option>
                         </select>{" "}
                         {formik.touched.files && formik.errors.files ? (
                           <ErrorText>{formik.errors.files}</ErrorText>
@@ -327,7 +329,7 @@ const contact = () => {
                 <div className="col-lg-10 col-sm-12 col-sm-12">
                   <div className="form-group ">
                     <label for="exampleInputPassword1">Your Requirement*</label>
-                    <input type="textarea" className="form-control text" />
+                    <textarea type="textarea" className="form-control text" style={{resize:"none"}}/>
                   </div>
                 </div>
                 <div className="col-lg-1"></div>
@@ -342,88 +344,8 @@ const contact = () => {
        
           </Form>
 
-          {/* ........................form section.............................. */}
-          {/* <Form>
-            <div>
-              <div className="container">
-                <div className="text-center mt-5">
-                  <h4>Let’s Talk</h4>
-                  <p>FIll out this form and we’ll get back to you.</p>
-                </div>
-                <div className=" ">
-                  <div className="row mt-2">
-                    <div className="col-lg-1"></div>
-                    <div className="col-lg-5 col-md-12 col-sm-12">
-                      <div></div>
-                      <div className="form-group ">
-                        <label for="exampleInputPassword1">Name*</label>
-                        <Input placeholder="Name" />
-                      </div>
-                      <div className="form-group ">
-                        <label for="exampleInputPassword1">Phone*</label>
-                        <Input placeholder="98765-43210" />
-                      </div>
-                      <div className="form-group ">
-                        <label for="exampleInputPassword1">State*</label>
-                        <div>
-                          <select className="input-option">
-                            <option value="">State</option>
-                            <option value="">TamilNadu</option>
-                            <option value="">Kerala</option>
-                          </select>{" "}
-                        </div>
-                      </div>
-                    </div>
-
-                    <div className="col-lg-5 col-md-12 col-sm-12">
-                      <div className="form-group ">
-                        <label for="exampleInputPassword1">
-                          Email Address*
-                        </label>
-
-                        <Input placeholder="Eg: Johnkrisinski@email.com " />
-                      </div>
-                      <div className="form-group ">
-                        <label for="exampleInputPassword1">Country*</label>
-                        <div>
-                          <select className="input-option ">
-                            <option value="country*">Country</option>
-                            <option value="">India</option>
-                            <option value="">US</option>
-                          </select>
-                        </div>
-                      </div>
-                      <div className="form-group ">
-                        <label for="exampleInputPassword1">City*</label>
-
-                        <Input placeholder="City" />
-                      </div>
-                    </div>
-                    <div className="col-lg-1"></div>
-                  </div>
-                </div>
-
-                ...............................text--filed..................
-                <div className="">
-                  <div className="row ">
-                    <div className="col-lg-1"></div>
-                    <div className="col-lg-10 col-sm-12 col-sm-12">
-                      <div className="form-group ">
-                        <label for="exampleInputPassword1">
-                          Your Requirement*
-                        </label>
-                        <input type="textarea" className="form-control text" />
-                      </div>
-                    </div>
-                    <div className="col-lg-1"></div>
-                  </div>
-                  <div className="submit-btn mt-5">
-                    <button className="btn button-submit submit-btn ">Submit</button>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </Form> */}
+        
+       
 
           <div style={{}} className="pc-contact">
             <div className="container">

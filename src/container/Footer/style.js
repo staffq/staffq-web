@@ -111,9 +111,9 @@ export const Foot = styled.div`
 export const SmFoot = styled.div`
   display: none;
   @media (min-width: 250px) and (max-width: 768px) {
-    .paddingtwoSide {
+    /* .paddingtwoSide {
       padding-left: 25px;
-    }
+    } */
     .font {
       color: rgba(255, 255, 255, 0.8);
     }

@@ -6,17 +6,25 @@ import AboutHeader from "../../components/AboutBanner";
 
 const AboutPage = () => {
   return (
-    
     <div>
-
-<Head>
-        <title>
-        About Us 
-        </title>
-        <meta property="og:image" content="https://www.applogiq.org/assets/images/metaimg.png" />
-        <meta name="linkedin:image" content="https://www.applogiq.org/assets/images/metaimg.png" />
-        <meta name="twitter:image" content="https://www.applogiq.org/assets/images/metaimg.png" />
-        <meta name="instagram:image" content="https://www.applogiq.org/assets/images/metaimg.png" />
+      <Head>
+        <title>About Us</title>
+        <meta
+          property="og:image"
+          content="https://www.applogiq.org/assets/images/metaimg.png"
+        />
+        <meta
+          name="linkedin:image"
+          content="https://www.applogiq.org/assets/images/metaimg.png"
+        />
+        <meta
+          name="twitter:image"
+          content="https://www.applogiq.org/assets/images/metaimg.png"
+        />
+        <meta
+          name="instagram:image"
+          content="https://www.applogiq.org/assets/images/metaimg.png"
+        />
         <meta
           name="title"
           content=" About StaffQ Team of HR professionals and SMEs offering complete HR Solutions to impact the rapidly growing Recruitment Industry in India Redefining the
@@ -27,18 +35,11 @@ const AboutPage = () => {
           content="About StaffQ Team of HR professionals and SMEs offering complete HR Solutions to impact the rapidly
            growing Recruitment Industry in India Redefining the Recruitment experience of Fortune 500s and Large Enterprises to Startups."
         />
-        <meta
-          name="keywords"
-          content="About Us "
-        />
+        <meta name="keywords" content="About Us " />
 
-        <link rel="canonical" href="https://www.staffq.in/about-us/" />
+        <link rel="canonical" href="https://www.staffq.in/about-us" />
 
-        <link
-          rel="alternate"
-          href="https://www.staffq.in/"
-          hreflang="en-in"
-        />
+        <link rel="alternate" href="https://www.staffq.in/" hreflang="en-in" />
 
         <meta property="og:locale" content="en_US" />
         <meta property="og:type" content="website" />
@@ -123,8 +124,6 @@ const AboutPage = () => {
             }`
           }}
         /> */}
-
-
       </Head>
       <Div>
         <AboutHeader />
@@ -149,8 +148,8 @@ const AboutPage = () => {
                   </div>
 
                   <p className="mission-p-tag">
-                    To be the leading partner that clients and candidates{" "}
-                    always choose to connect with.
+                    To be the leading partner that clients and candidates always
+                    choose to connect with.
                   </p>
                 </div>
               </div>
@@ -163,10 +162,8 @@ const AboutPage = () => {
                   </div>
                   <p className="mission-p-tag">
                     Our vision is to establish a long-term and strategic
-                  
-                    recruitment partnership with our clients and assist
-                    them in transforming today’s difficulties into 
-                    tomorrow’s triumphs.
+                    recruitment partnership with our clients and assist them in
+                    transforming today’s difficulties into tomorrow’s triumphs.
                   </p>
                 </div>
               </div>
@@ -190,7 +187,7 @@ const AboutPage = () => {
                       src="assets/images/discover.png "
                       className="img-one-one container"
                       alt="img"
-                      width='100%'
+                      width="100%"
                     />
 
                     <p className="discover-h-three">1. Discover</p>
@@ -208,7 +205,7 @@ const AboutPage = () => {
                   <div className="first-row container">
                     <img
                       src="assets/images/evalute.png"
-                       className="img-one-one "
+                      className="img-one-one "
                       alt="img"
                     />
                     <p className="discover-h-three">3. Evaluate</p>
@@ -386,9 +383,8 @@ const AboutPage = () => {
                       alt="img"
                     />
                     <br></br>
-                     <br></br> 
+                    <br></br>
                   </div>
-                 
                 </div>
                 <div className="col-lg-7 col-md-12 col-sm-12 fs-5 about-p-center">
                   <div>
