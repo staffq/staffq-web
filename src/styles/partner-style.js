@@ -179,6 +179,22 @@ padding-bottom: 3rem;
 
 color: rgba(8, 20, 41, 0.7);
     }
+
+    .logo-one{
+      padding-top: 1rem;
+    }
+    
+    .logo-two{
+      padding-top: 1rem;
+    }
+    
+    .logo-three{
+      padding-top: 1rem;
+    }
+    
+    .logo-four{
+      padding-top: 1rem;
+    }
   .kovai{
     width: 108px;
   }

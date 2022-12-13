@@ -2,7 +2,7 @@ import React from "react";
 import Head from "next/head.js";
 
 import { useFormik } from "formik";
-import * as Yup from "Yup";
+import * as yub from "yub";
 
 import styled from "styled-components";
 
@@ -38,19 +38,19 @@ const contact = () => {
       ln: "",
       fn: "",
     },
-    validationSchema: Yup.object({
-      firstName: Yup.string()
+    validationSchema: yub.object({
+      firstName: yub.string()
         // .max(15, "Must be 15 characters or less")
         .required("Required *"),
-      lastName: Yup.string().required("Required *"),
-      email: Yup.string().email("Invalid email address").required("Required*"),
-      number: Yup.string().max(10, "").required("Required*"),
-      experience: Yup.string().required("Required*"),
-      linkedin: Yup.string().required("Required*"),
-      files: Yup.mixed().required("Required*"),
-      ln: Yup.mixed().required("Required*"),
-      fn: Yup.mixed().required("Required*"),
-      location: Yup.mixed().required("Required*"),
+      lastName: yub.string().required("Required *"),
+      email: yub.string().email("Invalid email address").required("Required*"),
+      number: yub.string().max(10, "").required("Required*"),
+      experience: yub.string().required("Required*"),
+      linkedin: yub.string().required("Required*"),
+      files: yub.mixed().required("Required*"),
+      ln: yub.mixed().required("Required*"),
+      fn: yub.mixed().required("Required*"),
+      location: yub.mixed().required("Required*"),
     }),
     onSubmit: (values) => {
       console.log(values, "heloooooooo");

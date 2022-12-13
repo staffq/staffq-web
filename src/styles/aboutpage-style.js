@@ -58,7 +58,7 @@ export const Div = styled.div`
     border-radius: 20px;
     background: #f6f6f5;
     /* padding-left: 12px; */
-
+padding-top: 37px !important;
     padding: 25px;
   }
   .evalute-image {

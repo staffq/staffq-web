@@ -134,7 +134,7 @@ const OurPartner = () => {
       <SmallSection>
         <div className="container">
           <p className="text-center our-partner">Our partners</p>
-          <div className="small-one-first">
+          <div className="small-one-first logo-one">
             <img src="assets/images/Pfizer.png" alt="img" />
             <img
               src="assets/images/Vedhainfo.png"
@@ -142,15 +142,15 @@ const OurPartner = () => {
               alt="img"
             />
           </div>
-          <div className="small-one-first mt-3">
+          <div className="small-one-first mt-3 logo-two">
             <img src="assets/images/Group-440.png " alt="img" />
-            <img src="assets/images/Agilisium.png" alt="img" />
+            <img src="assets/images/Agilisium.png" alt="img" width="103px" />
           </div>
           {/* <div className="small-one-two mt-5">
           
           </div> */}
           {/* ..........................second row images............... */}
-          <div className="small-one-first mt-4">
+          <div className="small-one-first mt-4 logo-three">
             <img src="assets/images/Rectangle.png " alt="img" />
 
             <img
@@ -160,7 +160,7 @@ const OurPartner = () => {
               style={{ width: "88px" }}
             />
           </div>
-          <div className="small-one-first mt-3">
+          <div className="small-one-first mt-3 logo-four">
             <img src="assets/images/Crair.png" alt="img" />
 
             <img src="assets/images/Aspire-systems.png" alt="img" />
