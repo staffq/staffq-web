@@ -6,9 +6,21 @@ import Banner from "../components/Banner";
 import HomePage from "./HomePage";
 
 
+// import { useRouter } from 'next/router';
 
 const index = () => {
+  // const [pageLoading, setPageLoading] = React.useState<boolean>(false);
+  // React.useEffect(() => {
+  //     const handleStart = () => { setPageLoading(true); };
+  //     const handleComplete = () => { setPageLoading(false); };
+  
+  //     router.events.on('routeChangeStart', handleStart);
+  //     router.events.on('routeChangeComplete', handleComplete);
+  //     router.events.on('routeChangeError', handleComplete);
+  //   }, [router]);
+
   return (
+   
     <div className="container-fluid pe-0 p-0">
           <Head>
         <title>
@@ -61,6 +73,38 @@ const index = () => {
         <meta name="twitter:card" content="summary_large_image" />
         <meta charSet="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        {/* <div>
+        <script type="application/ld+json">
+{
+  "@context": "http://schema.org/",
+  "@type": "Organization",
+  "name": "StaffQ",
+  "alternateName": "staffing company",
+    "description": "We are leading staffing company that we provide you with the best workforce management solutions. We offer staffing services to top companies across a variety of industries, and our team of experts can help you find the right solution for your business",
+  "url" : "https://www.staffq.in",
+  "logo" : "https://www.staffq.in/assets/images/staffq.svg",
+  "image" : "https://www.staffq.in/assets/images/Main-banner-image-grp.webp",
+  "telephone": " (91) 96296-67621",
+  "priceRange": " Free Consultation",
+  "openingHours" : "Mo-Fri 09:00-18:00",
+  "address":
+    {
+      "@type": "PostalAddress",
+      "streetAddress": "Floor-3,Sathyam Towers,6D Bharathi Street,Valipalayam",
+      "addressLocality": "Tamilnadu",
+      "addressRegion": "IND",
+      "postalCode": "641601",
+      "addressCountry": "IND"
+    },
+  "sameAs":[
+  "https://www.linkedin.com/company/staffq/",
+  "https://www.instagram.com/staffq_consulting/",
+  "https://www.facebook.com/people/StaffQ/100088556320332/"
+  ]
+}
+</script>
+
+        </div> */}
 
 
 

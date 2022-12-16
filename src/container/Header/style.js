@@ -72,7 +72,7 @@ export const Div = styled.div`
     padding-right: 20px;
     border-right: 1px solid #a49ea5;
   }
-  @media (min-width: 1000px) and (max-width: 1030px) {
+  @media (min-width: 990px) and (max-width: 1030px) {
     .navbar .collapse {
       justify-content: space-around;
       z-index: 999;

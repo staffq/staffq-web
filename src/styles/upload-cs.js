@@ -109,6 +109,25 @@ export const Div = styled.div`
     box-shadow: 0px 4px 16px rgba(8, 20, 41, 0.08);
     border: 1px solid rgba(8, 20, 41, 0.1);
   }
+  .number{
+    border-radius: 12px;
+    background: #ffffff;
+    width: 100%;
+    height: 56px;
+  
+    padding-left: 14px;
+    margin-bottom: 20px;
+    box-shadow: 0px 4px 16px rgba(8, 20, 41, 0.08);
+    border: 1px solid rgba(8, 20, 41, 0.1);
+  }
+  input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+input[type=number] {
+  -moz-appearance: textfield;
+}
   span {
     border: 1px solid rgba(8, 20, 41, 0.1);
     border-radius: 0px 11px 11px 0px;
@@ -135,9 +154,11 @@ export const Div = styled.div`
   }
   @media (min-width: 150px) and (max-width: 990px) {
     .not-show {
-      display: inline-flex;
+    
+      display: block;
     }
     .hiden {
+      
       display: none;
     }
   }

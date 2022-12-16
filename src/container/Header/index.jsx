@@ -11,6 +11,7 @@ import {
   Li,
   Button,
   Div,
+  
   NavContent,
   Hover,
   Small,
@@ -116,41 +117,48 @@ const Header = (props) => {
                     <div className="card container">
                       <div className="card-text">
                         <div>
-                          <Link href="peramanent-recruitment">
+                          <Link href="recruitment-process">
                             <span className="cursor pt-2">
-                              Permanent Recruitment
-                            </span>
-                          </Link>
-                        </div>
-                        <div style={{ paddingTop: "10px" }}>
-                          <Link href="contract-recruitment">
-                            <span className="cursor ">Contract to Hire</span>
-                          </Link>
-                        </div>
-                        <div style={{ paddingTop: "10px" }}>
-                          <Link href="payroll-services">
-                            <span className="cursor "> Payroll Services</span>
-                          </Link>
-                        </div>
-                        <div style={{ paddingTop: "10px" }}>
-                          <Link href="requirement-process">
-                            <span className="cursor ">
-                              {" "}
-                              Recruitment Process Outsourcing
-                            </span>
-                          </Link>
-                        </div>
-                        <div style={{ paddingTop: "10px" }}>
-                          <Link href="offshore-recruitment">
-                            <span className="cursor">
-                              Offshore Recruitment Services
+                            Recruitment Process Outsourcing
+                          
                             </span>
                           </Link>
                         </div>
                         <div style={{ paddingTop: "10px" }}>
                           <Link href="onshore-recruitment">
+                            <span className="cursor ">
+                            Onshore Recruitment Services
+                             </span>
+                          </Link>
+                        </div>
+                        <div style={{ paddingTop: "10px" }}>
+                          <Link href="offshore-recruitment">
+                            <span className="cursor "> 
+                            Offshore Recruitment Services
+                           </span>
+                          </Link>
+                        </div>
+                        <div style={{ paddingTop: "10px" }}>
+                          <Link href="permanent-recruitment">
+                            <span className="cursor ">
+                              {" "}
+                            
+                              Permanent Recruitment
+                            </span>
+                          </Link>
+                        </div>
+                        <div style={{ paddingTop: "10px" }}>
+                          <Link href="payroll-services">
                             <span className="cursor">
-                              Onshore Recruitment Services
+                            Payroll Services
+                            </span>
+                          </Link>
+                        </div>
+                        <div style={{ paddingTop: "10px" }}>
+                          <Link href="contract-recruitment">
+                            <span className="cursor">
+                            Contract to Hire
+                          
                             </span>
                           </Link>
                         </div>

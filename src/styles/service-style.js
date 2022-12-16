@@ -84,6 +84,7 @@ export const ServiceBg = styled.div`
     .sm-scrren-p-tag {
       display: block;
       width: 87%;
+      text-align: left;
       color: rgba(8, 20, 41, 0.6);
       font-weight: 600;
     }
@@ -152,7 +153,7 @@ export const ServiceBg = styled.div`
 
   @media (min-width: 250px) and (max-width: 768px) {
     .small-center {
-      text-align: center;
+      text-align: left;
       width: 100%;
     }
 

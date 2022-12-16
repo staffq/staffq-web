@@ -36,29 +36,33 @@ const Footer = () => {
                         Our Services
                       </p>
                       <div className="footer-one ">
-                        <Link href="peramanent-recruitment">
-                          <span className="">Permanent Deployment</span>
+                      <Link href="requirement-process">
+                          <span>Recruitment Process Outsourcing</span>
                         </Link>
                         <br></br>
+                        <Link href="onshore-recruitment">
+                        <span>Onshore Recruitment Services</span>
+                         
+                        </Link>
+                        <br></br>
+                        <Link href="offshore-recruitment">
+                        <span>Offshore Recruitment Services</span>
+                        </Link><br></br>
+                        <Link href="permanent-recruitment">
+                          <span className="">Permanent Deployment</span>
+                        </Link>
+                        <br></br> 
+                        <Link href="payroll-services">
+                          <span> Payroll Services</span>
+                         
+                        </Link> <br></br>
                         <Link href="contract-recruitment">
                           <span>Contract to Hire</span>
                         </Link>
                         <br></br>
-                        <Link href="payroll-services">
-                          <span> Payroll Services</span>
-                        </Link>
-                        <br></br>
-                        <Link href="requirement-process">
-                          <span>Recruitment Process Outsourcing</span>
-                        </Link>
-                        <br></br>
-                        <Link href="offshore-recruitment">
-                          <span>Offshore Recruitment Services</span>
-                        </Link>
-                        <br></br>
-                        <Link href="onshore-recruitment">
-                          <span>Onshore Recruitment Services</span>
-                        </Link>
+                        
+                    
+                     
                       </div>
                     </div>
                   </div>
@@ -124,7 +128,7 @@ const Footer = () => {
                         <GrMail />{" "}
                         <span className="me-3 infostaffq">
                           {" "}
-                          info@staffq.in
+                          hello@staffq.in
                         </span>{" "}
                       </p>
                     </div>
@@ -141,7 +145,7 @@ const Footer = () => {
               <div>
                 <p style={{ fontSize: "14px" }} className="last-line">
                   {" "}
-                  @2022 StaffQ Consultancy Pvt. Ltd | Powered by Applogiq
+                  @2022 StaffQ Consultancy Pvt. Ltd | Powered by ApplogiQ
                 </p>
               </div>
               <div className="Foter">
@@ -168,27 +172,30 @@ const Footer = () => {
                 </p>
                 <br></br>
                 <div style={{ fontSize: "18px" }} className="font">
-                  <Link href="peramanent-recruitment">
-                    <p className="">Permanent Deployment</p>
-                  </Link>
-
-                  <Link href="contract-recruitment">
-                    <p>Contract to Hire</p>
-                  </Link>
-
-                  <Link href="payroll-services">
-                    <p> Payroll Services</p>
-                  </Link>
+                 
 
                   <Link href="requirement-process">
                     <p>Recruitment Process Outsourcing</p>
+                  </Link>
+                  <Link href="onshore-recruitment">
+                    <p>Onshore Recruitment Services</p>
                   </Link>
                   <Link href="offshore-recruitment">
                     <p>Offshore Recruitment Services</p>
                   </Link>
 
-                  <Link href="onshore-recruitment">
-                    <p>Onshore Recruitment Services</p>
+                  
+                  <Link href="permanent-recruitment">
+                    <p className="">Permanent Deployment</p>
+                  </Link>
+
+                 
+
+                  <Link href="payroll-services">
+                    <p> Payroll Services</p>
+                  </Link>
+                  <Link href="contract-recruitment">
+                    <p>Contract to Hire</p>
                   </Link>
                 </div>
               </div>
@@ -236,7 +243,7 @@ const Footer = () => {
                   <GrMail />{" "}
                   <span style={{ paddingLeft: "15px" }}>
                     {" "}
-                    info@staffq.in
+                    hello@staffq.in
                   </span>{" "}
                 </p>
               </div>
@@ -252,7 +259,7 @@ const Footer = () => {
         <div className="mt-5">
           <p className="text-center last-line " style={{ marginTop: "2px" }}>
             {" "}
-            @2022 StaffQ Consultancy Pvt. Ltd | Powered by Applogiq
+            @2022 StaffQ Consultancy Pvt. Ltd | Powered by ApplogiQ
           </p>
           <div className="d-flex  justify-content-spacebetween">
             <p style={{ fontSize: "14px" }} className="last-line">

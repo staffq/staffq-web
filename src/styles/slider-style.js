@@ -225,7 +225,9 @@ export const Box = styled.div`
   .img-content {
     display: flex;
     flex-direction: column;
-    margin-left: 80px;
+    /* margin-left: 80px;
+     */
+    margin: 0 auto;
   }
 
   @media (min-width: 250px) and (max-width: 768px) {

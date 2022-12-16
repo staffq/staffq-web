@@ -6,6 +6,7 @@ import * as yup from "yup";
 
 import styled from "styled-components";
 
+
 import {
   ContacttStyle,
   Form,
@@ -14,6 +15,9 @@ import {
 } from "../../styles/contact-style.js";
 
 import Input from "../../components/FormControls/Input/index.jsx";
+import { useDispatch } from "react-redux";
+import { createContactData } from "../../redux/actions/userAction.js";
+
 
 export const ErrorText = styled.div`
   color: red;
@@ -25,39 +29,41 @@ export const ErrorText = styled.div`
   font-weight: 600;
 `;
 const contact = () => {
+  const dispatch=useDispatch();
   const formik = useFormik({
     initialValues: {
-      firstName: "",
-      lastName: "",
+      name: "",
       email: "",
-      experience: "",
-      linkedin: "",
-      number: "",
-      location: "",
-      files: "",
-      ln: "",
-      fn: "",
+      city: "",
+      phoneNumber: "",
+      country: "",
+      yourRequirement: "",
+      state: "",
     },
     validationSchema: yup.object({
-      firstName: yup.string()
+      name: yup.string()
         // .max(15, "Must be 15 characters or less")
         .required("Required *"),
-      lastName: yup.string().required("Required *"),
+      // lastName: yup.string().required("Required *"),
       email: yup.string().email("Invalid email address").required("Required*"),
-      number: yup.string().max(10, "").required("Required*"),
-      experience: yup.string().required("Required*"),
-      linkedin: yup.string().required("Required*"),
-      files: yup.mixed().required("Required*"),
-      ln: yup.mixed().required("Required*"),
-      fn: yup.mixed().required("Required*"),
-      location: yup.mixed().required("Required*"),
+      phoneNumber: yup.string().max(10).required("Required*"),
+      city: yup.string().required("Required*"),
+      // linkedin: yup.string().required("Required*"),
+      country: yup.mixed().required("Required*"),
+      yourRequirement: yup.mixed().required("Required*"),
+      state: yup.mixed().required("Required*"),
+      // location: yup.mixed().required("Required*"),
     }),
     onSubmit: (values) => {
       console.log(values, "heloooooooo");
-      setPopup(true);
-      // formik.handleReset();
+      dispatch(createContactData(values))
+      
+     
+      formik.handleReset();
     },
   });
+console.log(formik.errors,555);
+
   return (
     <div>
       <Head>
@@ -199,7 +205,7 @@ const contact = () => {
               </div>
             </div>
           </div>
-          <Form>
+          <Form onSubmit={formik.handleSubmit}>
             <div className="container">
               <div className="row mt-5">
                 <div className="col-lg-1"></div>
@@ -209,13 +215,13 @@ const contact = () => {
                     <Input
                       width="100%"
                       placeholder="Eg: John Krisinski"
-                      name="firstName"
+                      name="name"
                       onChange={formik.handleChange}
                       onBlur={formik.handleBlur}
-                      value={formik.values.firstName}
+                      value={formik.values.name}
                     />
-                    {formik.touched.firstName && formik.errors.firstName ? (
-                      <ErrorText>{formik.errors.firstName}</ErrorText>
+                    {formik.touched.name && formik.errors.name ? (
+                      <ErrorText>{formik.errors.name}</ErrorText>
                     ) : (
                       <ErrorText>&nbsp;</ErrorText>
                     )}{" "}
@@ -223,18 +229,21 @@ const contact = () => {
 
                   <div className=" ">
                     <label className>Phone Number*</label>
-                    <Input
+                    <input
                       width="100%"
-                      placeholder="98765-43210"
-                      name="ln"
+                      placeholder="8835975108"
+                     
+                      name="phoneNumber"
+                      className="phone"
+                      type="number"
                       onChange={formik.handleChange}
                       onBlur={formik.handleBlur}
-                      value={formik.values.ln}
+                      value={formik.values.phoneNumber}
                       required
                     />
 
-                    {formik.touched.ln && formik.errors.ln ? (
-                      <ErrorText>{formik.errors.ln}</ErrorText>
+                    {formik.touched.phoneNumber && formik.errors.phoneNumber ? (
+                      <ErrorText>{formik.errors.phoneNumber}</ErrorText>
                     ) : (
                       <ErrorText>&nbsp;</ErrorText>
                     )}
@@ -244,10 +253,10 @@ const contact = () => {
                     <div>
                       <select
                         className="input-option"
-                        name="fn"
+                        name="state"
                         onChange={formik.handleChange}
                         onBlur={formik.handleBlur}
-                        value={formik.values.fn}
+                        value={formik.values.state}
                       >
                         <option value="">Select</option>
                         <option value="Tamil Nadu">TamilNadu</option>
@@ -255,8 +264,8 @@ const contact = () => {
                         <option value="Gujarat">Gujarat</option>  
                       
                       </select>{" "}
-                      {formik.touched.fn && formik.errors.fn ? (
-                        <ErrorText>{formik.errors.fn}</ErrorText>
+                      {formik.touched.state && formik.errors.state ? (
+                        <ErrorText>{formik.errors.state}</ErrorText>
                       ) : (
                         <ErrorText>&nbsp;</ErrorText>
                       )}
@@ -286,18 +295,18 @@ const contact = () => {
                       <div>
                         <select
                           className="input-option"
-                          name="files"
+                          name="country"
                           onChange={formik.handleChange}
                           onBlur={formik.handleBlur}
-                          value={formik.values.files}
+                          value={formik.values.country}
                         >
                           <option value="">Select</option>
                           <option value="india">India</option>
                           <option value="Canada">Canada</option>
                           <option value="UK">Uk</option>
                         </select>{" "}
-                        {formik.touched.files && formik.errors.files ? (
-                          <ErrorText>{formik.errors.files}</ErrorText>
+                        {formik.touched.country && formik.errors.country ? (
+                          <ErrorText>{formik.errors.country}</ErrorText>
                         ) : (
                           <ErrorText>&nbsp;</ErrorText>
                         )}
@@ -309,14 +318,14 @@ const contact = () => {
                     <label>City*</label>
                     <Input
                       width="100%"
-                      name="experience"
+                      name="city"
                       placeholder="City"
                       onChange={formik.handleChange}
                       onBlur={formik.handleBlur}
                       value={formik.values.experience}
                     />{" "}
-                    {formik.touched.experience && formik.errors.experience ? (
-                      <ErrorText>{formik.errors.experience}</ErrorText>
+                    {formik.touched.city && formik.errors.city ? (
+                      <ErrorText>{formik.errors.city}</ErrorText>
                     ) : (
                       <ErrorText>&nbsp;</ErrorText>
                     )}
@@ -329,14 +338,23 @@ const contact = () => {
                 <div className="col-lg-10 col-sm-12 col-sm-12">
                   <div className="form-group ">
                     <label for="exampleInputPassword1">Your Requirement*</label>
-                    <textarea type="textarea" className="form-control text" style={{resize:"none"}}/>
+                    <textarea type="textarea" className="form-control text" style={{resize:"none"}}
+                       onChange={formik.handleChange}
+                       name = "yourRequirement"
+                       onBlur={formik.handleBlur}
+                       value={formik.values.yourRequirement}/>
+                    {formik.touched.yourRequirement && formik.errors.yourRequirement ? (
+                      <ErrorText>{formik.errors.yourRequirement}</ErrorText>
+                    ) : (
+                      <ErrorText>&nbsp;</ErrorText>
+                    )}
                   </div>
                 </div>
                 <div className="col-lg-1"></div>
               </div>
             </div>
             <div className=" mt-5">
-              <button className="btn submit-btn " onClick={formik.handleSubmit}>
+              <button className="btn submit-btn " type="submit" onClick={formik.handleSubmit}>
                 Submit
               </button>
             </div>
@@ -393,7 +411,7 @@ const contact = () => {
                       <img src="assets/images/Email-icon.svg" alt="img" />
                     </div>
                     <div className="col-lg-11 col-md-11 col-sm-11  font">
-                      info@staffq.in
+                    hello@staffq.in
                     </div>
                   </div>
                 </div>
@@ -437,7 +455,7 @@ const contact = () => {
                       <img src="assets/images/Email-icon.svg" alt="img" />
                     </div>
                     <div className="col-lg-11 col-md-11 col-sm-11  font">
-                      info@staffq.in
+                    hello@staffq.in
                     </div>
                   </div>
                 </div>
@@ -481,7 +499,7 @@ const contact = () => {
                       <img src="assets/images/Email-icon.svg" alt="img" />
                     </div>
                     <div className="col-lg-11 col-md-11 col-sm-11  font">
-                      info@staffq.in
+                    hello@staffq.in
                     </div>
                   </div>
                 </div>
@@ -534,7 +552,7 @@ const contact = () => {
                         <div className="">
                           <img src="assets/images/Email-icon.svg" alt="img" />
                         </div>
-                        <div className=" font d-one ">info@staffq.in</div>
+                        <div className=" font d-one ">hello@staffq.in</div>
                       </div>
                     </div>
                     <div></div>
@@ -577,7 +595,7 @@ const contact = () => {
                       <div className="">
                         <img src="assets/images/Email-icon.svg" alt="img" />
                       </div>
-                      <div className=" font d-one ">info@staffq.in</div>
+                      <div className=" font d-one ">hello@staffq.in</div>
                     </div>
 
                     <div></div>
@@ -621,7 +639,7 @@ const contact = () => {
                       <div className="">
                         <img src="assets/images/Email-icon.svg" alt="img" />
                       </div>
-                      <div className=" font d-one ">info@staffq.in</div>
+                      <div className=" font d-one ">hello@staffq.in</div>
                     </div>
 
                     <div></div>

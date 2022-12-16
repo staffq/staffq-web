@@ -113,7 +113,7 @@ const Slick = () => {
                   </p>
 
                   <div className="one">
-                    <div c>
+                    <div >
                       <img src="assets/images/Slicktwoimage.svg"></img>
                     </div>
                     <div className="two">
@@ -350,8 +350,8 @@ const Slick = () => {
                     style={{ marginTop: "-20px" }}
                   ></img>
                   <div className="img-content">
-                    <p style={{ fontSize: "42px" }} className="numbers">
-                      60+{" "}
+                    <p style={{ fontSize: "42px"}}  className="numbers ps-3">
+                      600+{" "}
                     </p>
                     <p style={{ fontSize: "22px" }}>Recruits </p>
                   </div>
@@ -394,7 +394,7 @@ const Slick = () => {
         <div className="sm-boxscreen-one">
           <div className="">
             <p style={{ fontSize: "42px" }} className="text-center numbers">
-              60+{" "}
+              600+{" "}
             </p>
             <p style={{ fontSize: "22px" }} className="text-center">
               Recruits

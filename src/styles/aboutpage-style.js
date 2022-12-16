@@ -386,11 +386,12 @@ padding-top: 37px !important;
 export const AboutSection = styled.div`
   background: #fefbe9;
   width: 100%;
+  padding-bottom: 2rem !important;
 
   margin-top: 10%;
   padding-top: 2rem;
 
-  padding: 0px !important;
+  /* padding: 0px !important; */
   .About-section {
     text-align: center;
     padding-top: 29px;

@@ -1,131 +1,115 @@
 import React from "react";
 import Head from "next/head";
+import { useFormik } from "formik";
+import * as yup from "yup";
+import styled from "styled-components";
 import { Worked, Header, Image, SmallHeader } from "../../styles/rpo";
+export const ErrorText = styled.div`
+  color: red;
+
+  font-size: 10px;
+
+  padding-bottom: 5px;
+
+  font-weight: 600;
+`;
 const RequirementProcess = () => {
+  const formik = useFormik({
+    initialValues: {
+      firstName: "",
+      lastName: "",
+      email: "",
+      // experience: "",
+      // linkedin: "",
+      // number: "",
+      // location: "",
+      // files: "",
+      ln: "",
+      // fn: "",
+    },
+    validationSchema: yup.object({
+      firstName: yup
+        .string()
+        // .max(15, "Must be 15 characters or less")
+        .required("Required *"),
+      lastName: yup.string().required("Required *"),
+      email: yup.string().email("Invalid email address").required("Required*"),
+      number: yup.string().max(10, "").required("Required*"),
+      experience: yup.string().required("Required*"),
+      linkedin: yup.string().required("Required*"),
+      files: yup.mixed().required("Required*"),
+      ln: yup.mixed().required("Required*"),
+      fn: yup.mixed().required("Required*"),
+      location: yup.mixed().required("Required*"),
+    }),
+    onSubmit: (values) => {
+      console.log(values, "heloooooooo");
+      setPopup(true);
+      // formik.handleReset();
+    },
+  });
   return (
     <div>
-            <Head>
-      <title>recruitment process outsourcing    </title>
-      <meta
-        property="og:image"
-        content="https://www.applogiq.org/assets/images/metaimg.png"
-      />
-      <meta
-        name="linkedin:image"
-        content="https://www.applogiq.org/assets/images/metaimg.png"
-      />
-      <meta
-        name="twitter:image"
-        content="https://www.applogiq.org/assets/images/metaimg.png"
-      />
-      <meta
-        name="instagram:image"
-        content="https://www.applogiq.org/assets/images/metaimg.png"
-      />
-      <meta
-        name="title"
-        content="Looking for an effective and holistic RPO solution? We offer 
+      <Head>
+        <title>recruitment process outsourcing </title>
+        <meta
+          property="og:image"
+          content="https://www.applogiq.org/assets/images/metaimg.png"
+        />
+        <meta
+          name="linkedin:image"
+          content="https://www.applogiq.org/assets/images/metaimg.png"
+        />
+        <meta
+          name="twitter:image"
+          content="https://www.applogiq.org/assets/images/metaimg.png"
+        />
+        <meta
+          name="instagram:image"
+          content="https://www.applogiq.org/assets/images/metaimg.png"
+        />
+        <meta
+          name="title"
+          content="Looking for an effective and holistic RPO solution? We offer 
         end-to-end talent supply chain optimisation through a diagnosis-led approach"
-      />
-      <meta
-        name="description"
-        content="Looking for an effective and holistic RPO solution? We offer
+        />
+        <meta
+          name="description"
+          content="Looking for an effective and holistic RPO solution? We offer
          end-to-end talent supply chain optimisation through a diagnosis-led approach"
-      />
-      <meta name="keywords" content="recruitment process outsourcing   " />
+        />
+        <meta name="keywords" content="recruitment process outsourcing   " />
 
-      <link
-        rel="canonical"
-        href="https://www.staffq.in/requirement-process"
-      />
-
-      <link rel="alternate" href="https://www.staffq.in/" hreflang="en-in" />
-
-      <meta property="og:locale" content="en_US" />
-      <meta property="og:type" content="website" />
-      <meta
-        property="og:title"
-        content="Looking for an effective and holistic RPO solution?
-         We offer end-to-end talent supply chain optimisation through a diagnosis-led approach"
-      />
-      <meta
-        property="og:description"
-        content="Looking for an effective and holistic RPO solution? We offer 
-        end-to-end talent supply chain optimisation through a diagnosis-led approach"
-      />
-      <meta
-        property="og:image"
-        content="https://www.applogiq.org/assets/images/index-og.webp"
-      />
-      <meta property="og:url" content="https://www.staffq.in" />
-      <meta property="og:site_name" content="AppLogiQ" />
-      <meta name="twitter:card" content="summary_large_image" />
-      <meta charSet="UTF-8" />
-      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-
-      {/* <script
-          type="application/ld+json"
-          dangerouslySetInnerHTML={{
-            __html: `{
-              "@context": "https://schema.org",
-              "@type": "LocalBusiness",
-              "name": "AppLogiQ",
-              "image": "https://www.applogiq.org/assets/images/logo.gif",
-              "@id": "",
-              "url": "https://applogiq.org/",
-              "telephone": "9629938033",
-              "priceRange": "$$$$$",
-              "address": {
-                "@type": "PostalAddress",
-                "streetAddress": "Floor-3,Sathyam Towers,6D Bharathi Street,Valipalayam.",
-                "addressLocality": "Tiruppur",
-                "postalCode": "641 601",
-                "addressCountry": "IN"
-              },
-              "geo": {
-                "@type": "GeoCoordinates",
-                "latitude": 11.10601020,
-                "longitude": 77.34961810
-              },
-              "openingHoursSpecification": {
-                "@type": "OpeningHoursSpecification",
-                "dayOfWeek": [
-                  "Monday",
-                  "Tuesday",
-                  "Wednesday",
-                  "Thursday",
-                  "Friday"
-                ],
-                "opens": "09:00",
-                "closes": "19:00"
-              },
-              "sameAs": [
-                "https://www.linkedin.com/company/applogiq/",
-                "https://www.facebook.com/Applogiq",
-                "https://www.instagram.com/applogiq/"
-              ] 
-            }`
-          }}
+        <link
+          rel="canonical"
+          href="https://www.staffq.in/requirement-process"
         />
 
-        <script type="application/ld+json"
-          dangerouslySetInnerHTML={{
-            __html: `{
-              "@context": "https://schema.org",
-              "@type": "Organization",
-              "name": "Applogiq",
-              "alternateName": "software company",
-              "url": "https://www.applogiq.org/",
-              "logo": "https://www.applogiq.org/assets/images/logo.gif",
-              "sameAs": [
-                "https://www.facebook.com/Applogiq",
-                "https://www.linkedin.com/company/applogiq/"
-              ]
-            }`
-          }}
-        /> */}
-    </Head>
-      
+        <link rel="alternate" href="https://www.staffq.in/" hreflang="en-in" />
+
+        <meta property="og:locale" content="en_US" />
+        <meta property="og:type" content="website" />
+        <meta
+          property="og:title"
+          content="Looking for an effective and holistic RPO solution?
+         We offer end-to-end talent supply chain optimisation through a diagnosis-led approach"
+        />
+        <meta
+          property="og:description"
+          content="Looking for an effective and holistic RPO solution? We offer 
+        end-to-end talent supply chain optimisation through a diagnosis-led approach"
+        />
+        <meta
+          property="og:image"
+          content="https://www.applogiq.org/assets/images/index-og.webp"
+        />
+        <meta property="og:url" content="https://www.staffq.in" />
+        <meta property="og:site_name" content="AppLogiQ" />
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta charSet="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      </Head>
+
       <Worked>
         <Header>
           <div lassName="header">
@@ -140,13 +124,22 @@ const RequirementProcess = () => {
                       alt="img"
                     />
                     <div className="ball-one-page">
-                      <span className="header-h-one">Recruitment Process</span>
-                      <br></br>
-                      <span className="header-h-one">Outsourcing</span>
-
-                      <p>
+                      <span className="header-h-one">
+                        Recruitment Process<br></br> Outsourcing
+                      </span>
+                      {/* <br></br>
+                      <span className="header-h-one"></span> */}{" "}
+                      <p className="first-p-tag">
                         Our recruitment process outsourcing (RPO) is all about
                         finding the right people to realize your organization's
+                        full potential. Our approach is simple — we listen,
+                        understand your needs and build a talent acquisition
+                        model that can adapt and evolve with your business
+                      </p>
+                      <p className="second-p-tag">
+                        Our recruitment process outsourcing (RPO) is all about
+                        finding the right people to realize your organization's
+                        <br></br>
                         full potential. Our approach is simple — we listen,
                         understand your needs and build a talent acquisition
                         model that can adapt and evolve with your business
@@ -281,15 +274,7 @@ const RequirementProcess = () => {
         {/* ..................next-----section.... */}
         <div>
           <section className="Hiring-Process container-fluid">
-            <div className="container pt-4 text-center">
-              <p style={{ fontWeight: "600" }} className="so-what">Why Companies Need RPO?</p>
-              <p style={{ fontSize: "15px" }}>
-                Now the companies’ growth engaged with the IT or Non-IT
-                products/services have been <br></br>
-                very fast and for that RPO is a very beneficial service in
-                several ways.
-              </p>
-            </div>
+         
             <div className="container">
               <div className="row About">
                 <div className="col-lg-6 col-md-12 col-sm-12">
@@ -361,69 +346,63 @@ const RequirementProcess = () => {
           </div>
         </div>
         {/* ....medium....... */}
-        
+
         <div>
           <div className="medium-small-view">
             <div className="container">
               <div className="row">
-
-              <div className="col-md-4 col-sm-12">
-                <img
-                  src="assets/images/under-imgaess.svg"
-                  className="round-img"
-                  alt="img"
+                <div className="col-md-4 col-sm-12">
+                  <img
+                    src="assets/images/under-imgaess.svg"
+                    className="round-img"
+                    alt="img"
                   />
-                <p className="img-p-tag">Requirement Gathering</p>
-              </div>
-              <div className="col-md-4 col-sm-12">
-                <img
-                  src="assets/images/inteview.img.png"
-                  className="round-img"
-                  alt="img"
+                  <p className="img-p-tag">Requirement Gathering</p>
+                </div>
+                <div className="col-md-4 col-sm-12">
+                  <img
+                    src="assets/images/inteview.img.png"
+                    className="round-img"
+                    alt="img"
                   />
-                  <p className="img-p-tag">Requirement
-Planning</p>
+                  <p className="img-p-tag">Requirement Planning</p>
+                </div>
+                <div className="col-md-4 col-sm-12">
+                  <img
+                    src="assets/images/contract.img.png"
+                    className="round-img"
+                    alt="img"
+                  />
+                  <p className="img-p-tag">Plan Derivation</p>
+                </div>
               </div>
-              <div className="col-md-4 col-sm-12">
-              <img
-                        src="assets/images/contract.img.png"
-                        className="round-img"
-                        alt="img"
-                      />
-                      <p className="img-p-tag">Plan
-Derivation</p>
 
+              <div className="row">
+                <div className="col-md-4 col-sm-12">
+                  <img
+                    src="assets/images/rqt.img.png "
+                    className="round-img"
+                    alt="img"
+                  />
+                  <p className="img-p-tag">Choice Of Actions</p>
+                </div>
+                <div className="col-md-4 col-sm-12">
+                  <img
+                    src="assets/images/contact-img.png "
+                    className="round-img"
+                    alt="img"
+                  />
+                  <p className="img-p-tag"> Finalization Of Contract</p>
+                </div>
+                <div className="col-md-4 col-sm-12">
+                  <img
+                    src="assets/images/get-img.svg "
+                    className="round-img"
+                    alt="img"
+                  />
+                  <p className="img-p-tag">Implimentation</p>
+                </div>
               </div>
-                  </div>
-
-                  <div className="row">
-                    <div className="col-md-4 col-sm-12">
-                    <img
-                          src="assets/images/rqt.img.png "
-                          className="round-img"
-                          alt="img"
-                        />
-                      <p className="img-p-tag">Choice Of
-Actions</p>
-                    </div>
-                    <div className="col-md-4 col-sm-12">
-                    <img
-                          src="assets/images/contact-img.png "
-                          className="round-img"
-                          alt="img"
-                        />
-                        <p className="img-p-tag"> Finalization
-Of Contract</p>
-                    </div>
-                    <div className="col-md-4 col-sm-12">
-                    <img
-                          src="assets/images/get-img.svg "
-                          className="round-img"
-                          alt="img"
-                        />
-                        <p className="img-p-tag">Implimentation</p>
-                    </div>
-                  </div>
             </div>
           </div>
         </div>
@@ -512,7 +491,7 @@ Of Contract</p>
                           className="round-img"
                           alt="img"
                         />
-                        <p  className="second-p">Choice Of Actions</p>
+                        <p className="second-p">Choice Of Actions</p>
                       </div>
                     </div>
                     <div className="col-lg-2">
@@ -531,7 +510,7 @@ Of Contract</p>
                           className="round-img"
                           alt="img"
                         />
-                        <p  className="second-p">Implimentation</p>
+                        <p className="second-p">Implimentation</p>
                       </div>
                     </div>
                   </div>
@@ -703,27 +682,59 @@ Of Contract</p>
                     <label for="exampleInputEmail1">Name*</label>
                     <br></br>
                     <input
-                      type="text"
                       className="form-control"
                       id="exampleInputEmail1"
                       aria-describedby="emailHelp"
+                      name="firstName"
+                      onChange={formik.handleChange}
+                      onBlur={formik.handleBlur}
+                      value={formik.values.firstName}
                     />
+                    {formik.touched.firstName && formik.errors.firstName ? (
+                      <ErrorText>{formik.errors.firstName}</ErrorText>
+                    ) : (
+                      <ErrorText>&nbsp;</ErrorText>
+                    )}{" "}
                   </div>
                   <div className="form-group ">
                     <label for="exampleInputEmail1">Phone Number*</label>
                     <input
-                      type="text"
+                      type="number"
+                      name="ln"
                       className="form-control"
                       id="exampleInputEmail1"
                       aria-describedby="emailHelp"
+                      onChange={formik.handleChange}
+                      onBlur={formik.handleBlur}
+                      value={formik.values.ln}
+                      required
                     />
+                    {formik.touched.ln && formik.errors.ln ? (
+                      <ErrorText>{formik.errors.ln}</ErrorText>
+                    ) : (
+                      <ErrorText>&nbsp;</ErrorText>
+                    )}
                   </div>
                   <div className="form-group ">
                     <label for="exampleInputPassword1">Email Address*</label>
-                    <input type="text" className="form-control" />
+                    <input
+                      type="text"
+                      className="form-control"
+                      name="email"
+                      onChange={formik.handleChange}
+                      onBlur={formik.handleBlur}
+                      value={formik.values.email}
+                    />
+                    {formik.touched.email && formik.errors.email ? (
+                      <ErrorText>{formik.errors.email}</ErrorText>
+                    ) : (
+                      <ErrorText>&nbsp;</ErrorText>
+                    )}
                   </div>
                   <div className="d-flex justify-content-end">
-                    <button className="submited">Submit</button>
+                    <button className="submited" onClick={formik.handleSubmit}>
+                      Submit
+                    </button>
                   </div>
                   <br></br>
                   <br></br>

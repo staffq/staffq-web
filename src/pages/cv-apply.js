@@ -4,9 +4,6 @@ import Cvapply from "./HomePage/CvApply";
 const index = () => {
   return (
     <div>
-
-
-      
       <Cvapply />
     </div>
   );

@@ -16,6 +16,7 @@ export const Form = styled.div`
     background: #ffffff;
     width: 100%;
     height: 56px;
+    padding-left: 14px;
     margin-bottom: 20px;
     box-shadow: 0px 4px 16px rgba(8, 20, 41, 0.08);
     border: 1px solid rgba(8, 20, 41, 0.1);
@@ -26,10 +27,29 @@ export const Form = styled.div`
     background: #ffffff;
     width: 100%;
     height: 56px;
+    padding-left: 14px;
     margin-bottom: 20px;
     box-shadow: 0px 4px 16px rgba(8, 20, 41, 0.08);
     border: 1px solid rgba(8, 20, 41, 0.1);
   }
+  .phone{
+    border-radius: 12px;
+    background: #ffffff;
+    width: 100%;
+    height: 56px;
+    padding-left: 14px;
+    margin-bottom: 20px;
+    box-shadow: 0px 4px 16px rgba(8, 20, 41, 0.08);
+    border: 1px solid rgba(8, 20, 41, 0.1);
+  }
+  input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+input[type=number] {
+  -moz-appearance: textfield;
+}
   @media (min-width: 250px) and (max-width: 768px) {
     .input-option {
       width: 100%;

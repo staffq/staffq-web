@@ -1,5 +1,5 @@
 const API_ENDPOINT = {
-  user: "user",
+  contact: "contacts",
 };
 
 export { API_ENDPOINT };

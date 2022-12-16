@@ -69,6 +69,8 @@ export const Foot = styled.div`
   .infostaff {
     padding-left: 35px;
     font-size: 15px;
+    font-weight: 400;
+    color: rgba(255,255,255,0.8);
   }
   .footer-one {
     font-size: 0px;

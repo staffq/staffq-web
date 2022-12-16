@@ -195,7 +195,142 @@ export const ProfileJs = styled.div`
       padding-left: 57px;
     }
   }
+  @media (min-width: 1500px) and (max-width: 1600px) {
+    .waves-two {
+      position: absolute;
+      top: 113rem;
+      padding-left: 60px;
+    }
+    .wave-three {
+      position: absolute;
+      top: 125rem;
+      padding-right: 47px;
+    }
+    .wave-four {
+      position: absolute;
+      top: 136rem;
+      padding-left: 57px;
+    }
+    .wave-five {
+      position: absolute;
+      top: 148rem;
+      padding-right: 45px;
+    }
+    .wave-six {
+      position: absolute;
+      top: 160rem;
+      padding-left: 57px;
+    }
+  }
+  @media (min-width: 1600px) and (max-width: 1700px) {
+    .waves-two {
+      position: absolute;
+      top: 115rem;
+      padding-left: 60px;
+    }
+    .wave-three {
+      position: absolute;
+      top: 129rem;
+      padding-right: 47px;
+    }
+    .wave-four {
+      position: absolute;
+      top: 139rem;
+      padding-left: 57px;
+    }
+    .wave-five {
+      position: absolute;
+      top: 150rem;
+      padding-right: 45px;
+    }
+    .wave-six {
+      position: absolute;
+      top: 160rem;
+      padding-left: 57px;
+    }
+  }
+  @media (min-width: 1700px) and (max-width: 1800px) {
+    .waves-two {
+      position: absolute;
+      top: 122rem;
+      padding-left: 60px;
+    }
+    .wave-three {
+      position: absolute;
+      top: 134rem;
+      padding-right: 47px;
+    }
+    .wave-four {
+      position: absolute;
+      top: 146rem;
+      padding-left: 57px;
+    }
+    .wave-five {
+      position: absolute;
+      top: 160rem;
+      padding-right: 45px;
+    }
+    .wave-six {
+      position: absolute;
+      top: 171rem;
+      padding-left: 57px;
+    }
+  }
+  @media (min-width: 1800px) and (max-width: 1900px) {
+    .waves-two {
+      position: absolute;
+      top: 122rem;
+      padding-left: 60px;
+    }
+    .wave-three {
+      position: absolute;
+      top: 134rem;
+      padding-right: 47px;
+    }
+    .wave-four {
+      position: absolute;
+      top: 146rem;
+      padding-left: 57px;
+    }
+    .wave-five {
+      position: absolute;
+      top: 160rem;
+      padding-right: 45px;
+    }
+    .wave-six {
+      position: absolute;
+      top: 171rem;
+      padding-left: 57px;
+    }
+  }
 
+  @media (min-width: 1900px) and (max-width: 2000px) {
+    .waves-two {
+      position: absolute;
+      top: 128rem;
+      padding-left: 60px;
+    }
+    .wave-three {
+      position: absolute;
+      top: 140rem;
+      padding-right: 47px;
+    }
+    .wave-four {
+      position: absolute;
+      top: 156rem;
+      padding-left: 57px;
+    }
+    .wave-five {
+      position: absolute;
+      top: 170rem;
+      padding-right: 45px;
+    }
+    .wave-six {
+      position: absolute;
+      top: 183rem;
+      padding-left: 57px;
+    }
+  }
   .ProFileBg {
     background-image: url("assets/images/profile.png");
     background-repeat: no-repeat;
@@ -583,7 +718,7 @@ export const ProfileJs = styled.div`
 // ...............................small phone device styled...............
 
 export const SmallProfile = styled.div`
-  font-size: 20px;
+  /* font-size: 20px; */
   display: none;
 
   .ProFileBg {
@@ -761,6 +896,7 @@ export const SmallProfile = styled.div`
 
       color: rgba(8, 20, 41, 0.6);
     }
+   
     .VectorImage {
       margin-top: -32px;
 
@@ -773,6 +909,16 @@ export const SmallProfile = styled.div`
     color: #081429;
     font-weight: 600;
   }
+  p{
+    font-size: 12px;
+  }
+  /* .small-p-tag{
+    font-weight: 500 !important;
+    font-size: 15px !important;
+    line-height: 19px;
+    text-align: center;
+    color: rgba(8, 20, 41, 0.4);
+  } */
   }
 
 

@@ -368,6 +368,14 @@ span{
 
     color: rgba(8, 20, 41, 0.8);
   }
+  input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+input[type=number] {
+  -moz-appearance: textfield;
+}
   .form {
     display: flex;
     justify-content: space-evenly;
@@ -621,7 +629,7 @@ export const Header = styled.div`
     font-style: normal;
     font-weight: 600;
     font-size: 60px;
-    line-height: 81px;
+    /* line-height: 81px; */
     /* identical to box height */
 
     color: #081429;
@@ -651,6 +659,9 @@ export const Header = styled.div`
     margin-top: 37px;
     position: relative;
   }
+  .second-p-tag{
+  display: none;
+}
 
   .little {
     position: absolute;
@@ -730,16 +741,25 @@ export const Header = styled.div`
  .ball-one-page{
   position: absolute;
   top: 6rem;
+  text-align: left;
  }
+
  p{
-    height: 220px;
-    width: 451px;
+    /* height: 220px; */
+    /* width: 451px; */
     font-style: normal;
     font-weight: 500;
   
-    font-size: 16px;
+    font-size: 18px;
     line-height: 32px;
     color: rgba(8,20,41,0.6);
+ }
+
+
+  }
+  @media (min-width: 1200px) and (max-width: 1400px) {
+    .ball-image{
+  margin-left: 3rem;
  }
   }
   @media (min-width: 1350px) and (max-width: 1400px) {
@@ -748,6 +768,25 @@ export const Header = styled.div`
   top: 6rem;
  }
   }
+  @media (min-width: 1000px) and (max-width: 1200px) {
+.first-p-tag{
+  display: none;
+}
+.second-p-tag{
+  display: block;
+  color: rgba(8,20,41,0.6);
+  line-height: 24px;
+}
+.ball-one-page{
+  position: absolute;
+  top: 6rem;
+  text-align: left;
+ }
+.header-h-one{
+  font-size: 47px;
+}
+  }
+  
 `;
 
 export const Image = styled.div`
@@ -844,8 +883,12 @@ export const Image = styled.div`
    }}
    @media (min-width: 1250px) and (max-width: 1290px) {
    .under-pic{
-  margin-left: 117px;
-   }}
+  margin-left: 101px;
+   }
+   .under-pic{
+    width: 73% !important;
+   }
+  }
    @media (min-width: 1290px) and (max-width:1320px) {
    .under-pic{
   margin-left: 98px;
@@ -853,6 +896,10 @@ export const Image = styled.div`
    @media (min-width: 1320px) and (max-width: 1360px) {
    .under-pic{
   margin-left: 98px;
+   }}
+   @media (min-width: 1360px) and (max-width: 1400px) {
+   .under-pic{
+  margin-left: 63px;
    }}
    @media (min-width: 1400px) and (max-width: 1475px) {
    .under-pic{
@@ -903,8 +950,9 @@ export const SmallHeader = styled.div`
  
     .ball-sm-page {
     position: relative;
+    text-align: left;
     top: 10rem;
-    padding-top: 3rem;}
+    padding-top: 1rem;}
     .banner-image {
     width: 100%;
     padding-top: 8rem;
@@ -928,7 +976,8 @@ export const SmallHeader = styled.div`
     .ball-sm-page {
     position: relative;
     top: 7rem;
+    text-align: left;
     padding-top: 3rem;}
   }
-  
+
 `;

@@ -275,6 +275,7 @@ line-height: 19px; */
   }
   .btnone:hover {
     background: #efce1e;
+   border: none;
   }
   .btnn {
     padding-left: 5px;

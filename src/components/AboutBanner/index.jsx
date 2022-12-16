@@ -54,8 +54,8 @@ const AboutHeader = () => {
 
             <div className="text-center samll-wave-contnet">
               <p className="h-one">
-                Join the team that’s <br></br>
-                making the world work <br></br>
+                Join the team that’s
+                <br></br> making the world work <br></br>
                 better for everyone <br></br>
               </p>
             </div>

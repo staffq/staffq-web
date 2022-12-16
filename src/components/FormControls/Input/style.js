@@ -13,6 +13,7 @@ export const InputStyled = styled.input`
   margin-bottom: 20px;
   box-shadow: 0px 4px 16px rgba(8, 20, 41, 0.08);
   border: 1px solid rgba(8, 20, 41, 0.1);
+  padding-left: 14px;
 
   color: black;
 

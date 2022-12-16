@@ -19,9 +19,14 @@ const config = {
       apiUrl: "",
       bucketName: "",
     },
+   local: {
+      webUrl: "http://localhost:4000/",
+      apiUrl: "http://localhost:4052/dev/",
+      bucketName: "",
+    },
   };
   
-  const environment = "development";
+  const environment = "local";
   
   const hostConfig = {
     WEB_URL: config[environment].webUrl,

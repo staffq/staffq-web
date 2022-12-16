@@ -1,8 +1,55 @@
 import React from "react";
 import Head from "next/head";
+import { useFormik } from "formik";
+import * as yup from "yup";
+import styled from "styled-components";
+export const ErrorText = styled.div`
+  color: red;
+
+  font-size: 10px;
+
+  padding-bottom: 5px;
+
+  font-weight: 600;
+`;
 import { Worked, Header, Image, SmallHeader } from "../../styles/workstyle";
-const PeramanentDeployment = () => (
-  <>
+
+const PeramanentDeployment = () => {
+  const formik = useFormik({
+    initialValues: {
+      firstName: "",
+      lastName: "",
+      email: "",
+      // experience: "",
+      // linkedin: "",
+      // number: "",
+      // location: "",
+      // files: "",
+      ln: "",
+      // fn: "",
+    },
+    validationSchema: yup.object({
+      firstName: yup.string()
+        // .max(15, "Must be 15 characters or less")
+        .required("Required *"),
+      lastName: yup.string().required("Required *"),
+      email: yup.string().email("Invalid email address").required("Required*"),
+      number: yup.string().max(10, "").required("Required*"),
+      experience: yup.string().required("Required*"),
+      linkedin: yup.string().required("Required*"),
+      files: yup.mixed().required("Required*"),
+      ln: yup.mixed().required("Required*"),
+      fn: yup.mixed().required("Required*"),
+      location: yup.mixed().required("Required*"),
+    }),
+    onSubmit: (values) => {
+      console.log(values, "heloooooooo");
+      setPopup(true);
+      // formik.handleReset();
+    },
+  });
+  return(
+    <>
     <Head>
       <title>Permanent Recruitment </title>
       <meta
@@ -30,13 +77,13 @@ const PeramanentDeployment = () => (
         name="description"
         content="StaffQ is a leading permanent staffing service and solution provider
            in India, we place the required candidates to the industries filtering their skills"
-      />
+           />
       <meta name="keywords" content="Permanent Recruitment  " />
 
       <link
         rel="canonical"
         href="https://www.staffq.in/permanent-requirement"
-      />
+        />
 
       <link rel="alternate" href="https://www.staffq.in/" hreflang="en-in" />
 
@@ -45,13 +92,13 @@ const PeramanentDeployment = () => (
       <meta
         property="og:title"
         content="StaffQ is a leading permanent staffing service and
-           solution provider in India, we place the required candidates to the industries filtering their skills"
-      />
+        solution provider in India, we place the required candidates to the industries filtering their skills"
+        />
       <meta
         property="og:description"
         content="StaffQ is a leading permanent staffing service and solution 
           provider in India, we place the required candidates to the industries filtering their skills."
-      />
+          />
       <meta
         property="og:image"
         content="https://www.applogiq.org/assets/images/index-og.webp"
@@ -105,9 +152,9 @@ const PeramanentDeployment = () => (
               ] 
             }`
           }}
-        />
-
-        <script type="application/ld+json"
+          />
+          
+          <script type="application/ld+json"
           dangerouslySetInnerHTML={{
             __html: `{
               "@context": "https://schema.org",
@@ -137,7 +184,7 @@ const PeramanentDeployment = () => (
                     className="ball-image"
                     width="100%"
                     alt="img"
-                  />
+                    />
                   <div className="ball-one-page">
                     <h1>Permanent Recruitment</h1>
                     <p>
@@ -182,7 +229,7 @@ const PeramanentDeployment = () => (
                   src="assets/images/banner-param.png"
                   alt="img"
                   width="100%"
-                />
+                  />
               </div>
               <div className="ball-sm-page">
                 <p className="h2">Permanent Recruitment</p>
@@ -236,7 +283,7 @@ const PeramanentDeployment = () => (
                         src="assets/images/line.svg"
                         className="mt-4"
                         alt="img"
-                      />
+                        />
                       <h4 className="whats-happening ">What’s happening?</h4>
                     </div>
                     <p className="solution-p-tag">
@@ -261,7 +308,7 @@ const PeramanentDeployment = () => (
                           src="assets/images/line.svg"
                           className="mt-4"
                           alt="img"
-                        />
+                          />
                         <h4 className="whats-happening ">Situation</h4>
                       </div>
                       <p className="solution-p-tag">
@@ -283,7 +330,7 @@ const PeramanentDeployment = () => (
 
       <div>
         <section className="Hiring-Process container-fluid">
-          <div className="container pt-4 text-center">
+          {/* <div className="container pt-4 text-center">
             <p className="so-what" style={{ fontWeight: "600" }}>
               So what should have been the correct move in the first place?
             </p>
@@ -291,7 +338,7 @@ const PeramanentDeployment = () => (
               These companies should have approached good agencies that provide
               permanent staffing solutions.
             </p>
-          </div>
+          </div> */}
           <div className="container">
             <div className="row About">
               <div className="col-lg-6 col-md-12 col-sm-12">
@@ -335,7 +382,7 @@ const PeramanentDeployment = () => (
                     className="hand-img "
                     width="100%"
                     alt="img"
-                  />
+                    />
                   <br></br>
                   <br></br>
                 </div>
@@ -386,7 +433,7 @@ const PeramanentDeployment = () => (
                         src="assets/images/contract.img.png"
                         className="round-img"
                         alt="img"
-                      />
+                        />
                       <p className="img-p-tag">Contract 
   Signing</p>
 
@@ -399,7 +446,7 @@ const PeramanentDeployment = () => (
                           src="assets/images/rqt.img.png "
                           className="round-img"
                           alt="img"
-                        />
+                          />
                       <p className="img-p-tag">Panel
   Interview</p>
                     </div>
@@ -408,7 +455,7 @@ const PeramanentDeployment = () => (
                           src="assets/images/contact-img.png "
                           className="round-img"
                           alt="img"
-                        />
+                          />
                         <p className="img-p-tag"> Candidate Identification</p>
                     </div>
                     <div className="col-md-4 col-sm-12">
@@ -434,7 +481,7 @@ const PeramanentDeployment = () => (
                 src="assets/images/images-under-pic.svg"
                 className="under-pic one"
                 alt="img"
-              />
+                />
             </div>
           </div>
           <div className="two">
@@ -509,7 +556,7 @@ const PeramanentDeployment = () => (
                         src="assets/images/contact-img.png "
                         className="round-img"
                         alt="img"
-                      />
+                        />
                       <p className="second-p" > Candidate Identification</p>
                     </div>
                   </div>
@@ -528,7 +575,7 @@ const PeramanentDeployment = () => (
                         src="assets/images/get-img.svg "
                         className="round-img"
                         alt="img"
-                      />
+                        />
                       <p className="second-p">Closure</p>
                     </div>
                   </div>
@@ -556,7 +603,7 @@ const PeramanentDeployment = () => (
               <div
                 className="col-lg-6 col-sm-12 col-md-12 big-screen container "
                 style={{ paddingTop: "1rem" }}
-              >
+                >
                 <div className="container">
                   <p className="Benefits ">Benefits of Permanent Hiring</p>
                   <div className="null">
@@ -671,8 +718,8 @@ const PeramanentDeployment = () => (
                     <div className="col-lg-11 col-md-11 col-sm-11">
                       <p className="second-p-tag notview">
                         As candidates are qualified and reliable, there is a
-                        higher probability of retention of such employees within
-                        the company and this is beneficial<br></br> in the long
+                        higher probability of retention <br></br>  of such employees  within
+                        the company and this is beneficialin the long
                         run{" "}
                       </p>
                       <p className="small-screen">
@@ -770,43 +817,79 @@ const PeramanentDeployment = () => (
               </p>
             </div>
             <div className="form container">
-              <form>
-                <div className="form-group mt-2">
-                  <label for="exampleInputEmail1">Name*</label>
+            <form>
+                  <div className="form-group mt-2">
+                    <label for="exampleInputEmail1">Name*</label>
+                    <br></br>
+                    <input
+                     
+                      className="form-control"
+                      id="exampleInputEmail1"
+                      aria-describedby="emailHelp"
+                      name="firstName"
+                      onChange={formik.handleChange}
+                      onBlur={formik.handleBlur}
+                      value={formik.values.firstName}
+                    />
+                       {formik.touched.firstName && formik.errors.firstName ? (
+                      <ErrorText>{formik.errors.firstName}</ErrorText>
+                    ) : (
+                      <ErrorText>&nbsp;</ErrorText>
+                    )}{" "}
+                  </div>
+                  <div className="form-group ">
+                    <label for="exampleInputEmail1">Phone Number*</label>
+                    <input
+                       type="number"
+                       name="ln"
+                      className="form-control"
+                      id="exampleInputEmail1"
+                      aria-describedby="emailHelp"
+                      onChange={formik.handleChange}
+                      onBlur={formik.handleBlur}
+                      value={formik.values.ln}
+                      required
+                    />
+                        {formik.touched.ln && formik.errors.ln ? (
+                      <ErrorText>{formik.errors.ln}</ErrorText>
+                    ) : (
+                      <ErrorText>&nbsp;</ErrorText>
+                    )}
+                    
+                  </div>
+                  <div className="form-group ">
+                    <label for="exampleInputPassword1">Email Address*</label>
+                    <input type="text" className="form-control"
+                    
+                    name="email"
+                   
+                    onChange={formik.handleChange}
+                    onBlur={formik.handleBlur}
+                    value={formik.values.email}/>
+                      {formik.touched.email && formik.errors.email ? (
+                      <ErrorText>{formik.errors.email}</ErrorText>
+                    ) : (
+                      <ErrorText>&nbsp;</ErrorText>
+                    )}
+                  </div>
+                  <div className="d-flex justify-content-end">
+                    <button className="submited" onClick={formik.handleSubmit}>Submit</button>
+                  </div>
                   <br></br>
-                  <input
-                    type="text"
-                    className="form-control"
-                    id="exampleInputEmail1"
-                    aria-describedby="emailHelp"
-                  />
-                </div>
-                <div className="form-group ">
-                  <label for="exampleInputEmail1">Phone Number*</label>
-                  <input
-                    type="text"
-                    className="form-control"
-                    id="exampleInputEmail1"
-                    aria-describedby="emailHelp"
-                  />
-                </div>
-                <div className="form-group ">
-                  <label for="exampleInputPassword1">Email Address*</label>
-                  <input type="text" className="form-control" />
-                </div>
-                <div className="d-flex justify-content-end">
-                  <button className="submited">Submit</button>
-                </div>
-                <br></br>
-                <br></br>
-              </form>
+                  <br></br>
+                </form>
             </div>
           </section>
         </div>
       </div>
+                    
     </Worked>
     <div></div>
   </>
-);
+  )
+
+
+   
+};
 
 export default PeramanentDeployment;

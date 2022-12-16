@@ -375,7 +375,7 @@ const Profile = () => {
       <SmallProfile>
         <div className="container">
           <div className="text-center mt-5 sm-how-to">
-            <p className="h-four">How It Works</p>
+            <p className="h-four">Services we offer</p>
             <p className="how-to-work-p-tag">
               We seek to help a job seeker find a job, and find a qualified
               candidate <br></br> for an open position for a company

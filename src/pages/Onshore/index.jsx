@@ -1,7 +1,52 @@
 import React from "react";
 import Head from "next/head";
+import { useFormik } from "formik";
+import * as yup from "yup";
+import styled from "styled-components";
 import { Worked, Header, Image, SmallHeader } from "../../styles/contract";
+export const ErrorText = styled.div`
+  color: red;
+
+  font-size: 10px;
+
+  padding-bottom: 5px;
+
+  font-weight: 600;
+`;
 const OnshoreRequriement = () => {
+  const formik = useFormik({
+    initialValues: {
+      firstName: "",
+      lastName: "",
+      email: "",
+      // experience: "",
+      // linkedin: "",
+      // number: "",
+      // location: "",
+      // files: "",
+      ln: "",
+      // fn: "",
+    },
+    validationSchema: yup.object({
+      firstName: yup.string()
+        // .max(15, "Must be 15 characters or less")
+        .required("Required *"),
+      lastName: yup.string().required("Required *"),
+      email: yup.string().email("Invalid email address").required("Required*"),
+      number: yup.string().max(10, "").required("Required*"),
+      experience: yup.string().required("Required*"),
+      linkedin: yup.string().required("Required*"),
+      files: yup.mixed().required("Required*"),
+      ln: yup.mixed().required("Required*"),
+      fn: yup.mixed().required("Required*"),
+      location: yup.mixed().required("Required*"),
+    }),
+    onSubmit: (values) => {
+      console.log(values, "heloooooooo");
+      setPopup(true);
+      // formik.handleReset();
+    },
+  });
   return (
     <Worked>
                <Head>
@@ -278,15 +323,7 @@ const OnshoreRequriement = () => {
       {/* ..................next-----section.... */}
       <div>
         <section className="Hiring-Process container-fluid">
-          <div className="container pt-4 text-center">
-            <p style={{ fontWeight: "600" }} className="so-what">
-              So what should have been the correct move in the first place?
-            </p>
-            <p style={{ fontSize: "15px" }}>
-              These companies should have approached good agencies that provide
-              permanent staffing solutions.
-            </p>
-          </div>
+       
           <div className="container">
             <div className="row About">
               <div className="col-lg-6 col-md-12 col-sm-12">
@@ -738,36 +775,67 @@ Deployment</p>
               </p>
             </div>
             <div className="form container">
-              <form>
-                <div className="form-group mt-2">
-                  <label for="exampleInputEmail1">Name*</label>
+            <form>
+                  <div className="form-group mt-2">
+                    <label for="exampleInputEmail1">Name*</label>
+                    <br></br>
+                    <input
+                     
+                      className="form-control"
+                      id="exampleInputEmail1"
+                      aria-describedby="emailHelp"
+                      name="firstName"
+                      onChange={formik.handleChange}
+                      onBlur={formik.handleBlur}
+                      value={formik.values.firstName}
+                    />
+                       {formik.touched.firstName && formik.errors.firstName ? (
+                      <ErrorText>{formik.errors.firstName}</ErrorText>
+                    ) : (
+                      <ErrorText>&nbsp;</ErrorText>
+                    )}{" "}
+                  </div>
+                  <div className="form-group ">
+                    <label for="exampleInputEmail1">Phone Number*</label>
+                    <input
+                       type="number"
+                       name="ln"
+                      className="form-control"
+                      id="exampleInputEmail1"
+                      aria-describedby="emailHelp"
+                      onChange={formik.handleChange}
+                      onBlur={formik.handleBlur}
+                      value={formik.values.ln}
+                      required
+                    />
+                        {formik.touched.ln && formik.errors.ln ? (
+                      <ErrorText>{formik.errors.ln}</ErrorText>
+                    ) : (
+                      <ErrorText>&nbsp;</ErrorText>
+                    )}
+                    
+                  </div>
+                  <div className="form-group ">
+                    <label for="exampleInputPassword1">Email Address*</label>
+                    <input type="text" className="form-control"
+                    
+                    name="email"
+                   
+                    onChange={formik.handleChange}
+                    onBlur={formik.handleBlur}
+                    value={formik.values.email}/>
+                      {formik.touched.email && formik.errors.email ? (
+                      <ErrorText>{formik.errors.email}</ErrorText>
+                    ) : (
+                      <ErrorText>&nbsp;</ErrorText>
+                    )}
+                  </div>
+                  <div className="d-flex justify-content-end">
+                    <button className="submited" onClick={formik.handleSubmit}>Submit</button>
+                  </div>
                   <br></br>
-                  <input
-                    type="text"
-                    className="form-control"
-                    id="exampleInputEmail1"
-                    aria-describedby="emailHelp"
-                  />
-                </div>
-                <div className="form-group ">
-                  <label for="exampleInputEmail1">Phone Number*</label>
-                  <input
-                    type="text"
-                    className="form-control"
-                    id="exampleInputEmail1"
-                    aria-describedby="emailHelp"
-                  />
-                </div>
-                <div className="form-group ">
-                  <label for="exampleInputPassword1">Email Address*</label>
-                  <input type="text" className="form-control" />
-                </div>
-                <div className="d-flex justify-content-end">
-                  <button className="submited">Submit</button>
-                </div>
-                <br></br>
-                <br></br>
-              </form>
+                  <br></br>
+                </form>
             </div>
           </section>
         </div>

@@ -4,7 +4,8 @@ import { useState } from "react";
 /** **************************** Import Page ****************************** */
 import TestLayout from "../pages";
 // import 'bootstrap/dist/css/bootstrap.min.css';
-
+import { ToastContainer, toast } from "react-toastify";
+import 'react-toastify/dist/ReactToastify.css';
 /** **************************** Import CSS ****************************** */
 import "../styles/globals.css";
 import "../../public/assets/css/main.css";
@@ -27,9 +28,13 @@ function MyApp({ Component, pageProps }) {
       handleShow={handleShow}
       handleHide={handleHide}
     >
-      <Component
-        {...pageProps}
-        onMouseLeave={() => handleHide(false)}
+      <Component {...pageProps} onMouseLeave={() => handleHide(false)} />
+      <ToastContainer
+        limit={1}
+        autoClose={2000}
+        // transition={Zoom}
+        pauseOnFocusLoss={false}
+        newestOnTop
       />
     </Layouts>
   );

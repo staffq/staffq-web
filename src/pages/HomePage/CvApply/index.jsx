@@ -170,7 +170,7 @@ const Cvapply = () => {
           }}
         /> */}
       </Head>
-      ;
+      
       <div className="container-fluid p-0 background">
         <div className="bg-img">
           <img src="assets/images/Banner-find-box.jpg" width="100%" />
@@ -360,9 +360,10 @@ const Cvapply = () => {
                 </div>
                 <div>
                   <label>Mobile number*</label>
-                  <Input
+                  <input
                     width="100%"
                     name="number"
+                    className="number"
                     onChange={formik.handleChange}
                     onBlur={formik.handleBlur}
                     value={formik.values.number}

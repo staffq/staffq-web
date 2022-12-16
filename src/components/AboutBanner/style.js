@@ -84,7 +84,7 @@ padding-top: 5rem;
     .ball-one-page {
     /* position: absolute; */
     /* position: absolute; */
-    padding-top: 9rem;
+    padding-top: 5rem;
     /* margin-left: 7rem; */
 
 
@@ -98,6 +98,21 @@ padding-top: 5rem;
     /* position: absolute; */
     /* position: absolute; */
     padding-top: 5rem;
+    /* margin-left: 7rem; */
+
+
+  }
+}
+@media (min-width: 1150px) and (max-width: 1170px) {
+  h1{
+        font-size: 38px !important;
+        padding-top: 20px;
+        font-weight: 600;
+    }
+    .ball-one-page {
+    /* position: absolute; */
+    /* position: absolute; */
+    padding-top: 4rem !important;
     /* margin-left: 7rem; */
 
 
@@ -291,7 +306,7 @@ export const SmallHeader = styled.div`
 
   .h-one{
     font-size: 35px;
-    line-height: 35px;
+    line-height: 43px;
     font-weight: 5000;
     padding-top: 10rem;
   }

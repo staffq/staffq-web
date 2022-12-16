@@ -175,7 +175,7 @@ const UploadCV = () => {
           }}
         /> */}
       </Head>
-      ;
+      
       <div className="container-fluid p-0 background">
         <div className="bg-img">
           <img src="assets/images/Banner-find-box.jpg" width="100%" />
@@ -196,7 +196,8 @@ const UploadCV = () => {
                 <div className="mt-3">
                   <ul className="nav">
                     <Link href="/">
-                    <li className="nav-item">Home</li></Link>
+                      <li className="nav-item">Home</li>
+                    </Link>
                     <li className="nav-item">
                       {" "}
                       <img src="assets/images/icons-right.svg"></img>
@@ -352,9 +353,11 @@ const UploadCV = () => {
                 </div>
                 <div>
                   <label>Mobile number*</label>
-                  <Input
+                  <input
                     width="100%"
                     name="number"
+                    className="number"
+                    type="number"
                     onChange={formik.handleChange}
                     onBlur={formik.handleBlur}
                     value={formik.values.number}

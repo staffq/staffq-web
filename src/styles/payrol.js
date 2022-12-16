@@ -412,6 +412,14 @@ span{
     box-shadow: 0px 4px 16px rgba(8, 20, 41, 0.08);
     border-radius: 12px;
   }
+  input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+input[type=number] {
+  -moz-appearance: textfield;
+}
   label {
     font-style: normal;
     font-weight: 500;
@@ -653,7 +661,8 @@ export const Header = styled.div`
   .header-h-one {
     left: 170px;
     top: 282px;
-
+top: auto;
+text-align: left;
     font-style: normal;
     font-weight: 600;
     font-size: 60px;
@@ -676,6 +685,7 @@ export const Header = styled.div`
   }
   .payrol-p-tag{
     font-size: 19px;
+    text-align: left;
   }
   .ball-one-page {
     position: absolute;
@@ -782,11 +792,15 @@ export const Header = styled.div`
     font-weight: 600;
     font-size: 48px;
     line-height: 57px;
+    padding-top: 2rem;
+    text-align: left;
     color: #081429;}
 }
 @media (min-width: 1200px) and (max-width: 1500px){
   .header-h-one {
     font-size: 52px;
+    padding-top: 2rem;
+    text-align: left;
     line-height: 54px;
   }
 }
@@ -888,8 +902,12 @@ export const Image = styled.div`
    }}
    @media (min-width: 1250px) and (max-width: 1290px) {
    .under-pic{
-  margin-left: 117px;
-   }}
+  margin-left: 101px;
+   }
+   .under-pic{
+    width: 73% !important;
+   }
+  }
    @media (min-width: 1290px) and (max-width:1320px) {
    .under-pic{
   margin-left: 98px;
@@ -897,6 +915,10 @@ export const Image = styled.div`
    @media (min-width: 1320px) and (max-width: 1360px) {
    .under-pic{
   margin-left: 98px;
+   }}
+   @media (min-width: 1360px) and (max-width: 1400px) {
+   .under-pic{
+  margin-left: 63px;
    }}
    @media (min-width: 1400px) and (max-width: 1475px) {
    .under-pic{
@@ -965,6 +987,9 @@ export const SmallHeader = styled.div`
     padding-right: 2rem;
     line-height: 30px;
     color: rgba(8,20,41,0.6);
+   }
+   h2{
+    font-size: 30px;
    }
    
   }

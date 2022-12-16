@@ -2,6 +2,7 @@ import styled from "styled-components";
 
 export const Div = styled.div`
 padding-top: 10rem;
+padding-bottom: 10rem;
 .btn{
     font-weight: 600;
 font-size: 16px;

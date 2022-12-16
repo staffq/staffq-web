@@ -349,6 +349,14 @@ color: #081429;
     box-shadow: 0px 4px 16px rgba(8, 20, 41, 0.08);
     border-radius: 12px;
   }
+  input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+input[type=number] {
+  -moz-appearance: textfield;
+}
   label {
     font-style: normal;
     font-weight: 500;
@@ -626,6 +634,7 @@ export const Header = styled.div`
   .ball-one-page {
     position: absolute;
     top: 10rem;
+    text-align: left;
     margin-left: 20px;
   }
   .banner-image {
@@ -690,6 +699,7 @@ export const Header = styled.div`
       text-align: center;
       top: 5rem;
       margin: 0;
+      text-align: left;
     }
     h1 {
       left: 170px;
@@ -711,13 +721,14 @@ export const Header = styled.div`
   @media (min-width: 1200px) and (max-width: 1360px) {
     .ball-one-page {
       position: absolute;
-      top: 6rem;
+      top: 7rem;
+      text-align: left;
     }
   }
   @media (min-width: 1350px) and (max-width: 1400px) {
     .ball-one-page {
       position: absolute;
-      top: 6rem;
+      top: 7rem;
     }
   }
 `;
@@ -792,55 +803,56 @@ export const Image = styled.div`
     height: 163px;
   }
   @media (min-width: 1024px) and (max-width: 1050px) {
-    .under-pic {
-      margin-left: 149px;
-    }
+   .under-pic{
+  margin-left: 149px;
+   }
   }
   @media (min-width: 1050px) and (max-width: 1100px) {
-    .under-pic {
-      margin-left: 108px;
-    }
+   .under-pic{
+  margin-left: 108px;
+   }
+  
   }
   @media (min-width: 1156px) and (max-width: 1170px) {
-    .under-pic {
-      margin-left: 60px;
-    }
+   .under-pic{
+  margin-left: 60px;
+   }}
+   @media (min-width: 1170px) and (max-width: 1200px) {
+   .under-pic{
+  margin-left: 45px;
+   }}
+   @media (min-width: 1200px) and (max-width: 1250px) {
+   .under-pic{
+  margin-left: 158px;
+   }}
+   @media (min-width: 1250px) and (max-width: 1290px) {
+   .under-pic{
+  margin-left: 101px;
+   }
+   .under-pic{
+    width: 73% !important;
+   }
   }
-  @media (min-width: 1170px) and (max-width: 1200px) {
-    .under-pic {
-      margin-left: 45px;
-    }
-  }
-  @media (min-width: 1200px) and (max-width: 1250px) {
-    .under-pic {
-      margin-left: 158px;
-    }
-  }
-  @media (min-width: 1250px) and (max-width: 1290px) {
-    .under-pic {
-      margin-left: 117px;
-    }
-  }
-  @media (min-width: 1290px) and (max-width: 1320px) {
-    .under-pic {
-      margin-left: 98px;
-    }
-  }
-  @media (min-width: 1320px) and (max-width: 1360px) {
-    .under-pic {
-      margin-left: 98px;
-    }
-  }
-  @media (min-width: 1400px) and (max-width: 1475px) {
-    .under-pic {
-      margin-left: 164px;
-    }
-  }
-  @media (min-width: 1475px) and (max-width: 1500px) {
-    .under-pic {
-      margin-left: 130px;
-    }
-  }
+   @media (min-width: 1290px) and (max-width:1320px) {
+   .under-pic{
+  margin-left: 98px;
+   }}
+   @media (min-width: 1320px) and (max-width: 1360px) {
+   .under-pic{
+  margin-left: 98px;
+   }}
+   @media (min-width: 1360px) and (max-width: 1400px) {
+   .under-pic{
+  margin-left: 63px;
+   }}
+   @media (min-width: 1400px) and (max-width: 1475px) {
+   .under-pic{
+  margin-left: 164px;
+   }}
+   @media (min-width: 1475px) and (max-width: 1500px) {
+   .under-pic{
+  margin-left: 130px;
+   }}
 `;
 
 export const SmallHeader = styled.div`
@@ -862,9 +874,10 @@ export const SmallHeader = styled.div`
     position: absolute;
   }
   .h2 {
-    font-size: 38px;
+    font-size: 33px;
     padding-bottom: 1rem;
     font-weight: 600;
+    color: #081429;
   }
   .ball-sm-page {
     position: relative;

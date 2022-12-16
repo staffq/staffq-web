@@ -209,7 +209,7 @@ const FindJob = () => {
           }}
         /> */}
       </Head>
-      ;
+      
       <div className="container-fluid p-0 background">
         <div className="bg-img">
           <img src="assets/images/Banner-find-box.jpg" width="100%" />

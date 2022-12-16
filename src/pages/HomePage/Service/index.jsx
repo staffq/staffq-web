@@ -22,7 +22,7 @@ const Service = () => {
                     </p>
                     <p className="sm-scrren-p-tag mb-0">
                       StaffQ Consultancy is known for its IT and Non-IT recruits{" "}
-                      <br></br>
+                     
                       to companies in various Domain.
                     </p>
                   </div>
@@ -56,7 +56,7 @@ const Service = () => {
                           </p>
 
                           <div>
-                            <Link href="peramanent-recruitment">
+                            <Link href="permanent-recruitment">
                               <span className="learnmore">
                                 Learn more{" "}
                                 <BsArrowRight className="fs-3  LeftArrow " />
@@ -232,7 +232,7 @@ const Service = () => {
                     Permanent staffing is attaining <br></br> great importance
                     in the human ....
                   </p>
-                  <Link href="peramanent-recruitment">
+                  <Link href="permanent-recruitment">
                   <span className="learnmore">
                     Learn more <BsArrowRight className="fs-3  LeftArrow " />
                     <div className="VectorImage">
