@@ -3,6 +3,7 @@ import Head from "next/head";
 import { useFormik } from "formik";
 import * as yup from "yup";
 import styled from "styled-components";
+import StillNotSure from "../StilNotSure";
 import { Worked, Header, Image, SmallHeader } from "../../styles/contract";
 export const ErrorText = styled.div`
   color: red;
@@ -759,87 +760,7 @@ Deployment</p>
         </section>
       </div>
       {/* .......form........ */}
-      <div className="form-section">
-        <div className="container mt-5">
-          <section>
-            <div className="text-center">
-              <p className="still-not-sure">Still not Sure? Let’s Talk</p>
-              <p className=" Our-team">
-                Our team of experts will connect with you with more elaberate
-                details.<br></br>
-                Connect with us.
-              </p>
-              <p className="Our-team-one">
-                Our team of experts will connect with you with more elaberate
-                details. Connect with us.
-              </p>
-            </div>
-            <div className="form container">
-            <form>
-                  <div className="form-group mt-2">
-                    <label for="exampleInputEmail1">Name*</label>
-                    <br></br>
-                    <input
-                     
-                      className="form-control"
-                      id="exampleInputEmail1"
-                      aria-describedby="emailHelp"
-                      name="firstName"
-                      onChange={formik.handleChange}
-                      onBlur={formik.handleBlur}
-                      value={formik.values.firstName}
-                    />
-                       {formik.touched.firstName && formik.errors.firstName ? (
-                      <ErrorText>{formik.errors.firstName}</ErrorText>
-                    ) : (
-                      <ErrorText>&nbsp;</ErrorText>
-                    )}{" "}
-                  </div>
-                  <div className="form-group ">
-                    <label for="exampleInputEmail1">Phone Number*</label>
-                    <input
-                       type="number"
-                       name="ln"
-                      className="form-control"
-                      id="exampleInputEmail1"
-                      aria-describedby="emailHelp"
-                      onChange={formik.handleChange}
-                      onBlur={formik.handleBlur}
-                      value={formik.values.ln}
-                      required
-                    />
-                        {formik.touched.ln && formik.errors.ln ? (
-                      <ErrorText>{formik.errors.ln}</ErrorText>
-                    ) : (
-                      <ErrorText>&nbsp;</ErrorText>
-                    )}
-                    
-                  </div>
-                  <div className="form-group ">
-                    <label for="exampleInputPassword1">Email Address*</label>
-                    <input type="text" className="form-control"
-                    
-                    name="email"
-                   
-                    onChange={formik.handleChange}
-                    onBlur={formik.handleBlur}
-                    value={formik.values.email}/>
-                      {formik.touched.email && formik.errors.email ? (
-                      <ErrorText>{formik.errors.email}</ErrorText>
-                    ) : (
-                      <ErrorText>&nbsp;</ErrorText>
-                    )}
-                  </div>
-                  <div className="d-flex justify-content-end">
-                    <button className="submited" onClick={formik.handleSubmit}>Submit</button>
-                  </div>
-                  <br></br>
-                  <br></br>
-                </form>
-            </div>
-          </section>
-        </div>
-      </div>
+      <StillNotSure />
     </Worked>
   );
 };

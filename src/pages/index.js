@@ -5,7 +5,6 @@ import Head from "next/head";
 import Banner from "../components/Banner";
 import HomePage from "./HomePage";
 
-
 // import { useRouter } from 'next/router';
 
 const index = () => {
@@ -13,23 +12,34 @@ const index = () => {
   // React.useEffect(() => {
   //     const handleStart = () => { setPageLoading(true); };
   //     const handleComplete = () => { setPageLoading(false); };
-  
+
   //     router.events.on('routeChangeStart', handleStart);
   //     router.events.on('routeChangeComplete', handleComplete);
   //     router.events.on('routeChangeError', handleComplete);
   //   }, [router]);
 
   return (
-   
     <div className="container-fluid pe-0 p-0">
-          <Head>
+      <Head>
         <title>
-        StaffQ - Consulting | HR services | Process Transformation
+          StaffQ - Consulting | HR services | Process Transformation
         </title>
-        <meta property="og:image" content="https://www.staffq.in/assets/images/Frame.png"/>
-        <meta name="linkedin:image" content="https://www.staffq.in/assets/images/Frame.png"/>
-        <meta name="twitter:image" content="https://www.staffq.in/assets/images/Frame.png" />
-        <meta name="instagram:image" content="https://www.staffq.in/assets/images/Frame.png"/>
+        <meta
+          property="og:image"
+          content="https://www.staffq.in/assets/images/Frame.png"
+        />
+        <meta
+          name="linkedin:image"
+          content="https://www.staffq.in/assets/images/Frame.png"
+        />
+        <meta
+          name="twitter:image"
+          content="https://www.staffq.in/assets/images/Frame.png"
+        />
+        <meta
+          name="instagram:image"
+          content="https://www.staffq.in/assets/images/Frame.png"
+        />
         <meta
           name="title"
           content=" StaffQ Consultants: Top Recruitment Services Company in India"
@@ -46,23 +56,17 @@ const index = () => {
 
         <link rel="canonical" href="https://www.staffq.in/" />
 
-        <link
-          rel="alternate"
-          href="https://www.staffq.in/"
-          hreflang="en-in"
-        />
+        <link rel="alternate" href="https://www.staffq.in/" hreflang="en-in" />
 
         <meta property="og:locale" content="en_US" />
         <meta property="og:type" content="website" />
         <meta
           property="og:title"
-          content="We are leading staffing company that we provide you with the best workforce management solutions.
-           We offer staffing services to top companies across a variety of industries, and our team of experts can help you find the right solution for your business. "
+          content="We simplify the way to find and manage workforce."
         />
         <meta
           property="og:description"
-          content="We are leading staffing company that we provide you with the best workforce management solutions. We offer staffing services to top companies
-           across a variety of industries, and our team of experts can help you find the right solution for your business. ."
+          content="We simplify the way to find and manage workforce."
         />
         <meta
           property="og:image"
@@ -105,14 +109,9 @@ const index = () => {
 </script>
 
         </div> */}
-
-
-
-
       </Head>
       <Banner />
-      <HomePage/>
-    
+      <HomePage />
     </div>
   );
 };

@@ -30,7 +30,7 @@ export const InputStyled = styled.input`
 export const Icon = styled.div`
   color: black;
   width: 40px;
-  height: 40px;
+  height: 2px;
   top: 26.5rem;
   /* position: absolute; */
   /* opacity: 0.5; */

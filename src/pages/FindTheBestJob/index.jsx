@@ -2,97 +2,45 @@ import Link from "next/link";
 import React from "react";
 import Head from "next/head";
 import Input from "../../components/FormControls/Input";
-// import { Icon } from "../../components/FormControls/Input/style";
-// import { useFormik } from "formik";
-// import * as Yup from "yup";
+
+import { getjobpostionData } from "../../redux/actions/";
+import { useDispatch, useSelector } from "react-redux";
 import { Find, SmallFind } from "../../styles/findthejob-style";
+import { useEffect } from "react";
+
+import { useState } from "react";
 
 const FindJob = () => {
-  const cardData = [
-    {
-      header: "UX Designer",
-      text: "To work closely with the design and backend team to build and develop web applications for our forward-thinking products",
-    },
-    {
-      header: "Front End Developer",
-      text: "To work closely with the design and backend team to build and develop web applications for our forward-thinking products",
-    },
-    {
-      header: "Visual Designer",
-      text: "To work closely with the design and backend team to build and develop web applications for our forward-thinking products",
-    },
-    {
-      header: "Motion Designer",
-      text: "To work closely with the design and backend team to build and develop web applications for our forward-thinking products",
-    },
-    {
-      header: "UX Designer",
-      text: "To work closely with the design and backend team to build and develop web applications for our forward-thinking products",
-    },
-    {
-      header: "Front End Developer",
-      text: "To work closely with the design and backend team to build and develop web applications for our forward-thinking products",
-    },
-    {
-      header: "Visual Designer",
-      text: "To work closely with the design and backend team to build and develop web applications for our forward-thinking products",
-    },
-    {
-      header: "Motion Designer",
-      text: "To work closely with the design and backend team to build and develop web applications for our forward-thinking products",
-    },
-    {
-      header: "UX Designer",
-      text: "To work closely with the design and backend team to build and develop web applications for our forward-thinking products",
-    },
-    {
-      header: "Front End Developer",
-      text: "To work closely with the design and backend team to build and develop web applications for our forward-thinking products",
-    },
-    {
-      header: "Visual Designer",
-      text: "To work closely with the design and backend team to build and develop web applications for our forward-thinking products",
-    },
-    {
-      header: "Motion Designer",
-      text: "To work closely with the design and backend team to build and develop web applications for our forward-thinking products",
-    },
-    {
-      header: "UX Designer",
-      text: "To work closely with the design and backend team to build and develop web applications for our forward-thinking products",
-    },
-    {
-      header: "Front End Developer",
-      text: "To work closely with the design and backend team to build and develop web applications for our forward-thinking products",
-    },
-    {
-      header: "Visual Designer",
-      text: "To work closely with the design and backend team to build and develop web applications for our forward-thinking products",
-    },
-    {
-      header: "Motion Designer",
-      text: "To work closely with the design and backend team to build and develop web applications for our forward-thinking products",
-    },
-  ];
-  // const formik = useFormik({
-  //   initialValues: {
-  //     firstName: "",
-  //     lastName: "",
-  //     email: "",
-  //   },
-  //   validationSchema: Yup.object({
-  //     firstName: Yup.string()
-  //       .max(15, "Must be 15 characters or less")
-  //       .required("Required"),
-  //     lastName: Yup.string()
-  //       .max(20, "Must be 20 characters or less")
-  //       .required("Required"),
-  //     email: Yup.string().email("Invalid email address").required("Required"),
-  //   }),
-  //   onSubmit: (values) => {
-  //     alert(JSON.stringify(values, null, 2));
-  //   },
-  // });
+  const dispatch = useDispatch();
+  const jobdata = useSelector((state) => state?.jobs?.jobData);
+  // const [search,setSeach] = useState("");
+  console.log(jobdata, 400);
+  useEffect(() => {
+    dispatch(getjobpostionData());
+  }, []);
+
+  // const handleSearch = (e) => {
+  //   const data = e.target.value;
+  //   setSeach(data)
+
+  //   const url=`https://api.myjson.com/bins/e69i9/?i=${value}&q=${value2}`;
+
+  // }
+  const [value, setValue] = useState("");
+  const [searched, setSearched] = useState("");
+  console.log(value, "value", searched, "searched");
+
+ const handleSearch = () => {
+
+    dispatch(
+      getjobpostionData({
+        search: value,
+      })
+    );
+  };
+  useEffect(() => {
+    handleSearch();
+  }, []);
   return (
     <Find>
       <Head>
@@ -209,7 +157,7 @@ const FindJob = () => {
           }}
         /> */}
       </Head>
-      
+
       <div className="container-fluid p-0 background">
         <div className="bg-img">
           <img src="assets/images/Banner-find-box.jpg" width="100%" />
@@ -229,7 +177,7 @@ const FindJob = () => {
               <Link href="/">
                 <li className="nav-item">Home</li>
               </Link>
-
+       
               <li className="nav-item">
                 {" "}
                 <img src="assets/images/icons-right.svg"></img>
@@ -249,6 +197,7 @@ const FindJob = () => {
                   icon
                   placeholder="Job Title or Keyword"
                   className="ps-5"
+                  onChange={(e) => setValue(e.target.value)}
                 />
               </div>
               <div className="col-lg-5">
@@ -266,7 +215,9 @@ const FindJob = () => {
                 </div>
               </div>
               <div className="col-lg-2 d-flex justify-content-end">
-                <button className="btn btnnn">Search</button>
+                <span className="btn btnnn" onClick={handleSearch}>
+                  Search
+                </span>
               </div>
             </div>
           </form>
@@ -274,7 +225,7 @@ const FindJob = () => {
           <div className="showing-results">
             <div>
               <p>
-                Showing results of <span>1523</span>{" "}
+                Showing results of <span>{jobdata?.noRecords}</span>{" "}
               </p>
             </div>
             <div>
@@ -290,37 +241,45 @@ const FindJob = () => {
           </div>
 
           <div className="row  mt-3">
-            {cardData?.map((cardHead, index) => {
-              return (
-                <div className="col-lg-3 col-md-6 col-sm-12 mb-4" key={index}>
-                  <div>
-                    <div className="Card container ">
-                      <p className="mt-3 design">{cardHead?.header}</p>
-                      <button className="fulltime  ">full time</button>
-                      <button className="remote"> Remote </button>
-                      <div className="Display mt-1">
-                        <img
-                          src="assets/images/locate.svg"
-                          className="one"
-                          width="16px"
-                        />
-                        <p className="btnn">Chennai</p>
+            {jobdata?.records?.length &&
+              jobdata?.records.map((cardHead, index) => {
+                return (
+                  <div className="col-lg-3 col-md-6 col-sm-12 mb-4" key={index}>
+                    <div>
+                      <div className="Card container ">
+                        <p className="mt-3 design">{cardHead?.jobTitle}</p>
+                        <button className="fulltime  ">
+                          {" "}
+                          {cardHead?.jobType}
+                        </button>
+                        <button className="remote">
+                          {cardHead?.jobTimingType}{" "}
+                        </button>
+                        <div className="Display mt-1">
+                          <img
+                            src="assets/images/locate.svg"
+                            className="one"
+                            width="16px"
+                          />
+                          <p className="btnn">{cardHead?.jobLocation}</p>
 
-                        <img
-                          src="assets/images/note.svg"
-                          className="one"
-                          style={{ marginLeft: "22px" }}
-                          width="16px"
-                        />
-                        <p className="btnn">20 sept 2022</p>
+                          <img
+                            src="assets/images/note.svg"
+                            className="one"
+                            style={{ marginLeft: "22px" }}
+                            width="16px"
+                          />
+                          <p className="btnn">20 sept 2022</p>
+                        </div>
+                        <p className="cart-text">{cardHead?.jobDescription}</p>
+                        <Link href={{pathname:"/find-description", query:{find:JSON.stringify(cardHead)}}}>
+                        <button className=" btnone" >Explore Job</button></Link>
+                       
                       </div>
-                      <p className="cart-text">{cardHead?.text}</p>
-                      <button className=" btnone">Explore Job</button>
                     </div>
                   </div>
-                </div>
-              );
-            })}
+                );
+              })}
           </div>
           <div>
             <div className="text-center next-button">
@@ -372,15 +331,15 @@ const FindJob = () => {
                 right Job.
               </p>
               <Link href="upload-cv">
-              <button className=" upload">
-                <img
-                  src="assets/images/directbox-send.svg"
-                  className="Directbox"
-                  alt="img"
+                <button className=" upload">
+                  <img
+                    src="assets/images/directbox-send.svg"
+                    className="Directbox"
+                    alt="img"
                   />
-                <span className="upload-button"> Upload</span>
-              </button>
-                  </Link>
+                  <span className="upload-button"> Upload</span>
+                </button>
+              </Link>
             </div>
           </div>
           <div className="col-lg-1"></div>

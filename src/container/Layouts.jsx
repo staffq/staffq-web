@@ -7,7 +7,7 @@ import Footer from "./Footer";
 import Header from "./Header";
  function Loading() {
   // You can add any UI inside Loading, including a Skeleton.
-  return <LoadingSkeleton />
+  // return <LoadingSkeleton />
 }
 /** **************************** Import store ****************************** */
 import { store } from "../redux/store";

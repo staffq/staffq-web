@@ -1,6 +1,6 @@
 import React from "react";
 import Link from "next/link";
-import { Div } from "../../../styles/upload-cs";
+import { Div , Form } from "../../../styles/upload-cs";
 import Input from "../../../components/FormControls/Input";
 // import Button from "../../../components/FormControls/Button";
 import Head from "next/head";
@@ -9,7 +9,8 @@ import * as Yup from "yup";
 import Popup from "../../../components/FormControls/Popup";
 import styled from "styled-components";
 // import Button from "../../../components/FormControls/Button";
-
+import { useDispatch} from "react-redux";
+import { createUploadCVData } from "../../../redux/actions";
 export const ErrorText = styled.div`
   color: red;
 
@@ -21,6 +22,7 @@ export const ErrorText = styled.div`
 `;
 
 const UploadCV = () => {
+  const dispatch=useDispatch();
   const [popup, setPopup] = React.useState(null);
   const formik = useFormik({
     initialValues: {
@@ -28,12 +30,11 @@ const UploadCV = () => {
       lastName: "",
       email: "",
       experience: "",
-      linkedin: "",
-      number: "",
+      link: "",
+      mobileNumber: "",
       location: "",
       files: "",
-      ln: "",
-      fn: "",
+    
     },
     validationSchema: Yup.object({
       firstName: Yup.string()
@@ -41,17 +42,25 @@ const UploadCV = () => {
         .required("Required *"),
       lastName: Yup.string().required("Required *"),
       email: Yup.string().email("Invalid email address").required("Required*"),
-      number: Yup.string().max(10, "").required("Required*"),
+      mobileNumber: Yup.string().max(10).required("Required*"),
+    
       experience: Yup.string().required("Required*"),
-      linkedin: Yup.string().required("Required*"),
+      link: Yup.string().required("Required*"),
       files: Yup.mixed().required("Required*"),
-      ln: Yup.mixed().required("Required*"),
-      fn: Yup.mixed().required("Required*"),
+      // ln: Yup.mixed().required("Required*"),
+      // fn: Yup.mixed().required("Required*"),
       location: Yup.mixed().required("Required*"),
     }),
     onSubmit: (values) => {
       console.log(values, "heloooooooo");
-      setPopup(true);
+    
+      dispatch(createUploadCVData(values)).then((params)=>{
+        if (params) {
+
+          setPopup(true);
+        }
+      })
+    formik.handleReset()
       // formik.handleReset();
     },
   });
@@ -188,7 +197,7 @@ const UploadCV = () => {
         </div>
       </div>
       <div className="container-fluid bg-one">
-        <form onSubmit={formik.handleSubmit}>
+      
           <div className="container top">
             <div className="row">
               <div className="col-lg-1"></div>
@@ -216,7 +225,9 @@ const UploadCV = () => {
                 <p className="enter">Enter the details below</p>
               </div>
             </div>
+            <Form onSubmit={formik.handleSubmit}>
             <div className="row">
+           
               <div className="col-lg-1"></div>
               <div className="col-lg-5 col-sm-12">
                 <div>
@@ -239,15 +250,15 @@ const UploadCV = () => {
                   <label className=" not-show">Last Name*</label>
                   <Input
                     width="100%"
-                    name="ln"
+                    name="lastName"
                     onChange={formik.handleChange}
                     onBlur={formik.handleBlur}
-                    value={formik.values.ln}
+                    value={formik.values.lastName}
                     required
                   />
 
-                  {formik.touched.ln && formik.errors.ln ? (
-                    <ErrorText>{formik.errors.ln}</ErrorText>
+                  {formik.touched.lastName && formik.errors.lastName ? (
+                    <ErrorText>{formik.errors.lastName}</ErrorText>
                   ) : (
                     <ErrorText>&nbsp;</ErrorText>
                   )}
@@ -287,13 +298,14 @@ const UploadCV = () => {
                   <label>LinkedIn / Portfolio</label>
                   <Input
                     width="100%"
-                    name="linkedin"
+                    name="link"
                     onChange={formik.handleChange}
                     onBlur={formik.handleBlur}
-                    value={formik.values.linkedin}
+                    value={formik.values.link}
+                    
                   />
-                  {formik.touched.linkedin && formik.errors.linkedin ? (
-                    <ErrorText>{formik.errors.linkedin}</ErrorText>
+                  {formik.touched.link && formik.errors.link ? (
+                    <ErrorText>{formik.errors.link}</ErrorText>
                   ) : (
                     <ErrorText>&nbsp;</ErrorText>
                   )}
@@ -304,14 +316,15 @@ const UploadCV = () => {
                   <div className="input-group mb-3 hiden">
                     <input
                       type="file"
-                      className="form-control"
+                      className="form-control  "
                       aria-label="Recipient's username"
                       aria-describedby="basic-addon2"
                       width="100%"
                       name="files"
+                     
                       onChange={(e) => {
                         formik.handleChange;
-                        formik.setFieldValue("files", e);
+                        formik.setFieldValue("files", e.target.value);
                       }}
                       onBlur={formik.handleBlur}
                       // value={formik.values.file}
@@ -355,15 +368,17 @@ const UploadCV = () => {
                   <label>Mobile number*</label>
                   <input
                     width="100%"
-                    name="number"
+                    name="mobileNumber"
                     className="number"
+                    
+                    maxlength="10"
                     type="number"
                     onChange={formik.handleChange}
                     onBlur={formik.handleBlur}
-                    value={formik.values.number}
+                    value={formik.values.mobileNumber}
                   />
-                  {formik.touched.number && formik.errors.number ? (
-                    <ErrorText>{formik.errors.number}</ErrorText>
+                  {formik.touched.mobileNumber && formik.errors.mobileNumber ? (
+                    <ErrorText>{formik.errors.mobileNumber}</ErrorText>
                   ) : (
                     <ErrorText>&nbsp;</ErrorText>
                   )}
@@ -398,6 +413,7 @@ const UploadCV = () => {
                       onChange={(e) => {
                         formik.handleChange;
                         formik.setFieldValue("files", e);
+                        accept="application/pdf"
                       }}
                       onBlur={formik.handleBlur}
                       required
@@ -435,9 +451,10 @@ const UploadCV = () => {
               </div>
 
               <div className="col-lg-1"></div>
-            </div>
+              </div> 
+              </Form>
           </div>
-        </form>
+        
       </div>
       {popup ? <Popup onHide={() => setPopup(false)} /> : ""}
     </Div>

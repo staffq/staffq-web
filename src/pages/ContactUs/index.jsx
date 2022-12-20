@@ -15,8 +15,10 @@ import {
 } from "../../styles/contact-style.js";
 
 import Input from "../../components/FormControls/Input/index.jsx";
-import { useDispatch } from "react-redux";
+import { useDispatch} from "react-redux";
 import { createContactData } from "../../redux/actions/userAction.js";
+
+
 
 
 export const ErrorText = styled.div`
@@ -30,6 +32,8 @@ export const ErrorText = styled.div`
 `;
 const contact = () => {
   const dispatch=useDispatch();
+  // const user = useSelector((state)=>state.user)
+// console.log(user,454);
   const formik = useFormik({
     initialValues: {
       name: "",

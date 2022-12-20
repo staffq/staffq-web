@@ -19,7 +19,7 @@ export const ErrorText = styled.div`
   font-weight: 600;
 `;
 
-const Cvapply = () => {
+const Cvapply = ({data}) => {
   const [popup, setPopup] = React.useState(null);
   const formik = useFormik({
     initialValues: {
@@ -54,6 +54,7 @@ const Cvapply = () => {
       // formik.handleReset();
     },
   });
+  console.log(data , "hii")
   return (
     <Div>
       <Head>
@@ -199,7 +200,10 @@ const Cvapply = () => {
                     </li>
                     {/* <li className="nav-item">Upload Cv</li> */}
                     <Link href="find-jobs">
-                      <li className="nav-item">Find Jobs</li>
+                      <li className="nav-item">Find Jobs
+                     
+                      <img src="assets/images/icons-right.svg" className="ps-2"></img> </li>
+                   
                     </Link>
                     <li className="nav-item">Jobs Description</li>
                     <li className="nav-item">
@@ -207,10 +211,7 @@ const Cvapply = () => {
                       <img src="assets/images/icons-right.svg"></img>
                     </li>
                     <li className="nav-item">Apply Now</li>
-                    <li className="nav-item">
-                      {" "}
-                      <img src="assets/images/icons-right.svg"></img>
-                    </li>
+                   
                   </ul>
                 </div>
               </div>
@@ -219,7 +220,7 @@ const Cvapply = () => {
             <div className="row mt-5">
               <div className="col-lg-1"></div>
               <div className="col-lg-5 sm-upload">
-                <h2>Upload CV</h2>
+                <h2>{data?.toString().toUpperCase()}</h2>
                 <p className="enter">Enter the details below</p>
               </div>
             </div>

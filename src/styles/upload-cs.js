@@ -226,4 +226,10 @@ input[type=number] {
     }
   } */
   
+ 
+
 `;
+export const Form = styled.div`
+
+
+`

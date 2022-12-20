@@ -1,6 +1,9 @@
+import Link from "next/link";
 import React from "react";
 import { Div } from "../../styles/find-description";
-const Finddescription = () => {
+const Finddescription = ({data}) => {
+
+
   return (
     <>
       <Div className="">
@@ -28,6 +31,7 @@ const Finddescription = () => {
             </li>
        
             <li className="nav-item">Find jobs</li>
+            <img src="assets/images/icons-right.svg"></img>
             <li className="nav-item">
               {" "}
               <img src="assets/images/icons-right.svg"></img>
@@ -43,7 +47,7 @@ const Finddescription = () => {
         <div className="row mt-4  find-bottom container">
           <div className="col-lg-1"></div>
           <div className="col-lg-11 sm-upload">
-            <p className="frontent">Front End Developer</p>
+            <p className="frontent">{data?.jobTitle?.toUpperCase()}</p>
             <h4>Description</h4>
             <p>
               You should be a master in combining the art of design with the art
@@ -87,7 +91,11 @@ const Finddescription = () => {
                 They should be methodical in their approach to design
               </li>
               <div className="small-btn">
+            <Link href={{pathname:"/cv-apply", query:{cv:(data?.jobTitle)}}}>
+
                 <button className="btn btnn">Apply Now</button>
+            </Link>
+           
               </div>
             </div>
           </div>

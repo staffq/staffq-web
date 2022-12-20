@@ -1,32 +1,32 @@
 /** **************************** Import Types ****************************** */
-import { USER_REQUEST, USER_SUCCESS, USER_FAILURE } from "../types/userTypes";
-import { toast } from "react-toastify";
+import { UPLOADCV_REQUEST, UPLOADCV_SUCCESS, UPLOADCV_FAILURE } from "../types/userUploadCv";
+// import { toast } from "react-toastify";
 
 /** **************************** Import API ****************************** */
-import { createContact, createTestimonial } from "../../api/create";
-import { createJobspostion , createuploadCV } from "../../api/create";
+import { createUploadCV} from "../../api/create";
+// import { createJobspostion , createuploadCV } from "../../api/create";
 
 
 
-export const userRequest = () => ({
-  type: USER_REQUEST,
+export const uploadRequest = () => ({
+  type: UPLOADCV_REQUEST,
 });
 
-export const userSuccess = (data) => ({
-  type: USER_SUCCESS,
+export const uploadSuccess = (data) => ({
+  type: UPLOADCV_SUCCESS,
   payload: data,
 });
 
-export const userFailure = (error) => ({
-  type: USER_FAILURE,
+export const uploadFailure = (error) => ({
+  type: UPLOADCV_FAILURE,
   payload: error,
 });
 
 //postaction
-export const createContactData = (data) =>
+export const createUploadCVData = (data) =>
   async function (dispatch) {
-    dispatch(userRequest());
-    return createContact(data)
+    dispatch(uploadRequest());
+    return createUploadCV(data)
       .then((res) => {
         if (!res.code) {
           const result = { ...res.data };
@@ -34,11 +34,11 @@ export const createContactData = (data) =>
           if (Object.keys(result).length > 0) {
             dataArray.push(result);
           }
-          dispatch(userSuccess(res?.data));
-          toast.success("User created successfully");
+          dispatch(uploadSuccess(res?.data));
+          // toast.success("upload created successfully");
           return res;
         }
-        dispatch(userFailure(res.message));
+        dispatch(uploadFailure(res.message));
         toast.error(res.message);
         return res.message;
       })
@@ -54,7 +54,7 @@ export const createContactData = (data) =>
 
   // export const createTestimonialData = (data) =>
   // async function (dispatch) {
-  //   dispatch(userRequest());
+  //   dispatch(uploadRequest());
   //   return createTestimonial(data)
   //     .then((res) => {
   //       if (!res.code) {
@@ -63,11 +63,11 @@ export const createContactData = (data) =>
   //         if (Object.keys(result).length > 0) {
   //           dataArray.push(result);
   //         }
-  //         dispatch(userSuccess(res?.data));
+  //         dispatch(uploadSuccess(res?.data));
   //         toast.success("testimonial created successfully");
   //         return res;
   //       }
-  //       dispatch(userFailure(res.message));
+  //       dispatch(uploadFailure(res.message));
   //       toast.error(res.message);
   //       return res.message;
   //     })
@@ -77,7 +77,7 @@ export const createContactData = (data) =>
 
   // export const createuploadCVData = (data) =>
   // async function (dispatch) {
-  //   dispatch(userRequest());
+  //   dispatch(uploadRequest());
   //   return createuploadCV(data)
   //     .then((res) => {
   //       if (!res.code) {
@@ -86,64 +86,64 @@ export const createContactData = (data) =>
   //         if (Object.keys(result).length > 0) {
   //           dataArray.push(result);
   //         }
-  //         dispatch(userSuccess(res?.data));
+  //         dispatch(uploadSuccess(res?.data));
   //         toast.success("testimonial created successfully");
   //         return res;
   //       }
-  //       dispatch(userFailure(res.message));
+  //       dispatch(uploadFailure(res.message));
   //       toast.error(res.message);
   //       return res.message;
   //     })
   //     .catch((err) => console.log("Catch Error:", err));
   // };
 
-// export const getAllUsers = (params) =>
+// export const getAlluploads = (params) =>
 //   async function (dispatch) {
-//     dispatch(userRequest());
-//     return getUser({
+//     dispatch(uploadRequest());
+//     return getupload({
 //       ...params,
 //     })
 //       .then((res) => {
 //         if (res.data.records) {
 //           dispatch(
-//             userSuccess(res.records)
+//             uploadSuccess(res.records)
 //           );
 //           return res;
 //         }
-//         dispatch(userFailure(res.message));
+//         dispatch(uploadFailure(res.message));
 //         return res.message;
 //       })
 //       .catch((err) => console.log("Catch Error:", err));
 //   };
 
-// export const getUserDataById = (dataId, params) =>
+// export const getuploadDataById = (dataId, params) =>
 //   async function (dispatch) {
-//     dispatch(userRequest());
-//     return getUserById(dataId, params)
+//     dispatch(uploadRequest());
+//     return getuploadById(dataId, params)
 //       .then((res) => {
 //         if (res) {
 //           dispatch(
-//             userSuccess(res.records)
+//             uploadSuccess(res.records)
 //           );
 //           return res;
 //         }
-//         dispatch(userFailure(res.message));
+//         dispatch(uploadFailure(res.message));
 //         return res.message;
 //       })
 //       .catch((err) => console.log("Catch Error:", err));
 //   };
 
-// export const updateUserData = (data, userId) =>
+// export const updateuploadData = (data, uploadId) =>
 //   async function (dispatch) {
-//     dispatch(userRequest());
-//     return updateUser(data, userId)
+//     dispatch(uploadRequest());
+//     return updateupload(data, uploadId)
 //       .then((res) => {
 //         if (!res.code && !res.error) {
-//           dispatch(userSuccess(res));
-//           toast.success("User updated successfully");
+//           dispatch(uploadSuccess(res));
+//           toast.success("upload updated successfully");
 //           return "success";
 //         }
-//         dispatch(userFailure(res.error));
+//         dispatch(uploadFailure(res.error));
 //         toast.error(res.message || res.error);
 //         return res.message || res.error;
 //       })

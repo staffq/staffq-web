@@ -140,6 +140,14 @@ export const getListByApi = (requestUrl, params) => {
   ) {
     getParams += `&query=${params.query}`;
   }
+  if (
+    params &&
+    params.search &&
+    params.search !== null &&
+    params.search !== undefined
+  ) {
+    getParams += `&search=${params.search}`;
+  }
 
   return fetch(`${hostConfig.API_URL}${requestUrl}${getParams}`, {
     method: "GET",

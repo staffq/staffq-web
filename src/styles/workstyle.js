@@ -99,7 +99,7 @@ color: #081429;
     line-height: 30px;
     /* or 188% */
 
-    color: rgba(8, 20, 41, 0.6);
+    color: rgba(8, 20, 41, 1);
   }
   .second-content {
     display: flex;

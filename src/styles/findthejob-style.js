@@ -166,6 +166,7 @@ export const Find = styled.div`
     width: 136px;
     height: 62px;
     font-weight: 500;
+    padding-top: 12px;
     font-size: 22px;
     line-height: 30px;
     /* identical to box height */
