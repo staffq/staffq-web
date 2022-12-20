@@ -1,5 +1,5 @@
 /** **************************** Import Types ****************************** */
-import { UPLOADCV_REQUEST,  UPLOADCV_SUCCESS,  UPLOADCV_FAILURE } from "../types/userUPLOADCV";
+import { UPLOADCV_REQUEST, UPLOADCV_SUCCESS, UPLOADCV_FAILURE } from "../types/userUploadCv";
 
 const initialState = {
   uploadData: "",
