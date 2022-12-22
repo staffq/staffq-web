@@ -1,5 +1,5 @@
 import React from 'react'
-import OffshoreRecruitment from './OffshoreRecruitment'
+import OffshoreRecruitment from './ServicePage/OffshoreRecruitment'
 
 const index = () => {
   return (

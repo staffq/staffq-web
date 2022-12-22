@@ -1,7 +1,7 @@
 import React from "react";
 
 /************ Import components **********************************/
-import AboutUs from "./AboutUs";
+import AboutUs from "./Naviagation/AboutUs";
 
 const index = () => {
   return (

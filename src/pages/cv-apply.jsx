@@ -1,5 +1,5 @@
 import React from "react";
-import Cvapply from "./HomePage/CvApply";
+import Cvapply from "./Naviagation/CvApply";
 import { useEffect , useState } from "react";
 const index = () => {
   const [query, setQuery] = useState({});

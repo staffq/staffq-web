@@ -223,7 +223,7 @@ const Header = (props) => {
                   </Link>{" "}
                 </li>
                 <li className="nav-item">
-                  <Link href="find-the-best-jobs">
+                  <Link href="find-jobs">
                     <a
                       className="nav-link"
                       href="#"

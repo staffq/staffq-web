@@ -1,5 +1,5 @@
 import React from "react";
-import FindJob from "./FindTheBestJob";
+import FindJob from "./Naviagation/FindTheBestJob";
 
 /************ Import components **********************************/
 // import Find from "./HomePage/Find";

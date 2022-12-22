@@ -1,11 +1,11 @@
 import Link from "next/link";
 import React from "react";
 import Head from "next/head";
-import Input from "../../components/FormControls/Input";
-
-import { getjobpostionData } from "../../redux/actions/";
+import Input from "../../../components/FormControls/Input";
+import { formatDate } from "../../../utils/dateFormat";
+import { getjobpostionData } from "../../../redux/actions";
 import { useDispatch, useSelector } from "react-redux";
-import { Find, SmallFind } from "../../styles/findthejob-style";
+import { Find, SmallFind } from "../../../styles/findthejob-style";
 import { useEffect } from "react";
 
 import { useState } from "react";
@@ -40,7 +40,9 @@ const FindJob = () => {
   };
   useEffect(() => {
     handleSearch();
+   
   }, []);
+  console.log(jobdata, "helo")
   return (
     <Find>
       <Head>
@@ -225,7 +227,9 @@ const FindJob = () => {
           <div className="showing-results">
             <div>
               <p>
-                Showing results of <span>{jobdata?.noRecords}</span>{" "}
+                Showing results of <span>{jobdata?.noRecords ? jobdata?.noRecords :"no result found"}</span>{" "}
+                
+              
               </p>
             </div>
             <div>
@@ -241,13 +245,13 @@ const FindJob = () => {
           </div>
 
           <div className="row  mt-3">
-            {jobdata?.records?.length &&
+            {jobdata?.records?.length >0 &&
               jobdata?.records.map((cardHead, index) => {
                 return (
                   <div className="col-lg-3 col-md-6 col-sm-12 mb-4" key={index}>
                     <div>
                       <div className="Card container ">
-                        <p className="mt-3 design">{cardHead?.jobTitle}</p>
+                        <p className="mt-3 design text-capitalize">{cardHead?.jobTitle}</p>
                         <button className="fulltime  ">
                           {" "}
                           {cardHead?.jobType}
@@ -269,7 +273,7 @@ const FindJob = () => {
                             style={{ marginLeft: "22px" }}
                             width="16px"
                           />
-                          <p className="btnn">20 sept 2022</p>
+                          <p className="btnn">{formatDate(cardHead?.createdAt)}</p>
                         </div>
                         <p className="cart-text">{cardHead?.jobDescription}</p>
                         <Link href={{pathname:"/find-description", query:{find:JSON.stringify(cardHead)}}}>
@@ -281,7 +285,7 @@ const FindJob = () => {
                 );
               })}
           </div>
-          <div>
+          {/* <div>
             <div className="text-center next-button">
               <button className="btn perivious">
                 {" "}
@@ -292,7 +296,7 @@ const FindJob = () => {
                 Next <img src="assets/images/arrow-right (1).svg"></img>{" "}
               </button>
             </div>
-          </div>
+          </div> */}
         </div>
       </div>
       <div className="container-fluid bg-one">

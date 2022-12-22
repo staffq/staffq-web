@@ -1,5 +1,5 @@
 import React from 'react'
-import UploadCV from './HomePage/UploadCv'
+import UploadCV from './Naviagation/UploadCv'
 
 const index = () => {
   return (

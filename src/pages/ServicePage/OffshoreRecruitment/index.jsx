@@ -1,10 +1,9 @@
 import React from "react";
-// import { Div , Header, SmallHeader } from '../../styles/ContractRecruitment'
 import Head from "next/head";
-import { Worked, Header, Image, SmallHeader } from "../../styles/contract";
+import { Worked, Header, Image, SmallHeader } from "../../../styles/contract";
 import { useFormik } from "formik";
 import * as yup from "yup";
-import StillNotSure from "../StilNotSure";
+import StillNotSure from "../../ServicePage/StilNotSure"
 import styled from "styled-components";
 
 export const ErrorText = styled.div`
@@ -16,7 +15,7 @@ export const ErrorText = styled.div`
 
   font-weight: 600;
 `;
-const ContractRecruitment = () => {
+const OffshoreRecruitment = () => {
   const formik = useFormik({
     initialValues: {
       firstName: "",
@@ -52,8 +51,8 @@ const ContractRecruitment = () => {
   });
   return (
     <Worked>
-        <Head>
-      <title>Contract Recruitment  </title>
+                  <Head>
+      <title>off Shore Recruitment    </title>
       <meta
         property="og:image"
         content="https://www.applogiq.org/assets/images/metaimg.png"
@@ -72,19 +71,21 @@ const ContractRecruitment = () => {
       />
       <meta
         name="title"
-        content="SatffQ is leading contract staffing & payroll outsourcing
-         services in India offers contract jobs for the right candidate. Enquire for temporary staffing services now!"
+        content="
+        Get highly curated IT remote workers for hire from the best staffing
+         agency in India. Hire qualified workers on contract from StaffQ."
       />
       <meta
         name="description"
-        content="SatffQ is leading contract staffing & payroll outsourcing 
-        services in India offers contract jobs for the right candidate. Enquire for temporary staffing services now!"
+        content="
+        Get highly curated IT remote workers for hire from the best 
+        staffing agency in India. Hire qualified workers on contract from StaffQ."
       />
-      <meta name="keywords" content="Contract Recruitment   " />
+      <meta name="keywords" content="off Shore Recruitment    " />
 
       <link
         rel="canonical"
-        href="https://www.staffq.in/contract-recruitment"
+        href="https://www.staffq.in/onshore-recruitment"
       />
 
       <link rel="alternate" href="https://www.staffq.in/" hreflang="en-in" />
@@ -93,13 +94,15 @@ const ContractRecruitment = () => {
       <meta property="og:type" content="website" />
       <meta
         property="og:title"
-        content="SatffQ is leading contract staffing & payroll outsourcing 
-        services in India offers contract jobs for the right candidate. Enquire for temporary staffing services now!"
+        content="
+        Get highly curated IT remote workers for hire from the best 
+        staffing agency in India. Hire qualified workers on contract from StaffQ."
       />
       <meta
         property="og:description"
-        content="StaffQ is a leading permanent staffing service and solution 
-          provider in India, we place the required candidates to the industries filtering their skills."
+        content="
+        Get highly curated IT remote workers for hire from the best staffing agency in 
+        India. Hire qualified workers on contract from StaffQ."
       />
       <meta
         property="og:image"
@@ -173,6 +176,7 @@ const ContractRecruitment = () => {
           }}
         /> */}
     </Head>
+      {" "}
       <Header>
         <div lassName="header">
           <div className="container-fluid">
@@ -186,12 +190,12 @@ const ContractRecruitment = () => {
                     alt="img"
                   />
                   <div className="ball-one-page">
-                    <h1>Contract Recruitment</h1>
+                    <h1>Offshore Recruitmentt</h1>
                     <p>
-                      StaffQ is a contract staffing agency that helps
-                      enterprises and businesses by providing temporary staffing
-                      solutions. We help businesses to build a competent and
-                      effective workforce so they can focus on their core goals.
+                      At staffq Search, we understand that companies who wish to
+                      save money, time, and effort look for offshore IT staffing
+                      solutions. We offer IT staffing solutions that you can
+                      depend on!
                     </p>
                   </div>
                 </div>
@@ -202,7 +206,7 @@ const ContractRecruitment = () => {
                         <div className="col-lg-2"></div>
                         <div className="col-lg-10">
                           <img
-                            src="assets/images/contract-Image.png"
+                            src="assets/images/off-shore.img.png"
                             width="100%"
                             className="banner-image"
                             alt="img"
@@ -230,18 +234,18 @@ const ContractRecruitment = () => {
                 />
               </div>
               <div className="ball-sm-page">
-                <p className="h2">Contract Recruitment</p>
+                <p className="h2">Offshore Recruitment</p>
                 <p>
-                  StaffQ is a contract staffing agency that helps enterprises
-                  and businesses by providing temporary staffing solutions. We
-                  help businesses to build a competent and effective workforce
-                  so they can focus on their core goals.
+                  At staffq Search, we understand that companies who wish to
+                  save money, time, and effort look for offshore IT staffing
+                  solutions. We offer IT staffing solutions that you can depend
+                  on!
                 </p>
               </div>
 
               <div>
                 <img
-                  src="assets/images/contract-Image.png"
+                  src="assets/images/off-shore.img.png"
                   className="banner-image"
                   alt="img"
                   width="100%"
@@ -251,28 +255,48 @@ const ContractRecruitment = () => {
           </SmallHeader>
         </div>
       </div>
+      {/* .........................next-section......................... */}
+      <div className="hiring-tag" style={{}}>
+        <section className="container">
+          <div className="row">
+            <div className="col-lg-6 col-md-12 col-sm-12">
+              <h2 className=" Hiring-qualified">
+                We help companies to source, screen and communicate with
+                candidates
+              </h2>
+              <img
+                src="assets/images/Offshore-Staffing.img.png"
+                width="100%"
+                className="second-code"
+              ></img>
+            </div>
+            <div
+              className="col-lg-6 col-md-12 col-sm-12 "
+              style={{ paddingLeft: "2rem" }}
+            >
+              <div className="row">
+                <div className="col-lg-12 col-sm-12 col-md-12">
+                  <div>
+                    <div className="d-flex">
+                      <img
+                        src="assets/images/line.svg"
+                        className="mt-4"
+                        alt="img"
+                      />
+                      <h4 className="whats-happening ">Offshore Staffing</h4>
+                    </div>
+                    <p className="solution-p-tag">
+                      It helps North American, European and other international
+                      companies build quality remote technical teams cost
+                      effectively. We recruit, manage the HR and host these
+                      employees out of our office spaces, so that you can grow
+                      engineering team quickly and at a lower cost relative to
+                      hiring locally. Hire developers within a days, without
+                      worrying about office space and overhead.
+                    </p>
+                  </div>
+                </div>
 
-      {/* .................................next ......section................. */}
-
-      <div>
-        <div className="hiring-tag" style={{}}>
-          <section className="container">
-            <div className="row">
-              <div className="col-lg-6 col-md-12 col-sm-12">
-                <h2 className=" Hiring-qualified">
-                  We help companies to source, screen and communicate with
-                  candidates
-                </h2>
-                <img
-                  src="assets/images/solution-why.img.png"
-                  width="100%"
-                  className="second-code"
-                ></img>
-              </div>
-              <div
-                className="col-lg-6 col-md-12 col-sm-12 "
-                style={{ paddingLeft: "2rem" }}
-              >
                 <div className="row">
                   <div className="col-lg-12 col-sm-12 col-md-12">
                     <div>
@@ -282,82 +306,77 @@ const ContractRecruitment = () => {
                           className="mt-4"
                           alt="img"
                         />
-                        <h4 className="whats-happening ">What’s happening?</h4>
+                        <h4 className="whats-happening ">
+                          Save costs & maintain control
+                        </h4>
                       </div>
                       <p className="solution-p-tag">
-                        Across the nation, big and small companies are stumbling
-                        to handle increased government directives and
-                        unpredictable market requirements. You may not want to
-                        recruit permanent workers on a full-time basis, whenever
-                        things are unpredictable. You desire the adaptability of
-                        agile, on-demand employees who are qualified to manage
-                        your business processes just the way you want.
+                        Lower your cost per engineering hire by at least 50%,
+                        with the equivalent quality of engineers that you would
+                        find locally. Unlike freelancers or outsourcing
+                        companies, your engineers work out of an LSS office,
+                        have time and attendance monitored by LSS and are
+                        governed by strict confidentiality and IP protection
+                        agreements.
                       </p>
-                    </div>
-                  </div>
-
-                  <div className="row">
-                    <div className="col-lg-12 col-sm-12 col-md-12">
-                      <div>
-                        <div className="d-flex">
-                          <img
-                            src="assets/images/line.svg"
-                            className="mt-4"
-                            alt="img"
-                          />
-                          <h4 className="whats-happening ">Situation</h4>
-                        </div>
-                        <p className="solution-p-tag">
-                          We have a verified, time-tested hiring procedure that
-                          permits us to hire just the right applicants for your
-                          organization. We have efficient networks everywhere in
-                          the nation which gives us access to a large number of
-                          applicants.
-                        </p>
-                      </div>
                     </div>
                   </div>
                 </div>
               </div>
             </div>
-          </section>
-        </div>
+          </div>
+        </section>
       </div>
-      {/* ...........next--section............... */}
-
+      {/* ............................next section................. */}
       <div>
         <section className="Hiring-Process container-fluid">
-     
+         
           <div className="container">
             <div className="row About">
               <div className="col-lg-6 col-md-12 col-sm-12">
                 <div className="row ">
                   <div className="col-lg-12 col-sm-12 col-md-12">
-                    <div className="solution-header ">
-                      <div className="d-flex ">
+                    <div>
+                      <div className="d-flex">
                         <img
                           src="assets/images/line.svg"
                           className="mt-4"
                           alt="img"
                         />
-                        <h2 className="whats-happening  Solution">Solution</h2>
+                        <h4 className="whats-happening ">Why Us?</h4>
                       </div>
                       <p className="solution-p-tag">
-                        StaffQ offers dependable contract staffing solutions
-                        that provide you the chance to enhance the strength of
-                        your staff without recruiting them permanently, helps
-                        overloaded workers during crucial times, and keeps work
-                        continuing. We have one of the excellent Job placement
-                        agencies in India, providing permanent service,
-                        price-effective, and orderly Human Resource
-                        administration services to companies that may not have
-                        the essential support or inclination to accomplish these
-                        labour-intensive duties. When you are recruiting us as
-                        your contract staffing agent, we would work just like
-                        your organization’s own human resource office. Depending
-                        on the requirements of your latest business cycle, our
-                        contract staffing services will allow your company to
-                        staff up or down.
+                        We assist companies in locating exactly the type of
+                        talent they're looking for. We not only provide the best
+                        talents to corporate companies but also keep
+                        time-efficiency and cost-efficiency our top priority.
+                        StaffQ extends solutions to cope with the procedure of
+                        searching for offsite IT staff for the varying needs of
+                        corporate companies. Our Offsite Staffing Services deals
+                        with such situations in the most controlled manner, by
+                        sorting out a good and experienced team of candidates.
+                        This further helps companies in their crucial projects
+                        by balancing time, efficiency, and quality.
+                      </p>
+                    </div>
+                    <div>
+                      <div className="d-flex">
+                        <img
+                          src="assets/images/line.svg"
+                          className="mt-4"
+                          alt="img"
+                        />
+                        <h4 className="whats-happening ">We are the best</h4>
+                      </div>
+                      <p className="solution-p-tag">
+                        The benefits of employing StaffQ to provide Your
+                        Offshore Staffing Solutions are many. The companies can
+                        keep their staff in a profit-making way since the cost
+                        of off-shore employees is low and thus the businesses
+                        can make more money. Businesses are able to increase or
+                        decrease the size of their offshore team with no issues
+                        as long as these projects are within the timeframes
+                        specified by the company.
                       </p>
                     </div>
                   </div>
@@ -366,12 +385,11 @@ const ContractRecruitment = () => {
               <div className="col-lg-6 col-md-12 col-sm-12">
                 <div>
                   <img
-                    src="assets/images/why-chose.img.png"
+                    src="assets/images/We-are-the-best.img.png"
                     className="hand-img "
                     width="100%"
                     alt="img"
                   />
-                  <br></br>
                   <br></br>
                 </div>
               </div>
@@ -379,9 +397,7 @@ const ContractRecruitment = () => {
           </div>
         </section>
       </div>
-
-      {/* ..............................next--section..................................... */}
-
+      {/* ................next................... */}
       <div className="container">
         <div className="text-center mt-5">
           <p className="hiring-process">Hiring Process</p>
@@ -393,7 +409,7 @@ const ContractRecruitment = () => {
         </div>
       </div>
       {/* ....medium....... */}
-      
+   
       <div>
           <div className="medium-small-view">
             <div className="container">
@@ -422,8 +438,8 @@ const ContractRecruitment = () => {
                         className="round-img"
                         alt="img"
                       />
-                      <p className="img-p-tag">Contract 
-  Signing</p>
+                      <p className="img-p-tag">Internal
+Interview</p>
 
               </div>
                   </div>
@@ -435,8 +451,8 @@ const ContractRecruitment = () => {
                           className="round-img"
                           alt="img"
                         />
-                      <p className="img-p-tag">Panel
-  Interview</p>
+                      <p className="img-p-tag">Client
+Interview</p>
                     </div>
                     <div className="col-md-4 col-sm-12">
                     <img
@@ -444,7 +460,8 @@ const ContractRecruitment = () => {
                           className="round-img"
                           alt="img"
                         />
-                        <p className="img-p-tag"> Candidate Identification</p>
+                        <p className="img-p-tag"> Visa
+Finalization</p>
                     </div>
                     <div className="col-md-4 col-sm-12">
                     <img
@@ -524,13 +541,13 @@ const ContractRecruitment = () => {
                         className="round-img"
                         alt="img"
                       />
-                      <p  className="second-p"> Requirement Discussion</p>
+                      <p className="second-p"> Requirement Discussion</p>
                     </div>
                   </div>
                   <div className="col-lg-2">
                     <p>
-                      Internal Interview <br></br>
-                      
+                      Internal<br></br>
+                     Interview
                     </p>
                   </div>
                   <div className="col-lg-2 second-imgaes-content">
@@ -543,13 +560,13 @@ const ContractRecruitment = () => {
                         className="round-img"
                         alt="img"
                       />
-                      <p  className="second-p">Client Interview</p>
+                      <p className="second-p">Client Interview</p>
                     </div>
                   </div>
                   <div className="col-lg-2">
                     <p>
-                      Contracrt<br></br>
-                      Signing
+                      Visa<br></br>
+                      Finalization
                     </p>
                   </div>
                   <div className="col-lg-2 second-imgaes-content">
@@ -562,7 +579,7 @@ const ContractRecruitment = () => {
                         className="round-img"
                         alt="img"
                       />
-                      <p  className="second-p">Closure</p>
+                      <p className="second-p">Closure</p>
                     </div>
                   </div>
                 </div>
@@ -571,23 +588,23 @@ const ContractRecruitment = () => {
           </div>
         </div>
       </Image>
-      {/* ........................next.................... */}
+      {/* ..............next................... */}
       <div>
         <section>
           <div className="container-fluid ps-0">
             <div className="row ">
               <div className="col-lg-6 col-sm-12 col-md-12 benefit-image">
                 <img
-                  src="assets/images/second-paranm.img.png"
+                  src="assets/images/offshoe-benifits.img.png"
                   className="mission"
                 ></img>
               </div>
               <div
                 className="col-lg-6 col-sm-12 col-md-12 big-screen "
-                style={{ }}
+                style={{ paddingTop: "5rem" }}
               >
                 <div className="container">
-                  <p className="Benefits ">Benefits of Contract Staffing</p>
+                  <p className="Benefits ">Benefits of Offshore Staffing</p>
                   <div className="null">
                     <img
                       src="assets/images/uper-unterline.svg"
@@ -603,8 +620,28 @@ const ContractRecruitment = () => {
                       </div>
                     </div>
                     <div className="col-lg-11 col-md-11 col-sm-11">
+                      <p className="second-p-tag notview">Business growth</p>
+                    </div>
+                  </div>
+                  <div className="row">
+                    <div className="col-lg-1 col-sm-1 col-md-1">
+                      <div className="">
+                        <img src="assets/images/right-icons.svg"></img>
+                      </div>
+                    </div>
+                    <div className="col-lg-11 col-md-11 col-sm-11">
+                      <p className="second-p-tag notview">Reduced costs</p>
+                    </div>
+                  </div>
+                  <div className="row">
+                    <div className="col-lg-1 col-sm-1 col-md-1">
+                      <div className="">
+                        <img src="assets/images/right-icons.svg"></img>
+                      </div>
+                    </div>
+                    <div className="col-lg-11 col-md-11 col-sm-11">
                       <p className="second-p-tag notview">
-                        Contract staffing services are cost-effective
+                        Access to skilled resources
                       </p>
                     </div>
                   </div>
@@ -616,8 +653,7 @@ const ContractRecruitment = () => {
                     </div>
                     <div className="col-lg-11 col-md-11 col-sm-11">
                       <p className="second-p-tag notview">
-                        Contract staffing services limit the Business Liability
-                        and Risk
+                        Time zone advantage
                       </p>
                     </div>
                   </div>
@@ -629,32 +665,7 @@ const ContractRecruitment = () => {
                     </div>
                     <div className="col-lg-11 col-md-11 col-sm-11">
                       <p className="second-p-tag notview">
-                        Access to specialized skills
-                      </p>
-                    </div>
-                  </div>
-                  <div className="row">
-                    <div className="col-lg-1 col-sm-1 col-md-1">
-                      <div className="">
-                        <img src="assets/images/right-icons.svg"></img>
-                      </div>
-                    </div>
-                    <div className="col-lg-11 col-md-11 col-sm-11">
-                      <p className="second-p-tag notview">
-                        Access to a larger talent pool
-                      </p>
-                    </div>
-                  </div>
-                  <div className="row">
-                    <div className="col-lg-1 col-sm-1 col-md-1">
-                      <div className="">
-                        <img src="assets/images/right-icons.svg"></img>
-                      </div>
-                    </div>
-                    <div className="col-lg-11 col-md-11 col-sm-11">
-                      <p className="second-p-tag notview">
-                        {" "}
-                        Fulfill short term business needs
+                        Control from miles away
                       </p>
                       <p className="small-screen"> </p>
                     </div>
@@ -667,7 +678,7 @@ const ContractRecruitment = () => {
                     </div>
                     <div className="col-lg-11 col-md-11 col-sm-11">
                       <p className="second-p-tag notview">
-                        Take some responsibility off the HR department
+                        Greater marketing opportunity
                       </p>
                     </div>
                   </div>
@@ -680,7 +691,7 @@ const ContractRecruitment = () => {
                     <div className="col-lg-11 col-md-11 col-sm-11">
                       <p className="second-p-tag notview">
                         {" "}
-                        Escaping the ACA requirementss
+                        Availability in different locations
                       </p>
                       <p className="small-screen"> </p>
                     </div>
@@ -694,7 +705,7 @@ const ContractRecruitment = () => {
                     <div className="col-lg-11 col-md-11 col-sm-11">
                       <p className="second-p-tag notview">
                         {" "}
-                        Prevent laying off employees
+                        Opportunity to focus on complex tasks
                       </p>
                       <p className="small-screen"> </p>
                     </div>
@@ -716,46 +727,43 @@ const ContractRecruitment = () => {
                   <span>
                     <img src="assets/images/right-icons.svg"></img>
                   </span>
-                  <span>Contract staffing services are cost-effective</span>
+                  <span>Business growth</span>
                   
                   <br></br>
                   <span>
                     <img src="assets/images/right-icons.svg"></img>
                   </span>
-                  <span>
-                    Contract staffing services limit the Business Liability and
-                    Risk
-                  </span>
+                  <span>Reduced costs</span>
                   <br></br> 
                   <span>
                     <img src="assets/images/right-icons.svg"></img>
                   </span>
-                  <span>Access to a larger talent pool</span>
+                  <span>Access to skilled resources</span>
                   <br></br> 
                   <span>
                     <img src="assets/images/right-icons.svg"></img>
                   </span>
-                  <span>Access to specialized skills</span>
+                  <span>Time zone advantage</span>
                   <br></br> 
                   <span>
                     <img src="assets/images/right-icons.svg"></img>
                   </span>
-                  <span>Access to a larger talent pool</span>
+                  <span>Control from miles away</span>
                   <br></br> 
                   <span>
                     <img src="assets/images/right-icons.svg"></img>
                   </span>
-                  <span>Fulfill short term business needs</span>
+                  <span>Greater marketing opportunity</span>
                   <br></br>
                   <span>
                     <img src="assets/images/right-icons.svg"></img>
                   </span>
-                  <span>Take some responsibility off the HR department</span>
+                  <span>Availability in different locations</span>
                   <br></br>
                   <span>
                     <img src="assets/images/right-icons.svg"></img>
                   </span>
-                  <span>Prevent laying off employees</span>
+                  <span>Opportunity to focus on complex tasks</span>
                   <br></br>
                 </div>
               </div>
@@ -769,4 +777,4 @@ const ContractRecruitment = () => {
   );
 };
 
-export default ContractRecruitment;
+export default OffshoreRecruitment;

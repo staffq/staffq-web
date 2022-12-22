@@ -12,6 +12,7 @@ import Header from "./Header";
 /** **************************** Import store ****************************** */
 import { store } from "../redux/store";
 import { Suspense } from "react";
+// import ScrollToTop from "./ScrollToTop/ScrollToTop";
 
 export default function Layouts({ children, isShown, handleShow, handleHide }) {
   return (
@@ -21,9 +22,13 @@ export default function Layouts({ children, isShown, handleShow, handleHide }) {
         handleShow={handleShow}
         handleHide={handleHide}
       />
+      
       <Suspense fallback = {<Loading/>}>
+     
       {children}</Suspense>
+      {/* <ScrollToTop/> */}
       <Footer />
+  
     </Provider>
   );
 }

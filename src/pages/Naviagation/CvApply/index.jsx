@@ -1,16 +1,15 @@
 import React from "react";
-import Link from "next/link";
-import { Div , Form } from "../../../styles/upload-cs";
+import { Div } from "../../../styles/upload-cs";
 import Input from "../../../components/FormControls/Input";
+import Link from "next/link";
 // import Button from "../../../components/FormControls/Button";
 import Head from "next/head";
 import { useFormik } from "formik";
 import * as Yup from "yup";
 import Popup from "../../../components/FormControls/Popup";
 import styled from "styled-components";
-// import Button from "../../../components/FormControls/Button";
-import { useDispatch} from "react-redux";
-import { createUploadCVData } from "../../../redux/actions";
+// import { hostConfig } from "../../../config";
+
 export const ErrorText = styled.div`
   color: red;
 
@@ -21,8 +20,7 @@ export const ErrorText = styled.div`
   font-weight: 600;
 `;
 
-const UploadCV = () => {
-  const dispatch=useDispatch();
+const Cvapply = ({data}) => {
   const [popup, setPopup] = React.useState(null);
   const formik = useFormik({
     initialValues: {
@@ -30,11 +28,12 @@ const UploadCV = () => {
       lastName: "",
       email: "",
       experience: "",
-      link: "",
-      mobileNumber: "",
+      linkedin: "",
+      number: "",
       location: "",
       files: "",
-    
+      ln: "",
+      fn: "",
     },
     validationSchema: Yup.object({
       firstName: Yup.string()
@@ -42,28 +41,21 @@ const UploadCV = () => {
         .required("Required *"),
       lastName: Yup.string().required("Required *"),
       email: Yup.string().email("Invalid email address").required("Required*"),
-      mobileNumber: Yup.string().max(10).required("Required*"),
-    
+      number: Yup.string().max(10, "").required("Required*"),
       experience: Yup.string().required("Required*"),
-      link: Yup.string().required("Required*"),
+      linkedin: Yup.string().required("Required*"),
       files: Yup.mixed().required("Required*"),
-      // ln: Yup.mixed().required("Required*"),
-      // fn: Yup.mixed().required("Required*"),
+      ln: Yup.mixed().required("Required*"),
+      fn: Yup.mixed().required("Required*"),
       location: Yup.mixed().required("Required*"),
     }),
     onSubmit: (values) => {
       console.log(values, "heloooooooo");
-    
-      dispatch(createUploadCVData(values)).then((params)=>{
-        if (params) {
-
-          setPopup(true);
-        }
-      })
-    formik.handleReset()
+      setPopup(true);
       // formik.handleReset();
     },
   });
+  console.log(data , "hii")
   return (
     <Div>
       <Head>
@@ -86,13 +78,11 @@ const UploadCV = () => {
         />
         <meta
           name="title"
-          content=" We specialize in finding the right people for the right job, and our team of experts
-           will work with you to find the perfect solution for your needs. Contact us today to get started! "
+          content=" We specialize in finding the right people for the right job, and our team of experts will work with you to find the perfect solution for your needs. Contact us today to get started! "
         />
         <meta
           name="description"
-          content="We specialize in finding the right people for the right job, and our team of experts will
-           work with you to find the perfect solution for your needs. Contact us today to get started! "
+          content="We specialize in finding the right people for the right job, and our team of experts will work with you to find the perfect solution for your needs. Contact us today to get started! "
         />
         <meta name="keywords" content="Upload Cv" />
 
@@ -104,13 +94,11 @@ const UploadCV = () => {
         <meta property="og:type" content="website" />
         <meta
           property="og:title"
-          content="We specialize in finding the right people for the right job, and our team of experts
-           will work with you to find the perfect solution for your needs. Contact us today to get started! "
+          content="We specialize in finding the right people for the right job, and our team of experts will work with you to find the perfect solution for your needs. Contact us today to get started! "
         />
         <meta
           property="og:description"
-          content="We specialize in finding the right people for the right job, and our team of experts 
-          will work with you to find the perfect solution for your needs. Contact us today to get started! "
+          content="We specialize in finding the right people for the right job, and our team of experts will work with you to find the perfect solution for your needs. Contact us today to get started! "
         />
         <meta
           property="og:image"
@@ -197,7 +185,7 @@ const UploadCV = () => {
         </div>
       </div>
       <div className="container-fluid bg-one">
-      
+        <form onSubmit={formik.handleSubmit}>
           <div className="container top">
             <div className="row">
               <div className="col-lg-1"></div>
@@ -212,7 +200,19 @@ const UploadCV = () => {
                       <img src="assets/images/icons-right.svg"></img>
                     </li>
                     {/* <li className="nav-item">Upload Cv</li> */}
-                    <li className="nav-item">Upload CV</li>
+                    <Link href="find-jobs">
+                      <li className="nav-item">Find Jobs
+                     
+                      <img src="assets/images/icons-right.svg" className="ps-2"></img> </li>
+                   
+                    </Link>
+                    <li className="nav-item">Jobs Description</li>
+                    <li className="nav-item">
+                      {" "}
+                      <img src="assets/images/icons-right.svg"></img>
+                    </li>
+                    <li className="nav-item">Apply Now</li>
+                   
                   </ul>
                 </div>
               </div>
@@ -221,13 +221,11 @@ const UploadCV = () => {
             <div className="row mt-5">
               <div className="col-lg-1"></div>
               <div className="col-lg-5 sm-upload">
-                <h2>Upload CV</h2>
+                <h2>{data?.toString().toUpperCase()}</h2>
                 <p className="enter">Enter the details below</p>
               </div>
             </div>
-            <Form onSubmit={formik.handleSubmit}>
             <div className="row">
-           
               <div className="col-lg-1"></div>
               <div className="col-lg-5 col-sm-12">
                 <div>
@@ -257,7 +255,7 @@ const UploadCV = () => {
                     required
                   />
 
-                  {formik.touched.lastName && formik.errors.lastName ? (
+                  {formik.touched.lastName && formik.errors.llastNamen ? (
                     <ErrorText>{formik.errors.lastName}</ErrorText>
                   ) : (
                     <ErrorText>&nbsp;</ErrorText>
@@ -298,14 +296,13 @@ const UploadCV = () => {
                   <label>LinkedIn / Portfolio</label>
                   <Input
                     width="100%"
-                    name="link"
+                    name="linkedin"
                     onChange={formik.handleChange}
                     onBlur={formik.handleBlur}
-                    value={formik.values.link}
-                    
+                    value={formik.values.linkedin}
                   />
-                  {formik.touched.link && formik.errors.link ? (
-                    <ErrorText>{formik.errors.link}</ErrorText>
+                  {formik.touched.linkedin && formik.errors.linkedin ? (
+                    <ErrorText>{formik.errors.linkedin}</ErrorText>
                   ) : (
                     <ErrorText>&nbsp;</ErrorText>
                   )}
@@ -316,15 +313,14 @@ const UploadCV = () => {
                   <div className="input-group mb-3 hiden">
                     <input
                       type="file"
-                      className="form-control  "
+                      className="form-control"
                       aria-label="Recipient's username"
                       aria-describedby="basic-addon2"
                       width="100%"
                       name="files"
-                     
                       onChange={(e) => {
                         formik.handleChange;
-                        formik.setFieldValue("files", e.target.value);
+                        formik.setFieldValue("files", e);
                       }}
                       onBlur={formik.handleBlur}
                       // value={formik.values.file}
@@ -368,17 +364,14 @@ const UploadCV = () => {
                   <label>Mobile number*</label>
                   <input
                     width="100%"
-                    name="mobileNumber"
+                    name="number"
                     className="number"
-                    
-                    maxlength="10"
-                    type="number"
                     onChange={formik.handleChange}
                     onBlur={formik.handleBlur}
-                    value={formik.values.mobileNumber}
+                    value={formik.values.number}
                   />
-                  {formik.touched.mobileNumber && formik.errors.mobileNumber ? (
-                    <ErrorText>{formik.errors.mobileNumber}</ErrorText>
+                  {formik.touched.number && formik.errors.number ? (
+                    <ErrorText>{formik.errors.number}</ErrorText>
                   ) : (
                     <ErrorText>&nbsp;</ErrorText>
                   )}
@@ -409,17 +402,16 @@ const UploadCV = () => {
                       aria-label="Recipient's username"
                       aria-describedby="basic-addon2"
                       width="100%"
-                      name="fn"
+                      name="files"
                       onChange={(e) => {
                         formik.handleChange;
                         formik.setFieldValue("files", e);
-                        accept="application/pdf"
                       }}
                       onBlur={formik.handleBlur}
                       required
                     />
-                    {formik.touched.fn && formik.errors.fn ? (
-                      <ErrorText>{formik.errors.fn}</ErrorText>
+                    {formik.touched.files && formik.errors.files ? (
+                      <ErrorText>{formik.errors.files}</ErrorText>
                     ) : (
                       <ErrorText>&nbsp;</ErrorText>
                     )}
@@ -451,14 +443,13 @@ const UploadCV = () => {
               </div>
 
               <div className="col-lg-1"></div>
-              </div> 
-              </Form>
+            </div>
           </div>
-        
+        </form>
       </div>
       {popup ? <Popup onHide={() => setPopup(false)} /> : ""}
     </Div>
   );
 };
 
-export default UploadCV;
+export default Cvapply;

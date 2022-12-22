@@ -191,6 +191,7 @@ export const viewDataByApi = (requestUrl, id) => {
 
 /** ****************************** Update Api *********************************** */
 export const putDataApi = (requestUrl, params, id) => {
+  
   return fetch(`${hostConfig.API_URL}${requestUrl}/${id}`, {
     method: "PUT",
     headers: {

@@ -1,5 +1,5 @@
 import React from 'react'
-import PayrollServices from './PayrollServices'
+import PayrollServices from './ServicePage/PayrollServices'
 
 const index = () => {
   return (

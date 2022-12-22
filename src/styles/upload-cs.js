@@ -149,6 +149,7 @@ input[type=number] {
     box-shadow: 0px 4px 20px rgba(8, 20, 41, 0.08);
     border-radius: 16px;
   }
+
   .not-show {
     display: none;
   }
@@ -232,4 +233,8 @@ input[type=number] {
 export const Form = styled.div`
 
 
+
+.resume{
+  background-color: yellow;
+}
 `

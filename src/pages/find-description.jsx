@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { useEffect } from "react";
-import Finddescription from "./FindJobDescrpition";
+import Finddescription from "./Naviagation/FindJobDescrpition";
 
 const index = () => {
   const [query, setQuery] = useState({});

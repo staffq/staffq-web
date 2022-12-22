@@ -1,9 +1,10 @@
 import React from "react";
+// import { Div , Header, SmallHeader } from '../../styles/ContractRecruitment'
 import Head from "next/head";
-import { Worked, Header, Image, SmallHeader } from "../../styles/payrol";
+import { Worked, Header, Image, SmallHeader } from "../../../styles/contract";
 import { useFormik } from "formik";
 import * as yup from "yup";
-import StillNotSure from "../StilNotSure";
+import StillNotSure from "../../ServicePage/StilNotSure"
 import styled from "styled-components";
 
 export const ErrorText = styled.div`
@@ -15,7 +16,7 @@ export const ErrorText = styled.div`
 
   font-weight: 600;
 `;
-const PayrollServices = () => {
+const ContractRecruitment = () => {
   const formik = useFormik({
     initialValues: {
       firstName: "",
@@ -51,8 +52,8 @@ const PayrollServices = () => {
   });
   return (
     <Worked>
-                <Head>
-      <title>Payroll service outsourcing    </title>
+        <Head>
+      <title>Contract Recruitment  </title>
       <meta
         property="og:image"
         content="https://www.applogiq.org/assets/images/metaimg.png"
@@ -71,19 +72,19 @@ const PayrollServices = () => {
       />
       <meta
         name="title"
-        content="We at TopSource Worldwide provide End-to-end Payroll Outsourcing Services
-         in India to streamline your payroll process"
+        content="SatffQ is leading contract staffing & payroll outsourcing
+         services in India offers contract jobs for the right candidate. Enquire for temporary staffing services now!"
       />
       <meta
         name="description"
-        content="We at TopSource Worldwide provide End-to-end Payroll Outsourcing Services
-         in India to streamline your payroll process"
+        content="SatffQ is leading contract staffing & payroll outsourcing 
+        services in India offers contract jobs for the right candidate. Enquire for temporary staffing services now!"
       />
-      <meta name="keywords" content="Payroll service  " />
+      <meta name="keywords" content="Contract Recruitment   " />
 
       <link
         rel="canonical"
-        href="https://www.staffq.in/payroll-services"
+        href="https://www.staffq.in/contract-recruitment"
       />
 
       <link rel="alternate" href="https://www.staffq.in/" hreflang="en-in" />
@@ -92,13 +93,13 @@ const PayrollServices = () => {
       <meta property="og:type" content="website" />
       <meta
         property="og:title"
-        content="We at TopSource Worldwide provide End-to-end Payroll 
-        Outsourcing Services in India to streamline your payroll process"
+        content="SatffQ is leading contract staffing & payroll outsourcing 
+        services in India offers contract jobs for the right candidate. Enquire for temporary staffing services now!"
       />
       <meta
         property="og:description"
-        content="We at TopSource Worldwide provide End-to-end Payroll Outsourcing Services
-         in India to streamline your payroll process"
+        content="StaffQ is a leading permanent staffing service and solution 
+          provider in India, we place the required candidates to the industries filtering their skills."
       />
       <meta
         property="og:image"
@@ -185,12 +186,12 @@ const PayrollServices = () => {
                     alt="img"
                   />
                   <div className="ball-one-page">
-                    <h1 className="header-h-one">Payroll services</h1>
-                 
-                    <p className="pt-4 payrol-p-tag">
-                      StaffQ consultancy allows companies to streamline their
-                      employees Payroll, StaffQ is the best payroll Service for
-                      small business in India.
+                    <h1>Contract Recruitment</h1>
+                    <p>
+                      StaffQ is a contract staffing agency that helps
+                      enterprises and businesses by providing temporary staffing
+                      solutions. We help businesses to build a competent and
+                      effective workforce so they can focus on their core goals.
                     </p>
                   </div>
                 </div>
@@ -198,10 +199,10 @@ const PayrollServices = () => {
                   <div>
                     <div className="image-section">
                       <div className="row">
-                        <div className="col-lg-3"></div>
-                        <div className="col-lg-9">
+                        <div className="col-lg-2"></div>
+                        <div className="col-lg-10">
                           <img
-                            src="assets/images/payrol-img.png"
+                            src="assets/images/contract-Image.png"
                             width="100%"
                             className="banner-image"
                             alt="img"
@@ -229,18 +230,18 @@ const PayrollServices = () => {
                 />
               </div>
               <div className="ball-sm-page">
-             
-                <h2>Payroll services</h2>
+                <p className="h2">Contract Recruitment</p>
                 <p>
-                  StaffQ consultancy allows companies to streamline their
-                  employees Payroll, StaffQ is the best payroll Service for
-                  small business in India.
+                  StaffQ is a contract staffing agency that helps enterprises
+                  and businesses by providing temporary staffing solutions. We
+                  help businesses to build a competent and effective workforce
+                  so they can focus on their core goals.
                 </p>
               </div>
 
               <div>
                 <img
-                  src="assets/images/payrol-img.png"
+                  src="assets/images/contract-Image.png"
                   className="banner-image"
                   alt="img"
                   width="100%"
@@ -250,49 +251,28 @@ const PayrollServices = () => {
           </SmallHeader>
         </div>
       </div>
-      {/* ...........................next.................. */}
-      <div className="hiring-tag" style={{}}>
-        <section className="container">
-          <div className="row">
-            <div className="col-lg-6 col-md-12 col-sm-12">
-              <h2 className=" Hiring-qualified">
-                We help companies to source, screen and communicate with
-                candidates
-              </h2>
-              <img
-                src="assets/images/payrol-head.png"
-                width="100%"
-                className="second-code"
-              ></img>
-            </div>
-            <div
-              className="col-lg-6 col-md-12 col-sm-12 "
-              style={{ paddingLeft: "2rem" }}
-            >
-              <div className="row">
-                <div className="col-lg-12 col-sm-12 col-md-12">
-                  <div>
-                    <div className="d-flex">
-                      <img
-                        src="assets/images/line.svg"
-                        className="mt-4"
-                        alt="img"
-                      />
-                      <h4 className="whats-happening ">
-                        Payroll Outsourcing Services
-                      </h4>
-                    </div>
-                    <p className="solution-p-tag">
-                      Our Payroll Outsourcing Services enables companies to
-                      streamline their Payroll processes in a cost-effective
-                      efficient manner, ensuring that their employees are always
-                      paid accurately and on-time. The direct costs of payroll
-                      processing can be greatly deduced by working with an
-                      efficient payroll provider.
-                    </p>
-                  </div>
-                </div>
 
+      {/* .................................next ......section................. */}
+
+      <div>
+        <div className="hiring-tag" style={{}}>
+          <section className="container">
+            <div className="row">
+              <div className="col-lg-6 col-md-12 col-sm-12">
+                <h2 className=" Hiring-qualified">
+                  We help companies to source, screen and communicate with
+                  candidates
+                </h2>
+                <img
+                  src="assets/images/solution-why.img.png"
+                  width="100%"
+                  className="second-code"
+                ></img>
+              </div>
+              <div
+                className="col-lg-6 col-md-12 col-sm-12 "
+                style={{ paddingLeft: "2rem" }}
+              >
                 <div className="row">
                   <div className="col-lg-12 col-sm-12 col-md-12">
                     <div>
@@ -302,29 +282,54 @@ const PayrollServices = () => {
                           className="mt-4"
                           alt="img"
                         />
-                        <h4 className="whats-happening ">
-                          Calculation and Processing
-                        </h4>
+                        <h4 className="whats-happening ">What’s happening?</h4>
                       </div>
                       <p className="solution-p-tag">
-                        Our Payroll team processes the inputs from our clients
-                        through our proprietary payroll software, to generate
-                        salary sheets that are approved by our clients
+                        Across the nation, big and small companies are stumbling
+                        to handle increased government directives and
+                        unpredictable market requirements. You may not want to
+                        recruit permanent workers on a full-time basis, whenever
+                        things are unpredictable. You desire the adaptability of
+                        agile, on-demand employees who are qualified to manage
+                        your business processes just the way you want.
                       </p>
+                    </div>
+                  </div>
+
+                  <div className="row">
+                    <div className="col-lg-12 col-sm-12 col-md-12">
+                      <div>
+                        <div className="d-flex">
+                          <img
+                            src="assets/images/line.svg"
+                            className="mt-4"
+                            alt="img"
+                          />
+                          <h4 className="whats-happening ">Situation</h4>
+                        </div>
+                        <p className="solution-p-tag">
+                          We have a verified, time-tested hiring procedure that
+                          permits us to hire just the right applicants for your
+                          organization. We have efficient networks everywhere in
+                          the nation which gives us access to a large number of
+                          applicants.
+                        </p>
+                      </div>
                     </div>
                   </div>
                 </div>
               </div>
             </div>
-          </div>
-        </section>
+          </section>
+        </div>
       </div>
-      {/* ..................next-----section.... */}
+      {/* ...........next--section............... */}
+
       <div>
         <section className="Hiring-Process container-fluid">
-      
+     
           <div className="container">
-            <div className="row ">
+            <div className="row About">
               <div className="col-lg-6 col-md-12 col-sm-12">
                 <div className="row ">
                   <div className="col-lg-12 col-sm-12 col-md-12">
@@ -335,20 +340,24 @@ const PayrollServices = () => {
                           className="mt-4"
                           alt="img"
                         />
-                        <h2 className="whats-happening TDS">
-                          TDS, PF, ESIC, PT and LWF{" "}
-                        </h2>
+                        <h2 className="whats-happening  Solution">Solution</h2>
                       </div>
                       <p className="solution-p-tag">
-                        Through their self-service portals, employees can submit
-                        investment declarations and the associated proofs. Our
-                        backend team verifies and confirms the final amounts
-                        eligible for tax exemptions. Once the payroll has been
-                        processed, our team takes care of all the last mile
-                        payroll and tax management, including filing of PF,
-                        ESIC, PT and LWF returns. We also take care of quarterly
-                        TDS filings, coupled with issuance of Form 16s for all
-                        employees
+                        StaffQ offers dependable contract staffing solutions
+                        that provide you the chance to enhance the strength of
+                        your staff without recruiting them permanently, helps
+                        overloaded workers during crucial times, and keeps work
+                        continuing. We have one of the excellent Job placement
+                        agencies in India, providing permanent service,
+                        price-effective, and orderly Human Resource
+                        administration services to companies that may not have
+                        the essential support or inclination to accomplish these
+                        labour-intensive duties. When you are recruiting us as
+                        your contract staffing agent, we would work just like
+                        your organization’s own human resource office. Depending
+                        on the requirements of your latest business cycle, our
+                        contract staffing services will allow your company to
+                        staff up or down.
                       </p>
                     </div>
                   </div>
@@ -357,7 +366,7 @@ const PayrollServices = () => {
               <div className="col-lg-6 col-md-12 col-sm-12">
                 <div>
                   <img
-                    src="assets/images/payrol-body.png"
+                    src="assets/images/why-chose.img.png"
                     className="hand-img "
                     width="100%"
                     alt="img"
@@ -370,7 +379,9 @@ const PayrollServices = () => {
           </div>
         </section>
       </div>
-      {/* ....... */}
+
+      {/* ..............................next--section..................................... */}
+
       <div className="container">
         <div className="text-center mt-5">
           <p className="hiring-process">Hiring Process</p>
@@ -382,7 +393,7 @@ const PayrollServices = () => {
         </div>
       </div>
       {/* ....medium....... */}
-     
+      
       <div>
           <div className="medium-small-view">
             <div className="container">
@@ -402,7 +413,8 @@ const PayrollServices = () => {
                   className="round-img"
                   alt="img"
                   />
-                  <p className="img-p-tag">Requirement Planning</p>
+                  <p className="img-p-tag">Requirement
+  Discussion</p>
               </div>
               <div className="col-md-4 col-sm-12">
               <img
@@ -410,8 +422,8 @@ const PayrollServices = () => {
                         className="round-img"
                         alt="img"
                       />
-                      <p className="img-p-tag">Payroll 
-Execution</p>
+                      <p className="img-p-tag">Contract 
+  Signing</p>
 
               </div>
                   </div>
@@ -423,8 +435,8 @@ Execution</p>
                           className="round-img"
                           alt="img"
                         />
-                      <p className="img-p-tag">Complaints
-Execution</p>
+                      <p className="img-p-tag">Panel
+  Interview</p>
                     </div>
                     <div className="col-md-4 col-sm-12">
                     <img
@@ -432,8 +444,7 @@ Execution</p>
                           className="round-img"
                           alt="img"
                         />
-                        <p className="img-p-tag"> Contract
-Finalization</p>
+                        <p className="img-p-tag"> Candidate Identification</p>
                     </div>
                     <div className="col-md-4 col-sm-12">
                     <img
@@ -513,13 +524,13 @@ Finalization</p>
                         className="round-img"
                         alt="img"
                       />
-                      <p className="second-p"> Requirement Discussion</p>
+                      <p  className="second-p"> Requirement Discussion</p>
                     </div>
                   </div>
                   <div className="col-lg-2">
                     <p>
-                      Payroll <br></br>
-                      Execution
+                      Internal Interview <br></br>
+                      
                     </p>
                   </div>
                   <div className="col-lg-2 second-imgaes-content">
@@ -532,13 +543,13 @@ Finalization</p>
                         className="round-img"
                         alt="img"
                       />
-                      <p className="second-p">Complaints <br></br> Execution</p>
+                      <p  className="second-p">Client Interview</p>
                     </div>
                   </div>
                   <div className="col-lg-2">
                     <p>
-                      Contract<br></br> Finalization
-                     
+                      Contracrt<br></br>
+                      Signing
                     </p>
                   </div>
                   <div className="col-lg-2 second-imgaes-content">
@@ -551,7 +562,7 @@ Finalization</p>
                         className="round-img"
                         alt="img"
                       />
-                      <p className="second-p">Closure</p>
+                      <p  className="second-p">Closure</p>
                     </div>
                   </div>
                 </div>
@@ -560,24 +571,23 @@ Finalization</p>
           </div>
         </div>
       </Image>
-
-      {/* ....next..... */}
+      {/* ........................next.................... */}
       <div>
         <section>
           <div className="container-fluid ps-0">
             <div className="row ">
               <div className="col-lg-6 col-sm-12 col-md-12 benefit-image">
                 <img
-                  src="assets/images/payrol-footer.png"
+                  src="assets/images/second-paranm.img.png"
                   className="mission"
                 ></img>
               </div>
               <div
                 className="col-lg-6 col-sm-12 col-md-12 big-screen "
-                style={{ paddingTop: "3rem" }}
+                style={{ }}
               >
                 <div className="container">
-                  <p className="Benefits ">Benefits of Payroll Services</p>
+                  <p className="Benefits ">Benefits of Contract Staffing</p>
                   <div className="null">
                     <img
                       src="assets/images/uper-unterline.svg"
@@ -619,8 +629,7 @@ Finalization</p>
                     </div>
                     <div className="col-lg-11 col-md-11 col-sm-11">
                       <p className="second-p-tag notview">
-                        Contract staffing services limit the Business Liability
-                        and Risk
+                        Access to specialized skills
                       </p>
                     </div>
                   </div>
@@ -644,7 +653,8 @@ Finalization</p>
                     </div>
                     <div className="col-lg-11 col-md-11 col-sm-11">
                       <p className="second-p-tag notview">
-                        Access to specialized skills
+                        {" "}
+                        Fulfill short term business needs
                       </p>
                       <p className="small-screen"> </p>
                     </div>
@@ -693,7 +703,9 @@ Finalization</p>
               </div>
               <div className="col-lg-6 col-md-6 col-sm-12 not-show ">
                 <div className="container">
-                  <p className="Benefits ms-5 ">Benefits of Payroll Services</p>
+                  <p className="Benefits ms-5 ">
+                    Benefits of Contract Staffing
+                  </p>
                   <div className="null">
                     <img
                       src="assets/images/uper-unterline.svg"
@@ -705,7 +717,7 @@ Finalization</p>
                     <img src="assets/images/right-icons.svg"></img>
                   </span>
                   <span>Contract staffing services are cost-effective</span>
-                  <p></p>
+                  
                   <br></br>
                   <span>
                     <img src="assets/images/right-icons.svg"></img>
@@ -714,22 +726,22 @@ Finalization</p>
                     Contract staffing services limit the Business Liability and
                     Risk
                   </span>
-                  <br></br> <br></br>
+                  <br></br> 
                   <span>
                     <img src="assets/images/right-icons.svg"></img>
                   </span>
                   <span>Access to a larger talent pool</span>
-                  <br></br> <br></br>
+                  <br></br> 
                   <span>
                     <img src="assets/images/right-icons.svg"></img>
                   </span>
                   <span>Access to specialized skills</span>
-                  <br></br> <br></br>
+                  <br></br> 
                   <span>
                     <img src="assets/images/right-icons.svg"></img>
                   </span>
                   <span>Access to a larger talent pool</span>
-                  <br></br> <br></br>
+                  <br></br> 
                   <span>
                     <img src="assets/images/right-icons.svg"></img>
                   </span>
@@ -757,4 +769,4 @@ Finalization</p>
   );
 };
 
-export default PayrollServices;
+export default ContractRecruitment;

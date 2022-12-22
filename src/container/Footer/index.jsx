@@ -1,8 +1,12 @@
 import React from "react";
-import { Foot, SmFoot } from "./style";
+
+// import package *********************** //
 import Link from "next/link";
-// import {IoCall } from "react-icons/Io";
+
 import { GrMail } from "react-icons/gr";
+
+// import style...............................//
+import { Foot, SmFoot } from "./style";
 
 const Footer = () => {
   return (
@@ -36,33 +40,30 @@ const Footer = () => {
                         Our Services
                       </p>
                       <div className="footer-one ">
-                      <Link href="requirement-process">
+                        <Link href="requirement-process">
                           <span>Recruitment Process Outsourcing</span>
                         </Link>
                         <br></br>
                         <Link href="onshore-recruitment">
-                        <span>Onshore Recruitment Services</span>
-                         
+                          <span>Onshore Recruitment Services</span>
                         </Link>
                         <br></br>
                         <Link href="offshore-recruitment">
-                        <span>Offshore Recruitment Services</span>
-                        </Link><br></br>
+                          <span>Offshore Recruitment Services</span>
+                        </Link>
+                        <br></br>
                         <Link href="permanent-recruitment">
                           <span className="">Permanent Deployment</span>
                         </Link>
-                        <br></br> 
+                        <br></br>
                         <Link href="payroll-services">
                           <span> Payroll Services</span>
-                         
-                        </Link> <br></br>
+                        </Link>{" "}
+                        <br></br>
                         <Link href="contract-recruitment">
                           <span>Contract to Hire</span>
                         </Link>
                         <br></br>
-                        
-                    
-                     
                       </div>
                     </div>
                   </div>
@@ -172,8 +173,6 @@ const Footer = () => {
                 </p>
                 <br></br>
                 <div style={{ fontSize: "18px" }} className="font">
-                 
-
                   <Link href="requirement-process">
                     <p>Recruitment Process Outsourcing</p>
                   </Link>
@@ -184,12 +183,9 @@ const Footer = () => {
                     <p>Offshore Recruitment Services</p>
                   </Link>
 
-                  
                   <Link href="permanent-recruitment">
                     <p className="">Permanent Deployment</p>
                   </Link>
-
-                 
 
                   <Link href="payroll-services">
                     <p> Payroll Services</p>

@@ -1,8 +1,8 @@
 import React from "react";
 import Head from "next/head";
-import { Div, AboutSection } from "../../styles/aboutpage-style";
-
-import AboutHeader from "../../components/AboutBanner";
+import { Div, AboutSection } from "../../../styles/aboutpage-style";
+import Link from "next/link";
+import AboutHeader from "../../../components/AboutBanner";
 
 const AboutPage = () => {
   return (
@@ -427,8 +427,10 @@ const AboutPage = () => {
                   alt="img"
                 />
               </div>
+              <Link href="contact-us">
 
               <button className="bt">Join Us</button>
+              </Link>
             </div>
           </div>
         </div>
@@ -438,7 +440,9 @@ const AboutPage = () => {
 
         <div className="container small-join-section">
           <div className="join-teamm">
+          
             <p className="join-our">Join Our Team</p>
+          
             <div className="under-code">
               <img
                 className="code-line"
@@ -451,7 +455,8 @@ const AboutPage = () => {
               <br></br>
               do eiusmod tempor incididunt ut labore et dolore magna aliqua.
             </p> */}
-            <button className="bt">Join Us</button>
+            <Link href="contact-us">
+            <button className="bt">Join Us</button></Link>
           </div>
 
           <div className="small-logo-section">

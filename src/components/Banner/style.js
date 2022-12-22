@@ -206,6 +206,69 @@ export const P = styled.p`
   }
 `;
 export const BannerPage = styled.div`
+
+.header{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  background-color: red;
+}
+.wrapper{
+  display: flex;
+}
+.wrapper .statice-txt{
+  color: blue;
+  font-size: 60px;
+  font-weight: 400;
+}
+.wrapper .dynamic-txts{
+margin-left: 15px;
+height: 90px;
+line-height: 90px;
+overflow: hidden;
+
+}
+.dynamic-txts li{
+  color: yellow;
+  list-style: none;
+  font-size: 60px;
+  font-weight: 500;
+  position: relative;
+  top: 0;
+  animation: typing 5s steps(4) infinite;
+}
+@keyframes typing {
+  100%{
+  top: -360px;
+  }
+}
+.dynamic-txts li span{
+  position: relative;
+  margin: 5px 0;
+  line-height: 90px;
+}
+.dynamic-txts li span::after{
+  content: "";
+  position: absolute;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  /* background-color: gray; */
+
+  animation: slide 1s steps(5)  infinite;
+}
+@keyframes slide {
+  40%,
+  60%{
+ left: calc(100% +30px);
+  }
+  100%{
+    left: 0;
+  }
+}
+
+
   @media (min-width: 769px) and (max-width: 1024px) {
     display: none;
   }

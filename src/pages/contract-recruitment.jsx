@@ -1,5 +1,5 @@
 import React from 'react'
-import ContractRecruitment from './ContractRecruitment'
+import ContractRecruitment from './ServicePage/ContractRecruitment'
 
 const index = () => {
   return (

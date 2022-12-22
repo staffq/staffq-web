@@ -1,10 +1,14 @@
 import React from "react";
-import { Worked } from "../../styles/workstyle";
+
+// import package *********************** //
 import { useFormik } from "formik";
 import * as yup from "yup";
 import styled from "styled-components";
-import { useDispatch} from "react-redux";
-import { createContactData } from "../../redux/actions/userAction.js";
+
+import { useDispatch } from "react-redux";
+import { createContactData } from "../../../redux/actions/userAction.js";
+// import style...............................//
+import { Worked } from "../../../styles/workstyle";
 export const ErrorText = styled.div`
   color: red;
 
@@ -15,39 +19,25 @@ export const ErrorText = styled.div`
   font-weight: 600;
 `;
 const StillNotSure = () => {
-  const dispatch=useDispatch();
+  const dispatch = useDispatch();
   const formik = useFormik({
     initialValues: {
       name: "",
-      //   lastName: "",
+
       email: "",
-      // experience: "",
-      // linkedin: "",
-      // number: "",
-      // location: "",
-      // files: "",
+
       phoneNumber: "",
-      // fn: "",
     },
     validationSchema: yup.object({
       name: yup
-        .string()
-        // .max(15, "Must be 15 characters or less")
-        .required("Required *"),
-      // lastName: yup.string().required("Required *"),
+        .string() .required("Required *"),
         email: yup.string().email("Invalid email address").required("Required*"),
-      //   number: yup.string().max(10, "").required("Required*"),
-      //   experience: yup.string().required("Required*"),
-      //   linkedin: yup.string().required("Required*"),
-      //   files: yup.mixed().required("Required*"),
-      phoneNumber: yup.string().max(10).required("Required*"),
-      //   fn: yup.mixed().required("Required*"),
-      //   location: yup.mixed().required("Required*"),
+        phoneNumber: yup.string().min(10).max(10).required("Required*"),
     }),
     onSubmit: (values) => {
       console.log(values, "heloooooooo");
-      dispatch(createContactData(values))
-    
+      dispatch(createContactData(values));
+
       formik.handleReset();
     },
   });
@@ -124,7 +114,11 @@ const StillNotSure = () => {
                   )}
                 </div>
                 <div className="d-flex justify-content-end">
-                  <button className="submited" type="submit" onClick={formik.handleSubmit}>
+                  <button
+                    className="submited"
+                    type="submit"
+                    onClick={formik.handleSubmit}
+                  >
                     Submit
                   </button>
                 </div>

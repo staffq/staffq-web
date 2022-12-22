@@ -1,13 +1,22 @@
 import React from "react";
-import { Div } from "../../../styles/upload-cs";
-import Input from "../../../components/FormControls/Input";
-import Link from "next/link";
-// import Button from "../../../components/FormControls/Button";
+// import redux .........
+import { useDispatch } from "react-redux";
+import { createUploadCVData } from "../../.././redux/actions";
+// import package.............
 import Head from "next/head";
+import Link from "next/link";
 import { useFormik } from "formik";
 import * as Yup from "yup";
 import Popup from "../../../components/FormControls/Popup";
 import styled from "styled-components";
+// import Components....../
+import Input from "../../../components/FormControls/Input";
+// import style...............
+import { Div, Form } from "../../../styles/upload-cs";
+import  { useState } from "react";
+// import { FileUploader } from "react-drag-drop-files";
+
+// const fileTypes = ["JPG", "PNG", "GIF"];
 
 export const ErrorText = styled.div`
   color: red;
@@ -19,20 +28,24 @@ export const ErrorText = styled.div`
   font-weight: 600;
 `;
 
-const Cvapply = ({data}) => {
+const UploadCV = () => {
+  const [file, setFile] = useState(null);
+  const handleChange = (file) => {
+    setFile(file);
+  };
+  const dispatch = useDispatch();
   const [popup, setPopup] = React.useState(null);
+
   const formik = useFormik({
     initialValues: {
       firstName: "",
       lastName: "",
       email: "",
       experience: "",
-      linkedin: "",
-      number: "",
+      link: "",
+      mobileNumber: "",
       location: "",
       files: "",
-      ln: "",
-      fn: "",
     },
     validationSchema: Yup.object({
       firstName: Yup.string()
@@ -40,21 +53,25 @@ const Cvapply = ({data}) => {
         .required("Required *"),
       lastName: Yup.string().required("Required *"),
       email: Yup.string().email("Invalid email address").required("Required*"),
-      number: Yup.string().max(10, "").required("Required*"),
+      mobileNumber: Yup.string().min(10).max(10).required("Required*"),
       experience: Yup.string().required("Required*"),
-      linkedin: Yup.string().required("Required*"),
+      link: Yup.string().required("Required*").url(),
       files: Yup.mixed().required("Required*"),
-      ln: Yup.mixed().required("Required*"),
-      fn: Yup.mixed().required("Required*"),
       location: Yup.mixed().required("Required*"),
     }),
     onSubmit: (values) => {
       console.log(values, "heloooooooo");
-      setPopup(true);
-      // formik.handleReset();
+
+      dispatch(createUploadCVData(values)).then((params) => {
+        if (params) {
+          setPopup(true);
+          setTimeout(() => setPopup(false), 3000);
+        }
+      });
+
+      formik.handleReset();
     },
   });
-  console.log(data , "hii")
   return (
     <Div>
       <Head>
@@ -77,11 +94,13 @@ const Cvapply = ({data}) => {
         />
         <meta
           name="title"
-          content=" We specialize in finding the right people for the right job, and our team of experts will work with you to find the perfect solution for your needs. Contact us today to get started! "
+          content=" We specialize in finding the right people for the right job, and our team of experts
+           will work with you to find the perfect solution for your needs. Contact us today to get started! "
         />
         <meta
           name="description"
-          content="We specialize in finding the right people for the right job, and our team of experts will work with you to find the perfect solution for your needs. Contact us today to get started! "
+          content="We specialize in finding the right people for the right job, and our team of experts will
+           work with you to find the perfect solution for your needs. Contact us today to get started! "
         />
         <meta name="keywords" content="Upload Cv" />
 
@@ -93,11 +112,13 @@ const Cvapply = ({data}) => {
         <meta property="og:type" content="website" />
         <meta
           property="og:title"
-          content="We specialize in finding the right people for the right job, and our team of experts will work with you to find the perfect solution for your needs. Contact us today to get started! "
+          content="We specialize in finding the right people for the right job, and our team of experts
+           will work with you to find the perfect solution for your needs. Contact us today to get started! "
         />
         <meta
           property="og:description"
-          content="We specialize in finding the right people for the right job, and our team of experts will work with you to find the perfect solution for your needs. Contact us today to get started! "
+          content="We specialize in finding the right people for the right job, and our team of experts 
+          will work with you to find the perfect solution for your needs. Contact us today to get started! "
         />
         <meta
           property="og:image"
@@ -171,7 +192,7 @@ const Cvapply = ({data}) => {
           }}
         /> */}
       </Head>
-      
+
       <div className="container-fluid p-0 background">
         <div className="bg-img">
           <img src="assets/images/Banner-find-box.jpg" width="100%" />
@@ -184,46 +205,34 @@ const Cvapply = ({data}) => {
         </div>
       </div>
       <div className="container-fluid bg-one">
-        <form onSubmit={formik.handleSubmit}>
-          <div className="container top">
-            <div className="row">
-              <div className="col-lg-1"></div>
-              <div className="col-lg-5">
-                <div className="mt-3">
-                  <ul className="nav">
-                    <Link href="/">
-                      <li className="nav-item">Home</li>
-                    </Link>
-                    <li className="nav-item">
-                      {" "}
-                      <img src="assets/images/icons-right.svg"></img>
-                    </li>
-                    {/* <li className="nav-item">Upload Cv</li> */}
-                    <Link href="find-jobs">
-                      <li className="nav-item">Find Jobs
-                     
-                      <img src="assets/images/icons-right.svg" className="ps-2"></img> </li>
-                   
-                    </Link>
-                    <li className="nav-item">Jobs Description</li>
-                    <li className="nav-item">
-                      {" "}
-                      <img src="assets/images/icons-right.svg"></img>
-                    </li>
-                    <li className="nav-item">Apply Now</li>
-                   
-                  </ul>
-                </div>
+        <div className="container top">
+          <div className="row">
+            <div className="col-lg-1"></div>
+            <div className="col-lg-5">
+              <div className="mt-3">
+                <ul className="nav">
+                  <Link href="/">
+                    <li className="nav-item">Home</li>
+                  </Link>
+                  <li className="nav-item">
+                    {" "}
+                    <img src="assets/images/icons-right.svg"></img>
+                  </li>
+                  {/* <li className="nav-item">Upload Cv</li> */}
+                  <li className="nav-item">Upload CV</li>
+                </ul>
               </div>
             </div>
+          </div>
 
-            <div className="row mt-5">
-              <div className="col-lg-1"></div>
-              <div className="col-lg-5 sm-upload">
-                <h2>{data?.toString().toUpperCase()}</h2>
-                <p className="enter">Enter the details below</p>
-              </div>
+          <div className="row mt-5">
+            <div className="col-lg-1"></div>
+            <div className="col-lg-5 sm-upload">
+              <h2>Upload CV</h2>
+              <p className="enter">Enter the details below</p>
             </div>
+          </div>
+          <Form onSubmit={formik.handleSubmit}>
             <div className="row">
               <div className="col-lg-1"></div>
               <div className="col-lg-5 col-sm-12">
@@ -247,15 +256,15 @@ const Cvapply = ({data}) => {
                   <label className=" not-show">Last Name*</label>
                   <Input
                     width="100%"
-                    name="ln"
+                    name="lastName"
                     onChange={formik.handleChange}
                     onBlur={formik.handleBlur}
-                    value={formik.values.ln}
+                    value={formik.values.lastName}
                     required
                   />
 
-                  {formik.touched.ln && formik.errors.ln ? (
-                    <ErrorText>{formik.errors.ln}</ErrorText>
+                  {formik.touched.lastName && formik.errors.lastName ? (
+                    <ErrorText>{formik.errors.lastName}</ErrorText>
                   ) : (
                     <ErrorText>&nbsp;</ErrorText>
                   )}
@@ -295,47 +304,13 @@ const Cvapply = ({data}) => {
                   <label>LinkedIn / Portfolio</label>
                   <Input
                     width="100%"
-                    name="linkedin"
+                    name="link"
                     onChange={formik.handleChange}
                     onBlur={formik.handleBlur}
-                    value={formik.values.linkedin}
+                    value={formik.values.link}
                   />
-                  {formik.touched.linkedin && formik.errors.linkedin ? (
-                    <ErrorText>{formik.errors.linkedin}</ErrorText>
-                  ) : (
-                    <ErrorText>&nbsp;</ErrorText>
-                  )}
-                </div>
-                <div className="hiden">
-                  <p className="attachement hiden">Attachment</p>
-                  <p className="updated ">Updated resume*</p>
-                  <div className="input-group mb-3 hiden">
-                    <input
-                      type="file"
-                      className="form-control"
-                      aria-label="Recipient's username"
-                      aria-describedby="basic-addon2"
-                      width="100%"
-                      name="files"
-                      onChange={(e) => {
-                        formik.handleChange;
-                        formik.setFieldValue("files", e);
-                      }}
-                      onBlur={formik.handleBlur}
-                      // value={formik.values.file}
-                    />
-
-                    <div className="input-group-append">
-                      <span
-                        className="input-group-text bg-dark text-light"
-                        id="basic-addon2"
-                      >
-                        Upload
-                      </span>
-                    </div>
-                  </div>
-                  {formik.touched.files && formik.errors.files ? (
-                    <ErrorText>{formik.errors.files}</ErrorText>
+                  {formik.touched.link && formik.errors.link ? (
+                    <ErrorText>{formik.errors.link}</ErrorText>
                   ) : (
                     <ErrorText>&nbsp;</ErrorText>
                   )}
@@ -363,14 +338,16 @@ const Cvapply = ({data}) => {
                   <label>Mobile number*</label>
                   <input
                     width="100%"
-                    name="number"
+                    name="mobileNumber"
                     className="number"
+                    maxlength="10"
+                    type="number"
                     onChange={formik.handleChange}
                     onBlur={formik.handleBlur}
-                    value={formik.values.number}
+                    value={formik.values.mobileNumber}
                   />
-                  {formik.touched.number && formik.errors.number ? (
-                    <ErrorText>{formik.errors.number}</ErrorText>
+                  {formik.touched.mobileNumber && formik.errors.mobileNumber ? (
+                    <ErrorText>{formik.errors.mobileNumber}</ErrorText>
                   ) : (
                     <ErrorText>&nbsp;</ErrorText>
                   )}
@@ -390,41 +367,54 @@ const Cvapply = ({data}) => {
                     <ErrorText>&nbsp;</ErrorText>
                   )}
                 </div>
-                <p className="attachement not-show">Attachment</p>
-                <p className="updated not-show">Updated resume*</p>
-                <div className="input-group mb-3 not-show">
-                  <div>
-                    <input
-                      type="file"
-                      className="form-control"
-                      placeholder=""
-                      aria-label="Recipient's username"
-                      aria-describedby="basic-addon2"
-                      width="100%"
-                      name="fn"
-                      onChange={(e) => {
-                        formik.handleChange;
-                        formik.setFieldValue("files", e);
-                      }}
-                      onBlur={formik.handleBlur}
-                      required
-                    />
-                    {formik.touched.fn && formik.errors.fn ? (
-                      <ErrorText>{formik.errors.fn}</ErrorText>
+              </div>
+              <div className="row">
+                <div className="col-lg-1"></div>
+                <div className="col-lg-5">
+                  <div className="">
+                    <p className="attachement ">Attachment</p>
+                    <p className="updated ">Updated resume*</p>
+                    <div className="input-group mb-3 ">
+                      <input
+                        type="file"
+                        className="form-control  "
+                        aria-label="Recipient's username"
+                        aria-describedby="basic-addon2"
+                        width="100%"
+                        name="files"
+                        onChange={(e) => {
+                          formik.handleChange;
+                          formik.setFieldValue("files", e.target.value);
+                        }}
+                        onBlur={formik.handleBlur}
+                        // value={formik.values.file}
+                      />
+
+                      <div className="input-group-append">
+                        <span
+                          className="input-group-text bg-dark text-light"
+                          id="basic-addon2"
+                        >
+                          Upload
+                        </span>
+                      </div>
+                    </div>
+                    {formik.touched.files && formik.errors.files ? (
+                      <ErrorText>{formik.errors.files}</ErrorText>
                     ) : (
                       <ErrorText>&nbsp;</ErrorText>
                     )}
                   </div>
-                  <div className="input-group-append">
-                    <span
-                      className="input-group-text bg-dark text-light"
-                      id="basic-addon2"
-                    >
-                      Upload
-                    </span>
-                  </div>
                 </div>
               </div>
+<div className="row">
+  <div className="col-lg-1"></div>
+  <div className="col-lg-5">
+  {/* <FileUploader className="resume" handleChange={handleChange} name="file" types={fileTypes} /> */}
+  </div>
+</div>
+
+         
               <div className="button">
                 <div className="row">
                   <div className="col-lg-1"></div>
@@ -443,12 +433,12 @@ const Cvapply = ({data}) => {
 
               <div className="col-lg-1"></div>
             </div>
-          </div>
-        </form>
+          </Form>
+        </div>
       </div>
       {popup ? <Popup onHide={() => setPopup(false)} /> : ""}
     </Div>
   );
 };
 
-export default Cvapply;
+export default UploadCV;

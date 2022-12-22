@@ -13,10 +13,10 @@ const formatTime = (time, format) => {
 };
 
 const formatDate = (value, props) => {
-  let timeFormat = "";
+  // let timeFormat = "";
   let dateFormat = "";
   if (props) {
-    timeFormat = props.timeFormat;
+    // timeFormat = props.timeFormat;
     dateFormat = props.dateFormat;
   }
   const date = new Date(value);
@@ -26,12 +26,12 @@ const formatDate = (value, props) => {
   const dateString = currentDate >= 10 ? currentDate : `0${currentDate}`;
   // const currentTime = date.getHours();
 
-  let time;
-  if (timeFormat === "24") {
-    time = formatTime(date, "24");
-  } else {
-    time = formatTime(date);
-  }
+  // let time;
+  // if (timeFormat === "24") {
+  //   time = formatTime(date, "24");
+  // } else {
+  //   time = formatTime(date);
+  // }
   if (
     dateFormat === "MM:DD:YYYY"
     || dateFormat === "YYYY:MM:DD"
@@ -88,10 +88,10 @@ const formatDate = (value, props) => {
       middle = monthString;
       end = date.getFullYear();
     }
-    return `${beggining}/${middle}/${end} ${time}`;
+    return `${beggining}/${middle}/${end} `;
     // return `${dateString}/${monthString}/${date.getFullYear()} ${time}`;
   }
-  return `${dateString}/${monthString}/${date.getFullYear()} ${time}`;
+  return `${dateString}/${monthString}/${date.getFullYear()}`;
 };
 
 export { formatDate, formatTime };

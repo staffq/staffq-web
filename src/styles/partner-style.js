@@ -177,7 +177,7 @@ padding-bottom: 3rem;
 /* identical to box height */
 
 
-color: rgba(8, 20, 41, 0.7);
+color: rgba(8, 20, 41, 1);
     }
 
     .logo-one{

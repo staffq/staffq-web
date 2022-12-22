@@ -1,9 +1,9 @@
 import React from "react";
 import Head from "next/head";
-import { Worked, Header, Image, SmallHeader } from "../../styles/contract";
+import { Worked, Header, Image, SmallHeader } from "../../../styles/payrol";
 import { useFormik } from "formik";
 import * as yup from "yup";
-import StillNotSure from "../StilNotSure";
+import StillNotSure from "../../ServicePage/StilNotSure"
 import styled from "styled-components";
 
 export const ErrorText = styled.div`
@@ -15,7 +15,7 @@ export const ErrorText = styled.div`
 
   font-weight: 600;
 `;
-const OffshoreRecruitment = () => {
+const PayrollServices = () => {
   const formik = useFormik({
     initialValues: {
       firstName: "",
@@ -51,8 +51,8 @@ const OffshoreRecruitment = () => {
   });
   return (
     <Worked>
-                  <Head>
-      <title>off Shore Recruitment    </title>
+                <Head>
+      <title>Payroll service outsourcing    </title>
       <meta
         property="og:image"
         content="https://www.applogiq.org/assets/images/metaimg.png"
@@ -71,21 +71,19 @@ const OffshoreRecruitment = () => {
       />
       <meta
         name="title"
-        content="
-        Get highly curated IT remote workers for hire from the best staffing
-         agency in India. Hire qualified workers on contract from StaffQ."
+        content="We at TopSource Worldwide provide End-to-end Payroll Outsourcing Services
+         in India to streamline your payroll process"
       />
       <meta
         name="description"
-        content="
-        Get highly curated IT remote workers for hire from the best 
-        staffing agency in India. Hire qualified workers on contract from StaffQ."
+        content="We at TopSource Worldwide provide End-to-end Payroll Outsourcing Services
+         in India to streamline your payroll process"
       />
-      <meta name="keywords" content="off Shore Recruitment    " />
+      <meta name="keywords" content="Payroll service  " />
 
       <link
         rel="canonical"
-        href="https://www.staffq.in/onshore-recruitment"
+        href="https://www.staffq.in/payroll-services"
       />
 
       <link rel="alternate" href="https://www.staffq.in/" hreflang="en-in" />
@@ -94,15 +92,13 @@ const OffshoreRecruitment = () => {
       <meta property="og:type" content="website" />
       <meta
         property="og:title"
-        content="
-        Get highly curated IT remote workers for hire from the best 
-        staffing agency in India. Hire qualified workers on contract from StaffQ."
+        content="We at TopSource Worldwide provide End-to-end Payroll 
+        Outsourcing Services in India to streamline your payroll process"
       />
       <meta
         property="og:description"
-        content="
-        Get highly curated IT remote workers for hire from the best staffing agency in 
-        India. Hire qualified workers on contract from StaffQ."
+        content="We at TopSource Worldwide provide End-to-end Payroll Outsourcing Services
+         in India to streamline your payroll process"
       />
       <meta
         property="og:image"
@@ -176,7 +172,6 @@ const OffshoreRecruitment = () => {
           }}
         /> */}
     </Head>
-      {" "}
       <Header>
         <div lassName="header">
           <div className="container-fluid">
@@ -190,12 +185,12 @@ const OffshoreRecruitment = () => {
                     alt="img"
                   />
                   <div className="ball-one-page">
-                    <h1>Offshore Recruitmentt</h1>
-                    <p>
-                      At staffq Search, we understand that companies who wish to
-                      save money, time, and effort look for offshore IT staffing
-                      solutions. We offer IT staffing solutions that you can
-                      depend on!
+                    <h1 className="header-h-one">Payroll services</h1>
+                 
+                    <p className="pt-4 payrol-p-tag">
+                      StaffQ consultancy allows companies to streamline their
+                      employees Payroll, StaffQ is the best payroll Service for
+                      small business in India.
                     </p>
                   </div>
                 </div>
@@ -203,10 +198,10 @@ const OffshoreRecruitment = () => {
                   <div>
                     <div className="image-section">
                       <div className="row">
-                        <div className="col-lg-2"></div>
-                        <div className="col-lg-10">
+                        <div className="col-lg-3"></div>
+                        <div className="col-lg-9">
                           <img
-                            src="assets/images/off-shore.img.png"
+                            src="assets/images/payrol-img.png"
                             width="100%"
                             className="banner-image"
                             alt="img"
@@ -234,18 +229,18 @@ const OffshoreRecruitment = () => {
                 />
               </div>
               <div className="ball-sm-page">
-                <p className="h2">Offshore Recruitment</p>
+             
+                <h2>Payroll services</h2>
                 <p>
-                  At staffq Search, we understand that companies who wish to
-                  save money, time, and effort look for offshore IT staffing
-                  solutions. We offer IT staffing solutions that you can depend
-                  on!
+                  StaffQ consultancy allows companies to streamline their
+                  employees Payroll, StaffQ is the best payroll Service for
+                  small business in India.
                 </p>
               </div>
 
               <div>
                 <img
-                  src="assets/images/off-shore.img.png"
+                  src="assets/images/payrol-img.png"
                   className="banner-image"
                   alt="img"
                   width="100%"
@@ -255,7 +250,7 @@ const OffshoreRecruitment = () => {
           </SmallHeader>
         </div>
       </div>
-      {/* .........................next-section......................... */}
+      {/* ...........................next.................. */}
       <div className="hiring-tag" style={{}}>
         <section className="container">
           <div className="row">
@@ -265,7 +260,7 @@ const OffshoreRecruitment = () => {
                 candidates
               </h2>
               <img
-                src="assets/images/Offshore-Staffing.img.png"
+                src="assets/images/payrol-head.png"
                 width="100%"
                 className="second-code"
               ></img>
@@ -283,16 +278,17 @@ const OffshoreRecruitment = () => {
                         className="mt-4"
                         alt="img"
                       />
-                      <h4 className="whats-happening ">Offshore Staffing</h4>
+                      <h4 className="whats-happening ">
+                        Payroll Outsourcing Services
+                      </h4>
                     </div>
                     <p className="solution-p-tag">
-                      It helps North American, European and other international
-                      companies build quality remote technical teams cost
-                      effectively. We recruit, manage the HR and host these
-                      employees out of our office spaces, so that you can grow
-                      engineering team quickly and at a lower cost relative to
-                      hiring locally. Hire developers within a days, without
-                      worrying about office space and overhead.
+                      Our Payroll Outsourcing Services enables companies to
+                      streamline their Payroll processes in a cost-effective
+                      efficient manner, ensuring that their employees are always
+                      paid accurately and on-time. The direct costs of payroll
+                      processing can be greatly deduced by working with an
+                      efficient payroll provider.
                     </p>
                   </div>
                 </div>
@@ -307,17 +303,13 @@ const OffshoreRecruitment = () => {
                           alt="img"
                         />
                         <h4 className="whats-happening ">
-                          Save costs & maintain control
+                          Calculation and Processing
                         </h4>
                       </div>
                       <p className="solution-p-tag">
-                        Lower your cost per engineering hire by at least 50%,
-                        with the equivalent quality of engineers that you would
-                        find locally. Unlike freelancers or outsourcing
-                        companies, your engineers work out of an LSS office,
-                        have time and attendance monitored by LSS and are
-                        governed by strict confidentiality and IP protection
-                        agreements.
+                        Our Payroll team processes the inputs from our clients
+                        through our proprietary payroll software, to generate
+                        salary sheets that are approved by our clients
                       </p>
                     </div>
                   </div>
@@ -327,56 +319,36 @@ const OffshoreRecruitment = () => {
           </div>
         </section>
       </div>
-      {/* ............................next section................. */}
+      {/* ..................next-----section.... */}
       <div>
         <section className="Hiring-Process container-fluid">
-         
+      
           <div className="container">
-            <div className="row About">
+            <div className="row ">
               <div className="col-lg-6 col-md-12 col-sm-12">
                 <div className="row ">
                   <div className="col-lg-12 col-sm-12 col-md-12">
-                    <div>
-                      <div className="d-flex">
+                    <div className="solution-header ">
+                      <div className="d-flex ">
                         <img
                           src="assets/images/line.svg"
                           className="mt-4"
                           alt="img"
                         />
-                        <h4 className="whats-happening ">Why Us?</h4>
+                        <h2 className="whats-happening TDS">
+                          TDS, PF, ESIC, PT and LWF{" "}
+                        </h2>
                       </div>
                       <p className="solution-p-tag">
-                        We assist companies in locating exactly the type of
-                        talent they're looking for. We not only provide the best
-                        talents to corporate companies but also keep
-                        time-efficiency and cost-efficiency our top priority.
-                        StaffQ extends solutions to cope with the procedure of
-                        searching for offsite IT staff for the varying needs of
-                        corporate companies. Our Offsite Staffing Services deals
-                        with such situations in the most controlled manner, by
-                        sorting out a good and experienced team of candidates.
-                        This further helps companies in their crucial projects
-                        by balancing time, efficiency, and quality.
-                      </p>
-                    </div>
-                    <div>
-                      <div className="d-flex">
-                        <img
-                          src="assets/images/line.svg"
-                          className="mt-4"
-                          alt="img"
-                        />
-                        <h4 className="whats-happening ">We are the best</h4>
-                      </div>
-                      <p className="solution-p-tag">
-                        The benefits of employing StaffQ to provide Your
-                        Offshore Staffing Solutions are many. The companies can
-                        keep their staff in a profit-making way since the cost
-                        of off-shore employees is low and thus the businesses
-                        can make more money. Businesses are able to increase or
-                        decrease the size of their offshore team with no issues
-                        as long as these projects are within the timeframes
-                        specified by the company.
+                        Through their self-service portals, employees can submit
+                        investment declarations and the associated proofs. Our
+                        backend team verifies and confirms the final amounts
+                        eligible for tax exemptions. Once the payroll has been
+                        processed, our team takes care of all the last mile
+                        payroll and tax management, including filing of PF,
+                        ESIC, PT and LWF returns. We also take care of quarterly
+                        TDS filings, coupled with issuance of Form 16s for all
+                        employees
                       </p>
                     </div>
                   </div>
@@ -385,11 +357,12 @@ const OffshoreRecruitment = () => {
               <div className="col-lg-6 col-md-12 col-sm-12">
                 <div>
                   <img
-                    src="assets/images/We-are-the-best.img.png"
+                    src="assets/images/payrol-body.png"
                     className="hand-img "
                     width="100%"
                     alt="img"
                   />
+                  <br></br>
                   <br></br>
                 </div>
               </div>
@@ -397,7 +370,7 @@ const OffshoreRecruitment = () => {
           </div>
         </section>
       </div>
-      {/* ................next................... */}
+      {/* ....... */}
       <div className="container">
         <div className="text-center mt-5">
           <p className="hiring-process">Hiring Process</p>
@@ -409,7 +382,7 @@ const OffshoreRecruitment = () => {
         </div>
       </div>
       {/* ....medium....... */}
-   
+     
       <div>
           <div className="medium-small-view">
             <div className="container">
@@ -429,8 +402,7 @@ const OffshoreRecruitment = () => {
                   className="round-img"
                   alt="img"
                   />
-                  <p className="img-p-tag">Requirement
-  Discussion</p>
+                  <p className="img-p-tag">Requirement Planning</p>
               </div>
               <div className="col-md-4 col-sm-12">
               <img
@@ -438,8 +410,8 @@ const OffshoreRecruitment = () => {
                         className="round-img"
                         alt="img"
                       />
-                      <p className="img-p-tag">Internal
-Interview</p>
+                      <p className="img-p-tag">Payroll 
+Execution</p>
 
               </div>
                   </div>
@@ -451,8 +423,8 @@ Interview</p>
                           className="round-img"
                           alt="img"
                         />
-                      <p className="img-p-tag">Client
-Interview</p>
+                      <p className="img-p-tag">Complaints
+Execution</p>
                     </div>
                     <div className="col-md-4 col-sm-12">
                     <img
@@ -460,7 +432,7 @@ Interview</p>
                           className="round-img"
                           alt="img"
                         />
-                        <p className="img-p-tag"> Visa
+                        <p className="img-p-tag"> Contract
 Finalization</p>
                     </div>
                     <div className="col-md-4 col-sm-12">
@@ -546,8 +518,8 @@ Finalization</p>
                   </div>
                   <div className="col-lg-2">
                     <p>
-                      Internal<br></br>
-                     Interview
+                      Payroll <br></br>
+                      Execution
                     </p>
                   </div>
                   <div className="col-lg-2 second-imgaes-content">
@@ -560,13 +532,13 @@ Finalization</p>
                         className="round-img"
                         alt="img"
                       />
-                      <p className="second-p">Client Interview</p>
+                      <p className="second-p">Complaints <br></br> Execution</p>
                     </div>
                   </div>
                   <div className="col-lg-2">
                     <p>
-                      Visa<br></br>
-                      Finalization
+                      Contract<br></br> Finalization
+                     
                     </p>
                   </div>
                   <div className="col-lg-2 second-imgaes-content">
@@ -588,23 +560,24 @@ Finalization</p>
           </div>
         </div>
       </Image>
-      {/* ..............next................... */}
+
+      {/* ....next..... */}
       <div>
         <section>
           <div className="container-fluid ps-0">
             <div className="row ">
               <div className="col-lg-6 col-sm-12 col-md-12 benefit-image">
                 <img
-                  src="assets/images/offshoe-benifits.img.png"
+                  src="assets/images/payrol-footer.png"
                   className="mission"
                 ></img>
               </div>
               <div
                 className="col-lg-6 col-sm-12 col-md-12 big-screen "
-                style={{ paddingTop: "5rem" }}
+                style={{ paddingTop: "3rem" }}
               >
                 <div className="container">
-                  <p className="Benefits ">Benefits of Offshore Staffing</p>
+                  <p className="Benefits ">Benefits of Payroll Services</p>
                   <div className="null">
                     <img
                       src="assets/images/uper-unterline.svg"
@@ -620,28 +593,8 @@ Finalization</p>
                       </div>
                     </div>
                     <div className="col-lg-11 col-md-11 col-sm-11">
-                      <p className="second-p-tag notview">Business growth</p>
-                    </div>
-                  </div>
-                  <div className="row">
-                    <div className="col-lg-1 col-sm-1 col-md-1">
-                      <div className="">
-                        <img src="assets/images/right-icons.svg"></img>
-                      </div>
-                    </div>
-                    <div className="col-lg-11 col-md-11 col-sm-11">
-                      <p className="second-p-tag notview">Reduced costs</p>
-                    </div>
-                  </div>
-                  <div className="row">
-                    <div className="col-lg-1 col-sm-1 col-md-1">
-                      <div className="">
-                        <img src="assets/images/right-icons.svg"></img>
-                      </div>
-                    </div>
-                    <div className="col-lg-11 col-md-11 col-sm-11">
                       <p className="second-p-tag notview">
-                        Access to skilled resources
+                        Contract staffing services are cost-effective
                       </p>
                     </div>
                   </div>
@@ -653,7 +606,8 @@ Finalization</p>
                     </div>
                     <div className="col-lg-11 col-md-11 col-sm-11">
                       <p className="second-p-tag notview">
-                        Time zone advantage
+                        Contract staffing services limit the Business Liability
+                        and Risk
                       </p>
                     </div>
                   </div>
@@ -665,20 +619,8 @@ Finalization</p>
                     </div>
                     <div className="col-lg-11 col-md-11 col-sm-11">
                       <p className="second-p-tag notview">
-                        Control from miles away
-                      </p>
-                      <p className="small-screen"> </p>
-                    </div>
-                  </div>
-                  <div className="row">
-                    <div className="col-lg-1 col-sm-1 col-md-1">
-                      <div className="">
-                        <img src="assets/images/right-icons.svg"></img>
-                      </div>
-                    </div>
-                    <div className="col-lg-11 col-md-11 col-sm-11">
-                      <p className="second-p-tag notview">
-                        Greater marketing opportunity
+                        Contract staffing services limit the Business Liability
+                        and Risk
                       </p>
                     </div>
                   </div>
@@ -690,8 +632,19 @@ Finalization</p>
                     </div>
                     <div className="col-lg-11 col-md-11 col-sm-11">
                       <p className="second-p-tag notview">
-                        {" "}
-                        Availability in different locations
+                        Access to a larger talent pool
+                      </p>
+                    </div>
+                  </div>
+                  <div className="row">
+                    <div className="col-lg-1 col-sm-1 col-md-1">
+                      <div className="">
+                        <img src="assets/images/right-icons.svg"></img>
+                      </div>
+                    </div>
+                    <div className="col-lg-11 col-md-11 col-sm-11">
+                      <p className="second-p-tag notview">
+                        Access to specialized skills
                       </p>
                       <p className="small-screen"> </p>
                     </div>
@@ -704,8 +657,34 @@ Finalization</p>
                     </div>
                     <div className="col-lg-11 col-md-11 col-sm-11">
                       <p className="second-p-tag notview">
+                        Take some responsibility off the HR department
+                      </p>
+                    </div>
+                  </div>
+                  <div className="row">
+                    <div className="col-lg-1 col-sm-1 col-md-1">
+                      <div className="">
+                        <img src="assets/images/right-icons.svg"></img>
+                      </div>
+                    </div>
+                    <div className="col-lg-11 col-md-11 col-sm-11">
+                      <p className="second-p-tag notview">
                         {" "}
-                        Opportunity to focus on complex tasks
+                        Escaping the ACA requirementss
+                      </p>
+                      <p className="small-screen"> </p>
+                    </div>
+                  </div>
+                  <div className="row">
+                    <div className="col-lg-1 col-sm-1 col-md-1">
+                      <div className="">
+                        <img src="assets/images/right-icons.svg"></img>
+                      </div>
+                    </div>
+                    <div className="col-lg-11 col-md-11 col-sm-11">
+                      <p className="second-p-tag notview">
+                        {" "}
+                        Prevent laying off employees
                       </p>
                       <p className="small-screen"> </p>
                     </div>
@@ -714,9 +693,7 @@ Finalization</p>
               </div>
               <div className="col-lg-6 col-md-6 col-sm-12 not-show ">
                 <div className="container">
-                  <p className="Benefits ms-5 ">
-                    Benefits of Contract Staffing
-                  </p>
+                  <p className="Benefits ms-5 ">Benefits of Payroll Services</p>
                   <div className="null">
                     <img
                       src="assets/images/uper-unterline.svg"
@@ -727,43 +704,46 @@ Finalization</p>
                   <span>
                     <img src="assets/images/right-icons.svg"></img>
                   </span>
-                  <span>Business growth</span>
-                  
+                  <span>Contract staffing services are cost-effective</span>
+                  <p></p>
                   <br></br>
                   <span>
                     <img src="assets/images/right-icons.svg"></img>
                   </span>
-                  <span>Reduced costs</span>
-                  <br></br> 
+                  <span>
+                    Contract staffing services limit the Business Liability and
+                    Risk
+                  </span>
+                  <br></br> <br></br>
                   <span>
                     <img src="assets/images/right-icons.svg"></img>
                   </span>
-                  <span>Access to skilled resources</span>
-                  <br></br> 
+                  <span>Access to a larger talent pool</span>
+                  <br></br> <br></br>
                   <span>
                     <img src="assets/images/right-icons.svg"></img>
                   </span>
-                  <span>Time zone advantage</span>
-                  <br></br> 
+                  <span>Access to specialized skills</span>
+                  <br></br> <br></br>
                   <span>
                     <img src="assets/images/right-icons.svg"></img>
                   </span>
-                  <span>Control from miles away</span>
-                  <br></br> 
+                  <span>Access to a larger talent pool</span>
+                  <br></br> <br></br>
                   <span>
                     <img src="assets/images/right-icons.svg"></img>
                   </span>
-                  <span>Greater marketing opportunity</span>
+                  <span>Fulfill short term business needs</span>
                   <br></br>
                   <span>
                     <img src="assets/images/right-icons.svg"></img>
                   </span>
-                  <span>Availability in different locations</span>
+                  <span>Take some responsibility off the HR department</span>
                   <br></br>
                   <span>
                     <img src="assets/images/right-icons.svg"></img>
                   </span>
-                  <span>Opportunity to focus on complex tasks</span>
+                  <span>Prevent laying off employees</span>
                   <br></br>
                 </div>
               </div>
@@ -777,4 +757,4 @@ Finalization</p>
   );
 };
 
-export default OffshoreRecruitment;
+export default PayrollServices;

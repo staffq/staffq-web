@@ -16,13 +16,13 @@ const config = {
   
     development: {
       webUrl: "",
-      apiUrl: "",
+      apiUrl: "https://2lx73wz4k5.execute-api.ap-southeast-1.amazonaws.com/dev/",
       bucketName: "",
     },
    local: {
       webUrl: "http://localhost:4000/",
       apiUrl: "http://localhost:4052/dev/",
-      bucketName: "",
+      bucketName: "http://staffq-dev-bucket.s3.amazonaws.com/",
     },
   };
   

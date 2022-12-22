@@ -1,6 +1,9 @@
 import React from "react";
 
 // import { useState } from "react";
+// import package *********************** //
+import Link from "next/link";
+// import style...............................//
 
 import {
   H1,
@@ -18,7 +21,7 @@ import {
 // import "./HoverableComponent.css";
 // import Input from "../FormControls/Input";
 import { BsArrowRight } from "react-icons/bs";
-import Link from "next/link";
+
 const Index = () => {
   return (
     <div>
@@ -64,6 +67,19 @@ const Index = () => {
               </div>
             </div>
           </div>
+{/* <div className="header">
+
+          <div className="wrapper">
+            <div className="statice-txt">
+            Build your Digital Dream with us. iam a</div>
+            <ul className="dynamic-txts">
+              <li><span>youtube</span></li>
+              <li><span>visibvle</span></li>
+              <li><span>ant</span></li>
+              <li><span>not show</span></li>
+            </ul>
+          </div>
+</div> */}
         </BannerPage>
 
         <Medium>

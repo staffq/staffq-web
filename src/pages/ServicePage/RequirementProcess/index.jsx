@@ -1,13 +1,58 @@
 import React from "react";
 import Head from "next/head";
+import { useFormik } from "formik";
+import * as yup from "yup";
+import styled from "styled-components";
+import StillNotSure from "../../ServicePage/StilNotSure"
+import { Worked, Header, Image, SmallHeader } from "../../../styles/rpo";
+export const ErrorText = styled.div`
+  color: red;
 
-import { Worked, Header, Image, SmallHeader } from "../../styles/workstyle";
-import StillNotSure from "../StilNotSure";
-const PeramanentDeployment = () => {
+  font-size: 10px;
+
+  padding-bottom: 5px;
+
+  font-weight: 600;
+`;
+const RequirementProcess = () => {
+  const formik = useFormik({
+    initialValues: {
+      firstName: "",
+      lastName: "",
+      email: "",
+      // experience: "",
+      // linkedin: "",
+      // number: "",
+      // location: "",
+      // files: "",
+      ln: "",
+      // fn: "",
+    },
+    validationSchema: yup.object({
+      firstName: yup
+        .string()
+        // .max(15, "Must be 15 characters or less")
+        .required("Required *"),
+      lastName: yup.string().required("Required *"),
+      email: yup.string().email("Invalid email address").required("Required*"),
+      number: yup.string().max(10, "").required("Required*"),
+      experience: yup.string().required("Required*"),
+      linkedin: yup.string().required("Required*"),
+      files: yup.mixed().required("Required*"),
+      ln: yup.mixed().required("Required*"),
+      fn: yup.mixed().required("Required*"),
+      location: yup.mixed().required("Required*"),
+    }),
+    onSubmit: (values) => {
+      console.log(values, "heloooooooo");
+      setPopup(true);
+      // formik.handleReset();
+    },
+  });
   return (
-    <>
+    <div>
       <Head>
-        <title>Permanent Recruitment </title>
+        <title>recruitment process outsourcing </title>
         <meta
           property="og:image"
           content="https://www.applogiq.org/assets/images/metaimg.png"
@@ -26,19 +71,19 @@ const PeramanentDeployment = () => {
         />
         <meta
           name="title"
-          content="StaffQ is a leading permanent staffing service and solution 
-          provider in India, we place the required candidates to the industries filtering their skills"
+          content="Looking for an effective and holistic RPO solution? We offer 
+        end-to-end talent supply chain optimisation through a diagnosis-led approach"
         />
         <meta
           name="description"
-          content="StaffQ is a leading permanent staffing service and solution provider
-           in India, we place the required candidates to the industries filtering their skills"
+          content="Looking for an effective and holistic RPO solution? We offer
+         end-to-end talent supply chain optimisation through a diagnosis-led approach"
         />
-        <meta name="keywords" content="Permanent Recruitment  " />
+        <meta name="keywords" content="recruitment process outsourcing   " />
 
         <link
           rel="canonical"
-          href="https://www.staffq.in/permanent-requirement"
+          href="https://www.staffq.in/requirement-process"
         />
 
         <link rel="alternate" href="https://www.staffq.in/" hreflang="en-in" />
@@ -47,13 +92,13 @@ const PeramanentDeployment = () => {
         <meta property="og:type" content="website" />
         <meta
           property="og:title"
-          content="StaffQ is a leading permanent staffing service and
-        solution provider in India, we place the required candidates to the industries filtering their skills"
+          content="Looking for an effective and holistic RPO solution?
+         We offer end-to-end talent supply chain optimisation through a diagnosis-led approach"
         />
         <meta
           property="og:description"
-          content="StaffQ is a leading permanent staffing service and solution 
-          provider in India, we place the required candidates to the industries filtering their skills."
+          content="Looking for an effective and holistic RPO solution? We offer 
+        end-to-end talent supply chain optimisation through a diagnosis-led approach"
         />
         <meta
           property="og:image"
@@ -64,71 +109,9 @@ const PeramanentDeployment = () => {
         <meta name="twitter:card" content="summary_large_image" />
         <meta charSet="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-
-        {/* <script
-          type="application/ld+json"
-          dangerouslySetInnerHTML={{
-            __html: `{
-              "@context": "https://schema.org",
-              "@type": "LocalBusiness",
-              "name": "AppLogiQ",
-              "image": "https://www.applogiq.org/assets/images/logo.gif",
-              "@id": "",
-              "url": "https://applogiq.org/",
-              "telephone": "9629938033",
-              "priceRange": "$$$$$",
-              "address": {
-                "@type": "PostalAddress",
-                "streetAddress": "Floor-3,Sathyam Towers,6D Bharathi Street,Valipalayam.",
-                "addressLocality": "Tiruppur",
-                "postalCode": "641 601",
-                "addressCountry": "IN"
-              },
-              "geo": {
-                "@type": "GeoCoordinates",
-                "latitude": 11.10601020,
-                "longitude": 77.34961810
-              },
-              "openingHoursSpecification": {
-                "@type": "OpeningHoursSpecification",
-                "dayOfWeek": [
-                  "Monday",
-                  "Tuesday",
-                  "Wednesday",
-                  "Thursday",
-                  "Friday"
-                ],
-                "opens": "09:00",
-                "closes": "19:00"
-              },
-              "sameAs": [
-                "https://www.linkedin.com/company/applogiq/",
-                "https://www.facebook.com/Applogiq",
-                "https://www.instagram.com/applogiq/"
-              ] 
-            }`
-          }}
-          />
-          
-          <script type="application/ld+json"
-          dangerouslySetInnerHTML={{
-            __html: `{
-              "@context": "https://schema.org",
-              "@type": "Organization",
-              "name": "Applogiq",
-              "alternateName": "software company",
-              "url": "https://www.applogiq.org/",
-              "logo": "https://www.applogiq.org/assets/images/logo.gif",
-              "sameAs": [
-                "https://www.facebook.com/Applogiq",
-                "https://www.linkedin.com/company/applogiq/"
-              ]
-            }`
-          }}
-        /> */}
       </Head>
+
       <Worked>
-        {/* ........................................header............section................. */}
         <Header>
           <div lassName="header">
             <div className="container-fluid">
@@ -142,14 +125,25 @@ const PeramanentDeployment = () => {
                       alt="img"
                     />
                     <div className="ball-one-page">
-                      <h1>Permanent Recruitment</h1>
-                      <p>
-                        The chances of getting a better candidate are higher
-                        with permanent staffing services. Our expertise lies in
-                        being creative, designing <br></br>effective strategies,
-                        and delivering solutions that work. We help
-                        organizations hire expert full-time talent across all
-                        levels in IT and <br></br>Non-IT skills.
+                      <span className="header-h-one">
+                        Recruitment Process<br></br> Outsourcing
+                      </span>
+                      {/* <br></br>
+                      <span className="header-h-one"></span> */}{" "}
+                      <p className="first-p-tag">
+                        Our recruitment process outsourcing (RPO) is all about
+                        finding the right people to realize your organization's
+                        full potential. Our approach is simple — we listen,
+                        understand your needs and build a talent acquisition
+                        model that can adapt and evolve with your business
+                      </p>
+                      <p className="second-p-tag">
+                        Our recruitment process outsourcing (RPO) is all about
+                        finding the right people to realize your organization's
+                        <br></br>
+                        full potential. Our approach is simple — we listen,
+                        understand your needs and build a talent acquisition
+                        model that can adapt and evolve with your business
                       </p>
                     </div>
                   </div>
@@ -157,10 +151,10 @@ const PeramanentDeployment = () => {
                     <div>
                       <div className="image-section">
                         <div className="row">
-                          <div className="col-lg-3"></div>
-                          <div className="col-lg-9">
+                          <div className="col-lg-2"></div>
+                          <div className="col-lg-10">
                             <img
-                              src="assets/images/Banner-para-Image.png"
+                              src="assets/images/require-img.png"
                               width="100%"
                               className="banner-image"
                               alt="img"
@@ -188,19 +182,19 @@ const PeramanentDeployment = () => {
                   />
                 </div>
                 <div className="ball-sm-page">
-                  <p className="h2">Permanent Recruitment</p>
+                  <h2>Recruitment Process Outsourcing</h2>
                   <p>
-                    The chances of getting a better candidate are higher with
-                    permanent staffing services. Our expertise lies in being
-                    creative, designing effective strategies, and delivering
-                    solutions that work. We help organizations hire expert
-                    full-time talent across all levels in IT and Non-IT skills.
+                    Our recruitment process outsourcing (RPO) is all about
+                    finding the right people to realize your organization's full
+                    potential. Our approach is simple — we listen, understand
+                    your needs and build a talent acquisition model that can
+                    adapt and evolve with your business
                   </p>
                 </div>
 
                 <div>
                   <img
-                    src="assets/images/Banner-para-Image.png"
+                    src="assets/images/require-img.png"
                     className="banner-image"
                     alt="img"
                     width="100%"
@@ -210,19 +204,17 @@ const PeramanentDeployment = () => {
             </SmallHeader>
           </div>
         </div>
-
-        {/* ................................next section................................ */}
-
+        {/* ...........................next.................. */}
         <div className="hiring-tag" style={{}}>
           <section className="container">
             <div className="row">
               <div className="col-lg-6 col-md-12 col-sm-12">
                 <h2 className=" Hiring-qualified">
-                  Hiring qualified people that will positively impact a
-                  company's success over time.
+                  We help companies to source, screen and communicate with
+                  candidates
                 </h2>
                 <img
-                  src="assets/images/Mission-vision-image.png"
+                  src="assets/images/require-head.png"
                   width="100%"
                   className="second-code"
                 ></img>
@@ -243,15 +235,11 @@ const PeramanentDeployment = () => {
                         <h4 className="whats-happening ">What’s happening?</h4>
                       </div>
                       <p className="solution-p-tag">
-                        It is a matter of great concern today that many
-                        establishments are finding it increasingly difficult to
-                        find the right candidate for a specific project or task.
-                        As a result, their HR departments are compelled to
-                        manage with the candidates that are somewhat suitable
-                        and available. But in the long run, this kind of
-                        adjustment plays havoc with the team performance and
-                        projects suffer as a consequence. Deadlines are not met
-                        and the work done may be shoddy and incomplete.
+                        StaffQ is a market leader in delivering the most
+                        competitive and balanced recruitment process outsourcing
+                        for organizations globally. There are so many
+                        recruitment outsourcing companies in the market, but you
+                        need to select the best one.
                       </p>
                     </div>
                   </div>
@@ -268,11 +256,13 @@ const PeramanentDeployment = () => {
                           <h4 className="whats-happening ">Situation</h4>
                         </div>
                         <p className="solution-p-tag">
-                          By the time they fire such employees after realizing
-                          that it was an unwise decision to recruit them, it is
-                          too late. They have to stare at heavy losses and
-                          further orders are affected. What to do in this
-                          situation?
+                          StaffQ is one of the best RPO agencies which allows
+                          companies to obtain a world-class recruitment task.
+                          Our RPO team works within your human resource
+                          management structure. An all-inclusive HR solution can
+                          manage the complete recruitment cycle for your
+                          professional-scale staff, or you can selectively use
+                          our expertise wherever you need it most
                         </p>
                       </div>
                     </div>
@@ -282,20 +272,10 @@ const PeramanentDeployment = () => {
             </div>
           </section>
         </div>
-
-        {/* ............................................next------section............................. */}
-
+        {/* ..................next-----section.... */}
         <div>
           <section className="Hiring-Process container-fluid">
-            {/* <div className="container pt-4 text-center">
-            <p className="so-what" style={{ fontWeight: "600" }}>
-              So what should have been the correct move in the first place?
-            </p>
-            <p style={{ fontSize: "15px" }}>
-              These companies should have approached good agencies that provide
-              permanent staffing solutions.
-            </p>
-          </div> */}
+         
             <div className="container">
               <div className="row About">
                 <div className="col-lg-6 col-md-12 col-sm-12">
@@ -312,25 +292,29 @@ const PeramanentDeployment = () => {
                             Solution
                           </h2>
                         </div>
-                        <p className="solution-p-tag">
-                          StaffQ Consultancy Pvt. ltd . is one such
-                          fastest-growing provider of Permanent Staffing
-                          Services. It caters to reputed IT and non-IT
-                          companies, establishments and firms all over India.
-                          StaffQ assists you in selecting the most suitable
-                          candidates in any field on a permanent basis. With a
-                          dedicated belief of total commitment to the companies
-                          for whom StaffQ provides permanent staffing services,
-                          it delivers value for money by careful screening of
-                          individual profiles. Our database for permanent
-                          staffing services includes serious candidates that
-                          possess the requisite experience and exposure to do
-                          complete justice to the nature of duties assigned.
-                          Hence if you need permanent staff for your company,
-                          rest assured, Team Plus will fulfill your HR needs and
-                          you can enjoy a relaxed and stress-free staffing
-                          procedure.
-                        </p>
+
+                        <li className="solution-p-tag">
+                          It fragmented the work and task to be distributed
+                          among different expertise helping the employer company
+                          to concentrate on its core capabilities
+                        </li>
+                        <li className="solution-p-tag">
+                          in StaffQ RPO services offer an expertise, service by
+                          choosing the right personnel at the right place. Our
+                          RPO team helps the employer for not only sourcing the
+                          talented employees, but also they put the right person
+                          in the right place.
+                        </li>
+                        <li className="solution-p-tag">
+                          {" "}
+                          An organization that launches a new product or
+                          acquires a new division, it requires to add hundreds
+                          of employees on an impossible schedule. Lift up and
+                          deploying an in-house HR team may be impossible in the
+                          time available. StaffQ provides RPO as a
+                          cost-effective solution - which then comes down
+                          smoothly when the project is complete
+                        </li>
                       </div>
                     </div>
                   </div>
@@ -338,7 +322,7 @@ const PeramanentDeployment = () => {
                 <div className="col-lg-6 col-md-12 col-sm-12">
                   <div>
                     <img
-                      src="assets/images/Image.png"
+                      src="assets/images/rquire-body.png"
                       className="hand-img "
                       width="100%"
                       alt="img"
@@ -351,8 +335,7 @@ const PeramanentDeployment = () => {
             </div>
           </section>
         </div>
-
-        {/* ................................................next.....................content........... */}
+        {/* ....... */}
         <div className="container">
           <div className="text-center mt-5">
             <p className="hiring-process">Hiring Process</p>
@@ -363,8 +346,7 @@ const PeramanentDeployment = () => {
             </p>
           </div>
         </div>
-
-        {/* .......................................new section............... */}
+        {/* ....medium....... */}
 
         <div>
           <div className="medium-small-view">
@@ -384,7 +366,7 @@ const PeramanentDeployment = () => {
                     className="round-img"
                     alt="img"
                   />
-                  <p className="img-p-tag">Requirement Discussion</p>
+                  <p className="img-p-tag">Requirement Planning</p>
                 </div>
                 <div className="col-md-4 col-sm-12">
                   <img
@@ -392,7 +374,7 @@ const PeramanentDeployment = () => {
                     className="round-img"
                     alt="img"
                   />
-                  <p className="img-p-tag">Contract Signing</p>
+                  <p className="img-p-tag">Plan Derivation</p>
                 </div>
               </div>
 
@@ -403,7 +385,7 @@ const PeramanentDeployment = () => {
                     className="round-img"
                     alt="img"
                   />
-                  <p className="img-p-tag">Panel Interview</p>
+                  <p className="img-p-tag">Choice Of Actions</p>
                 </div>
                 <div className="col-md-4 col-sm-12">
                   <img
@@ -411,7 +393,7 @@ const PeramanentDeployment = () => {
                     className="round-img"
                     alt="img"
                   />
-                  <p className="img-p-tag"> Candidate Identification</p>
+                  <p className="img-p-tag"> Finalization Of Contract</p>
                 </div>
                 <div className="col-md-4 col-sm-12">
                   <img
@@ -419,15 +401,13 @@ const PeramanentDeployment = () => {
                     className="round-img"
                     alt="img"
                   />
-                  <p className="img-p-tag">Closure</p>
+                  <p className="img-p-tag">Implimentation</p>
                 </div>
               </div>
             </div>
           </div>
         </div>
-
-        {/* ..............................................images.................and row.............. */}
-
+        {/* .....next....... */}
         <Image>
           <div className="container">
             <div className="">
@@ -498,8 +478,8 @@ const PeramanentDeployment = () => {
                     </div>
                     <div className="col-lg-2">
                       <p>
-                        Contract <br></br>
-                        Signing
+                        Plan <br></br>
+                        Derivation
                       </p>
                     </div>
                     <div className="col-lg-2 second-imgaes-content">
@@ -512,13 +492,13 @@ const PeramanentDeployment = () => {
                           className="round-img"
                           alt="img"
                         />
-                        <p className="second-p"> Candidate Identification</p>
+                        <p className="second-p">Choice Of Actions</p>
                       </div>
                     </div>
                     <div className="col-lg-2">
                       <p>
-                        Panel<br></br>
-                        Interview
+                        Finalization <br></br>
+                        Of Contract
                       </p>
                     </div>
                     <div className="col-lg-2 second-imgaes-content">
@@ -531,7 +511,7 @@ const PeramanentDeployment = () => {
                           className="round-img"
                           alt="img"
                         />
-                        <p className="second-p">Closure</p>
+                        <p className="second-p">Implimentation</p>
                       </div>
                     </div>
                   </div>
@@ -540,35 +520,28 @@ const PeramanentDeployment = () => {
             </div>
           </div>
         </Image>
-
-        <div>
-          <div className="small-image-section"></div>
-        </div>
-
-        {/* ............................................next......section,,,,,,,,,,,,,, */}
-
-        {/* .......................................................... */}
+        {/* ........................next.................... */}
         <div>
           <section>
             <div className="container-fluid ps-0">
               <div className="row ">
                 <div className="col-lg-6 col-sm-12 col-md-12 benefit-image">
                   <img
-                    src="assets/images/Mission-.png"
+                    src="assets/images/require-footer.png"
                     className="mission"
                   ></img>
                 </div>
                 <div
-                  className="col-lg-6 col-sm-12 col-md-12 big-screen container "
-                  style={{ paddingTop: "1rem" }}
+                  className="col-lg-4 col-sm-12 col-md-12 big-screen "
+                  style={{ paddingTop: "3rem" }}
                 >
                   <div className="container">
-                    <p className="Benefits ">Benefits of Permanent Hiring</p>
+                    <p className="Benefits ">Benefits of RPO</p>
                     <div className="null">
                       <img
                         src="assets/images/uper-unterline.svg"
                         width="100%"
-                        className="uper-under-line"
+                        className="uper-under-one"
                       />
                     </div>
 
@@ -580,13 +553,9 @@ const PeramanentDeployment = () => {
                       </div>
                       <div className="col-lg-11 col-md-11 col-sm-11">
                         <p className="second-p-tag notview">
-                          Excellent technical hiring skills and can easily
-                          identify potential <br></br>candidates
-                        </p>
-                        <p className="small-screen">
-                          {" "}
-                          Excellent technical hiring skills and can easily
-                          identify potential candidates
+                          Avoiding cost, improving ROI - a balanced recruitment
+                          supply chain removes unnecessary costs, optimising
+                          return on investment.
                         </p>
                       </div>
                     </div>
@@ -598,15 +567,10 @@ const PeramanentDeployment = () => {
                       </div>
                       <div className="col-lg-11 col-md-11 col-sm-11">
                         <p className="second-p-tag notview">
-                          We handle the entire employment process including{" "}
-                          resume- screening, <br></br> interview-conduction,
-                          background/ reference verification, etc.
-                        </p>
-                        <p className="small-screen">
-                          {" "}
-                          We handle the entire employment process including{" "}
-                          resume- screening, interview-conduction, background/
-                          reference verification, etc
+                          Best practice processes - implementation of Best in
+                          Class processes helps ensure the attraction and
+                          retention of the best talent in the market in the most
+                          effective and efficient manner
                         </p>
                       </div>
                     </div>
@@ -618,15 +582,10 @@ const PeramanentDeployment = () => {
                       </div>
                       <div className="col-lg-11 col-md-11 col-sm-11">
                         <p className="second-p-tag notview">
-                          We make the on-boarding procedure smooth for
-                          companies, by <br></br> providing the selected
-                          candidate’s entire documentation file
-                        </p>
-                        <p className="small-screen">
-                          {" "}
-                          We make the on-boarding procedure smooth for
-                          companies, by providing the selected candidate’s
-                          entire documentation file
+                          Greater focus on strategic issues - an outsourced
+                          service allows HR professionals and line managers to
+                          focus on strategic issues, by greatly reducing their
+                          administrative burden
                         </p>
                       </div>
                     </div>
@@ -638,76 +597,32 @@ const PeramanentDeployment = () => {
                       </div>
                       <div className="col-lg-11 col-md-11 col-sm-11">
                         <p className="second-p-tag notview">
-                          Follow-up of performance feedback of employees is
-                          given due<br></br> importance
-                        </p>
-                        <p className="small-screen">
-                          {" "}
-                          Follow-up of performance feedback of employees is
-                          given due importance
-                        </p>
-                      </div>
-                    </div>
-                    <div className="row">
-                      <div className="col-lg-1 col-sm-1 col-md-1">
-                        <div className="">
-                          <img src="assets/images/right-icons.svg"></img>
-                        </div>
-                      </div>
-                      <div className="col-lg-11 col-md-11 col-sm-11">
-                        <p className="second-p-tag notview">
-                          Follow-up of performance feedback of employees is
-                          given due <br></br>importance
-                        </p>
-                        <p className="small-screen">
-                          {" "}
-                          Follow-up of performance feedback of employees is
-                          given due importance
-                        </p>
-                      </div>
-                    </div>
-                    <div className="row">
-                      <div className="col-lg-1 col-sm-1 col-md-1">
-                        <div className="">
-                          <img src="assets/images/right-icons.svg"></img>
-                        </div>
-                      </div>
-                      <div className="col-lg-11 col-md-11 col-sm-11">
-                        <p className="second-p-tag notview">
-                          As candidates are qualified and reliable, there is a
-                          higher probability of retention <br></br> of such
-                          employees within the company and this is beneficialin
-                          the long run{" "}
-                        </p>
-                        <p className="small-screen">
-                          {" "}
-                          As candidates are qualified and reliable, there is a
-                          higher probability of retention of such employees
-                          within the company and this is beneficial in the long
-                          run{" "}
+                          Brand building - enhanced competitiveness through
+                          improved brand management and the delivery of greater
+                          brand awareness across key target recruitment groups.
                         </p>
                       </div>
                     </div>
                   </div>
                 </div>
+                <div className="col-lg-2"></div>
                 <div className="col-lg-6 col-md-6 col-sm-12 not-show ">
                   <div className="container">
-                    <p className="Benefits ms-5 ">
-                      Benefits of Permanent Hiring
-                    </p>
+                    <p className="Benefits ms-5 ">Benefits of RPO</p>
                     <div className="null">
                       <img
                         src="assets/images/uper-unterline.svg"
                         width="100%"
-                        className="uper-under-line"
+                        className="uper-under-one"
                       />
                     </div>
                     <span>
                       <img src="assets/images/right-icons.svg"></img>
                     </span>
                     <span>
-                      Excellent technical hiring skills and can easily identify
-                      potential candidates
+                      Avoiding cost, improving ROI - a balanced recruitment
+                      supply chain removes unnecessary costs, optimising return
+                      on investment.{" "}
                     </span>
                     <p></p>
                     <br></br>
@@ -715,58 +630,42 @@ const PeramanentDeployment = () => {
                       <img src="assets/images/right-icons.svg"></img>
                     </span>
                     <span>
-                      We handle the entire employment process including resume-
-                      screening, interview-conduction, background/ reference
-                      verification, etc.
+                      Best practice processes - implementation of Best in Class
+                      processes helps ensure the attraction and retention of the
+                      best talent in the market in the most effective and
+                      efficient manner
                     </span>
                     <br></br> <br></br>
                     <span>
                       <img src="assets/images/right-icons.svg"></img>
                     </span>
                     <span>
-                      We make the on-boarding procedure smooth for companies, by
-                      providing the selected candidate’s entire documentation
-                      file
+                      Greater focus on strategic issues - an outsourced service
+                      allows HR professionals and line managers to focus on
+                      strategic issues, by greatly reducing their administrative
+                      burden
                     </span>
                     <br></br> <br></br>
                     <span>
                       <img src="assets/images/right-icons.svg"></img>
                     </span>
                     <span>
-                      Follow-up of performance feedback of employees is given
-                      due importance
+                      Brand building - enhanced competitiveness through improved
+                      brand management and the delivery of greater brand
+                      awareness across key target recruitment groups.{" "}
                     </span>
                     <br></br> <br></br>
-                    <span>
-                      <img src="assets/images/right-icons.svg"></img>
-                    </span>
-                    <span>
-                      Follow-up of performance feedback of employees is given
-                      due importance
-                    </span>
-                    <br></br> <br></br>
-                    <span>
-                      <img src="assets/images/right-icons.svg"></img>
-                    </span>
-                    <span>
-                      As candidates are qualified and reliable, there is a
-                      higher probability of retention of such employees within
-                      the company and this is beneficial in the long run
-                    </span>
-                    <br></br>
                   </div>
                 </div>
               </div>
             </div>
           </section>
         </div>
-
-        {/* .........................form...................section.............................. */}
+        {/* .......form........ */}
         <StillNotSure />
       </Worked>
-      <div></div>
-    </>
+    </div>
   );
 };
 
-export default PeramanentDeployment;
+export default RequirementProcess;

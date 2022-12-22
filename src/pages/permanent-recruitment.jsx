@@ -1,5 +1,5 @@
 import React from "react";
-import PeramanentDeployment from "./PermanentDeployment";
+import PeramanentDeployment from "./ServicePage/PermanentDeployment";
 
 
 const index = () => {

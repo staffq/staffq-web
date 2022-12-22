@@ -1,5 +1,5 @@
 import React from 'react'
-import OnshoreRequriement from './Onshore'
+import OnshoreRequriement from './ServicePage/Onshore'
 
 const index = () => {
   return (

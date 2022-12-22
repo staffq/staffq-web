@@ -1,25 +1,25 @@
 import React from "react";
+// import redux file ......................
+import { useDispatch } from "react-redux";
+import { createContactData } from "../../../redux/actions/userAction.js";
+
+// import package *********************** //
 import Head from "next/head.js";
 
 import { useFormik } from "formik";
 import * as yup from "yup";
 
 import styled from "styled-components";
+// import component..............//
 
-
+import Input from "../../../components/FormControls/Input/index.jsx";
+// import style...............................//
 import {
   ContacttStyle,
   Form,
   Second,
   SmallContact,
-} from "../../styles/contact-style.js";
-
-import Input from "../../components/FormControls/Input/index.jsx";
-import { useDispatch} from "react-redux";
-import { createContactData } from "../../redux/actions/userAction.js";
-
-
-
+} from "../../../styles/contact-style.js";
 
 export const ErrorText = styled.div`
   color: red;
@@ -31,9 +31,9 @@ export const ErrorText = styled.div`
   font-weight: 600;
 `;
 const contact = () => {
-  const dispatch=useDispatch();
+  const dispatch = useDispatch();
   // const user = useSelector((state)=>state.user)
-// console.log(user,454);
+  // console.log(user,454);
   const formik = useFormik({
     initialValues: {
       name: "",
@@ -45,28 +45,27 @@ const contact = () => {
       state: "",
     },
     validationSchema: yup.object({
-      name: yup.string()
-        // .max(15, "Must be 15 characters or less")
+      name: yup
+        .string()
+
         .required("Required *"),
-      // lastName: yup.string().required("Required *"),
+
       email: yup.string().email("Invalid email address").required("Required*"),
-      phoneNumber: yup.string().max(10).required("Required*"),
+      phoneNumber: yup.string().min(10).max(10).required("Required*"),
       city: yup.string().required("Required*"),
-      // linkedin: yup.string().required("Required*"),
+
       country: yup.mixed().required("Required*"),
       yourRequirement: yup.mixed().required("Required*"),
       state: yup.mixed().required("Required*"),
-      // location: yup.mixed().required("Required*"),
     }),
     onSubmit: (values) => {
       console.log(values, "heloooooooo");
-      dispatch(createContactData(values))
-      
-     
+      dispatch(createContactData(values));
+
       formik.handleReset();
     },
   });
-console.log(formik.errors,555);
+  console.log(formik.errors, 555);
 
   return (
     <div>
@@ -236,7 +235,6 @@ console.log(formik.errors,555);
                     <input
                       width="100%"
                       placeholder="8835975108"
-                     
                       name="phoneNumber"
                       className="phone"
                       type="number"
@@ -264,9 +262,8 @@ console.log(formik.errors,555);
                       >
                         <option value="">Select</option>
                         <option value="Tamil Nadu">TamilNadu</option>
-                        <option value="Kerala">Kerala</option>  
-                        <option value="Gujarat">Gujarat</option>  
-                      
+                        <option value="Kerala">Kerala</option>
+                        <option value="Gujarat">Gujarat</option>
                       </select>{" "}
                       {formik.touched.state && formik.errors.state ? (
                         <ErrorText>{formik.errors.state}</ErrorText>
@@ -342,12 +339,17 @@ console.log(formik.errors,555);
                 <div className="col-lg-10 col-sm-12 col-sm-12">
                   <div className="form-group ">
                     <label for="exampleInputPassword1">Your Requirement*</label>
-                    <textarea type="textarea" className="form-control text" style={{resize:"none"}}
-                       onChange={formik.handleChange}
-                       name = "yourRequirement"
-                       onBlur={formik.handleBlur}
-                       value={formik.values.yourRequirement}/>
-                    {formik.touched.yourRequirement && formik.errors.yourRequirement ? (
+                    <textarea
+                      type="textarea"
+                      className="form-control text"
+                      style={{ resize: "none" }}
+                      onChange={formik.handleChange}
+                      name="yourRequirement"
+                      onBlur={formik.handleBlur}
+                      value={formik.values.yourRequirement}
+                    />
+                    {formik.touched.yourRequirement &&
+                    formik.errors.yourRequirement ? (
                       <ErrorText>{formik.errors.yourRequirement}</ErrorText>
                     ) : (
                       <ErrorText>&nbsp;</ErrorText>
@@ -358,16 +360,15 @@ console.log(formik.errors,555);
               </div>
             </div>
             <div className=" mt-5">
-              <button className="btn submit-btn " type="submit" onClick={formik.handleSubmit}>
+              <button
+                className="btn submit-btn "
+                type="submit"
+                onClick={formik.handleSubmit}
+              >
                 Submit
               </button>
             </div>
-
-       
           </Form>
-
-        
-       
 
           <div style={{}} className="pc-contact">
             <div className="container">
@@ -415,7 +416,7 @@ console.log(formik.errors,555);
                       <img src="assets/images/Email-icon.svg" alt="img" />
                     </div>
                     <div className="col-lg-11 col-md-11 col-sm-11  font">
-                    hello@staffq.in
+                      hello@staffq.in
                     </div>
                   </div>
                 </div>
@@ -459,7 +460,7 @@ console.log(formik.errors,555);
                       <img src="assets/images/Email-icon.svg" alt="img" />
                     </div>
                     <div className="col-lg-11 col-md-11 col-sm-11  font">
-                    hello@staffq.in
+                      hello@staffq.in
                     </div>
                   </div>
                 </div>
@@ -503,7 +504,7 @@ console.log(formik.errors,555);
                       <img src="assets/images/Email-icon.svg" alt="img" />
                     </div>
                     <div className="col-lg-11 col-md-11 col-sm-11  font">
-                    hello@staffq.in
+                      hello@staffq.in
                     </div>
                   </div>
                 </div>

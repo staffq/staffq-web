@@ -1,5 +1,5 @@
 import React from 'react'
-import RequirementProcess from './RequirementProcess'
+import RequirementProcess from './ServicePage/RequirementProcess'
 
 const index = () => {
   return (

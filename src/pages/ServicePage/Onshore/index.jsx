@@ -3,8 +3,8 @@ import Head from "next/head";
 import { useFormik } from "formik";
 import * as yup from "yup";
 import styled from "styled-components";
-import StillNotSure from "../StilNotSure";
-import { Worked, Header, Image, SmallHeader } from "../../styles/contract";
+import StillNotSure from "../../ServicePage/StilNotSure"
+import { Worked, Header, Image, SmallHeader } from "../../../styles/contract";
 export const ErrorText = styled.div`
   color: red;
 
