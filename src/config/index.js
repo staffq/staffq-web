@@ -26,7 +26,7 @@ const config = {
     },
   };
   
-  const environment = "local";
+  const environment = "development";
   
   const hostConfig = {
     WEB_URL: config[environment].webUrl,
