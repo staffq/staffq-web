@@ -16,7 +16,7 @@ const config = {
   
     development: {
       webUrl: "",
-      apiUrl: "https://2lx73wz4k5.execute-api.ap-southeast-1.amazonaws.com/dev/",
+      apiUrl: "https://2lwfx6mq2m.execute-api.ap-southeast-1.amazonaws.com/dev/",
       bucketName: "",
     },
    local: {
