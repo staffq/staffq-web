@@ -146,7 +146,7 @@ const Service = () => {
                           We take care of the Entire or part <br></br> of
                           recruitment activities...
                         </p>
-                        <Link href = "requirement-process">
+                        <Link href = "recruitment-process">
                         <span className="learnmore">
                           
                           Learn more{" "}
@@ -303,7 +303,7 @@ const Service = () => {
                     We take care of the Entire or part <br></br> of recruitment
                     activities...
                   </p>
-                  <Link href = "requirement-process">
+                  <Link href = "recruitment-process">
                   <span className="learnmore">
                     Learn more <BsArrowRight className="fs-3  LeftArrow " />
                     <div className="VectorImage">

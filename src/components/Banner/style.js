@@ -22,31 +22,31 @@ export const H1 = styled.h1`
 `;
 
 export const Button = styled.button`
- background-color:black;
-padding:.5em 1em;
-color:white;
-position:relative;
-overflow:hidden;
- &:hover{
-  width: 130px;
-  transition-delay: .5s;
-  transition:width .5s ease-in-out;
- }
-  &:after{
-    content:'►';
-  font-size:10px;
-  color:white;
-  position:absolute;
-  top: 1.5em;
+  background-color: black;
+  padding: 0.5em 1em;
+  color: white;
+  position: relative;
+  overflow: hidden;
+  &:hover {
+    width: 130px;
+    transition-delay: 0.5s;
+    transition: width 0.5s ease-in-out;
+  }
+  &:after {
+    content: "►";
+    font-size: 10px;
+    color: white;
+    position: absolute;
+    top: 1.5em;
     /* width: 239px; */
     left: 11em;
-  opacity:0;
-  transition:all .5s ease-in-out;
+    opacity: 0;
+    transition: all 0.5s ease-in-out;
   }
   &:hover:after {
-    right:1em;
-opacity:1;
-}
+    right: 1em;
+    opacity: 1;
+  }
   .hello {
     margin-left: 10px;
     display: none;
@@ -97,79 +97,79 @@ export const BannerText = styled.div`
   padding-left: 130px;
 
   button {
-  font-family: 'Raleway', sans-serif;
-  font-size: 15px;
-  line-height: 22.6px;
-  background-color: transparent;
-  padding: 16px 32px 16px 40px;
-  cursor: pointer;
-  font-size: 16px;
-line-height: 32px;
-background-color: white;
+    font-family: "Raleway", sans-serif;
+    font-size: 15px;
+    line-height: 22.6px;
+    background-color: transparent;
+    padding: 16px 32px 16px 40px;
+    cursor: pointer;
+    font-size: 16px;
+    line-height: 32px;
+    background-color: white;
 
-color:white;
-}
+    color: white;
+  }
 
-.btn-black {
-  background: #050C18;
-border-radius: 16px;
-margin-top: 2rem;
-}
+  .btn-black {
+    background: #050c18;
+    border-radius: 16px;
+    margin-top: 2rem;
+  }
 
-.btn-grey {
-  border: 4px solid #45423C;
-  color: #45423C;
-  background-color: white;
-}
+  .btn-grey {
+    border: 4px solid #45423c;
+    color: #45423c;
+    background-color: white;
+  }
 
-.arrow {
-  height: 2px;
-  width: 0px;
-  position: relative;
-  display: inline-block;
-  cursor: pointer;
-  background-color: white;
-  color: white;
-  margin-left: 1rem;
-  margin-right: 15px;
-  margin-bottom: 4px;
-  transition: all .4s ease;
-}
+  .arrow {
+    height: 2px;
+    width: 0px;
+    position: relative;
+    display: inline-block;
+    cursor: pointer;
+    background-color: white;
+    color: white;
+    margin-left: 1rem;
+    margin-right: 15px;
+    margin-bottom: 4px;
+    transition: all 0.4s ease;
+  }
 
-button:hover .arrow {
-  width: 35px;
-  margin-right: 5px;
-}
+  button:hover .arrow {
+    width: 35px;
+    margin-right: 5px;
+  }
 
-.arrow-black {
-  /* background: black; */
-}
+  .arrow-black {
+    /* background: black; */
+  }
 
-.arrow-grey {
-  background: white;
-}
+  .arrow-grey {
+    background: white;
+  }
 
-.arrow:before,
-.arrow:after {
-  content: "";
-  background: white;
-  position: absolute;
-  height: 2px;
-  width: 10px;
-  border-radius: 30%;
-}
+  .arrow:before,
+  .arrow:after {
+    content: "";
+    background: white;
+    position: absolute;
+    height: 2px;
+    width: 10px;
+    border-radius: 30%;
+  }
 
-.arrow:before {
-  right: -2px;
-  bottom: -3px;
-  transform: rotate(-45deg);
-}
+  .arrow:before {
+    right: -2px;
+    bottom: -3px;
+    transform: rotate(-45deg);
+  }
 
-.arrow:after {
-  right: -2px;
-  top: -3px;
-  transform: rotate(45deg);
-}
+  .arrow:after {
+    right: -2px;
+    top: -3px;
+    transform: rotate(45deg);
+  }
 
   @media (min-width: 250px) and (max-width: 768px) {
     width: 100%;
@@ -206,67 +206,6 @@ export const P = styled.p`
   }
 `;
 export const BannerPage = styled.div`
-
-.header{
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  min-height: 100vh;
-  background-color: red;
-}
-.wrapper{
-  display: flex;
-}
-.wrapper .statice-txt{
-  color: blue;
-  font-size: 60px;
-  font-weight: 400;
-}
-.wrapper .dynamic-txts{
-margin-left: 15px;
-height: 90px;
-line-height: 90px;
-overflow: hidden;
-
-}
-.dynamic-txts li{
-  color: yellow;
-  list-style: none;
-  font-size: 60px;
-  font-weight: 500;
-  position: relative;
-  top: 0;
-  animation: typing 5s steps(4) infinite;
-}
-@keyframes typing {
-  100%{
-  top: -360px;
-  }
-}
-.dynamic-txts li span{
-  position: relative;
-  margin: 5px 0;
-  line-height: 90px;
-}
-.dynamic-txts li span::after{
-  content: "";
-  position: absolute;
-  left: 0;
-  height: 100%;
-  width: 100%;
-  /* background-color: gray; */
-
-  animation: slide 1s steps(5)  infinite;
-}
-@keyframes slide {
-  40%,
-  60%{
- left: calc(100% +30px);
-  }
-  100%{
-    left: 0;
-  }
-}
 
 
   @media (min-width: 769px) and (max-width: 1024px) {
@@ -307,17 +246,16 @@ export const Smbanner = styled.div`
       font-weight: 500;
       font-size: 16px;
       line-height: 22px;
-     
 
       color: rgba(8, 20, 41, 0.6);
       margin-top: 30px;
     }
-    .h_one{
+    .h_one {
       font-weight: 600;
-    
-    font-size: 43px;
-    line-height: 56px;
-    color: #081429;
+
+      font-size: 43px;
+      line-height: 56px;
+      color: #081429;
     }
   }
   @media (min-width: 250px) and (max-width: 768px) {
@@ -326,18 +264,18 @@ export const Smbanner = styled.div`
       width: 100%;
       margin-top: 12px;
     }
-  .h_one {
+    .h_one {
       font-style: normal;
       font-weight: 700;
       font-size: 34px;
       line-height: 46px;
-      text-align: left; 
+      text-align: left;
       color: #081429;
     }
     p {
       font-weight: 500;
       font-size: 16px;
-      text-align: left;  
+      text-align: left;
       line-height: 22px;
 
       color: rgba(8, 20, 41, 0.6);
@@ -382,80 +320,79 @@ export const Medium = styled.div`
     border-radius: 16px;
   }
 
-
   button {
-  /* font-family: 'Raleway', sans-serif; */
-  font-size: 15px;
-  line-height: 22.6px;
-  background-color: transparent;
-  padding: 16px 32px 16px 40px;
-  cursor: pointer;
-  font-size: 16px;
-line-height: 32px;
-background-color: white;
+    /* font-family: 'Raleway', sans-serif; */
+    font-size: 15px;
+    line-height: 22.6px;
+    background-color: transparent;
+    padding: 16px 32px 16px 40px;
+    cursor: pointer;
+    font-size: 16px;
+    line-height: 32px;
+    background-color: white;
 
-color:white;
-}
+    color: white;
+  }
 
-.btn-black {
-  background: #050C18;
-border-radius: 16px;
-}
+  .btn-black {
+    background: #050c18;
+    border-radius: 16px;
+  }
 
-.btn-grey {
-  border: 4px solid #45423C;
-  color: #45423C;
-  background-color: white;
-}
+  .btn-grey {
+    border: 4px solid #45423c;
+    color: #45423c;
+    background-color: white;
+  }
 
-.arrow {
-  height: 2px;
-  width: 0px;
-  position: relative;
-  display: inline-block;
-  cursor: pointer;
-  background-color: white;
-  color: white;
-  margin-left: 1rem;
-  margin-right: 15px;
-  margin-bottom: 4px;
-  transition: all .4s ease;
-}
+  .arrow {
+    height: 2px;
+    width: 0px;
+    position: relative;
+    display: inline-block;
+    cursor: pointer;
+    background-color: white;
+    color: white;
+    margin-left: 1rem;
+    margin-right: 15px;
+    margin-bottom: 4px;
+    transition: all 0.4s ease;
+  }
 
-button:hover .arrow {
-  width: 35px;
-  margin-right: 5px;
-}
+  button:hover .arrow {
+    width: 35px;
+    margin-right: 5px;
+  }
 
-.arrow-black {
-  /* background: black; */
-}
+  .arrow-black {
+    /* background: black; */
+  }
 
-.arrow-grey {
-  background: white;
-}
+  .arrow-grey {
+    background: white;
+  }
 
-.arrow:before,
-.arrow:after {
-  content: "";
-  background: white;
-  position: absolute;
-  height: 2px;
-  width: 10px;
-  border-radius: 30%;
-}
+  .arrow:before,
+  .arrow:after {
+    content: "";
+    background: white;
+    position: absolute;
+    height: 2px;
+    width: 10px;
+    border-radius: 30%;
+  }
 
-.arrow:before {
-  right: -2px;
-  bottom: -3px;
-  transform: rotate(-45deg);
-}
+  .arrow:before {
+    right: -2px;
+    bottom: -3px;
+    transform: rotate(-45deg);
+  }
 
-.arrow:after {
-  right: -2px;
-  top: -3px;
-  transform: rotate(45deg);
-}
+  .arrow:after {
+    right: -2px;
+    top: -3px;
+    transform: rotate(45deg);
+  }
 
   .smText {
     padding-left: 132px;
@@ -477,17 +414,17 @@ button:hover .arrow {
     margin-top: 30px;
   }
   @media (min-width: 1025px) and (max-width: 1150px) {
- p{
-  font-size: 15px;
- }
- .smText {
-    padding-left: 112px;
-    margin-top: 5rem;
-  }
+    p {
+      font-size: 15px;
+    }
+    .smText {
+      padding-left: 112px;
+      margin-top: 5rem;
+    }
   }
   @media (min-width: 1025px) and (max-width: 1490px) {
     display: block;
-    .smimages{
+    .smimages {
       margin-top: -25px;
     }
   }

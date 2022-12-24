@@ -8,7 +8,7 @@ const _error = () => {
     <Div>
       <div className="container">
         <div className="row">
-          <div className="col-lg-6 col-md-6 col-sm-12 one">
+          <div className="col-lg-5 col-md-6 col-sm-12 one">
             <div className="first-one">
               <h1>ERROR 404 </h1>
               <p>PAGE NOT FOUND</p>
@@ -19,7 +19,7 @@ const _error = () => {
              
             </div>
           </div>
-          <div className="col-lg-6 col-md-6 col-sm-12 two">
+          <div className="col-lg-5 col-md-6 col-sm-12 two">
             <div>
               <img src="assets/images/error.png" alt="img" width="100%" />
             </div>
