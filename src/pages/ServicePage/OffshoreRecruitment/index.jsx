@@ -190,7 +190,7 @@ const OffshoreRecruitment = () => {
                     alt="img"
                   />
                   <div className="ball-one-page">
-                    <h1>Offshore Recruitmentt</h1>
+                    <h1>Offshore Recruitment</h1>
                     <p>
                       At staffq Search, we understand that companies who wish to
                       save money, time, and effort look for offshore IT staffing

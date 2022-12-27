@@ -35,9 +35,9 @@ const Index = () => {
                   and manage workforce.{" "}
                 </H1>
                 <P className="">
-                  StaffQ Consultancy is known for its IT and Non-IT recruiter’s{" "}
+                  StaffQ Consultancy is known for IT and Non-IT recruiters
                   <br></br>
-                  suppliers to all the recruitment companies various Domain.
+                  suppliers to all the recruitment companies in various Domains.
                 </P>
 
                 {/* <Button>
@@ -67,7 +67,7 @@ const Index = () => {
               </div>
             </div>
           </div>
-{/* <div className="header">
+          {/* <div className="header">
 
           <div className="wrapper">
             <div className="statice-txt">
@@ -91,9 +91,9 @@ const Index = () => {
                   We simplify the way to find and manage workforce.
                 </p>
                 <p className="">
-                  StaffQ Consultancy is known for its IT and Non-IT recruiter’s{" "}
-                  <br></br> suppliers to all the recruitment companies various
-                  Domain.
+                  StaffQ Consultancy is known for IT and Non-IT recruiters
+                  <br></br>
+                  suppliers to all the recruitment companies in various Domains.
                 </p>
                 <Link href="find-jobs">
                   <button class="btn-black">
@@ -122,9 +122,9 @@ const Index = () => {
                   We simplify the way <br></br>to find and manage workforce.
                 </p>
                 <p className="">
-                  StaffQ Consultancy is known for its IT and <br></br>Non-IT
-                  recruiter’s suppliers to all the <br></br>recruitment
-                  companies various Domain.
+                  StaffQ Consultancy is known for IT and Non-IT recruiters
+                  suppliers to all the <br></br>recruitment companies in various
+                  Domains.
                 </p>
                 <button className="btn btn-small">Find Your Job</button>
               </div>

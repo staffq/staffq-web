@@ -2,7 +2,7 @@ import React from "react";
 import Head from "next/head";
 
 import { Worked, Header, Image, SmallHeader } from "../../../styles/workstyle";
-import StillNotSure from "../../ServicePage/StilNotSure"
+import StillNotSure from "../../ServicePage/StilNotSure";
 const PeramanentDeployment = () => {
   return (
     <>
@@ -146,10 +146,10 @@ const PeramanentDeployment = () => {
                       <p>
                         The chances of getting a better candidate are higher
                         with permanent staffing services. Our expertise lies in
-                        being creative, designing <br></br>effective strategies,
-                        and delivering solutions that work. We help
-                        organizations hire expert full-time talent across all
-                        levels in IT and <br></br>Non-IT skills.
+                        being creative, designing<br></br> effective strategies,
+                        and delivering solutions that work. We help an
+                        organization to hire expert full-time talent across all
+                        levels of IT and <br></br>Non-IT skills. .
                       </p>
                     </div>
                   </div>
@@ -193,8 +193,8 @@ const PeramanentDeployment = () => {
                     The chances of getting a better candidate are higher with
                     permanent staffing services. Our expertise lies in being
                     creative, designing effective strategies, and delivering
-                    solutions that work. We help organizations hire expert
-                    full-time talent across all levels in IT and Non-IT skills.
+                    solutions that work. We help an organization to hire expert
+                    full-time talent across all levels of IT and Non-IT skills.
                   </p>
                 </div>
 
@@ -313,8 +313,8 @@ const PeramanentDeployment = () => {
                           </h2>
                         </div>
                         <p className="solution-p-tag">
-                          StaffQ Consultancy Pvt. ltd . is one such
-                          fastest-growing provider of Permanent Staffing
+                          StaffQ Consultancy Pvt. ltd . is one of the such
+                          fastest-growing providers of Permanent Staffing
                           Services. It caters to reputed IT and non-IT
                           companies, establishments and firms all over India.
                           StaffQ assists you in selecting the most suitable
@@ -359,7 +359,7 @@ const PeramanentDeployment = () => {
             <p>
               StaffQ focuses on hiring highly qualified and talented candidates{" "}
               <br></br>
-              that are willing to grow with your company over time.{" "}
+              that they are willing to grow with your company over time.{" "}
             </p>
           </div>
         </div>
@@ -676,7 +676,7 @@ const PeramanentDeployment = () => {
                         <p className="second-p-tag notview">
                           As candidates are qualified and reliable, there is a
                           higher probability of retention <br></br> of such
-                          employees within the company and this is beneficialin
+                          employees within the company and this is beneficial in
                           the long run{" "}
                         </p>
                         <p className="small-screen">

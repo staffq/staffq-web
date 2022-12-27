@@ -9,7 +9,7 @@ const Profile = () => {
           <div className="text-center mt-5">
             <h2>How It Works</h2>
             <p className="how-it-work-p-tag">
-              We seek to help a job seeker find a job, and find a qualified
+              We seek to help a job seekers to find a job, and find a qualified
               candidate <br></br> for an open position for a company.
             </p>
           </div>
@@ -377,7 +377,7 @@ const Profile = () => {
           <div className="text-center mt-5 sm-how-to">
             <p className="h-four">Services we offer</p>
             <p className="how-to-work-p-tag">
-              We seek to help a job seeker find a job, and find a qualified
+              We seek to help a job seekers to  find a job, and find a qualified
               candidate <br></br> for an open position for a company
             </p>
           </div>

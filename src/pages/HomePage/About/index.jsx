@@ -9,20 +9,25 @@ const About = () => {
       <AboutBg>
         <div className="container-fluid">
           <div className="About-section">
-            <h2 className="">Why People Choose StaffQ?</h2>
+            <h2 className="">Why do People Choose StaffQ?</h2>
             <p className="about-p-tag pt-2">
               {" "}
-              We have found that the best way to get them is with up front
-              research – of your company, competitors,<br></br> target market
-              and customer psychographics.
+              We have found that the best way to get them is with upfront
+              research – of your company, competitors, <br></br>target market,
+              and customer psychographics
             </p>
           </div>
           <div className="container">
             <div className="row mt-5">
               <div className="col-lg-5 col-md-12 col-sm-12 medium-one">
                 <div className="aboutImage">
-                  <img src="assets/images/about-img.webp" width="100%" alt="img" /><br></br>
-                  <br></br> 
+                  <img
+                    src="assets/images/about-img.webp"
+                    width="100%"
+                    alt="img"
+                  />
+                  <br></br>
+                  <br></br>
                 </div>
               </div>
               <div className="col-lg-7 col-md-12 col-sm-12 fs-5  medium-two">
@@ -33,24 +38,23 @@ const About = () => {
                     up in the year 2020. Since its inception in 2020, the
                     company is progressing under the guidance of a dynamic
                     leadership team with in-depth industry knowledge including
-                    legal, compliance, process, technology in the HR domain and
-                    backed by a dedicated team of professionals who have vast
-                    experience of working in various reputed industries. We at
-                    STAFFQ have achieved several milestones under the expert
-                    directions of Mr Manoj Kumar and Mr Soorya Narayanan
-                    Directors of the company. Their futuristic approach and
-                    strong analytical abilities enable us to cater to the needs
-                    of the clients, most efficiently. We have developed an
-                    expertise in providing a gamut of services to business
-                    organizations for their increasing demands.
+                    legal, compliance, process,and technology in the HR
+                    domain,and backed by a dedicated team of professionals who
+                    have vast experience in of working in various reputed
+                    industries. We at STAFFQ have achieved several milestones
+                    under the expert directions of Mr Manoj Kumar and Mr Soorya
+                    Narayanan Directors of the company. Their futuristic
+                    approach and strong analytical abilities enable us to cater
+                    to the needs of the clients, most efficiently. We have
+                    developed  expertise in providing a gamut of services to
+                    business organizations for their increasing demands.
                   </p>
-                  
+
                   <Link href="/about-us">
                     <button className="aboutbtn">
                       <span className="about">About Us</span>
                     </button>
                   </Link>
-               
                 </div>
               </div>
             </div>
@@ -61,11 +65,11 @@ const About = () => {
       <Medium>
         <div className="container-fluid">
           <div className="About-section">
-            <p className="h_two">Why People Choose StaffQ?</p>
+            <p className="h_two">Why do People Choose StaffQ?</p>
             <p>
               {" "}
-              We have found that the best way to get them is with up front
-              research – of your company, competitors,<br></br> target market
+              We have found that the best way to get them is with upfront
+              research – of your company, competitors, <br></br>target market,
               and customer psychographics
             </p>
           </div>
@@ -81,15 +85,15 @@ const About = () => {
                 in the year 2020. Since its inception in 2020, the company is
                 progressing under the guidance of a dynamic leadership team with
                 in-depth industry knowledge including legal, compliance,
-                process, technology in the HR domain and backed by a dedicated
-                team of professionals who have vast experience of working in
-                various reputed industries. We at STAFFQ have achieved several
-                milestones under the expert directions of Mr Manoj Kumar and Mr
-                Soorya Narayanan Directors of the company. Their futuristic
-                approach and strong analytical abilities enable us to cater to
-                the needs of the clients, most efficiently. We have developed an
-                expertise in providing a gamut of services to business
-                organizations for their increasing demands.
+                process,and technology in the HR domain,and backed by a
+                dedicated team of professionals who have vast experience in of
+                working in various reputed industries. We at STAFFQ have
+                achieved several milestones under the expert directions of Mr
+                Manoj Kumar and Mr Soorya Narayanan Directors of the company.
+                Their futuristic approach and strong analytical abilities enable
+                us to cater to the needs of the clients, most efficiently. We
+                have developed  expertise in providing a gamut of services to
+                business organizations for their increasing demands.
               </p>
               <Link href="/about-us">
                 <button className="aboutbtn">

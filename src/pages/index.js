@@ -77,10 +77,11 @@ const index = () => {
         <meta name="twitter:card" content="summary_large_image" />
         <meta charSet="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        {/* <div>
-        <script type="application/ld+json">
-{
-  "@context": "http://schema.org/",
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: `{
+            "@context": "http://schema.org/",
   "@type": "Organization",
   "name": "StaffQ",
   "alternateName": "staffing company",
@@ -105,10 +106,9 @@ const index = () => {
   "https://www.instagram.com/staffq_consulting/",
   "https://www.facebook.com/people/StaffQ/100088556320332/"
   ]
-}
-</script>
-
-        </div> */}
+        }`,
+          }}
+        />
       </Head>
       <Banner />
       <HomePage />
