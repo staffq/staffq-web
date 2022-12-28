@@ -10,7 +10,10 @@
   },
   "dependencies": {
     "aos": "^2.3.4",
+    "aws-sdk": "^2.1282.0",
     "bootstrap": "^5.0.0",
+    "buffer": "^6.0.3",
+    "env-cmd": "^10.1.0",
     "formik": "^2.2.9",
     "next": "12.2.0",
     "nprogress": "^0.2.0",

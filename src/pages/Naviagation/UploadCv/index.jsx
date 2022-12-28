@@ -13,8 +13,12 @@ import styled from "styled-components";
 import Input from "../../../components/FormControls/Input";
 // import style...............
 import { Div, Form } from "../../../styles/upload-cs";
-import  { useState } from "react";
+import { useState } from "react";
 // import { FileUploader } from "react-drag-drop-files";
+
+import { uploadPdfToS3 } from "../../../utils/files";
+import { convertBase64 } from "../../../utils/common";
+import { FileUploader } from "react-drag-drop-files";
 
 // const fileTypes = ["JPG", "PNG", "GIF"];
 
@@ -30,11 +34,11 @@ export const ErrorText = styled.div`
 
 const UploadCV = () => {
   const [file, setFile] = useState(null);
-  const handleChange = (file) => {
-    setFile(file);
-  };
+  const [UploadPdf, setUploadPdf] = useState("");
+  const [textMsg, setTxtMsg] = useState("");
   const dispatch = useDispatch();
   const [popup, setPopup] = React.useState(null);
+  const fileTypes = ["PDF"];
 
   const formik = useFormik({
     initialValues: {
@@ -56,7 +60,9 @@ const UploadCV = () => {
       mobileNumber: Yup.string().min(10).max(10).required("Required*"),
       experience: Yup.string().required("Required*"),
       link: Yup.string().required("Required*").url(),
-      files: Yup.mixed().required("Required*"),
+      files: Yup.mixed()
+        .required("Required*")
+        .test(1000, "Uploaded file is too big.", () => textMsg < 250000),
       location: Yup.mixed().required("Required*"),
     }),
     onSubmit: (values) => {
@@ -72,6 +78,45 @@ const UploadCV = () => {
       formik.handleReset();
     },
   });
+
+  const handleChange = (file) => {
+    setFile(file);
+  };
+
+  const handlePdf = (e) => {
+    const value = e.target.files[0];
+    setTxtMsg(value.size);
+    const fileData = value;
+    convertBase64(value).then((res) => {
+      console.log(res, "res");
+      fileData.base64Data = res;
+      fileData.s3Upload = res.replace(/^data:application\/\w+;base64,/, "");
+    });
+    // if (value?.size < 68000) {
+    //   formik.setFieldValue("files", fileData);
+    //   // setUploadError(false);
+    //   // formik.setFieldValue("files", fileData);
+    // }
+    //  else {
+    //   setUploadError(true);
+    // }
+    setUploadPdf(fileData);
+    return e.target.files[0]?.size;
+  };
+  const handleUpload = () => {
+    console.log(UploadPdf.base64Data, "UploadPdf");
+    uploadPdfToS3(
+      UploadPdf.base64Data,
+      Date.now(),
+      "Interested-candidates-resume"
+    ).then((res) => {
+      console.log(res, "wwwww");
+      if (res) {
+        console.log("Thank you for submtting");
+      }
+    });
+  };
+
   return (
     <Div>
       <Head>
@@ -377,44 +422,59 @@ const UploadCV = () => {
                     <div className="input-group mb-3 ">
                       <input
                         type="file"
-                        className="form-control  "
-                        aria-label="Recipient's username"
-                        aria-describedby="basic-addon2"
+                        // className="form-control  "
+                        // aria-label="Recipient's username"
+                        // aria-describedby="basic-addon2"
                         width="100%"
-                        name="files"
+                        name="file"
+                        types={fileTypes}
                         onChange={(e) => {
-                          formik.handleChange;
                           formik.setFieldValue("files", e.target.value);
+                          handlePdf(e);
+                          // handleChange(e.target.files);
                         }}
                         onBlur={formik.handleBlur}
-                        // value={formik.values.file}
+                        value={formik.values.files}
                       />
+                      {/* <FileUploader
+                        multiple={true}
+                        handleChange={handleChange}
+                        name="file"
+                        types={fileTypes}
+                      /> */}
 
                       <div className="input-group-append">
                         <span
                           className="input-group-text bg-dark text-light"
                           id="basic-addon2"
+                          onClick={() => handleUpload()}
                         >
                           Upload
                         </span>
                       </div>
+                      {file ? null : formik.errors.files}
+                      {/* {textMsg > 250000 ? (
+                        <span className="pdf-error">
+                          *Pdf size is must be in 2 Mb
+                        </span>
+                      ) : null} */}
                     </div>
-                    {formik.touched.files && formik.errors.files ? (
+
+                    {/* {formik.touched.files && formik.errors.files ? (
                       <ErrorText>{formik.errors.files}</ErrorText>
                     ) : (
                       <ErrorText>&nbsp;</ErrorText>
-                    )}
+                    )} */}
                   </div>
                 </div>
               </div>
-<div className="row">
-  <div className="col-lg-1"></div>
-  <div className="col-lg-5">
-  {/* <FileUploader className="resume" handleChange={handleChange} name="file" types={fileTypes} /> */}
-  </div>
-</div>
+              <div className="row">
+                <div className="col-lg-1"></div>
+                <div className="col-lg-5">
+                  {/* <FileUploader className="resume" handleChange={handleChange} name="file" types={fileTypes} /> */}
+                </div>
+              </div>
 
-         
               <div className="button">
                 <div className="row">
                   <div className="col-lg-1"></div>

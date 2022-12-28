@@ -9,6 +9,9 @@ import * as Yup from "yup";
 import Popup from "../../../components/FormControls/Popup";
 import styled from "styled-components";
 // import { hostConfig } from "../../../config";
+import { uploadPdfToS3 } from "../../../utils/files";
+import { convertBase64 } from "../../../utils/common";
+import { useEffect, useState } from "react";
 
 export const ErrorText = styled.div`
   color: red;
@@ -20,8 +23,11 @@ export const ErrorText = styled.div`
   font-weight: 600;
 `;
 
-const Cvapply = ({data}) => {
+const Cvapply = ({ data }) => {
+  const [UploadPdf, setUploadPdf] = useState(null);
+  const [textMsg, setTxtMsg] = useState(" ");
   const [popup, setPopup] = React.useState(null);
+
   const formik = useFormik({
     initialValues: {
       firstName: "",
@@ -31,7 +37,7 @@ const Cvapply = ({data}) => {
       linkedin: "",
       number: "",
       location: "",
-      files: "",
+      files: null,
       ln: "",
       fn: "",
     },
@@ -44,7 +50,9 @@ const Cvapply = ({data}) => {
       number: Yup.string().max(10, "").required("Required*"),
       experience: Yup.string().required("Required*"),
       linkedin: Yup.string().required("Required*"),
-      files: Yup.mixed().required("Required*"),
+      files: Yup.mixed()
+        .required("Required*")
+        .test(1000, "Uploaded file is too big.",()=>textMsg < 250000),
       ln: Yup.mixed().required("Required*"),
       fn: Yup.mixed().required("Required*"),
       location: Yup.mixed().required("Required*"),
@@ -52,10 +60,41 @@ const Cvapply = ({data}) => {
     onSubmit: (values) => {
       console.log(values, "heloooooooo");
       setPopup(true);
+
       // formik.handleReset();
     },
   });
-  console.log(data , "hii")
+
+  const handlePdf = (e) => {
+    const value = e.target.files[0];
+    setTxtMsg(value.size);
+    const fileData = value;
+    convertBase64(value).then((res) => {
+      console.log(res, "res");
+      fileData.base64Data = res;
+      fileData.s3Upload = res.replace(/^data:application\/\w+;base64,/, "");
+    });
+    // if (value?.size < 68000) {
+    //   formik.setFieldValue("files", fileData);
+    //   // setUploadError(false);
+    //   // formik.setFieldValue("files", fileData);
+    // }
+    //  else {
+    //   setUploadError(true);
+    // }
+    setUploadPdf(fileData);
+    return e.target.files[0]?.size
+  };
+
+  const handleUpload = () => {
+    console.log(UploadPdf.base64Data, "UploadPdf");
+    uploadPdfToS3(UploadPdf.base64Data, Date.now(), "job-applicants-resume").then((res) => {
+      console.log(res, "wwwww");
+      if (res) {
+        console.log("Thank you for submtting");
+      }
+    });
+  };
   return (
     <Div>
       <Head>
@@ -172,7 +211,7 @@ const Cvapply = ({data}) => {
           }}
         /> */}
       </Head>
-      
+
       <div className="container-fluid p-0 background">
         <div className="bg-img">
           <img src="assets/images/Banner-find-box.jpg" width="100%" />
@@ -201,10 +240,13 @@ const Cvapply = ({data}) => {
                     </li>
                     {/* <li className="nav-item">Upload Cv</li> */}
                     <Link href="find-jobs">
-                      <li className="nav-item">Find Jobs
-                     
-                      <img src="assets/images/icons-right.svg" className="ps-2"></img> </li>
-                   
+                      <li className="nav-item">
+                        Find Jobs
+                        <img
+                          src="assets/images/icons-right.svg"
+                          className="ps-2"
+                        ></img>{" "}
+                      </li>
                     </Link>
                     <li className="nav-item">Jobs Description</li>
                     <li className="nav-item">
@@ -212,7 +254,6 @@ const Cvapply = ({data}) => {
                       <img src="assets/images/icons-right.svg"></img>
                     </li>
                     <li className="nav-item">Apply Now</li>
-                   
                   </ul>
                 </div>
               </div>
@@ -319,22 +360,29 @@ const Cvapply = ({data}) => {
                       width="100%"
                       name="files"
                       onChange={(e) => {
-                        formik.handleChange;
-                        formik.setFieldValue("files", e);
+                        // formik.handleChange;
+                        formik.setFieldValue("files", e.target.value);
+                        handlePdf(e);
                       }}
                       onBlur={formik.handleBlur}
-                      // value={formik.values.file}
+                      value={formik.values.files}
                     />
 
                     <div className="input-group-append">
                       <span
                         className="input-group-text bg-dark text-light"
                         id="basic-addon2"
+                        onClick={() => handleUpload()}
                       >
-                        Upload
+                        Upload {/* Upload is for web screens*/}
                       </span>
                     </div>
                   </div>
+                  {/* {textMsg > 250000 ? (
+                    <span className="pdf-error">
+                      *Pdf size is must be in 2 Mb
+                    </span>
+                  ) : null} */}
                   {formik.touched.files && formik.errors.files ? (
                     <ErrorText>{formik.errors.files}</ErrorText>
                   ) : (
@@ -391,7 +439,8 @@ const Cvapply = ({data}) => {
                     <ErrorText>&nbsp;</ErrorText>
                   )}
                 </div>
-                <p className="attachement not-show">Attachment</p>
+                <p className="attachement not-show">Attachment</p>{" "}
+                {/* This code is for Small screen devices */}
                 <p className="updated not-show">Updated resume*</p>
                 <div className="input-group mb-3 not-show">
                   <div>
@@ -405,7 +454,7 @@ const Cvapply = ({data}) => {
                       name="files"
                       onChange={(e) => {
                         formik.handleChange;
-                        formik.setFieldValue("files", e);
+                        formik.setFieldValue("files", e.target.value[0]);
                       }}
                       onBlur={formik.handleBlur}
                       required

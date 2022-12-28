@@ -1,6 +1,6 @@
 const API_ENDPOINT = {
   contact: "contacts",
-  jobpostion: "jobPositions",
+  jobpostion: "jobPosts",
   testimonials: "testimonials",
   uploadCV:"uploadCV",
 };

@@ -21,7 +21,7 @@ const config = {
     },
    local: {
       webUrl: "http://localhost:4000/",
-      apiUrl: "http://localhost:4052/dev/",
+      apiUrl: "https://2lwfx6mq2m.execute-api.ap-southeast-1.amazonaws.com/dev/",
       bucketName: "http://staffq-dev-bucket.s3.amazonaws.com/",
     },
   };
