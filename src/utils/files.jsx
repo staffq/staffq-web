@@ -7,14 +7,13 @@ const uploadPdfToS3 = async (inputBase64, imageID, folder) => {
     accessKeyId: process.env.NEXT_PUBLIC_ACCESS_KEY_ID,
     secretAccessKey: process.env.NEXT_PUBLIC_SECRET_ACCESS_KEY,
   });
-  
   // Create an s3 instance
   const s3 = new AWS.S3();
   // Let's assume the variable "base64" is one.
   console.log(inputBase64, "inputBase64");
   const base64Data = new Buffer.from(inputBase64.replace(/^data:application\/\w+;base64,/, ""),"base64");
 
-  //const type = base64.split(';')[0].split('/')[1];
+  //const type = base64.split(';')[0].split('/')[1]
   const params = {
     Key: imageID + ".pdf",
     Bucket: "staffq-dev-bucket" + "/" + folder,

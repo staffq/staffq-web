@@ -85,7 +85,7 @@ const UploadCV = () => {
 
   const handlePdf = (e) => {
     const value = e.target.files[0];
-    setTxtMsg(value.size);
+    setTxtMsg(value?.size);
     const fileData = value;
     convertBase64(value).then((res) => {
       console.log(res, "res");
