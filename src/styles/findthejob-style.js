@@ -375,13 +375,24 @@ line-height: 19px; */
 
     color: #ffffff;
   }
-  @media (min-width: 1000px) and (max-width: 1080px) {
-    .find-crt {
-      font-weight: 600;
-      font-size: 32px;
-      color: #ffffff;
+
+  .small-screen{
+    display: none;
+  }
+  @media (min-width: 100px) and (max-width: 1000px) {
+    .small-screen {
+   display: block;
+   padding-bottom: 2rem;
+    }
+    .location{
+      width: 100%;
+    }
+    .lg-desktop{
+      display: none;
     }
   }
+
+  @media (min-width: 1200px) and (max-width: 13000px) {}
 `;
 export const SmallFind = styled.div`
   background: #efce1e;

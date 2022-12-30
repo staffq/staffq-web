@@ -46,7 +46,9 @@ export const Div = styled.div`
   .popup {
    
   }
- 
+ .cursor:hover{
+  color: black;
+ }
   @media (min-width: 250px) and (max-width: 990px) {
     .navbar {
       margin-top: 2rem;
@@ -141,12 +143,17 @@ export const Small = styled.div`
     padding-left: 2rem;
     font-size: 21px;
     font-weight: 700;
-    margin-top: 5rem;
+    /* margin-top: 5rem; */
+    position: fixed;
+    width: 100%;
+    top: 80px;
   }
   @media (min-width: 250px) and (max-width: 990px) {
     .sm-header {
       display: block;
       z-index: 1;
+      /* position: absolute !important;
+    top: 0px; */
     }
     .navbar {
       border-bottom: 2px solid rgba(8, 20, 41, 0.1);

@@ -53,9 +53,9 @@ const UploadCV = () => {
     },
     validationSchema: Yup.object({
       firstName: Yup.string()
-        // .max(15, "Must be 15 characters or less")
-        .required("Required *"),
-      lastName: Yup.string().required("Required *"),
+        .matches(/^[aA-zZ\s]+$/, "Only alphabets are allowed for this field ").min(3).required("Required *"),
+      lastName:Yup.string()
+      .matches(/^[aA-zZ\s]+$/, "Only alphabets are allowed for this field ").min(1).required("Required *"),
       email: Yup.string().email("Invalid email address").required("Required*"),
       mobileNumber: Yup.string().min(10).max(10).required("Required*"),
       experience: Yup.string().required("Required*"),
@@ -283,8 +283,10 @@ const UploadCV = () => {
               <div className="col-lg-5 col-sm-12">
                 <div>
                   <label> First Name*</label>
+            
                   <Input
                     width="100%"
+                    type="text"
                     name="firstName"
                     onChange={formik.handleChange}
                     onBlur={formik.handleBlur}
@@ -399,8 +401,10 @@ const UploadCV = () => {
                 </div>
                 <div>
                   <label>Work experience*</label>
-                  <Input
+                  <input
                     width="100%"
+                    type="number"
+                    className="number"
                     name="experience"
                     onChange={formik.handleChange}
                     onBlur={formik.handleBlur}

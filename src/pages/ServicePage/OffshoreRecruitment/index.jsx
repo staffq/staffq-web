@@ -404,7 +404,7 @@ const OffshoreRecruitment = () => {
           <p>
             StaffQ focuses on hiring highly qualified and talented candidates{" "}
             <br></br>
-            that are willing to grow with your company over time.{" "}
+            that they are willing to grow with your company over time.{" "}
           </p>
         </div>
       </div>

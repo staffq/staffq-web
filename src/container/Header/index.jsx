@@ -203,7 +203,7 @@ const Header = (props) => {
             <div>
               <ul className="navbar-nav mr-auto  mt-lg-0">
                 <li className="nav-item active">
-                  <Link href="/">
+                  {/* <Link href="/">
                     <a
                       className="nav-link"
                       href="#"
@@ -211,7 +211,7 @@ const Header = (props) => {
                     >
                       Services<span className="sr-only"></span>
                     </a>
-                  </Link>{" "}
+                  </Link>{" "} */}
                   <Link href="/about-us">
                     <a
                       className="nav-link"

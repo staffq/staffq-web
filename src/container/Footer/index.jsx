@@ -40,7 +40,7 @@ const Footer = () => {
                         Our Services
                       </p>
                       <div className="footer-one ">
-                        <Link href="requirement-process">
+                        <Link href="recruitment-process">
                           <span>Recruitment Process Outsourcing</span>
                         </Link>
                         <br></br>
@@ -128,8 +128,9 @@ const Footer = () => {
                         {" "}
                         <GrMail />{" "}
                         <span className="me-3 infostaffq">
+                        <a href="mailto:hello.staffq@gmail.com" className="a-tag">
                           {" "}
-                          hello@staffq.in
+                          hello@staffq.in</a>
                         </span>{" "}
                       </p>
                     </div>
@@ -146,7 +147,7 @@ const Footer = () => {
               <div>
                 <p style={{ fontSize: "14px" }} className="last-line">
                   {" "}
-                  @2022 StaffQ Consultancy Pvt. Ltd | Powered by ApplogiQ
+                  2022 StaffQ Consultancy Pvt. Ltd - All rights reserved | Powered by ApplogiQ
                 </p>
               </div>
               <div className="Foter">
@@ -173,7 +174,7 @@ const Footer = () => {
                 </p>
                 <br></br>
                 <div style={{ fontSize: "18px" }} className="font">
-                  <Link href="requirement-process">
+                  <Link href="recruitment-process">
                     <p>Recruitment Process Outsourcing</p>
                   </Link>
                   <Link href="onshore-recruitment">
@@ -237,9 +238,10 @@ const Footer = () => {
                 <p>
                   {" "}
                   <GrMail />{" "}
+                  
                   <span style={{ paddingLeft: "15px" }}>
-                    {" "}
-                    hello@staffq.in
+                    <a href="emailto:hello.staffq@gmail.com" className="a-tag">
+                    hello@staffq.in</a>
                   </span>{" "}
                 </p>
               </div>
@@ -255,7 +257,7 @@ const Footer = () => {
         <div className="mt-5">
           <p className="text-center last-line " style={{ marginTop: "2px" }}>
             {" "}
-            @2022 StaffQ Consultancy Pvt. Ltd | Powered by ApplogiQ
+            2022 StaffQ Consultancy Pvt. Ltd - All rights reserved | Powered by ApplogiQ
           </p>
           <div className="d-flex  justify-content-spacebetween">
             <p style={{ fontSize: "14px" }} className="last-line">

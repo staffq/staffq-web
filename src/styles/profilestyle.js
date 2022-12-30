@@ -423,7 +423,7 @@ export const ProfileJs = styled.div`
 
   a:before {
     content: "";
-    background: yellow;
+    background: #EFCE1E;
     display: block;
     position: absolute;
     bottom: -3px;
@@ -457,7 +457,7 @@ export const ProfileJs = styled.div`
 
   sub:before {
     content: "";
-    background: yellow;
+ background: #EFCE1E;
     display: block;
     position: absolute;
     bottom: -3px;
@@ -490,7 +490,7 @@ export const ProfileJs = styled.div`
 
   label:before {
     content: "";
-    background: yellow;
+    background: #EFCE1E;
     display: block;
     position: absolute;
     bottom: -3px;

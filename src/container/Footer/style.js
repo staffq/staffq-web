@@ -3,7 +3,12 @@ import styled from "styled-components";
 
 export const Foot = styled.div`
   background: #050c18;
-
+.a-tag{
+  text-decoration: none;
+  font-size: 15px;
+    font-weight: 400;
+    color: rgba(255,255,255,0.8);
+}
  
   @media (min-width: 1000px) and (max-width: 1200px) {
     .towers {

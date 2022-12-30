@@ -42,7 +42,9 @@ const Cvapply = ({ data }) => {
       fn: "",
     },
     validationSchema: Yup.object({
-      firstName: Yup.string()
+      firstName: Yup.string().max(3).required()
+      .required("Please enter the required field")
+      .matches(/^[aA-zZ\s]+$/, "Only alphabets are allowed for this field ")
         // .max(15, "Must be 15 characters or less")
         .required("Required *"),
       lastName: Yup.string().required("Required *"),

@@ -16,14 +16,14 @@ const Service = () => {
                   <div className="small-center">
                     <h2>Services we offer</h2>
                     <p className="service-p-tag mb-0">
-                      StaffQ Consultancy is known for its IT and Non-IT recruits{" "}
-                      <br></br>
-                      to companies in various Domain.
+                    StaffQ Consultancy is known for IT and Non-IT recruiters
+                  suppliers<br></br>  to all the recruitment companies in  various
+                  Domains.
                     </p>
                     <p className="sm-scrren-p-tag mb-0">
-                      StaffQ Consultancy is known for its IT and Non-IT recruits{" "}
-                     
-                      to companies in various Domain.
+                    StaffQ Consultancy is known for IT and Non-IT recruiters
+                  suppliers to all the recruitment companies in various
+                  Domains.
                     </p>
                   </div>
                   <div className="serviceImage">
@@ -205,8 +205,9 @@ const Service = () => {
               <p className="pt-3 service-we">Services we offer</p>
 
               <p className="sm-scrren-p-tag mb-0 pt-1">
-                StaffQ Consultancy is known for its IT and Non-IT recruits to
-                companies in various Domain.
+              StaffQ Consultancy is known for IT and Non-IT recruiters
+                  suppliers to all the recruitment companies in various
+                  Domains.
               </p>
             </div>
             <div className="serviceImage">

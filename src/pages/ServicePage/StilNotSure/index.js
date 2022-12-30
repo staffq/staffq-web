@@ -29,8 +29,8 @@ const StillNotSure = () => {
       phoneNumber: "",
     },
     validationSchema: yup.object({
-      name: yup
-        .string() .required("Required *"),
+      name: yup.string()
+      .matches(/^[aA-zZ\s]+$/, "Only alphabets are allowed for this field ").min(3).required("Required *"),
         email: yup.string().email("Invalid email address").required("Required*"),
         phoneNumber: yup.string().min(10).max(10).required("Required*"),
     }),

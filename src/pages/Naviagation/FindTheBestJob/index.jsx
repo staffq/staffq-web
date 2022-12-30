@@ -30,8 +30,7 @@ const FindJob = () => {
   const [searched, setSearched] = useState("");
   console.log(value, "value", searched, "searched");
 
- const handleSearch = () => {
-
+  const handleSearch = () => {
     dispatch(
       getjobpostionData({
         search: value,
@@ -40,9 +39,8 @@ const FindJob = () => {
   };
   useEffect(() => {
     handleSearch();
-   
   }, []);
-  console.log(jobdata, "helo")
+  console.log(jobdata, "helo");
   return (
     <Find>
       <Head>
@@ -179,7 +177,7 @@ const FindJob = () => {
               <Link href="/">
                 <li className="nav-item">Home</li>
               </Link>
-       
+
               <li className="nav-item">
                 {" "}
                 <img src="assets/images/icons-right.svg"></img>
@@ -216,6 +214,15 @@ const FindJob = () => {
                   </div>
                 </div>
               </div>
+              <div className="small-screen">
+                <select className="location ps-4" placeholder="Location">
+                  <option value="location">Location</option>
+                  <option value="location">Us</option>
+                  <option value="">TamilNadu</option>
+                  <option value="">Kerala</option>
+                </select>{" "}
+              </div>
+           
               <div className="col-lg-2 d-flex justify-content-end">
                 <span className="btn btnnn" onClick={handleSearch}>
                   Search
@@ -227,13 +234,15 @@ const FindJob = () => {
           <div className="showing-results">
             <div>
               <p>
-                Showing results of <span>{jobdata?.noRecords ? jobdata?.noRecords :"no result found"}</span>{" "}
-                
-              
+                <span>
+                  {jobdata?.noRecords
+                    ? `Showing results of ${jobdata?.noRecords}`
+                    : "no result found"}
+                </span>{" "}
               </p>
             </div>
             <div>
-              <div>
+              <div className="lg-desktop">
                 <select className="location ps-4" placeholder="Location">
                   <option value="location">Location</option>
                   <option value="location">Us</option>
@@ -245,13 +254,15 @@ const FindJob = () => {
           </div>
 
           <div className="row  mt-3">
-            {jobdata?.records?.length >0 &&
+            {jobdata?.records?.length > 0 &&
               jobdata?.records.map((cardHead, index) => {
                 return (
                   <div className="col-lg-3 col-md-6 col-sm-12 mb-4" key={index}>
                     <div>
                       <div className="Card container ">
-                        <p className="mt-3 design text-capitalize">{cardHead?.jobTitle}</p>
+                        <p className="mt-3 design text-capitalize">
+                          {cardHead?.jobTitle}
+                        </p>
                         <button className="fulltime  ">
                           {" "}
                           {cardHead?.jobType}
@@ -273,12 +284,19 @@ const FindJob = () => {
                             style={{ marginLeft: "22px" }}
                             width="16px"
                           />
-                          <p className="btnn">{formatDate(cardHead?.createdAt)}</p>
+                          <p className="btnn">
+                            {formatDate(cardHead?.createdAt)}
+                          </p>
                         </div>
                         <p className="cart-text">{cardHead?.jobDescription}</p>
-                        <Link href={{pathname:"/find-description", query:{find:JSON.stringify(cardHead)}}}>
-                        <button className=" btnone" >Explore Job</button></Link>
-                       
+                        <Link
+                          href={{
+                            pathname: "/find-description",
+                            query: { find: JSON.stringify(cardHead) },
+                          }}
+                        >
+                          <button className=" btnone">Explore Job</button>
+                        </Link>
                       </div>
                     </div>
                   </div>

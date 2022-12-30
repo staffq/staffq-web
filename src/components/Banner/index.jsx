@@ -126,7 +126,8 @@ const Index = () => {
                   suppliers to all the <br></br>recruitment companies in various
                   Domains.
                 </p>
-                <button className="btn btn-small">Find Your Job</button>
+                <Link href="find-jobs">
+                <button className="btn btn-small">Find Your Job</button></Link>
               </div>
             </div>
             <div className="col-md-12 col-sm-12 p-0 mt-4">

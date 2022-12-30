@@ -34,6 +34,7 @@ const Input = ({
         height={height}
         placeholder={placeholder}
         padding={padding}
+        type={type}
         {...others}
       />
 {icon? <Icon >
