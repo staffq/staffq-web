@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 // import redux .........
 import { useDispatch } from "react-redux";
 import { createUploadCVData } from "../../.././redux/actions";
@@ -19,6 +19,7 @@ import { useState } from "react";
 import { uploadPdfToS3 } from "../../../utils/files";
 import { convertBase64 } from "../../../utils/common";
 import { FileUploader } from "react-drag-drop-files";
+import { v4 } from "uuid";
 
 // const fileTypes = ["JPG", "PNG", "GIF"];
 
@@ -33,6 +34,7 @@ export const ErrorText = styled.div`
 `;
 
 const UploadCV = () => {
+  const [uuid, setUUID] = useState("");
   const [file, setFile] = useState(null);
   const [UploadPdf, setUploadPdf] = useState("");
   const [textMsg, setTxtMsg] = useState("");
@@ -42,8 +44,8 @@ const UploadCV = () => {
 
   const formik = useFormik({
     initialValues: {
-      firstName: "",
-      lastName: "",
+      firstname: "",
+      lastname: "",
       email: "",
       experience: "",
       link: "",
@@ -52,10 +54,10 @@ const UploadCV = () => {
       files: "",
     },
     validationSchema: Yup.object({
-      firstName: Yup.string()
-        .matches(/^[aA-zZ\s]+$/, "Only alphabets are allowed for this field ").min(3).required("Required *"),
-      lastName:Yup.string()
-      .matches(/^[aA-zZ\s]+$/, "Only alphabets are allowed for this field ").min(1).required("Required *"),
+      firstname: Yup.string()
+        // .max(15, "Must be 15 characters or less")
+        .required("Required *"),
+      lastname: Yup.string().required("Required *"),
       email: Yup.string().email("Invalid email address").required("Required*"),
       mobileNumber: Yup.string().min(10).max(10).required("Required*"),
       experience: Yup.string().required("Required*"),
@@ -66,13 +68,15 @@ const UploadCV = () => {
       location: Yup.mixed().required("Required*"),
     }),
     onSubmit: (values) => {
-      console.log(values, "heloooooooo");
-
-      dispatch(createUploadCVData(values)).then((params) => {
-        if (params) {
-          setPopup(true);
-          setTimeout(() => setPopup(false), 3000);
-        }
+      const Data = handleUpload().then((res) => {
+        console.log(res,"77");
+        values.files = `${res.uuid}.pdf`;   // This is the file path of s3 upload
+        dispatch(createUploadCVData(values)).then((params) => {
+          if (params) {
+            setPopup(true);
+            setTimeout(() => setPopup(false), 3000);
+          }
+        });
       });
 
       formik.handleReset();
@@ -88,10 +92,11 @@ const UploadCV = () => {
     setTxtMsg(value?.size);
     const fileData = value;
     convertBase64(value).then((res) => {
-      console.log(res, "res");
+      console.log(res, "res=====================");
       fileData.base64Data = res;
       fileData.s3Upload = res.replace(/^data:application\/\w+;base64,/, "");
     });
+    console.log(fileData, "fileData ----------------------->");
     // if (value?.size < 68000) {
     //   formik.setFieldValue("files", fileData);
     //   // setUploadError(false);
@@ -103,16 +108,21 @@ const UploadCV = () => {
     setUploadPdf(fileData);
     return e.target.files[0]?.size;
   };
-  const handleUpload = () => {
+  const handleUpload = async () => {
+    const uuid = v4().toString();
     console.log(UploadPdf.base64Data, "UploadPdf");
-    uploadPdfToS3(
+    return await uploadPdfToS3(
       UploadPdf.base64Data,
-      Date.now(),
+      uuid,
       "Interested-candidates-resume"
     ).then((res) => {
       console.log(res, "wwwww");
       if (res) {
         console.log("Thank you for submtting");
+        return {
+          uuid,
+          res,
+        };
       }
     });
   };
@@ -286,14 +296,13 @@ const UploadCV = () => {
             
                   <Input
                     width="100%"
-                    type="text"
-                    name="firstName"
+                    name="firstname"
                     onChange={formik.handleChange}
                     onBlur={formik.handleBlur}
-                    value={formik.values.firstName}
+                    value={formik.values.firstname}
                   />
-                  {formik.touched.firstName && formik.errors.firstName ? (
-                    <ErrorText>{formik.errors.firstName}</ErrorText>
+                  {formik.touched.firstname && formik.errors.firstname ? (
+                    <ErrorText>{formik.errors.firstname}</ErrorText>
                   ) : (
                     <ErrorText>&nbsp;</ErrorText>
                   )}{" "}
@@ -303,15 +312,15 @@ const UploadCV = () => {
                   <label className=" not-show">Last Name*</label>
                   <Input
                     width="100%"
-                    name="lastName"
+                    name="lastname"
                     onChange={formik.handleChange}
                     onBlur={formik.handleBlur}
-                    value={formik.values.lastName}
+                    value={formik.values.lastname}
                     required
                   />
 
-                  {formik.touched.lastName && formik.errors.lastName ? (
-                    <ErrorText>{formik.errors.lastName}</ErrorText>
+                  {formik.touched.lastname && formik.errors.lastname ? (
+                    <ErrorText>{formik.errors.lastname}</ErrorText>
                   ) : (
                     <ErrorText>&nbsp;</ErrorText>
                   )}
@@ -369,14 +378,14 @@ const UploadCV = () => {
                   <Input
                     width="100%"
                     className="hiden"
-                    name="lastName"
+                    name="lastname"
                     onChange={formik.handleChange}
                     onBlur={formik.handleBlur}
-                    value={formik.values.lastName}
+                    value={formik.values.lastname}
                     required
                   />
-                  {formik.touched.lastName && formik.errors.lastName ? (
-                    <ErrorText>{formik.errors.lastName}</ErrorText>
+                  {formik.touched.lastname && formik.errors.lastname ? (
+                    <ErrorText>{formik.errors.lastname}</ErrorText>
                   ) : (
                     <ErrorText>&nbsp;</ErrorText>
                   )}
@@ -451,7 +460,6 @@ const UploadCV = () => {
                         <span
                           className="input-group-text bg-dark text-light"
                           id="basic-addon2"
-                          onClick={() => handleUpload()}
                         >
                           Upload
                         </span>

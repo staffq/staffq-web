@@ -7,3 +7,4 @@ export const getjobpostion = (params) => getListByApi(API_ENDPOINT.jobPosts, par
 export const getUserById = (dataId) => viewDataByApi(API_ENDPOINT.user, dataId);
 
 
+export const getuploadCV = (params) => getListByApi(API_ENDPOINT.uploadCV, params);

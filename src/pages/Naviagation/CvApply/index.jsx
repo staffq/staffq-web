@@ -12,6 +12,8 @@ import styled from "styled-components";
 import { uploadPdfToS3 } from "../../../utils/files";
 import { convertBase64 } from "../../../utils/common";
 import { useEffect, useState } from "react";
+import { v4 } from "uuid";
+import { hostConfig } from "../../../config";
 
 export const ErrorText = styled.div`
   color: red;
@@ -30,12 +32,12 @@ const Cvapply = ({ data }) => {
 
   const formik = useFormik({
     initialValues: {
-      firstName: "",
-      lastName: "",
+      firstname: "",
+      lastname: "",
       email: "",
       experience: "",
-      linkedin: "",
-      number: "",
+      linkedIn: "",
+      phoneNumber: "",
       location: "",
       files: null,
       ln: "",
@@ -47,11 +49,11 @@ const Cvapply = ({ data }) => {
       .matches(/^[aA-zZ\s]+$/, "Only alphabets are allowed for this field ")
         // .max(15, "Must be 15 characters or less")
         .required("Required *"),
-      lastName: Yup.string().required("Required *"),
+      lastname: Yup.string().required("Required *"),
       email: Yup.string().email("Invalid email address").required("Required*"),
-      number: Yup.string().max(10, "").required("Required*"),
+      phoneNumber: Yup.string().max(10, "").required("Required*"),
       experience: Yup.string().required("Required*"),
-      linkedin: Yup.string().required("Required*"),
+      linkedIn: Yup.string().required("Required*"),
       files: Yup.mixed()
         .required("Required*")
         .test(1000, "Uploaded file is too big.",()=>textMsg < 250000),
@@ -61,9 +63,18 @@ const Cvapply = ({ data }) => {
     }),
     onSubmit: (values) => {
       console.log(values, "heloooooooo");
+      const pdf = handleUpload().then((res) => {
+        values.files = `${res.uuid}.pdf`             // This is the file path of s3 upload
+        dispatch(createUploadCVData(values)).then((params) => {
+          if (params) {
+            setPopup(true);
+            setTimeout(() => setPopup(false), 3000);
+          }
+        });
+      })
       setPopup(true);
 
-      // formik.handleReset();
+      formik.handleReset();
     },
   });
 
@@ -89,11 +100,13 @@ const Cvapply = ({ data }) => {
   };
 
   const handleUpload = () => {
+    const uuid = v4().toString();
     console.log(UploadPdf.base64Data, "UploadPdf");
-    uploadPdfToS3(UploadPdf.base64Data, Date.now(), "job-applicants-resume").then((res) => {
+    uploadPdfToS3(UploadPdf.base64Data, uuid, "job-applicants-resume").then((res) => {
       console.log(res, "wwwww");
       if (res) {
         console.log("Thank you for submtting");
+        res, uuid
       }
     });
   };
@@ -106,7 +119,7 @@ const Cvapply = ({ data }) => {
           content="https://www.applogiq.org/assets/images/metaimg.png"
         />
         <meta
-          name="linkedin:image"
+          name="linkedIn:image"
           content="https://www.applogiq.org/assets/images/metaimg.png"
         />
         <meta
@@ -188,7 +201,7 @@ const Cvapply = ({ data }) => {
                 "closes": "19:00"
               },
               "sameAs": [
-                "https://www.linkedin.com/company/applogiq/",
+                "https://www.linkedIn.com/company/applogiq/",
                 "https://www.facebook.com/Applogiq",
                 "https://www.instagram.com/applogiq/"
               ] 
@@ -207,7 +220,7 @@ const Cvapply = ({ data }) => {
               "logo": "https://www.applogiq.org/assets/images/logo.gif",
               "sameAs": [
                 "https://www.facebook.com/Applogiq",
-                "https://www.linkedin.com/company/applogiq/"
+                "https://www.linkedIn.com/company/applogiq/"
               ]
             }`
           }}
@@ -275,13 +288,13 @@ const Cvapply = ({ data }) => {
                   <label> First Name*</label>
                   <Input
                     width="100%"
-                    name="firstName"
+                    name="firstname"
                     onChange={formik.handleChange}
                     onBlur={formik.handleBlur}
-                    value={formik.values.firstName}
+                    value={formik.values.firstname}
                   />
-                  {formik.touched.firstName && formik.errors.firstName ? (
-                    <ErrorText>{formik.errors.firstName}</ErrorText>
+                  {formik.touched.firstname && formik.errors.firstname ? (
+                    <ErrorText>{formik.errors.firstname}</ErrorText>
                   ) : (
                     <ErrorText>&nbsp;</ErrorText>
                   )}{" "}
@@ -291,15 +304,15 @@ const Cvapply = ({ data }) => {
                   <label className=" not-show">Last Name*</label>
                   <Input
                     width="100%"
-                    name="lastName"
+                    name="lastname"
                     onChange={formik.handleChange}
                     onBlur={formik.handleBlur}
-                    value={formik.values.lastName}
+                    value={formik.values.lastname}
                     required
                   />
 
-                  {formik.touched.lastName && formik.errors.llastNamen ? (
-                    <ErrorText>{formik.errors.lastName}</ErrorText>
+                  {formik.touched.lastname && formik.errors.llastnamen ? (
+                    <ErrorText>{formik.errors.lastname}</ErrorText>
                   ) : (
                     <ErrorText>&nbsp;</ErrorText>
                   )}
@@ -336,16 +349,16 @@ const Cvapply = ({ data }) => {
                   )}
                 </div>
                 <div>
-                  <label>LinkedIn / Portfolio</label>
+                  <label>linkedIn / Portfolio</label>
                   <Input
                     width="100%"
-                    name="linkedin"
+                    name="linkedIn"
                     onChange={formik.handleChange}
                     onBlur={formik.handleBlur}
-                    value={formik.values.linkedin}
+                    value={formik.values.linkedIn}
                   />
-                  {formik.touched.linkedin && formik.errors.linkedin ? (
-                    <ErrorText>{formik.errors.linkedin}</ErrorText>
+                  {formik.touched.linkedIn && formik.errors.linkedIn ? (
+                    <ErrorText>{formik.errors.linkedIn}</ErrorText>
                   ) : (
                     <ErrorText>&nbsp;</ErrorText>
                   )}
@@ -374,7 +387,7 @@ const Cvapply = ({ data }) => {
                       <span
                         className="input-group-text bg-dark text-light"
                         id="basic-addon2"
-                        onClick={() => handleUpload()}
+                        // onClick={() => handleUpload()}
                       >
                         Upload {/* Upload is for web screens*/}
                       </span>
@@ -398,30 +411,30 @@ const Cvapply = ({ data }) => {
                   <Input
                     width="100%"
                     className="hiden"
-                    name="lastName"
+                    name="lastname"
                     onChange={formik.handleChange}
                     onBlur={formik.handleBlur}
-                    value={formik.values.lastName}
+                    value={formik.values.lastname}
                     required
                   />
-                  {formik.touched.lastName && formik.errors.lastName ? (
-                    <ErrorText>{formik.errors.lastName}</ErrorText>
+                  {formik.touched.lastname && formik.errors.lastname ? (
+                    <ErrorText>{formik.errors.lastname}</ErrorText>
                   ) : (
                     <ErrorText>&nbsp;</ErrorText>
                   )}
                 </div>
                 <div>
-                  <label>Mobile number*</label>
+                  <label>Mobile phoneNumber*</label>
                   <input
                     width="100%"
-                    name="number"
-                    className="number"
+                    name="phoneNumber"
+                    className="phoneNumber"
                     onChange={formik.handleChange}
                     onBlur={formik.handleBlur}
-                    value={formik.values.number}
+                    value={formik.values.phoneNumber}
                   />
-                  {formik.touched.number && formik.errors.number ? (
-                    <ErrorText>{formik.errors.number}</ErrorText>
+                  {formik.touched.phoneNumber && formik.errors.phoneNumber ? (
+                    <ErrorText>{formik.errors.phoneNumber}</ErrorText>
                   ) : (
                     <ErrorText>&nbsp;</ErrorText>
                   )}
